@@ -16,6 +16,7 @@ const content = await getContent();
 const thinker = lookup(content.thinkerById, id, 'thinker');
 const worldview = lookup(content.worldviewById, thinker.worldview, 'worldview');
 const cited = answersForThinker(content, thinker);
+const dates = lifespan(thinker);
 ---
 
 <BaseLayout title={thinker.name} description={thinker.description}>
@@ -23,30 +24,56 @@ const cited = answersForThinker(content, thinker);
     <a class="back-link" href={url('thinkers/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All thinkers</a>
 
     <header class="page-head">
-      <p class="eyebrow">{roleLabel(thinker)}</p>
       <h1>{thinker.name}</h1>
-      <p class="meta">
-        {thinker.schools.join(', ')}
-        {lifespan(thinker) && <><span aria-hidden="true"> {symbols.separator} </span>{lifespan(thinker)}</>}
+      <p class="meta thinker-meta">
+        {dates && <><span>{dates}</span><span aria-hidden="true"> {symbols.separator} </span></>}
+        <a href={worldviewUrl(worldview)}>{worldview.name}</a>
+        <span aria-hidden="true"> {symbols.separator} </span>
+        <span>{thinker.schools.join(', ')}</span>
+        <span aria-hidden="true"> {symbols.separator} </span>
+        <span class="role" data-role={thinker.role} title={roleDescriptions[thinker.role]}>{roleLabel(thinker)}</span>
       </p>
       <p class="lede">{thinker.description}</p>
+      {thinker.usedFor.length > 0 && <p class="meta">Used for: {thinker.usedFor.join(', ')}</p>}
     </header>
 
-    <div class="prose">
-      <h2 class="section-title" style="margin-top:0"><span aria-hidden="true">{symbols.section} </span>Worldview</h2>
-      <p>
-        Mapped to <a href={worldviewUrl(worldview)}>{worldview.name}</a>. The mapping is a research
-        convenience, not a claim that this thinker speaks for every adherent.
-      </p>
-      <p class="muted">
-        <strong>{roleLabel(thinker)}.</strong> {roleDescriptions[thinker.role]}
-        {thinker.usedFor.length > 0 && <> Used for: {thinker.usedFor.join(', ')}.</>}
-      </p>
+    <div class="prose thinker-body">
+      <h2 class="section-title" style="margin-top:0">Biography</h2>
+      {
+        thinker.bio ? (
+          <p>{thinker.bio}</p>
+        ) : (
+          <p class="placeholder-note">
+            Biography not yet written. Biographies are completed when a thinker is first used in
+            researched content.
+          </p>
+        )
+      }
+
+      <h2 class="section-title">Why this thinker matters</h2>
+      {
+        thinker.significance ? (
+          <p>{thinker.significance}</p>
+        ) : (
+          <p class="placeholder-note">Not yet written.</p>
+        )
+      }
+
+      {
+        thinker.keyIdeas.length > 0 && (
+          <>
+            <h2 class="section-title">Key ideas</h2>
+            <ul class="inline-list key-ideas">
+              {thinker.keyIdeas.map((idea) => <li>{idea}</li>)}
+            </ul>
+          </>
+        )
+      }
 
       {
         thinker.representativeWorks.length > 0 && (
           <>
-            <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Representative works</h2>
+            <h2 class="section-title">Representative works</h2>
             <ul>
               {thinker.representativeWorks.map((work) => {
                 const source = work.sourceId ? content.sourceById.get(work.sourceId) : undefined;
@@ -70,13 +97,13 @@ const cited = answersForThinker(content, thinker);
       {
         thinker.notes && (
           <>
-            <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Notes</h2>
+            <h2 class="section-title">Notes</h2>
             <p>{thinker.notes}</p>
           </>
         )
       }
 
-      <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Cited on this site</h2>
+      <h2 class="section-title">Appears in these questions</h2>
       {
         cited.length > 0 ? (
           <ul>
@@ -95,6 +122,11 @@ const cited = answersForThinker(content, thinker);
           <p class="placeholder-note">Not yet cited in any answer.</p>
         )
       }
+
+      <p class="meta">
+        The worldview mapping is a research convenience, not a claim that this thinker speaks for
+        every adherent.
+      </p>
     </div>
   </div>
 </BaseLayout>

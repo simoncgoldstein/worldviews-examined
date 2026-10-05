@@ -35,6 +35,21 @@ export function getContent(): Promise<SiteContent> {
   return cached;
 }
 
+const roleRank = { primary: 0, specialist: 1, interlocutor: 2 } as const;
+
+/**
+ * Thinker order: worldview lane, then role, then explicit displayOrder, then name. Primary
+ * thinkers are never sorted alphabetically when a displayOrder exists.
+ */
+export function compareThinkers(a: Thinker, b: Thinker): number {
+  return (
+    a.worldview.localeCompare(b.worldview) ||
+    roleRank[a.role] - roleRank[b.role] ||
+    (a.displayOrder ?? Number.MAX_SAFE_INTEGER) - (b.displayOrder ?? Number.MAX_SAFE_INTEGER) ||
+    a.name.localeCompare(b.name)
+  );
+}
+
 const byOrder = <T extends { order: number }>(a: T, b: T) => a.order - b.order;
 
 async function load(): Promise<SiteContent> {
@@ -64,7 +79,7 @@ async function load(): Promise<SiteContent> {
   const worldviewList = sorted(worldviews);
   const categoryList = sorted(categories);
   const questionList = sorted(questions);
-  const thinkerList = thinkers.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name));
+  const thinkerList = thinkers.map((e) => e.data).sort(compareThinkers);
   const sourceList = sources.map((e) => e.data);
 
   const index = <T extends { id: string }>(list: T[]) => new Map(list.map((item) => [item.id, item]));

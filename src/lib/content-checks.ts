@@ -69,10 +69,10 @@ export function checkContent(content: ContentSet): CheckResult {
   const worldviewIds = new Set(content.worldviews.map((w) => w.id));
   const categoryIds = new Set(content.categories.map((c) => c.id));
   const questionIds = new Set(content.questions.map((q) => q.id));
-  const thinkerIds = new Set(content.thinkers.map((t) => t.id));
   const sourceIds = new Set(content.sources.map((s) => s.id));
   const worldviewById = new Map(content.worldviews.map((w) => [w.id, w]));
   const sourceById = new Map(content.sources.map((s) => [s.id, s]));
+  const thinkerById = new Map(content.thinkers.map((t) => [t.id, t]));
 
   // Questions.
   for (const question of content.questions) {
@@ -109,6 +109,21 @@ export function checkContent(content: ContentSet): CheckResult {
     }
   }
 
+  // displayOrder must be unambiguous within a worldview and role.
+  const orderSlots = new Map<string, string>();
+  for (const thinker of content.thinkers) {
+    if (thinker.displayOrder === undefined) continue;
+    const slot = `${thinker.worldview}/${thinker.role}/${thinker.displayOrder}`;
+    const other = orderSlots.get(slot);
+    if (other) errors.push(`thinker "${thinker.id}": displayOrder ${thinker.displayOrder} is also used by "${other}" (${thinker.worldview}, ${thinker.role})`);
+    orderSlots.set(slot, thinker.id);
+  }
+  for (const thinker of content.thinkers) {
+    if (!thinker.bio) continue;
+    const words = thinker.bio.split(/\s+/).length;
+    if (words < 60 || words > 180) warnings.push(`thinker "${thinker.id}": bio is ${words} words (target about 80-150)`);
+  }
+
   for (const worldview of content.worldviews) {
     if (!content.thinkers.some((t) => t.worldview === worldview.id && t.role === 'primary')) {
       errors.push(`worldview "${worldview.id}": has no primary thinker`);
@@ -138,7 +153,12 @@ export function checkContent(content: ContentSet): CheckResult {
       errors.push(`${label}: analysis.kind "${data.analysis.kind}" does not match ${worldview.id} (${worldview.analysisKind})`);
     }
     for (const thinkerId of data.thinkers) {
-      if (!thinkerIds.has(thinkerId)) errors.push(`${label}: unknown thinker "${thinkerId}"`);
+      const thinker = thinkerById.get(thinkerId);
+      if (!thinker) {
+        errors.push(`${label}: unknown thinker "${thinkerId}"`);
+      } else if (statusAtLeast(data.reviewStatus, 'reviewed') && (!thinker.bio || !thinker.significance)) {
+        errors.push(`${label}: "${data.reviewStatus}" answers require a biography and significance for thinker "${thinkerId}"`);
+      }
     }
 
     for (const issue of sectionIssues({ kind: data.analysis.kind, status: data.reviewStatus, body })) {
@@ -188,6 +208,8 @@ export function coverageReport(content: ContentSet): string[] {
 
   const present = content.answers.length;
   const target = total * questions.length;
+  const profiled = content.thinkers.filter((t) => t.bio && t.significance).length;
+  lines.push('', `Thinker profiles: ${profiled}/${content.thinkers.length} have a biography and significance (written as thinkers are first used).`);
   lines.push('', `Total: ${present}/${target} answers present (${target - present} missing). Incomplete coverage is expected until Phase 4.`);
   return lines;
 }

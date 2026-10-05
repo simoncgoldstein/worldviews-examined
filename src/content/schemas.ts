@@ -165,7 +165,25 @@ export const thinkerSchema = z
     deathYear: z.number().int().optional(),
     /** Free-text dating when exact years are unknown or debated. */
     era: text.optional(),
+    /** One-line description, used in lists and as the page lede. */
     description: text,
+    /**
+     * Concise biography (eventually about 80-150 words): dates and setting, intellectual or
+     * ecclesiastical context, and major role in the tradition. Written when the thinker is first
+     * substantively used; absent entries are shown as "not yet written", never as finished.
+     */
+    bio: text.optional(),
+    /** Why this thinker matters specifically to Worldviews Examined. Shorter than the bio. */
+    significance: text.optional(),
+    /** Short concepts for scanning and later cross-linking. */
+    keyIdeas: z.array(text).default([]),
+    /**
+     * Explicit position within the thinker's worldview and role (1 = first). Used instead of
+     * alphabetical order so the roster can express a historical or intellectual trajectory.
+     * Unordered entries sort after ordered ones, alphabetically.
+     */
+    displayOrder: z.number().int().positive().optional(),
+    /** Structured titles; link `sourceId` to a registered source rather than duplicating bibliography. */
     representativeWorks: z
       .array(
         z

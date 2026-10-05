@@ -28,6 +28,8 @@ Read these files before changing architecture or content:
 - Do not mark an answer `reviewed` or `complete` unless every section is present, the view and principal analytical sections are cited, and every cited source has `verificationStatus: checked`. Never mark a source `checked` without verifying it against the edition.
 - Thinkers are `primary`, `specialist` or `interlocutor`. Interlocutors are not representatives of a worldview lane; Christian interlocutors (Aquinas, Athanasius, Anselm) are not representatives of the Reformed apologetic method.
 
+- Thinker biographies, significance and key ideas are written when a thinker is first used in researched content; do not mass-generate them. Thinker order is explicit (`displayOrder`), not alphabetical. Portraits are deferred.
+
 ## Engineering rules
 
 - Preserve static-first architecture.

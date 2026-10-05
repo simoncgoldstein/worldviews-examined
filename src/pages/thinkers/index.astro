@@ -2,14 +2,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getContent, thinkerUrl } from '../../lib/content';
 import { lifespan } from '../../lib/format';
-import { roleLabel, roleOrder, symbols } from '../../lib/labels';
+import { roleLabel, symbols } from '../../lib/labels';
 
 const content = await getContent();
 const groups = content.worldviews.map((worldview) => ({
   worldview,
-  thinkers: content.thinkers
-    .filter((t) => t.worldview === worldview.id)
-    .sort((a, b) => roleOrder[a.role] - roleOrder[b.role] || a.name.localeCompare(b.name)),
+  // content.thinkers is already ordered by role, then explicit displayOrder.
+  thinkers: content.thinkers.filter((t) => t.worldview === worldview.id),
 }));
 ---
 

@@ -54,6 +54,15 @@ Not done in Phase 2: bibliographic metadata on seed sources has not been checked
 - [ ] Verify seed source metadata (title, author/editor, edition, publication details, locator conventions, URL) and mark entries `checked`. All 19 seed sources are still `unverified`.
 - [ ] Confirm the GitHub Actions run (Node 24) after the commit is pushed; only a pushed commit can confirm this.
 
+## Phase 2.2: Editorial-model hardening
+
+- [x] Thinker profile fields: `bio`, `significance`, `keyIdeas`, structured `representativeWorks` and explicit `displayOrder`.
+- [x] Explicit thinker ordering (Reformed primary sequence is historical, not alphabetical); worldview, registry and thinker pages respect it.
+- [x] Thinker page layout for profile content; profile validation (a reviewed/complete answer's thinkers need a bio and significance).
+- [x] Reveal-on-hash enhancement for citations inside the collapsible Deep dive (framework-free; plain anchors still work without JavaScript).
+- Unchanged by design: reviewed/complete answers must cite in the view and the principal analytical section; no per-section citation quotas; seed sources stay `unverified` until verified as they are used.
+- Deferred: finished biographies (written as thinkers are first used in researched content) and thinker portraits or sketches (Phase 7 final polish).
+
 ## Phase 3: Vertical slice
 
 Implement one complete showcase question before mass-writing content:
@@ -132,6 +141,7 @@ Perform two separate reviews.
 - [ ] Mobile pass.
 - [ ] Broken-link / source validation.
 - [ ] Metadata and social preview.
+- [ ] Thinker portraits or sketches (optional final polish).
 - [ ] About / Method / Sources pages complete.
 - [ ] GitHub Pages deployment stable.
 - [ ] README updated with live URL.

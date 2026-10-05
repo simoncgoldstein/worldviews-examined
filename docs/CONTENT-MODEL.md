@@ -53,13 +53,23 @@ Example: `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `title
   usedFor: string[],              // subjects, mainly for specialists
   schools: string[],
   birthYear?, deathYear?, era?,   // era for approximate or debated dating
-  description,
-  representativeWorks: { title, year?, sourceId? }[],
+  description,                    // one line, used in lists and as the page lede
+  bio?,                           // concise biography, eventually about 80-150 words
+  significance?,                  // why the thinker matters to Worldviews Examined
+  keyIdeas: string[],             // short concepts for scanning and later cross-linking
+  displayOrder?,                  // explicit order within worldview + role (1 = first)
+  representativeWorks: { title, year?, sourceId? }[],  // link sourceId rather than duplicating bibliography
   notes?
 }
 ```
 
 The registry is a research map, not a claim that thinkers within a lane agree.
+
+**Biographies are a core thinker-page feature, but are written as thinkers are used.** `bio`, `significance` and `keyIdeas` are optional so the registry can be seeded without inventing profiles. A missing biography is shown as "not yet written", never as finished. Biographies and significance are normally completed when a thinker is first used in researched content, and are required (validated) for every thinker named by a `reviewed` or `complete` answer. A `bio` outside roughly 60-180 words produces a validation warning. Only Van Til currently has a drafted profile, as a worked example; it has not been reviewed against sources. Portraits or sketches are deferred to final polish (Phase 7); there is no image support yet.
+
+**Ordering is explicit, not alphabetical.** Within a worldview, thinkers are ordered by role (primary, specialist, interlocutor), then by `displayOrder`, then by name as a fallback for entries without one. `displayOrder` must be unique within a worldview and role (validated). The Reformed primary sequence is intentionally historical and intellectual: Augustine, Calvin, Turretin, Witsius, Bavinck, Vos, Van Til, Bahnsen. Worldview, registry and thinker pages all respect this order.
+
+**Thinker page layout:** name; dates · worldview · school · role; lede; biography; why this thinker matters; key ideas; representative works; the questions the thinker appears in.
 
 **Roles**
 
@@ -90,7 +100,7 @@ The finalized rosters are listed in `docs/SOURCES.md`.
 
 Each work is registered once. Locators belong to individual citations.
 
-**Verification.** `checked` means the title, author/editor/translator, edition, publication details, locator conventions and URL were verified against the actual edition. Seed entries are `unverified`; do not set `checked` without doing that work. `outline`, `draft` and `researched` answers may cite unverified sources; `reviewed` and `complete` answers may not (validated).
+**Verification happens as research enters `reviewed` / `complete` status**, source by source, not in bulk. `checked` means the title, author/editor/translator, edition, publication details, locator conventions and URL were verified against the actual edition. Seed entries are `unverified`; do not set `checked` without doing that work. `outline`, `draft` and `researched` answers may cite unverified sources; `reviewed` and `complete` answers may not (validated).
 
 ### `answers`
 
@@ -160,7 +170,7 @@ Write citations inline in any section of an answer body:
 - Numbering is document-wide across all sections of one answer. Each distinct (source, locator) pair gets one number in order of first appearance; repeating the same pair, even in another section, reuses the number and gives its Sources entry one `↩` backlink per use.
 - The same source cited at a different locator gets its own number; its Sources entry uses the source's `shortCitation`.
 - Markers render as `<sup class="cite"><a href="#…-src-N">N</a></sup>`, a real anchor needing no JavaScript, with an `aria-label` such as "Source 1: Calvin, Institutes, I.1.1". The numbered Sources list sits after the answer's sections (outside the collapsible Deep dive) and is the `:target`.
-- Fragment links into a closed Deep dive open it in Chrome; other browsers' behavior is not verified. The visible markers a reader activates are always in sections that are already visible or already open.
+- **Deep dive fragment behavior.** The Deep dive is a semantic `<details>`. A small framework-free script (`src/scripts/reveal-hash.ts`) opens any closed ancestor `<details>` of the fragment target on initial load and on `hashchange`, then scrolls the target into view (instantly, so it never animates and respects reduced motion). It exists because a source's `↩` backlink can point at a citation inside a closed Deep dive, and browsers other than Chrome are not guaranteed to open it. Citation to source navigation is plain anchor navigation and needs no JavaScript; the script only improves the closed-details case.
 
 ## Source hierarchy
 

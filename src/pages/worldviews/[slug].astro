@@ -14,9 +14,8 @@ export const getStaticPaths = (async () => {
 const { id } = Astro.props;
 const content = await getContent();
 const worldview = lookup(content.worldviewById, id, 'worldview');
-const roster = content.thinkers
-  .filter((t) => t.worldview === worldview.id)
-  .sort((a, b) => a.name.localeCompare(b.name));
+// Already ordered by role, then explicit displayOrder.
+const roster = content.thinkers.filter((t) => t.worldview === worldview.id);
 const groups = [
   { role: 'primary' as const, heading: 'Primary representatives' },
   { role: 'specialist' as const, heading: 'Specialists' },

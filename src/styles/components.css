@@ -343,3 +343,10 @@ sup.cite a:target { background: var(--color-target); }
 [data-section='christian-response'] > .answer__label::before { content: '§ '; content: '§ ' / ''; color: var(--color-text-muted); font-weight: 400; }
 [data-section='strongest-objection'] > .answer__label::before,
 [data-section='pressure-questions'] > .answer__label::before { content: '◇ '; content: '◇ ' / ''; color: var(--color-text-muted); font-weight: 400; }
+
+/* --- Thinker page ----------------------------------------------------------------------- */
+
+.thinker-meta { margin-bottom: var(--space-3); }
+.thinker-body h2.section-title { text-transform: uppercase; }
+.key-ideas { gap: 0 var(--space-6); }
+.key-ideas li { padding-block: var(--space-1); border-bottom: 1px solid var(--color-rule); }

@@ -27,9 +27,11 @@ Every thinker in the registry (`src/content/thinkers/thinkers.yaml`) has a role:
 
 Worldviews need not have the same number of primary thinkers. Thinkers within a lane do not necessarily agree with one another.
 
+Thinkers are listed below in their explicit `displayOrder`, not alphabetically. The Reformed primary sequence (Augustine, Calvin, Turretin, Witsius, Bavinck, Vos, Van Til, Bahnsen) deliberately shows an intellectual and historical trajectory. Each thinker page is meant to carry a short biography, a statement of why the thinker matters to this site, key ideas, representative works and the questions where the thinker appears; these are written when a thinker is first substantively used.
+
 ## Source verification
 
-Sources in the registry carry `verificationStatus`: `unverified` (seed bibliography) or `checked` (title, author/editor/translator, edition, publication details, locator conventions and URL verified against the actual edition, with `verifiedOn`). Outline, draft and researched answers may cite unverified sources; **reviewed and complete answers may cite only checked sources**. All current seed sources are unverified.
+Sources in the registry carry `verificationStatus`: `unverified` (seed bibliography) or `checked` (title, author/editor/translator, edition, publication details, locator conventions and URL verified against the actual edition, with `verifiedOn`). Outline, draft and researched answers may cite unverified sources; **reviewed and complete answers may cite only checked sources**. All current seed sources are unverified. Verification is done source by source as research reaches reviewed or complete status, not in bulk; a source is marked `checked` only after its author/editor, title, edition and publication data, URL and locator convention have actually been verified.
 
 ## Citation expectations
 

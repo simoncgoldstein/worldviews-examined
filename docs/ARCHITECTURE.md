@@ -118,6 +118,8 @@ There will eventually be roughly 26 core questions x 6 worldview families. Separ
 
 ## Client-side interaction
 
+Currently the only script is `src/scripts/reveal-hash.ts`, which opens a closed `<details>` that contains a fragment target (see CONTENT-MODEL.md). It is an enhancement; the site works without it.
+
 Core reading must work without JavaScript. JavaScript may enhance:
 
 - showing/hiding selected worldview cards;

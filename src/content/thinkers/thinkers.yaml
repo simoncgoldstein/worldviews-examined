@@ -14,6 +14,7 @@
   name: John Calvin
   worldview: christianity
   role: primary
+  displayOrder: 2
   schools: [Reformed theology]
   birthYear: 1509
   deathYear: 1564
@@ -26,6 +27,7 @@
   name: Francis Turretin
   worldview: christianity
   role: primary
+  displayOrder: 3
   schools: [Reformed scholasticism]
   birthYear: 1623
   deathYear: 1687
@@ -38,6 +40,7 @@
   name: Herman Bavinck
   worldview: christianity
   role: primary
+  displayOrder: 5
   schools: [Dutch Reformed theology]
   birthYear: 1854
   deathYear: 1921
@@ -50,6 +53,7 @@
   name: Geerhardus Vos
   worldview: christianity
   role: primary
+  displayOrder: 6
   schools: [Reformed biblical theology]
   birthYear: 1862
   deathYear: 1949
@@ -62,10 +66,31 @@
   name: Cornelius Van Til
   worldview: christianity
   role: primary
+  displayOrder: 7
   schools: [Presuppositional apologetics]
   birthYear: 1895
   deathYear: 1987
   description: Reformed apologist who developed the Creator-creature distinction, analogical knowledge and the transcendental method into a distinctive apologetic.
+  # Drafted as a worked example of the profile fields; not yet reviewed against sources.
+  bio: >-
+    Cornelius Van Til (1895–1987) was born in the Netherlands and emigrated to the United
+    States as a boy. After studying at Calvin College and Princeton Theological Seminary, he
+    completed a doctorate at Princeton University in 1927. From 1929 until his retirement in
+    1972 he taught apologetics at Westminster Theological Seminary in Philadelphia, where he
+    was a member of the original faculty. Working within the Reformed tradition and drawing on
+    Kuyper, Bavinck and others, he developed an approach to apologetics grounded in the
+    Creator-creature distinction. His writings made him the best-known twentieth-century
+    proponent of what came to be called presuppositional apologetics.
+  significance: >-
+    Van Til matters particularly for the Creator-creature distinction, analogical knowledge,
+    antithesis, transcendental apologetics and the denial of religious neutrality.
+  keyIdeas:
+    - Creator-creature distinction
+    - Analogical knowledge
+    - Antithesis
+    - Transcendental argument
+    - No brute facts
+    - Denial of religious neutrality
   representativeWorks:
     - { title: The Defense of the Faith, year: 1955, sourceId: van-til-defense }
 
@@ -74,6 +99,7 @@
   name: Greg L. Bahnsen
   worldview: christianity
   role: primary
+  displayOrder: 8
   schools: [Presuppositional apologetics]
   birthYear: 1948
   deathYear: 1995
@@ -86,6 +112,7 @@
   name: Augustine of Hippo
   worldview: christianity
   role: primary
+  displayOrder: 1
   schools: [Patristic theology, Augustinian tradition]
   birthYear: 354
   deathYear: 430
@@ -100,6 +127,7 @@
   name: Herman Witsius
   worldview: christianity
   role: primary
+  displayOrder: 4
   schools: [Reformed covenant theology]
   birthYear: 1636
   deathYear: 1708
@@ -112,6 +140,7 @@
   name: Jonathan Edwards
   worldview: christianity
   role: specialist
+  displayOrder: 1
   usedFor: [affections, will, beauty, desire, religious experience]
   schools: [New England Reformed theology]
   birthYear: 1703
@@ -127,6 +156,7 @@
   name: John Owen
   worldview: christianity
   role: specialist
+  displayOrder: 2
   usedFor: [sin, mortification, the Holy Spirit, atonement, communion with God, Christology]
   schools: [English Puritan Reformed theology]
   birthYear: 1616
@@ -142,6 +172,7 @@
   name: Thomas Aquinas
   worldview: christianity
   role: interlocutor
+  displayOrder: 1
   schools: [Scholasticism, Thomism]
   birthYear: 1225
   deathYear: 1274
@@ -156,6 +187,7 @@
   name: Athanasius of Alexandria
   worldview: christianity
   role: interlocutor
+  displayOrder: 2
   schools: [Patristic theology, Nicene orthodoxy]
   era: c. 296–373
   description: Bishop of Alexandria and chief defender of Nicene Trinitarian and Christological orthodoxy.
@@ -168,6 +200,7 @@
   name: Anselm of Canterbury
   worldview: christianity
   role: interlocutor
+  displayOrder: 3
   schools: [Scholasticism]
   birthYear: 1033
   deathYear: 1109
@@ -183,6 +216,7 @@
   name: David Hume
   worldview: naturalism
   role: primary
+  displayOrder: 1
   schools: [Empiricism, Scottish Enlightenment]
   birthYear: 1711
   deathYear: 1776
@@ -198,6 +232,7 @@
   name: Bertrand Russell
   worldview: naturalism
   role: primary
+  displayOrder: 2
   schools: [Analytic philosophy]
   birthYear: 1872
   deathYear: 1970
@@ -211,6 +246,7 @@
   name: J. L. Mackie
   worldview: naturalism
   role: primary
+  displayOrder: 3
   schools: [Analytic philosophy, Moral error theory]
   birthYear: 1917
   deathYear: 1981
@@ -225,6 +261,7 @@
   name: Daniel Dennett
   worldview: naturalism
   role: primary
+  displayOrder: 4
   schools: [Philosophy of mind, Evolutionary naturalism]
   birthYear: 1942
   deathYear: 2024
@@ -238,6 +275,7 @@
   name: Graham Oppy
   worldview: naturalism
   role: primary
+  displayOrder: 5
   schools: [Analytic philosophy of religion]
   description: Australian philosopher who has defended naturalism through detailed engagement with arguments for and against theism.
   representativeWorks:
@@ -248,6 +286,7 @@
   name: Peter Railton
   worldview: naturalism
   role: specialist
+  displayOrder: 1
   usedFor: [ethics, naturalistic moral realism]
   schools: [Naturalistic moral realism]
   description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
@@ -259,6 +298,7 @@
   name: Alex Rosenberg
   worldview: naturalism
   role: specialist
+  displayOrder: 3
   usedFor: [reductive naturalism, meaning and morality, philosophy of mind]
   schools: [Reductive naturalism]
   description: American philosopher who defends a rigorous, reductive scientific naturalism, including its consequences for meaning and morality.
@@ -271,6 +311,7 @@
   name: W. V. O. Quine
   worldview: naturalism
   role: specialist
+  displayOrder: 2
   usedFor: [naturalized epistemology, ontology, philosophy of language]
   schools: [Analytic philosophy, Naturalized epistemology]
   birthYear: 1908
@@ -287,6 +328,7 @@
   name: Moses Maimonides
   worldview: judaism
   role: primary
+  displayOrder: 3
   schools: [Medieval Jewish rationalism, Halakhic codification]
   birthYear: 1138
   deathYear: 1204
@@ -301,6 +343,7 @@
   name: Judah Halevi
   worldview: judaism
   role: primary
+  displayOrder: 2
   schools: [Medieval Jewish philosophy]
   birthYear: 1075
   deathYear: 1141
@@ -314,6 +357,7 @@
   name: Joseph B. Soloveitchik
   worldview: judaism
   role: primary
+  displayOrder: 5
   schools: [Modern Orthodox Judaism]
   birthYear: 1903
   deathYear: 1993
@@ -327,6 +371,7 @@
   name: Saadia Gaon
   worldview: judaism
   role: primary
+  displayOrder: 1
   schools: [Medieval Jewish rationalism, Geonic tradition]
   birthYear: 882
   deathYear: 942
@@ -339,6 +384,7 @@
   name: Nachmanides (Moses ben Nahman)
   worldview: judaism
   role: primary
+  displayOrder: 4
   schools: [Medieval Talmudic scholarship, Kabbalah]
   birthYear: 1194
   era: 1194–c. 1270
@@ -352,6 +398,7 @@
   name: Abu al-Hasan al-Ash'ari
   worldview: islam
   role: primary
+  displayOrder: 1
   schools: [Ash'ari kalam]
   birthYear: 874
   deathYear: 936
@@ -366,6 +413,7 @@
   name: Abu Mansur al-Maturidi
   worldview: islam
   role: primary
+  displayOrder: 2
   schools: [Maturidi kalam]
   deathYear: 944
   description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
@@ -378,6 +426,7 @@
   name: Abu Hamid al-Ghazali
   worldview: islam
   role: primary
+  displayOrder: 4
   schools: [Ash'ari kalam, Sufism]
   birthYear: 1058
   deathYear: 1111
@@ -391,6 +440,7 @@
   name: Fakhr al-Din al-Razi
   worldview: islam
   role: primary
+  displayOrder: 5
   schools: [Ash'ari kalam, Philosophical theology]
   birthYear: 1149
   deathYear: 1209
@@ -404,6 +454,7 @@
   name: Ibn Taymiyya
   worldview: islam
   role: primary
+  displayOrder: 6
   schools: [Hanbali jurisprudence, Athari theology]
   birthYear: 1263
   deathYear: 1328
@@ -417,6 +468,7 @@
   name: Avicenna (Ibn Sina)
   worldview: islam
   role: primary
+  displayOrder: 3
   schools: [Islamic philosophy, Peripatetic tradition]
   birthYear: 980
   deathYear: 1037
@@ -431,6 +483,7 @@
   name: Ibn Arabi
   worldview: islam
   role: specialist
+  displayOrder: 1
   usedFor: [mystical theology, Sufi metaphysics]
   schools: [Sufism]
   birthYear: 1165
@@ -447,6 +500,7 @@
   name: Shankara
   worldview: hinduism
   role: primary
+  displayOrder: 1
   schools: [Advaita Vedanta]
   era: 8th century CE (dates debated)
   description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
@@ -459,6 +513,7 @@
   name: Ramanuja
   worldview: hinduism
   role: primary
+  displayOrder: 2
   schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
   era: 11th–12th century CE
   description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
@@ -470,6 +525,7 @@
   name: Madhva
   worldview: hinduism
   role: primary
+  displayOrder: 3
   schools: [Dvaita Vedanta]
   era: 13th century CE
   description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
@@ -481,6 +537,7 @@
   name: Udayana
   worldview: hinduism
   role: primary
+  displayOrder: 4
   schools: [Nyaya]
   era: late 10th century CE
   description: Nyaya philosopher who developed the realist natural-theological tradition, arguing for God as creator and answering Buddhist critics.
@@ -493,6 +550,7 @@
   name: Kumarila Bhatta
   worldview: hinduism
   role: primary
+  displayOrder: 5
   schools: [Mimamsa]
   era: c. 7th century CE
   description: Mimamsa philosopher who defended the authority of the Veda and developed theories of language and knowledge.
@@ -506,6 +564,7 @@
   name: Abhinavagupta
   worldview: hinduism
   role: specialist
+  displayOrder: 1
   usedFor: [nondual Shaiva philosophy, aesthetics, consciousness]
   schools: [Kashmir Shaivism]
   era: c. 10th–11th century CE
@@ -519,6 +578,7 @@
   name: Buddhaghosa
   worldview: buddhism
   role: primary
+  displayOrder: 1
   schools: [Theravada]
   era: 5th century CE
   description: Commentator who systematized the Theravada understanding of the Pali Canon.
@@ -530,6 +590,7 @@
   name: Nagarjuna
   worldview: buddhism
   role: primary
+  displayOrder: 2
   schools: [Madhyamaka, Mahayana]
   era: c. 2nd–3rd century CE
   description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
@@ -541,6 +602,7 @@
   name: Vasubandhu
   worldview: buddhism
   role: primary
+  displayOrder: 3
   schools: [Abhidharma, Yogacara]
   era: 4th or 5th century CE
   description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
@@ -553,6 +615,7 @@
   name: Shantideva
   worldview: buddhism
   role: specialist
+  displayOrder: 1
   usedFor: [ethics, the bodhisattva path]
   schools: [Madhyamaka, Mahayana]
   era: 8th century CE
@@ -565,6 +628,7 @@
   name: Dogen
   worldview: buddhism
   role: specialist
+  displayOrder: 2
   usedFor: [Zen practice, time and enlightenment]
   schools: [Soto Zen]
   birthYear: 1200
@@ -578,6 +642,7 @@
   name: Tsongkhapa
   worldview: buddhism
   role: primary
+  displayOrder: 5
   schools: [Gelug, Tibetan Madhyamaka]
   birthYear: 1357
   deathYear: 1419
@@ -590,6 +655,7 @@
   name: Dharmakirti
   worldview: buddhism
   role: primary
+  displayOrder: 4
   schools: [Buddhist epistemology, Yogacara-Sautrantika]
   era: c. 7th century CE
   description: Buddhist logician and epistemologist whose work on valid cognition became the basis of Buddhist philosophy of knowledge in India and Tibet.
