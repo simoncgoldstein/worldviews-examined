@@ -2,12 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getContent, thinkerUrl } from '../../lib/content';
 import { lifespan } from '../../lib/format';
-import { symbols } from '../../lib/labels';
+import { roleLabel, roleOrder, symbols } from '../../lib/labels';
 
 const content = await getContent();
 const groups = content.worldviews.map((worldview) => ({
   worldview,
-  thinkers: content.thinkers.filter((t) => t.worldview === worldview.id),
+  thinkers: content.thinkers
+    .filter((t) => t.worldview === worldview.id)
+    .sort((a, b) => roleOrder[a.role] - roleOrder[b.role] || a.name.localeCompare(b.name)),
 }));
 ---
 
@@ -21,7 +23,9 @@ const groups = content.worldviews.map((worldview) => ({
       <h1>Thinkers</h1>
       <p class="lede">
         A research map of the figures each worldview is sourced from. It is not exhaustive, and
-        thinkers within one lane do not necessarily agree with one another.
+        thinkers within one lane do not necessarily agree with one another. Within each worldview,
+        primary representatives come first, then specialists, then interlocutors, who are important
+        to the comparison but are not presented as representatives of that worldview.
       </p>
     </header>
 
@@ -45,6 +49,8 @@ const groups = content.worldviews.map((worldview) => ({
                   <li>
                     <h3><a href={thinkerUrl(thinker)}>{thinker.name}</a></h3>
                     <p class="meta">
+                      <span class="role" data-role={thinker.role}>{roleLabel(thinker)}</span>
+                      <span aria-hidden="true"> {symbols.separator} </span>
                       {thinker.schools.join(', ')}
                       {lifespan(thinker) && <><span aria-hidden="true"> {symbols.separator} </span>{lifespan(thinker)}</>}
                     </p>

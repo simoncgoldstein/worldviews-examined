@@ -316,3 +316,30 @@ sup.cite a:target { background: var(--color-target); }
 
 /* Registry page: sources grouped by tradition. */
 .source-registry .source-entry { padding-block: var(--space-2); }
+
+/* --- Thinker roles ---------------------------------------------------------------------- */
+
+/* Roles are small-caps text, not badges. Interlocutors are set apart by wording, not colour. */
+.role {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+.role[data-role='interlocutor'] { font-style: italic; }
+.roster-heading {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  margin: var(--space-6) 0 var(--space-1);
+}
+.verification { font-variant: small-caps; letter-spacing: 0.04em; }
+
+/* --- Answer sections (headings come from the MDX body) ------------------------------------ */
+
+.answer__lede { color: var(--color-text-muted); max-width: var(--measure); }
+.answer__body > :last-child { margin-bottom: 0; }
+/* Editorial marks keyed to the semantic section; hidden from assistive technology. */
+[data-section='christian-response'] > .answer__label::before { content: '§ '; content: '§ ' / ''; color: var(--color-text-muted); font-weight: 400; }
+[data-section='strongest-objection'] > .answer__label::before,
+[data-section='pressure-questions'] > .answer__label::before { content: '◇ '; content: '◇ ' / ''; color: var(--color-text-muted); font-weight: 400; }

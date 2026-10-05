@@ -44,6 +44,16 @@ A live GitHub Pages site that allows a reader to compare six worldview families 
 
 Not done in Phase 2: bibliographic metadata on seed sources has not been checked against the cited editions and must be verified before any quotation or locator is relied on.
 
+## Phase 2.1: Architecture and content-model hardening
+
+- [x] Thinker roles (primary / specialist / interlocutor) and the finalized rosters (46 thinkers).
+- [x] Answer prose moved from frontmatter into MDX body sections, so citations work in every section.
+- [x] Validation of required MDX sections by `analysis.kind` and review status.
+- [x] Source `verificationStatus`; reviewed and complete answers may cite only checked sources.
+- [x] Thinker-role presentation on thinker, worldview and registry pages.
+- [ ] Verify seed source metadata (title, author/editor, edition, publication details, locator conventions, URL) and mark entries `checked`. All 19 seed sources are still `unverified`.
+- [ ] Confirm the GitHub Actions run (Node 24) after the commit is pushed; only a pushed commit can confirm this.
+
 ## Phase 3: Vertical slice
 
 Implement one complete showcase question before mass-writing content:

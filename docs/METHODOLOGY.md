@@ -59,6 +59,16 @@ A serious objection, preferably one actually made by major critics rather than a
 **Christian reply**  
 The best confessional Reformed response.
 
+## Thinker roles
+
+Each thinker is registered as a **primary** representative (regularly used to represent a significant strand of a worldview), a **specialist** (used for particular subjects), or an **interlocutor** (important to the comparison but not presented as a representative of that worldview lane). Lanes need not have equal numbers of primary thinkers, and thinkers within a lane are not assumed to agree.
+
+Christian interlocutors such as Aquinas, Athanasius and Anselm are not representatives of this site's specifically Reformed apologetic method, and must not be presented as such. Augustine is treated as a primary Christian antecedent of Reformed theology.
+
+## Where the comparison structure lives
+
+The comparison structure above is realized as required level-two sections in each answer's MDX body, so that every section can carry citations. Reviewed and complete answers must have every section, must cite sources in the view and principal analytical sections, and may cite only checked sources. See `docs/CONTENT-MODEL.md`.
+
 ## Master tests
 
 The site does not reduce worldview testing to one argument. It evaluates systems across six domains:

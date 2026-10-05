@@ -23,9 +23,12 @@ export type AnalysisKind = (typeof ANALYSIS_KINDS)[number];
 export const REVIEW_STATUSES = ['outline', 'draft', 'researched', 'reviewed', 'complete'] as const;
 export type ReviewStatus = (typeof REVIEW_STATUSES)[number];
 
-/** From this status upward an answer must contain its analytical section. */
-export const ANALYSIS_REQUIRED_FROM: ReviewStatus = 'researched';
-/** From this status upward an answer must also name its scope and at least one thinker. */
+/** From this status upward an answer body must contain its core sections (see answer-sections.ts). */
+export const SECTIONS_REQUIRED_FROM: ReviewStatus = 'researched';
+/**
+ * From this status upward an answer must also name its scope and a thinker, contain a Deep dive,
+ * carry citations in its core sections, and cite only checked sources.
+ */
 export const ATTRIBUTION_REQUIRED_FROM: ReviewStatus = 'reviewed';
 
 export function statusAtLeast(status: ReviewStatus, minimum: ReviewStatus): boolean {
@@ -96,6 +99,9 @@ export const SOURCE_TYPES = [
   'web',
 ] as const;
 
+export const VERIFICATION_STATUSES = ['unverified', 'checked'] as const;
+export type VerificationStatus = (typeof VERIFICATION_STATUSES)[number];
+
 export const sourceSchema = z
   .object({
     id: idSchema,
@@ -118,11 +124,31 @@ export const sourceSchema = z
     /** Overrides the citation derived from the metadata above. Rarely needed. */
     displayCitation: text.optional(),
     notes: text.optional(),
+    /**
+     * "checked" means title, author/editor/translator, edition, publication details, locator
+     * conventions and URL were verified against the actual edition. Seed entries are "unverified".
+     * Reviewed and complete answers may cite only checked sources.
+     */
+    verificationStatus: z.enum(VERIFICATION_STATUSES).default('unverified'),
+    /** ISO date (YYYY-MM-DD) of the verification. Required when status is "checked". */
+    verifiedOn: z.iso.date().optional(),
   })
-  .strict();
+  .strict()
+  .refine((source) => source.verificationStatus !== 'checked' || Boolean(source.verifiedOn), {
+    message: 'checked sources must record verifiedOn',
+    path: ['verifiedOn'],
+  });
 export type Source = z.infer<typeof sourceSchema>;
 
 // --- thinkers ---------------------------------------------------------------------------
+
+/**
+ * primary:      a major thinker regularly used to represent a significant strand of the worldview.
+ * specialist:   used mainly for particular subjects (ethics, epistemology, mystical theology, ...).
+ * interlocutor: important to the comparison but not presented as a representative of this lane.
+ */
+export const THINKER_ROLES = ['primary', 'specialist', 'interlocutor'] as const;
+export type ThinkerRole = (typeof THINKER_ROLES)[number];
 
 export const thinkerSchema = z
   .object({
@@ -131,6 +157,9 @@ export const thinkerSchema = z
     name: text,
     /** Worldview ID this thinker is mapped to. A research map, not a claim of agreement. */
     worldview: idSchema,
+    role: z.enum(THINKER_ROLES),
+    /** For specialists: the subjects the thinker is used for. */
+    usedFor: z.array(text).default([]),
     schools: z.array(text).min(1),
     birthYear: z.number().int().optional(),
     deathYear: z.number().int().optional(),
@@ -177,28 +206,11 @@ export type Citation = z.infer<typeof citationSchema>;
 
 // --- answers ----------------------------------------------------------------------------
 
-const nonChristianAnalysis = z
-  .object({
-    kind: z.literal('nonChristian'),
-    christianResponse: text.optional(),
-    pressureQuestions: z.array(text).default([]),
-  })
-  .strict();
-
-const christianAnalysis = z
-  .object({
-    kind: z.literal('christian'),
-    strongestObjection: text.optional(),
-    christianReply: text.optional(),
-  })
-  .strict();
-
-export const analysisSchema = z.discriminatedUnion('kind', [christianAnalysis, nonChristianAnalysis]);
-export type Analysis = z.infer<typeof analysisSchema>;
-
 /**
- * One entry per (questionId, worldviewId). The deep dive is the MDX body; its citations are
- * written inline as <Cite source="…" locator="…" /> and are extracted at build time.
+ * One entry per (questionId, worldviewId). Frontmatter is metadata only. All substantive prose
+ * lives in the MDX body under a fixed set of level-two sections (see src/lib/answer-sections.ts),
+ * so every section can carry <Cite /> citations. Section presence is validated by
+ * scripts/validate-content.ts according to `analysis.kind` and `reviewStatus`.
  */
 export const answerSchema = z
   .object({
@@ -208,64 +220,33 @@ export const answerSchema = z
     /** Which school or thinker supplies the account, when internal diversity matters. */
     scope: text.optional(),
     traditionNotes: z.array(text).default([]),
-    /** "The view": the strongest concise account of the position in its own terms. */
-    summary: text,
-    /** "What this explains well". */
-    strengths: z.array(text).default([]),
     /** Thinker IDs whose work supplies the account. */
     thinkers: z.array(idSchema).default([]),
-    analysis: analysisSchema,
+    /** Selects the required section set and presentation. Must match the worldview's analysisKind. */
+    analysis: z.object({ kind: z.enum(ANALYSIS_KINDS) }).strict(),
+    /** Optional short unsourced teaser for navigation. Not a place for argument or claims. */
+    lede: text.max(240).optional(),
   })
   .strict()
   .superRefine((answer, ctx) => {
-    for (const issue of answerCompletenessIssues(answer)) {
+    for (const issue of answerMetadataIssues(answer)) {
       ctx.addIssue({ code: 'custom', path: issue.path, message: issue.message });
     }
   });
 export type Answer = z.infer<typeof answerSchema>;
 
-type AnswerShape = {
-  reviewStatus: ReviewStatus;
-  scope?: string | undefined;
-  strengths: string[];
-  thinkers: string[];
-  analysis: Analysis;
-};
+type AnswerShape = { reviewStatus: ReviewStatus; scope?: string | undefined; thinkers: string[] };
 
-/** Required-section rules, shared by the schema and the validation script. */
-export function answerCompletenessIssues(answer: AnswerShape): { path: (string | number)[]; message: string }[] {
+/** Metadata rules by status. Body-section rules live in src/lib/answer-sections.ts. */
+export function answerMetadataIssues(answer: AnswerShape): { path: (string | number)[]; message: string }[] {
   const issues: { path: (string | number)[]; message: string }[] = [];
-  const { reviewStatus, analysis } = answer;
-
-  if (statusAtLeast(reviewStatus, ANALYSIS_REQUIRED_FROM)) {
-    if (answer.strengths.length === 0) {
-      issues.push({ path: ['strengths'], message: `"${reviewStatus}" answers must list what the view explains well` });
-    }
-    if (analysis.kind === 'nonChristian') {
-      if (!analysis.christianResponse) {
-        issues.push({ path: ['analysis', 'christianResponse'], message: `"${reviewStatus}" non-Christian answers require a Christian response` });
-      }
-      if (analysis.pressureQuestions.length === 0) {
-        issues.push({ path: ['analysis', 'pressureQuestions'], message: `"${reviewStatus}" non-Christian answers require at least one pressure question` });
-      }
-    } else {
-      if (!analysis.strongestObjection) {
-        issues.push({ path: ['analysis', 'strongestObjection'], message: `"${reviewStatus}" Christian answers require a strongest objection` });
-      }
-      if (!analysis.christianReply) {
-        issues.push({ path: ['analysis', 'christianReply'], message: `"${reviewStatus}" Christian answers require a Christian reply` });
-      }
-    }
-  }
-
-  if (statusAtLeast(reviewStatus, ATTRIBUTION_REQUIRED_FROM)) {
+  if (statusAtLeast(answer.reviewStatus, ATTRIBUTION_REQUIRED_FROM)) {
     if (!answer.scope) {
-      issues.push({ path: ['scope'], message: `"${reviewStatus}" answers must name the school or scope represented` });
+      issues.push({ path: ['scope'], message: `"${answer.reviewStatus}" answers must name the school or scope represented` });
     }
     if (answer.thinkers.length === 0) {
-      issues.push({ path: ['thinkers'], message: `"${reviewStatus}" answers must name at least one representative thinker` });
+      issues.push({ path: ['thinkers'], message: `"${answer.reviewStatus}" answers must name at least one representative thinker` });
     }
   }
-
   return issues;
 }

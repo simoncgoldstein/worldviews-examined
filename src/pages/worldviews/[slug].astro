@@ -3,7 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { answersForWorldview, getContent, lookup, questionUrl, thinkerUrl } from '../../lib/content';
 import { lifespan } from '../../lib/format';
-import { statusLabels, symbols } from '../../lib/labels';
+import { roleDescriptions, statusLabels, symbols } from '../../lib/labels';
 import { url } from '../../lib/paths';
 
 export const getStaticPaths = (async () => {
@@ -14,7 +14,14 @@ export const getStaticPaths = (async () => {
 const { id } = Astro.props;
 const content = await getContent();
 const worldview = lookup(content.worldviewById, id, 'worldview');
-const thinkers = content.thinkers.filter((t) => t.worldview === worldview.id);
+const roster = content.thinkers
+  .filter((t) => t.worldview === worldview.id)
+  .sort((a, b) => a.name.localeCompare(b.name));
+const groups = [
+  { role: 'primary' as const, heading: 'Primary representatives' },
+  { role: 'specialist' as const, heading: 'Specialists' },
+  { role: 'interlocutor' as const, heading: worldview.id === 'christianity' ? 'Christian interlocutors' : 'Interlocutors' },
+].map((g) => ({ ...g, thinkers: roster.filter((t) => t.role === g.role) }));
 const answerByQuestion = new Map(answersForWorldview(content, worldview.id).map((a) => [a.data.questionId, a]));
 ---
 
@@ -61,17 +68,25 @@ const answerByQuestion = new Map(answersForWorldview(content, worldview.id).map(
 
         <h2 class="section-title" id="thinkers"><span aria-hidden="true">{symbols.section} </span>Representative thinkers</h2>
         <p class="muted prose">A research map, not a claim that these figures agree with one another or speak for every adherent.</p>
-        <ul class="inline-list">
-          {
-            thinkers.map((t) => (
-              <li>
-                <a href={thinkerUrl(t)}>{t.name}</a>
-                {lifespan(t) && <span class="muted"> {symbols.separator} {lifespan(t)}</span>}
-              </li>
+        {
+          groups
+            .filter((g) => g.thinkers.length > 0)
+            .map((g) => (
+              <>
+                <h3 class="roster-heading">{g.heading}</h3>
+                <p class="meta">{roleDescriptions[g.role]}</p>
+                <ul class="inline-list">
+                  {g.thinkers.map((t) => (
+                    <li>
+                      <a href={thinkerUrl(t)}>{t.name}</a>
+                      {lifespan(t) && <span class="muted"> {symbols.separator} {lifespan(t)}</span>}
+                      {t.usedFor.length > 0 && <span class="muted"> {symbols.separator} {t.usedFor.join(', ')}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
             ))
-          }
-        </ul>
-
+        }
         <h2 class="section-title" id="coverage"><span aria-hidden="true">{symbols.section} </span>Entries by question</h2>
         {
           content.categories.map((category) => (

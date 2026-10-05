@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import remarkCitations from './src/lib/remark-citations.mjs';
+import remarkAnswerSections from './src/lib/remark-answer-sections.mjs';
 
 // Static output for GitHub Pages project site:
 // https://simoncgoldstein.github.io/worldviews-examined/
@@ -11,9 +12,9 @@ export default defineConfig({
   base: '/worldviews-examined',
   output: 'static',
   trailingSlash: 'always',
-  // Citation numbering needs a remark plugin, so Markdown/MDX run on the unified processor.
+  // Citation numbering and answer sections need remark plugins, so Markdown/MDX run on the unified processor.
   markdown: {
-    processor: unified({ remarkPlugins: [remarkCitations] }),
+    processor: unified({ remarkPlugins: [remarkCitations, remarkAnswerSections] }),
   },
   integrations: [mdx()],
   vite: {

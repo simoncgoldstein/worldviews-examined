@@ -22,6 +22,12 @@ Read these files before changing architecture or content:
 - Do not use numeric worldview scores, red-X/green-check verdict graphics, or caricature labels.
 - Cite substantive claims and quotations with stable source identifiers and precise locators where possible.
 
+## Answer files
+
+- Answer frontmatter is metadata only. All substantive prose goes in the MDX body under the required level-two sections for the entry's `analysis.kind` (see `docs/CONTENT-MODEL.md`), so it can carry `<Cite />` citations. Do not put argument or summaries in frontmatter.
+- Do not mark an answer `reviewed` or `complete` unless every section is present, the view and principal analytical sections are cited, and every cited source has `verificationStatus: checked`. Never mark a source `checked` without verifying it against the edition.
+- Thinkers are `primary`, `specialist` or `interlocutor`. Interlocutors are not representatives of a worldview lane; Christian interlocutors (Aquinas, Athanasius, Anselm) are not representatives of the Reformed apologetic method.
+
 ## Engineering rules
 
 - Preserve static-first architecture.

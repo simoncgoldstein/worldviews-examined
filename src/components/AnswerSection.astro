@@ -1,0 +1,33 @@
+---
+// One semantic section of an answer body. Injected around each "## Heading" by
+// src/lib/remark-answer-sections.mjs. The "Deep dive" section is collapsible; every other
+// section is always visible. Section marks (§, ◇) come from CSS keyed on `data-section`.
+import { symbols } from '../lib/labels';
+
+interface Props {
+  ns: string;
+  slug: string;
+  title: string;
+}
+
+const { ns, slug, title } = Astro.props;
+const id = `${ns}-${slug}`;
+---
+
+{
+  slug === 'deep-dive' ? (
+    <details class="deep-dive" data-section={slug}>
+      <summary id={id}>
+        <span aria-hidden="true">{symbols.forward} </span>{title}
+      </summary>
+      <div class="deep-dive__body prose">
+        <slot />
+      </div>
+    </details>
+  ) : (
+    <section class="answer__section" data-section={slug} aria-labelledby={id}>
+      <h3 class="answer__label" id={id}>{title}</h3>
+      <slot />
+    </section>
+  )
+}

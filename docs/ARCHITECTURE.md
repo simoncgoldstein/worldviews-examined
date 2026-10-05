@@ -112,6 +112,7 @@ There will eventually be roughly 26 core questions x 6 worldview families. Separ
 - Registries (`worldviews`, `categories`, `questions`, `thinkers`, `sources`) are one YAML list per collection; `answers` are one MDX file per worldview/question pair at `src/content/answers/<worldviewId>/<questionId>.mdx`.
 - All schemas live in `src/content/schemas.ts` (Zod, imported by both Astro and the validation script). Cross-reference rules live in `src/lib/content-checks.ts`.
 - `npm run validate` checks duplicate IDs/slugs, every reference, answer pair uniqueness, citation data, and required analytical sections by review status, then prints answer coverage. `npm run build` runs it first, so an invalid reference fails the build.
+- Answer frontmatter is metadata only; prose lives in MDX body sections (`src/lib/answer-sections.ts` defines and validates them) which `src/lib/remark-answer-sections.mjs` wraps in an `AnswerSection` component.
 - Citations are written `<Cite source="calvin-institutes" locator="I.1.1" />` in answer MDX. A remark plugin (`src/lib/remark-citations.mjs`) numbers them and exposes the list; the page renders numbered superscripts and a Sources list from that one list. Citation navigation is plain anchors and needs no JavaScript.
 - **Astro 7 note:** Sätteri is the default Markdown processor in Astro 7 and does not run remark plugins. The project sets `markdown.processor` to `unified()` from `@astrojs/markdown-remark` solely so the citation plugin can run. This does not change the stack (Astro + MDX, static).
 

@@ -17,6 +17,20 @@ Every deep dive should identify the school being represented when internal diver
 
 For naturalistic atheism, which has no canon, prefer serious philosophical proponents and peer-level debates rather than popular polemicists alone.
 
+## Thinker roles
+
+Every thinker in the registry (`src/content/thinkers/thinkers.yaml`) has a role:
+
+- **Primary**: a major thinker regularly used to represent a significant strand of the worldview.
+- **Specialist**: used primarily for particular subjects, such as ethics, epistemology, mystical theology, affections or philosophy of mind.
+- **Interlocutor**: historically or philosophically important to the comparison but not presented as a representative of the site's worldview lane.
+
+Worldviews need not have the same number of primary thinkers. Thinkers within a lane do not necessarily agree with one another.
+
+## Source verification
+
+Sources in the registry carry `verificationStatus`: `unverified` (seed bibliography) or `checked` (title, author/editor/translator, edition, publication details, locator conventions and URL verified against the actual edition, with `verifiedOn`). Outline, draft and researched answers may cite unverified sources; **reviewed and complete answers may cite only checked sources**. All current seed sources are unverified.
+
 ## Citation expectations
 
 Store sources in a structured registry with stable IDs. A citation should record, where applicable:
@@ -47,18 +61,36 @@ Quotations should be checked against the cited edition. Avoid unattributed quote
 
 ## Major thinkers
 
-- Augustine of Hippo
+### Primary
+
+- Augustine of Hippo (a primary Christian antecedent: will, grace, evil, history, soteriology)
 - John Calvin
 - Francis Turretin
+- Herman Witsius
 - Herman Bavinck
 - Geerhardus Vos
 - Cornelius Van Til
 - Greg L. Bahnsen
 
+### Specialists
+
+- Jonathan Edwards: affections, will, beauty, desire and religious experience
+- John Owen: sin, mortification, the Holy Spirit, atonement, communion with God and Christology
+
+### Christian interlocutors
+
+- Thomas Aquinas
+- Athanasius of Alexandria
+- Anselm of Canterbury
+
+These are important Christian thinkers but are **not** representatives of the site's specifically Reformed apologetic method. Aquinas in particular must be clearly distinguished from Van Tilian method.
+
 ## Research roles
 
+- **Augustine**: will, grace, evil, the two cities, history and the structure of Christian anthropology that Reformed theology inherits.
 - **Calvin**: knowledge of God, sensus divinitatis, image of God, fall, common grace themes, providence.
 - **Turretin**: scholastic precision on theology proper, providence, freedom, knowledge, and polemics.
+- **Witsius**: covenant theology.
 - **Bavinck**: revelation, worldview integration, religion, anthropology, modernity.
 - **Van Til**: Creator-creature distinction, analogical knowledge, no brute facts, transcendental method, antithesis/common grace.
 - **Bahnsen**: accessible transcendental apologetic method, internal critique, ethics and worldview argument.
@@ -73,12 +105,18 @@ There is no single atheist creed. The site should distinguish metaphysical natur
 
 ## Representative thinkers
 
-- David Hume, as a major historical critic of natural theology, causation, and induction
+### Primary
+
+- David Hume, as a major historical critic of natural theology, causation and induction
 - Bertrand Russell
 - J. L. Mackie
 - Daniel Dennett
 - Graham Oppy
+
+### Specialists
+
 - Peter Railton, especially for naturalistic moral realism
+- W. V. O. Quine, for naturalized epistemology and ontology
 - Alex Rosenberg, as a particularly rigorous reductive naturalist
 
 ## Use with care
@@ -102,12 +140,13 @@ The category should principally represent post-Second-Temple rabbinic Judaism an
 
 ## Major thinkers
 
+### Primary
+
 - Saadia Gaon
 - Judah Halevi
 - Moses Maimonides
 - Nachmanides
 - Joseph B. Soloveitchik
-- Jonathan Sacks
 
 ## Research cautions
 
@@ -129,11 +168,20 @@ The default steelman should usually begin with mainstream Sunni Islam while noti
 
 ## Major thinkers
 
+### Primary
+
 - Abu al-Hasan al-Ash'ari
 - Abu Mansur al-Maturidi
+- Avicenna (Ibn Sina)
 - al-Ghazali
 - Fakhr al-Din al-Razi
 - Ibn Taymiyya
+
+### Specialist
+
+- Ibn Arabi, for mystical theology and Sufi metaphysics
+
+Identify philosophical (Avicenna), kalam (Ash'ari, Maturidi, al-Ghazali, al-Razi), traditionalist (Ibn Taymiyya) and mystical (Ibn Arabi) differences where they matter.
 
 ## Research cautions
 
@@ -156,10 +204,19 @@ The default steelman should usually begin with mainstream Sunni Islam while noti
 
 ## Major thinkers / schools
 
+### Primary
+
 - Shankara, Advaita Vedanta
 - Ramanuja, Vishishtadvaita Vedanta
 - Madhva, Dvaita Vedanta
-- major Vaishnava/bhakti traditions where the question is relational or devotional
+- Udayana, Nyaya: the realist and natural-theological tradition
+- Kumarila Bhatta, Mimamsa: Vedic authority, language and epistemology
+
+### Specialist
+
+- Abhinavagupta, Kashmir Shaivism: nondual Shaiva philosophy, aesthetics and consciousness
+
+The roster deliberately extends beyond Vedanta. Major Vaishnava/bhakti traditions remain relevant where a question is relational or devotional.
 
 ## Research cautions
 
@@ -181,12 +238,18 @@ The site should distinguish Theravada, Mahayana, and Vajrayana where differences
 
 ## Major thinkers
 
+### Primary
+
 - Buddhaghosa
 - Nagarjuna
 - Vasubandhu
-- Shantideva
-- Dogen
-- Tsongkhapa when Tibetan scholastic treatment is relevant
+- Dharmakirti: Buddhist logic and epistemology, essential to the Knowledge & Truth domain
+- Tsongkhapa
+
+### Specialists
+
+- Shantideva, for ethics and the bodhisattva path
+- Dogen, for Zen practice, time and enlightenment
 
 ## Research cautions
 

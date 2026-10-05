@@ -1,5 +1,6 @@
-// Presentation vocabulary. Labels are derived from `analysis.kind`, never stored in content.
-import type { AnalysisKind, ReviewStatus } from '../content/schemas.ts';
+// Presentation vocabulary: editorial symbols, thinker role labels and review-status labels.
+// Answer section headings are not here; they are written in the MDX body and validated.
+import type { ReviewStatus, Thinker, ThinkerRole } from '../content/schemas.ts';
 
 /** Editorial notation vocabulary. Use sparingly. */
 export const symbols = {
@@ -12,26 +13,27 @@ export const symbols = {
   back: '←',
 } as const;
 
-export interface AnswerLabels {
-  view: string;
-  explains: string;
-  analysis: { key: 'christianResponse' | 'strongestObjection'; label: string; mark?: string };
-  followUp: { key: 'pressureQuestions' | 'christianReply'; label: string; mark?: string; plural?: string };
+/**
+ * Restrained role labels. A Christian interlocutor is labelled as such so it never reads as part
+ * of the Reformed apologetic roster.
+ */
+export function roleLabel(thinker: Pick<Thinker, 'role' | 'worldview'>): string {
+  switch (thinker.role) {
+    case 'primary':
+      return 'Primary representative';
+    case 'specialist':
+      return 'Specialist';
+    case 'interlocutor':
+      return thinker.worldview === 'christianity' ? 'Christian interlocutor' : 'Interlocutor';
+  }
 }
 
-export const answerLabels: Record<AnalysisKind, AnswerLabels> = {
-  nonChristian: {
-    view: 'The view',
-    explains: 'What this explains well',
-    analysis: { key: 'christianResponse', label: 'Christian response', mark: symbols.section },
-    followUp: { key: 'pressureQuestions', label: 'Pressure question', mark: symbols.pressure, plural: 'Pressure questions' },
-  },
-  christian: {
-    view: 'The Christian view',
-    explains: 'What this explains well',
-    analysis: { key: 'strongestObjection', label: 'Strongest objection', mark: symbols.pressure },
-    followUp: { key: 'christianReply', label: 'Christian reply' },
-  },
+export const roleOrder: Record<ThinkerRole, number> = { primary: 0, specialist: 1, interlocutor: 2 };
+
+export const roleDescriptions: Record<ThinkerRole, string> = {
+  primary: 'A major thinker regularly used to represent a significant strand of the worldview.',
+  specialist: 'Used primarily for particular subjects, such as ethics, epistemology or mystical theology.',
+  interlocutor: 'Important to the comparison but not presented as a representative of this worldview lane.',
 };
 
 export const statusLabels: Record<ReviewStatus, string> = {

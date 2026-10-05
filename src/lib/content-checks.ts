@@ -11,6 +11,7 @@ import {
   type Worldview,
 } from '../content/schemas.ts';
 import { extractCiteTags } from './citations.ts';
+import { sectionIssues } from './answer-sections.ts';
 
 export interface AnswerRecord {
   /** Repo-relative path, used in messages and checked against worldviewId/questionId. */
@@ -71,6 +72,7 @@ export function checkContent(content: ContentSet): CheckResult {
   const thinkerIds = new Set(content.thinkers.map((t) => t.id));
   const sourceIds = new Set(content.sources.map((s) => s.id));
   const worldviewById = new Map(content.worldviews.map((w) => [w.id, w]));
+  const sourceById = new Map(content.sources.map((s) => [s.id, s]));
 
   // Questions.
   for (const question of content.questions) {
@@ -107,6 +109,12 @@ export function checkContent(content: ContentSet): CheckResult {
     }
   }
 
+  for (const worldview of content.worldviews) {
+    if (!content.thinkers.some((t) => t.worldview === worldview.id && t.role === 'primary')) {
+      errors.push(`worldview "${worldview.id}": has no primary thinker`);
+    }
+  }
+
   // Answers.
   const pairs = new Map<string, string>();
   for (const { path, data, body } of content.answers) {
@@ -133,10 +141,20 @@ export function checkContent(content: ContentSet): CheckResult {
       if (!thinkerIds.has(thinkerId)) errors.push(`${label}: unknown thinker "${thinkerId}"`);
     }
 
+    for (const issue of sectionIssues({ kind: data.analysis.kind, status: data.reviewStatus, body })) {
+      errors.push(`${label}: ${issue}`);
+    }
+
+    const mustUseCheckedSources = statusAtLeast(data.reviewStatus, 'reviewed');
+    const unverified = new Set<string>();
     for (const tag of extractCiteTags(body)) {
       for (const problem of tag.problems) errors.push(`${label}: malformed citation ${tag.raw}: ${problem}`);
       const source = tag.attributes.source;
       if (source && !sourceIds.has(source)) errors.push(`${label}: citation refers to unknown source "${source}"`);
+      if (mustUseCheckedSources && source && sourceById.get(source)?.verificationStatus !== 'checked') unverified.add(source);
+    }
+    for (const id of unverified) {
+      errors.push(`${label}: "${data.reviewStatus}" answers may not cite unverified source "${id}"`);
     }
   }
 

@@ -26,7 +26,8 @@ const groups = content.worldviews
       <h1>Sources</h1>
       <p class="lede">
         Each work is registered once here and cited elsewhere with its own locator. This is a seed
-        registry, not a bibliography.
+        registry, not a bibliography. Entries marked unverified have not been checked against the
+        cited edition; reviewed and complete answers may cite only checked sources.
       </p>
     </header>
 
@@ -56,6 +57,10 @@ const groups = content.worldviews
                       </p>
                       <p class="meta">
                         {sourceTypeLabels[source.type]}
+                        <span aria-hidden="true"> {symbols.separator} </span>
+                        <span class={`verification verification--${source.verificationStatus}`}>
+                          {source.verificationStatus === 'checked' ? `Checked ${source.verifiedOn}` : 'Unverified seed entry'}
+                        </span>
                         {source.notes && <><span aria-hidden="true"> {symbols.separator} </span>{source.notes}</>}
                       </p>
                       {citing.length > 0 && (

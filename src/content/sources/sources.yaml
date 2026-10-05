@@ -10,7 +10,10 @@
 #     historical and philosophical scholarship.
 #
 # This is a seed registry to prove the architecture, not a bibliography. Bibliographic
-# details have not yet been checked against the cited editions; verify before relying on them.
+# details have not yet been checked against the cited editions. Every entry is "unverified"
+# (the default) until title, author/editor/translator, edition, publication details, locator
+# conventions and URL are verified; then set verificationStatus: checked and verifiedOn. Reviewed
+# and complete answers may cite only checked sources.
 
 # --- Reformed Christianity ---------------------------------------------------------------
 - id: bible-esv

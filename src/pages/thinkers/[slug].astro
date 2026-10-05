@@ -3,7 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { answersForThinker, getContent, lookup, questionUrl, sourceUrl, worldviewUrl } from '../../lib/content';
 import { lifespan } from '../../lib/format';
-import { statusLabels, symbols } from '../../lib/labels';
+import { roleDescriptions, roleLabel, statusLabels, symbols } from '../../lib/labels';
 import { url } from '../../lib/paths';
 
 export const getStaticPaths = (async () => {
@@ -23,7 +23,7 @@ const cited = answersForThinker(content, thinker);
     <a class="back-link" href={url('thinkers/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All thinkers</a>
 
     <header class="page-head">
-      <p class="eyebrow">Thinker</p>
+      <p class="eyebrow">{roleLabel(thinker)}</p>
       <h1>{thinker.name}</h1>
       <p class="meta">
         {thinker.schools.join(', ')}
@@ -37,6 +37,10 @@ const cited = answersForThinker(content, thinker);
       <p>
         Mapped to <a href={worldviewUrl(worldview)}>{worldview.name}</a>. The mapping is a research
         convenience, not a claim that this thinker speaks for every adherent.
+      </p>
+      <p class="muted">
+        <strong>{roleLabel(thinker)}.</strong> {roleDescriptions[thinker.role]}
+        {thinker.usedFor.length > 0 && <> Used for: {thinker.usedFor.join(', ')}.</>}
       </p>
 
       {

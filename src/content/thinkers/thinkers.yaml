@@ -1,5 +1,11 @@
 # Thinker registry: a research map, not a claim that any figure represents every adherent
 # of a worldview, or that thinkers within one lane agree. `worldview` is a worldview ID.
+#
+# role:
+#   primary       a major thinker regularly used to represent a significant strand of the worldview
+#   specialist    used mainly for particular subjects (see `usedFor`)
+#   interlocutor  important to the comparison but NOT presented as a representative of the lane
+# Lanes need not have the same number of primary thinkers.
 # Dates are given only where reasonably settled; otherwise `era` carries a looser dating.
 
 # --- Reformed Christianity ---------------------------------------------------------------
@@ -7,6 +13,7 @@
   slug: john-calvin
   name: John Calvin
   worldview: christianity
+  role: primary
   schools: [Reformed theology]
   birthYear: 1509
   deathYear: 1564
@@ -18,6 +25,7 @@
   slug: francis-turretin
   name: Francis Turretin
   worldview: christianity
+  role: primary
   schools: [Reformed scholasticism]
   birthYear: 1623
   deathYear: 1687
@@ -29,6 +37,7 @@
   slug: herman-bavinck
   name: Herman Bavinck
   worldview: christianity
+  role: primary
   schools: [Dutch Reformed theology]
   birthYear: 1854
   deathYear: 1921
@@ -40,6 +49,7 @@
   slug: geerhardus-vos
   name: Geerhardus Vos
   worldview: christianity
+  role: primary
   schools: [Reformed biblical theology]
   birthYear: 1862
   deathYear: 1949
@@ -51,6 +61,7 @@
   slug: cornelius-van-til
   name: Cornelius Van Til
   worldview: christianity
+  role: primary
   schools: [Presuppositional apologetics]
   birthYear: 1895
   deathYear: 1987
@@ -62,6 +73,7 @@
   slug: greg-bahnsen
   name: Greg L. Bahnsen
   worldview: christianity
+  role: primary
   schools: [Presuppositional apologetics]
   birthYear: 1948
   deathYear: 1995
@@ -69,11 +81,108 @@
   representativeWorks:
     - { title: "Van Til's Apologetic: Readings and Analysis", year: 1998, sourceId: bahnsen-van-til-apologetic }
 
+- id: augustine
+  slug: augustine-of-hippo
+  name: Augustine of Hippo
+  worldview: christianity
+  role: primary
+  schools: [Patristic theology, Augustinian tradition]
+  birthYear: 354
+  deathYear: 430
+  description: North African bishop and theologian whose work on will, grace, evil, the two cities and history is foundational to Reformed anthropology and soteriology.
+  representativeWorks:
+    - { title: Confessions }
+    - { title: The City of God }
+  notes: Included as a primary Christian antecedent of the Reformed tradition, not as a Reformed theologian.
+
+- id: witsius
+  slug: herman-witsius
+  name: Herman Witsius
+  worldview: christianity
+  role: primary
+  schools: [Reformed covenant theology]
+  birthYear: 1636
+  deathYear: 1708
+  description: Dutch Reformed theologian whose systematic treatment of the covenants shaped Reformed covenant theology.
+  representativeWorks:
+    - { title: The Economy of the Covenants between God and Man }
+
+- id: edwards
+  slug: jonathan-edwards
+  name: Jonathan Edwards
+  worldview: christianity
+  role: specialist
+  usedFor: [affections, will, beauty, desire, religious experience]
+  schools: [New England Reformed theology]
+  birthYear: 1703
+  deathYear: 1758
+  description: American theologian and philosopher whose analyses of the affections, the will and the beauty of God have been influential in Reformed thought.
+  representativeWorks:
+    - { title: A Treatise Concerning Religious Affections, year: 1746 }
+    - { title: Freedom of the Will, year: 1754 }
+    - { title: The Nature of True Virtue }
+
+- id: owen
+  slug: john-owen
+  name: John Owen
+  worldview: christianity
+  role: specialist
+  usedFor: [sin, mortification, the Holy Spirit, atonement, communion with God, Christology]
+  schools: [English Puritan Reformed theology]
+  birthYear: 1616
+  deathYear: 1683
+  description: English Puritan theologian known for detailed treatments of indwelling sin, the work of the Spirit, the atonement and communion with God.
+  representativeWorks:
+    - { title: The Death of Death in the Death of Christ, year: 1647 }
+    - { title: Of the Mortification of Sin in Believers, year: 1656 }
+    - { title: Communion with God, year: 1657 }
+
+- id: aquinas
+  slug: thomas-aquinas
+  name: Thomas Aquinas
+  worldview: christianity
+  role: interlocutor
+  schools: [Scholasticism, Thomism]
+  birthYear: 1225
+  deathYear: 1274
+  description: Medieval theologian and philosopher whose synthesis of Christian doctrine and Aristotelian philosophy is a major point of reference in Christian thought.
+  representativeWorks:
+    - { title: Summa Theologiae }
+    - { title: Summa contra Gentiles }
+  notes: Not a representative of this site's Reformed apologetic method. His approach to natural theology and to the relation of reason and revelation is distinct from Van Tilian presuppositional method and should be presented as that of a Christian interlocutor.
+
+- id: athanasius
+  slug: athanasius-of-alexandria
+  name: Athanasius of Alexandria
+  worldview: christianity
+  role: interlocutor
+  schools: [Patristic theology, Nicene orthodoxy]
+  era: c. 296–373
+  description: Bishop of Alexandria and chief defender of Nicene Trinitarian and Christological orthodoxy.
+  representativeWorks:
+    - { title: On the Incarnation }
+  notes: A Christian interlocutor, not a representative of the site's specifically Reformed apologetic method.
+
+- id: anselm
+  slug: anselm-of-canterbury
+  name: Anselm of Canterbury
+  worldview: christianity
+  role: interlocutor
+  schools: [Scholasticism]
+  birthYear: 1033
+  deathYear: 1109
+  description: Archbishop and theologian known for the ontological argument and for a satisfaction account of the atonement.
+  representativeWorks:
+    - { title: Proslogion }
+    - { title: Cur Deus Homo }
+  notes: A Christian interlocutor, not a representative of the site's specifically Reformed apologetic method.
+
 # --- Naturalistic atheism ----------------------------------------------------------------
 - id: hume
   slug: david-hume
   name: David Hume
   worldview: naturalism
+  role: primary
   schools: [Empiricism, Scottish Enlightenment]
   birthYear: 1711
   deathYear: 1776
@@ -88,6 +197,7 @@
   slug: bertrand-russell
   name: Bertrand Russell
   worldview: naturalism
+  role: primary
   schools: [Analytic philosophy]
   birthYear: 1872
   deathYear: 1970
@@ -100,6 +210,7 @@
   slug: j-l-mackie
   name: J. L. Mackie
   worldview: naturalism
+  role: primary
   schools: [Analytic philosophy, Moral error theory]
   birthYear: 1917
   deathYear: 1981
@@ -113,6 +224,7 @@
   slug: daniel-dennett
   name: Daniel Dennett
   worldview: naturalism
+  role: primary
   schools: [Philosophy of mind, Evolutionary naturalism]
   birthYear: 1942
   deathYear: 2024
@@ -125,6 +237,7 @@
   slug: graham-oppy
   name: Graham Oppy
   worldview: naturalism
+  role: primary
   schools: [Analytic philosophy of religion]
   description: Australian philosopher who has defended naturalism through detailed engagement with arguments for and against theism.
   representativeWorks:
@@ -134,6 +247,8 @@
   slug: peter-railton
   name: Peter Railton
   worldview: naturalism
+  role: specialist
+  usedFor: [ethics, naturalistic moral realism]
   schools: [Naturalistic moral realism]
   description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
   representativeWorks:
@@ -143,17 +258,35 @@
   slug: alex-rosenberg
   name: Alex Rosenberg
   worldview: naturalism
+  role: specialist
+  usedFor: [reductive naturalism, meaning and morality, philosophy of mind]
   schools: [Reductive naturalism]
   description: American philosopher who defends a rigorous, reductive scientific naturalism, including its consequences for meaning and morality.
   representativeWorks:
     - { title: "The Atheist's Guide to Reality", year: 2011 }
   notes: Represents one demanding form of naturalism, not naturalism as a whole.
 
+- id: quine
+  slug: w-v-o-quine
+  name: W. V. O. Quine
+  worldview: naturalism
+  role: specialist
+  usedFor: [naturalized epistemology, ontology, philosophy of language]
+  schools: [Analytic philosophy, Naturalized epistemology]
+  birthYear: 1908
+  deathYear: 2000
+  description: American philosopher whose naturalized epistemology treats knowledge as part of empirical inquiry rather than as grounded in a prior first philosophy.
+  representativeWorks:
+    - { title: Word and Object, year: 1960 }
+    - { title: Epistemology Naturalized, year: 1969 }
+  notes: Used for epistemology and ontology. Quine did not write on religion in a way that represents naturalistic atheism generally.
+
 # --- Rabbinic Judaism --------------------------------------------------------------------
 - id: maimonides
   slug: maimonides
   name: Moses Maimonides
   worldview: judaism
+  role: primary
   schools: [Medieval Jewish rationalism, Halakhic codification]
   birthYear: 1138
   deathYear: 1204
@@ -167,6 +300,7 @@
   slug: judah-halevi
   name: Judah Halevi
   worldview: judaism
+  role: primary
   schools: [Medieval Jewish philosophy]
   birthYear: 1075
   deathYear: 1141
@@ -179,6 +313,7 @@
   slug: joseph-b-soloveitchik
   name: Joseph B. Soloveitchik
   worldview: judaism
+  role: primary
   schools: [Modern Orthodox Judaism]
   birthYear: 1903
   deathYear: 1993
@@ -187,11 +322,36 @@
     - { title: Halakhic Man, sourceId: soloveitchik-halakhic-man }
     - { title: The Lonely Man of Faith, year: 1965 }
 
+- id: saadia
+  slug: saadia-gaon
+  name: Saadia Gaon
+  worldview: judaism
+  role: primary
+  schools: [Medieval Jewish rationalism, Geonic tradition]
+  birthYear: 882
+  deathYear: 942
+  description: Head of the Sura academy who gave the first systematic philosophical defense of rabbinic Judaism.
+  representativeWorks:
+    - { title: The Book of Beliefs and Opinions (Emunot ve-De'ot) }
+
+- id: nachmanides
+  slug: nachmanides
+  name: Nachmanides (Moses ben Nahman)
+  worldview: judaism
+  role: primary
+  schools: [Medieval Talmudic scholarship, Kabbalah]
+  birthYear: 1194
+  era: 1194–c. 1270
+  description: Spanish Talmudist and biblical commentator who combined halakhic scholarship with mystical interpretation and defended Judaism in the Barcelona disputation.
+  representativeWorks:
+    - { title: Commentary on the Torah }
+
 # --- Classical Islam ---------------------------------------------------------------------
 - id: ash-ari
   slug: al-ashari
   name: Abu al-Hasan al-Ash'ari
   worldview: islam
+  role: primary
   schools: [Ash'ari kalam]
   birthYear: 874
   deathYear: 936
@@ -205,6 +365,7 @@
   slug: al-maturidi
   name: Abu Mansur al-Maturidi
   worldview: islam
+  role: primary
   schools: [Maturidi kalam]
   deathYear: 944
   description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
@@ -216,6 +377,7 @@
   slug: al-ghazali
   name: Abu Hamid al-Ghazali
   worldview: islam
+  role: primary
   schools: [Ash'ari kalam, Sufism]
   birthYear: 1058
   deathYear: 1111
@@ -228,6 +390,7 @@
   slug: fakhr-al-din-al-razi
   name: Fakhr al-Din al-Razi
   worldview: islam
+  role: primary
   schools: [Ash'ari kalam, Philosophical theology]
   birthYear: 1149
   deathYear: 1209
@@ -240,6 +403,7 @@
   slug: ibn-taymiyya
   name: Ibn Taymiyya
   worldview: islam
+  role: primary
   schools: [Hanbali jurisprudence, Athari theology]
   birthYear: 1263
   deathYear: 1328
@@ -248,11 +412,41 @@
     - { title: al-'Aqida al-Wasitiyya }
     - { title: "Dar' Ta'arud al-'Aql wa-l-Naql" }
 
+- id: ibn-sina
+  slug: avicenna-ibn-sina
+  name: Avicenna (Ibn Sina)
+  worldview: islam
+  role: primary
+  schools: [Islamic philosophy, Peripatetic tradition]
+  birthYear: 980
+  deathYear: 1037
+  description: Philosopher and physician whose metaphysics of the Necessary Existent shaped later Islamic theology and philosophy.
+  representativeWorks:
+    - { title: The Book of Healing (al-Shifa') }
+    - { title: al-Isharat wa-l-Tanbihat }
+  notes: Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
+
+- id: ibn-arabi
+  slug: ibn-arabi
+  name: Ibn Arabi
+  worldview: islam
+  role: specialist
+  usedFor: [mystical theology, Sufi metaphysics]
+  schools: [Sufism]
+  birthYear: 1165
+  deathYear: 1240
+  description: Andalusian mystic and author of an influential Sufi metaphysics of divine self-disclosure.
+  representativeWorks:
+    - { title: Fusus al-Hikam }
+    - { title: al-Futuhat al-Makkiyya }
+  notes: Used for mystical theology. His views are contested within mainstream Sunni thought and should not be treated as the default Islamic account.
+
 # --- Hindu traditions --------------------------------------------------------------------
 - id: shankara
   slug: shankara
   name: Shankara
   worldview: hinduism
+  role: primary
   schools: [Advaita Vedanta]
   era: 8th century CE (dates debated)
   description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
@@ -264,6 +458,7 @@
   slug: ramanuja
   name: Ramanuja
   worldview: hinduism
+  role: primary
   schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
   era: 11th–12th century CE
   description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
@@ -274,17 +469,56 @@
   slug: madhva
   name: Madhva
   worldview: hinduism
+  role: primary
   schools: [Dvaita Vedanta]
   era: 13th century CE
   description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
   representativeWorks:
     - { title: Brahma-sutra-bhashya }
 
+- id: udayana
+  slug: udayana
+  name: Udayana
+  worldview: hinduism
+  role: primary
+  schools: [Nyaya]
+  era: late 10th century CE
+  description: Nyaya philosopher who developed the realist natural-theological tradition, arguing for God as creator and answering Buddhist critics.
+  representativeWorks:
+    - { title: Nyayakusumanjali }
+  notes: Represents the Nyaya realist and natural-theological strand, widening Hindu representation beyond Vedanta.
+
+- id: kumarila
+  slug: kumarila-bhatta
+  name: Kumarila Bhatta
+  worldview: hinduism
+  role: primary
+  schools: [Mimamsa]
+  era: c. 7th century CE
+  description: Mimamsa philosopher who defended the authority of the Veda and developed theories of language and knowledge.
+  representativeWorks:
+    - { title: Slokavarttika }
+    - { title: Tantravarttika }
+  notes: Represents Mimamsa, particularly Vedic authority, language and epistemology.
+
+- id: abhinavagupta
+  slug: abhinavagupta
+  name: Abhinavagupta
+  worldview: hinduism
+  role: specialist
+  usedFor: [nondual Shaiva philosophy, aesthetics, consciousness]
+  schools: [Kashmir Shaivism]
+  era: c. 10th–11th century CE
+  description: Kashmir Shaiva philosopher and aesthetic theorist who set out a nondual philosophy of consciousness and a theory of aesthetic experience.
+  representativeWorks:
+    - { title: Tantraloka }
+
 # --- Buddhist traditions -----------------------------------------------------------------
 - id: buddhaghosa
   slug: buddhaghosa
   name: Buddhaghosa
   worldview: buddhism
+  role: primary
   schools: [Theravada]
   era: 5th century CE
   description: Commentator who systematized the Theravada understanding of the Pali Canon.
@@ -295,6 +529,7 @@
   slug: nagarjuna
   name: Nagarjuna
   worldview: buddhism
+  role: primary
   schools: [Madhyamaka, Mahayana]
   era: c. 2nd–3rd century CE
   description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
@@ -305,6 +540,7 @@
   slug: vasubandhu
   name: Vasubandhu
   worldview: buddhism
+  role: primary
   schools: [Abhidharma, Yogacara]
   era: 4th or 5th century CE
   description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
@@ -316,6 +552,8 @@
   slug: shantideva
   name: Shantideva
   worldview: buddhism
+  role: specialist
+  usedFor: [ethics, the bodhisattva path]
   schools: [Madhyamaka, Mahayana]
   era: 8th century CE
   description: Indian Mahayana poet-monk whose work sets out the path of the bodhisattva.
@@ -326,6 +564,8 @@
   slug: dogen
   name: Dogen
   worldview: buddhism
+  role: specialist
+  usedFor: [Zen practice, time and enlightenment]
   schools: [Soto Zen]
   birthYear: 1200
   deathYear: 1253
@@ -337,9 +577,23 @@
   slug: tsongkhapa
   name: Tsongkhapa
   worldview: buddhism
+  role: primary
   schools: [Gelug, Tibetan Madhyamaka]
   birthYear: 1357
   deathYear: 1419
   description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
   representativeWorks:
     - { title: Lamrim Chenmo }
+
+- id: dharmakirti
+  slug: dharmakirti
+  name: Dharmakirti
+  worldview: buddhism
+  role: primary
+  schools: [Buddhist epistemology, Yogacara-Sautrantika]
+  era: c. 7th century CE
+  description: Buddhist logician and epistemologist whose work on valid cognition became the basis of Buddhist philosophy of knowledge in India and Tibet.
+  representativeWorks:
+    - { title: Pramanavarttika }
+    - { title: Nyayabindu }
+  notes: Represents Buddhist logic and epistemology, central to the Knowledge & Truth domain.
