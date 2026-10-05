@@ -1,0 +1,134 @@
+# Roadmap
+
+## Product target
+
+A live GitHub Pages site that allows a reader to compare six worldview families across a common set of foundational questions, inspect steelman deep dives and sources, and understand the Reformed Christian response.
+
+## Phase 0: Repository and design decisions
+
+- [x] Choose static-first architecture.
+- [x] Choose Astro + TypeScript + Markdown/MDX.
+- [x] Define six worldview lanes.
+- [x] Define steelman / Christian-response methodology.
+- [x] Define broad question domains.
+- [x] Seed architecture, methodology, source, and content-model documents.
+- [ ] Create GitHub repository `worldviews-examined`.
+- [ ] Push repository seed.
+
+## Phase 1: Astro skeleton
+
+- [ ] Scaffold Astro project with strict TypeScript.
+- [ ] Add MDX integration.
+- [ ] Configure static output and GitHub Pages `site`/`base` settings.
+- [ ] Add GitHub Pages workflow.
+- [ ] Establish design tokens, typography, spacing, and responsive grid.
+- [ ] Build semantic global layout, header, footer, and method page.
+
+**Exit condition:** a minimal static site deploys successfully from `main` to GitHub Pages.
+
+## Phase 2: Content layer
+
+- [ ] Define content collection schemas.
+- [ ] Add worldview entries.
+- [ ] Add category entries.
+- [ ] Finalize stable question IDs.
+- [ ] Add thinker registry.
+- [ ] Add source registry.
+- [ ] Add answer schema and validation.
+- [ ] Add build-time coverage checks for missing worldview/question pairs.
+
+**Exit condition:** one question can be fully represented by six validated answer entries with sources.
+
+## Phase 3: Vertical slice
+
+Implement one complete showcase question before mass-writing content:
+
+**Featured question:** `great-and-terrible`
+
+- [ ] Six steelman summaries.
+- [ ] Six explanatory-strength sections.
+- [ ] Five Christian-response sections for non-Christian worldviews.
+- [ ] Strongest objection + Christian reply for Christianity.
+- [ ] Deep dives.
+- [ ] Primary/internal sources.
+- [ ] Thinker links.
+- [ ] Responsive comparison UI.
+
+**Exit condition:** this page establishes the quality bar for all later entries.
+
+## Phase 4: Core V1 content
+
+Populate the core question catalog in batches:
+
+1. Ultimate Reality
+2. Knowledge & Truth
+3. Man & Human Nature
+4. Morality, Evil & the Human Problem
+5. Salvation, Liberation & Human Destiny
+6. Revelation & History
+
+For each answer:
+
+- [ ] identify scope/school;
+- [ ] primary/internal source support;
+- [ ] steelman summary;
+- [ ] explanatory strengths;
+- [ ] Christian analysis or Christian objection/reply;
+- [ ] pressure questions where applicable;
+- [ ] source locators;
+- [ ] review status.
+
+**Exit condition:** every V1 question has all six worldview answers at least at researched-summary level.
+
+## Phase 5: Navigation and comparison features
+
+- [ ] Question Explorer.
+- [ ] Worldview Explorer.
+- [ ] Category pages.
+- [ ] Select/hide worldview filters.
+- [ ] Summary/deep-dive controls.
+- [ ] Related-question links.
+- [ ] Shareable comparison URLs.
+- [ ] Source pages and thinker pages.
+- [ ] Static search.
+
+## Phase 6: Research QA
+
+Perform two separate reviews.
+
+### Steelman review
+
+- [ ] Is the non-Christian view sourced internally?
+- [ ] Would a serious adherent recognize it?
+- [ ] Are important school differences disclosed?
+- [ ] Are objections real rather than invented straw men?
+
+### Reformed review
+
+- [ ] Scripture used accurately in context.
+- [ ] Confessional claims agree with Westminster Standards.
+- [ ] Van Til/Bahnsen claims are not reduced to slogans.
+- [ ] Common grace and the image of God prevent the critique from implying unbelievers know nothing.
+- [ ] Historical/evidential arguments are not replaced by bare assertion.
+
+## Phase 7: Public V1
+
+- [ ] Accessibility pass.
+- [ ] Mobile pass.
+- [ ] Broken-link / source validation.
+- [ ] Metadata and social preview.
+- [ ] About / Method / Sources pages complete.
+- [ ] GitHub Pages deployment stable.
+- [ ] README updated with live URL.
+
+## Later possibilities
+
+Not required for V1:
+
+- downloadable printable comparison sheets;
+- per-worldview apologetics field guides;
+- topical trails such as death, morality, knowledge, or suffering;
+- glossary of technical terms;
+- short primary-source excerpts within copyright limits;
+- expert review notes;
+- custom domain.
