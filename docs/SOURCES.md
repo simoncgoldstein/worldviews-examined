@@ -8,14 +8,36 @@ Every deep dive should identify the school being represented when internal diver
 
 ## Source priority
 
-1. Primary/canonical texts
-2. Foundational confessions, creeds, sutras, commentaries, or legal/theological works internal to the tradition
-3. Major historical thinkers within the tradition
-4. Major modern representatives within the tradition
-5. High-quality academic scholarship for historical, textual, demographic, or comparative claims
-6. Christian critical literature for the **Christian response**, not as the sole source for the steelman
+Primary, canonical, revelatory, confessional, or foundational texts form the base representation of a worldview. Major thinkers, theologians, philosophers, and scholars interpret, systematize, defend, critique, or develop those texts; they do not replace them because they are easier to cite.
 
-For naturalistic atheism, which has no canon, prefer serious philosophical proponents and peer-level debates rather than popular polemicists alone.
+1. Primary/canonical/foundational texts.
+2. Authoritative confessional or interpretive standards where the tradition has them.
+3. Major historical interpreters within the tradition.
+4. Later philosophers, theologians, specialists, and high-quality academic scholarship.
+
+Secondary scholarship is especially useful for interpretation, historical context, school distinctions, contested readings, and modern arguments, but should not unnecessarily displace a readable primary text. Christian critical literature belongs in the Christian response, never as the sole authority for another lane's steelman.
+
+Naturalism claims no canon or revelatory authority. Prefer serious philosophical proponents and peer-level debates; describe its authority structure accurately without treating a lack of canon as a refutation. See `docs/METHODOLOGY.md` for authority comparison and historical accountability.
+
+## Scripture quotation and copyright policy
+
+Scripture references may be used freely throughout the project. ESV is the preferred translation for direct quotations where permitted; quote selectively rather than reproducing large portions or adding quotations merely for citation density. Scripture must be substantively primary. Do not switch translations casually within a single argument without a textual reason.
+
+Maintain `docs/ESV-QUOTATION-LEDGER.md` whenever a public quotation is added, changed, repeated, or removed. Count partial verses conservatively as verses, record repetitions, quoted words and bytes by biblical book, and check both the whole site's volume and each published work's proportions. Internal research excerpts and any exports require their own inventory before publication; a reference without quoted wording is not a quotation.
+
+[Crossway's current digital standard-use policy](https://www.crossway.org/permissions/) was checked on 2026-10-05: up to and including 500 verses; no more than half of any biblical book (or its equivalent in bytes); quotations must comprise less than 25% of the work's text; and the standard allowance excludes commentary or other biblical reference works. It also prohibits making ESV text publicly available under a Creative Commons license and translating it into another language. Numerical headroom alone does not establish eligibility: assess the intended publication against these conditions. If permission becomes burdensome, the KJV may be used for direct quotation because it is public domain in the United States; register that edition when used. Retain coherent translation usage within an argument.
+
+The current required digital notice is maintained here and displayed on the site Sources page (use the marked-ESV form if additional translations are quoted):
+
+> Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. ESV Text Edition: 2025. The ESV text may not be quoted in any publication made available to the public by a Creative Commons license. The ESV may not be translated in whole or in part into any other language. Used by permission. All rights reserved.
+
+Confirm the edition's wording before quoting: the existing passage checks are retained, while the current publisher notice identifies Text Edition 2025. Do not silently relabel older translation checks as checks of revised wording. Recheck the publisher policy at publication and update the notice when necessary.
+
+## Reusable Bavinck Monergism edition
+
+All four 2026 Monergism volumes are separately registered as `bavinck-reformed-dogmatics-monergism-1` through `bavinck-reformed-dogmatics-monergism-4`. Their title and copyright pages and editor's note identify an automated English translation using OpenAI/5.2 API from Project Gutenberg's Dutch *Gereformeerde Dogmatiek*. This is not the professional Bolt/Vriend English edition (the existing `bavinck-reformed-dogmatics` record remains distinct).
+
+Future agents may cite and quote this Monergism English text directly, within applicable quotation permissions. Cite volume + section + numbered paragraph, adding explicitly labeled PDF page positions where useful; these PDFs have no printed English pagination, and embedded bracketed numbers refer to Dutch source pages, not English pages. Check new passages before citing them: registration of a volume verifies its identity and locator convention, not every passage. Compare especially consequential or disputed English wording against the Dutch Gutenberg control; preserve the checked Dutch Volume 3 source record. Only the already-used Volume 3 §39.5–6 passages were mined in this refinement run.
 
 ## Thinker roles
 
@@ -63,10 +85,10 @@ Quotations should be checked against the cited edition. Avoid unattributed quote
 
 These priorities govern Phase 4 onward, alongside the production policy in `docs/METHODOLOGY.md`. In every lane, represent the prominent position first and surface internal differences only where they materially change the answer. Before seeking a source, check `research/PHASE-4-REUSE-MAP.md` for the verified works and locators already established.
 
-- **Reformed Christianity.**
+- **Reformed Christianity.** Scripture is the primary and final authority; confessions and theologians are subordinate witnesses. Cite Scripture prominently before or alongside a direct confessional formulation, rather than making a theologian carry it.
   1. Scripture.
   2. The Westminster Standards: the Confession, Larger Catechism and Shorter Catechism. Westminster is the primary confessional standard for this lane, not one source among many.
-  3. Other major Reformed standards where useful: the Heidelberg Catechism, Belgic Confession and Canons of Dort. These are not yet in the registry; register and verify them when first used.
+  3. Other major Reformed standards where useful: the Heidelberg Catechism, Belgic Confession and Canons of Dort. All three are now registered and checked in the Morality/Evil pass; verify each new passage when first used.
   4. Augustine and Calvin.
   5. Other major Reformed primary voices where the question warrants: Turretin, Witsius, Bavinck, Vos, Owen, Edwards, Van Til, Bahnsen, and others in the registry.
 - **Rabbinic Judaism.** Tanakh; major rabbinic sources; representative major thinkers in the registry; strong internal Jewish or academic scholarship where interpretation requires it.

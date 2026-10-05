@@ -179,9 +179,10 @@
 # 5. Salvation, Liberation & Human Destiny
 - id: self-salvation
   slug: can-man-save-himself
-  title: Can man save, heal, or liberate himself?
+  title: What is wrong with man, and how can he be saved or liberated?
+  shortTitle: The human problem and salvation
   category: salvation-destiny
-  summary: Does the human problem have a human solution?
+  summary: How does each worldview diagnose the human problem and explain its remedy, means, grace or effort, and final state?
   order: 22
   relatedQuestions: [fail-the-good, guilt]
 

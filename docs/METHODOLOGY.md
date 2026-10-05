@@ -59,6 +59,36 @@ A serious objection, preferably one actually made by major critics rather than a
 **Christian reply**  
 The best confessional Reformed response.
 
+## Primary texts and recognized authority
+
+Primary, canonical, revelatory, confessional, or foundational texts form the base representation of a worldview. Major thinkers, theologians, philosophers, and scholars then interpret, systematize, defend, critique, or develop those texts. Later thinkers must not replace a readable authoritative or foundational text merely because they are easier to cite.
+
+The general order is primary/canonical/foundational texts; authoritative confessional or interpretive standards where the tradition has them; major historical interpreters; then later philosophers, theologians, specialists, and academic scholarship. Secondary scholarship serves interpretation, historical context, school distinctions, contested readings, and modern arguments. Historical evaluation also requires the appropriate historical evidence, rather than treating an internal hierarchy as proof.
+
+**Scripture is the primary and final authority for the Reformed Christian lane.** Confessions and theologians are subordinate witnesses that summarize, systematize, expound, and defend Scripture. Use Scripture first; Westminster Standards second; Heidelberg Catechism, Belgic Confession, and Canons of Dort third; Augustine and Calvin fourth; relevant major Reformed theologians (Bavinck, Owen, Turretin, Witsius, Edwards, Vos, Van Til, Bahnsen, etc.) thereafter. Ground a doctrinal claim directly in Scripture wherever possible, citing it prominently before or alongside the confession. Do not make a theologian carry a doctrine stated directly in Scripture and the confessions. See `docs/SOURCES.md` for quotation and edition policies.
+
+A worldview should be represented according to its own recognized sources of authority. Where a tradition contains major internal disagreement, identify the standards by which it claims such disagreements can be adjudicated. Compare how traditions adjudicate competing claims as well as what they believe.
+
+Diversity by itself is not a refutation. A demonstrated absence of a coherent or authoritative standard for resolving fundamental disagreements about ultimate reality, knowledge, morality, man, salvation/liberation, or revelation is legitimate comparative evidence; explain the specific failure and its implications rather than inferring it from disagreement alone. Naturalism claims no canon or revelatory authority: describe that accurately as a structural feature and examine its actual methods of adjudication, without forcing it into a canonical-text model or treating the absence of a canon as an automatic refutation.
+
+## Historical accountability
+
+Historical claims are evaluated historically. A tradition's internal authority explains why its adherents affirm a claim, but does not by itself establish that claim as historical fact in comparative evaluation.
+
+Apply this to revelation claims, founders and prophets, religious events, Jesus Christ, the crucifixion, resurrection claims, and later competing accounts of earlier events. Consider chronology, source proximity, textual attestation, historical context, and explanatory power where relevant. Distinguish later testimony about earlier events from contemporary or early evidence. Mutually contradictory historical claims do not become evidentially equal simply because each belongs to a religious tradition.
+
+The existing `jesus` anchor must address both what each worldview says about Jesus and how its claim stands relative to historical evidence. This is a requirement for its future research brief, not Jesus research or an answer in this run.
+
+## Diagnosis and remedy
+
+Each worldview's proposed remedy should be evaluated first for whether it coherently answers that worldview's own diagnosis of the human problem, and then comparatively for whether that diagnosis and remedy best fit reality.
+
+The existing `self-salvation` anchor, **What is wrong with man, and how can he be saved or liberated?**, uses the answer brief **diagnosis → remedy → means → role of grace/effort → final state**. Compare what is fundamentally wrong (guilt, corruption, ignorance, craving, karma, alienation, or another diagnosis); whether man can remedy himself; the roles of effort, works, knowledge, grace, mercy, revelation, sacrifice, and divine action; how guilt is dealt with; what actually changes; the final state; and what assurance is available. These are dimensions within the existing salvation domain, not new standalone questions. Link to `guilt`, `after-death`, and `final-end` for their distinct applications.
+
+## Fixed question architecture
+
+The current 28-question map is intentionally broad enough and is frozen for this production cycle. Do not add standalone questions for grace, works, assurance, holy books, historical evidence, resurrection evidence, internal consistency, free will, consciousness, mathematics, or denominational diversity. Handle them in the appropriate existing anchor or medium questions. Anchors carry foundational argument, medium questions apply those foundations, and concise questions link back to anchors. Preserve stable question IDs and existing slugs.
+
 ## Thinker roles
 
 Each thinker is registered as a **primary** representative (regularly used to represent a significant strand of a worldview), a **specialist** (used for particular subjects), or an **interlocutor** (important to the comparison but not presented as a representative of that worldview lane). Lanes need not have equal numbers of primary thinkers, and thinkers within a lane are not assumed to agree.
@@ -151,6 +181,21 @@ Phase 3 was a maximum-rigor calibration run. Its workflow of about thirty agents
 - **Question depth.** Questions are classed as anchor, medium or concise/derivative (see the reuse map). Concise questions are answered briefly and link to the anchor question that carries the argument.
 
 The verification protocol in `docs/SOURCES.md` is unchanged: reviewed answers still cite only checked sources.
+
+## Completion gate: final corpus-wide audit
+
+After all 28 questions have been drafted, audit the entire corpus before declaring the site complete. Record findings, repairs, and unresolved limitations in a completion audit report; individual answer review does not substitute for this gate.
+
+- **Reformed grounding:** Is Scripture genuinely primary, with major doctrines grounded in relevant biblical texts? Are Westminster and the other confessions faithful, and major Reformed sources used where they materially contribute?
+- **Primary-source completeness:** Has each lane used the central primary/canonical texts relevant to each topic? Were important source traditions omitted because a convenient secondary source sufficed?
+- **Fairness:** Would serious, informed adherents recognize the representation? Are material school differences surfaced, without exaggerating or suppressing diversity?
+- **Historical claims:** Are claims tested against historical evidence, distinguishing later accounts of earlier events from contemporary or early evidence?
+- **Salvation/liberation:** Are diagnosis and remedy clear, with grace, effort, guilt, forgiveness, liberation, and final destiny compared where relevant?
+- **Argument quality:** Keep contradiction, tension, incompleteness, disagreement, and weaker explanatory grounding distinct.
+- **Citation quality:** Does every important citation support its claim, and is every quotation faithful to the registered edition? Check Scripture quotation volume and permission conditions too.
+- **Cross-site consistency:** Repair materially inconsistent descriptions of a lane across questions. Link repeated arguments to their anchors instead of unnecessarily duplicating them.
+- **Coverage balance:** Check whether familiarity with Christianity produced much richer treatment than other lanes, and whether fear of asymmetry produced false equivalence.
+- **Missing sources or arguments:** Make a final broad sweep for major texts, thinkers, objections, arguments, or historical evidence missed during just-in-time domain research. This completion-phase sweep catches omissions without making each early domain pass exhaustive.
 
 ## Tone
 

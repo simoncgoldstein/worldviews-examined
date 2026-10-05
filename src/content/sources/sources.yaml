@@ -25,7 +25,10 @@
   year: 2001
   url: https://www.esv.org/
   notes: >-
-    Current ESV text (2016); publisher and first-publication year confirmed on esv.org. Verses read
+    Existing ESV passage checks (originally recorded as text edition 2016); publisher and
+    first-publication year confirmed on esv.org. Current Crossway permissions and required
+    notice checked 2026-10-05 identify Text Edition 2025; this does not certify revised
+    wording of older passage checks. See docs/SOURCES.md and docs/ESV-QUOTATION-LEDGER.md. Verses read
     on BibleGateway 2026-10-05: Gen 1:26-28, 6:5, 8:21, 9:6; Exod 31:2-3; Deut 29:4, 30:6; Lev
     17:11; Ps 8:4-6, 51:1-5, 51:10; Eccl 7:29; Isa 53:4-6, 53:10-12; Jer 17:9, 31:31-34; Ezek
     36:25-27; Matt 5:45; John 3:3; Acts 14:16-17; Rom 1:18-28, 2:14-15, 3:23-26, 5:12, 5:18-19,
@@ -475,6 +478,102 @@
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
+- id: bavinck-reformed-dogmatics-monergism-1
+  type: primary
+  title: "Reformed Dogmatics, Vol. 1: Prolegomena"
+  shortCitation: "Bavinck, Reformed Dogmatics 1 (Monergism)"
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  translator: Monergism automated translation using OpenAI/5.2 API
+  edition: 2026 automated English translation of the Dutch Project Gutenberg text
+  place: West Linn, Oregon
+  publisher: Monergism Books
+  year: 2026
+  url: https://www.monergism.com/thethreshold/sdg/bavinck/Reformed%20Dogmatics%20-%20Herman%20Bavinck.pdf
+  notes: >-
+    Verified 2026-10-05 against this PDF's title/copyright pages, editor's note and section
+    headings, and https://www.monergism.com/reformed-dogmatics-ebook. English automated
+    translation of Project Gutenberg's Dutch Gereformeerde Dogmatiek; not the Bolt/Vriend
+    professional translation. May be cited and quoted directly within applicable quotation
+    permissions; compare consequential or disputed wording against the Dutch original.
+    Cite volume + section + numbered paragraph, optionally PDF page position (one-based,
+    including the initial blank page; no printed English page numbers). Embedded bracketed
+    numbers are Dutch source pages, not English PDF pages. No substantive domain passages mined in this registration pass; verify each new cited passage before use.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: bavinck-reformed-dogmatics-monergism-2
+  type: primary
+  title: "Reformed Dogmatics, Vol. 2: God and Creation"
+  shortCitation: "Bavinck, Reformed Dogmatics 2 (Monergism)"
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  translator: Monergism automated translation using OpenAI/5.2 API
+  edition: 2026 automated English translation of the Dutch Project Gutenberg text
+  place: West Linn, Oregon
+  publisher: Monergism Books
+  year: 2026
+  url: https://www.monergism.com/thethreshold/sdg/bavinck/Reformed%20Dogmatics%2C%20Vol.%202%20-%20Herman%20Bavinck.pdf
+  notes: >-
+    Verified 2026-10-05 against this PDF's title/copyright pages, editor's note and section
+    headings, and https://www.monergism.com/reformed-dogmatics-ebook. English automated
+    translation of Project Gutenberg's Dutch Gereformeerde Dogmatiek; not the Bolt/Vriend
+    professional translation. May be cited and quoted directly within applicable quotation
+    permissions; compare consequential or disputed wording against the Dutch original.
+    Cite volume + section + numbered paragraph, optionally PDF page position (one-based,
+    including the initial blank page; no printed English page numbers). Embedded bracketed
+    numbers are Dutch source pages, not English PDF pages. No substantive domain passages mined in this registration pass; verify each new cited passage before use.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: bavinck-reformed-dogmatics-monergism-3
+  type: primary
+  title: "Reformed Dogmatics, Vol. 3: Sin and Salvation in Christ"
+  shortCitation: "Bavinck, Reformed Dogmatics 3 (Monergism)"
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  translator: Monergism automated translation using OpenAI/5.2 API
+  edition: 2026 automated English translation of the Dutch Project Gutenberg text
+  place: West Linn, Oregon
+  publisher: Monergism Books
+  year: 2026
+  url: https://www.monergism.com/thethreshold/sdg/bavinck/Reformed%20Dogmatics%2C%20Vol.%203%20-%20Herman%20Bavinck.pdf
+  notes: >-
+    Verified 2026-10-05 against this PDF's title/copyright pages, editor's note and section
+    headings, and https://www.monergism.com/reformed-dogmatics-ebook. English automated
+    translation of Project Gutenberg's Dutch Gereformeerde Dogmatiek; not the Bolt/Vriend
+    professional translation. May be cited and quoted directly within applicable quotation
+    permissions; compare consequential or disputed wording against the Dutch original.
+    Cite volume + section + numbered paragraph, optionally PDF page position (one-based,
+    including the initial blank page; no printed English page numbers). Embedded bracketed
+    numbers are Dutch source pages, not English PDF pages. Volume 3 §39.5–6 read (PDF pp. 208–222); see the Morality/Evil dossier for precise claim locators.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: bavinck-reformed-dogmatics-monergism-4
+  type: primary
+  title: "Reformed Dogmatics, Vol. 4: Holy Spirit, Church, New Creation"
+  shortCitation: "Bavinck, Reformed Dogmatics 4 (Monergism)"
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  translator: Monergism automated translation using OpenAI/5.2 API
+  edition: 2026 automated English translation of the Dutch Project Gutenberg text
+  place: West Linn, Oregon
+  publisher: Monergism Books
+  year: 2026
+  url: https://www.monergism.com/thethreshold/sdg/bavinck/Reformed%20Dogmatics%2C%20Vol.%204%20-%20Herman%20Bavinck.pdf
+  notes: >-
+    Verified 2026-10-05 against this PDF's title/copyright pages, editor's note and section
+    headings, and https://www.monergism.com/reformed-dogmatics-ebook. English automated
+    translation of Project Gutenberg's Dutch Gereformeerde Dogmatiek; not the Bolt/Vriend
+    professional translation. May be cited and quoted directly within applicable quotation
+    permissions; compare consequential or disputed wording against the Dutch original.
+    Cite volume + section + numbered paragraph, optionally PDF page position (one-based,
+    including the initial blank page; no printed English page numbers). Embedded bracketed
+    numbers are Dutch source pages, not English PDF pages. No substantive domain passages mined in this registration pass; verify each new cited passage before use.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
 - id: bavinck-gereformeerde-dogmatiek-3
   type: primary
   title: Gereformeerde Dogmatiek, Derde Deel
@@ -490,8 +589,10 @@
     Dutch first edition, read in the Project Gutenberg transcription (eBook #68527), whose
     transcribed title page reads "Kampen. -- J. H. Bos. -- 1898". Section numbering is the first edition's and
     differs from the English Reformed Dogmatics (translated from the second edition), so cite as
-    "§ 39.5" (section and numbered paragraph). The transcription has no pagination. English
-    renderings are the researcher's own: paraphrase; never quote them as a published translation.
+    "§ 39.5" (section and numbered paragraph). The HTML retains original Dutch page markers; distinguish them from PDF positions.
+    Retain this Dutch text as control for the separately registered 2026 Monergism English
+    Volume 3 (bavinck-reformed-dogmatics-monergism-3). Earlier researcher renderings were
+    paraphrases only; the Monergism translation may now be quoted as its own edition.
     Verified 2026-10-05: § 39.1, 39.5, 39.6 read.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
@@ -1278,6 +1379,10 @@
     Cited by sunnah.com hadith number (e.g. 1385), the standard numbering shown there as "Reference:
     Sahih al-Bukhari N"; sunnah.com states the translation is by Dr. M. Muhsin Khan. The translation
     inserts interpretive glosses in parentheses; paraphrase rather than quote those.
+    Read 2026-10-05 through ordinary web access: https://sunnah.com/bukhari:5641, a combined
+    record for 5641, 5642; Patients, chapter 1 (Sickness is expiation for sins), Book 75,
+    Hadith 2; deprecated USC-MSA Vol. 7, Book 70, Hadith 545. Afflictions including a thorn
+    expiate some sins; the passage does not explicitly make patience a condition.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1393,6 +1498,10 @@
   notes: >-
     Cited by sunnah.com number including letter suffix (e.g. 2658b), shown there as "Reference:
     Sahih Muslim N"; sunnah.com states the translation is by Abdul Hamid Siddiqui.
+    Read 2026-10-05 through ordinary web access: https://sunnah.com/muslim:2999; Book 55
+    (Zuhd and Softening of Hearts), chapter 13 (The Believer's Affair Is All Good), Hadith 82;
+    deprecated USC-MSA Book 42, Hadith 7138. Suhaib's report supports gratitude in delight
+    and patient endurance in trouble; it does not itself state expiation of sins.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 

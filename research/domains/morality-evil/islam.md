@@ -33,13 +33,12 @@ repentance, guidance, purification and mercy (P3).
 | al-Ash'ari, *Ibana* | P3 (pp. 51–52, 104) | EV (God wills and creates all acts; *kasb*) |
 | Harvey on al-Maturidi; Hoover on Ibn Taymiyya; SEP Arabic and Islamic Philosophy of Religion | P3 | KG (school split), EV (wise purpose; privation) |
 
-**Hadith gap (identified, not read).** The standard hadith for SU and DE are Bukhari 5641–5642 (commonly
-cited for afflictions, down to a thorn, expiating sins) and Muslim 2999 (commonly cited for the
-believer's patience in hardship and gratitude in ease). Contents are given here from general
-knowledge only. sunnah.com served a Cloudflare
-challenge to every automated request in this session, so these were **not read and must not be cited
-until a session with ordinary browser access reads them** (the verification protocol forbids
-bypassing bot detection). The Qur'anic texts carry SU and DE without them.
+**Hadith verification closed (2026-10-05).** Read the actual English passages and reference tables through ordinary web access, without bypassing security controls:
+
+- [Sahih al-Bukhari 5641, 5642](https://sunnah.com/bukhari:5641), presented as one combined record, narrated by Abu Saʿid al-Khudri and Abu Huraira. *Patients*, chapter 1, *Sickness is expiation for sins*; Book 75, Hadith 2 (deprecated USC-MSA: Vol. 7, Book 70, Hadith 545). The passage enumerates fatigue, disease, sorrow, sadness, hurt, distress, and even a thorn prick as occasions for expiation of some sins. It does not explicitly make patience a condition or teach that every affliction is a personal punishment.
+- [Sahih Muslim 2999](https://sunnah.com/muslim:2999), narrated by Suhaib. *The Book of Zuhd and Softening of Hearts*, chapter 13, *The Believer's Affair Is All Good*; Book 55, Hadith 82 (deprecated USC-MSA: Book 42, Hadith 7138). It presents the believer's gratitude in delight and patient endurance in trouble as good for him. It supports the response to adversity, not an explicit expiation claim.
+
+These support SU and contextualize adversity encountered before death; neither by itself establishes death's origin or the final state. The existing source IDs and translator metadata are retained. Numbering and wording were checked against the named Sunnah.com records; no broad hadith research was performed.
 
 **Al-Ghazali on patience and death.** *Ihya'* Book 32 (Patience and Thankfulness) and Book 40
 (Remembrance of Death and the Afterlife, tr. Winter, Islamic Texts Society 1989) are the natural
@@ -94,7 +93,8 @@ a gap. Do not let al-Ghazali carry SU/DE in the meantime. The Qur'an does.
   - *Wise purpose:* evils serve purposes and are not evil from every perspective (Hoover, P3).
 - **Best passages.** 2:155–157; 21:35; 29:2–3; 42:30; 57:22–23; 64:11; 2:286; 94:5–6; 2:216;
   Hoover pp. 201–203.
-- **Gap.** Expiation hadith (Bukhari 5641–5642; Muslim 2999) unread; see above.
+- **Hadith support.** Bukhari 5641, 5642 (Book 75, Hadith 2): affliction as expiation;
+  Muslim 2999 (Book 55, Hadith 82): gratitude and patient endurance. Both now read; see above.
 
 ### DE
 - **Main answer.** God "created death and life to test you… and reveal which of you does best"
@@ -158,9 +158,10 @@ a gap. Do not let al-Ghazali carry SU/DE in the meantime. The Qur'an does.
 | `harvey-transcendent-god` | p. 27; pp. 217–218 | Maturidi: wisdom-grounded moral knowledge | KG | P3 |
 | `hoover-theodicy` | pp. 41–44, 201–203 | Will to worship; evil for wise purpose; privation | EV, SU | P3 |
 | `sep-arabic-islamic-religion` | §§5, 7.1–7.2 | Theodicy strands; husn/qubh debate | EV, KG | P3 |
+| `bukhari-sahih-khan` | 5641, 5642; Book 75, Hadith 2; Patients ch. 1 | Affliction, including a thorn, expiates some sins; no explicit patience condition | SU | NEW |
+| `muslim-sahih-siddiqui` | 2999; Book 55, Hadith 82; Zuhd ch. 13 | Believer's gratitude in prosperity and endurance in adversity are good; no explicit expiation statement | SU | NEW |
 
 ## 5. Remaining gaps
 
-1. **Hadith on affliction** (Bukhari 5641–5642; Muslim 2999): identified, unread (access blocked).
-2. **Al-Ghazali, *Ihya'* 32 and 40**: no readable translation found.
-3. Neither blocks drafting: the Qur'an carries SU and DE.
+1. **Al-Ghazali, *Ihya'* 32 and 40**: no readable translation found.
+2. This does not block drafting: the Qur'an carries SU and DE; the affliction/response hadith gap is closed.

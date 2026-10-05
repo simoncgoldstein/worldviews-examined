@@ -174,9 +174,9 @@ Write citations inline in any section of an answer body:
 
 ## Source hierarchy
 
-For a worldview's own account: canonical/primary texts; major thinkers within the tradition; recognized internal institutions or scholars; high-quality academic scholarship. Christian polemical sources are not primary evidence for what another worldview believes.
+For a worldview's own account: primary/canonical/foundational texts; authoritative confessional or interpretive standards where present; major historical interpreters; later philosophers, theologians, specialists, and academic scholarship. Later thinkers do not replace readable foundational texts for convenience. Christian polemical sources are not primary evidence for what another worldview believes.
 
-For the Christian response: Scripture; Westminster Standards where directly relevant; major Reformed theologians; Van Til and Bahnsen where apologetic method is involved; reliable historical and philosophical scholarship.
+Scripture is the primary and final authority for the Reformed lane; confessions and theologians are subordinate witnesses. For the Christian response: Scripture; Westminster Standards where directly relevant; major Reformed theologians; Van Til and Bahnsen where apologetic method is involved; reliable historical and philosophical scholarship.
 
 ## Review metadata
 

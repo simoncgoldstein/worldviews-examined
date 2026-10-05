@@ -18,6 +18,10 @@ was done to produce it. Read it before starting any Phase 4 question.
 
 The cell notes below name each gap.
 
+**Refinement (2026-10-05):** The question map remains fixed at 28. The `self-salvation` anchor is **What is wrong with man, and how can he be saved or liberated?** (existing ID/slug retained). Its brief is **diagnosis → remedy → means → role of grace/effort → final state**, including guilt, transformation, and assurance. The S/P grades below reflect the original narrower reuse assessment; they are starting evidence, not certification of complete coverage of the broadened brief.
+
+All four Monergism 2026 automated English Bavinck volumes are registered as `bavinck-reformed-dogmatics-monergism-1` through `-4`. Volume 3 §39.5–6 (PDF pp. 208–222) is checked for SU/EV/DE; retain the Dutch control and distinguish this edition from Bolt/Vriend. Bukhari 5641, 5642 (Book 75, Hadith 2) and Muslim 2999 (Book 55, Hadith 82) are now verified for suffering; their previous access gap is closed. See `research/domains/morality-evil/`.
+
 ## 1. At a glance
 
 27 remaining questions × 6 worldviews = **162 cells**:
@@ -302,7 +306,8 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
 
 <details><summary>Cell notes (Salvation, Liberation & Human Destiny)</summary>
 
-- **self-salvation**
+- **self-salvation** — Anchor: *What is wrong with man, and how can he be saved or liberated?*
+  - Answer brief: **diagnosis → remedy → means → role of grace/effort → final state**. Reuse the locators below, then check missing diagnosis, guilt, transformation, and assurance dimensions within this anchor; do not create separate questions.
   - Reformed (S): Moral inability and regeneration (WCF 9.3, 10.1–2; Edwards)
   - Naturalism (P): Gradual remedy (Russell ch. 4; Railton's uneven trend) established; humanist remedy needs a stronger representative text
   - Judaism (S): Torah as antidote, teshuvah (Mishneh Torah Teshuvah 2, 7), circumcised heart (Ramban)
@@ -373,6 +378,7 @@ All entries below are `checked` in `src/content/sources/sources.yaml`. The locat
 
 | Source id | Work (tradition) | Locators already established | Reusable for |
 |---|---|---|---|
+| `bavinck-reformed-dogmatics-monergism-1`, `bavinck-reformed-dogmatics-monergism-2`, `bavinck-reformed-dogmatics-monergism-3`, `bavinck-reformed-dogmatics-monergism-4` | Bavinck, four-volume Monergism 2026 automated English edition (Reformed); Dutch Gutenberg control retained | Vol. 3 §39.5–6, PDF pp. 208–222 checked; other volumes registered by metadata only, new passages require reading | evil, suffering, death; later domains may reuse the four volumes without confusing them with Bolt/Vriend |
 | `wcf`, `westminster-larger-catechism` | Westminster Confession / Larger Catechism (Reformed) | WCF 3.1, 3.7–3.8, 4.2, 5.4, 5.6, 6.2–6.4, 7.5–7.6, 8.6, 9.1, 9.3, 10.1–10.2, 11.3, 13.1–13.2, 15.3, 16.7; WLC Q. 1, 25 | evil, guilt, self-salvation, final-end; add WCF 1–2, 32–33 for authority, ultimate reality, after-death |
 | `bible-esv` | Scripture | Gen 9:6; Rom 1:18–28, 2:14–15, 3:25–26, 5:18–19; Lev 5; 1 Kgs 8; Isa 53; Ps 51; Col 3:10; 1 John 1:9 | every Reformed answer |
 | `calvin-institutes-beveridge` | Calvin, *Institutes* (Reformed) | I.3.1, I.5.4, I.15.4, II.1.11, II.2.12–23, II.3.3–5, III.7.6 | knowledge-possible, worship, know-the-good, self-deception, revelation |
@@ -386,7 +392,7 @@ All entries below are `checked` in `src/content/sources/sources.yaml`. The locat
 | `maimonides-mishneh-torah-touger`, `maimonides-guide-friedlander`, `maimonides-eight-chapters` | Maimonides (Judaism) | *Teshuvah* 2:1–2, 5:1–4, 6:3, 7:4; *Yesodei ha-Torah* 4:8; *Guide* I.2, III.8, III.12; Eight Chapters 6, 8 | self-salvation, guilt, know-the-good, evil; *Guide* I for ultimate reality |
 | `mishnah-kulp`, `midrash-rabbah-sefaria` | Mishnah; Bereshit Rabbah (Judaism) | Avot 3:14–15, 4:1; Berakhot 9:5; Sanhedrin 4:5; Yoma 8:8–9; BR 8:5, 8:11, 9:7, 14:4, 24:7 | what-is-man, guilt, ultimate-authority (add Avot 1:1) |
 | `saadia-emunot-ibn-tibbon`, `ramban-torah-chavel`, `halevi-kuzari-hirschfeld` | Saadia; Nachmanides; Halevi (Judaism) | Saadia IV.1, IV.4, X.1; Ramban on Gen 2:9, Deut 30:6; *Kuzari* I.95 | why-alive, final-end; Saadia intro and Treatise I for knowledge and creation; *Kuzari* I for revelation |
-| `quran-haleem`, `bukhari-sahih-khan`, `muslim-sahih-siddiqui` | Qur'an; hadith (Islam) | 25 Qur'an locators (2:30–33, 2:37, 6:164, 7:12–23, 7:179, 9:118, 14:22, 17:70, 27:14, 33:72, 39:53, 45:23, 83:14, 91:8–10, 95:4–6); Bukhari 1385, 2449, 6309, 6463; Muslim 2553a, 2581, 2865a | most Islam answers; Christology (4:157 etc.) still to establish |
+| `quran-haleem`, `bukhari-sahih-khan`, `muslim-sahih-siddiqui` | Qur'an; hadith (Islam) | 25 Qur'an locators (2:30–33, 2:37, 6:164, 7:12–23, 7:179, 9:118, 14:22, 17:70, 27:14, 33:72, 39:53, 45:23, 83:14, 91:8–10, 95:4–6); Bukhari 1385, 2449, 6309, 6463, 5641–5642; Muslim 2553a, 2581, 2865a, 2999 | most Islam answers; Christology (4:157 etc.) still to establish |
 | `ghazali-marvels-heart`, `ghazali-disciplining-soul`, `ghazali-repentance-stern` | al-Ghazali, *Ihya'* books 21, 22, 31 (Islam) | Marvels pp. 6, 25–33, 118–119; Disciplining pp. 25–28; Repentance pp. 30–43 | what-is-man, fail-the-good, self-deception, self-salvation, guilt |
 | `hoover-theodicy`, `harvey-transcendent-god`, `sep-arabic-islamic-religion` | Hoover on Ibn Taymiyya; Harvey on Maturidi; McGinnis (Islam) | Hoover pp. 41–44, 201–203; Harvey p. 27; SEP §§5, 7.2 | worship, evil, suffering, know-the-good, knowledge-possible |
 | `sastri-gita-shankara`, `govindacharya-gita-ramanuja` | Gītā with Śaṅkara / Rāmānuja (Hindu) | Śaṅkara on 2.62–63, 3.36–43, 5.18, 6.5–6, 9.32–33, 14.6–10, 15.7, 16.1–21; Rāmānuja on 3.37, 7.5, 7.14, 9.30–32, 15.7, 18.66 | nearly every Hindu answer |

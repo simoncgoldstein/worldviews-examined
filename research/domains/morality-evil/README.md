@@ -25,7 +25,8 @@ all the research.
    `research/questions/great-and-terrible/`) and was not reread unless noted.
 3. The packets quote short phrases for orientation. Before publishing a quotation, confirm it
    against the registry note's edition rules: some sources are **paraphrase only** (Śāntideva via
-   Sanskrit, Bavinck in Dutch, Saadia in Hebrew, Bukhari glosses).
+   Sanskrit, Saadia in Hebrew, Bukhari glosses). Bavinck now has the separately registered
+   Monergism English edition; see `christianity.md` for checked Volume 3 passages.
 4. Concise questions (FG, SD) should link to `great-and-terrible`, which carries much of their
    argument.
 
@@ -83,9 +84,11 @@ all the research.
 - **Already had:** Qur'an (Abdel Haleem); Bukhari; Muslim; al-Ghazali (*Ihya'* 21, 22, 31);
   al-Ash'ari, *Ibana*; Harvey (Maturidi); Hoover (Ibn Taymiyya); SEP surveys.
 - **Not yet mined (now mined):** 26 new Qur'an locators on test, decree, death and self-deception.
-- **Missing, recorded as gaps:** hadith on affliction (Bukhari 5641–5642; Muslim 2999; sunnah.com
-  blocked automated access, not bypassed); al-Ghazali, *Ihya'* 32 and 40 (no readable translation
-  found). No new Islamic source was registered.
+- **Hadith gap closed in refinement:** Bukhari 5641, 5642 and Muslim 2999 read through ordinary
+  web access; exact collection/book/chapter locators added to `islam.md` and existing source
+  records updated. Bukhari supports expiation, Muslim patient endurance and gratitude.
+- **Remaining gap:** al-Ghazali, *Ihya'* 32 and 40 (no readable translation found).
+  No new Islamic source was registered.
 
 ### Hindu traditions
 - **Already had:** Gītā with Śaṅkara and with Rāmānuja; Brahma Sūtra commentaries of all three
@@ -134,7 +137,7 @@ appear only as source authors, and Owen and Bavinck are already registered.
 | KG | S | S | S | S | S | S | Yes |
 | FG | S | S | S | S | S | S | Yes (concise; link to flagship) |
 | EV | S | S | S | S | S | S | Yes. Anchor: choose the Christian "strongest objection" (Hume, *Dialogues* XI recommended) |
-| SU | S | S | S | S (hadith gap) | S | S | Yes |
+| SU | S | S | S | S | S | S | Yes |
 | DE | S | S | S | S (al-Ghazali gap) | S | S | Yes |
 | SD | S | S | S | S | S | S | Yes (concise) |
 
@@ -161,13 +164,10 @@ SU, DE) and every P cell are closed.
 
 ## Remaining genuine gaps
 
-1. **Islam:** Bukhari 5641–5642 and Muslim 2999 (affliction as expiation; the believer's patience).
-   Identified but unread, because the site blocked automated access. Read them in a browser session
-   before citing.
-2. **Islam:** al-Ghazali, *Ihya'* 32 (patience) and 40 (death). No readable translation found.
-3. **Judaism:** the reported manuscript variant at *Mishneh Torah* Kings 8:11 is unchecked; check a
+1. **Islam:** al-Ghazali, *Ihya'* 32 (patience) and 40 (death). No readable translation found.
+2. **Judaism:** the reported manuscript variant at *Mishneh Torah* Kings 8:11 is unchecked; check a
    critical edition if KG leans on it. Post-Holocaust theodicy is unresearched (SU, modern streams).
-4. **Naturalism (optional):** a primary source on the evolutionary function of pain; Lucretius III
+3. **Naturalism (optional):** a primary source on the evolutionary function of pain; Lucretius III
    directly.
 
 None blocks drafting.
@@ -190,9 +190,16 @@ None blocks drafting.
   documents the source policy requires to be registered on first use.
 - **Corrections made during the pass.** A recalled hadith wording and an unverified Ibn Taymiyya
   phrase were removed from the Islam packet. The Kings 8:11 variant was downgraded to "reported,
-  unchecked". Bavinck renderings were marked as the researcher's own. Speaker attribution is flagged
+  unchecked". Bavinck renderings were initially marked as the researcher's own (replaced by
+  Monergism English citations in the refinement below). Speaker attribution is flagged
   for Hume's *Dialogues*. Epicurus is flagged as a non-atheist antecedent.
 - **Every question has a drafting path.** See the readiness table.
+
+## Methodology/source refinement (2026-10-05)
+
+The 28-question map remains fixed; no public Phase 4 answers were drafted. Scripture is the Reformed lane's primary and final authority; the confessions and theologians are subordinate witnesses. See `docs/METHODOLOGY.md` for authority adjudication, historical accountability, diagnosis/remedy comparison, and the final corpus-wide audit; `docs/SOURCES.md` and `docs/ESV-QUOTATION-LEDGER.md` govern selective ESV quotation and current attribution.
+
+All four 2026 Monergism Bavinck volumes are registered as `bavinck-reformed-dogmatics-monergism-1` through `-4`, with automated translation provenance distinct from Bolt/Vriend. Volume 3 §39.5–6 was checked in English, replacing the ad hoc translations in `christianity.md`; the Dutch source remains a textual control. The hadith access gap is closed as above; other remaining gaps are unchanged. This refinement used one agent and no subagents or external reviewers. The earlier internal quality-pass record describes the original domain pass, not a new review in this run.
 
 ## Approximate effort by worldview
 

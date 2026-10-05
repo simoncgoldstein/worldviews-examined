@@ -7,8 +7,8 @@ established in Phase 3 (reused, not reread unless noted); **NEW** = mined in thi
 
 ## 1. Core account
 
-One history of one nature explains the whole domain: created good with the law written on the heart
-(WCF 4.2; WLC 17), fallen in Adam (WCF 6), preserved and restrained by providence and common grace,
+Scripture is the primary and final authority; the confessions and interpreters below are subordinate witnesses. One history of one nature explains the whole domain: created good with the law written on the heart
+(Gen 1:26–28; Rom 2:14–15; WCF 4.2; WLC 17), fallen in Adam (Rom 5:12, 18–19; WCF 6), preserved and restrained by providence and common grace,
 renewed in Christ. Moral knowledge is real because the image and conscience remain. It is
 suppressed and distorted because the will's loves are disordered. Evil is not a substance or a
 second principle. It is good created powers turned from God (privation; perversion of the will).
@@ -16,14 +16,14 @@ Suffering and death are the penal consequence of sin for the race (WCF 6.6; WLC 
 proportional to each person's sins. For believers they are transformed into fatherly discipline and
 an entrance into life (WCF 5.5; HC 26–28, 42; WLC 85). Self-deception is sin's characteristic mode:
 the mind is deceived and the heart suppresses known truth (Rom 1:18–21; Owen). The remedy is
-monergistic regeneration and lifelong, imperfect sanctification (WCF 9.3–5, 10, 13; WLC 149).
+monergistic regeneration and lifelong, imperfect sanctification (Eph 2:1–5; WCF 9.3–5, 10, 13; WLC 149).
 
 ## 2. Core texts checked
 
 | Text | Status | Use in this domain |
 |---|---|---|
 | Scripture (ESV) | P3; reused | Rom 1–2, 3:23, 5:12, 7, 8:7; Gen 6:5; Jer 17:9; Eph 2; Ps 51 |
-| Westminster Confession | P3 + **NEW** chs. 3, 5, 17.3, 19, 20, 21.1, 32–33 | Spine of every answer |
+| Westminster Confession | P3 + **NEW** chs. 3, 5, 17.3, 19, 20, 21.1, 32–33 | Confessional summary subordinate to Scripture |
 | Westminster Larger Catechism | P3 (Q. 1, 25) + **NEW** Q. 2, 17, 21, 24–25, 27–29, 84–86, 93, 95–96, 149–150, 152 | Misery, punishments of sin, death, moral law's use |
 | Westminster Shorter Catechism | **NEW SRC** `westminster-shorter-catechism` | Compact formulas: Q. 14, 16–19, 37, 82, 84 |
 | Heidelberg Catechism | **NEW SRC** `heidelberg-catechism` | Misery (Q&A 3–11), providence and adversity (26–28), death of believers (42), the comfort frame (1) |
@@ -33,7 +33,7 @@ monergistic regeneration and lifelong, imperfect sanctification (WCF 9.3–5, 10
 | Calvin, *Institutes* (Beveridge) | P3 + **NEW** I.17.7–11, II.8.1, III.8.1–2, III.9.4–5 | Natural law and conscience; providence in adversity; cross-bearing; death |
 | Edwards, *Works* 1 | P3; reused | Moral vs. natural inability (FG); *True Virtue* ch. 7 (dulling conscience) |
 | Owen, *Indwelling Sin* (Goold vol. 6) | **NEW SRC** `owen-works-goold-6` | The deceit of sin works on the mind (SD) |
-| Bavinck, *Gereformeerde Dogmatiek* III (1898) | **NEW SRC** `bavinck-gereformeerde-dogmatiek-3` | § 39.5 suffering as punishment, natural evil, limits of theodicy; § 39.6 death "unnatural" though bodily |
+| Bavinck, *Reformed Dogmatics* III (Monergism 2026) | **NEW SRC** `bavinck-reformed-dogmatics-monergism-3`; Dutch control `bavinck-gereformeerde-dogmatiek-3` | §39.5, PDF pp. 208–218: suffering, natural evil, limits of theodicy; §39.6, PDF pp. 218–222: death |
 | Witsius; CRC 1924 | P3; reused | Federal headship; common grace (civil good) |
 
 **Deliberately not mined:** Turretin (Topic IX on sin, Topic X q. 4 on fallen free will). No openly
@@ -112,8 +112,8 @@ transcendental argument explicit, and his texts remain unreadable (reuse map gap
   disasters are tied to humanity's sin, not individuals'. Weighing the world's pleasure against its
   pain (Schopenhauer) is presumptuous.
 - **Internal distinction.** None material at the confessional level.
-- **Uncertainty.** Bavinck's own English (RD 3) not read; the Dutch first edition is cited instead
-  (section numbering differs).
+- **Edition.** Monergism English Volume 3 §39.5 now read and quotable; PDF pp. 208–218.
+  It preserves the Dutch first-edition section numbering; do not substitute Bolt/Vriend pagination.
 
 ### DE — Why do we die, and why does death seem wrong?
 - **Main answer.** Death is "the wages of sin" (WLC 84; Rom 5:12, 6:23; WCF 6.6; WSC 19). It came by
@@ -121,9 +121,10 @@ transcendental argument explicit, and his texts remain unreadable (reuse map gap
   XIII.1). Death is evil in itself: "good unto none" and still a punishment even when borne well
   (CoG XIII.6). The good "die well, though death is an evil" (XIII.5). Life is "a race towards death"
   (XIII.10). Bavinck answers "why it seems wrong": being dust does not make death natural. Fear of
-  death is innate. "At bottom we do not believe that we must die" (researcher's rendering of the
-  Dutch; paraphrase in public). Science that calls death simply natural claims more than it can
-  justify (§ 39.6). Believers still die, not as payment but as the
+  death is innate. The Monergism rendering reads, "We do not believe in the ground that we must die."
+  Cite Volume 3 §39.6, PDF p. 220; its awkward wording should remain exact if quoted.
+  Science that calls death simply natural claims more than it can justify (§39.6, PDF pp. 220–221);
+  Bavinck's biological examples are historical, not current scientific evidence. Believers still die, not as payment but as the
   end of sinning and the entrance to life (HC 42; WLC 85). Souls go to God immediately; the body is
   raised (WCF 32.1–2; WLC 86; WSC 37). Calvin: nature dreads it, faith desires it (III.9.5). Death
   faced in faith is comfort "in life and in death" (HC 1).
@@ -213,12 +214,28 @@ transcendental argument explicit, and his texts remain unreadable (reuse map gap
 | `edwards-works-hickman-1` | FW I.4; III.4 | Moral vs. natural inability | FG | P3 |
 | `edwards-works-hickman-1` | True Virtue ch. 7 | Conscience dulled by long selfish action | SD | P3 |
 | `owen-works-goold-6` | Indwelling Sin VIII, pp. 211–215 | Sin's deceit works on the mind; presents things "otherwise than they are"; by degrees; Jas 1:14–15 | SD, FG | NEW SRC |
-| `bavinck-gereformeerde-dogmatiek-3` | § 39.5 | Suffering as punishment for sin in general; natural disasters and humanity's sin; purposes of particular calamities rarely discernible; against pessimist weighing | SU, EV | NEW SRC |
-| `bavinck-gereformeerde-dogmatiek-3` | § 39.6 | Death penal yet linked to materiality; innate fear; "at bottom we do not believe we must die"; science overclaims in calling death natural | DE | NEW SRC |
+| `bavinck-reformed-dogmatics-monergism-3` | Vol. 3, §39.5, PDF pp. 208–209, 213–215 | Suffering as punishment for sin in general; natural disasters and humanity's sin; purposes of particular calamities rarely discernible; against pessimist weighing | SU, EV | NEW SRC |
+| `bavinck-reformed-dogmatics-monergism-3` | Vol. 3, §39.6, PDF pp. 218–221 | Death penal yet linked to materiality; innate fear and resistance to death; science overclaims in calling death natural | DE | NEW SRC |
 
-## 5. Remaining gaps
+## 5. Monergism English verification (2026-10-05)
 
-- **None blocking.** Turretin and Bavinck's English RD remain unread by choice or necessity; neither
-  is needed.
+The publisher's [four-volume landing page](https://www.monergism.com/reformed-dogmatics-ebook) and each PDF's title/copyright pages and editor's note establish the 2026 automated English translation from the Dutch Gutenberg text using OpenAI/5.2 API. All four volumes are registered for reuse; only these already-used Volume 3 passages were read here. Direct quotations may now use the English edition rather than an ad hoc translation.
+
+Read Volume 3 §39.5–6 in the PDF, with the death wording visually checked. Locators below use one-based PDF page positions including the initial blank page; there is no printed English pagination. The bracketed numbers are Dutch source-page markers.
+
+| Passage | English locator | Verification / reuse |
+|---|---|---|
+| Suffering tied to sin generally, not necessarily the sufferer's personal sin | Vol. 3, §39.5, PDF pp. 208–209 | Retains the distinction used in SU; the paragraph also cites righteous testing. |
+| Much suffering caused by sin; disasters distinguished from personal guilt; purposes of individual calamities obscure | Vol. 3, §39.5, PDF pp. 213–214 | Supports SU/EV, including the caution against weighing all cosmic pleasure and pain. |
+| Nature affected in form rather than substance | Vol. 3, §39.5, PDF p. 215 | Supports the theological distinction; its adjacent paleontology is dated. |
+| Bodily constitution does not exclude death as penalty | Vol. 3, §39.6, PDF pp. 218–219 | Supports DE, without equating materiality with necessity. |
+| Fear of death, resistance to mortality, and the critique of declaring death necessary | Vol. 3, §39.6, PDF pp. 220–221 | Replaces the researcher's English with a stable edition locator. |
+
+For the awkward death phrase, the Dutch control §39.6 (original p. 178) confirms the sense of inward resistance to accepting one's mortality. A smooth English paraphrase must be labeled as a paraphrase, not substituted inside quotation marks. Check especially consequential or disputed wording against the Dutch; do not treat this as the Bolt/Vriend professional translation.
+
+## 6. Remaining gaps
+
+- **None blocking.** Turretin remains unread; the existing Scripture/confession/Calvin/Edwards
+  corpus suffices. Monergism English Volume 3 §39.5–6 is now available and verified above.
 - **Optional:** Ecclesiastes (3:19–21, 9:2–3) and Job for DE/SU lament if a Christian answer wants
   biblical lament rather than confessional comfort; ESV verses would need reading.
