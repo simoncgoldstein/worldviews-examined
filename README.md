@@ -47,4 +47,17 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the decision rationale.
 
 ## Status
 
-Planning / repository seed. Implementation has not started.
+Phase 1 (Astro skeleton) implemented: layout, design tokens, homepage, Method page, and placeholder routes. No worldview content has been written yet.
+
+## Development
+
+Requires Node 22.12 or later.
+
+```sh
+npm install
+npm run dev      # local dev server
+npm run build    # type-check and build the static site to dist/
+npm run preview  # preview the production build
+```
+
+Deployed from `main` by `.github/workflows/deploy.yml` to https://simoncgoldstein.github.io/worldviews-examined/ (the repository's Pages source must be set to GitHub Actions).

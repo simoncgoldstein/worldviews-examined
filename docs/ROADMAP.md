@@ -12,17 +12,20 @@ A live GitHub Pages site that allows a reader to compare six worldview families 
 - [x] Define steelman / Christian-response methodology.
 - [x] Define broad question domains.
 - [x] Seed architecture, methodology, source, and content-model documents.
-- [ ] Create GitHub repository `worldviews-examined`.
-- [ ] Push repository seed.
+- [x] Create GitHub repository `worldviews-examined`.
+- [x] Push repository seed.
 
 ## Phase 1: Astro skeleton
 
-- [ ] Scaffold Astro project with strict TypeScript.
-- [ ] Add MDX integration.
-- [ ] Configure static output and GitHub Pages `site`/`base` settings.
-- [ ] Add GitHub Pages workflow.
-- [ ] Establish design tokens, typography, spacing, and responsive grid.
-- [ ] Build semantic global layout, header, footer, and method page.
+- [x] Scaffold Astro project with strict TypeScript.
+- [x] Add MDX integration.
+- [x] Configure static output and GitHub Pages `site`/`base` settings.
+- [x] Add GitHub Pages workflow.
+- [x] Establish design tokens, typography, spacing, and responsive grid.
+- [x] Build semantic global layout, header, footer, and method page.
+- [x] Add placeholder routes for Questions, Worldviews, Thinkers, and Sources.
+
+Remaining for the exit condition: push `main` and confirm the first Pages deployment (repository Settings → Pages → Source: GitHub Actions).
 
 **Exit condition:** a minimal static site deploys successfully from `main` to GitHub Pages.
 

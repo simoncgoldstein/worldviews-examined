@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteTitle, siteTagline, lanes } from '../data/site';
+import { url } from '../lib/paths';
+
+const modes = [
+  {
+    name: 'Question Explorer',
+    text: 'Compare all six worldviews on a single question.',
+  },
+  {
+    name: 'Worldview Explorer',
+    text: 'Trace one worldview across every major domain.',
+  },
+  {
+    name: 'Apologetics Mode',
+    text: 'Review a worldview’s strongest claims, what it explains well, the Christian response, and precise pressure questions.',
+  },
+];
+---
+
+<BaseLayout>
+  <div class="container page">
+    <p class="eyebrow">Comparative worldview reference</p>
+    <h1>{siteTitle}</h1>
+    <p class="lede prose">{siteTagline}</p>
+    <p class="prose">
+      Each worldview is presented in its strongest representative form, drawn from its
+      own primary sources and major thinkers, before the Christian analysis is given.
+      Reformed Christianity is one of the competing worldviews, not a neutral judge.
+    </p>
+    <p><a href={url('method/')}>Read the method</a></p>
+
+    <h2>Six worldview families</h2>
+    <ul class="grid">
+      {
+        lanes.map((name) => (
+          <li class="card">
+            <h3>{name}</h3>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2>Three ways to read</h2>
+    <ul class="grid">
+      {
+        modes.map((mode) => (
+          <li class="card">
+            <h3>{mode.name}</h3>
+            <p>{mode.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="placeholder-note">
+      The site is under construction. Worldview answers have not been written yet.
+    </p>
+  </div>
+</BaseLayout>

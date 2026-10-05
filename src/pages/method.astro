@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { lanes } from '../data/site';
+---
+
+<BaseLayout
+  title="Method"
+  description="How worldviews are compared: the steelman rule, the comparison structure, and the standpoint of the site."
+>
+  <div class="container page">
+    <h1>Method</h1>
+    <div class="prose">
+      <p class="lede">
+        The site asks which worldview gives the most coherent account of reality as
+        actually encountered: existence, knowledge, logic, personality, morality, beauty,
+        evil, guilt, suffering, death, history, and human destiny.
+      </p>
+
+      <h2>Standpoint</h2>
+      <p>
+        The site is written from a confessional Reformed Christian standpoint. It does
+        not claim a neutral position above all worldviews. At the same time, every
+        competing worldview must be presented in a form that a serious adherent or
+        scholar could recognize as fair.
+      </p>
+
+      <h2>The six comparison lanes</h2>
+      <ol>
+        {lanes.map((name) => <li>{name}</li>)}
+      </ol>
+      <p>
+        These are comparison families, not claims of total internal uniformity. Internal
+        diversity is surfaced whenever it materially changes an answer.
+      </p>
+
+      <h2>The steelman rule</h2>
+      <p>Before any Christian critique is written, the entry must answer:</p>
+      <ol>
+        <li>What does this worldview actually claim?</li>
+        <li>Which major school or thinker is being represented?</li>
+        <li>What explanatory work does the view genuinely perform well?</li>
+        <li>Are important internal alternatives being omitted?</li>
+        <li>Can the steelman be supported from a primary source or serious internal authority?</li>
+      </ol>
+
+      <h2>How entries are structured</h2>
+      <p>
+        Entries for non-Christian worldviews present the <strong>View</strong>,
+        <strong>What it explains well</strong>, the <strong>Christian response</strong>,
+        and a <strong>Pressure point</strong>. Entries for Christianity present the
+        <strong>Christian view</strong>, <strong>What it explains well</strong>, the
+        <strong>Strongest objection</strong>, and the <strong>Christian reply</strong>.
+        Christianity is tested too.
+      </p>
+
+      <h2>Sources</h2>
+      <p>
+        Worldviews are sourced first from primary texts, then from major thinkers within
+        the tradition, then from high-quality academic scholarship for historical and
+        contextual claims. A hostile secondary source is never the sole authority for
+        what another tradition teaches.
+      </p>
+
+      <h2>Tone</h2>
+      <p>
+        Precise and non-mocking, with no triumphalist scoring and no numeric worldview
+        scores. The site distinguishes what another worldview says, what historians and
+        textual scholars establish, and what the Christian concludes from those facts.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
