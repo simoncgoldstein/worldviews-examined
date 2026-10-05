@@ -1,10 +1,10 @@
 ---
 // One worldview's answer to one question. Metadata comes from frontmatter; all prose, and every
-// section heading, comes from the MDX body (see src/lib/answer-sections.ts). Thinkers and the
-// numbered Sources list follow the body so citations from any section share one list.
+// section heading, comes from the MDX body (see src/lib/answer-sections.ts). The optional `lede` is
+// shown as the answer's one-sentence thesis. Citations are listed once for the whole question page
+// (see SourceList and the question route), not inside each card.
 import AnswerSection from './AnswerSection.astro';
 import Cite from './Cite.astro';
-import SourceList from './SourceList.astro';
 import ThinkerLinks from './ThinkerLinks.astro';
 import { getContent, lookup, worldviewUrl, type AnswerEntry } from '../lib/content';
 import { statusDescriptions, statusLabels, symbols } from '../lib/labels';
@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { answer } = Astro.props;
-const { data, Content, citations, ns } = answer;
+const { data, Content, ns } = answer;
 const { worldviewById } = await getContent();
 const worldview = lookup(worldviewById, data.worldviewId, 'worldview');
 const headingId = `${ns}-heading`;
@@ -24,11 +24,11 @@ const isOutline = data.reviewStatus === 'outline';
 <article class="answer" id={worldview.id} aria-labelledby={headingId}>
   <header class="answer__header">
     <h2 class="worldview-name" id={headingId}><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
+    {data.lede && <p class="answer__thesis">{data.lede}</p>}
     <p class="meta">
       {data.scope && <>{data.scope}<span aria-hidden="true"> {symbols.separator} </span></>}
       <span class="status" title={statusDescriptions[data.reviewStatus]}>{statusLabels[data.reviewStatus]}</span>
     </p>
-    {data.lede && <p class="answer__lede">{data.lede}</p>}
     {isOutline && <p class="status-note">{statusDescriptions.outline}</p>}
     {data.traditionNotes.length > 0 && (
       <ul class="tradition-notes">
@@ -48,5 +48,4 @@ const isOutline = data.reviewStatus === 'outline';
     </section>
   )}
 
-  <SourceList ns={ns} citations={citations} />
 </article>

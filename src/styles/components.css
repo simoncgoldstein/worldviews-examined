@@ -222,7 +222,8 @@
   .compare-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 /* On wide screens, line up comparable sections of paired cards so a row can be read across:
-   header, five body sections, thinkers and sources share eight subgrid tracks. Browsers without
+   header, five body sections and thinkers share seven subgrid tracks (sources are listed once
+   for the whole page, after the cards). Browsers without
    subgrid keep the plain two-column flow above. */
 @media (min-width: 62rem) {
   @supports (grid-template-rows: subgrid) {
@@ -230,7 +231,7 @@
     .compare-grid > .answer:not(.answer--empty) {
       display: grid;
       grid-template-rows: subgrid;
-      grid-row: span 8;
+      grid-row: span 7;
       row-gap: 0;
       align-content: start;
       margin-bottom: var(--space-12);
@@ -309,6 +310,10 @@ sup.cite a:target { background: var(--color-target); }
   margin: var(--space-2) 0;
 }
 .sources__list { padding-left: 1.6em; font-size: var(--text-sm); }
+/* Page-level Sources: one numbered sequence, grouped by the answer in which a source is cited. */
+.page-sources { margin-top: var(--space-12); }
+.page-sources .sources__group { margin-top: var(--space-6); }
+.page-sources .sources__list { padding-left: 2.8em; max-width: var(--measure); }
 .source-entry {
   padding: var(--space-1) var(--space-2);
   margin-left: calc(-1 * var(--space-2));
@@ -354,7 +359,16 @@ sup.cite a:target { background: var(--color-target); }
 
 /* --- Answer sections (headings come from the MDX body) ------------------------------------ */
 
-.answer__lede { color: var(--color-text-muted); max-width: var(--measure); }
+/* One-sentence thesis under the worldview name: the line a reader skims across all six cards. */
+.answer__thesis {
+  font-size: var(--text-lg);
+  font-style: italic;
+  line-height: 1.45;
+  max-width: var(--measure);
+  margin: var(--space-2) 0 var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--color-rule-strong);
+}
 .answer__body > :last-child { margin-bottom: 0; }
 /* Editorial marks keyed to the semantic section; hidden from assistive technology. */
 [data-section='christian-response'] > .answer__label::before { content: '§ '; content: '§ ' / ''; color: var(--color-text-muted); font-weight: 400; }

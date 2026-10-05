@@ -1,6 +1,8 @@
 ---
-// The numbered "Sources" list for one answer. Entries are anchors for the superscript markers,
-// each with a ↩ backlink per use. Works without JavaScript.
+// One answer's group within the question page's consolidated Sources section. Entries are anchors
+// for the superscript markers, each with a ↩ backlink per use, and are numbered with the page-level
+// sequence (offset + local number) so numbering runs continuously across the whole page.
+// Works without JavaScript.
 import SourceCitation from './SourceCitation.astro';
 import { getContent, lookup } from '../lib/content';
 import type { CitationUse } from '../lib/citations';
@@ -9,9 +11,13 @@ import { symbols } from '../lib/labels';
 interface Props {
   ns: string;
   citations: CitationUse[];
+  /** Page-level offset of this answer's first citation. */
+  offset: number;
+  /** The answer (worldview) in which these sources are cited. */
+  heading: string;
 }
 
-const { ns, citations } = Astro.props;
+const { ns, citations, offset, heading } = Astro.props;
 const { sourceById } = await getContent();
 
 const seenSources = new Set<string>();
@@ -19,17 +25,18 @@ const entries = citations.map((citation) => {
   const source = lookup(sourceById, citation.sourceId, 'source');
   const repeat = seenSources.has(source.id);
   seenSources.add(source.id);
-  return { citation, source, repeat };
+  return { citation, source, repeat, number: offset + citation.n };
 });
+const headingId = `${ns}-sources`;
 ---
 
 {
   entries.length > 0 && (
-    <section class="sources" aria-label="Sources">
-      <h3 class="sources__heading">Sources</h3>
-      <ol class="sources__list">
-        {entries.map(({ citation, source, repeat }) => (
-          <li id={`${ns}-src-${citation.n}`} class="source-entry">
+    <section class="sources__group" aria-labelledby={headingId}>
+      <h3 class="sources__heading" id={headingId}>{heading}</h3>
+      <ol class="sources__list" start={offset + 1}>
+        {entries.map(({ citation, source, repeat, number }) => (
+          <li id={`${ns}-src-${citation.n}`} class="source-entry" value={number}>
             <span class="source-entry__body">
               <SourceCitation source={source} short={repeat} />
               <span class="source-entry__locator">, {citation.locator}</span>
@@ -42,8 +49,8 @@ const entries = citations.map((citation) => {
                   href={`#${ns}-cite-${citation.n}-${i + 1}`}
                   aria-label={
                     citation.occurrences === 1
-                      ? `Back to citation ${citation.n} in the text`
-                      : `Back to citation ${citation.n} in the text, use ${i + 1} of ${citation.occurrences}`
+                      ? `Back to citation ${number} in the text`
+                      : `Back to citation ${number} in the text, use ${i + 1} of ${citation.occurrences}`
                   }
                 >
                   <span aria-hidden="true">{symbols.backlink}{citation.occurrences > 1 ? i + 1 : ''}</span>

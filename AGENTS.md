@@ -24,7 +24,7 @@ Read these files before changing architecture or content:
 
 ## Answer files
 
-- Answer frontmatter is metadata only. All substantive prose goes in the MDX body under the required level-two sections for the entry's `analysis.kind` (see `docs/CONTENT-MODEL.md`), so it can carry `<Cite />` citations. Do not put argument or summaries in frontmatter.
+- Answer frontmatter is metadata only. All substantive prose goes in the MDX body under the required level-two sections for the entry's `analysis.kind` (see `docs/CONTENT-MODEL.md`), so it can carry `<Cite />` citations. Do not put argument or summaries in frontmatter, except the one-sentence thesis in `lede`, which may only restate what the cited body already establishes.
 - Do not mark an answer `reviewed` or `complete` unless every section is present, the view and principal analytical sections are cited, and every cited source has `verificationStatus: checked`. Never mark a source `checked` without verifying it against the edition.
 - Thinkers are `primary`, `specialist` or `interlocutor`. Interlocutors are not representatives of a worldview lane; Christian interlocutors (Aquinas, Athanasius, Anselm) are not representatives of the Reformed apologetic method.
 

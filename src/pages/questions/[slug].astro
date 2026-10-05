@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerCard from '../../components/AnswerCard.astro';
+import SourceList from '../../components/SourceList.astro';
 import { answersForQuestion, getContent, lookup, questionUrl, worldviewUrl } from '../../lib/content';
 import { symbols } from '../../lib/labels';
 import { url } from '../../lib/paths';
@@ -41,6 +42,7 @@ const related = question.relatedQuestions.map((rid) => lookup(content.questionBy
     <nav aria-label="Worldviews on this question">
       <ul class="jump-list">
         {content.worldviews.map((w) => <li><a href={`#${w.id}`}>{w.name}</a></li>)}
+        {answers.some((a) => a.citations.length > 0) && <li><a href="#sources">Sources</a></li>}
       </ul>
     </nav>
 
@@ -59,6 +61,23 @@ const related = question.relatedQuestions.map((rid) => lookup(content.questionBy
         })
       }
     </div>
+
+    {
+      answers.some((a) => a.citations.length > 0) && (
+        <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
+          <h2 class="section-title" id="sources-heading">Sources</h2>
+          <p class="meta">Numbered once across the page, grouped by the answer in which each source is cited.</p>
+          {answers.map((answer) => (
+            <SourceList
+              ns={answer.ns}
+              citations={answer.citations}
+              offset={answer.offset}
+              heading={lookup(content.worldviewById, answer.data.worldviewId, 'worldview').name}
+            />
+          ))}
+        </section>
+      )
+    }
 
     {
       related.length > 0 && (

@@ -12,6 +12,11 @@ export interface AnswerEntry {
   citations: CitationUse[];
   /** Anchor namespace, unique per answer (matches the remark citation plugin). */
   ns: string;
+  /**
+   * Citations are numbered once per question page: this answer's local citation n is displayed as
+   * offset + n, where offset is the number of citations in the answers before it (worldview order).
+   */
+  offset: number;
 }
 
 export interface SiteContent {
@@ -71,6 +76,7 @@ async function load(): Promise<SiteContent> {
         Content,
         citations: (remarkPluginFrontmatter.citations ?? []) as CitationUse[],
         ns: `${entry.data.worldviewId}-${entry.data.questionId}`,
+        offset: 0,
       };
     }),
   );
@@ -97,6 +103,15 @@ async function load(): Promise<SiteContent> {
     thinkerById: index(thinkerList),
     sourceById: index(sourceList),
   };
+
+  // Page-level citation numbering: offsets accumulate across a question's answers in worldview order.
+  for (const question of questionList) {
+    let offset = 0;
+    for (const answer of answersForQuestion(content, question.id)) {
+      answer.offset = offset;
+      offset += answer.citations.length;
+    }
+  }
 
   // Fail the build if a rendered citation points at an unregistered source.
   for (const answer of answers) {
@@ -142,6 +157,12 @@ export function answersForThinker(content: SiteContent, thinker: Thinker): Answe
   return content.answers.filter(
     (a) => a.data.thinkers.includes(thinker.id) || a.citations.some((c) => workSources.has(c.sourceId)),
   );
+}
+
+export function answerByNamespace(content: SiteContent, ns: string): AnswerEntry {
+  const found = content.answers.find((a) => a.ns === ns);
+  if (!found) throw new Error(`Unknown answer namespace "${ns}"`);
+  return found;
 }
 
 export function answersCitingSource(content: SiteContent, sourceId: string): AnswerEntry[] {

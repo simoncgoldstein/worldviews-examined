@@ -242,7 +242,10 @@ export const answerSchema = z
     thinkers: z.array(idSchema).default([]),
     /** Selects the required section set and presentation. Must match the worldview's analysisKind. */
     analysis: z.object({ kind: z.enum(ANALYSIS_KINDS) }).strict(),
-    /** Optional short unsourced teaser for navigation. Not a place for argument or claims. */
+    /**
+     * Optional one-sentence thesis shown under the worldview name. It restates the answer already
+     * argued and cited in the body; it must not introduce a claim the body does not support.
+     */
     lede: text.max(240).optional(),
   })
   .strict()
