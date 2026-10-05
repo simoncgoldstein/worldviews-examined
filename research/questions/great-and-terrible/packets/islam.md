@@ -1202,3 +1202,42 @@ were confirmed from the running heads. Every cited passage was read. No URL is g
 
 Updated totals: 17 sources. 15 are proposed as checked (one with the pp. 23–25 pagination caveat);
 2 are unverified and no longer cited in the MDX.
+
+## 19. Citation-check corrections (citation-check-judaism-islam.md)
+
+These changes were applied in `drafts/islam-positive.mdx`. They supersede the locators in §15 and
+§18 for these rows.
+
+- ***Disciplining the Soul* pagination.** My §14 reading of the scan's page markers was off by two
+  pages. The corrected locators follow the separate metadata check:
+
+  | Row | Claim | Was | Now |
+  |---|---|---|---|
+  | 50 | Character can change; "no value in counsels, sermons and discipline" | p. 23 | p. 25 |
+  | 51 | Four degrees; "knows that he is not acting as he should" | pp. 24–25 | p. 26 |
+  | 52 | Anger and desire created for a purpose; not to be extirpated | p. 25 | pp. 27–28 |
+
+  The other *Disciplining the Soul* locators (pp. 18, 19 and 37) were derived the same way and are
+  probably also off. Re-check them before they are used. None of them is cited in the MDX.
+- **Row 43 / #46.** The Deep dive now reads "obedience and repentance polish it clean"
+  (Marvels pp. 32–33). The earlier "remembrance" wording is withdrawn. In that passage,
+  remembrance describes a heart that already reflects clearly, not the act that polishes it.
+- **Row 55 / #64.** The third element of repentance is now "a resolve that turns into changed
+  conduct", not "action".
+  - Stern p. 31 has "knowledge, state [of remorse] and action". He then describes the third element
+    as "volition and aspiration towards [new] behaviour", covering repudiation now, determination
+    for the future and amends for the past.
+  - Elsewhere (p. 40) Stern lists "Knowledge, Regret and Renunciation".
+  - The new wording follows the verifier.
+- **Rows 58 / #10 and #20 (Stern p. 43).** These were read. I read p. 43 in the full archive.org scan
+  of Stern's printed edition (https://archive.org/details/GhazaliOnRepentance, text file "Ghazali on
+  Repentance_djvu.txt"). The page markers "42/43" precede the section "On the Universality of the
+  Obligation of Repentance, no one being free of it". The passage is on p. 43 and includes, verbatim:
+  - "If the desires mature during childhood or adolescence, before the perfection of the intellect,
+    then the satanic forces have preceded and mastered the situation";
+  - "In every human being passion prevails over intellect";
+  - "Prophet or fool, every human being must abandon the steps taken to promote desire".
+
+  The verifier's ghazali.org copy covers only the opening pages. The p. 43 locator stands. It is
+  marked read, verified against a scan of the printed edition, with the same scan-pagination
+  caveat as above (page markers in this scan appear as consecutive pairs at page breaks).

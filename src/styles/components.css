@@ -221,6 +221,23 @@
 @media (min-width: 62rem) {
   .compare-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+/* On wide screens, line up comparable sections of paired cards so a row can be read across:
+   header, five body sections, thinkers and sources share eight subgrid tracks. Browsers without
+   subgrid keep the plain two-column flow above. */
+@media (min-width: 62rem) {
+  @supports (grid-template-rows: subgrid) {
+    .compare-grid { row-gap: 0; }
+    .compare-grid > .answer:not(.answer--empty) {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 8;
+      row-gap: 0;
+      align-content: start;
+      margin-bottom: var(--space-12);
+    }
+    .compare-grid > .answer:not(.answer--empty) > .answer__body { display: contents; }
+  }
+}
 
 .answer {
   border-top: 1px solid var(--color-rule-strong);

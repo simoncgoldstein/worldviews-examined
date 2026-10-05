@@ -136,3 +136,30 @@ Caveats on sources kept as `checked` (researcher-stated; reviewer may want to re
 - Dropped `representativeWorks[].sourceId` where the id is not in sources.yaml (the works are kept): `russell-mysticism-logic`, `kitcher-ethical-project`, `vasubandhu-abhidharmakosa`, `tsongkhapa-lamrim-chenmo`, `dharmakirti-pramanavarttika`.
 - Fixed a YAML flow-mapping error in the profile's Maimonides entry (a title containing a comma, now quoted).
 - Thinker profile count: 35 of 48 have a bio and significance.
+
+## Gap closure
+
+Date: 2026-10-05. Only the eight `unverified` records in `src/content/sources/sources.yaml` were edited. `npm run validate` passes (96 sources). Six are now `checked`; two remain `unverified`. National Library of Israel (NLI) pages return a Cloudflare challenge to automated clients, so no NLI record could be opened; where Sefaria's version metadata names an NLI record, the version metadata itself is the basis.
+
+| Source id | Outcome | Basis |
+|---|---|---|
+| westminster-larger-catechism | checked, year 1647 | `year` now means the year the Westminster Assembly completed the catechism. The OPC states "Larger and Shorter Catechisms (1647)" at https://www.opc.org/confessions.html. Scottish General Assembly adoption (1648) is a later event and is noted, not used. The OPC Larger Catechism page (https://www.opc.org/lc.html) carries no date; Q. 25 re-read there and supports the answer's quoted clause. A Parliament-approval date was not found in any source opened, so none is asserted. |
+| rashi-tanakh-judaica-press | checked | Sefaria version metadata (https://www.sefaria.org/api/texts/Rashi_on_Isaiah.53.3): "The Judaica Press complete Tanach with Rashi, translated by A. J. Rosenberg", CC-BY. Open Library records for Rosenberg's Isaiah (Judaica Press; ISBN 0910818509, 1982; ISBN 0910818525, 1983) support the print edition. `year` omitted (multi-volume series). Weakest of the six: no library catalog record opened (Princeton and NLI blocked). |
+| talmud-bavli-koren | checked, year removed | Sefaria version "William Davidson Edition - English" (https://www.sefaria.org/api/texts/Berakhot.17a) states it is from the digital William Davidson edition of the Koren Noé Talmud with Steinsaltz; publisher page https://korenpub.com/collections/the-noe-edition-koren-talmud-bavli-1 confirms Koren Publishers Jerusalem, 42 volumes. The 2012-2019 range could not be confirmed against a catalog, so `year` is dropped and the record describes the online edition. `url` changed to a specific page. |
+| mishnah-kulp | checked, no year | Sefaria version "Mishnah Yomit by Dr. Joshua Kulp", source http://learn.conservativeyeshiva.org/mishnah/ (CC-BY); Sefaria's Kulp topic and Modern Commentary pages place him at the Conservative Yeshiva, Jerusalem. No publication year exists in any record found, so `year` stays omitted; author/translator Kulp added. |
+| maimonides-mishneh-torah-touger | checked, year removed | Sefaria version title "Mishneh Torah, trans. by Eliyahu Touger. Jerusalem, Moznaim Pub. c1986-c2007" (https://www.sefaria.org/api/texts/Mishneh_Torah,_Repentance.5.1; NLI source not opened). Open Library lists Touger's Moznaim volumes (Hilchot Teshuvah 1987, Sefer Hamadah 2010). The volume for each cited chapter is unconfirmed, so the range is recorded under `edition` and `year` dropped. |
+| maimonides-eight-chapters | checked | Open Library work record: New York, Columbia University Press, 1912 (LCCN 14000274); archive.org records eightchaptersofm00maim and cu31924029203119 list Maimonides, Ibn Tibbon, Gorfinkle. Sefaria version transcribes this translation via Wikisource. |
+| tanya-kehot | unverified | Sefaria's version "Kehot Publication Society (English Translation)" names no translator or year. Kehot and bookseller listings give four translators and 1973, but nothing opened says who translated Part I or whether Sefaria's text is the 1973 or a revised rendering. Kehot product page 404; no catalog record found. Needs a print copy or Kehot's translator credits for Part I. |
+| ghazali-disciplining-soul | unverified | Imprint confirmed (title and copyright pages in the archive.org scan `6-abu-hamid-muhammad-ghazali-on-disciplining-the-soul-and-breaking-the-two-desires`; Open Library). The cited pages are wrong by the printed pagination, so the protocol's fourth condition fails. See below. |
+
+### Recommended locator change for ghazali-disciplining-soul (answers not edited)
+
+The OCR text prints folios 24/25 and 26/27 out of order. Running heads settle it: "SPIRITUAL DISCIPLINE" heads even pages and "Disciplining the Soul" heads odd pages (folios 18-22 confirm), and the section opens on an unheaded page (24). Resulting positions:
+
+| Passage | Cited now | Should be |
+|---|---|---|
+| "Were the traits of character not susceptible to change there would be no value in counsels, sermons and discipline" | p. 23 (answers lines 27 and 107) | p. 25 |
+| Four degrees; second type "knows that he is not acting as he should" | pp. 24-25 (line 79) | p. 26 |
+| Desire and anger created for a purpose, not to be extirpated; restore moderation | p. 25 (line 19) | pp. 27-28 |
+
+Section locator alternative: Ihya', Book XXII, section 3, "An Exposition of the Susceptibility of the Traits of Character to Change through Discipline" (scan marker [22.3]). This section contains all three passages. If a print copy confirms the pages above, mark the record `checked` after updating the three Cite locators. The pages 18-19 and 37 citations were not rechecked.

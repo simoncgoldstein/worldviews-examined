@@ -36,6 +36,18 @@ export default function remarkAnswerSections() {
     if (!isAnswerFile(file.path)) return;
     const ns = namespaceFor(file.path);
 
+    // Subheadings (### and below) would otherwise get Astro's auto-generated ids, which collide when
+    // several answers share a page (e.g. two Deep dives with "#### Scope"). Namespace them per answer.
+    const usedIds = new Set();
+    for (const node of tree.children) {
+      if (node.type !== 'heading' || node.depth <= 2) continue;
+      const base = `${ns}-${slugify(textOf(node))}`;
+      let id = base;
+      for (let n = 2; usedIds.has(id); n++) id = `${base}-${n}`;
+      usedIds.add(id);
+      node.data = { ...node.data, hProperties: { ...node.data?.hProperties, id } };
+    }
+
     const output = [];
     let current;
     for (const node of tree.children) {

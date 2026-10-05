@@ -1091,3 +1091,54 @@ Cite tags, are: The view 164 (8 cites); What this explains well 116 (4 cites); D
 | 64 | God chose Israel and let His influence rest on all of them | halevi-kuzari-hirschfeld | I.95 | Yes |
 | 65 | Complete *teshuvah* is meeting the same situation and refraining | maimonides-mishneh-torah-touger | Teshuvah 2:1 | Yes |
 | 10 (rev.) | *Va-yitzer* read as two yetzarim (midrash only) | midrash-rabbah-sefaria | Bereshit Rabbah 14:4 | Yes |
+
+### 18a. Citation-check fixes (citation-check-judaism-islam.md, Judaism #42, #52, #60, #70)
+
+- **#42.** The Ramban gloss now matches the text: choice is "a godlike attribute", but for humans it is
+  "bad", because through it they have will and desire.
+- **#52.** The *Tanya* citations are re-anchored to the Hebrew and paraphrased, with no English
+  quotation marks except "truly a part of God above" (*ḥelek Eloah mi-ma'al mamash*, ch. 2, my
+  translation). The locators are corrected:
+  - ch. 1: two souls, one from the *kelipah*;
+  - ch. 2: the second soul is part of God;
+  - ch. 9: the terms *nefesh ha-behamit* and *nefesh ha-elohit*;
+  - ch. 12: the *beinoni*, desire reawakening after prayer, and "the brain rules over the heart by
+    its created nature".
+  - `tanya-kehot` is no longer cited. Leave it unregistered or `unverified`.
+- **#60.** The m. Sanhedrin 4:5 quotation now matches Kulp exactly: "has caused a single life to
+  perish from Israel".
+- **#70.** The CCAR quotation is now exact: "every human being is created b'tzelem Elohim, in the
+  image of God".
+- **#17** is in the Christian response, not in my sections, so I made no change.
+
+```yaml
+- id: tanya-hebrew-sefaria
+  type: primary
+  title: "Likkutei Amarim (Tanya)"
+  shortCitation: Tanya
+  author: Shneur Zalman of Liadi
+  traditionTags: [judaism]
+  publisher: Kehot Publication Society (Hebrew text as hosted on Sefaria)
+  url: https://www.sefaria.org/Tanya,_Part_I;_Likkutei_Amarim.12?lang=he
+  notes: >-
+    Hebrew original (first printed Slavita, 1796/97), read in the Kehot Hebrew text on Sefaria
+    (version "Kehot Publication Society", source kehot.com). Locators "Likkutei Amarim [chapter]",
+    the standard chapter division. Read in Hebrew: ch. 1 (שתי נפשות; one מצד הקליפה), ch. 2 (נפש
+    השנית בישראל היא חלק אלוה ממעל ממש), ch. 9 (נפש הבהמית / נפש האלהית), ch. 12 (הבינוני; אחר
+    התפלה … הרע חוזר וניעור … ומתאוה תאוה לתאות עולם הזה; המוח שליט על הלב … בתולדתו). English
+    renderings in the draft are the researcher's paraphrases. The specific Kehot printing/year
+    behind the Sefaria Hebrew is not identified; verification rests on the canonical chapter
+    locators (BRIEF §4.4, accessible text with the same locator system).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+```
+
+| # | Claim | Source id | Locator | Read? |
+|---|---|---|---|---|
+| 42 (rev.) | Choice is godlike, yet "bad" for humans because it brings will and desire | ramban-torah-chavel | on Genesis 2:9 | Yes |
+| 62 (rev.) | Every Jew has two souls; one from the *kelipah*, enlivening the body, source of bad traits | tanya-hebrew-sefaria | Likkutei Amarim 1 | Yes (Hebrew) |
+| 62a | The second soul is "truly a part of God above" | tanya-hebrew-sefaria | Likkutei Amarim 2 | Yes (Hebrew) |
+| 62b | Terms *nefesh ha-behamit* / *nefesh ha-elohit* | tanya-hebrew-sefaria | Likkutei Amarim 9 | Yes (Hebrew) |
+| 63 (rev.) | *Beinoni*: no sin in deed, speech or thought; after prayer evil reawakens with worldly craving; the brain rules the heart by created nature | tanya-hebrew-sefaria | Likkutei Amarim 12 | Yes (Hebrew) |
+| 5 (rev.) | Printed Mishnah: "has caused a single life to perish from Israel" | mishnah-kulp | Sanhedrin 4:5 | Yes |
+| 59 (rev.) | "every human being is created b'tzelem Elohim, in the image of God" | ccar-principles-1999 | Statement of Principles | Yes (verifier's reading of the full page; my earlier summary omitted the Hebrew) |

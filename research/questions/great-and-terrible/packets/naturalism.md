@@ -1029,3 +1029,24 @@ gravity'; p. 50 control and moral responsibility."
 
 The draft has no unverified sources. Thinkers named: hume, russell, mackie, railton,
 dennett (registered); darwin and kitcher (recommended for registration).
+
+## 19. Citation-check resolution (citation-check-christianity-naturalism.md)
+
+| Item | Fix in `drafts/naturalism-positive.mdx` |
+|---|---|
+| N#10 | The Explains-well sentence now reads: humans fight far less within their groups than chimpanzees, "yet male coalitions can jointly intimidate, expel or kill an offending individual". It is cited to Wrangham's section "Resolving the Rousseau–Kropotkin vs. Hobbes–Huxley Debate", which has both sentences. The "planned" definition is cited separately to the introduction ("purposeful planned attack"). |
+| N#13 | "such as the abolition of slavery" removed. The Railton quote "an uneven secular trend" (p. 194) is kept with locator pp. 193–194. |
+| N#38 | The wording now follows the abstract: the "Hobbes–Huxley" and "Rousseau–Kropotkin" positions, "both … partly correct". |
+| N#45 | Quote corrected to "asking, and giving, reasons" (p. 48). |
+| N#57 | Rephrased to what the passage says: Darwin calls humanity to animals a late moral acquisition, "apparently unfelt by savages". Locator changed to ch. IV, pp. 121–123. The following sentence says naturalists reject "the ranking of peoples that this passage assumes". |
+
+Updated claim→citation rows:
+
+| # | Claim | Source id | Locator | Read? |
+|---|---|---|---|---|
+| 43′ | Humans low in reactive (bonobo-like), high in proactive (chimpanzee-like) aggression; Hobbes–Huxley and Rousseau–Kropotkin positions both partly correct | wrangham-two-types | Abstract | V |
+| 43a | Proactive aggression = "purposeful planned attack"; reactive = response to a threat | wrangham-two-types | introduction (before first heading) | V |
+| 43b | Humans: low within-group fighting relative to chimpanzees; male coalitions jointly intimidate, expel or kill offenders | wrangham-two-types | "Resolving the Rousseau–Kropotkin vs. Hobbes–Huxley Debate" | V |
+| 23′ | Moral progress "an uneven secular trend" (no slavery claim) | railton-moral-realism | pp. 193–194 (quote p. 194) | V |
+| 29″ | "asking, and giving, reasons" | dennett-self-artifact | p. 48 | V |
+| 45′ | Humanity to animals a late moral acquisition, "apparently unfelt by savages" | darwin-descent | ch. IV, pp. 121–123 | V |

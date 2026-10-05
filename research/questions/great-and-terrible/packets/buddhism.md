@@ -1295,3 +1295,70 @@ longer cited in the MDX.
 
 Rows 42–45 (Dharmakīrti) and 30–31 (Abhidharmakośa) are retained as research notes only and
 are not cited in the MDX.
+
+
+## 19. Second QA resolution (codex-adversarial-review R-10, R-11; citation-check B8, B15, B41, B43, B53, B58, B69)
+
+All fixes are made in place in `drafts/buddhism-positive.mdx`. Word counts are now: view 196,
+explains-well 159, Deep dive 957.
+
+| Finding | Resolution |
+|---|---|
+| R-11 / B8 | "The view" no longer cites AN 9.21. The sentence now reads: human birth is rare, and being born human while a Buddha's teaching is present is an opportunity for awakening that should not be wasted. This is cited to SN 56.48, whose segment 2.4 says exactly that. |
+| R-11 / B53 | The Deep dive is narrowed to the discourse's actual comparison. The people of Jambudīpa surpass the people of Uttarakuru and the gods of the Thirty-Three in three respects, quoted exactly from AN 9.21:3.3. |
+| B15 | "Beginningless" is dropped. The text now reads: "karmic impressions from past action, which carry over to produce new lives" (Triṃśikā 19: *karmaṇo vāsanā ... kṣīṇe pūrvavipāke 'nyad vipākaṃ janayanti*). |
+| B43 | The locator is changed to `8.101–102`. |
+| R-10 / B41, B58, B69 | I chose **option (a)**. I registered the Japanese text I actually consulted (`dogen-shobogenzo-ja`) and cite it for *Shoaku makusa* and *Busshō*. Both Dōgen passages are now paraphrased with no English quotation marks, apart from an unquoted paraphrase of the sūtra line. `dogen-shobogenzo` (Tanahashi) is reverted to `unverified` and is no longer cited. |
+
+### Corrected and new YAML
+
+```yaml
+- id: dogen-shobogenzo                   # CORRECTED: back to unverified; not cited in the MDX
+  type: primary
+  title: "Treasury of the True Dharma Eye: Zen Master Dogen's Shobo Genzo"
+  shortCitation: Dōgen, Shōbōgenzō (Tanahashi)
+  author: Dōgen
+  traditionTags: [buddhism]
+  editor: Kazuaki Tanahashi
+  place: Boston
+  publisher: Shambhala
+  year: 2010
+  notes: >-
+    Bibliographic metadata confirmed 2026-10-05 from LoC/Columbia MARC via Open Library (ISBN
+    9781590304747). The edition's text has not been read, so criterion 4 of BRIEF §4 is not met
+    for this edition. Cite dogen-shobogenzo-ja instead until Tanahashi's wording can be checked.
+  verificationStatus: unverified
+
+- id: dogen-shobogenzo-ja                # NEW: the text actually consulted
+  type: primary
+  title: Shōbōgenzō (正法眼蔵), Japanese text, online
+  shortCitation: Dōgen, Shōbōgenzō (Japanese text)
+  author: Dōgen
+  traditionTags: [buddhism]
+  publisher: Zenchōji (Sōtō Zen temple, Yokohama), website "正法眼蔵" pages
+  year: 2002
+  url: http://hikari-k.ed.jp/zenchoji/sutra/soroku/genzo31.htm
+  notes: >-
+    Japanese (kana-majiri) text of the fascicles, one page per fascicle: Busshō at
+    .../genzo03.htm, Shoaku makusa at .../genzo31.htm (Genjōkōan .../genzo01.htm, Bendōwa
+    .../genzo000.htm). Cite by fascicle title, the canonical locator. Verified 2026-10-05: the
+    URLs resolve to the fascicles named; the passages were read in Japanese (Shoaku makusa:
+    三歳孩兒縦道得、八十老翁行不得; 凡夫のはじめて造作してかくのごとくあらしむるにあらず;
+    修行力たちまち現成す. Busshō: 一切衆生悉有仏性 read as 悉有は仏性なり; rejection of 先尼外道の我).
+    Page footer: "Copyright©2002 Yokohama Zenkouji Temple". The base edition is not stated; the
+    Shoaku makusa page ends with the colophon (延応庚子 ... 寛元元年 ... 懐弉). Paraphrase only:
+    any English is the researcher's own rendering, so it must not be presented as a quotation.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+```
+
+### Updated claim → citation rows
+
+| # | Claim | Source id | Locator | Read? |
+|---|---|---|---|---|
+| 14 (rev.) | People of Jambudīpa surpass Uttarakuru people and Thirty-Three gods in bravery, mindfulness, spiritual life lived here | anguttara-nikaya-sujato | AN 9.21 (3.3) | Yes |
+| 66 (rev.) | Bai Juyi / Niaoke exchange (three-year-old can say it, eighty-year-old cannot practise it); refraining from evil not contrived by ordinary will; appears as power of practice | dogen-shobogenzo-ja | Shoaku makusa | Yes (Japanese) |
+| 68 (rev.) | Sūtra line read as "the whole of being is buddha-nature"; not a Senika-type self | dogen-shobogenzo-ja | Busshō | Yes (Japanese) |
+| 72 (rev.) | Human birth rare; being human while the Buddha's teaching is present is an opportunity not to be wasted (replaces "uniquely suited", AN 9.21) | samyutta-nikaya-sujato | SN 56.48 (2.1–3.1) | Yes |
+| 73 (rev.) | Infant tendencies traced to karmic impressions of past action that carry over to produce new lives ("beginningless" removed) | vasubandhu-trimsika | 19 | Yes (Sanskrit) |
+| 81 | Suffering has no real owner, therefore no principled reason to prefer one's own | shantideva-bodhicaryavatara | 8.101–102 | Yes (Skt + Batchelor) |

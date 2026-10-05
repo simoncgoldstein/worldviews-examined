@@ -907,8 +907,6 @@ In 1924 the Christian Reformed Church affirmed God's restraint of sin and the ci
 - 2026-10-05 revision: closing sentence of "What this explains well" removed for parity with other lanes. Bavinck RD vol. 2 re-attempted on Google Books (id ltnKCQAAQBAJ): pages restricted ("viewing limit"); not read, left out.
 - Witsius is paraphrased, not quoted (OCR).
 - Romans 1:18–21 locator uses an en dash; keep consistent with site convention.
-</content>
-</invoke>
 
 ---
 
@@ -993,3 +991,25 @@ prefer `primary`.
 
 Dropped from the draft: `frame-van-til-antithesis` (record kept, not cited); the Deep-dive Edwards
 *True Virtue* ch. 7 sentence (it remains cited in the reply).
+
+### Codex review R-1 and citation check C#19 (2026-10-05)
+
+| Finding | Resolution |
+|---|---|
+| R-1 (the objection omitted the decree, passing by, and providence over sin) | "Strongest objection" now includes the Confession's own difficulty as part of the same objection: WCF 3.1, 3.7, 5.4 and 5.6, and the critic's question whether voluntary wrongdoing is enough to ground blame when God ordains its occurrence and controls the only remedy. Kant and Taylor remain the spine (≈282 words). "Christian reply" now answers it with WCF 3.1 (not the author of sin; no violence to the will; liberty of second causes established), WCF 5.4 (sinfulness from the creature only) and Edwards, *Freedom of the Will* IV.9 (God is not the "Actor of Sin"; sin arises from God's withholding, not his positive agency). It then states what this resolves (the charge that God sins or coerces) and what it leaves open: two disputes, self-origination and compatibilism under a comprehensive decree. It cites WCF 3.8, "high mystery", and refers the wider problem to the site's `evil` question (≈343 words). |
+| C#19 | The natural-inability-excuses clause is now cited to *Freedom of the Will* III.4 ("want of natural capacity, or external hindrance" … "wholly excuses"; moral inability "never can excuse"). I.4 is kept only for "consists in the opposition or want of inclination". "Ought implies can" is no longer quoted or attributed to Edwards; it appears unquoted as the objection's principle. |
+
+New claim → citation rows:
+
+| # | Claim | Source id | Locator | Read? |
+|---|---|---|---|---|
+| 67 | God ordains "whatsoever comes to pass" yet is not the author of sin; no violence to the will; liberty of second causes "rather established" | wcf | 3.1 | R-ed (OPC) |
+| 68 | The rest of mankind God was pleased "to pass by" | wcf | 3.7 | R-ed |
+| 69 | Predestination is a "high mystery" to be handled with care | wcf | 3.8 | R-ed |
+| 70 | Providence extends to the Fall and "all other sins", "not by a bare permission"; sinfulness "proceedeth only from the creature" | wcf | 5.4 | R-ed |
+| 71 | From the hardened God withholds the grace whereby they "might have been enlightened" | wcf | 5.6 | R-ed |
+| 72 | Natural inability ("want of natural capacity, or external hindrance") "wholly excuses"; moral inability "never can excuse" | edwards-works-hickman-1 | Freedom of the Will III.4 | R-ed (CCEL Hickman vol. 1) |
+| 73 | God is not the "Actor of Sin"; he permits and orders it; sin arises "from the withholding of his action and energy", not from his positive agency (illustrated by the sun's departure) | edwards-works-hickman-1 | Freedom of the Will IV.9 | R-ed (CCEL Hickman vol. 1) |
+
+Append to the `edwards-works-hickman-1` notes: "Also read 2026-10-05: Freedom of the Will IV.9
+('Concerning that objection … that it makes God the Author of Sin')."

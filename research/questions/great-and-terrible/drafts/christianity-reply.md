@@ -133,5 +133,3 @@ I.1.1) ✓.
 
 - Removed the closing sentence of "What this explains well" ("These are claims of explanatory fit…").
 - Recorded the failed Bavinck RD vol. 2 attempt in the drafting notes. RD remains uncited.
-</content>
-</invoke>

@@ -31,7 +31,7 @@
     36:25-27; Matt 5:45; John 3:3; Acts 14:16-17; Rom 1:18-28, 2:14-15, 3:23-26, 5:12, 5:18-19,
     7:15-25, 8:7; 2 Cor 3:18; Eph 2:1-5, 4:17-18, 4:24; Col 3:10; Jas 3:9; 1 John 1:9.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: wcf
   type: confessional
@@ -47,7 +47,7 @@
     prints. Read at the OPC URL 2026-10-05: chs. 1, 4-7, 8.5-6, 9, 10, 11.3, 13, 15.1-3, 16, 21.1.
     Locator chapter.section.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: calvin-institutes
   type: primary
@@ -135,7 +135,7 @@
     from New Advent's source line. Locator book.chapter. Read 2026-10-05: XII.6–7; XIV.6–7, 13, 28;
     XXII.22, 24.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: augustine-confessions
   type: primary
@@ -156,7 +156,7 @@
     records date NPNF¹ vol. 1 to 1886. Locator book.chapter.paragraph. Read 2026-10-05: II.4.9,
     II.5.11, II.6.12–14, II.7.15, II.8.16; VIII.5.10–12, VIII.9.21, VIII.10.22–24.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: augustine-enchiridion
   type: primary
@@ -175,7 +175,7 @@
     New Advent online edition of the Shaw translation; imprint from New Advent's source line.
     Locator: chapter (NPNF numbering). Read 2026-10-05: chs. 11–14, 30.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: bavinck-calvin-common-grace
   type: article
@@ -194,7 +194,7 @@
     Preface (read) names Vos as translator. Page numbers are this book's, read on the archive.org
     scan 2026-10-05 (pp. 99–101, 111–121 read). Bavinck is here expounding Calvin.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: calvin-commentary-romans
   type: commentary
@@ -212,7 +212,7 @@
     archive.org catalog records ("Edinburgh: Printed for the Calvin Translation Society", 1849).
     Locator: verse commented on. Comment on Rom 7:14–15 read 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: calvin-institutes-beveridge
   type: primary
@@ -231,7 +231,7 @@
     McNeill/Battles). Read 2026-10-05: I.1.1; I.3.1-3; I.5.3-4; I.15.1, 3-4, 8; II.1.2, 4, 8-11;
     II.2.12-18, 22-26; II.3.3-5; II.11.7-8, 10; III.7.6.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: crc-acts-synod-1924
   type: confessional
@@ -251,7 +251,7 @@
     (Three Points; Danhof and Hoeksema) read. Correspondence of these pages to the Dutch pagination
     is not confirmed.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: edwards-works-hickman-1
   type: primary
@@ -270,7 +270,7 @@
     the Will I.4, III.4; True Virtue chs. 1, 5, 7; Original Sin I.1.1, IV.1, IV.3 (Turnbull is
     quoted by Edwards; Turnbull's own text not read).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: kant-religion-greene-hudson
   type: primary
@@ -290,7 +290,7 @@
     metadata from the archive.org catalog record (lending-only, scan not checked), so page numbers
     are not used as locators. Before review, confirm wording against the printed edition.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-sin-christian
   type: academic
@@ -305,7 +305,7 @@
     section number. Read 2026-10-05: §4.3 (original guilt "defended by very few philosophers"; list
     of corruption-only holders; Rea's principle) and §4.4 (federalism as a "legal fiction").
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: taylor-original-sin
   type: book
@@ -325,7 +325,7 @@
     pp. 183–186. The volume also binds the separately paginated 1741 Supplement (see
     taylor-original-sin-supplement).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: taylor-original-sin-supplement
   type: book
@@ -343,7 +343,7 @@
     1741) and pp. 108–109 (objection III against "R. R.", i.e. The Ruin and Recovery of Mankind,
     conventionally attributed to Isaac Watts).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: westminster-larger-catechism
   type: confessional
@@ -351,12 +351,18 @@
   shortCitation: WLC
   author: Westminster Assembly
   traditionTags: [christianity]
-  year: 1648
+  year: 1647
   url: https://www.opc.org/lc.html
   notes: >-
-    Unverified: year 1648 not confirmed against a catalog record (reviewer to confirm or omit). Text
-    as published by the OPC; Q&A 17-28 read at the OPC URL 2026-10-05; locator Q. n.
-  verificationStatus: unverified
+    Text as published by the Orthodox Presbyterian Church (its constitutional text; the page gives no
+    textual notes). `year` means the year the Westminster Assembly completed the catechism, 1647,
+    which is the date the OPC gives for the Larger and Shorter Catechisms
+    (https://www.opc.org/confessions.html); the Church of Scotland's General Assembly adopted it in
+    1648, and the year of the OPC web text is not stated. Verified 2026-10-05: OPC pages fetched;
+    the URL resolves to the Larger Catechism; Q. 25 read ("utterly indisposed, disabled, and made
+    opposite unto all that is spiritually good"), plus Q&A 17-28; locator Q. n (question number).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: witsius-economy-covenants
   type: primary
@@ -374,7 +380,7 @@
     book.chapter.section. Book I, ch. 8, §§30–35 (Adam as head; Rom 5:12) read 2026-10-05 in the OCR
     text (OCR is poor; quotations should be checked against page images before use).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 # --- Naturalistic atheism ------------------------------------------------------------
 - id: hume-enquiry
@@ -391,7 +397,7 @@
     Cited by section.paragraph (site label "E 8.23", with SBN pages). Verified 2026-10-05 for 8.7
     and 8.23.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-naturalism
   type: academic
@@ -405,7 +411,7 @@
     First published 2007; substantive revision 31 March 2020. Cited by section (§1 ontological
     naturalism; §1.7 moral facts; §2 methodological naturalism).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: darwin-descent
   type: primary
@@ -423,7 +429,7 @@
     2026-10-05 in the Darwin Online text and cross-checked against Project Gutenberg #2300 (same
     2nd-edition text): ch. IV pp. 97, 98, 113–114, 122; ch. V p. 130; ch. XXI p. 619.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: dennett-self-artifact
   type: article
@@ -442,7 +448,7 @@
     48 reasons-giving, transformers; p. 49 center of narrative gravity; p. 50 control and
     responsibility.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: hume-epm
   type: primary
@@ -458,7 +464,7 @@
     Cited by section.paragraph (e.g. 9.4; the site labels these "M 9.4", with SBN pages). Verified
     2026-10-05: 9.4, 9.5, 9.6.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: hume-treatise
   type: primary
@@ -475,7 +481,7 @@
     also gives SBN pages. Verified 2026-10-05 on davidhume.org: T 2.3.3.4, 2.3.3.6, 2.3.3.10,
     3.1.1.6, 3.1.1.26–27, 3.2.2.5, 3.2.2.7, 3.2.2.9, 3.2.2.18, 3.3.1.10, 3.3.1.15.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: kitcher-ethical-project-precis
   type: article
@@ -492,7 +498,7 @@
     p. 6 (progress rare), p. 10 (ethics as social technology), p. 12 (progress as fulfilling
     functions), p. 18 ("incomplete psychological altruists").
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: mackie-ethics
   type: book
@@ -507,7 +513,7 @@
     First published Pelican 1977; pagination checked 2026-10-05 in a scan of the Penguin reprint
     (1990; scan not linked): pp. 15, 29, 33, 35 (ch. 1 sections 1, 6, 7), 42-43, 107-108.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: railton-moral-realism
   type: article
@@ -526,7 +532,7 @@
     theory), 191-194 (social feedback), 201 (not categorical), 202 (analogy with logic; impartial
     standpoint).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: russell-what-i-believe
   type: primary
@@ -543,7 +549,7 @@
     Individual and Social). Wikisource transcription of the 1925 Dutton edition. Verified
     2026-10-05: ch. 1, ch. 2, ch. 4 passages.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-altruism-biological
   type: academic
@@ -557,7 +563,7 @@
     First published 2003; substantive revision 21 July 2013. Cited by section. Verified 2026-10-05
     (kin selection, reciprocal altruism, group selection, biological vs psychological altruism).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-morality-biology
   type: academic
@@ -571,7 +577,7 @@
     First published 2008; substantive revision 15 July 2025. Cited by section. Verified 2026-10-05
     (§§1.1, 2.2, 2.3, 4.1).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-weakness-will
   type: academic
@@ -586,7 +592,7 @@
     §3.3 Holton; §3.4.2 empirical psychology). Not a naturalist-specific source; used for the
     analysis of akrasia.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: tennie-ratchet
   type: article
@@ -603,7 +609,7 @@
     pp. 2405–2415 (PubMed 19620111). Cited by section (Abstract; §5 "Cooperation and social
     transmission"). Verified 2026-10-05 in the PubMed Central full text.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: wrangham-two-types
   type: article
@@ -621,7 +627,22 @@
     "Resolving the Rousseau–Kropotkin vs. Hobbes–Huxley Debate"). Verified 2026-10-05 in the PubMed
     Central full text of the published article.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
+
+- id: sep-cognitive-disability
+  type: academic
+  title: Cognitive Disability and Moral Status
+  shortCitation: Wasserman et al., "Cognitive Disability and Moral Status"
+  author: David Wasserman, Adrienne Asch, Jeffrey Blustein and Daniel Putnam
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/cognitive-disability/
+  notes: >-
+    First published 2012; substantive revision 2017. Cited by section. Verified 2026-10-05: authors
+    from the copyright line, URL resolves, §3 read in full and §4.1 opening read. Used for the shape
+    of the philosophical debate on capacity-based moral status, not as a naturalist source.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 # --- Rabbinic Judaism ----------------------------------------------------------------
 - id: maimonides-guide
@@ -666,7 +687,7 @@
   notes: >-
     Adopted May 1999 at the Pittsburgh convention. Read for image of God, mitzvot, repentance.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: halevi-kuzari-hirschfeld
   type: primary
@@ -684,7 +705,7 @@
     offset). I.27, I.31-43, I.95, III.5 read on Sefaria; I.95 and III.5 matched against the
     archive.org full text.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: maimonides-eight-chapters
   type: primary
@@ -699,10 +720,14 @@
   year: 1912
   url: https://www.sefaria.org/Eight_Chapters.6
   notes: >-
-    Unverified: publisher and year are standard for Gorfinkle (Columbia 1912) but no catalog record
-    was opened. Public-domain text read on Sefaria 2026-10-05 (chs. 6 and 8); locators by chapter.
-    Footnotes are editorial.
-  verificationStatus: unverified
+    Imprint confirmed in the Open Library record (New York: Columbia University Press, 1912; LCCN
+    14000274) and archive.org catalog records (eightchaptersofm00maim; cu31924029203119), which list
+    Maimonides, Ibn Tibbon and Gorfinkle. Sefaria's version (Public Domain) transcribes this
+    translation from Wikisource. Cite by chapter. Read on Sefaria 2026-10-05: ch. 6 (noble soul and
+    the rabbinic dictum), ch. 8 (temperament does not compel). Footnotes are editorial. Verified
+    2026-10-05.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: maimonides-guide-friedlander
   type: primary
@@ -721,7 +746,7 @@
     lix, 414 p.). Locators part.chapter. I.1, I.2, III.8, III.12 read in Sefaria (Friedlander) and
     matched verbatim against the archive.org full text of this edition.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: maimonides-mishneh-torah-touger
   type: primary
@@ -730,16 +755,21 @@
   author: Moses Maimonides
   traditionTags: [judaism]
   translator: Eliyahu Touger
+  edition: Multi-volume bilingual edition, c1986-c2007 (volume of each citation not identified)
   place: Jerusalem
   publisher: Moznaim
-  year: 1986
   url: https://www.sefaria.org/Mishneh_Torah,_Repentance.5.1
   notes: >-
-    Unverified: the NLI catalog record linked from the Sefaria version was not opened; volumes
-    1986-2007. Touger translation read on Sefaria 2026-10-05; locators Hilkhot [section]
-    chapter:halakhah (Teshuvah 2:1-2, 3:4, 5:1-5, 6:3, 7:4, 7:6-7; Yesodei ha-Torah 4:8-9).
-    Bracketed additions are Touger's.
-  verificationStatus: unverified
+    Online edition: Sefaria's version "Mishneh Torah, trans. by Eliyahu Touger. Jerusalem, Moznaim
+    Pub. c1986-c2007" (CC-BY-NC; source record at the National Library of Israel, which blocks
+    automated access, so the record was not opened). Open Library lists Touger's Moznaim volumes
+    (Hilchot Teshuvah, 1987; Sefer Hamadah, 2010), so the series and publisher are real; `year` is
+    omitted because the record gives a date range, not a single year, and the volume of each cited
+    chapter is not confirmed. Cite Hilkhot [section] chapter:halakhah (canonical Mishneh Torah
+    system). Read on Sefaria 2026-10-05: Teshuvah 2:1-2, 3:4, 5:1-5, 6:3, 7:4, 7:6-7; Yesodei
+    ha-Torah 4:8-9. Bracketed additions are Touger's. Verified 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: midrash-rabbah-sefaria
   type: primary
@@ -754,22 +784,28 @@
     numbering). Read: 8:5 (angels debate man's creation), 8:11 (upper and lower traits), 9:7 ("very
     good" = evil inclination), 14:4 (two yetzarim), 24:7 (Ben Azzai, R. Tanhuma).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: mishnah-kulp
   type: primary
   title: Mishnah Yomit
   shortCitation: Mishnah
+  author: Joshua Kulp
   traditionTags: [judaism]
   translator: Joshua Kulp
+  place: Jerusalem
   publisher: Conservative Yeshiva
+  edition: Online English translation and commentary, as hosted on Sefaria
   url: https://www.sefaria.org/Pirkei_Avot.3.14
   notes: >-
-    Unverified: version record gives no year or place (metadata partial). Kulp English (Mishnah
-    Yomit, CC-BY) read on Sefaria 2026-10-05; locators tractate chapter:mishnah (Avot follows
-    Sefaria numbering). Read: Berakhot 9:5; Avot 2:4, 3:14, 3:15, 4:1, 4:21; Yoma 8:8-9; Sanhedrin
-    4:5 (printed text reads from Israel).
-  verificationStatus: unverified
+    Online edition: Sefaria's version "Mishnah Yomit by Dr. Joshua Kulp" (CC-BY; source
+    http://learn.conservativeyeshiva.org/mishnah/). Kulp is rosh yeshiva of the Conservative Yeshiva
+    in Jerusalem (Sefaria's Kulp page). No publication year is stated by the version record or the
+    host pages, so `year` is omitted; no print edition is cited. Cite tractate chapter:mishnah
+    (Avot follows Sefaria numbering). Read 2026-10-05: Berakhot 9:5; Avot 2:4, 3:14, 3:15, 4:1,
+    4:21; Yoma 8:8-9; Sanhedrin 4:5 (printed text reads from Israel). Verified 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: ramban-torah-chavel
   type: commentary
@@ -787,7 +823,7 @@
     2:9; on Deut 30:6. Chavel's notes (e.g. citing R. Yeruham on Deut 30:6) are editorial, not
     Ramban. Volumes published 1971-1976.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: rashi-tanakh-judaica-press
   type: commentary
@@ -799,11 +835,16 @@
   publisher: Judaica Press
   url: https://www.sefaria.org/Rashi_on_Isaiah.53.3
   notes: >-
-    Unverified: print metadata not confirmed (the NLI catalog record returned HTTP 403; Rosenberg,
-    Judaica Press 1982-83 is believed from bookseller listings only). Rashi on Isa 52:13, 53:3, 53:4
-    read on Sefaria 2026-10-05; locator on [book] chapter:verse. Confirm a catalog record or cut the
-    Rashi sentence before review.
-  verificationStatus: unverified
+    Online edition: Sefaria's version "The Judaica Press complete Tanach with Rashi, translated by
+    A. J. Rosenberg" (CC-BY; source record at the National Library of Israel, which blocks automated
+    access, so its record was not opened). Print edition confirmed in Open Library records: Isaiah,
+    A New English Translation, Rosenberg, Judaica Press, vol. 1 (ISBN 0910818509) 1982 and vol. 2
+    (ISBN 0910818525) 1983; `year` is omitted because the record covers the whole multi-volume
+    series. Cite by "on [book] chapter:verse" (Bible verse system). Rashi on Isa 52:13, 53:3, 53:4
+    read on Sefaria 2026-10-05 and support the cited claim that Rashi reads the servant as Israel.
+    Verified 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: saadia-emunot-ibn-tibbon
   type: primary
@@ -822,7 +863,7 @@
     drafts are the researcher's paraphrases; do not quote as Rosenblatt. Rosenblatt (Yale, 1948)
     numbering not checked.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: soloveitchik-lonely-man-of-faith
   type: article
@@ -839,7 +880,7 @@
     journal's printed pages (first page 5; PDF page n = journal page n+4). Read: pp. 5, 10, 12-14,
     17, 51-52. Not the 1992/2006 Doubleday pagination.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: talmud-bavli-koren
   type: primary
@@ -847,16 +888,23 @@
   shortCitation: b.
   traditionTags: [judaism]
   editor: Adin Even-Israel Steinsaltz
+  edition: William Davidson Edition (digital English text on Sefaria), from the Koren Noé Edition
   place: Jerusalem
-  publisher: Koren Publishers
-  year: 2012
-  url: https://www.sefaria.org/texts/Talmud
+  publisher: Koren Publishers Jerusalem
+  url: https://www.sefaria.org/Berakhot.17a
   notes: >-
-    Unverified: year range 2012-2019 taken from the publisher series, not checked against a catalog
-    record. William Davidson Edition English read on Sefaria 2026-10-05; locators tractate and folio
-    (Berakhot 17a, 34b, 61a; Shabbat 55b, 146a; Yoma 69b, 86b; Sukkah 52a-b; Kiddushin 30b, 40b;
-    Sanhedrin 91b; Bava Batra 16a). Quotations include Steinsaltz glosses.
-  verificationStatus: unverified
+    Online edition, not the print volumes: Sefaria's version "William Davidson Edition - English"
+    (CC-BY-NC; source https://korenpub.com/collections/the-noe-edition-koren-talmud-bavli-1) states
+    the English is "from The William Davidson digital edition of the Koren Noé Talmud, with
+    commentary by Rabbi Adin Even-Israel Steinsaltz". The publisher's page confirms Koren Publishers
+    Jerusalem, the Noé Edition, 42 volumes, with Steinsaltz; it gives no volume years, so `year`
+    is omitted (print volumes appeared across several years, not individually checked). Cite by
+    tractate and folio (Talmud folio system; page numbers of the print volumes are not cited).
+    Passages read on Sefaria 2026-10-05 (Berakhot 17a, 34b, 61a; Shabbat 55b, 146a; Yoma 69b,
+    86b; Sukkah 52a-b; Kiddushin 30b, 40b; Sanhedrin 91b; Bava Batra 16a). Quotations include
+    Steinsaltz glosses. Verified 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: tanakh-jps-gender-sensitive
   type: scripture
@@ -873,7 +921,7 @@
     Passages read: Gen 1:26-28, 4:7, 6:5, 8:21, 9:6; Ps 8:4-7; Deut 30:11-19; Ezek 18:20, 36:26-27;
     Jer 31:30-33; Eccl 7:20, 7:29.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: tanya-kehot
   type: primary
@@ -887,9 +935,14 @@
   year: 1973
   url: https://www.sefaria.org/Tanya,_Part_I;_Likkutei_Amarim.12
   notes: >-
-    Unverified: translator list and 1973 first bilingual edition come from publisher/bookseller
-    listings only; which translator rendered Part I is not confirmed. Kehot English (CC-BY-NC) read
-    on Sefaria 2026-10-05, chs. 1 and 12; locator Likkutei Amarim [chapter].
+    Unverified. Sefaria's version "Kehot Publication Society (English Translation)" (CC-BY-NC,
+    "(c) Kehot Publication Society", source http://kehot.com) names no translator, year or edition.
+    Kehot's and booksellers' listings (not catalog records) give the bilingual edition as
+    translated by Mindel, Mangel, Posner and Schochet, first published 1973, with the five parts
+    rendered by different translators and later revised; no source opened says which translator
+    did Part I or whether the Sefaria text is the 1973 or a revised rendering. Kehot's product page
+    returned 404 and no catalog record was found (Open Library has no Kehot English Tanya record).
+    Kehot English read on Sefaria 2026-10-05, chs. 1 and 12; locator Likkutei Amarim [chapter].
   verificationStatus: unverified
 
 - id: yerushalmi-guggenheimer
@@ -907,7 +960,23 @@
     Sanhedrin 4:9 (Mishnah text reads universally, "anybody who destroys a single life"); Nedarim
     9:4 (Ben Azzai / R. Akiva / R. Tanhuma). Volumes published 1999-2015.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
+
+- id: tanya-hebrew-sefaria
+  type: primary
+  title: Likkutei Amarim (Tanya), Hebrew text
+  shortCitation: Tanya
+  author: Shneur Zalman of Liadi
+  traditionTags: [judaism]
+  publisher: Kehot Publication Society (Hebrew text as hosted on Sefaria)
+  url: https://www.sefaria.org/Tanya,_Part_I;_Likkutei_Amarim.12?lang=he
+  notes: >-
+    Hebrew original (first printed Slavita, 1796/97), read 2026-10-05 in the Kehot Hebrew text on
+    Sefaria; locators are the standard chapters (ch. 1, 2, 9, 12 read). English in the answer is
+    paraphrase. The specific Kehot printing behind the Sefaria text is not identified; verification
+    rests on the canonical chapter locators (verification protocol, condition 4).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 # --- Classical Islam -----------------------------------------------------------------
 - id: quran-haleem
@@ -926,7 +995,7 @@
     reflect a later printing) 2026-10-05, including 9:118; no page numbers cited. Publication data
     checked against OUP and retailer records.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: ashari-ibana-klein
   type: primary
@@ -945,7 +1014,7 @@
     to al-Ash'ari's kalam works is debated; cite it for the creed's own statements, not Klein's
     evaluative introduction.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: bukhari-sahih-khan
   type: primary
@@ -960,7 +1029,7 @@
     Sahih al-Bukhari N"; sunnah.com states the translation is by Dr. M. Muhsin Khan. The translation
     inserts interpretive glosses in parentheses; paraphrase rather than quote those.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: ghazali-disciplining-soul
   type: primary
@@ -973,10 +1042,23 @@
   publisher: The Islamic Texts Society
   year: 1995
   notes: >-
-    Unverified: page markers for pp. 23-25 are out of order in the scan and need confirming against
-    a print copy. Title and copyright pages (Islamic Texts Society 1995, ISBN 0 946621 43 8) read;
-    pp. 18-19, 23-25, 37 read in the full-text scan. Cited by page.
-  verificationStatus: unverified
+    Imprint (Islamic
+    Texts Society, Cambridge 1995; ISBN 0 946621 43 8) confirmed from the title and copyright pages
+    of the archive.org scan (6-abu-hamid-muhammad-ghazali-on-disciplining-the-soul-and-breaking-
+    the-two-desires) and Open Library. Re-read 2026-10-05 with running heads and folios (the OCR
+    prints folios 24/25 and 26/27 out of order; running heads alternate "SPIRITUAL DISCIPLINE" on
+    even pages and "Disciplining the Soul" on odd, consistent with folios 18-22). By that
+    pagination: the objection that character cannot change opens Book XXII section 3 ("An
+    Exposition of the Susceptibility of the Traits of Character to Change through Discipline")
+    on p. 24; "were the traits of character not susceptible to change there would be no value in
+    counsels, sermons and discipline" is p. 25; the four degrees, including the second type who
+    "knows that he is not acting as he should", are p. 26; desire and anger "created for a
+    purpose", not to be extirpated, is p. 27, running to the restoration of moderation on p. 28.
+    Recommended locators: p. 25 (not 23), p. 26 (not pp. 24-25), pp. 27-28 (not p. 25). Pages 18-19
+    and 37 not rechecked. Section locator: Ihya', Book XXII, section 3 (scan marker [22.3]).
+    Answers corrected to these locators 2026-10-05; pages 18-19 and 37 are not cited.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
 
 - id: ghazali-marvels-heart
   type: primary
@@ -995,7 +1077,7 @@
     in a full-text scan of this edition showing its title page, copyright page and printed
     pagination.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: ghazali-repentance-stern
   type: primary
@@ -1013,7 +1095,7 @@
     University Library) showing title, copyright page and pagination. The translation's wording
     ("hereditary trait", p. 30) is idiomatic; do not use it to imply inherited guilt.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: harvey-transcendent-god
   type: academic
@@ -1030,7 +1112,7 @@
     archive.org mirror of the OAPEN file). Reports al-Maturidi's Kitab al-Tawhid (Topaloglu/Aruci
     ed.).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: hoover-theodicy
   type: academic
@@ -1048,7 +1130,7 @@
     primary locators (Dar' ta'arud, Majmu' al-fatawa, Nubuwwat); quote only passages Hoover marks as
     translation.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: muslim-sahih-siddiqui
   type: primary
@@ -1062,7 +1144,7 @@
     Cited by sunnah.com number including letter suffix (e.g. 2658b), shown there as "Reference:
     Sahih Muslim N"; sunnah.com states the translation is by Abdul Hamid Siddiqui.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-arabic-islamic-religion
   type: academic
@@ -1076,7 +1158,7 @@
   notes: >-
     First published 31 May 2023. Cite by section number (§5 evil; §7 ethics).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-ibn-arabi
   type: academic
@@ -1090,7 +1172,7 @@
   notes: >-
     First published 5 Aug 2008; substantive revision 5 Dec 2025. Cite by section number.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-ibn-sina
   type: academic
@@ -1104,7 +1186,7 @@
   notes: >-
     First published 15 Sep 2016; substantive revision 31 Oct 2025. Cite by section number.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 # --- Hindu traditions ----------------------------------------------------------------
 - id: olivelle-upanishads
@@ -1132,7 +1214,7 @@
     (including comparative remarks) are not Rāmānuja's. Verified against the archive.org scan,
     2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: iep-madhva
   type: academic
@@ -1145,7 +1227,7 @@
   notes: >-
     Cite by section (intro; §3 Dvaita Vedanta). Read 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: iep-ramanuja
   type: academic
@@ -1159,7 +1241,7 @@
     Quotes Vedārthasaṅgraha §99 in translation. Cite by section title. No publication year on page.
     Read 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: jha-slokavarttika
   type: primary
@@ -1178,7 +1260,7 @@
     notes are his, not Kumārila's. Edition details from the reprint title page and SEP Kumārila
     bibliography. Verified against the archive.org scan, 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: muller-upanishads-1
   type: scripture
@@ -1196,7 +1278,7 @@
     Īśā. Cite text + canonical section (e.g. "AA II.3.2.4"). Verified against the archive.org scan,
     2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sastri-gita-shankara
   type: primary
@@ -1214,7 +1296,7 @@
     Gītā text and Śaṅkara's commentary. Cite by Gītā chapter.verse (add "comm." for the bhāṣya).
     Verified against the archive.org scan (title page and running heads), 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-shankara
   type: academic
@@ -1228,7 +1310,7 @@
   notes: >-
     First published 4 October 2021. Cite by section number. Read 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: subbarau-madhva-brahmasutra
   type: primary
@@ -1246,7 +1328,7 @@
     cite Madhva's numbering plus page. Year from preface (Aug. 1904) and catalog. Verified against
     the archive.org scan, 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: thibaut-ramanuja-sribhashya
   type: primary
@@ -1265,7 +1347,7 @@
     Cite adhyaya.pada.sutra plus SBE page. Verified against the archive.org scan 2026-10-05,
     including II.2.3 (p. 487) and IV.1.13 (pp. 722-723).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: thibaut-shankara-brahmasutra
   type: primary
@@ -1284,7 +1366,7 @@
     Covers BS I.1–II.2. Cite adhyāya.pāda.sūtra plus SBE page. Verified against the archive.org scan
     (title page, running heads), 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: vidyabhusana-nyaya-sutras
   type: primary
@@ -1304,7 +1386,7 @@
     sūtra's. OCR page numbers unreliable; do not cite pages. Verified against the archive.org scan,
     2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: woods-yoga-sutra
   type: primary
@@ -1325,7 +1407,7 @@
     (archive.org/details/yogasystemofpata00wooduoft_202005; HOS 17 signatures visible). Do not cite
     page numbers. Verified 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 # --- Buddhist traditions -------------------------------------------------------------
 - id: majjhima-nikaya-bodhi
@@ -1354,7 +1436,7 @@
     2026-10-05 against the BPS PDF (imprint page: 1st ed. 1956, 3rd ed. 1991, 4th ed. 2010; ISBN
     978-955-24-0023-6). Registry previously gave year 1991 (3rd ed.); update recommended.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: nagarjuna-mmk
   type: primary
@@ -1371,7 +1453,7 @@
     chapter.verse; cited verses (8.12, 17.1-3, 18.4-6, 23.1, 24.18-19, 24.32-33, 26.10-11) read in
     the Sanskrit GRETIL e-text, same numbering. Garfield wording not seen: do not quote verbatim.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: shantideva-bodhicaryavatara
   type: primary
@@ -1390,7 +1472,7 @@
     confirmed). Cite by chapter.verse; cited verses read in the Sanskrit GRETIL e-text (same
     numbering) and Batchelor's English. Crosby and Skilton wording not seen: do not quote verbatim.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: anguttara-nikaya-sujato
   type: primary
@@ -1406,7 +1488,7 @@
     metadata (scpub5, 2018, CC0) from SuttaCentral publication API; passages read in Sujato's
     English with Pali root text.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: dogen-shobogenzo
   type: primary
@@ -1419,11 +1501,26 @@
   publisher: Shambhala
   year: 2010
   notes: >-
-    Metadata confirmed 2026-10-05 from LoC and Columbia MARC via Open Library (ISBN 9781590304747).
-    Cite by fascicle (Busshō, Shoaku makusa); read in the Japanese original (Zenchōji web text).
-    Tanahashi wording not seen: do not quote verbatim. Bendōwa not cited.
+    Bibliographic metadata confirmed 2026-10-05 from LoC/Columbia MARC via Open Library (ISBN
+    9781590304747). The edition's text has not been read, so protocol condition 4 is not met.
+    Cite dogen-shobogenzo-ja until Tanahashi's wording can be checked.
+  verificationStatus: unverified
+
+- id: dogen-shobogenzo-ja
+  type: primary
+  title: Shōbōgenzō (正法眼蔵), Japanese text, online
+  shortCitation: Dōgen, Shōbōgenzō (Japanese text)
+  author: Dōgen
+  traditionTags: [buddhism]
+  publisher: Zenchōji (Sōtō Zen temple, Yokohama)
+  year: 2002
+  url: http://hikari-k.ed.jp/zenchoji/sutra/soroku/genzo31.htm
+  notes: >-
+    Japanese text, one web page per fascicle (Busshō at genzo03.htm, Shoaku makusa at genzo31.htm);
+    cited by fascicle title. Verified 2026-10-05: URLs resolve and the cited passages were read in
+    Japanese. Base edition not stated by the site. Any English is a paraphrase, never a quotation.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: majjhima-nikaya-sujato
   type: primary
@@ -1440,7 +1537,7 @@
     English with Pali root text. Prefer this over majjhima-nikaya-bodhi where page-accessible
     verification matters.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: ratnagotravibhaga-johnston
   type: primary
@@ -1455,7 +1552,7 @@
     (marked "Rgv NN" in e-text). Read 2026-10-05. Takasaki (1966) and Tibetan-based translations may
     number differently: confirm before citing in a reviewed answer.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: samyutta-nikaya-sujato
   type: primary
@@ -1470,7 +1567,7 @@
     Cite by sutta (e.g. SN 56.11, SN 22.100:2.3). Verified 2026-10-05: metadata (scpub4, 2018, CC0)
     from SuttaCentral publication API; passages read in Sujato's English with Pali.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-buddhism-tiantai
   type: academic
@@ -1484,7 +1581,7 @@
     First published 19 Nov 2014; substantive revision 13 Nov 2022. Read §4.1 ("evil is inherently
     included in Buddhahood") on 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-japanese-zen
   type: academic
@@ -1498,7 +1595,7 @@
     First published 28 Jun 2006; substantive revision 7 Mar 2024. Read §2 (Dōgen's
     practice-realization, shushō; practice and realization "not two") on 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-korean-philosophy
   type: academic
@@ -1512,7 +1609,7 @@
     First published 14 Jan 2022. Read §2.2 (Xuanzang's five lineages, pañcagotra, including
     icchantikas "beyond the possibility of salvation"; Wŏnch'ŭk's reconciliation) on 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: sep-tsongkhapa
   type: academic
@@ -1525,7 +1622,7 @@
   notes: >-
     First published 2011; substantive revision 17 Apr 2024. Read §1.1, §3, §5 on 2026-10-05.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: shinran-tannisho-cws
   type: primary
@@ -1542,7 +1639,7 @@
     versus Other Power. Publisher/year from the page footer (© 1997 Jōdo Shinshū Hongwanji-ha). Text
     compiled by Yuien, recording Shinran's sayings.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: tsongkhapa-three-principal-aspects
   type: primary
@@ -1560,7 +1657,7 @@
     translator and dates from the page colophon; Tibetan source given as gdams ngag mdzod vol. 4:
     435–438.
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"
 
 - id: vasubandhu-trimsika
   type: primary
@@ -1576,4 +1673,4 @@
     Vasubandhu (Motilal Banarsidass, 1984), not checked here. The e-text's base edition is not
     stated (cf. Lévi 1925).
   verificationStatus: checked
-  verifiedOn: 2026-10-05
+  verifiedOn: "2026-10-05"

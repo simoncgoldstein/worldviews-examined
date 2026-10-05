@@ -811,3 +811,17 @@ classical by design.
 | 75 | 9.32 construed as list ("the sin-born, women, vaisyas or sudras") | govindacharya-gita-ramanuja | 9.32 (pp. 313–314) | Yes |
 | 76 | Five kleśas; avidyā the field of the others; will-to-live even in the wise | woods-yoga-sutra | YS 2.3–9 | Yes |
 | 31 (corrected) | BSBh I.3.25 is about humans vs other beings, not caste (caste gloss is translator's footnote) | thibaut-shankara-brahmasutra | I.3.25 (pp. 196–197) | Yes |
+
+### Citation-check fixes (citation-check-hinduism-buddhism.md, H9/H25/H37/H44/H47/H50) — 2026-10-05
+
+Applied in `drafts/hinduism-positive.mdx`. Updated claim → citation rows (supersede earlier rows 11–12, 24, 52–53, 61–62, 75):
+
+| # | Claim | Source id | Locator | Read? |
+|---|---|---|---|---|
+| 24 (rev.) | One "of flagitiously wicked ways" ... "speedily becomes ... a holy soul" (commentary wording) | govindacharya-gita-ramanuja | 9.30–31, comm. (pp. 312–313) | Yes |
+| 11–12 (rev.) | "the divine nature" vs "demoniac" (Sastri's wording; "endowment" dropped) | sastri-gita-shankara | 16.1–8, 16.21 | Yes |
+| 61–62 (rev.) | VS §99 quotes; prapatti debate | iep-ramanuja | §7 "Interpreting Rāmānuja" (was §5) | Yes |
+| 75a (new) | 9.32 "of a sinful birth" in apposition to women, vaiśyas, śūdras | sastri-gita-shankara | 9.32 (p. 232) | Yes |
+| 75 (rev.) | 9.32 "the sin-born" listed separately | govindacharya-gita-ramanuja | 9.32 (pp. 313–314) | Yes |
+| 52 (rev.) | MS 1.1.2: "Duty is a purpose having Injunction for its sole authority" | jha-slokavarttika | Aphorism II (MS 1.1.2), p. 21 | Yes |
+| 53 (confirmed) | Senses cannot reach dharma (v. 16); inference needs a known relation (v. 17); no mark related to dharma is known (v. 18) | jha-slokavarttika | Codanā-sūtra vv. 16–18 (p. 24 of the 1983 reprint) | Yes — re-confirmed in OCR |
