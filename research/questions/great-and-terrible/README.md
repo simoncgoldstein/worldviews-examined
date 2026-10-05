@@ -16,7 +16,8 @@ reuse verified work and the method, not as publishable text.
 |---|---|
 | `packets/<worldview>.md` | Independent steelman dossiers (anthropology, school differences, strengths, thinkers, uncertainties, proposed sources with verification lines, claim→citation tables), each ending with QA-resolution sections. |
 | `packets/christianity-objection.md` | Independent research into the strongest objection to Reformed anthropology, with the candidates rejected and why. |
-| `drafts/<worldview>-positive.mdx`, `drafts/<worldview>-response.mdx`, `drafts/christianity-full.mdx` | Final section drafts from which the answers are assembled (descriptive and Christian-response sections were written by different agents). |
+| `drafts/<worldview>-positive.mdx`, `drafts/<worldview>-response.mdx`, `drafts/christianity-full.mdx` | Fuller reviewed section drafts (descriptive and Christian-response sections were written by different agents). The published answers are a condensed distillation of these; see `PUBLIC-DISTILLATION.md`. |
+| `PUBLIC-DISTILLATION.md` | What the post-review editorial pass removed from the public answers (thinkers, Deep-dive material, every citation pair), all of which remains here. |
 | `profiles/*.yaml` | First-pass thinker profiles with reference URLs; superseded by the audited registry. |
 | `reviews/steelman-qa.md` + `-adjudication.md` | Independent steelman review and the decision on every finding. |
 | `reviews/citation-check-*.md` | Three independent re-readings of every cited passage (390 citations). |

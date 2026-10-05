@@ -91,15 +91,23 @@ Reformed Christianity: `## The Christian view` · `## What this explains well` �
 Others: `## The view` · `## What this explains well` · `## Christian response` ·
 `## Pressure questions` (a markdown list) · `## Deep dive`
 
-Subheadings inside Deep dive use `####` (section headings render as h3). Visible short sections
-must be useful without opening Deep dive and comparable across six cards on one page:
+Subheadings inside Deep dive use `####` (section headings render as h3). Frontmatter `lede` carries a
+one-sentence thesis (≤240 characters) that restates the answer without adding claims.
 
-- The view / The Christian view: ~130–220 words.
-- What this explains well: ~80–160 words; genuine strengths, never backhanded.
-- Christian response / Strongest objection / Christian reply: ~150–260 words each.
-- Pressure questions: 2–3 brief, diagnostic questions that do not smuggle in the Christian conclusion.
-- Deep dive: ~600–1300 words; adds primary-source grounding, school distinctions, thinker-level
-  nuance and historical context. It must not merely repeat the summary.
+**Three layers.** The research dossier is deeper than the page. Research packets may be exhaustive;
+the published answer is a distillation. (Revised after the Phase 3 editorial pass, which cut the
+flagship from ~11,000 to ~6,400 words without changing its conclusions.)
+
+- The view / The Christian view: ~120–175 words.
+- What this explains well: ~60–100 words; genuine strengths, never backhanded.
+- Christian response (non-Christian lanes): ~125–200 words, the deepest one or two disagreements only.
+- Strongest objection + Christian reply (Christian lane): ~250–350 words combined, without weakening the objection.
+- Pressure questions: 2–3 single, conversational, diagnostic questions that do not smuggle in the Christian conclusion.
+- Visible total: ~325–475 words per worldview.
+- Deep dive: ~400–700 words in 2–4 subsections; only the nuance a serious reader would otherwise
+  miss. Thinker surveys, repeated examples and tangential school debates stay in the dossier.
+- Citations: cite the specific passage for important descriptive, historical and interpretive
+  claims; do not footnote every sentence. Foreground 2–4 thinkers per answer.
 
 Comparable seriousness matters more than equal length.
 
