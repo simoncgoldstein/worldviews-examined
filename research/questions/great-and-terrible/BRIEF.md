@@ -96,7 +96,9 @@ one-sentence thesis (≤240 characters) that restates the answer without adding 
 
 **Three layers.** The research dossier is deeper than the page. Research packets may be exhaustive;
 the published answer is a distillation. (Revised after the Phase 3 editorial pass, which cut the
-flagship from ~11,000 to ~6,400 words without changing its conclusions.)
+flagship from ~11,000 to ~6,400 words without changing its conclusions.) The flagship's research and
+citation density is an upper bound, not the default target for later questions; see
+`docs/METHODOLOGY.md`, "Research depth and publication depth".
 
 - The view / The Christian view: ~120–175 words.
 - What this explains well: ~60–100 words; genuine strengths, never backhanded.
