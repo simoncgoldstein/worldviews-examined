@@ -1,0 +1,24 @@
+---
+// Inline citation marker used inside answer MDX: <Cite source="…" locator="…" />.
+// `ns`, `n` and `occurrence` are injected at build time by src/lib/remark-citations.mjs.
+import { getContent, lookup } from '../lib/content';
+import { shortSource } from '../lib/citations';
+
+interface Props {
+  source: string;
+  locator: string;
+  ns: string;
+  n: string;
+  occurrence: string;
+}
+
+const { source, locator, ns, n, occurrence } = Astro.props;
+const { sourceById } = await getContent();
+const registered = lookup(sourceById, source, 'source');
+const label = `Source ${n}: ${shortSource(registered)}, ${locator}`;
+---
+
+<sup class="cite"><a
+    id={`${ns}-cite-${n}-${occurrence}`}
+    href={`#${ns}-src-${n}`}
+    aria-label={label}>{n}</a></sup>

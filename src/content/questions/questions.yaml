@@ -1,0 +1,236 @@
+# V1 question catalog (29 entries; see docs/QUESTION-CATALOG.md).
+# `id` is stable and internal. `slug` is the readable public URL segment and may change later.
+# `summary` frames the question neutrally; it is never an answer.
+
+# 1. Ultimate Reality
+- id: ultimate-reality
+  slug: what-ultimately-exists
+  title: What ultimately exists?
+  category: ultimate-reality
+  summary: What is the most basic reality on which everything else depends, if anything is?
+  order: 1
+  relatedQuestions: [something-rather-than-nothing, ultimate-personal, one-and-many]
+
+- id: something-rather-than-nothing
+  slug: why-is-there-something-rather-than-nothing
+  title: Why is there something rather than nothing?
+  category: ultimate-reality
+  summary: Does the existence of anything at all call for explanation, and what could count as one?
+  order: 2
+  relatedQuestions: [ultimate-reality, order]
+
+- id: ultimate-personal
+  slug: is-ultimate-reality-personal
+  title: Is ultimate reality personal?
+  category: ultimate-reality
+  summary: Is what is ultimate best understood as a mind or person, or as something impersonal?
+  order: 3
+  relatedQuestions: [ultimate-reality, what-is-man]
+
+- id: order
+  slug: why-is-reality-orderly
+  title: Why is reality orderly rather than chaotic?
+  category: ultimate-reality
+  summary: What accounts for the regularity and intelligibility we find in the world?
+  order: 4
+  relatedQuestions: [induction, something-rather-than-nothing]
+
+- id: one-and-many
+  slug: why-is-reality-one-and-many
+  title: Why is reality both one and many?
+  category: ultimate-reality
+  summary: How can the world show both unity and irreducible diversity?
+  order: 5
+  relatedQuestions: [ultimate-reality, logic-binding]
+
+# 2. Knowledge & Truth
+- id: knowledge-possible
+  slug: why-can-we-know-anything
+  title: Why can we know anything?
+  category: knowledge-truth
+  summary: What makes human knowledge possible, and what limits it?
+  order: 6
+  relatedQuestions: [logic-binding, induction, ultimate-authority, self-deception]
+
+- id: logic-binding
+  slug: why-is-logic-universally-binding
+  title: Why is logic universally binding?
+  category: knowledge-truth
+  summary: What grounds the universal authority of the laws of logic?
+  order: 7
+  relatedQuestions: [knowledge-possible, one-and-many]
+
+- id: induction
+  slug: why-should-induction-work
+  title: Why should induction and scientific regularity work?
+  category: knowledge-truth
+  summary: What justifies expecting the future to resemble the past?
+  order: 8
+  relatedQuestions: [order, knowledge-possible]
+
+- id: ultimate-authority
+  slug: what-is-the-ultimate-authority-for-truth
+  title: What is the ultimate authority for truth?
+  category: knowledge-truth
+  summary: Where does a worldview finally appeal when its claims are challenged?
+  order: 9
+  relatedQuestions: [knowledge-possible, revelation]
+
+# 3. Man & Human Nature
+- id: what-is-man
+  slug: what-is-man
+  title: What is man?
+  category: human-nature
+  summary: What kind of being is a human person?
+  order: 10
+  relatedQuestions: [great-and-terrible, why-alive, ultimate-personal]
+
+- id: why-alive
+  slug: why-are-we-alive
+  title: Why are we alive?
+  category: human-nature
+  summary: Does human life have a purpose, and from where does it come?
+  order: 11
+  relatedQuestions: [what-is-man, final-end]
+
+- id: offspring-family
+  slug: why-do-humans-form-families
+  title: Why do humans have offspring and form families?
+  category: human-nature
+  summary: How does each worldview understand procreation, kinship and the family?
+  order: 12
+  relatedQuestions: [what-is-man, love-beauty-creativity]
+
+- id: love-beauty-creativity
+  slug: why-do-humans-love-create-and-seek-beauty
+  title: Why do humans love, create, and seek beauty?
+  category: human-nature
+  summary: How does each worldview account for love, art and the pursuit of beauty?
+  order: 13
+  relatedQuestions: [what-is-man, great-and-terrible]
+
+- id: worship
+  slug: why-does-man-worship
+  title: Why does man worship or absolutize something?
+  category: human-nature
+  summary: Why do human beings consistently orient their lives around something ultimate?
+  order: 14
+  relatedQuestions: [what-is-man, self-deception]
+
+- id: great-and-terrible
+  slug: why-is-man-great-and-terrible
+  title: Why is man so great and so terrible?
+  shortTitle: Great and terrible
+  category: human-nature
+  summary: How can one account explain both human dignity and creativity and human cruelty and corruption?
+  order: 15
+  featured: true
+  relatedQuestions: [what-is-man, know-the-good, fail-the-good, evil, self-deception]
+
+# 4. Morality, Evil & the Human Problem
+- id: know-the-good
+  slug: why-do-we-know-or-seek-the-good
+  title: Why do we know or seek the good?
+  category: morality-evil
+  summary: What grounds moral knowledge and moral aspiration?
+  order: 16
+  relatedQuestions: [fail-the-good, great-and-terrible, evil]
+
+- id: fail-the-good
+  slug: why-do-we-fail-to-do-the-good
+  title: Why do we fail to do the good we know?
+  category: morality-evil
+  summary: Why is there a gap between moral knowledge and moral conduct?
+  order: 17
+  relatedQuestions: [know-the-good, great-and-terrible, self-salvation]
+
+- id: evil
+  slug: what-is-evil
+  title: What is evil, and where does it come from?
+  category: morality-evil
+  summary: Is evil a real thing, a privation, an illusion or a construct, and what is its source?
+  order: 18
+  relatedQuestions: [suffering, great-and-terrible, know-the-good]
+
+- id: suffering
+  slug: why-do-we-suffer
+  title: Why do we suffer?
+  category: morality-evil
+  summary: How does each worldview explain, and respond to, human suffering?
+  order: 19
+  relatedQuestions: [evil, death]
+
+- id: death
+  slug: why-do-we-die
+  title: Why do we die, and why does death seem wrong?
+  category: morality-evil
+  summary: What is death, and why is it so widely experienced as an intrusion?
+  order: 20
+  relatedQuestions: [suffering, after-death]
+
+- id: self-deception
+  slug: why-do-humans-deceive-themselves
+  title: Why can humans know truth and still deceive themselves?
+  category: morality-evil
+  summary: How can people recognize truth and yet suppress or reinterpret it?
+  order: 21
+  relatedQuestions: [knowledge-possible, worship, great-and-terrible]
+
+# 5. Salvation, Liberation & Human Destiny
+- id: self-salvation
+  slug: can-man-save-himself
+  title: Can man save, heal, or liberate himself?
+  category: salvation-destiny
+  summary: Does the human problem have a human solution?
+  order: 22
+  relatedQuestions: [fail-the-good, guilt]
+
+- id: guilt
+  slug: how-can-guilt-be-dealt-with
+  title: How can real guilt be dealt with?
+  category: salvation-destiny
+  summary: How does each worldview treat guilt, justice and forgiveness?
+  order: 23
+  relatedQuestions: [self-salvation, jesus]
+
+- id: after-death
+  slug: what-happens-after-death
+  title: What happens after death?
+  category: salvation-destiny
+  summary: What does each worldview teach about the destiny of the person at death?
+  order: 24
+  relatedQuestions: [death, final-end]
+
+- id: final-end
+  slug: what-is-mans-final-end
+  title: What is man's final end?
+  category: salvation-destiny
+  summary: What is the ultimate goal or fulfillment of human existence?
+  order: 25
+  relatedQuestions: [why-alive, after-death, history]
+
+# 6. Revelation & History
+- id: revelation
+  slug: has-ultimate-reality-revealed-itself
+  title: Has God or ultimate reality revealed itself? How would we know?
+  category: revelation-history
+  summary: What is the status of claims to revelation, and how are they assessed?
+  order: 26
+  relatedQuestions: [ultimate-authority, jesus]
+
+- id: history
+  slug: where-is-history-going
+  title: Where is history going? Is it linear, cyclical, or ultimately directionless?
+  category: revelation-history
+  summary: Does history have a direction or goal?
+  order: 27
+  relatedQuestions: [final-end, revelation]
+
+- id: jesus
+  slug: who-is-jesus-christ
+  title: Who is Jesus Christ, and what follows if the central historical claims about Him are true?
+  shortTitle: Who is Jesus Christ?
+  category: revelation-history
+  summary: How does each worldview assess the person and the central historical claims about Jesus?
+  order: 28
+  relatedQuestions: [revelation, guilt, history]

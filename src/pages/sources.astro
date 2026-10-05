@@ -1,8 +1,114 @@
 ---
-import PlaceholderPage from '../components/PlaceholderPage.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SourceCitation from '../components/SourceCitation.astro';
+import { answersCitingSource, getContent, lookup, questionUrl } from '../lib/content';
+import { sourceTypeLabels } from '../lib/format';
+import { symbols } from '../lib/labels';
+
+const content = await getContent();
+const groups = content.worldviews
+  .map((worldview) => ({
+    worldview,
+    sources: content.sources
+      .filter((s) => s.traditionTags[0] === worldview.id)
+      .sort((a, b) => (a.author ?? a.title).localeCompare(b.author ?? b.title)),
+  }))
+  .filter((group) => group.sources.length > 0);
 ---
 
-<PlaceholderPage
+<BaseLayout
   title="Sources"
-  description="The structured source registry and bibliography."
-/>
+  description="The source registry: every work is registered once and cited through structured references."
+>
+  <div class="container page">
+    <header class="page-head">
+      <p class="eyebrow">Registry</p>
+      <h1>Sources</h1>
+      <p class="lede">
+        Each work is registered once here and cited elsewhere with its own locator. This is a seed
+        registry, not a bibliography.
+      </p>
+    </header>
+
+    <div class="with-aside">
+      <nav class="aside-nav" aria-label="Traditions">
+        <h2>Traditions</h2>
+        <ul>
+          {groups.map(({ worldview }) => <li><a href={`#tradition-${worldview.id}`}>{worldview.name}</a></li>)}
+          <li><a href="#principles">Source principles</a></li>
+        </ul>
+      </nav>
+
+      <div class="source-registry">
+        {
+          groups.map(({ worldview, sources }, index) => (
+            <section aria-labelledby={`tradition-${worldview.id}`}>
+              <h2 class="section-title" id={`tradition-${worldview.id}`} style={index === 0 ? 'margin-top:0' : undefined}>
+                {worldview.name}
+              </h2>
+              <ul class="entry-list">
+                {sources.map((source) => {
+                  const citing = answersCitingSource(content, source.id);
+                  return (
+                    <li id={`source-${source.id}`} class="source-entry">
+                      <p>
+                        <SourceCitation source={source} />
+                      </p>
+                      <p class="meta">
+                        {sourceTypeLabels[source.type]}
+                        {source.notes && <><span aria-hidden="true"> {symbols.separator} </span>{source.notes}</>}
+                      </p>
+                      {citing.length > 0 && (
+                        <p class="meta">
+                          Cited in:{' '}
+                          {citing.map((answer, i) => {
+                            const question = lookup(content.questionById, answer.data.questionId, 'question');
+                            const wv = lookup(content.worldviewById, answer.data.worldviewId, 'worldview');
+                            return (
+                              <>
+                                {i > 0 && ', '}
+                                <a href={`${questionUrl(question)}#${wv.id}`}>{question.shortTitle ?? question.title} ({wv.shortName})</a>
+                              </>
+                            );
+                          })}
+                        </p>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          ))
+        }
+
+        <section aria-labelledby="principles">
+          <h2 class="section-title" id="principles">Source principles</h2>
+          <div class="prose">
+            <h3>For a worldview's own account</h3>
+            <ol>
+              <li>Canonical and primary texts.</li>
+              <li>Major thinkers within the tradition.</li>
+              <li>Recognized internal institutions or scholars.</li>
+              <li>High-quality academic scholarship.</li>
+            </ol>
+            <p>
+              Christian polemical sources are never the primary evidence for what another worldview believes.
+            </p>
+            <h3>For the Christian response</h3>
+            <ol>
+              <li>Scripture.</li>
+              <li>The Westminster Standards, where directly relevant.</li>
+              <li>Major Reformed theologians.</li>
+              <li>Van Til and Bahnsen, where apologetic methodology is involved.</li>
+              <li>Reliable historical and philosophical scholarship.</li>
+            </ol>
+            <p>
+              Every deep dive should identify the school or major thinker supplying the account whenever
+              internal diversity matters.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

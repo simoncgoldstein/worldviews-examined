@@ -1,0 +1,202 @@
+# Source registry. Each work is registered once and cited many times with different
+# locators via <Cite source="…" locator="…" />.
+#
+# Editorial hierarchy
+#   A worldview's own account: canonical/primary texts -> major thinkers within the tradition
+#     -> recognized internal institutions or scholars -> high-quality academic scholarship.
+#     Christian polemical sources are never the primary evidence for what another worldview believes.
+#   The Christian response: Scripture -> Westminster Standards (where directly relevant)
+#     -> major Reformed theologians -> Van Til/Bahnsen on apologetic method -> reliable
+#     historical and philosophical scholarship.
+#
+# This is a seed registry to prove the architecture, not a bibliography. Bibliographic
+# details have not yet been checked against the cited editions; verify before relying on them.
+
+# --- Reformed Christianity ---------------------------------------------------------------
+- id: bible-esv
+  type: scripture
+  title: The Holy Bible, English Standard Version
+  shortCitation: ESV
+  traditionTags: [christianity]
+  publisher: Crossway
+  year: 2001
+
+- id: wcf
+  type: confessional
+  title: The Westminster Confession of Faith
+  shortCitation: WCF
+  traditionTags: [christianity]
+  year: 1647
+  url: https://www.opc.org/wcf.html
+
+- id: calvin-institutes
+  type: primary
+  title: Institutes of the Christian Religion
+  shortCitation: Calvin, Institutes
+  author: John Calvin
+  traditionTags: [christianity]
+  editor: John T. McNeill
+  translator: Ford Lewis Battles
+  place: Philadelphia
+  publisher: Westminster Press
+  year: 1960
+
+- id: turretin-institutes
+  type: primary
+  title: Institutes of Elenctic Theology
+  shortCitation: Turretin, Institutes
+  author: Francis Turretin
+  traditionTags: [christianity]
+  editor: James T. Dennison Jr.
+  translator: George Musgrave Giger
+  publisher: P&R Publishing
+  year: 1992
+
+- id: bavinck-reformed-dogmatics
+  type: primary
+  title: Reformed Dogmatics
+  shortCitation: Bavinck, Reformed Dogmatics
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  editor: John Bolt
+  translator: John Vriend
+  publisher: Baker Academic
+  year: 2003
+
+- id: vos-biblical-theology
+  type: book
+  title: "Biblical Theology: Old and New Testaments"
+  shortCitation: Vos, Biblical Theology
+  author: Geerhardus Vos
+  traditionTags: [christianity]
+  place: Grand Rapids
+  publisher: Eerdmans
+  year: 1948
+
+- id: van-til-defense
+  type: book
+  title: The Defense of the Faith
+  shortCitation: Van Til, Defense
+  author: Cornelius Van Til
+  traditionTags: [christianity]
+  publisher: Presbyterian and Reformed
+  year: 1955
+
+- id: bahnsen-van-til-apologetic
+  type: book
+  title: "Van Til's Apologetic: Readings and Analysis"
+  shortCitation: Bahnsen, Van Til's Apologetic
+  author: Greg L. Bahnsen
+  traditionTags: [christianity]
+  publisher: P&R Publishing
+  year: 1998
+
+# --- Naturalistic atheism ----------------------------------------------------------------
+- id: hume-enquiry
+  type: primary
+  title: An Enquiry Concerning Human Understanding
+  shortCitation: Hume, Enquiry
+  author: David Hume
+  traditionTags: [naturalism]
+  year: 1748
+
+- id: sep-naturalism
+  type: academic
+  title: Naturalism
+  shortCitation: Papineau, "Naturalism"
+  author: David Papineau
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/naturalism/
+  notes: Reference article for the scope of philosophical naturalism.
+
+# --- Rabbinic Judaism --------------------------------------------------------------------
+- id: maimonides-guide
+  type: primary
+  title: The Guide of the Perplexed
+  shortCitation: Maimonides, Guide
+  author: Moses Maimonides
+  traditionTags: [judaism]
+  translator: Shlomo Pines
+  publisher: University of Chicago Press
+  year: 1963
+
+- id: halevi-kuzari
+  type: primary
+  title: "The Kuzari: In Defense of the Despised Faith"
+  shortCitation: Halevi, Kuzari
+  author: Judah Halevi
+  traditionTags: [judaism]
+  translator: N. Daniel Korobkin
+  publisher: Jason Aronson
+  year: 1998
+
+- id: soloveitchik-halakhic-man
+  type: book
+  title: Halakhic Man
+  shortCitation: Soloveitchik, Halakhic Man
+  author: Joseph B. Soloveitchik
+  traditionTags: [judaism]
+  translator: Lawrence Kaplan
+  publisher: Jewish Publication Society
+  year: 1983
+
+# --- Classical Islam ---------------------------------------------------------------------
+- id: quran-haleem
+  type: scripture
+  title: The Qur'an
+  shortCitation: Qur'an
+  traditionTags: [islam]
+  translator: M. A. S. Abdel Haleem
+  publisher: Oxford University Press
+  year: 2004
+
+# --- Hindu traditions --------------------------------------------------------------------
+- id: olivelle-upanishads
+  type: primary
+  title: Upaniṣads
+  shortCitation: Upaniṣads
+  traditionTags: [hinduism]
+  translator: Patrick Olivelle
+  publisher: Oxford University Press
+  year: 1996
+
+# --- Buddhist traditions -----------------------------------------------------------------
+- id: majjhima-nikaya-bodhi
+  type: primary
+  title: The Middle Length Discourses of the Buddha
+  shortCitation: Majjhima Nikāya
+  traditionTags: [buddhism]
+  translator: Bhikkhu Ñāṇamoli and Bhikkhu Bodhi
+  publisher: Wisdom Publications
+  year: 1995
+
+- id: buddhaghosa-path-of-purification
+  type: primary
+  title: The Path of Purification (Visuddhimagga)
+  shortCitation: Buddhaghosa, Path of Purification
+  author: Buddhaghosa
+  traditionTags: [buddhism]
+  translator: Bhikkhu Ñāṇamoli
+  publisher: Buddhist Publication Society
+  year: 1991
+
+- id: nagarjuna-mmk
+  type: primary
+  title: The Fundamental Wisdom of the Middle Way
+  shortCitation: Nāgārjuna, Fundamental Wisdom
+  author: Nāgārjuna
+  traditionTags: [buddhism]
+  translator: Jay L. Garfield
+  publisher: Oxford University Press
+  year: 1995
+
+- id: shantideva-bodhicaryavatara
+  type: primary
+  title: The Bodhicaryāvatāra
+  shortCitation: Śāntideva, Bodhicaryāvatāra
+  author: Śāntideva
+  traditionTags: [buddhism]
+  translator: Kate Crosby and Andrew Skilton
+  publisher: Oxford University Press
+  year: 1995

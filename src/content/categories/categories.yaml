@@ -1,0 +1,35 @@
+- id: ultimate-reality
+  slug: ultimate-reality
+  title: Ultimate Reality
+  description: What ultimately exists, why anything exists, and whether ultimate reality is personal, orderly and unified.
+  order: 1
+
+- id: knowledge-truth
+  slug: knowledge-and-truth
+  title: Knowledge & Truth
+  description: How knowledge, logic and scientific inference are possible, and where the final authority for truth lies.
+  order: 2
+
+- id: human-nature
+  slug: man-and-human-nature
+  title: Man & Human Nature
+  description: What human beings are, why they live, love, create and worship, and why they seem both great and terrible.
+  order: 3
+
+- id: morality-evil
+  slug: morality-evil-and-the-human-problem
+  title: Morality, Evil & the Human Problem
+  description: Why we know the good, fail to do it, suffer, die and deceive ourselves, and what evil is.
+  order: 4
+
+- id: salvation-destiny
+  slug: salvation-liberation-and-human-destiny
+  title: Salvation, Liberation & Human Destiny
+  description: Whether and how guilt, corruption and mortality can be overcome, and what the final end of man is.
+  order: 5
+
+- id: revelation-history
+  slug: revelation-and-history
+  title: Revelation & History
+  description: Whether ultimate reality has revealed itself, where history is going, and what follows from claims about Jesus Christ.
+  order: 6

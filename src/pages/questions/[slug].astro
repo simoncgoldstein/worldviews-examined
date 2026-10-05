@@ -1,0 +1,76 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerCard from '../../components/AnswerCard.astro';
+import { answersForQuestion, getContent, lookup, questionUrl, worldviewUrl } from '../../lib/content';
+import { symbols } from '../../lib/labels';
+import { url } from '../../lib/paths';
+
+export const getStaticPaths = (async () => {
+  const { questions } = await getContent();
+  return questions.map((question) => ({ params: { slug: question.slug }, props: { id: question.id } }));
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.props;
+const content = await getContent();
+const question = lookup(content.questionById, id, 'question');
+const category = lookup(content.categoryById, question.category, 'category');
+const answers = answersForQuestion(content, question.id);
+const answerByWorldview = new Map(answers.map((a) => [a.data.worldviewId, a]));
+const related = question.relatedQuestions.map((rid) => lookup(content.questionById, rid, 'question'));
+---
+
+<BaseLayout title={question.title} description={question.summary}>
+  <div class="container page">
+    <a class="back-link" href={url('questions/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All questions</a>
+
+    <header class="page-head page-head--wide">
+      <p class="eyebrow">
+        <span aria-hidden="true">{symbols.section} </span>{category.title}
+        {question.featured && <><span aria-hidden="true"> {symbols.separator} </span>Featured question</>}
+      </p>
+      <h1>{question.title}</h1>
+      <p class="lede">{question.summary}</p>
+      <p class="meta">
+        {answers.length} of {content.worldviews.length} worldview entries written
+        <span aria-hidden="true"> {symbols.separator} </span>
+        Entries are outlines until marked researched.
+      </p>
+    </header>
+
+    <nav aria-label="Worldviews on this question">
+      <ul class="jump-list">
+        {content.worldviews.map((w) => <li><a href={`#${w.id}`}>{w.name}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="compare-grid">
+      {
+        content.worldviews.map((worldview) => {
+          const answer = answerByWorldview.get(worldview.id);
+          return answer ? (
+            <AnswerCard answer={answer} />
+          ) : (
+            <article class="answer answer--empty" id={worldview.id}>
+              <h2 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
+              <p class="status-note">No entry has been written for this question yet.</p>
+            </article>
+          );
+        })
+      }
+    </div>
+
+    {
+      related.length > 0 && (
+        <>
+          <h2 class="section-title">Related questions</h2>
+          <ul class="inline-list">
+            {related.map((r) => (
+              <li><a href={questionUrl(r)}>{r.shortTitle ?? r.title}</a></li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
+</BaseLayout>

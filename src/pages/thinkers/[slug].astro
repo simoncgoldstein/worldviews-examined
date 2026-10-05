@@ -1,0 +1,96 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { answersForThinker, getContent, lookup, questionUrl, sourceUrl, worldviewUrl } from '../../lib/content';
+import { lifespan } from '../../lib/format';
+import { statusLabels, symbols } from '../../lib/labels';
+import { url } from '../../lib/paths';
+
+export const getStaticPaths = (async () => {
+  const { thinkers } = await getContent();
+  return thinkers.map((thinker) => ({ params: { slug: thinker.slug }, props: { id: thinker.id } }));
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.props;
+const content = await getContent();
+const thinker = lookup(content.thinkerById, id, 'thinker');
+const worldview = lookup(content.worldviewById, thinker.worldview, 'worldview');
+const cited = answersForThinker(content, thinker);
+---
+
+<BaseLayout title={thinker.name} description={thinker.description}>
+  <div class="container page">
+    <a class="back-link" href={url('thinkers/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All thinkers</a>
+
+    <header class="page-head">
+      <p class="eyebrow">Thinker</p>
+      <h1>{thinker.name}</h1>
+      <p class="meta">
+        {thinker.schools.join(', ')}
+        {lifespan(thinker) && <><span aria-hidden="true"> {symbols.separator} </span>{lifespan(thinker)}</>}
+      </p>
+      <p class="lede">{thinker.description}</p>
+    </header>
+
+    <div class="prose">
+      <h2 class="section-title" style="margin-top:0"><span aria-hidden="true">{symbols.section} </span>Worldview</h2>
+      <p>
+        Mapped to <a href={worldviewUrl(worldview)}>{worldview.name}</a>. The mapping is a research
+        convenience, not a claim that this thinker speaks for every adherent.
+      </p>
+
+      {
+        thinker.representativeWorks.length > 0 && (
+          <>
+            <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Representative works</h2>
+            <ul>
+              {thinker.representativeWorks.map((work) => {
+                const source = work.sourceId ? content.sourceById.get(work.sourceId) : undefined;
+                return (
+                  <li>
+                    <cite class="is-work">{work.title}</cite>
+                    {work.year && <span class="muted"> ({work.year})</span>}
+                    {source && (
+                      <span class="muted">
+                        {' '}{symbols.separator} <a href={sourceUrl(source)}>in source registry</a>
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )
+      }
+
+      {
+        thinker.notes && (
+          <>
+            <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Notes</h2>
+            <p>{thinker.notes}</p>
+          </>
+        )
+      }
+
+      <h2 class="section-title"><span aria-hidden="true">{symbols.section} </span>Cited on this site</h2>
+      {
+        cited.length > 0 ? (
+          <ul>
+            {cited.map((answer) => {
+              const question = lookup(content.questionById, answer.data.questionId, 'question');
+              const wv = lookup(content.worldviewById, answer.data.worldviewId, 'worldview');
+              return (
+                <li>
+                  <a href={`${questionUrl(question)}#${wv.id}`}>{question.title}</a>
+                  <span class="muted"> {symbols.separator} {wv.shortName} {symbols.separator} {statusLabels[answer.data.reviewStatus]}</span>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p class="placeholder-note">Not yet cited in any answer.</p>
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

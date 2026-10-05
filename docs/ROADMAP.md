@@ -25,22 +25,24 @@ A live GitHub Pages site that allows a reader to compare six worldview families 
 - [x] Build semantic global layout, header, footer, and method page.
 - [x] Add placeholder routes for Questions, Worldviews, Thinkers, and Sources.
 
-Remaining for the exit condition: push `main` and confirm the first Pages deployment (repository Settings → Pages → Source: GitHub Actions).
+**Exit condition (met):** a minimal static site deploys successfully from `main` to GitHub Pages.
 
-**Exit condition:** a minimal static site deploys successfully from `main` to GitHub Pages.
+## Phase 2: Content layer and reference UI foundations
 
-## Phase 2: Content layer
+- [x] Define content collection schemas (`src/content/schemas.ts`).
+- [x] Add worldview entries.
+- [x] Add category entries.
+- [x] Finalize stable question IDs and separate public slugs (28 questions).
+- [x] Add thinker registry (30 seed thinkers).
+- [x] Add source registry (19 seed sources) and structured citation architecture.
+- [x] Add answer schema and validation (discriminated Christian / non-Christian model, status-gated required sections).
+- [x] Add build-time coverage checks for missing worldview/question pairs (`npm run validate`).
+- [x] Static routes: questions, worldviews, thinkers (index and detail), sources.
+- [x] Responsive foundations and refined typographic design system.
 
-- [ ] Define content collection schemas.
-- [ ] Add worldview entries.
-- [ ] Add category entries.
-- [ ] Finalize stable question IDs.
-- [ ] Add thinker registry.
-- [ ] Add source registry.
-- [ ] Add answer schema and validation.
-- [ ] Add build-time coverage checks for missing worldview/question pairs.
+**Exit condition:** one question can be fully represented by six validated answer entries with sources. The architecture supports this and is exercised by two outline-status fixtures for `great-and-terrible`; no substantive answers have been written.
 
-**Exit condition:** one question can be fully represented by six validated answer entries with sources.
+Not done in Phase 2: bibliographic metadata on seed sources has not been checked against the cited editions and must be verified before any quotation or locator is relied on.
 
 ## Phase 3: Vertical slice
 

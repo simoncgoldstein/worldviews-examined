@@ -1,0 +1,63 @@
+---
+// Renders a registered source as a readable citation. The title is the link when a URL exists,
+// so raw URLs are never shown.
+import type { Source } from '../content/schemas';
+import { formatSource, shortSource } from '../lib/citations';
+import { symbols } from '../lib/labels';
+
+interface Props {
+  source: Source;
+  /** Use the compact form (second and later citations of the same source). */
+  short?: boolean;
+}
+
+const { source, short = false } = Astro.props;
+const f = formatSource(source);
+const external = Boolean(source.url);
+---
+
+{
+  short ? (
+    <span class="source-citation">
+      {external ? (
+        <a href={source.url} rel="noopener">
+          {shortSource(source)}
+          <span class="external" aria-hidden="true">{' '}{symbols.external}</span>
+          <span class="visually-hidden"> (external link)</span>
+        </a>
+      ) : (
+        shortSource(source)
+      )}
+    </span>
+  ) : f.override ? (
+    <span class="source-citation">
+      {external ? (
+        <a href={source.url} rel="noopener">
+          {f.override}
+          <span class="external" aria-hidden="true">{' '}{symbols.external}</span>
+          <span class="visually-hidden"> (external link)</span>
+        </a>
+      ) : (
+        f.override
+      )}
+    </span>
+  ) : (
+    <span class="source-citation">
+      {f.author && <>{f.author}, </>}
+      {f.titleInQuotes && <>“</>}
+      {external ? (
+        <a href={source.url} rel="noopener">
+          <cite class:list={{ 'is-work': !f.titleInQuotes }}>{f.title}</cite>
+          <span class="external" aria-hidden="true">{' '}{symbols.external}</span>
+          <span class="visually-hidden"> (external link)</span>
+        </a>
+      ) : (
+        <cite class:list={{ 'is-work': !f.titleInQuotes }}>{f.title}</cite>
+      )}
+      {f.titleInQuotes && f.containerTitle && <>,” <cite class="is-work">{f.containerTitle}</cite></>}
+      {f.contributors && <>, {f.contributors}</>}
+      {f.publication && <> ({f.publication})</>}
+      {f.doi && <>, doi:{f.doi}</>}
+    </span>
+  )
+}

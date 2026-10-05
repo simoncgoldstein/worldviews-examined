@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { answersForQuestion, getContent, questionUrl } from '../../lib/content';
+import { symbols } from '../../lib/labels';
+
+const content = await getContent();
+const total = content.worldviews.length;
+const groups = content.categories.map((category) => ({
+  category,
+  questions: content.questions.filter((q) => q.category === category.id),
+}));
+---
+
+<BaseLayout
+  title="Questions"
+  description="The foundational questions each worldview must answer, grouped into six domains."
+>
+  <div class="container page">
+    <header class="page-head">
+      <p class="eyebrow">Question Explorer</p>
+      <h1>Questions</h1>
+      <p class="lede">
+        {content.questions.length} foundational questions in six domains. Each will be put to all
+        {total} worldviews.
+      </p>
+      <p class="placeholder-note">
+        Content is being built in phases. Entries written so far are outlines only; coverage is
+        shown beside each question.
+      </p>
+    </header>
+
+    <div class="with-aside">
+      <nav class="aside-nav" aria-label="Domains">
+        <h2>Domains</h2>
+        <ul>
+          {
+            groups.map(({ category }) => (
+              <li>
+                <a href={`#${category.slug}`}>{category.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div>
+        {
+          groups.map(({ category, questions }, index) => (
+            <section aria-labelledby={`${category.slug}-heading`}>
+              <h2 class="section-title" id={`${category.slug}-heading`} style={index === 0 ? 'margin-top:0' : undefined}>
+                <span id={category.slug}><span aria-hidden="true">{symbols.section} </span>{category.title}</span>
+              </h2>
+              <p class="muted prose">{category.description}</p>
+              <ol class="entry-list">
+                {questions.map((question) => {
+                  const answers = answersForQuestion(content, question.id);
+                  return (
+                    <li>
+                      <h3>
+                        <a href={questionUrl(question)}>{question.title}</a>
+                      </h3>
+                      <p class="prose">{question.summary}</p>
+                      <p class="meta">
+                        {answers.length}/{total} worldview entries
+                        {question.featured && <><span aria-hidden="true"> {symbols.separator} </span>Featured</>}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

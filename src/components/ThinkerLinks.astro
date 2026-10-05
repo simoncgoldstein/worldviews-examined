@@ -1,0 +1,26 @@
+---
+// A list of thinkers, each linking to its page. Takes thinker IDs so prose never hard-codes names.
+import { getContent, lookup, thinkerUrl } from '../lib/content';
+import { symbols } from '../lib/labels';
+
+interface Props {
+  ids: string[];
+}
+
+const { ids } = Astro.props;
+const { thinkerById } = await getContent();
+const thinkers = ids.map((id) => lookup(thinkerById, id, 'thinker'));
+---
+
+{
+  thinkers.length > 0 && (
+    <ul class="inline-list">
+      {thinkers.map((thinker) => (
+        <li>
+          <a href={thinkerUrl(thinker)}>{thinker.name}</a>
+          <span class="muted"> {symbols.separator} {thinker.schools.join(', ')}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}

@@ -31,3 +31,6 @@ Read these files before changing architecture or content:
 - Prefer URL-addressable state for shareable comparisons.
 - Keep JavaScript optional for reading core content.
 - Build accessible semantic HTML before adding visual complexity.
+
+- Run `npm run validate` after any content change; `npm run build` runs it automatically.
+- `id` is the stable internal identifier; `slug` is the public URL segment. Reference content by `id` only.

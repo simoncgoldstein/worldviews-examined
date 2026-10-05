@@ -51,10 +51,23 @@ The subject matter changes slowly. A build-time content system is a feature, not
 /worldviews
 /worldviews/[worldview]
 /categories/[category]
-/compare?question=why-do-we-suffer&views=christianity,islam,naturalism
+/compare?question=suffering&views=christianity,islam,naturalism
 /sources
 /sources/[source]
+/thinkers
+/thinkers/[thinker]
 ```
+
+Implemented so far: `/`, `/method/`, `/questions/`, `/questions/[slug]/`, `/worldviews/`, `/worldviews/[slug]/`, `/thinkers/`, `/thinkers/[slug]/` and `/sources/`. Source anchors (`/sources/#source-<id>`) stand in for individual source pages for now. Category and compare routes belong to Phase 5. The compare example uses question IDs in the query string.
+
+### IDs versus slugs
+
+Content uses two identifiers on every routable entry:
+
+- `id`: stable internal identifier, short and lowercase-hyphenated. All cross-references (answer files, `relatedQuestions`, thinker and source references, validation output) use IDs. IDs do not change even if titles or URLs do.
+- `slug`: readable public URL segment used in routes. A slug can be changed later (with a redirect) without touching content.
+
+Example: question `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, route `/questions/why-is-man-great-and-terrible/`. Worldviews follow the same rule (`id: christianity`, `slug: reformed-christianity`). Both are validated for uniqueness at build time.
 
 If GitHub Pages base-path handling complicates clean routing, configure Astro's `site` and `base` settings explicitly rather than moving to hash routing unless necessary.
 
@@ -74,7 +87,11 @@ src/
       hinduism/
       buddhism/
     sources/
-  components/
+  components/   # UI only; no theological content
+  lib/          # content access, citation helpers, validation logic
+  content.config.ts
+scripts/
+  validate-content.ts
   layouts/
   pages/
   styles/
@@ -89,6 +106,14 @@ There will eventually be roughly 26 core questions x 6 worldview families. Separ
 - revise one answer without touching a giant monolithic file;
 - mark individual entries as draft/researched/reviewed;
 - compare coverage programmatically.
+
+## Content layer (implemented in Phase 2)
+
+- Registries (`worldviews`, `categories`, `questions`, `thinkers`, `sources`) are one YAML list per collection; `answers` are one MDX file per worldview/question pair at `src/content/answers/<worldviewId>/<questionId>.mdx`.
+- All schemas live in `src/content/schemas.ts` (Zod, imported by both Astro and the validation script). Cross-reference rules live in `src/lib/content-checks.ts`.
+- `npm run validate` checks duplicate IDs/slugs, every reference, answer pair uniqueness, citation data, and required analytical sections by review status, then prints answer coverage. `npm run build` runs it first, so an invalid reference fails the build.
+- Citations are written `<Cite source="calvin-institutes" locator="I.1.1" />` in answer MDX. A remark plugin (`src/lib/remark-citations.mjs`) numbers them and exposes the list; the page renders numbered superscripts and a Sources list from that one list. Citation navigation is plain anchors and needs no JavaScript.
+- **Astro 7 note:** Sätteri is the default Markdown processor in Astro 7 and does not run remark plugins. The project sets `markdown.processor` to `unified()` from `@astrojs/markdown-remark` solely so the citation plugin can run. This does not change the stack (Astro + MDX, static).
 
 ## Client-side interaction
 

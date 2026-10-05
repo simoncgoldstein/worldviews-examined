@@ -1,0 +1,101 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { answersForWorldview, getContent, lookup, questionUrl, thinkerUrl } from '../../lib/content';
+import { lifespan } from '../../lib/format';
+import { statusLabels, symbols } from '../../lib/labels';
+import { url } from '../../lib/paths';
+
+export const getStaticPaths = (async () => {
+  const { worldviews } = await getContent();
+  return worldviews.map((worldview) => ({ params: { slug: worldview.slug }, props: { id: worldview.id } }));
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.props;
+const content = await getContent();
+const worldview = lookup(content.worldviewById, id, 'worldview');
+const thinkers = content.thinkers.filter((t) => t.worldview === worldview.id);
+const answerByQuestion = new Map(answersForWorldview(content, worldview.id).map((a) => [a.data.questionId, a]));
+---
+
+<BaseLayout title={worldview.name} description={worldview.description}>
+  <div class="container page">
+    <a class="back-link" href={url('worldviews/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All worldviews</a>
+
+    <header class="page-head">
+      <p class="eyebrow">Worldview</p>
+      <h1 class="worldview-title">{worldview.name}</h1>
+      <p class="lede">{worldview.description}</p>
+    </header>
+
+    <div class="with-aside">
+      <nav class="aside-nav" aria-label="On this page">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#scope">Scope</a></li>
+          {worldview.traditionNotes.length > 0 && <li><a href="#schools">Schools and streams</a></li>}
+          <li><a href="#thinkers">Representative thinkers</a></li>
+          <li><a href="#coverage">Entries by question</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="section-title" id="scope" style="margin-top:0"><span aria-hidden="true">{symbols.section} </span>Scope</h2>
+        <p class="prose">{worldview.scopeNote}</p>
+
+        {
+          worldview.traditionNotes.length > 0 && (
+            <>
+              <h2 class="section-title" id="schools"><span aria-hidden="true">{symbols.section} </span>Schools and streams</h2>
+              <dl class="fact-list prose">
+                {worldview.traditionNotes.map((t) => (
+                  <>
+                    <dt>{t.name}</dt>
+                    <dd>{t.note}</dd>
+                  </>
+                ))}
+              </dl>
+            </>
+          )
+        }
+
+        <h2 class="section-title" id="thinkers"><span aria-hidden="true">{symbols.section} </span>Representative thinkers</h2>
+        <p class="muted prose">A research map, not a claim that these figures agree with one another or speak for every adherent.</p>
+        <ul class="inline-list">
+          {
+            thinkers.map((t) => (
+              <li>
+                <a href={thinkerUrl(t)}>{t.name}</a>
+                {lifespan(t) && <span class="muted"> {symbols.separator} {lifespan(t)}</span>}
+              </li>
+            ))
+          }
+        </ul>
+
+        <h2 class="section-title" id="coverage"><span aria-hidden="true">{symbols.section} </span>Entries by question</h2>
+        {
+          content.categories.map((category) => (
+            <>
+              <h3>{category.title}</h3>
+              <ul class="entry-list">
+                {content.questions
+                  .filter((q) => q.category === category.id)
+                  .map((q) => {
+                    const answer = answerByQuestion.get(q.id);
+                    return (
+                      <li>
+                        <a href={`${questionUrl(q)}#${worldview.id}`}>{q.title}</a>
+                        <span class="muted">
+                          {' '}{symbols.separator} {answer ? statusLabels[answer.data.reviewStatus] : 'Not yet written'}
+                        </span>
+                      </li>
+                    );
+                  })}
+              </ul>
+            </>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

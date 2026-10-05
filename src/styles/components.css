@@ -1,0 +1,318 @@
+/* Shared components and layout. Thin rules, serif type, no shadows, no radii. */
+
+/* --- Editorial primitives --------------------------------------------------------------- */
+
+.eyebrow {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+}
+
+.lede {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: var(--measure);
+}
+
+.featured-title {
+  font-size: var(--text-xl);
+  font-weight: 500;
+  margin: 0 0 var(--space-3);
+  max-width: 28ch;
+}
+.featured-title a { color: var(--color-text); }
+
+.meta {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.muted { color: var(--color-text-muted); }
+
+.mark { color: var(--color-text-muted); font-weight: 400; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  font-size: var(--text-sm);
+}
+
+.page-head {
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid var(--color-rule);
+}
+.page-head h1 { max-width: 22ch; }
+.page-head--wide h1 { max-width: 30ch; }
+
+.section-title {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-rule-strong);
+  padding-top: var(--space-3);
+  margin: var(--space-12) 0 var(--space-4);
+}
+
+.placeholder-note, .status-note {
+  border-left: 2px solid var(--color-rule-strong);
+  padding: var(--space-1) 0 var(--space-1) var(--space-4);
+  max-width: var(--measure);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-6);
+}
+.inline-list li { margin: 0; }
+.inline-list a { display: inline-block; padding-block: var(--space-2); }
+
+/* Worldview names read as scholarly headings: tracked capitals, never banners. */
+.worldview-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-1);
+}
+.worldview-name a { color: var(--color-text); text-decoration: none; }
+.worldview-name a:hover { text-decoration: underline; }
+
+/* --- Header / footer -------------------------------------------------------------------- */
+
+.site-header { border-bottom: 1px solid var(--color-rule-strong); }
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 var(--space-8);
+}
+.site-header__brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  font-size: var(--text-lg);
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+.site-header__nav li { margin: 0; }
+.site-header__nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.site-header__nav a:hover { color: var(--color-text); }
+.site-header__nav a[aria-current='page'] {
+  color: var(--color-text);
+  border-bottom-color: var(--color-accent);
+}
+@media (max-width: 36rem) {
+  .site-header__nav { gap: 0 var(--space-4); width: 100%; }
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-rule-strong);
+  padding-block: var(--space-8);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.site-footer p { max-width: var(--measure); margin-bottom: var(--space-2); }
+
+/* --- Layout ----------------------------------------------------------------------------- */
+
+/* Sticky section navigation beside the main column on wide screens; stacks above on narrow. */
+.with-aside { display: grid; gap: var(--space-6); }
+.aside-nav { font-size: var(--text-sm); }
+.aside-nav h2 {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+}
+.aside-nav ul { list-style: none; padding: 0; margin: 0; }
+.aside-nav li { margin: 0; }
+.aside-nav a {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch);
+  text-decoration: none;
+}
+.aside-nav a:hover { text-decoration: underline; }
+@media (min-width: 62rem) {
+  .with-aside { grid-template-columns: 15rem minmax(0, 1fr); gap: var(--space-12); }
+  .aside-nav { position: sticky; top: var(--space-6); align-self: start; }
+}
+@media (max-width: 61.99rem) {
+  .aside-nav ul { display: flex; flex-wrap: wrap; gap: 0 var(--space-6); }
+}
+
+/* Index lists: a hairline rule between rows, a number column on wide screens. */
+.entry-list { list-style: none; padding: 0; margin: 0 0 var(--space-8); }
+.entry-list > li {
+  margin: 0;
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-rule);
+}
+.entry-list > li:last-child { border-bottom: 1px solid var(--color-rule); }
+.entry-list h3, .entry-list h4 { margin: 0 0 var(--space-1); font-size: var(--text-lg); font-weight: 500; }
+.entry-list p { margin: 0; }
+.entry-list .meta { margin: var(--space-1) 0 0; }
+
+.card-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-8);
+  display: grid;
+  gap: 0 var(--space-12);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+.card-grid > li {
+  margin: 0;
+  padding: var(--space-4) 0 var(--space-6);
+  border-top: 1px solid var(--color-rule-strong);
+}
+.card-grid h3 { margin: 0 0 var(--space-2); }
+.card-grid p:last-child { margin-bottom: 0; }
+
+.fact-list { display: grid; gap: var(--space-1) var(--space-6); grid-template-columns: max-content 1fr; }
+.fact-list dt { color: var(--color-text-muted); font-size: var(--text-sm); }
+.fact-list dd { margin: 0; }
+@media (max-width: 36rem) {
+  .fact-list { grid-template-columns: 1fr; }
+  .fact-list dd { margin-bottom: var(--space-3); }
+}
+
+/* --- Question comparison ---------------------------------------------------------------- */
+
+/* Six cards, not six narrow columns: 1 column on phones, 2 on wide screens (2x3). */
+.compare-grid {
+  display: grid;
+  gap: var(--space-12) var(--space-12);
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 62rem) {
+  .compare-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.answer {
+  border-top: 1px solid var(--color-rule-strong);
+  padding-top: var(--space-4);
+  min-width: 0;
+}
+.answer--empty { color: var(--color-text-muted); }
+.answer__section { margin-bottom: var(--space-6); }
+.answer__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 0 var(--space-2);
+}
+.tradition-notes { font-size: var(--text-sm); color: var(--color-text-muted); }
+.status { font-variant: small-caps; letter-spacing: 0.04em; }
+
+.jump-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-6);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+.jump-list li { margin: 0; }
+.jump-list a { display: inline-flex; align-items: center; min-height: var(--touch); }
+
+.deep-dive { border-top: 1px solid var(--color-rule); margin-top: var(--space-6); }
+.deep-dive > summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.deep-dive__body { padding-bottom: var(--space-4); }
+
+/* --- Citations -------------------------------------------------------------------------- */
+
+sup.cite { line-height: 0; font-size: 0.72em; margin-left: 0.1em; }
+sup.cite a {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  padding: 0 0.2em;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Visually small, but the tappable area stays at least ~44px. */
+sup.cite a::after {
+  content: '';
+  position: absolute;
+  inset: -0.85rem -0.9rem;
+}
+sup.cite a:hover { text-decoration: underline; }
+sup.cite a:target { background: var(--color-target); }
+
+.sources { border-top: 1px solid var(--color-rule); margin-top: var(--space-6); padding-top: var(--space-2); }
+.sources__heading {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0;
+}
+.sources__list { padding-left: 1.6em; font-size: var(--text-sm); }
+.source-entry {
+  padding: var(--space-1) var(--space-2);
+  margin-left: calc(-1 * var(--space-2));
+  scroll-margin-top: var(--space-8);
+}
+.source-entry::marker { color: var(--color-text-muted); }
+.source-entry:target { background: var(--color-target); }
+.source-entry__body { overflow-wrap: anywhere; }
+.source-entry__back { white-space: nowrap; margin-left: var(--space-1); }
+.backlink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--touch);
+  min-height: var(--touch);
+  margin-block: calc(-1 * var(--space-3));
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+.backlink:hover { text-decoration: underline; }
+.external { font-family: var(--font-sans); }
+
+/* Registry page: sources grouped by tradition. */
+.source-registry .source-entry { padding-block: var(--space-2); }

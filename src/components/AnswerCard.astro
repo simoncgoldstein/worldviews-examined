@@ -1,0 +1,99 @@
+---
+// One worldview's answer to one question. Section labels come from `analysis.kind`
+// (src/lib/labels.ts), so Christian and non-Christian entries differ structurally, not by prose.
+import Cite from './Cite.astro';
+import SourceList from './SourceList.astro';
+import ThinkerLinks from './ThinkerLinks.astro';
+import { getContent, lookup, worldviewUrl, type AnswerEntry } from '../lib/content';
+import { answerLabels, statusDescriptions, statusLabels, symbols } from '../lib/labels';
+
+interface Props {
+  answer: AnswerEntry;
+}
+
+const { answer } = Astro.props;
+const { data, Content, citations, ns } = answer;
+const { worldviewById } = await getContent();
+const worldview = lookup(worldviewById, data.worldviewId, 'worldview');
+const labels = answerLabels[data.analysis.kind];
+const analysis = data.analysis;
+const headingId = `${ns}-heading`;
+
+const analysisText =
+  analysis.kind === 'nonChristian' ? analysis.christianResponse : analysis.strongestObjection;
+const followUpText = analysis.kind === 'christian' ? analysis.christianReply : undefined;
+const pressureQuestions = analysis.kind === 'nonChristian' ? analysis.pressureQuestions : [];
+const isOutline = data.reviewStatus === 'outline';
+---
+
+<article class="answer" id={worldview.id} aria-labelledby={headingId}>
+  <header class="answer__header">
+    <h2 class="worldview-name" id={headingId}><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
+    <p class="meta">
+      {data.scope && <>{data.scope}<span aria-hidden="true"> {symbols.separator} </span></>}
+      <span class="status" title={statusDescriptions[data.reviewStatus]}>{statusLabels[data.reviewStatus]}</span>
+    </p>
+    {isOutline && <p class="status-note">{statusDescriptions.outline}</p>}
+    {data.traditionNotes.length > 0 && (
+      <ul class="tradition-notes">
+        {data.traditionNotes.map((note) => <li>{note}</li>)}
+      </ul>
+    )}
+  </header>
+
+  <section class="answer__section">
+    <h3 class="answer__label">{labels.view}</h3>
+    <p>{data.summary}</p>
+  </section>
+
+  {data.strengths.length > 0 && (
+    <section class="answer__section">
+      <h3 class="answer__label">{labels.explains}</h3>
+      <ul>
+        {data.strengths.map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {analysisText && (
+    <section class="answer__section">
+      <h3 class="answer__label">
+        {labels.analysis.mark && <span class="mark" aria-hidden="true">{labels.analysis.mark} </span>}{labels.analysis.label}
+      </h3>
+      <p>{analysisText}</p>
+    </section>
+  )}
+
+  {followUpText && (
+    <section class="answer__section">
+      <h3 class="answer__label">{labels.followUp.label}</h3>
+      <p>{followUpText}</p>
+    </section>
+  )}
+
+  {pressureQuestions.length > 0 && (
+    <section class="answer__section">
+      <h3 class="answer__label">
+        <span class="mark" aria-hidden="true">{symbols.pressure} </span>{pressureQuestions.length > 1 ? labels.followUp.plural : labels.followUp.label}
+      </h3>
+      <ul>
+        {pressureQuestions.map((q) => <li>{q}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {data.thinkers.length > 0 && (
+    <section class="answer__section">
+      <h3 class="answer__label">Representative thinkers</h3>
+      <ThinkerLinks ids={data.thinkers} />
+    </section>
+  )}
+
+  <details class="deep-dive">
+    <summary><span aria-hidden="true">{symbols.forward} </span>Deep dive</summary>
+    <div class="deep-dive__body prose">
+      <Content components={{ Cite }} />
+      <SourceList ns={ns} citations={citations} />
+    </div>
+  </details>
+</article>

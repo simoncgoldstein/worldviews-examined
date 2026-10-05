@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getContent, thinkerUrl } from '../../lib/content';
+import { lifespan } from '../../lib/format';
+import { symbols } from '../../lib/labels';
+
+const content = await getContent();
+const groups = content.worldviews.map((worldview) => ({
+  worldview,
+  thinkers: content.thinkers.filter((t) => t.worldview === worldview.id),
+}));
+---
+
+<BaseLayout
+  title="Thinkers"
+  description="The representative thinkers each worldview is sourced from, grouped by worldview."
+>
+  <div class="container page">
+    <header class="page-head">
+      <p class="eyebrow">Registry</p>
+      <h1>Thinkers</h1>
+      <p class="lede">
+        A research map of the figures each worldview is sourced from. It is not exhaustive, and
+        thinkers within one lane do not necessarily agree with one another.
+      </p>
+    </header>
+
+    <div class="with-aside">
+      <nav class="aside-nav" aria-label="Worldviews">
+        <h2>Worldviews</h2>
+        <ul>
+          {groups.map(({ worldview }) => <li><a href={`#${worldview.id}`}>{worldview.name}</a></li>)}
+        </ul>
+      </nav>
+
+      <div>
+        {
+          groups.map(({ worldview, thinkers }, index) => (
+            <section aria-labelledby={`${worldview.id}-heading`}>
+              <h2 class="section-title" id={worldview.id} style={index === 0 ? 'margin-top:0' : undefined}>
+                <span id={`${worldview.id}-heading`}>{worldview.name}</span>
+              </h2>
+              <ul class="card-grid">
+                {thinkers.map((thinker) => (
+                  <li>
+                    <h3><a href={thinkerUrl(thinker)}>{thinker.name}</a></h3>
+                    <p class="meta">
+                      {thinker.schools.join(', ')}
+                      {lifespan(thinker) && <><span aria-hidden="true"> {symbols.separator} </span>{lifespan(thinker)}</>}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

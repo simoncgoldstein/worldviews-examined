@@ -1,0 +1,58 @@
+---
+// The numbered "Sources" list for one answer. Entries are anchors for the superscript markers,
+// each with a ↩ backlink per use. Works without JavaScript.
+import SourceCitation from './SourceCitation.astro';
+import { getContent, lookup } from '../lib/content';
+import type { CitationUse } from '../lib/citations';
+import { symbols } from '../lib/labels';
+
+interface Props {
+  ns: string;
+  citations: CitationUse[];
+}
+
+const { ns, citations } = Astro.props;
+const { sourceById } = await getContent();
+
+const seenSources = new Set<string>();
+const entries = citations.map((citation) => {
+  const source = lookup(sourceById, citation.sourceId, 'source');
+  const repeat = seenSources.has(source.id);
+  seenSources.add(source.id);
+  return { citation, source, repeat };
+});
+---
+
+{
+  entries.length > 0 && (
+    <section class="sources" aria-label="Sources">
+      <h4 class="sources__heading">Sources</h4>
+      <ol class="sources__list">
+        {entries.map(({ citation, source, repeat }) => (
+          <li id={`${ns}-src-${citation.n}`} class="source-entry">
+            <span class="source-entry__body">
+              <SourceCitation source={source} short={repeat} />
+              <span class="source-entry__locator">, {citation.locator}</span>
+              {citation.note && <span class="source-entry__note"> {symbols.separator} {citation.note}</span>}
+            </span>
+            <span class="source-entry__back">
+              {Array.from({ length: citation.occurrences }, (_, i) => (
+                <a
+                  class="backlink"
+                  href={`#${ns}-cite-${citation.n}-${i + 1}`}
+                  aria-label={
+                    citation.occurrences === 1
+                      ? `Back to citation ${citation.n} in the text`
+                      : `Back to citation ${citation.n} in the text, use ${i + 1} of ${citation.occurrences}`
+                  }
+                >
+                  <span aria-hidden="true">{symbols.backlink}{citation.occurrences > 1 ? i + 1 : ''}</span>
+                </a>
+              ))}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

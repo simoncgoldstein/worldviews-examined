@@ -1,6 +1,5 @@
-// Site-level structural data (navigation and lane names).
-// Placeholder until the Phase 2 content collections replace the lane list.
-// No worldview answers belong here.
+// Site-level structural data (title and navigation). Worldview, question and source content
+// lives in src/content and is validated centrally; nothing theological belongs here.
 
 export const siteTitle = 'Worldviews Examined';
 export const siteTagline =
@@ -14,11 +13,3 @@ export const nav = [
   { label: 'Sources', path: 'sources/' },
 ] as const;
 
-export const lanes = [
-  'Reformed Christianity',
-  'Naturalistic atheism',
-  'Rabbinic Judaism',
-  'Classical Islam',
-  'Hindu traditions',
-  'Buddhist traditions',
-] as const;

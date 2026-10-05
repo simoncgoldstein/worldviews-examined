@@ -1,17 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { siteTitle, siteTagline, lanes } from '../data/site';
+import { siteTitle, siteTagline } from '../data/site';
+import { featuredQuestion, getContent, questionUrl, worldviewUrl } from '../lib/content';
+import { symbols } from '../lib/labels';
 import { url } from '../lib/paths';
 
+const content = await getContent();
+const featured = featuredQuestion(content);
+const category = content.categoryById.get(featured.category);
+
 const modes = [
-  {
-    name: 'Question Explorer',
-    text: 'Compare all six worldviews on a single question.',
-  },
-  {
-    name: 'Worldview Explorer',
-    text: 'Trace one worldview across every major domain.',
-  },
+  { name: 'Question Explorer', text: 'Compare all six worldviews on a single question.', href: url('questions/') },
+  { name: 'Worldview Explorer', text: 'Trace one worldview across every major domain.', href: url('worldviews/') },
   {
     name: 'Apologetics Mode',
     text: 'Review a worldview’s strongest claims, what it explains well, the Christian response, and precise pressure questions.',
@@ -21,41 +21,48 @@ const modes = [
 
 <BaseLayout>
   <div class="container page">
-    <p class="eyebrow">Comparative worldview reference</p>
-    <h1>{siteTitle}</h1>
-    <p class="lede prose">{siteTagline}</p>
-    <p class="prose">
-      Each worldview is presented in its strongest representative form, drawn from its
-      own primary sources and major thinkers, before the Christian analysis is given.
-      Reformed Christianity is one of the competing worldviews, not a neutral judge.
-    </p>
-    <p><a href={url('method/')}>Read the method</a></p>
+    <header class="page-head">
+      <p class="eyebrow">Comparative worldview reference</p>
+      <h1>{siteTitle}</h1>
+      <p class="lede">{siteTagline}</p>
+      <p class="prose">
+        Each worldview is presented in its strongest representative form, drawn from its own
+        primary sources and major thinkers, before the Christian analysis is given. Reformed
+        Christianity is one of the competing worldviews, not a neutral judge.
+      </p>
+      <p><a href={url('method/')}>Read the method <span aria-hidden="true">{symbols.forward}</span></a></p>
+    </header>
 
-    <h2>Six worldview families</h2>
-    <ul class="grid">
+    <h2 class="section-title" style="margin-top:0">Featured question</h2>
+    <p class="eyebrow">{category?.title}</p>
+    <h3 class="featured-title"><a href={questionUrl(featured)}>{featured.title}</a></h3>
+    <p class="lede">{featured.summary}</p>
+    <p class="meta">
+      Content is being built in phases; entries for this question are outlines so far.
+    </p>
+
+    <h2 class="section-title">Six worldview families</h2>
+    <ul class="card-grid">
       {
-        lanes.map((name) => (
-          <li class="card">
-            <h3>{name}</h3>
+        content.worldviews.map((worldview) => (
+          <li>
+            <h3 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h3>
+            <p>{worldview.description}</p>
           </li>
         ))
       }
     </ul>
 
-    <h2>Three ways to read</h2>
-    <ul class="grid">
+    <h2 class="section-title">Three ways to read</h2>
+    <ul class="card-grid">
       {
         modes.map((mode) => (
-          <li class="card">
-            <h3>{mode.name}</h3>
+          <li>
+            <h3>{mode.href ? <a href={mode.href}>{mode.name}</a> : mode.name}</h3>
             <p>{mode.text}</p>
           </li>
         ))
       }
     </ul>
-
-    <p class="placeholder-note">
-      The site is under construction. Worldview answers have not been written yet.
-    </p>
   </div>
 </BaseLayout>

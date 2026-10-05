@@ -1,0 +1,345 @@
+# Thinker registry: a research map, not a claim that any figure represents every adherent
+# of a worldview, or that thinkers within one lane agree. `worldview` is a worldview ID.
+# Dates are given only where reasonably settled; otherwise `era` carries a looser dating.
+
+# --- Reformed Christianity ---------------------------------------------------------------
+- id: calvin
+  slug: john-calvin
+  name: John Calvin
+  worldview: christianity
+  schools: [Reformed theology]
+  birthYear: 1509
+  deathYear: 1564
+  description: Reformer of Geneva whose Institutes of the Christian Religion shaped Reformed doctrine, notably on the knowledge of God, the image of God, the fall and providence.
+  representativeWorks:
+    - { title: Institutes of the Christian Religion, year: 1559, sourceId: calvin-institutes }
+
+- id: turretin
+  slug: francis-turretin
+  name: Francis Turretin
+  worldview: christianity
+  schools: [Reformed scholasticism]
+  birthYear: 1623
+  deathYear: 1687
+  description: Genevan theologian whose scholastic method gave Reformed doctrine its most systematic polemical statement in the seventeenth century.
+  representativeWorks:
+    - { title: Institutes of Elenctic Theology, sourceId: turretin-institutes }
+
+- id: bavinck
+  slug: herman-bavinck
+  name: Herman Bavinck
+  worldview: christianity
+  schools: [Dutch Reformed theology]
+  birthYear: 1854
+  deathYear: 1921
+  description: Dutch Reformed theologian who treated revelation, religion, anthropology and modernity within a single dogmatic system.
+  representativeWorks:
+    - { title: Reformed Dogmatics, sourceId: bavinck-reformed-dogmatics }
+
+- id: vos
+  slug: geerhardus-vos
+  name: Geerhardus Vos
+  worldview: christianity
+  schools: [Reformed biblical theology]
+  birthYear: 1862
+  deathYear: 1949
+  description: Reformed theologian and a founder of biblical theology as the study of the progress of God's self-disclosure in history.
+  representativeWorks:
+    - { title: "Biblical Theology: Old and New Testaments", year: 1948, sourceId: vos-biblical-theology }
+
+- id: van-til
+  slug: cornelius-van-til
+  name: Cornelius Van Til
+  worldview: christianity
+  schools: [Presuppositional apologetics]
+  birthYear: 1895
+  deathYear: 1987
+  description: Reformed apologist who developed the Creator-creature distinction, analogical knowledge and the transcendental method into a distinctive apologetic.
+  representativeWorks:
+    - { title: The Defense of the Faith, year: 1955, sourceId: van-til-defense }
+
+- id: bahnsen
+  slug: greg-bahnsen
+  name: Greg L. Bahnsen
+  worldview: christianity
+  schools: [Presuppositional apologetics]
+  birthYear: 1948
+  deathYear: 1995
+  description: Reformed apologist and ethicist who presented the transcendental argument and internal critique in accessible form.
+  representativeWorks:
+    - { title: "Van Til's Apologetic: Readings and Analysis", year: 1998, sourceId: bahnsen-van-til-apologetic }
+
+# --- Naturalistic atheism ----------------------------------------------------------------
+- id: hume
+  slug: david-hume
+  name: David Hume
+  worldview: naturalism
+  schools: [Empiricism, Scottish Enlightenment]
+  birthYear: 1711
+  deathYear: 1776
+  description: Scottish philosopher and a major historical critic of natural theology, causation and induction.
+  representativeWorks:
+    - { title: A Treatise of Human Nature, year: 1739 }
+    - { title: An Enquiry Concerning Human Understanding, year: 1748, sourceId: hume-enquiry }
+    - { title: Dialogues Concerning Natural Religion, year: 1779 }
+  notes: Hume was not an atheist in a simple sense; he is included as a historical critic of natural theology.
+
+- id: russell
+  slug: bertrand-russell
+  name: Bertrand Russell
+  worldview: naturalism
+  schools: [Analytic philosophy]
+  birthYear: 1872
+  deathYear: 1970
+  description: British philosopher and logician who argued against religious belief on philosophical and moral grounds.
+  representativeWorks:
+    - { title: The Problems of Philosophy, year: 1912 }
+    - { title: Why I Am Not a Christian, year: 1927 }
+
+- id: mackie
+  slug: j-l-mackie
+  name: J. L. Mackie
+  worldview: naturalism
+  schools: [Analytic philosophy, Moral error theory]
+  birthYear: 1917
+  deathYear: 1981
+  description: Australian philosopher known for the logical argument from evil and for his error theory of morality.
+  representativeWorks:
+    - { title: "Ethics: Inventing Right and Wrong", year: 1977 }
+    - { title: The Miracle of Theism, year: 1982 }
+  notes: Mackie's moral error theory is not shared by all naturalists.
+
+- id: dennett
+  slug: daniel-dennett
+  name: Daniel Dennett
+  worldview: naturalism
+  schools: [Philosophy of mind, Evolutionary naturalism]
+  birthYear: 1942
+  deathYear: 2024
+  description: American philosopher who defended a naturalistic account of mind, consciousness and religion.
+  representativeWorks:
+    - { title: Consciousness Explained, year: 1991 }
+    - { title: "Breaking the Spell: Religion as a Natural Phenomenon", year: 2006 }
+
+- id: oppy
+  slug: graham-oppy
+  name: Graham Oppy
+  worldview: naturalism
+  schools: [Analytic philosophy of religion]
+  description: Australian philosopher who has defended naturalism through detailed engagement with arguments for and against theism.
+  representativeWorks:
+    - { title: Arguing About Gods, year: 2006 }
+
+- id: railton
+  slug: peter-railton
+  name: Peter Railton
+  worldview: naturalism
+  schools: [Naturalistic moral realism]
+  description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
+  representativeWorks:
+    - { title: "Facts, Values, and Norms", year: 2003 }
+
+- id: rosenberg
+  slug: alex-rosenberg
+  name: Alex Rosenberg
+  worldview: naturalism
+  schools: [Reductive naturalism]
+  description: American philosopher who defends a rigorous, reductive scientific naturalism, including its consequences for meaning and morality.
+  representativeWorks:
+    - { title: "The Atheist's Guide to Reality", year: 2011 }
+  notes: Represents one demanding form of naturalism, not naturalism as a whole.
+
+# --- Rabbinic Judaism --------------------------------------------------------------------
+- id: maimonides
+  slug: maimonides
+  name: Moses Maimonides
+  worldview: judaism
+  schools: [Medieval Jewish rationalism, Halakhic codification]
+  birthYear: 1138
+  deathYear: 1204
+  description: Physician, philosopher and codifier of Jewish law whose work joined rabbinic tradition with Aristotelian philosophy.
+  representativeWorks:
+    - { title: Mishneh Torah }
+    - { title: Guide of the Perplexed, sourceId: maimonides-guide }
+  notes: Birth year follows the usual dating; some sources give 1135.
+
+- id: halevi
+  slug: judah-halevi
+  name: Judah Halevi
+  worldview: judaism
+  schools: [Medieval Jewish philosophy]
+  birthYear: 1075
+  deathYear: 1141
+  description: Poet and philosopher who defended revealed religion and the particular vocation of Israel against philosophical rationalism.
+  representativeWorks:
+    - { title: The Kuzari, sourceId: halevi-kuzari }
+  notes: Dates are approximate.
+
+- id: soloveitchik
+  slug: joseph-b-soloveitchik
+  name: Joseph B. Soloveitchik
+  worldview: judaism
+  schools: [Modern Orthodox Judaism]
+  birthYear: 1903
+  deathYear: 1993
+  description: Talmudist and philosopher who gave modern Orthodoxy a religious anthropology and an account of halakhic life.
+  representativeWorks:
+    - { title: Halakhic Man, sourceId: soloveitchik-halakhic-man }
+    - { title: The Lonely Man of Faith, year: 1965 }
+
+# --- Classical Islam ---------------------------------------------------------------------
+- id: ash-ari
+  slug: al-ashari
+  name: Abu al-Hasan al-Ash'ari
+  worldview: islam
+  schools: [Ash'ari kalam]
+  birthYear: 874
+  deathYear: 936
+  description: Theologian whose method gave rise to the Ash'ari school of Sunni kalam.
+  representativeWorks:
+    - { title: Maqalat al-Islamiyyin }
+    - { title: Kitab al-Luma' }
+  notes: Dates are approximate.
+
+- id: maturidi
+  slug: al-maturidi
+  name: Abu Mansur al-Maturidi
+  worldview: islam
+  schools: [Maturidi kalam]
+  deathYear: 944
+  description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
+  representativeWorks:
+    - { title: Kitab al-Tawhid }
+  notes: Death date is approximate; the date of birth is unknown.
+
+- id: ghazali
+  slug: al-ghazali
+  name: Abu Hamid al-Ghazali
+  worldview: islam
+  schools: [Ash'ari kalam, Sufism]
+  birthYear: 1058
+  deathYear: 1111
+  description: Theologian, jurist and mystic whose critique of the philosophers and synthesis of kalam and Sufism were widely influential.
+  representativeWorks:
+    - { title: Tahafut al-Falasifa }
+    - { title: Ihya' 'Ulum al-Din }
+
+- id: razi
+  slug: fakhr-al-din-al-razi
+  name: Fakhr al-Din al-Razi
+  worldview: islam
+  schools: [Ash'ari kalam, Philosophical theology]
+  birthYear: 1149
+  deathYear: 1209
+  description: Theologian, philosopher and Qur'an commentator who integrated Avicennan philosophy into Ash'ari kalam.
+  representativeWorks:
+    - { title: Mafatih al-Ghayb }
+    - { title: al-Matalib al-'Aliya }
+
+- id: ibn-taymiyya
+  slug: ibn-taymiyya
+  name: Ibn Taymiyya
+  worldview: islam
+  schools: [Hanbali jurisprudence, Athari theology]
+  birthYear: 1263
+  deathYear: 1328
+  description: Damascene jurist and theologian who argued from revelation against kalam and philosophical rationalism.
+  representativeWorks:
+    - { title: al-'Aqida al-Wasitiyya }
+    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql" }
+
+# --- Hindu traditions --------------------------------------------------------------------
+- id: shankara
+  slug: shankara
+  name: Shankara
+  worldview: hinduism
+  schools: [Advaita Vedanta]
+  era: 8th century CE (dates debated)
+  description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
+  representativeWorks:
+    - { title: Brahma-sutra-bhashya }
+  notes: Advaita is one Hindu school and must not stand for Hindu traditions as a whole.
+
+- id: ramanuja
+  slug: ramanuja
+  name: Ramanuja
+  worldview: hinduism
+  schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
+  era: 11th–12th century CE
+  description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
+  representativeWorks:
+    - { title: Sri Bhashya }
+
+- id: madhva
+  slug: madhva
+  name: Madhva
+  worldview: hinduism
+  schools: [Dvaita Vedanta]
+  era: 13th century CE
+  description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
+  representativeWorks:
+    - { title: Brahma-sutra-bhashya }
+
+# --- Buddhist traditions -----------------------------------------------------------------
+- id: buddhaghosa
+  slug: buddhaghosa
+  name: Buddhaghosa
+  worldview: buddhism
+  schools: [Theravada]
+  era: 5th century CE
+  description: Commentator who systematized the Theravada understanding of the Pali Canon.
+  representativeWorks:
+    - { title: Visuddhimagga, sourceId: buddhaghosa-path-of-purification }
+
+- id: nagarjuna
+  slug: nagarjuna
+  name: Nagarjuna
+  worldview: buddhism
+  schools: [Madhyamaka, Mahayana]
+  era: c. 2nd–3rd century CE
+  description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
+  representativeWorks:
+    - { title: Mulamadhyamakakarika, sourceId: nagarjuna-mmk }
+
+- id: vasubandhu
+  slug: vasubandhu
+  name: Vasubandhu
+  worldview: buddhism
+  schools: [Abhidharma, Yogacara]
+  era: 4th or 5th century CE
+  description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
+  representativeWorks:
+    - { title: Abhidharmakosa }
+    - { title: Vimshatika }
+
+- id: shantideva
+  slug: shantideva
+  name: Shantideva
+  worldview: buddhism
+  schools: [Madhyamaka, Mahayana]
+  era: 8th century CE
+  description: Indian Mahayana poet-monk whose work sets out the path of the bodhisattva.
+  representativeWorks:
+    - { title: Bodhicaryavatara, sourceId: shantideva-bodhicaryavatara }
+
+- id: dogen
+  slug: dogen
+  name: Dogen
+  worldview: buddhism
+  schools: [Soto Zen]
+  birthYear: 1200
+  deathYear: 1253
+  description: Japanese Zen master who founded the Soto school in Japan and wrote on practice, time and enlightenment.
+  representativeWorks:
+    - { title: Shobogenzo }
+
+- id: tsongkhapa
+  slug: tsongkhapa
+  name: Tsongkhapa
+  worldview: buddhism
+  schools: [Gelug, Tibetan Madhyamaka]
+  birthYear: 1357
+  deathYear: 1419
+  description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
+  representativeWorks:
+    - { title: Lamrim Chenmo }

@@ -1,29 +1,35 @@
+/* Design tokens. Typography and spacing carry the visual language; colour is restrained to
+   ink, paper and a single slate-blue accent family. No per-worldview colours. */
 :root {
   color-scheme: light dark;
 
-  /* Color */
+  /* Colour: paper and ink */
   --color-bg: #faf8f3;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f1ede3;
-  --color-text: #1f2328;
-  --color-text-muted: #565d66;
-  --color-border: #d9d3c4;
-  --color-accent: #2b3a4a;
+  --color-surface: #fdfcf8;
+  --color-surface-alt: #f2eee3;
+  --color-text: #1c1f23;
+  --color-text-muted: #545b64;
+  --color-rule: #d8d2c3;
+  --color-rule-strong: #8c8778;
+  --color-accent: #2c3e55;
   --color-accent-contrast: #faf8f3;
-  --color-link: #1d4f7a;
-  --color-link-hover: #123552;
-  --color-focus: #b4540a;
+  --color-link: #1f4a73;
+  --color-link-hover: #10304f;
+  --color-focus: #a84e08;
+  --color-target: #efe7c9;
 
   /* Typography */
-  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
   --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --text-sm: 0.875rem;
-  --text-base: 1.125rem;
-  --text-lg: 1.25rem;
-  --text-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
-  --text-2xl: clamp(2rem, 1.5rem + 2.2vw, 3rem);
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: clamp(1.0625rem, 1.02rem + 0.2vw, 1.1875rem);
+  --text-lg: clamp(1.15rem, 1.1rem + 0.3vw, 1.3rem);
+  --text-xl: clamp(1.4rem, 1.2rem + 1vw, 1.9rem);
+  --text-2xl: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
   --leading-tight: 1.2;
-  --leading-body: 1.65;
+  --leading-body: 1.62;
+  --tracking-caps: 0.12em;
 
   /* Spacing (4px scale) */
   --space-1: 0.25rem;
@@ -36,24 +42,26 @@
   --space-16: 4rem;
 
   /* Layout */
-  --measure: 68ch;
-  --container: 72rem;
-  --gutter: clamp(1rem, 4vw, 2rem);
-  --radius: 4px;
+  --measure: 66ch;
+  --container: 78rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --touch: 2.75rem; /* 44px minimum touch target */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #15181c;
-    --color-surface: #1c2025;
-    --color-surface-alt: #232830;
-    --color-text: #e8e6e0;
-    --color-text-muted: #a4a9b0;
-    --color-border: #343a43;
-    --color-accent: #c9d6e3;
-    --color-accent-contrast: #15181c;
-    --color-link: #8fbbe3;
-    --color-link-hover: #b9d6f0;
+    --color-bg: #14171a;
+    --color-surface: #181c20;
+    --color-surface-alt: #1e2328;
+    --color-text: #e6e3dc;
+    --color-text-muted: #a3a8af;
+    --color-rule: #323840;
+    --color-rule-strong: #6d7480;
+    --color-accent: #bccde0;
+    --color-accent-contrast: #14171a;
+    --color-link: #8db9e2;
+    --color-link-hover: #b7d5ef;
     --color-focus: #f0a35e;
+    --color-target: #3a3622;
   }
 }

@@ -47,16 +47,17 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the decision rationale.
 
 ## Status
 
-Phase 1 (Astro skeleton) implemented: layout, design tokens, homepage, Method page, and placeholder routes. No worldview content has been written yet.
+Phases 1 and 2 implemented: Astro skeleton, structured content collections with build-time validation, a source/citation system, and routes for questions, worldviews, thinkers and sources. No substantive worldview answers have been written yet (two outline fixtures exist for the featured question).
 
 ## Development
 
-Requires Node 22.12 or later.
+Requires Node 22.18 or later (the validation script uses native TypeScript support).
 
 ```sh
 npm install
 npm run dev      # local dev server
-npm run build    # type-check and build the static site to dist/
+npm run validate # validate content references and print answer coverage
+npm run build    # validate, type-check and build the static site to dist/
 npm run preview  # preview the production build
 ```
 

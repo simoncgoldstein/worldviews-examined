@@ -1,0 +1,121 @@
+# The six comparison lanes. These are comparison families, not claims of internal uniformity.
+# `id` is stable and internal; `slug` is the public URL segment.
+- id: christianity
+  slug: reformed-christianity
+  name: Reformed Christianity
+  shortName: Reformed
+  analysisKind: christian
+  description: >-
+    The confessional Reformed Christian account, taken from Scripture and the Reformed
+    standards. It is the standpoint of this site and also one of the six competing
+    worldviews: it faces its own strongest objections.
+  scopeNote: >-
+    Confessional Reformed theology, normed by Scripture and the Westminster Standards, with
+    later theologians read as interpreting rather than replacing them. It does not stand for
+    all Christian traditions.
+  traditionNotes:
+    - name: Reformed scholasticism
+      note: Systematic precision on theology proper, providence and knowledge (for example Turretin).
+    - name: Dutch Reformed theology
+      note: Revelation, worldview and anthropology (for example Bavinck).
+    - name: Presuppositional apologetics
+      note: The Van Til and Bahnsen line on method; one school of Reformed apologetics, not the whole tradition.
+  order: 1
+
+- id: naturalism
+  slug: naturalistic-atheism
+  name: Naturalistic atheism
+  shortName: Naturalism
+  analysisKind: nonChristian
+  description: >-
+    The denial of God together with a naturalistic account of reality, knowledge and
+    morality. It has no canon or creed, so it is represented through serious philosophical
+    proponents.
+  scopeNote: >-
+    Atheism is not one detailed positive doctrine. Entries must say whether they speak for
+    metaphysical naturalism, a particular epistemology, ethics or philosophy of mind, and
+    must not attribute moral nihilism or physicalism to every naturalist.
+  traditionNotes:
+    - name: Empiricist and skeptical tradition
+      note: Hume's critique of natural theology, causation and induction.
+    - name: Reductive naturalism
+      note: Accounts that explain the human world entirely through physical and evolutionary processes.
+    - name: Naturalistic moral realism
+      note: Views on which objective moral facts exist without God.
+  order: 2
+
+- id: judaism
+  slug: rabbinic-judaism
+  name: Rabbinic Judaism
+  shortName: Judaism
+  analysisKind: nonChristian
+  description: >-
+    The Judaism that developed after the Second Temple period around Tanakh, Mishnah and
+    Talmud, with its medieval philosophical and legal traditions and modern streams.
+  scopeNote: >-
+    Principally post-Second-Temple rabbinic Judaism. It is not identical with Old Testament
+    religion, and modern streams differ where a question materially depends on them.
+  traditionNotes:
+    - name: Medieval philosophy and law
+      note: Figures such as Saadia, Halevi, Maimonides and Nachmanides.
+    - name: Modern streams
+      note: Orthodox, Conservative, Reform and other movements may answer differently.
+  order: 3
+
+- id: islam
+  slug: classical-islam
+  name: Classical Islam
+  shortName: Islam
+  analysisKind: nonChristian
+  description: >-
+    Islam as developed in its classical theological, legal and spiritual traditions, drawing
+    on the Qur'an and, where necessary, the hadith literature.
+  scopeNote: >-
+    The default begins with mainstream Sunni Islam. Ash'ari, Maturidi, Athari, philosophical,
+    Sufi and Shi'a differences are noted where they materially change an answer.
+  traditionNotes:
+    - name: Kalam schools
+      note: Ash'ari, Maturidi and Athari accounts of divine attributes, causation and reason differ.
+    - name: Islamic philosophy
+      note: Not simply identical with orthodox kalam.
+  order: 4
+
+- id: hinduism
+  slug: hindu-traditions
+  name: Hindu traditions
+  shortName: Hindu
+  analysisKind: nonChristian
+  description: >-
+    An umbrella for a family of traditions grounded in the Vedic and Upanishadic literature,
+    the Bhagavad Gita and the Brahma Sutras, with devotional (bhakti) streams.
+  scopeNote: >-
+    "Hinduism" is an umbrella category. Each entry must name the school supplying the answer;
+    Advaita's nondual metaphysics is never presented as the only Hindu view.
+  traditionNotes:
+    - name: Advaita Vedanta
+      note: Nondual metaphysics (Shankara).
+    - name: Vishishtadvaita Vedanta
+      note: Qualified nondualism (Ramanuja).
+    - name: Dvaita Vedanta
+      note: Dualism of God and soul (Madhva).
+  order: 5
+
+- id: buddhism
+  slug: buddhist-traditions
+  name: Buddhist traditions
+  shortName: Buddhist
+  analysisKind: nonChristian
+  description: >-
+    A family of traditions deriving from the teaching of the Buddha, spanning Theravada,
+    Mahayana and Vajrayana streams and their scholastic and contemplative literatures.
+  scopeNote: >-
+    Entries must say which stream they represent and keep dukkha, impermanence, dependent
+    origination, no-self, karma, rebirth, nirvana, emptiness and Buddha-nature distinct.
+  traditionNotes:
+    - name: Theravada
+      note: Grounded in the Pali Canon and commentarial tradition (for example Buddhaghosa).
+    - name: Mahayana
+      note: Includes Madhyamaka, Yogacara and Zen streams.
+    - name: Vajrayana and Tibetan scholasticism
+      note: For example the Gelug tradition of Tsongkhapa.
+  order: 6

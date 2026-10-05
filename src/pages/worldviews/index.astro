@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { answersForWorldview, getContent, worldviewUrl } from '../../lib/content';
+import { plural } from '../../lib/format';
+
+const content = await getContent();
+---
+
+<BaseLayout
+  title="Worldviews"
+  description="The six worldview families compared on this site, with the scope each one claims and does not claim."
+>
+  <div class="container page">
+    <header class="page-head">
+      <p class="eyebrow">Worldview Explorer</p>
+      <h1>Worldviews</h1>
+      <p class="lede">
+        Six comparison families, not claims of total internal uniformity. Each page states its
+        scope and names the schools within it.
+      </p>
+    </header>
+
+    <ul class="card-grid">
+      {
+        content.worldviews.map((worldview) => (
+          <li>
+            <h2 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
+            <p>{worldview.description}</p>
+            <p class="meta">
+              {plural(answersForWorldview(content, worldview.id).length, 'entry', 'entries')} written
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

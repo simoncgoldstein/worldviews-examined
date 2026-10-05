@@ -20,7 +20,7 @@ Do not add React/Preact on day one. Build the first comparison UI using Astro co
 
 Build the homepage, Method page, and a single complete comparison route using placeholder data for:
 
-`/questions/why-is-man-great-and-terrible`
+`/questions/why-is-man-great-and-terrible/` (question `id`: `great-and-terrible`; the `id` is the stable internal identifier and the `slug` is the public URL segment).
 
 The first route should prove:
 

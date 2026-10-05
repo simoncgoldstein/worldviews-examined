@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { lanes } from '../data/site';
+import { getContent } from '../lib/content';
+import { url } from '../lib/paths';
+
+const { worldviews } = await getContent();
 ---
 
 <BaseLayout
@@ -26,7 +29,7 @@ import { lanes } from '../data/site';
 
       <h2>The six comparison lanes</h2>
       <ol>
-        {lanes.map((name) => <li>{name}</li>)}
+        {worldviews.map((w) => <li>{w.name}</li>)}
       </ol>
       <p>
         These are comparison families, not claims of total internal uniformity. Internal
@@ -58,7 +61,22 @@ import { lanes } from '../data/site';
         Worldviews are sourced first from primary texts, then from major thinkers within
         the tradition, then from high-quality academic scholarship for historical and
         contextual claims. A hostile secondary source is never the sole authority for
-        what another tradition teaches.
+        what another tradition teaches. See the <a href={url('sources/')}>source registry</a>
+        for the full hierarchy.
+      </p>
+      <p>
+        Citations appear as small numerals in the text. Each links to its entry in the
+        Sources list below that answer, which links back. The same work can be cited many
+        times with different locators.
+      </p>
+
+      <h2>Review status</h2>
+      <p>
+        Every entry carries a status: <strong>outline</strong>, <strong>draft</strong>,
+        <strong>researched</strong>, <strong>reviewed</strong> or <strong>complete</strong>.
+        An entry cannot be marked researched or higher without its analytical section: the
+        Christian response and a pressure question for non-Christian views, or the strongest
+        objection and the Christian reply for the Christian view.
       </p>
 
       <h2>Tone</h2>

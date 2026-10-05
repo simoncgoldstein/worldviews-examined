@@ -1,6 +1,15 @@
 # Core Question Catalog
 
-V1 targets 26 questions organized into six broad domains. IDs should remain stable once content work begins.
+V1 targets roughly 24–28 questions organized into six broad domains. IDs should remain stable once content work begins.
+
+## IDs and public slugs
+
+Every question has two distinct identifiers:
+
+- `id`: a short, stable, internal identifier (the `ID` column below). It is used in content references, answer file names and validation, and must not change once content exists.
+- `slug`: the readable public URL segment, for example `/questions/why-is-man-great-and-terrible/`. A slug may be revised later (with a redirect) without touching any content reference.
+
+For example, `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `title: Why is man so great and so terrible?`. The slugs for all questions live in `src/content/questions/questions.yaml`, which is the source of truth; the tables below list IDs only.
 
 ## 1. Ultimate Reality
 
@@ -62,8 +71,8 @@ V1 targets 26 questions organized into six broad domains. IDs should remain stab
 
 ## Note on count
 
-The list above contains 29 entries if each sub-question is counted independently. V1 may combine closely related entries during implementation to keep the first release between roughly 24 and 28 question pages. Stable IDs should be chosen before substantive writing begins.
+The tables above contain 28 entries (an earlier draft of this note said 29; that was a miscount). V1 may still combine closely related entries during implementation. All 28 are seeded in `src/content/questions/questions.yaml`.
 
 ## Featured question
 
-`great-and-terrible` should receive prominent homepage placement. It integrates anthropology, morality, common grace, sin, dignity, culture, and redemption unusually well.
+`great-and-terrible` (public URL `/questions/why-is-man-great-and-terrible/`) should receive prominent homepage placement. It integrates anthropology, morality, common grace, sin, dignity, culture, and redemption unusually well.
