@@ -86,6 +86,8 @@ Architecture changes made during Phase 3, each the minimum needed for a concrete
 
 ## Phase 4: Core V1 content
 
+The map remains fixed at 28 questions. The `self-salvation` anchor is **What is wrong with man, and how can he be saved or liberated?**; retain its ID/slug and use **diagnosis → remedy → means → role of grace/effort → final state**.
+
 Before starting, read `research/PHASE-4-REUSE-MAP.md` (coverage matrix, reusable verified works, gaps, recommended order) and the production policy in `docs/METHODOLOGY.md`. The map recommends the domain order Morality & Evil, Salvation & Destiny, Human Nature, Ultimate Reality, Knowledge & Truth, Revelation & History, chosen for research reuse rather than catalog order.
 
 Populate the core question catalog in batches:
@@ -142,6 +144,8 @@ Perform two separate reviews.
 - [ ] Historical/evidential arguments are not replaced by bare assertion.
 
 ## Phase 7: Public V1
+
+- [ ] After all 28 questions are drafted, complete and record the corpus-wide audit required by `docs/METHODOLOGY.md` (Reformed grounding, primary sources, fairness, history, salvation, argument and citation quality, cross-site consistency, balance, and the final broad omission sweep). Resolve findings before declaring the site complete.
 
 - [ ] Accessibility pass.
 - [ ] Mobile pass.

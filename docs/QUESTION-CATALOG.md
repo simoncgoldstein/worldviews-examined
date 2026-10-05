@@ -1,6 +1,6 @@
 # Core Question Catalog
 
-V1 targets roughly 24–28 questions organized into six broad domains. IDs should remain stable once content work begins.
+V1 has a fixed map of 28 questions organized into six broad domains. IDs and existing slugs remain stable.
 
 ## IDs and public slugs
 
@@ -56,7 +56,7 @@ For example, `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `t
 
 | ID | Question |
 |---|---|
-| `self-salvation` | Can man save, heal, or liberate himself? |
+| `self-salvation` | What is wrong with man, and how can he be saved or liberated? |
 | `guilt` | How can real guilt be dealt with? |
 | `after-death` | What happens after death? |
 | `final-end` | What is man's final end? |
@@ -71,7 +71,9 @@ For example, `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `t
 
 ## Note on count
 
-The tables above contain 28 entries (an earlier draft of this note said 29; that was a miscount). V1 may still combine closely related entries during implementation. All 28 are seeded in `src/content/questions/questions.yaml`.
+The tables above contain exactly 28 entries, all seeded in `src/content/questions/questions.yaml`. The map is intentionally broad enough and frozen for this production cycle. Do not add standalone questions for grace, works, assurance, holy books, historical evidence, resurrection evidence, internal consistency, free will, consciousness, mathematics, or denominational diversity: develop them within existing anchors and medium questions. Anchors carry foundational argument; medium questions apply it; concise questions link back.
+
+The `self-salvation` anchor retains `slug: can-man-save-himself` and anchor depth. Its answer brief is **diagnosis → remedy → means → role of grace/effort → final state**, including guilt, transformation, and assurance where relevant. The `jesus` anchor must compare each lane's claims with the historical evidence as well as describe those claims. See `docs/METHODOLOGY.md`.
 
 ## Featured question
 

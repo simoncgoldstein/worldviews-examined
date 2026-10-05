@@ -99,7 +99,7 @@ scripts/
 
 ### Why separate answer files
 
-There will eventually be roughly 26 core questions x 6 worldview families. Separate answer entries make it easier to:
+There will eventually be 28 core questions x 6 worldview families. Separate answer entries make it easier to:
 
 - assign research/review work by worldview or question;
 - validate citations;
