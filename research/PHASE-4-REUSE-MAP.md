@@ -231,6 +231,10 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
 
 ### Morality, Evil & the Human Problem
 
+> **Superseded for this domain (2026-10-05):** the domain research pass in
+> `research/domains/morality-evil/` closed every P and N cell below, added 15 checked sources and maps
+> the passages for all six questions. Start there; the grades and notes below are the pre-pass baseline.
+
 | Question | Depth | Ref | Nat | Jud | Isl | Hin | Bud |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|
 | `know-the-good` | Medium | S | S | S | S | S | S |

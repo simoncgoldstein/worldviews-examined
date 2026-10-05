@@ -46,6 +46,8 @@
     revisions fall in chapters not cited); the OPC page does not itself state the revision it
     prints. Read at the OPC URL 2026-10-05: chs. 1, 4-7, 8.5-6, 9, 10, 11.3, 13, 15.1-3, 16, 21.1.
     Locator chapter.section.
+    Domain pass morality-evil (2026-10-05) also read: chs. 3, 5.1-7, 6.1-6, 17.3, 19.1-7, 20.1-3,
+    21.1, 32.1-3, 33.1-2.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -134,6 +136,7 @@
     New Advent online edition (revised and edited by Kevin Knight) of the Dods translation; imprint
     from New Advent's source line. Locator book.chapter. Read 2026-10-05: XII.6–7; XIV.6–7, 13, 28;
     XXII.22, 24.
+    Domain pass morality-evil (2026-10-05) also read: I.8-9; XII.7; XIII.1, 4-6, 10, 15; XIV.4.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -155,6 +158,8 @@
     archaic pronouns modernized), whose source line gives the NPNF imprint and 1887; some library
     records date NPNF¹ vol. 1 to 1886. Locator book.chapter.paragraph. Read 2026-10-05: II.4.9,
     II.5.11, II.6.12–14, II.7.15, II.8.16; VIII.5.10–12, VIII.9.21, VIII.10.22–24.
+    Domain pass morality-evil (2026-10-05) also read: VII.12.18, VII.16.22; VIII.7.16-18;
+    X.23.33-34.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -230,6 +235,8 @@
     records of the 1845 Edinburgh volumes. Locators book.chapter.section (shared with
     McNeill/Battles). Read 2026-10-05: I.1.1; I.3.1-3; I.5.3-4; I.15.1, 3-4, 8; II.1.2, 4, 8-11;
     II.2.12-18, 22-26; II.3.3-5; II.11.7-8, 10; III.7.6.
+    Domain pass morality-evil (2026-10-05) also read: I.17.7-8, I.17.10-11; II.8.1; III.8.1-2;
+    III.9.4-5 (CCEL plain-text cache).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -361,6 +368,8 @@
     1648, and the year of the OPC web text is not stated. Verified 2026-10-05: OPC pages fetched;
     the URL resolves to the Larger Catechism; Q. 25 read ("utterly indisposed, disabled, and made
     opposite unto all that is spiritually good"), plus Q&A 17-28; locator Q. n (question number).
+    Domain pass morality-evil (2026-10-05) also read: Q. 2, 17, 21, 24-25, 27-29, 84-86, 93, 95-96,
+    149-150, 152.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -379,6 +388,111 @@
     Two volumes; vol. 1 title page read on the archive.org scan (Google digitization). Locator
     book.chapter.section. Book I, ch. 8, §§30–35 (Adam as head; Rom 5:12) read 2026-10-05 in the OCR
     text (OCR is poor; quotations should be checked against page images before use).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: westminster-shorter-catechism
+  type: confessional
+  title: The Westminster Shorter Catechism
+  shortCitation: WSC
+  author: Westminster Assembly
+  traditionTags: [christianity]
+  year: 1647
+  url: https://www.opc.org/sc.html
+  notes: >-
+    Text as published by the Orthodox Presbyterian Church; `year` follows the OPC's date for the
+    Larger and Shorter Catechisms, as for `westminster-larger-catechism`. Locator Q. number.
+    Verified 2026-10-05: OPC page fetched; Q. 13-14, 16-19, 37, 82, 84 read.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: heidelberg-catechism
+  type: confessional
+  title: The Heidelberg Catechism
+  shortCitation: Heidelberg Catechism
+  traditionTags: [christianity]
+  edition: English translation approved by Synod 2011 of the Christian Reformed Church in North America
+  publisher: Faith Alive Christian Resources
+  year: 1563
+  url: https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism
+  notes: >-
+    Composed 1563 in the Palatinate; translation (c) 2011 Faith Alive, approved by CRCNA Synod 2011
+    and RCA General Synod 2011, as the CRCNA page states. Locator Q&A number. Verified 2026-10-05:
+    Q&A 1, 3-11, 26-28, 42, 114 read on the CRCNA page. Short quotations only (the publisher permits
+    study use).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: canons-of-dort
+  type: confessional
+  title: The Canons of Dort
+  shortCitation: Canons of Dort
+  author: Synod of Dort
+  traditionTags: [christianity]
+  edition: English translation approved by Synod 2011 of the Christian Reformed Church in North America
+  publisher: Faith Alive Christian Resources
+  year: 1619
+  url: https://www.crcna.org/welcome/beliefs/confessions/canons-dort
+  notes: >-
+    Translation (c) 2011 Faith Alive, approved by CRCNA Synod 2011 and RCA General Synod 2011 (CRCNA
+    page). Article subheadings are the translators', not the Synod's. Locator main point.article
+    (e.g. III/IV.4). Verified 2026-10-05: III/IV.1-11 read.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: belgic-confession
+  type: confessional
+  title: The Belgic Confession
+  shortCitation: Belgic Confession
+  author: Guido de Brès
+  traditionTags: [christianity]
+  edition: English translation approved by Synod 2011 of the Christian Reformed Church in North America
+  publisher: Faith Alive Christian Resources
+  year: 1561
+  url: https://www.crcna.org/welcome/beliefs/confessions/belgic-confession
+  notes: >-
+    Translation (c) 2011 Faith Alive, approved by CRCNA Synod 2011 and RCA General Synod 2011 (CRCNA
+    page). Locator article number. Verified 2026-10-05: Arts. 13-15 read.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: owen-works-goold-6
+  type: primary
+  title: The Works of John Owen, Volume 6
+  shortCitation: Owen, Works 6
+  author: John Owen
+  traditionTags: [christianity]
+  editor: William H. Goold
+  place: Edinburgh
+  publisher: T. & T. Clark
+  year: 1862
+  url: https://archive.org/details/worksofjohnowen06owen
+  notes: >-
+    Metadata from the archive.org record (University of California copy). Contains Mortification,
+    Temptation and "The Nature, Power, Deceit, and Prevalency of the Remainders of Indwelling Sin in
+    Believers". Cite treatise, chapter and Goold page. Verified 2026-10-05 in the archive.org OCR
+    text: Indwelling Sin ch. VIII, pp. 211-215 (the deceitfulness of sin; Jas 1:14-15).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: bavinck-gereformeerde-dogmatiek-3
+  type: primary
+  title: Gereformeerde Dogmatiek, Derde Deel
+  shortCitation: Bavinck, Geref. Dogmatiek III
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  edition: 1st ed.
+  place: Kampen
+  publisher: J. H. Bos
+  year: 1898
+  url: https://www.gutenberg.org/ebooks/68527
+  notes: >-
+    Dutch first edition, read in the Project Gutenberg transcription (eBook #68527), whose
+    transcribed title page reads "Kampen. -- J. H. Bos. -- 1898". Section numbering is the first edition's and
+    differs from the English Reformed Dogmatics (translated from the second edition), so cite as
+    "§ 39.5" (section and numbered paragraph). The transcription has no pagination. English
+    renderings are the researcher's own: paraphrase; never quote them as a published translation.
+    Verified 2026-10-05: § 39.1, 39.5, 39.6 read.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -548,6 +662,8 @@
     To-day and To-morrow series. Cited by chapter (1 Nature and Man; 2 The Good Life; 4 Salvation:
     Individual and Social). Wikisource transcription of the 1925 Dutton edition. Verified
     2026-10-05: ch. 1, ch. 2, ch. 4 passages.
+    Domain pass morality-evil (2026-10-05) also read: ch. 1 (death and annihilation; philosophy of
+    nature vs. of value).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -641,6 +757,109 @@
     First published 2012; substantive revision 2017. Cited by section. Verified 2026-10-05: authors
     from the copyright line, URL resolves, §3 read in full and §4.1 opening read. Used for the shape
     of the philosophical debate on capacity-based moral status, not as a naturalist source.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: hume-dialogues
+  type: primary
+  title: Dialogues concerning Natural Religion
+  shortCitation: Hume, Dialogues
+  author: David Hume
+  traditionTags: [naturalism]
+  containerTitle: Hume Texts Online
+  editor: Amyas Merivale and Peter Millican
+  year: 1779
+  url: https://davidhume.org/texts/d/
+  notes: >-
+    Cited by part.paragraph as the site labels them ("D 11.5", with Kemp Smith pages). Speakers
+    matter: most cited lines are Philo's (Demea's at 10.3 and 10.8), not Hume speaking in his own
+    voice; attribute accordingly. Verified 2026-10-05: 10.3-4, 10.8-9, 10.25-26, 11.4-16.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: epicurus-letter-menoeceus-hicks
+  type: primary
+  title: Letter to Menoeceus
+  shortCitation: Epicurus, Letter to Menoeceus
+  author: Epicurus
+  traditionTags: [naturalism]
+  containerTitle: "Diogenes Laertius, Lives of Eminent Philosophers, Book X"
+  translator: R. D. Hicks
+  place: London; New York
+  publisher: William Heinemann; G. P. Putnam's Sons (Loeb Classical Library)
+  year: 1925
+  url: https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_X
+  notes: >-
+    Read in the Wikisource transcription of Hicks's Loeb translation (the page header names Hicks).
+    Cite by Diogenes Laertius X section (the letter is X.122-135). Epicurus is a materialist who
+    still admits remote gods: use him as the historical source of the "death is nothing to us"
+    argument naturalists inherit, not as a representative atheist. Verified 2026-10-05: X.124-126.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: sep-death
+  type: academic
+  title: Death
+  shortCitation: Luper, "Death"
+  author: Steven Luper
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/death/
+  notes: >-
+    First published 22 May 2002; substantive revision 28 July 2026. Used for the deprivation account
+    (Nagel, Feldman), Lucretius's symmetry argument and Williams on immortality, whose own texts
+    were not openly readable, and for the evolutionary theories of senescence in its supplement "On
+    Mortality". Verified 2026-10-05: §§2.8, 3.2, 5.2, 7.2; supplement, "Why Does Senescence Occur?".
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: flatt-partridge-evolution-aging
+  type: article
+  title: Horizons in the evolution of aging
+  shortCitation: Flatt and Partridge, "Horizons in the Evolution of Aging"
+  author: Thomas Flatt and Linda Partridge
+  traditionTags: [naturalism]
+  containerTitle: BMC Biology 16, article 93
+  year: 2018
+  doi: 10.1186/s12915-018-0562-z
+  url: https://doi.org/10.1186/s12915-018-0562-z
+  notes: >-
+    Open access (PMC6100731); read in the Europe PMC full text 2026-10-05. Cite by section heading:
+    "Why does aging evolve?" (declining force of selection; mutation accumulation; antagonistic
+    pleiotropy; disposable soma) and "Key lessons from the evolution of aging" (aging is not a
+    programmed process). Kirkwood's 2005 Cell review was not used: the publisher blocks automated
+    access.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: sep-self-deception
+  type: academic
+  title: Self-Deception
+  shortCitation: Deweese-Boyd, "Self-Deception"
+  author: Ian Deweese-Boyd
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/self-deception/
+  notes: >-
+    First published 17 October 2006; substantive revision 13 March 2023. Not a naturalist source as
+    such; used for the static and dynamic paradoxes (§1), deflationary accounts (Mele; §3.1) and the
+    adaptation-vs-spandrel debate (von Hippel and Trivers vs. McKay and Dennett; §6). Von Hippel and
+    Trivers (BBS 2011) is not open access and was not read. Verified 2026-10-05: §§1, 3.1, 6.
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: sep-concept-evil
+  type: academic
+  title: The Concept of Evil
+  shortCitation: Calder, "The Concept of Evil"
+  author: Todd Calder
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/concept-evil/
+  notes: >-
+    First published 26 November 2013; substantive revision 3 October 2022. Used for secular
+    evil-skepticism vs. evil-revivalism and for evil as extreme wrongdoing. Verified 2026-10-05:
+    §§1, 1.1, 1.2, 3 (introduction), 3.1.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -745,6 +964,8 @@
     Metadata from archive.org record (UC Libraries copy; title page "Second edition published 1904";
     lix, 414 p.). Locators part.chapter. I.1, I.2, III.8, III.12 read in Sefaria (Friedlander) and
     matched verbatim against the archive.org full text of this edition.
+    Domain pass morality-evil (2026-10-05) also read: III.23 (lesson of Job), read on Sefaria and
+    matched against the archive.org text.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -768,6 +989,8 @@
     chapter is not confirmed. Cite Hilkhot [section] chapter:halakhah (canonical Mishneh Torah
     system). Read on Sefaria 2026-10-05: Teshuvah 2:1-2, 3:4, 5:1-5, 6:3, 7:4, 7:6-7; Yesodei
     ha-Torah 4:8-9. Bracketed additions are Touger's. Verified 2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: Kings and Wars 8:11 (a reported manuscript
+    variant, "but rather of their wise men", was not checked here).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -783,6 +1006,7 @@
     "The Sefaria Midrash Rabbah, 2022" English (CC-BY). Locators parashah:section (Sefaria
     numbering). Read: 8:5 (angels debate man's creation), 8:11 (upper and lower traits), 9:7 ("very
     good" = evil inclination), 14:4 (two yetzarim), 24:7 (Ben Azzai, R. Tanhuma).
+    Domain pass morality-evil (2026-10-05) also read: Bereshit Rabbah 9:5 ("very good" - death).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -804,6 +1028,8 @@
     host pages, so `year` is omitted; no print edition is cited. Cite tractate chapter:mishnah
     (Avot follows Sefaria numbering). Read 2026-10-05: Berakhot 9:5; Avot 2:4, 3:14, 3:15, 4:1,
     4:21; Yoma 8:8-9; Sanhedrin 4:5 (printed text reads from Israel). Verified 2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: Avot 4:1, 4:15, 4:22 (Kulp numbering on
+    Sefaria).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -903,6 +1129,8 @@
     Passages read on Sefaria 2026-10-05 (Berakhot 17a, 34b, 61a; Shabbat 55b, 146a; Yoma 69b,
     86b; Sukkah 52a-b; Kiddushin 30b, 40b; Sanhedrin 91b; Bava Batra 16a). Quotations include
     Steinsaltz glosses. Verified 2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: Berakhot 5a-b; Shabbat 55a; Yoma 67b, 86b
+    (repeated sin "as if permitted"); Sanhedrin 56a.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -920,6 +1148,8 @@
     book chapter:verse. Year 2023 confirmed from bookseller/publisher listings (ISBN 9780827615595).
     Passages read: Gen 1:26-28, 4:7, 6:5, 8:21, 9:6; Ps 8:4-7; Deut 30:11-19; Ezek 18:20, 36:26-27;
     Jer 31:30-33; Eccl 7:20, 7:29.
+    Domain pass morality-evil (2026-10-05) also read: Gen 3:19; Job 38:4, 42:7; Ps 90:10-12; Prov
+    16:2; Eccl 7:20, 7:29; Isa 45:7; Jer 17:9.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -978,6 +1208,22 @@
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
+- id: luzzatto-mesillat-yesharim-sebag
+  type: primary
+  title: Mesillat Yesharim (The Path of the Just)
+  shortCitation: Luzzatto, Mesillat Yesharim
+  author: Moshe Chaim Luzzatto
+  traditionTags: [judaism]
+  translator: Yosef Sebag
+  url: https://www.sefaria.org/Mesillat_Yesharim.3
+  notes: >-
+    Composed 1740. Read in Sefaria's version "Path of the Just. Trans. Rabbi Yosef Sebag" (CC-BY;
+    source dafyomireview.com); the translation's year is not stated. Cite by chapter. Verified
+    2026-10-05: chs. 2-3 (willful blindness; the evil inclination "literally blinds his eyes";
+    seeing evil as good).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
 # --- Classical Islam -----------------------------------------------------------------
 - id: quran-haleem
   type: scripture
@@ -994,6 +1240,10 @@
     Cited by surah:ayah. Read in Abdel Haleem's translation as hosted on quran.com (resource 85; may
     reflect a later printing) 2026-10-05, including 9:118; no page numbers cited. Publication data
     checked against OUP and retailer records.
+    Domain pass morality-evil (2026-10-05) also read: 2:9-12, 2:28, 2:155-157, 2:216, 2:286, 3:185,
+    4:78-79, 7:172-173, 16:61, 18:103-104, 21:35, 23:99-100, 29:2-3, 30:30, 35:8, 42:30, 50:19,
+    57:22-23, 62:8, 64:11, 67:2, 75:2, 75:14-15, 91:7-10, 94:5-6, 113:1-2 (quran.com API, resource
+    85).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1213,6 +1463,8 @@
     Cite by Gītā chapter.verse, with page of this edition where helpful. Translator's own footnotes
     (including comparative remarks) are not Rāmānuja's. Verified against the archive.org scan,
     2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: 5.16 with comm., pp. 182-183 (plurality of
+    selves, referring back to 2.12).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1295,6 +1547,8 @@
   notes: >-
     Gītā text and Śaṅkara's commentary. Cite by Gītā chapter.verse (add "comm." for the bhāṣya).
     Verified against the archive.org scan (title page and running heads), 2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: 2.12-14, 2.20, 2.22, 2.27; 16.23-24; 18.31-32
+    (archive.org djvu text).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1406,6 +1660,44 @@
     OCR of a derived copy of the same HOS 17 scan
     (archive.org/details/yogasystemofpata00wooduoft_202005; HOS 17 signatures visible). Do not cite
     page numbers. Verified 2026-10-05.
+    Domain pass morality-evil (2026-10-05) also read: YS II.15-16 with the Bhashya (archive.org djvu
+    text).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: muller-upanishads-2
+  type: scripture
+  title: The Upanishads, Part II
+  shortCitation: Upaniṣads (SBE 15)
+  traditionTags: [hinduism]
+  containerTitle: Sacred Books of the East, vol. 15
+  translator: F. Max Müller
+  place: Oxford
+  publisher: Clarendon Press
+  year: 1884
+  url: https://archive.org/details/p2upanishads00mluoft
+  notes: >-
+    Kaṭha (Müller numbers adhyāya.vallī.verse), Muṇḍaka, Taittirīya, Bṛhadāraṇyaka, Śvetāśvatara,
+    Praśna, Maitrāyaṇa. Verified in Phase 3 (proposed in the Hindu packet but never registered) and
+    re-read 2026-10-05 in the archive.org text: Kaṭha I.1.20-29 (pp. 5-7), I.2.1-2 (p. 8), I.2.18-19
+    (p. 11); Bṛhadāraṇyaka IV.4.2-5 (pp. 175-176).
+  verificationStatus: checked
+  verifiedOn: "2026-10-05"
+
+- id: buhler-manu
+  type: primary
+  title: The Laws of Manu
+  shortCitation: Manu
+  traditionTags: [hinduism]
+  containerTitle: Sacred Books of the East, vol. 25
+  translator: Georg Bühler
+  place: Oxford
+  publisher: Clarendon Press
+  year: 1886
+  url: https://archive.org/details/lawsofmanu00manuuoft
+  notes: >-
+    Metadata from the archive.org record (University of Toronto copy). Cite chapter.verse
+    (Manusmṛti 2.6). Verified 2026-10-05: II.6-13 with Bühler's notes (pp. 30-31).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1435,6 +1727,8 @@
     Cite by chapter.paragraph (e.g. XIV.142), which is stable across BPS editions. Verified
     2026-10-05 against the BPS PDF (imprint page: 1st ed. 1956, 3rd ed. 1991, 4th ed. 2010; ISBN
     978-955-24-0023-6). Registry previously gave year 1991 (3rd ed.); update recommended.
+    Domain pass morality-evil (2026-10-05) also read: VIII.1-10, VIII.41 (mindfulness of death);
+    XVI.49-52 (sorrow, lamentation, pain, grief).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1471,6 +1765,8 @@
     2008, Oxford World's Classics; originally published 1998; the often-cited 1995 date is not
     confirmed). Cite by chapter.verse; cited verses read in the Sanskrit GRETIL e-text (same
     numbering) and Batchelor's English. Crosby and Skilton wording not seen: do not quote verbatim.
+    Domain pass morality-evil (2026-10-05) also read: 2.33-42 and 6.12-21 in the GRETIL Sanskrit
+    (paraphrase only).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1487,6 +1783,8 @@
     Cite by SuttaCentral numbering (e.g. AN 3.69; AN 1.49–52 = PTS A I 10). Verified 2026-10-05:
     metadata (scpub5, 2018, CC0) from SuttaCentral publication API; passages read in Sujato's
     English with Pali root text.
+    Domain pass morality-evil (2026-10-05) also read: AN 3.65 (Kalama), AN 4.49 (four perversions),
+    AN 5.57 (subjects for regular reviewing).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1566,6 +1864,7 @@
   notes: >-
     Cite by sutta (e.g. SN 56.11, SN 22.100:2.3). Verified 2026-10-05: metadata (scpub4, 2018, CC0)
     from SuttaCentral publication API; passages read in Sujato's English with Pali.
+    Domain pass morality-evil (2026-10-05) also read: SN 36.6 (the two arrows).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
