@@ -5,6 +5,7 @@
 // (see SourceList and the question route), not inside each card.
 import AnswerSection from './AnswerSection.astro';
 import Cite from './Cite.astro';
+import QuestionLink from './QuestionLink.astro';
 import ThinkerLinks from './ThinkerLinks.astro';
 import { getContent, lookup, worldviewUrl, type AnswerEntry } from '../lib/content';
 import { statusDescriptions, statusLabels, symbols } from '../lib/labels';
@@ -38,7 +39,7 @@ const isOutline = data.reviewStatus === 'outline';
   </header>
 
   <div class="answer__body">
-    <Content components={{ AnswerSection, Cite }} />
+    <Content components={{ AnswerSection, Cite, QuestionLink }} />
   </div>
 
   {data.thinkers.length > 0 && (
