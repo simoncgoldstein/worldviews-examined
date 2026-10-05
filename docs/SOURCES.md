@@ -131,6 +131,8 @@ There is no single atheist creed. The site should distinguish metaphysical natur
 - Peter Railton, especially for naturalistic moral realism
 - W. V. O. Quine, for naturalized epistemology and ontology
 - Alex Rosenberg, as a particularly rigorous reductive naturalist
+- Charles Darwin, for the evolutionary origins of the moral sense (added in Phase 3; Darwin called himself an agnostic and is used for evolutionary anthropology, not as a representative of atheism)
+- Philip Kitcher, for pragmatic naturalist ethics and the evolution of ethics (added in Phase 3)
 
 ## Use with care
 

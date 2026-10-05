@@ -21,7 +21,7 @@
   description: Reformer of Geneva whose Institutes of the Christian Religion shaped Reformed doctrine, notably on the knowledge of God, the image of God, the fall and providence.
   bio: >-
     John Calvin (1509–1564) was born at Noyon in Picardy and studied in Paris and then law at
-    Orléans and Bourges, before committing himself to the Protestant Reformation in the early
+    Orléans, before committing himself to the Protestant Reformation in the early
     1530s. The first edition of his Institutes of the Christian Religion appeared at Basel in 1536.
     He ministered in Geneva from 1536 until his expulsion in 1538, spent three years in
     Strasbourg, and returned to Geneva in 1541, where he remained as pastor, preacher, teacher and
@@ -66,13 +66,12 @@
   deathYear: 1921
   description: Dutch Reformed theologian who treated revelation, religion, anthropology and modernity within a single dogmatic system.
   bio: >-
-    Herman Bavinck (1854–1921) was born at Hoogeveen in the Netherlands. He studied briefly at
-    Kampen and then at Leiden, completing a doctorate on the ethics of Zwingli in 1880. He taught
-    dogmatics at the Theological School at Kampen and in 1902 moved to the Free University of
-    Amsterdam, where he succeeded Abraham Kuyper. His four-volume Gereformeerde Dogmatiek
-    (1895–1901) is the major systematic work of Dutch neo-Calvinism, and he also wrote on ethics,
-    education and psychology and took part in Dutch public life, serving in the Senate from 1911.
-    He delivered the Stone Lectures at Princeton in 1908.
+    Herman Bavinck (1854–1921) was born at Hoogeveen in the Netherlands. He studied at Kampen and
+    then at Leiden, completing a doctorate on the ethics of Zwingli in 1880. From 1902 he was a
+    professor at the Free University of Amsterdam. His four-volume Gereformeerde Dogmatiek (1895–1901)
+    is the major systematic work of Dutch neo-Calvinism, and he also wrote on ethics, education and
+    psychology and took part in Dutch public life, serving in the Senate from 1911. He delivered the
+    Stone Lectures at Princeton in 1908.
   significance: >-
     Bavinck interprets Calvin's doctrine of common grace as the Reformed explanation of how human
     culture, arts and sciences flourish outside the church despite the fall. He is used mainly for
@@ -197,13 +196,13 @@
   deathYear: 1708
   description: Dutch Reformed theologian whose systematic treatment of the covenants shaped Reformed covenant theology.
   bio: >-
-    Herman Witsius (1636–1708) was born at Enkhuizen in the Dutch Republic. After studying at
-    Groningen, Utrecht and Leiden he served as a pastor in several towns, then held professorships
-    of divinity at Franeker (1675), Utrecht (1680) and Leiden (1698), where he died. His chief
-    work, De oeconomia foederum Dei cum hominibus (Leeuwarden, 1677; English translation as The
-    Economy of the Covenants between God and Man), set out Reformed covenant theology in a
-    systematic form. Writing amid the Voetian and Cocceian controversies in the Dutch church, he
-    tried to mediate between the parties, and was not fully accepted by either.
+    Herman Witsius (1636–1708) was a Dutch Reformed theologian who held professorships of divinity
+    at Franeker (1675), Utrecht (1680) and Leiden (1698), where he died. His chief work, De
+    oeconomia foederum Dei cum hominibus (Leeuwarden, 1677; English translation as The Economy of
+    the Covenants between God and Man), set out Reformed covenant theology in a systematic form.
+    It was reprinted several times in the following decades and translated into English in the
+    early nineteenth century. Writing amid the Voetian and Cocceian controversies in the Dutch
+    church, he is generally described as having tried to mediate between the parties.
   significance: >-
     Witsius states federal headship, the imputation of Adam's first sin and the Adam–Christ parallel
     of Romans 5 in classic Reformed covenantal form. This is the confessional explanation for the
@@ -403,13 +402,12 @@
   deathYear: 1981
   description: Australian philosopher known for the logical argument from evil and for his error theory of morality.
   bio: >-
-    John Leslie Mackie (1917–1981) was born in Sydney and educated at the University of Sydney and
-    at Oxford. He taught at the universities of Otago, Sydney and York, and from 1967 was a
-    Fellow of University College, Oxford; he was elected a Fellow of the British Academy in
-    1974. A leading figure in Australian and British analytic philosophy, he wrote on causation,
-    ethics and the philosophy of religion. His book Ethics: Inventing Right and Wrong (1977)
-    defended a moral error theory, and The Miracle of Theism (1982), published after his death,
-    gave an influential atheist critique of arguments for God.
+    John Leslie Mackie (1917–1981) was an Australian philosopher who held posts in Australia,
+    New Zealand and England and ended his career at University College, Oxford. A leading figure in
+    analytic philosophy, he wrote on causation, ethics and the philosophy of religion. His book Ethics:
+    Inventing Right and Wrong (1977) opens with the claim that there are no objective values and
+    defends a moral error theory. The Miracle of Theism, an influential atheist critique of arguments
+    for God, was published after his death, in 1982.
   significance: >-
     Mackie represents the naturalist view that morality is a human device for counteracting
     limited sympathies, and that its apparent objectivity is projected onto the world. He thus
@@ -437,12 +435,12 @@
   deathYear: 2024
   description: American philosopher who defended a naturalistic account of mind, consciousness and religion.
   bio: >-
-    Daniel Dennett (1942–2024) was an American philosopher. After a degree at Harvard, he took a
-    doctorate at Oxford in 1965 under Gilbert Ryle, and for about five decades taught at Tufts
-    University, where he co-directed the Center for Cognitive Studies. Working in philosophy of
-    mind, cognitive science and evolutionary biology, he developed the intentional stance and a
-    naturalistic theory of consciousness, and defended a compatibilist account of free will in
-    evolutionary terms. He also wrote on religion as a natural phenomenon and was a prominent
+    Daniel Dennett (1942–2024) was an American philosopher. After a bachelor's degree at Harvard, he
+    completed his doctoral work at Oxford, and from 1971 until his retirement at the end of 2022 he
+    taught at Tufts University, where he directed the Center for Cognitive Studies. Working in
+    philosophy of mind, cognitive science and evolutionary biology, he developed the intentional
+    stance and a naturalistic theory of consciousness, and defended a compatibilist account of free
+    will in evolutionary terms. He also wrote on religion as a natural phenomenon and was a prominent
     public advocate of atheism and secular thought. He died in Portland, Maine.
   significance: >-
     Dennett gives a naturalist account of agency and responsibility that keeps persons, reasons and
@@ -481,16 +479,16 @@
   displayOrder: 1
   usedFor: [ethics, naturalistic moral realism]
   schools: [Naturalistic moral realism]
-  birthYear: 1950
   description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
   bio: >-
-    Peter Railton (born 1950) is an American philosopher and the Gregory S. Kavka Distinguished
-    University Professor at the University of Michigan, Ann Arbor, where he has taught since 1979.
-    He took his doctorate at Princeton in 1980 under David Lewis. Working in metaethics and
-    normative ethics, he is a leading defender of naturalistic moral realism, the view that moral
-    facts are natural facts that can be investigated and learned about. His best-known paper
-    "Moral Realism" appeared in the Philosophical Review in 1986, and his papers on ethics were
-    collected in Facts, Values, and Norms (2003).
+    Peter Railton is an American philosopher, Gregory S. Kavka Distinguished University Professor and
+    John Stephenson Perrin Professor of Philosophy Emeritus at the University of Michigan. Working in
+    ethics, philosophy of mind, philosophy of science and political philosophy, he is a leading
+    defender of naturalistic moral realism, the view that moral facts are natural facts that can be
+    investigated and learned about. His best-known paper, "Moral Realism", appeared in the
+    Philosophical Review in 1986, and his papers on ethics were collected in Facts, Values, and Norms
+    (2003). He later co-authored Homo Prospectus (2016) and is a member of the American Academy of
+    Arts and Sciences.
   significance: >-
     Railton shows that a naturalist can hold that cruelty and exclusion are objectively wrong and that
     moral learning tracks real facts, giving a naturalist account of both moral progress and moral
@@ -505,7 +503,7 @@
   representativeWorks:
     - { title: Moral Realism, year: 1986, sourceId: railton-moral-realism }
     - { title: "Facts, Values, and Norms", year: 2003 }
-  notes: Birth year and career details come from Wikipedia because the University of Michigan faculty page was unavailable; confirm against it.
+  notes: Birth year and Princeton PhD details removed as unverified (Michigan page returned 403); titles from Oxford Uehiro bio.
 
 - id: rosenberg
   slug: alex-rosenberg
@@ -564,16 +562,14 @@
   displayOrder: 5
   usedFor: [pragmatic naturalist ethics, evolution of ethics]
   schools: [Pragmatic naturalism, Philosophy of biology]
-  birthYear: 1947
-  description: British-born American philosopher of science who offers a pragmatist naturalist account of the origin and progress of ethics.
+  description: Philosopher of science who offers a pragmatist naturalist account of the origin and progress of ethics.
   bio: >-
-    Philip Kitcher (born 1947) is a British-born American philosopher. He studied at Christ's
-    College, Cambridge, and took a doctorate at Princeton in 1974. He taught at Vermont,
-    Minnesota and the University of California, San Diego, before joining Columbia University,
-    where he is John Dewey Professor of Philosophy Emeritus. Known first for work in the
-    philosophy of science and biology, including critiques of creationism and sociobiology,
-    he later turned to ethics and secular humanism, writing Living with Darwin (2007), The Ethical
-    Project (2011) and Life After Faith (2014).
+    Philip Kitcher is a philosopher. He studied at Christ's College, Cambridge, and took a
+    doctorate at Princeton in 1974. He taught at Vassar, Vermont, Minnesota and the University of
+    California, San Diego, before joining Columbia University in 1999, where he is John Dewey
+    Professor of Philosophy Emeritus. Known first for work in the philosophy of science and biology,
+    including critiques of creationism and sociobiology, he later turned to ethics and secular
+    humanism, writing Living with Darwin (2007), The Ethical Project (2011) and Life After Faith (2014).
   significance: >-
     Kitcher gives the most developed philosophical naturalist account of the origin of ethics and of
     moral progress: humans are incomplete psychological altruists, and ethics is a social technology
@@ -621,12 +617,12 @@
   description: Physician, philosopher and codifier of Jewish law whose work joined rabbinic tradition with Aristotelian philosophy.
   bio: >-
     Moses ben Maimon (1138-1204), called Rambam, was born in Cordoba. His family left after the
-    Almohad conquest and eventually settled in Fustat, Egypt, in 1166. He completed his
-    Arabic Commentary on the Mishnah in 1168 and, around 1180, the Mishneh Torah, a
-    comprehensive code of Jewish law in Hebrew. His philosophical masterpiece, the Guide of the
-    Perplexed, was completed around 1190. He earned his living as a physician, later attached to
-    the court of Saladin's vizier al-Qadi al-Fadil, and was recognized as head of the Fustat Jewish
-    community. His authority was immense, and his thought was also contested from the start.
+    Almohad conquest and he arrived in Egypt in 1166, settling in Fustat. He completed his Arabic
+    Commentary on the Mishnah in 1168 and wrote the Mishneh Torah, a comprehensive code of Jewish
+    law in Hebrew. His philosophical masterpiece, the Guide of the Perplexed, was completed around
+    1190. He earned his living as a physician, serving at the royal court, and led the Jewish
+    community of Fustat. His authority was immense, and his thought was also contested from the
+    start.
   significance: >-
     Maimonides gives the classic Jewish statements on free will, repentance, the divine image as intellect, the
     training of character, and the claim that most human evils are self-inflicted. He is the main medieval
@@ -639,7 +635,7 @@
     - The ethical mean and the training of dispositions
   representativeWorks:
     - { title: "Commentary on the Mishnah (including the Eight Chapters, Shemonah Perakim)", year: 1168, sourceId: maimonides-eight-chapters }
-    - { title: Mishneh Torah, year: 1180, sourceId: maimonides-mishneh-torah-touger }
+    - { title: Mishneh Torah, sourceId: maimonides-mishneh-torah-touger }
     - { title: Guide of the Perplexed, year: 1190, sourceId: maimonides-guide-friedlander }
   notes: Birth year follows SEP (1138); some sources give 1135 or 1137. Mishneh Torah and Guide years are completion dates (the Guide's is sometimes given as c. 1185-1190). Registry sourceId maimonides-guide should be reconciled with maimonides-guide-friedlander.
 
@@ -650,18 +646,17 @@
   role: primary
   displayOrder: 2
   schools: [Medieval Jewish philosophy]
-  era: c. 1075–1141
-  deathYear: 1141
+  era: 1050s or 1060s–1141
   description: Poet and philosopher who defended revealed religion and the particular vocation of Israel against philosophical rationalism.
   bio: >-
-    Judah Halevi was born around 1075 in Toledo or Tudela in al-Andalus and was trained in
-    Hebrew and Arabic learning. He lived in Muslim and Christian Spain, practiced medicine, and
-    became one of the greatest Hebrew poets of the Middle Ages, writing secular verse, liturgical
-    poems and poems of longing for Zion. His philosophical work, the Kuzari, is a dialogue
-    between a king and a Jewish sage, written in Arabic and revised during the 1130s. It defends
-    Judaism as grounded in public revelation and tradition, and criticizes Aristotelian
-    philosophy. In 1140 he left Spain for Egypt, intending to reach the Land of Israel, and he
-    died around 1141.
+    Judah Halevi was born in the Iberian peninsula, probably at Tudela, in the 1050s or 1060s;
+    his birth year is not known. He practised medicine and became one of the greatest Hebrew poets of the
+    Middle Ages, writing secular verse, liturgical poems and poems of longing for Zion. His
+    philosophical work, the Kuzari, is a dialogue between a king and a Jewish sage, written in
+    Judeo-Arabic, probably in the few years before his departure in 1140. It defends Judaism as
+    grounded in public revelation and tradition, and criticizes Aristotelian philosophy. In 1140 he
+    left Spain for the Land of Israel, spent about eight months in Egypt, sailed on in 1141, and
+    died there that summer.
   significance: >-
     Halevi offers a hierarchy of natural, animal, rational and divine levels of existence and sees human excellence as
     ordered rather than suppressed desire under divine influence. He also provides a Jewish counterweight to
@@ -675,7 +670,7 @@
   representativeWorks:
     - { title: "The Kuzari (Kitab al-Hujja wa-l-Dalil fi Nusr al-Din al-Dhalil)", sourceId: halevi-kuzari-hirschfeld }
     - { title: Poems of Zion }
-  notes: Birth place and year are approximate. Registry sourceId halevi-kuzari should be reconciled with halevi-kuzari-hirschfeld.
+  notes: Birth place (probably Tudela) and year (1050s-1060s) are uncertain per SEP. Registry sourceId halevi-kuzari should be reconciled with halevi-kuzari-hirschfeld.
 
 - id: soloveitchik
   slug: joseph-b-soloveitchik
@@ -692,10 +687,10 @@
     a family of Lithuanian Talmudists of the Brisker tradition. He earned a doctorate at the
     University of Berlin in 1932 with a dissertation on the philosophy of Hermann Cohen. He
     emigrated to the United States and settled in Boston, where he founded the Maimonides School
-    in 1937. From 1941 until 1986 he led the rabbinic training programme at Yeshiva University's
-    RIETS, ordaining some two thousand rabbis. His essays, such as Halakhic Man and The Lonely
+    in 1937. From 1941 until his retirement in 1985 he taught Talmud at Yeshiva University's
+    RIETS, and almost two thousand rabbis were ordained under him. His essays, such as Halakhic Man and The Lonely
     Man of Faith, combine Talmudic method with neo-Kantian and existentialist philosophy. He
-    died in Boston.
+    died in 1993.
   significance: >-
     Soloveitchik offers a modern Jewish anthropology of two Adams, one majestic and creative, one covenantal and
     obedient, and grounds dignity in responsibility. He speaks directly to technology, creativity and civilization in
@@ -723,14 +718,13 @@
   deathYear: 942
   description: Head of the Sura academy who gave the first systematic philosophical defense of rabbinic Judaism.
   bio: >-
-    Saadia ben Joseph (882-942) was born in the Fayyum in Egypt and worked in Palestine,
-    Syria and Iraq. In 928 he was appointed gaon, or head, of the Sura academy in Babylonia,
-    and he spent his later years in Baghdad, where he died. Writing in Arabic within the
-    intellectual world of early Islamic kalam, he composed the Book of Beliefs and Opinions
-    (completed 933), usually regarded as the first systematic work of Jewish philosophy. He
-    also produced an Arabic translation of the Bible with commentary, a commentary on the Sefer
-    Yetzirah, a prayer book, and works on grammar, law and the calendar. He defended rabbinic
-    Judaism against Karaite and other critics.
+    Saadia ben Joseph (882-942) was born in the Fayyum in Egypt and died in Baghdad. In 928 he was
+    appointed gaon, or head, of the Sura academy in Babylonia, though his tenure was contested.
+    Writing in Arabic within the intellectual world of early Islamic kalam, he composed the Book of
+    Beliefs and Opinions, usually regarded as the first systematic work of Jewish philosophy. He
+    also produced Arabic translations of the Bible, a commentary on the Sefer Yetzirah, a Hebrew
+    dictionary, a prayer book, and grammatical and mathematical writings. He defended rabbinic
+    Judaism against Karaite and other critics who dispensed with rabbinic authority.
   significance: >-
     Saadia supplies an early Jewish account of why humans, as the creatures endowed with wisdom, are commanded, judged
     and free, and so of both human dignity and accountability. On the site he also anchors the claim that reason and
@@ -742,7 +736,7 @@
     - Free choice without divine compulsion
     - Reward and punishment as just
   representativeWorks:
-    - { title: "The Book of Beliefs and Opinions (Kitab al-Amanat wa-l-I'tiqadat; Emunot ve-De'ot)", year: 933, sourceId: saadia-emunot-ibn-tibbon }
+    - { title: "The Book of Beliefs and Opinions (Kitab al-Amanat wa-l-I'tiqadat; Emunot ve-De'ot)", sourceId: saadia-emunot-ibn-tibbon }
     - { title: Arabic translation of the Torah (Tafsir) }
     - { title: Siddur (prayer book) }
 
@@ -753,17 +747,17 @@
   role: primary
   displayOrder: 4
   schools: [Medieval Talmudic scholarship, Kabbalah]
-  birthYear: 1194
   era: 1194–c. 1270
   description: Spanish Talmudist and biblical commentator who combined halakhic scholarship with mystical interpretation and defended Judaism in the Barcelona disputation.
   bio: >-
     Moses ben Nahman (1194-c. 1270), known as Nachmanides or the Ramban, was born in Girona in
-    Catalonia, where he became a leading rabbi and Talmudist, and he was later regarded as the
-    chief rabbi of Catalonia. He wrote novellae on the Talmud, legal works including Torat
-    ha-Adam, and Milhamot ha-Shem, a defence of Alfasi against criticism. In 1263 he represented
-    Judaism in the Barcelona Disputation against the convert Pablo Christiani. Forced to leave
-    Spain, he emigrated to the Land of Israel in 1267 and died in Acre around 1270. His Torah
-    commentary, completed late in life, joins plain-sense exegesis with Kabbalistic allusion.
+    Catalonia, where he became a leading rabbi and Talmudist and also practised medicine. He wrote
+    novellae on the Talmud, legal works including Torat ha-Adam, and Milhamot ha-Shem, a defence
+    of Alfasi against criticism. In 1263 he represented Judaism in the Barcelona Disputation against
+    the convert Pablo Christiani. Afterwards he was sentenced to banishment; he left for the Land of
+    Israel in 1267 and died around 1270, probably in Acre. His Torah commentary, written in his old
+    age and added to after his arrival in the Land of Israel, joins plain-sense exegesis with
+    Kabbalistic allusion.
   significance: >-
     Nachmanides reads the tree of knowledge as the origin of human will and desire, and the messianic healing of the
     heart as its remedy, the strongest medieval alternative to Maimonides on Eden. He gives the Jewish lane an
@@ -789,16 +783,15 @@
   role: primary
   displayOrder: 1
   schools: [Ash'ari kalam]
-  era: c. 873/4–935/6
+  era: c. 874–936 (c. 260–324 AH)
   description: Theologian whose method gave rise to the Ash'ari school of Sunni kalam.
   bio: >-
-    Abu al-Hasan 'Ali ibn Isma'il al-Ash'ari was born in Basra around 874 and died in Baghdad
-    around 936. He studied under the Mu'tazili theologian al-Jubba'i and held Mu'tazili views
+    Abu al-Hasan 'Ali ibn Isma'il al-Ash'ari was born in Basra around 874 and died around 936. He studied under the Mu'tazili theologian al-Jubba'i and held Mu'tazili views
     until, around the age of forty, he broke with the school. Tradition attributes his change
-    to dreams of the Prophet in Ramadan. He then defended the creed of the Sunni traditionists
+    to dreams of the Prophet. He then defended the creed of the Sunni traditionists
     using the rational methods of kalam. His surviving writings include the Maqalat
     al-Islamiyyin, a survey of Muslim sects, the Kitab al-Luma', and the al-Ibana. His
-    followers developed the Ash'ari school, which became dominant in Sunni theology.
+    followers developed the Ash'ari school, which became highly influential in Sunni theology.
   significance: >-
     Al-Ash'ari supplies the framework that al-Ghazali inherits: God creates all acts, humans "acquire" them (kasb), and
     moral obligation comes from revelation. The site uses him for the Sunni kalam view of will and responsibility.
@@ -824,12 +817,12 @@
   deathYear: 944
   description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
   bio: >-
-    Abu Mansur Muhammad al-Maturidi died in Samarqand in 944 (333 AH); his birth date is
+    Abu Mansur Muhammad al-Maturidi died in 944 (333 AH), in or near Samarqand; his birth date is
     unknown. He came from Maturid, a district of Samarqand in Transoxiana, and belonged to the
     Hanafi legal tradition. His main works are the Kitab al-Tawhid, a systematic theological
     treatise, and the Ta'wilat, a large commentary on the Qur'an. He defended Sunni belief
     against Mu'tazili and other rivals using reasoned argument. Later scholars in
-    Transoxiana and beyond built on his work, and the Maturidi school became the dominant
+    Transoxiana and beyond built on his work, and the Maturidi school became the leading
     theology among Hanafi Muslims, alongside the Ash'ari school.
   significance: >-
     Al-Maturidi represents the Hanafi-Maturidi strand, with greater confidence than the Ash'aris in reason's moral
@@ -854,15 +847,13 @@
   displayOrder: 4
   schools: [Ash'ari kalam, Sufism]
   era: c. 1056–1111
-  deathYear: 1111
   description: Theologian, jurist and mystic whose critique of the philosophers and synthesis of kalam and Sufism were widely influential.
   bio: >-
     Abu Hamid Muhammad al-Ghazali was born in 1055 or 1056 at Tabaran-Tus in Khurasan and died
     in 1111. A Shafi'i jurist and Ash'ari theologian, he studied at Nishapur and in 1091 was
     appointed to the Nizamiyya madrasa in Baghdad. In 1095, after a personal crisis, he left
     his post, and he subsequently adopted the Sufi path, performing the pilgrimage in 1096.
-    He taught again at the Nizamiyya in Nishapur from 1106, while also maintaining a private school and
-    Sufi convent in Tus. His works include the Incoherence of the Philosophers (c. 1095) and
+    He returned to teach at the Nizamiyya in Nishapur in 1106 and died at Tus. His works include the Incoherence of the Philosophers (c. 1095) and
     the Revival of the Religious Sciences, a compendium of religious practice and ethics.
   significance: >-
     The Ihya' gives the fullest classical Sunni moral psychology of heart, self, desire, sin and repentance, which
@@ -939,18 +930,17 @@
   role: primary
   displayOrder: 3
   schools: [Islamic philosophy, Peripatetic tradition]
-  birthYear: 980
-  deathYear: 1037
+  era: c. 970–1037
   description: Philosopher and physician whose metaphysics of the Necessary Existent shaped later Islamic theology and philosophy.
   bio: >-
-    Abu 'Ali al-Husayn ibn Sina (c. 980-1037) was born at Afshana near Bukhara and educated
-    there. He worked as a physician and counsellor to rulers across Iran and Central Asia,
-    served as a vizier at Hamadan, and spent his last years in Isfahan under the Kakuyid
-    ruler 'Ala' al-Dawla, dying at Hamadan in 1037. In the Peripatetic tradition of falsafa, he
-    developed a comprehensive philosophical system in the Book of Healing (al-Shifa'),
-    completed around 1020, and the later Pointers and Reminders. His Canon of Medicine was a
-    standard medical text for centuries. His metaphysics of the Necessary Existent and his
-    psychology of the soul influenced Muslim, Jewish and Latin Christian thinkers.
+    Abu 'Ali al-Husayn ibn Sina (c. 970-1037) was born at Afshana near Bukhara and educated
+    there. He fled Bukhara in 999 and worked as a physician and political counsellor to rulers in
+    several cities, including Hamadan and Isfahan, spending his last years in Isfahan at the court
+    of the Kakuyid ruler 'Ala' al-Dawla, and died at Hamadan in 1037. In the Peripatetic tradition
+    of falsafa, he developed a comprehensive philosophical system in the Book of Healing (al-Shifa')
+    and the later Pointers and Reminders. His Canon of Medicine was a standard medical text for
+    centuries. His metaphysics of the Necessary Existent and his psychology of the soul influenced
+    Muslim, Jewish and Latin Christian thinkers.
   significance: >-
     Ibn Sina offers the philosophical account of human greatness as the perfection of the rational soul through
     knowledge, and of evil as privation. He represents falsafa, which is not identical with kalam: Ash'ari and
@@ -967,7 +957,7 @@
     - { title: al-Najat }
     - { title: al-Isharat wa-l-Tanbihat }
     - { title: Canon of Medicine }
-  notes: Birth year is conventionally given as c. 980 (370 AH). The Shifa' year is the approximate completion date. Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
+  notes: SEP gives ca. 970-1037 (birth uncertain; traditional 980). Shifa' completion year removed as unverified. Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
 
 - id: ibn-arabi
   slug: ibn-arabi
@@ -981,13 +971,13 @@
   deathYear: 1240
   description: Andalusian mystic and author of an influential Sufi metaphysics of divine self-disclosure.
   bio: >-
-    Muhyi al-Din Ibn al-'Arabi (1165-1240) was born in Murcia in al-Andalus and educated in
-    Seville. He left the Muslim West in 1200 and went to Mecca, where he began writing his
-    vast work al-Futuhat al-Makkiyya around 1202. After travelling through Syria, Iraq and
-    Anatolia, he settled in Damascus in 1223 and remained there until his death in 1240. In
-    1229 he composed the shorter Fusus al-Hikam, which became the subject of more than a hundred
-    commentaries. His writings on the divine names, the cosmos and the Perfect Human shaped later
-    Sufism and Islamic philosophy.
+    Muhyi al-Din Ibn al-'Arabi (1165-1240) was born in Murcia in al-Andalus and studied with many
+    teachers in al-Andalus and North Africa. In 1201 he left the Muslim West for the pilgrimage to Mecca,
+    and began writing his vast work al-Futuhat al-Makkiyya after the pilgrimage. After travelling
+    through Iraq and Anatolia, he settled in Damascus in 1223 and remained there until his death in
+    1240. His shorter Fusus al-Hikam became the subject of more than a hundred commentaries. His
+    writings on the divine names, the cosmos and the Perfect Human shaped later Sufism and Islamic
+    philosophy.
   significance: >-
     Ibn Arabi gives the human as the comprehensive being able to realise every divine name, and hence every
     possibility, high and low. His views are contested within Sunni thought, so he serves as a specialist source for
@@ -999,9 +989,9 @@
     - Divine self-disclosure
     - Creative command versus prescriptive command
   representativeWorks:
-    - { title: al-Futuhat al-Makkiyya, year: 1202 }
-    - { title: Fusus al-Hikam, year: 1229 }
-  notes: Futuhat year is the start of composition (drafts completed 1231 and 1238). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.
+    - { title: al-Futuhat al-Makkiyya }
+    - { title: Fusus al-Hikam }
+  notes: Futuhat drafts completed 1231 and 1238 (start year not verified). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.
 
 # --- Hindu traditions --------------------------------------------------------------------
 - id: shankara
@@ -1065,7 +1055,7 @@
   era: 13th–14th century CE (traditionally 1238–1317)
   description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
   bio: >-
-    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated 1238–1317 CE. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main centre at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works such as the Anuvyakhyana. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of both Advaita and Vishishtadvaita.
+    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated 1238–1317 CE, though some scholars give 1197–1276. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main centre at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of non-dualist Vedanta.
   significance: Madhva makes souls permanently distinct, dependent agents with differing natures, which changes how Hindu traditions answer questions about dignity, merit and evil. He extends the project's range beyond Advaita and Vishishtadvaita.
   keyIdeas:
     - Pañcabheda (five fundamental differences)
@@ -1075,7 +1065,6 @@
     - Liberation through Viṣṇu's grace and bhakti
   representativeWorks:
     - { title: Brahmasutra-bhashya, sourceId: subbarau-madhva-brahmasutra }
-    - { title: Anuvyakhyana }
     - { title: Bhagavad-gita-bhashya }
 
 - id: udayana
@@ -1139,7 +1128,7 @@
   era: flourished early 5th century CE
   description: Commentator who systematized the Theravada understanding of the Pali Canon.
   bio: >-
-    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century CE. Tradition and the Pali chronicles hold that he was an Indian monk who travelled to Sri Lanka during the reign of Mahanama, who was reigning in 428, and worked at the Mahavihara monastery in Anuradhapura, where he rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopaedic summary of Mahavihara Theravada doctrine and meditation, organised around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures since at least the twelfth century.
+    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century CE. Tradition holds that he was an Indian monk who travelled to Sri Lanka and worked at Anuradhapura, where he is said to have rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopaedic summary of Theravada doctrine and meditation, organised around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures.
   significance: Buddhaghosa gives the most systematic Theravada map of the mental factors behind good and evil and of their purification, supplying the Theravada side of the Buddhist answer to human greatness and failure.
   keyIdeas:
     - Path of purification (virtue, concentration, understanding)
@@ -1244,7 +1233,6 @@
   representativeWorks:
     - { title: Shobogenzo, sourceId: dogen-shobogenzo }
     - { title: Bendowa }
-    - { title: Eihei Koroku }
 
 - id: tsongkhapa
   slug: tsongkhapa
@@ -1257,7 +1245,7 @@
   deathYear: 1419
   description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
   bio: >-
-    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and trained in Central Tibet under teachers including Rendawa Shonu Lodro, his principal master in epistemology and Madhyamaka. He founded Ganden Monastery in 1409, which became the base of the Gelug school; Drepung and Sera followed soon after. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
+    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and studied at major monastic centres in Central Tibet. He founded Ganden Monastery in 1409, which became the base of the Gelug school. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
   significance: Tsongkhapa integrates the value of human life, renunciation, compassion and the view of emptiness into one graded path, so that the ethical person remains conventionally real. He represents the Tibetan synthesis in the Buddhist lane.
   keyIdeas:
     - Lamrim (stages of the path)

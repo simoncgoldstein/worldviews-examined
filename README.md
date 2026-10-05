@@ -47,7 +47,7 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the decision rationale.
 
 ## Status
 
-Phases 1 and 2 implemented: Astro skeleton, structured content collections with build-time validation, a source/citation system, and routes for questions, worldviews, thinkers and sources. No substantive worldview answers have been written yet (two outline fixtures exist for the featured question).
+Phases 1 to 3 implemented: Astro skeleton, structured content collections with build-time validation, a source/citation system, routes for questions, worldviews, thinkers and sources, and the complete flagship comparison for *Why is man so great and so terrible?* (six reviewed answers with verified sources and thinker profiles). The research dossiers behind it, including the reusable research brief and review records, are in `research/questions/great-and-terrible/`. The other 27 questions are not yet written (Phase 4).
 
 ## Development
 

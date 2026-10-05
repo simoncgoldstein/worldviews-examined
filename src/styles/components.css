@@ -148,7 +148,7 @@
 /* --- Layout ----------------------------------------------------------------------------- */
 
 /* Sticky section navigation beside the main column on wide screens; stacks above on narrow. */
-.with-aside { display: grid; gap: var(--space-6); }
+.with-aside { display: grid; gap: var(--space-6); grid-template-columns: minmax(0, 1fr); }
 .aside-nav { font-size: var(--text-sm); }
 .aside-nav h2 {
   font-size: var(--text-xs);
@@ -332,7 +332,7 @@ sup.cite a:target { background: var(--color-target); }
 .external { font-family: var(--font-sans); }
 
 /* Registry page: sources grouped by tradition. */
-.source-registry .source-entry { padding-block: var(--space-2); }
+.source-registry .source-entry { padding-block: var(--space-2); overflow-wrap: break-word; }
 
 /* --- Thinker roles ---------------------------------------------------------------------- */
 

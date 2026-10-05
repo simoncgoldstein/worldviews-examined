@@ -69,16 +69,20 @@ Implement one complete showcase question before mass-writing content:
 
 **Featured question:** `great-and-terrible`
 
-- [ ] Six steelman summaries.
-- [ ] Six explanatory-strength sections.
-- [ ] Five Christian-response sections for non-Christian worldviews.
-- [ ] Strongest objection + Christian reply for Christianity.
-- [ ] Deep dives.
-- [ ] Primary/internal sources.
-- [ ] Thinker links.
-- [ ] Responsive comparison UI.
+- [x] Six steelman summaries.
+- [x] Six explanatory-strength sections.
+- [x] Five Christian-response sections for non-Christian worldviews.
+- [x] Strongest objection + Christian reply for Christianity.
+- [x] Deep dives.
+- [x] Primary/internal sources (99 registry entries; every source cited by the flagship verified under the protocol in `docs/SOURCES.md`).
+- [x] Thinker links (34 cited thinkers with verified profiles; Darwin and Kitcher added as naturalism specialists).
+- [x] Responsive comparison UI (paired cards' sections align on wide screens).
 
-**Exit condition:** this page establishes the quality bar for all later entries.
+**Process used** (reusable for Phase 4; dossiers in `research/questions/great-and-terrible/`): shared research brief; six isolated steelman researchers plus an independent objection researcher; independent steelman QA and adjudication; five independent Christian-response researchers; thinker profiles; registry merge; three independent citation verifiers re-reading every cited passage; an independent adversarial review by a different model family (Codex, GPT-6.1 Sol), adjudication, remediation and a focused re-review.
+
+**Exit condition (met):** this page establishes the quality bar for all later entries.
+
+Architecture changes made during Phase 3, each the minimum needed for a concrete deficiency the flagship exposed: content validation now parses YAML dates as Astro does (unquoted `verifiedOn` dates passed validation but failed the build); answer subheadings get per-answer ids (two Deep dives with the same `####` heading produced duplicate ids on the question page); paired answer cards share subgrid rows on wide screens so comparable sections can be read across. No schema changed.
 
 ## Phase 4: Core V1 content
 

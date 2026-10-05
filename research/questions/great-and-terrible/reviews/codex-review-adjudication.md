@@ -22,3 +22,29 @@ Orchestrator decisions. Resolution notes are completed after revision (see "Reso
 | Parity: repetition of the five responses' structure | Partially accept | The grant-then-deeper-root shape is the method (steelman, then response). It is a defect where it substitutes for engaging the opponent's actual answer; R-2–R-9 fix those cases. | |
 | Parity: Christian remedy receives less scrutiny | Partially accept | Addressed through R-1. Atonement's justice is a site-wide question (`self-salvation`, `guilt`) and is not expanded here. | |
 | Verification gaps (Sefaria shells, archive scans) | Noted | Covered by the separate citation verifiers, who re-read passages through APIs and alternative scans. | |
+
+## Resolution
+
+Remediation committed as `fbf65d3` (pre-remediation `c745e20`). A focused re-review by the same
+independent reviewer configuration (Codex, gpt-6.1-sol, high, read-only;
+`codex-focused-rereview.md`) classified **R-1 to R-12 all RESOLVED**, found no new material
+regression, and returned **PASS**.
+
+Summary of fixes:
+
+- R-1: objection now includes WCF 3.1, 3.7, 5.4, 5.6; reply gives WCF 3.1/5.4 and Edwards, *Freedom of the Will* IV.9, cites WCF 3.8, and names two open disputes (self-origination; responsibility under a comprehensive decree).
+- R-2: response separates applicability, reasons and motivation, and asks what makes an applicable duty authoritative; the Christian answer (duty and deepest reason coincide in God, WLC Q. 1) is marked as contested.
+- R-3: Lev 5:11–13 and 1 Kgs 8:46–50 engaged first; atonement kept as a Christian theological disagreement about the ground of pardon (WCF 8.6).
+- R-4: AN 3.4, SN 11.24, MN 61 included; the Christian addition narrowed to offence against God.
+- R-5: Bukhari 2449 and Muslim 2581 included; satisfaction stated as a Reformed premise; Vedāntin reply stated; both labelled theological disagreement.
+- R-6: moral knowledge distinguished from liberating self-knowledge; dispute is over explanatory priority.
+- R-7: present and final remedies compared at the same stage; Calvin II.11.7 removed.
+- R-8: universality declared non-discriminating; disagreement located in adult refusal of acknowledged truth and labelled underdetermined by the evidence.
+- R-9: Railton's defense engaged; capacity-based accounts named via SEP "Cognitive Disability and Moral Status".
+- R-10: Tanahashi edition set `unverified`; the Japanese text actually read registered and cited; paraphrase only.
+- R-11: AN 9.21 narrowed. R-12: stray markup removed.
+
+Citation-verifier findings (three independent Sonnet passes, 390 citations) were fixed in the same
+remediation: locators (Edwards III.4, IEP Rāmānuja §7, *Disciplining the Soul* pp. 25–28, Tanya
+chapters), exact quotations (Dennett, Sastri, Kulp, CCAR), and narrowed claims (Railton, Wrangham,
+Darwin, AN 9.21, Triṃśikā 19).

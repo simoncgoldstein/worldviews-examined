@@ -65,7 +65,7 @@ Example: `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `title
 
 The registry is a research map, not a claim that thinkers within a lane agree.
 
-**Biographies are a core thinker-page feature, but are written as thinkers are used.** `bio`, `significance` and `keyIdeas` are optional so the registry can be seeded without inventing profiles. A missing biography is shown as "not yet written", never as finished. Biographies and significance are normally completed when a thinker is first used in researched content, and are required (validated) for every thinker named by a `reviewed` or `complete` answer. A `bio` outside roughly 60-180 words produces a validation warning. Only Van Til currently has a drafted profile, as a worked example; it has not been reviewed against sources. Portraits or sketches are deferred to final polish (Phase 7); there is no image support yet.
+**Biographies are a core thinker-page feature, but are written as thinkers are used.** `bio`, `significance` and `keyIdeas` are optional so the registry can be seeded without inventing profiles. A missing biography is shown as "not yet written", never as finished. Biographies and significance are normally completed when a thinker is first used in researched content, and are required (validated) for every thinker named by a `reviewed` or `complete` answer. A `bio` outside roughly 60-180 words produces a validation warning. Profiles were first written and verified in Phase 3 for the thinkers cited by the flagship question; other entries remain unprofiled until used. Portraits or sketches are deferred to final polish (Phase 7); there is no image support yet.
 
 **Ordering is explicit, not alphabetical.** Within a worldview, thinkers are ordered by role (primary, specialist, interlocutor), then by `displayOrder`, then by name as a fallback for entries without one. `displayOrder` must be unique within a worldview and role (validated). The Reformed primary sequence is intentionally historical and intellectual: Augustine, Calvin, Turretin, Witsius, Bavinck, Vos, Van Til, Bahnsen. Worldview, registry and thinker pages all respect this order.
 
@@ -94,7 +94,7 @@ The finalized rosters are listed in `docs/SOURCES.md`.
   displayCitation?,   // overrides the citation derived from the metadata
   notes?,
   verificationStatus: 'unverified' | 'checked',   // default 'unverified'
-  verifiedOn?: 'YYYY-MM-DD'                       // required when 'checked'
+  verifiedOn?: 'YYYY-MM-DD'                       // required when 'checked'; quote it in YAML ("2026-10-05"), since an unquoted date is parsed as a Date
 }
 ```
 
@@ -143,7 +143,7 @@ Non-Christian answers (`kind: nonChristian`):
 ## Deep dive
 ```
 
-At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. The Deep dive renders as a collapsible `<details>`; every other section is always visible. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
+At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. Subheadings inside a section (`####` in the Deep dive, which render as `h4`) also get IDs namespaced to the answer, so identical subheadings in different answers do not collide on the question page. The Deep dive renders as a collapsible `<details>`; every other section is always visible. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
 
 **Status rules**
 
@@ -192,7 +192,7 @@ Consider adding later:
 
 ## UI contract
 
-Section headings come from the MDX body; the card renders them in the order written.
+Section headings come from the MDX body; the card renders them in the order written. On wide screens the two cards in each row share subgrid rows (header, five sections, thinkers, sources), so comparable sections line up and can be read across; on narrow screens cards stack and each stands alone.
 
 ### Non-Christian answer card
 
