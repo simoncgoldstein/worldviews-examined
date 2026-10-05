@@ -135,6 +135,10 @@ Christianity does not receive a free pass. Its entries should directly face diff
 
 The Christian reply should be the strongest confessional Reformed answer available.
 
+## Research depth and publication depth
+
+Research depth and publication depth are intentionally different. Research dossiers (`research/questions/<id>/`) may preserve extensive thinker, school, source and citation detail, while public answers should surface only the material necessary to represent the worldview accurately, explain the decisive issues clearly, and support the published claims. The Phase 3 flagship's research and citation density is an upper bound, not the default production target for later questions.
+
 ## Tone
 
 - precise;

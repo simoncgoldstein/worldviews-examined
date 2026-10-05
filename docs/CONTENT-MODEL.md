@@ -65,7 +65,7 @@ Example: `id: great-and-terrible`, `slug: why-is-man-great-and-terrible`, `title
 
 The registry is a research map, not a claim that thinkers within a lane agree.
 
-**Biographies are a core thinker-page feature, but are written as thinkers are used.** `bio`, `significance` and `keyIdeas` are optional so the registry can be seeded without inventing profiles. A missing biography is shown as "not yet written", never as finished. Biographies and significance are normally completed when a thinker is first used in researched content, and are required (validated) for every thinker named by a `reviewed` or `complete` answer. A `bio` outside roughly 60-180 words produces a validation warning. Only Van Til currently has a drafted profile, as a worked example; it has not been reviewed against sources. Portraits or sketches are deferred to final polish (Phase 7); there is no image support yet.
+**Biographies are a core thinker-page feature, but are written as thinkers are used.** `bio`, `significance` and `keyIdeas` are optional so the registry can be seeded without inventing profiles. A missing biography is shown as "not yet written", never as finished. Biographies and significance are normally completed when a thinker is first used in researched content, and are required (validated) for every thinker named by a `reviewed` or `complete` answer. A `bio` outside roughly 60-180 words produces a validation warning. Profiles were first written and verified in Phase 3 for the thinkers cited by the flagship question; other entries remain unprofiled until used. Portraits or sketches are deferred to final polish (Phase 7); there is no image support yet.
 
 **Ordering is explicit, not alphabetical.** Within a worldview, thinkers are ordered by role (primary, specialist, interlocutor), then by `displayOrder`, then by name as a fallback for entries without one. `displayOrder` must be unique within a worldview and role (validated). The Reformed primary sequence is intentionally historical and intellectual: Augustine, Calvin, Turretin, Witsius, Bavinck, Vos, Van Til, Bahnsen. Worldview, registry and thinker pages all respect this order.
 
@@ -94,7 +94,7 @@ The finalized rosters are listed in `docs/SOURCES.md`.
   displayCitation?,   // overrides the citation derived from the metadata
   notes?,
   verificationStatus: 'unverified' | 'checked',   // default 'unverified'
-  verifiedOn?: 'YYYY-MM-DD'                       // required when 'checked'
+  verifiedOn?: 'YYYY-MM-DD'                       // required when 'checked'; quote it in YAML ("2026-10-05"), since an unquoted date is parsed as a Date
 }
 ```
 
@@ -115,11 +115,11 @@ One MDX file per worldview/question pair at `src/content/answers/<worldviewId>/<
   scope?, traditionNotes: string[],
   thinkers: string[],               // thinker ids
   analysis: { kind: 'christian' | 'nonChristian' },
-  lede?                             // optional, <= 240 chars, unsourced teaser for navigation only
+  lede?                             // optional, <= 240 chars: the one-sentence thesis shown under the worldview name
 }
 ```
 
-`analysis.kind` must match the worldview's `analysisKind` (validated). Do not put argument, claims or summaries in frontmatter; unsourced prose there would bypass the citation system.
+`analysis.kind` must match the worldview's `analysisKind` (validated). Do not put argument, claims or summaries in frontmatter; unsourced prose there would bypass the citation system. The single exception is `lede`, the answer's one-sentence thesis: it may only restate, in one sentence, what the cited sections below already establish, so a reader can skim the six theses and see the contrast.
 
 **All prose lives in the MDX body under level-two headings**, spelled exactly and in this order.
 
@@ -143,7 +143,7 @@ Non-Christian answers (`kind: nonChristian`):
 ## Deep dive
 ```
 
-At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. The Deep dive renders as a collapsible `<details>`; every other section is always visible. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
+At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. Subheadings inside a section (`####` in the Deep dive, which render as `h4`) also get IDs namespaced to the answer, so identical subheadings in different answers do not collide on the question page. The Deep dive renders as a collapsible `<details>`; every other section is always visible. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
 
 **Status rules**
 
@@ -167,9 +167,9 @@ Write citations inline in any section of an answer body:
 ```
 
 - `source` is a registered source id; `locator` is a short plain-text locator (`I.3.1`, `WCF 1.4`, `4:157`, `pp. 25–31`, `chapter 4`, `365a`). Both are required; attributes must be double-quoted string literals.
-- Numbering is document-wide across all sections of one answer. Each distinct (source, locator) pair gets one number in order of first appearance; repeating the same pair, even in another section, reuses the number and gives its Sources entry one `↩` backlink per use.
+- Numbering runs once across the whole question page (1…N). Within an answer, each distinct (source, locator) pair gets one number in order of first appearance; repeating the same pair, even in another section or the Deep dive, reuses the number and gives its Sources entry one `↩` backlink per use. Each answer's numbers continue from the previous answer in worldview order (`AnswerEntry.offset` in `src/lib/content.ts`). The same pair cited in two different answers gets a number in each, because sources are listed under the answer where the reader met them.
 - The same source cited at a different locator gets its own number; its Sources entry uses the source's `shortCitation`.
-- Markers render as `<sup class="cite"><a href="#…-src-N">N</a></sup>`, a real anchor needing no JavaScript, with an `aria-label` such as "Source 1: Calvin, Institutes, I.1.1". The numbered Sources list sits after the answer's sections (outside the collapsible Deep dive) and is the `:target`.
+- Markers render as `<sup class="cite"><a href="#…-src-N">N</a></sup>`, a real anchor needing no JavaScript, with an `aria-label` such as "Source 1: Calvin, Institutes, I.1.1". One consolidated **Sources** section follows all the cards on the question page, subdivided by the answer in which each source is cited (not by the source's own tradition), and its entries are the `:target`. Anchor ids stay namespaced per answer, so the displayed number can change without changing any link.
 - **Deep dive fragment behavior.** The Deep dive is a semantic `<details>`. A small framework-free script (`src/scripts/reveal-hash.ts`) opens any closed ancestor `<details>` of the fragment target on initial load and on `hashchange`, then scrolls the target into view (instantly, so it never animates and respects reduced motion). It exists because a source's `↩` backlink can point at a citation inside a closed Deep dive, and browsers other than Chrome are not guaranteed to open it. Citation to source navigation is plain anchor navigation and needs no JavaScript; the script only improves the closed-details case.
 
 ## Source hierarchy
@@ -192,7 +192,7 @@ Consider adding later:
 
 ## UI contract
 
-Section headings come from the MDX body; the card renders them in the order written.
+Section headings come from the MDX body; the card renders them in the order written. On wide screens the two cards in each row share subgrid rows (header, five sections, thinkers, sources), so comparable sections line up and can be read across; on narrow screens cards stack and each stands alone.
 
 ### Non-Christian answer card
 
@@ -202,7 +202,6 @@ Section headings come from the MDX body; the card renders them in the order writ
 4. ◇ Pressure questions
 5. Deep dive (collapsible)
 6. Representative thinkers
-7. Sources
 
 ### Christian answer card
 
@@ -212,7 +211,8 @@ Section headings come from the MDX body; the card renders them in the order writ
 4. Christian reply
 5. Deep dive (collapsible)
 6. Representative thinkers
-7. Sources
+
+Each card opens with the worldview name and its one-sentence thesis (`lede`). Sources for all cards are listed once, after the cards (see Citations).
 
 ### Editorial notation
 

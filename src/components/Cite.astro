@@ -1,7 +1,9 @@
 ---
 // Inline citation marker used inside answer MDX: <Cite source="…" locator="…" />.
-// `ns`, `n` and `occurrence` are injected at build time by src/lib/remark-citations.mjs.
-import { getContent, lookup } from '../lib/content';
+// `ns`, `n` and `occurrence` are injected at build time by src/lib/remark-citations.mjs. `n` is
+// the answer-local number; the displayed number adds the answer's page-level offset so citations
+// run 1…N across the whole question page. Anchor ids stay answer-local, so they never collide.
+import { answerByNamespace, getContent, lookup } from '../lib/content';
 import { shortSource } from '../lib/citations';
 
 interface Props {
@@ -13,12 +15,13 @@ interface Props {
 }
 
 const { source, locator, ns, n, occurrence } = Astro.props;
-const { sourceById } = await getContent();
-const registered = lookup(sourceById, source, 'source');
-const label = `Source ${n}: ${shortSource(registered)}, ${locator}`;
+const content = await getContent();
+const registered = lookup(content.sourceById, source, 'source');
+const number = answerByNamespace(content, ns).offset + Number(n);
+const label = `Source ${number}: ${shortSource(registered)}, ${locator}`;
 ---
 
 <sup class="cite"><a
     id={`${ns}-cite-${n}-${occurrence}`}
     href={`#${ns}-src-${n}`}
-    aria-label={label}>{n}</a></sup>
+    aria-label={label}>{number}</a></sup>

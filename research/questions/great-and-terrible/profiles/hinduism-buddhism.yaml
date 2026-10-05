@@ -1,0 +1,308 @@
+# Verified thinker profiles: Hinduism and Buddhism lanes (Great and Terrible question).
+# Drop-in replacements for the matching entries in src/content/thinkers/thinkers.yaml
+# (ids, slugs, roles, displayOrder and schools preserved). Checked 2026-10-05.
+# Britannica and Encyclopedia of Buddhism pages could not be fetched (403/closed); SEP and IEP were primary.
+#
+# shankara     https://plato.stanford.edu/entries/shankara/
+#   Corrections: era now states the dating debate (788-820 / 700-750 / late 7th-early 8th c.); work
+#   title normalised to Brahmasutra-bhashya; added Gita-bhashya, Upadeshasahasri; sourceIds linked.
+#   Biography flagged as hagiographical (Kerala birth, death at 32 are late traditional accounts).
+# ramanuja     https://iep.utm.edu/ramanuja/
+#   Corrections: era gives traditional (1017-1137) and recent (1077-1157) dating; Gadyatraya flagged
+#   as authenticity-contested; added Vedarthasamgraha and Gita-bhashya; sourceIds linked.
+# madhva       https://iep.utm.edu/madhva/ (1238-1317, Udipi centre, five differences, tattvavada).
+#   Birthplace Pajaka near Udupi comes only from secondary web sources (https://en.wikipedia.org/wiki/Pajaka)
+#   and is worded "said to have been". Correction: era widened to 13th-14th c. (he lived to 1317).
+#   The Vayu-avatara claim is labelled a sectarian belief. Vishnutattvanirnaya dropped: not
+#   found in IEP (fetched) and not otherwise verified.
+# kumarila     https://plato.stanford.edu/entries/kumaarila/
+#   Correction: era "flourished c. 660 CE" (SEP); South Indian origin only "some evidence".
+#   Added Tuptika; lost Brhattika noted in bio. No registered source for Tantravarttika.
+# buddhaghosa  Nanamoli intro to Path of Purification (BPS 2010, via the Buddhism packet section 16);
+#   https://www.britannica.com/biography/Buddhaghosa and https://encyclopediaofbuddhism.org/wiki/Buddhaghosa
+#   (only search-result summaries seen). Correction: era "fl. early 5th c." (Mahanama reigning in 428).
+# nagarjuna    https://plato.stanford.edu/entries/nagarjuna/
+#   Correction: era c. 150-250 CE per SEP; noted attribution uncertainty and possible multiple authors;
+#   biography described as largely legendary.
+# vasubandhu   https://plato.stanford.edu/entries/vasubandhu/
+#   Correction: era 4th-5th c.; one-vs-two-Vasubandhus debate (Frauwallner) stated; added Trimsika
+#   with sourceId; Abhidharmakosa linked to vasubandhu-abhidharmakosa.
+# dharmakirti  https://plato.stanford.edu/entries/dharmakiirti/
+#   Correction: era widened to c. 6th-7th c. (SEP: usually c. 600-660, possibly earlier); added
+#   Pramanaviniscaya and Hetubindu. Nyayabindu kept as in registry (attribution not checked here).
+# shantideva   https://plato.stanford.edu/entries/shantideva/
+#   Correction: era "late 7th to mid-8th c." (registry said 8th); added Shiksasamuccaya; levitation
+#   story labelled Tibetan legend.
+# tsongkhapa   https://plato.stanford.edu/entries/tsongkhapa/
+#   Dates 1357-1419 confirmed; added year 1402 for Lamrim Chenmo and linked tsongkhapa-lamrim-chenmo;
+#   added Three Principal Aspects with tsongkhapa-three-principal-aspects; Ganden founded 1409.
+# dogen        https://plato.stanford.edu/entries/japanese-zen/ (1200-1253, shikantaza, shusho, uji).
+#   Rujing, the 1223-27 China stay and the Eiheiji founding date could not be confirmed from a fetched
+#   source (SEP japanese-zen gives only 1200-54 and founder of Soto; IEP 404; Britannica/ASIANetwork 403),
+#   so those specifics were removed from the bio.
+
+- id: shankara
+  slug: shankara
+  name: Shankara
+  worldview: hinduism
+  role: primary
+  displayOrder: 1
+  schools: [Advaita Vedanta]
+  era: 8th century CE (dates debated; proposals include 788–820, 700–750, or late 7th–early 8th century)
+  description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
+  bio: >-
+    Shankara (Śaṅkara) was a Sanskrit commentator whose dates are debated: older scholarship gave 788–820 CE, Nakamura proposed 700–750, and others the late seventh or early eighth century. No dependable historical record of his life survives beyond his writings. Hagiographies composed centuries later place his birth in Kerala, describe him as a young renouncer and travelling teacher, and say he died at thirty-two; these details are traditional, not verified. He was a systematizer rather than the founder of Advaita Vedanta, a pupil of Govinda, who was himself a pupil of Gaudapada. His earliest complete extant commentaries treat the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, and he also wrote the Upadeshasahasri. Many other texts are attributed to him but probably come from later monastic leaders.
+  significance: Shankara supplies the classical non-dual Vedanta account of human greatness and failure, tracing misery and wrongdoing to a beginningless misidentification of the self, and his Gita commentary analyses how desire veils knowledge. Advaita is one Hindu school among several and must not stand for Hindu traditions as a whole.
+  keyIdeas:
+    - Adhyāsa (superimposition)
+    - Avidyā (ignorance)
+    - Identity of ātman and brahman
+    - Two levels of reality
+    - Sākṣin (witness-consciousness)
+    - Knowledge as the means of liberation
+  representativeWorks:
+    - { title: Brahmasutra-bhashya, sourceId: thibaut-shankara-brahmasutra }
+    - { title: Bhagavad-gita-bhashya, sourceId: sastri-gita-shankara }
+    - { title: Upanishad commentaries }
+    - { title: Upadeshasahasri }
+  notes: Advaita is one Hindu school and must not stand for Hindu traditions as a whole.
+
+- id: ramanuja
+  slug: ramanuja
+  name: Ramanuja
+  worldview: hinduism
+  role: primary
+  displayOrder: 2
+  schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
+  era: traditionally 1017–1137 CE; recent scholarship proposes 1077–1157
+  description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
+  bio: >-
+    Ramanuja (Rāmānuja) is traditionally dated 1017–1137 CE, though recent scholarship proposes 1077–1157. He was born at Sriperumbudur near modern Chennai into a Tamil-speaking Brahmin family and studied at Kanchipuram under Yadavaprakasha, with whom he came to disagree. He became the leading figure of the Sri Vaishnava community, a Tamil devotional tradition shaped by Yamunacarya, and set out its philosophy in Sanskrit for a pan-Indian audience. His main works are the Sri Bhashya on the Brahma Sutras, the Vedarthasamgraha, and a commentary on the Bhagavad Gita. Some scholars question the authenticity of the Gadyatraya and some shorter works. He articulated Vishishtadvaita, "qualified non-dualism", and defended theism against non-dualist readings of Vedanta.
+  significance: Ramanuja offers a theistic Vedanta account in which the individual self is real, eternal and a mode of God, its knowledge contracted by karma and restored through devotion and surrender. This contrasts with Advaita and shows internal diversity within Hindu answers on human dignity and evil.
+  keyIdeas:
+    - Viśiṣṭādvaita (qualified non-dualism)
+    - Body–soul (śarīra–śarīrin) relation of world to God
+    - Real, individual selves
+    - Karma contracting the self's knowledge
+    - Bhakti and prapatti (surrender)
+    - Critique of Advaita avidyā
+  representativeWorks:
+    - { title: Sri Bhashya, sourceId: thibaut-ramanuja-sribhashya }
+    - { title: Vedarthasamgraha }
+    - { title: Bhagavad-gita-bhashya, sourceId: govindacharya-gita-ramanuja }
+    - { title: Gadyatraya (authenticity contested) }
+
+- id: madhva
+  slug: madhva
+  name: Madhva
+  worldview: hinduism
+  role: primary
+  displayOrder: 3
+  schools: [Dvaita Vedanta]
+  era: 13th–14th century CE (traditionally 1238–1317)
+  description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
+  bio: >-
+    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated 1238–1317 CE. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main centre at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works such as the Anuvyakhyana. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of both Advaita and Vishishtadvaita.
+  significance: Madhva makes souls permanently distinct, dependent agents with differing natures, which changes how Hindu traditions answer questions about dignity, merit and evil. He extends the project's range beyond Advaita and Vishishtadvaita.
+  keyIdeas:
+    - Pañcabheda (five fundamental differences)
+    - Svatantra and paratantra (independent and dependent reality)
+    - Tāratamya (gradation of souls)
+    - Realism (Tattvavāda)
+    - Liberation through Viṣṇu's grace and bhakti
+  representativeWorks:
+    - { title: Brahmasutra-bhashya, sourceId: subbarau-madhva-brahmasutra }
+    - { title: Anuvyakhyana }
+    - { title: Bhagavad-gita-bhashya }
+
+- id: kumarila
+  slug: kumarila-bhatta
+  name: Kumarila Bhatta
+  worldview: hinduism
+  role: primary
+  displayOrder: 5
+  schools: [Mimamsa]
+  era: flourished c. 660 CE
+  description: Mimamsa philosopher who defended the authority of the Veda and developed theories of language and knowledge.
+  bio: >-
+    Kumarila Bhatta (Kumārila Bhaṭṭa) flourished around 660 CE, a contemporary of the Buddhist logician Dharmakirti. Little is securely known of his life; there is some evidence that he came from South India. He belonged to Purva Mimamsa, the school concerned with interpreting the Vedic ritual texts and the nature of dharma, and gave his name to the Bhatta sub-school. His main works are the Slokavarttika, a verse treatise on epistemology and language; the Tantravarttika, on the interpretation of the Veda; and the Tuptika. A longer commentary, the Brhattika, is lost. He engaged critically with Buddhist philosophers, especially Dignaga and Dharmakirti, and his arguments influenced later Buddhist thought.
+  significance: Kumarila shows how Vedic authority and the intrinsic reliability of knowledge ground Hindu accounts of moral knowledge, and his defence of an enduring self underwrites responsibility across lives against the Buddhist no-self view. He is used chiefly for knowledge, language and authority.
+  keyIdeas:
+    - Svataḥ prāmāṇya (intrinsic validity of cognition)
+    - Apauruṣeyatva (authorless Veda)
+    - Dharma known through Vedic injunction
+    - Realism about universals and language
+    - Enduring self against Buddhist no-self
+  representativeWorks:
+    - { title: Slokavarttika, sourceId: jha-slokavarttika }
+    - { title: Tantravarttika }
+    - { title: Tuptika }
+  notes: Represents Mimamsa, particularly Vedic authority, language and epistemology.
+
+- id: buddhaghosa
+  slug: buddhaghosa
+  name: Buddhaghosa
+  worldview: buddhism
+  role: primary
+  displayOrder: 1
+  schools: [Theravada]
+  era: flourished early 5th century CE
+  description: Commentator who systematized the Theravada understanding of the Pali Canon.
+  bio: >-
+    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century CE. Tradition and the Pali chronicles hold that he was an Indian monk who travelled to Sri Lanka during the reign of Mahanama, who was reigning in 428, and worked at the Mahavihara monastery in Anuradhapura, where he rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopaedic summary of Mahavihara Theravada doctrine and meditation, organised around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures since at least the twelfth century.
+  significance: Buddhaghosa gives the most systematic Theravada map of the mental factors behind good and evil and of their purification, supplying the Theravada side of the Buddhist answer to human greatness and failure.
+  keyIdeas:
+    - Path of purification (virtue, concentration, understanding)
+    - Near and far enemies of the divine abidings
+    - Conscience and moral dread as guardians of the world
+    - Dependent origination without a creator
+    - Anusaya (latent tendencies)
+  representativeWorks:
+    - { title: Visuddhimagga, sourceId: buddhaghosa-path-of-purification }
+    - { title: Commentaries on the Pali Nikayas }
+
+- id: nagarjuna
+  slug: nagarjuna
+  name: Nagarjuna
+  worldview: buddhism
+  role: primary
+  displayOrder: 2
+  schools: [Madhyamaka, Mahayana]
+  era: c. 150–250 CE
+  description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
+  bio: >-
+    Nagarjuna (Nāgārjuna) lived roughly between 150 and 250 CE, probably in southern India, and was a Buddhist monk. Very little can be said precisely about his life, and the traditional biographies, with their legends of serpent-spirits (nagas), are largely legendary. Works were often attributed to him later, and more than one author named Nagarjuna may be involved, though scholars generally accept groups of argumentative works, hymns and letters as his. His most important work is the Mulamadhyamakakarika, about 450 verses arguing that nothing has intrinsic nature (svabhava). He is regarded as the founder of Madhyamaka, the "Middle Way" school, and a reading of him as Prasangika became the official position of Tibetan Buddhism.
+  significance: Nagarjuna shows how moral agency and transformation can be understood without a substantial self, and argues that emptiness makes action and ethics possible rather than undermining them. He anchors the Madhyamaka strand used across the site.
+  keyIdeas:
+    - Śūnyatā (emptiness) as absence of svabhāva
+    - Emptiness identified with dependent origination
+    - Two truths
+    - Mutual dependence of agent and action
+    - Defilements from conceptual proliferation (prapañca)
+  representativeWorks:
+    - { title: Mulamadhyamakakarika, sourceId: nagarjuna-mmk }
+    - { title: Ratnavali }
+    - { title: Vigrahavyavartani }
+
+- id: vasubandhu
+  slug: vasubandhu
+  name: Vasubandhu
+  worldview: buddhism
+  role: primary
+  displayOrder: 3
+  schools: [Abhidharma, Yogacara]
+  era: 4th or 5th century CE (dating disputed)
+  description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
+  bio: >-
+    Vasubandhu lived in the fourth or fifth century CE, in the Gupta period; the dating is disputed. Tradition makes him a native of Gandhara who studied in Kashmir and later lived at Ayodhya under royal patronage. He wrote the Abhidharmakosa and its commentary, a systematic treatment of Abhidharma from a Sarvastivada and Sautrantika standpoint, and is also credited with Yogacara works, including the Twenty Verses, the Thirty Verses and the Exposition of the Three Natures. Since the 1950s some scholars, following Frauwallner, have argued that two authors of this name were merged into one; others defend a single author. His writings treat no-self, momentariness, karma as intention and "appearance-only" (vijnaptimatra).
+  significance: Vasubandhu's doctrine of latent tendencies and, in Yogacara, the storehouse and afflicted mind give a deep Buddhist account of habitual, pre-reflective disorder, which bears on the "terrible" half of the question.
+  keyIdeas:
+    - Karma as intention (cetanā)
+    - Anuśaya (latent tendencies)
+    - Ālayavijñāna (storehouse consciousness)
+    - Vijñaptimātra (appearance-only)
+    - Three natures (trisvabhāva)
+  representativeWorks:
+    - { title: Abhidharmakosa and Bhashya, sourceId: vasubandhu-abhidharmakosa }
+    - { title: Vimshatika (Twenty Verses) }
+    - { title: Trimshika (Thirty Verses), sourceId: vasubandhu-trimsika }
+    - { title: Trisvabhavanirdesha }
+
+- id: shantideva
+  slug: shantideva
+  name: Shantideva
+  worldview: buddhism
+  role: specialist
+  displayOrder: 1
+  usedFor: [ethics, the bodhisattva path]
+  schools: [Madhyamaka, Mahayana]
+  era: late 7th to mid-8th century CE
+  description: Indian Mahayana poet-monk whose work sets out the path of the bodhisattva.
+  bio: >-
+    Shantideva (Śāntideva) lived between the late seventh and mid-eighth century CE and is thought to have studied at the monastic university of Nalanda in northern India. He is associated with Madhyamaka, and Tibetan tradition counts him as a Prasangika. Knowledge of his life comes mainly from later Tibetan accounts. One legend says that fellow monks, who thought him idle, asked him for an original composition; he recited the Bodhicaryavatara, rose into the air, and vanished at the verses on emptiness. This story is traditional. The Bodhicaryavatara ("Entering the Bodhisattva's Way of Life") is a poem of about a thousand verses on generating the awakening mind and practising the perfections. He also compiled the Shiksasamuccaya, an anthology of Mahayana sutra passages with commentary.
+  significance: Shantideva gives the most penetrating Buddhist first-person account of weakness of will, self-cherishing and the sources of suffering, and his bodhisattva ideal is the Mahayana picture of human greatness. He is used chiefly for ethics.
+  keyIdeas:
+    - Bodhicitta (awakening mind)
+    - The precious human birth
+    - Afflictions as inner enemies
+    - Patience grounded in conditionality
+    - Equalising and exchanging self and other
+  representativeWorks:
+    - { title: Bodhicaryavatara, sourceId: shantideva-bodhicaryavatara }
+    - { title: Shiksasamuccaya }
+
+- id: dogen
+  slug: dogen
+  name: Dogen
+  worldview: buddhism
+  role: specialist
+  displayOrder: 2
+  usedFor: [Zen practice, time and enlightenment]
+  schools: [Soto Zen]
+  birthYear: 1200
+  deathYear: 1253
+  description: Japanese Zen master who founded the Soto school in Japan and wrote on practice, time and enlightenment.
+  bio: >-
+    Dogen (Dōgen, 1200–1253) was a Japanese Buddhist monk who founded the Soto school of Zen in Japan, one of the two Zen traditions still flourishing there. He studied Chan in Song China before returning to Japan to teach. His major work is the Shobogenzo, a collection of essays in Japanese on practice, time and Buddha-nature, written over many years. He taught shikantaza, "just sitting", as the expression of an enlightenment already present, and developed concepts such as practice-realisation and being-time.
+  significance: Dogen gives a non-substantialist account of Buddha-nature and the unity of practice and realisation, and a distinctive reading of the gap between knowing and doing the good. He is used for questions of practice, time and the nature of awakening.
+  keyIdeas:
+    - Shushō ittō (practice-realisation as one)
+    - Shikantaza (just sitting)
+    - Entire being as Buddha-nature
+    - Uji (being-time)
+    - Study of the self as forgetting the self
+  representativeWorks:
+    - { title: Shobogenzo, sourceId: dogen-shobogenzo }
+    - { title: Bendowa }
+    - { title: Eihei Koroku }
+
+- id: tsongkhapa
+  slug: tsongkhapa
+  name: Tsongkhapa
+  worldview: buddhism
+  role: primary
+  displayOrder: 5
+  schools: [Gelug, Tibetan Madhyamaka]
+  birthYear: 1357
+  deathYear: 1419
+  description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
+  bio: >-
+    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and trained in Central Tibet under teachers including Rendawa Shonu Lodro, his principal master in epistemology and Madhyamaka. He founded Ganden Monastery in 1409, which became the base of the Gelug school; Drepung and Sera followed soon after. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
+  significance: Tsongkhapa integrates the value of human life, renunciation, compassion and the view of emptiness into one graded path, so that the ethical person remains conventionally real. He represents the Tibetan synthesis in the Buddhist lane.
+  keyIdeas:
+    - Lamrim (stages of the path)
+    - Freedoms and advantages of human life
+    - Three principal aspects of the path
+    - Identifying the object of negation
+    - Emptiness compatible with dependent origination
+  representativeWorks:
+    - { title: Lamrim Chenmo, year: 1402, sourceId: tsongkhapa-lamrim-chenmo }
+    - { title: Three Principal Aspects of the Path, sourceId: tsongkhapa-three-principal-aspects }
+    - { title: Legs bshad snying po (Essence of Eloquence), year: 1407 }
+    - { title: Rigs pa'i rgya mtsho (Ocean of Reasoning), year: 1408 }
+
+- id: dharmakirti
+  slug: dharmakirti
+  name: Dharmakirti
+  worldview: buddhism
+  role: primary
+  displayOrder: 4
+  schools: [Buddhist epistemology, Yogacara-Sautrantika]
+  era: c. 6th–7th century CE (often c. 600–660; some scholars earlier)
+  description: Buddhist logician and epistemologist whose work on valid cognition became the basis of Buddhist philosophy of knowledge in India and Tibet.
+  bio: >-
+    Dharmakirti (Dharmakīrti) lived in the sixth or seventh century CE; most evidence suggests activity around 600–660, though some scholars argue for a date half a century earlier. He is said to have been born in South India and to have moved to Nalanda monastery. With his predecessor Dignaga he founded the Buddhist epistemological school, known in Tibetan as "those who follow reasoning". He composed seven treatises, of which the Pramanavarttika, a commentary on Dignaga's Pramanasamuccaya, is the most significant; others include the Pramanaviniscaya, Nyayabindu and Hetubindu. His thought combines nominalism about universals, momentariness and a causal account of knowledge, and he debated non-Buddhist rivals, among them the Mimamsa tradition.
+  significance: Dharmakirti argues that faults stem from a single defeasible cognition, the self-view, and that liberation is therefore rationally possible. He is the project's main Buddhist voice on knowledge and truth, and is set against Kumarila.
+  keyIdeas:
+    - Pramāṇa (valid cognition)
+    - Perception and inference as the two means of knowledge
+    - Nominalism about universals
+    - Momentariness and causal efficacy
+    - Self-view as root of attachment and hatred
+    - Luminous mind and adventitious stains
+  representativeWorks:
+    - { title: Pramanavarttika, sourceId: dharmakirti-pramanavarttika }
+    - { title: Pramanaviniscaya }
+    - { title: Nyayabindu }
+    - { title: Hetubindu }
+  notes: Represents Buddhist logic and epistemology, central to the Knowledge & Truth domain.

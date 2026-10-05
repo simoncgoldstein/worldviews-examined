@@ -1,0 +1,555 @@
+# Verified thinker profiles: Christianity and naturalism lanes (question: great-and-terrible).
+# Drafted for merge into src/content/thinkers/thinkers.yaml. Not yet merged; src/ untouched.
+# Verification date: 2026-10-05. Britannica pages returned HTTP 403 to the fetcher, so Wikipedia
+# (with its citations), SEP and other pages were used instead; a human reviewer should spot-check
+# against a scholarly biography where noted.
+#
+# augustine
+#   URLs: https://plato.stanford.edu/entries/augustine/ (born Thagaste 13 Nov 354; conversion 386;
+#         baptised Easter 387; priest at Hippo 391; bishop ca. 396; died 430; Confessions ca. 396-400;
+#         City of God begun 412, completed 426)
+#   Changes: added sourceIds and years for both works (year = completion). Packet draft said City of
+#         God was "begun after the sack of Rome in 410"; SEP gives begun 412, so the bio says 412.
+# calvin
+#   URLs: https://en.wikipedia.org/wiki/John_Calvin (born Noyon 10 July 1509; Paris, Orleans, Bourges;
+#         Institutes first ed. Basel March 1536; Geneva Aug 1536-Apr 1538; Strasbourg Sept 1538-Sept 1541;
+#         return 13 Sept 1541; 1559 final Latin; Romans commentary 1540; died 27 May 1564).
+#         Britannica (https://www.britannica.com/biography/John-Calvin) returned 403.
+#   Changes: sourceId changed from calvin-institutes (existing) to calvin-institutes-beveridge
+#         (packet-proposed Beveridge translation used for citations); revert if the registry keeps the old
+#         id. Added Commentary on Romans (1540, calvin-commentary-romans, packet-proposed). The date of
+#         Calvin's conversion is debated (Parker: c. 1529-30), so the bio says only "early 1530s".
+# bavinck
+#   URLs: https://en.wikipedia.org/wiki/Herman_Bavinck (born Hoogeveen 13 Dec 1854; Leiden doctorate 1880
+#         on Zwingli's ethics; Kampen; Vrije Universiteit 1902-1921; Gereformeerde Dogmatiek 1895-1901;
+#         Stone Lectures, Princeton, 1908). Britannica returned 403.
+#   Changes: Kampen start year omitted (sources conflict: 1881 vs 1883). Added "Calvin and Common Grace"
+#         (1909, bavinck-calvin-common-grace); its year comes from the packet and was not independently
+#         re-verified. Reformed Dogmatics year field = first Dutch volume (1895); schema allows one integer.
+# edwards
+#   URLs: https://plato.stanford.edu/entries/edwards/ (born 1703 East Windsor; Yale 1716, tutor 1724;
+#         Northampton 1725; dismissed 1750; Stockbridge 1750-57; Princeton 1757; died 22 Mar 1758;
+#         Religious Affections 1746, Freedom of the Will 1754, Original Sin 1758, True Virtue 1765).
+#   Changes: The Nature of True Virtue given year 1765 (posthumous publication; written 1755 per packet,
+#         composition year not confirmed). Added Original Sin (1758). Added sourceId edwards-works-hickman-1
+#         to the works it contains. Princeton start year not stated: SEP gives 1757 (call); he died in March 1758.
+# witsius
+#   URLs: https://en.wikipedia.org/wiki/Herman_Witsius (born Enkhuizen 12 Feb 1636; professor Franeker 1675,
+#         Utrecht 1680, Leiden 1698; died Leiden 22 Oct 1708; De oeconomia foederum Dei cum hominibus,
+#         Leeuwarden 1677; Voetian/Cocceian mediation). Britannica returned 403. Wikipedia is a weak source
+#         here; reviewer should confirm against the Biografisch lexicon.
+#   Changes: added year 1677 and sourceId witsius-economy-covenants.
+# van-til
+#   URLs: https://www.newnetherlandinstitute.org/history-and-heritage/dutch_americans/cornelius-van-til
+#         (born Grootegast 1895; family settled Highland, Indiana; Calvin College 1922; Princeton PhD
+#         philosophy 1927; Westminster 1929, retired 1972, taught to 1979; died 17 April 1987);
+#         https://en.wikipedia.org/wiki/Cornelius_Van_Til (Kuyper and Bavinck influence).
+#   Changes: existing bio was accurate. Added Grootegast, Highland Indiana, "near Philadelphia" (Westminster
+#         is at Glenside), and part-time teaching to 1979. Key ideas "analogical knowledge", "transcendental
+#         argument" and "no brute facts" were not independently verified against Van Til's text.
+#         Defense of the Faith year (1955) retained from the registry.
+# hume
+#   URLs: https://plato.stanford.edu/entries/hume/ (born Edinburgh 1711; La Fleche 1734; Treatise 1739-40;
+#         Enquiries 1748 and 1751; History of England 1754-62; Dialogues posthumous 1779);
+#         https://plato.stanford.edu/entries/hume-moral/ (sentiment, sympathy, artificial virtues,
+#         common point of view).
+#   Changes: Treatise year kept as 1739 (Books 1-2; Book 3 in 1740). Added the Enquiry Concerning the
+#         Principles of Morals (1751, hume-epm) and sourceId hume-treatise.
+# russell
+#   URLs: https://plato.stanford.edu/entries/russell/ (born 18 May 1872 Trellech, Monmouthshire; died 2 Feb
+#         1970; Trinity College Cambridge; Nobel Prize in Literature 1950; Problems of Philosophy 1912;
+#         Why I Am Not a Christian 1927); https://en.wikipedia.org/wiki/Bertrand_Russell (Mysticism and
+#         Logic 1918); https://en.wikipedia.org/wiki/What_I_Believe (Kegan Paul, To-day and To-morrow series,
+#         1925); "A Free Man's Worship" first published Dec 1903.
+#   Changes: added What I Believe (1925, russell-what-i-believe) and Mysticism and Logic (1918,
+#         russell-mysticism-logic, which reprints "A Free Man's Worship"). No date errors.
+# mackie
+#   URLs: https://en.wikipedia.org/wiki/J._L._Mackie (born Sydney 1917; Otago, Sydney, York, University
+#         College Oxford; FBA 1974; Miracle of Theism 1982 posthumous);
+#         https://plato.stanford.edu/entries/moral-anti-realism/ (error theory, Ethics 1977, queerness).
+#         Packet: Penguin author note, verified in the edition.
+#   Changes: added sourceId mackie-ethics. No date errors.
+# railton
+#   URLs: https://en.wikipedia.org/wiki/Peter_Railton (born 23 May 1950; Michigan since 1979; PhD Princeton
+#         1980 under David Lewis; "Moral Realism", Philosophical Review 1986; Facts, Values, and Norms 2003).
+#         The University of Michigan page returned 403.
+#   Changes: added birthYear 1950 (absent from registry) and "Moral Realism" (1986, railton-moral-realism).
+# dennett
+#   URLs: https://en.wikipedia.org/wiki/Daniel_Dennett (28 Mar 1942 - 19 Apr 2024; Harvard BA 1963, Oxford
+#         DPhil 1965 under Ryle; Tufts; works and years); https://doi.org/10.1196/annals.1279.003 (article).
+#   Changes: no date corrections. Added Freedom Evolves (2003) and the 2003 Annals article
+#         (dennett-self-artifact).
+# darwin (NEW)
+#   URLs: https://en.wikipedia.org/wiki/Charles_Darwin (born Shrewsbury 12 Feb 1809; died Downe 19 Apr 1882,
+#         buried Westminster Abbey; Edinburgh then Christ's College Cambridge; Beagle from 27 Dec 1831);
+#         https://plato.stanford.edu/entries/origin-descent/ (Origin 1859, Descent 1871, moral sense from
+#         social instincts); https://www.darwinproject.ac.uk/letter/?docId=letters/DCP-LETT-12041.xml
+#         (letter to John Fordyce, 7 May 1879: "an agnostic would be the most correct description of my
+#         state of mind"); https://darwin-online.org.uk/ (texts; Descent 1871, 2nd ed. 1874).
+# kitcher (NEW)
+#   URLs: https://en.wikipedia.org/wiki/Philip_Kitcher (born 20 Feb 1947 London; Christ's College
+#         Cambridge BA 1969; Princeton PhD 1974; Vermont, Minnesota, UCSD, Columbia; Abusing Science 1982,
+#         Vaulting Ambition 1985, Living with Darwin 2007, The Ethical Project 2011);
+#         https://www.hup.harvard.edu/books/9780674284289 (The Ethical Project, Harvard UP 2011);
+#         Analyse & Kritik 34(1), 2012 (precis). Life After Faith (2014) from the packet.
+
+# --- Reformed Christianity (and antecedent) ----------------------------------------------
+- id: augustine
+  slug: augustine-of-hippo
+  name: Augustine of Hippo
+  worldview: christianity
+  role: primary
+  displayOrder: 1
+  schools: [Patristic theology, Augustinian tradition]
+  birthYear: 354
+  deathYear: 430
+  description: North African bishop and theologian whose work on will, grace, evil, the two cities and history is foundational to Reformed anthropology and soteriology.
+  bio: >-
+    Augustine (354–430) was born at Thagaste in Roman North Africa. Trained in rhetoric, he
+    taught in Carthage, Rome and Milan and passed through Manichaeism and Neoplatonism before
+    turning to Christianity in 386; he was baptised by Ambrose at Easter 387. He was ordained a
+    priest at Hippo Regius in 391, became its bishop around 396, and served there until his death
+    during the Vandal siege in 430. His Confessions examine his own will and loves before God, and
+    The City of God, begun in 412, interprets history as the interplay of two loves. His
+    controversies with the Manichees, Donatists and Pelagians shaped Western Latin teaching on
+    evil, sin and grace.
+  significance: >-
+    For the question "Why is man so great and so terrible?", Augustine supplies much of the
+    conceptual vocabulary the Reformed answer inherits: evil as privation, pride and disordered
+    love, the divided will, and human gifts coexisting with misery. He is a primary Christian
+    antecedent of the Reformed tradition, not himself a Reformed theologian.
+  keyIdeas:
+    - Evil as privation of good
+    - Pride and disordered love
+    - Two loves and two cities
+    - The divided will and the chain of habit
+    - Grace as remedy for a bound will
+  representativeWorks:
+    - { title: Confessions, year: 400, sourceId: augustine-confessions }
+    - { title: The City of God, year: 426, sourceId: augustine-city-of-god }
+  notes: Included as a primary Christian antecedent of the Reformed tradition, not as a Reformed theologian. Confessions is dated ca. 396–400 and The City of God 412–426; the year given is the completion date.
+
+- id: calvin
+  slug: john-calvin
+  name: John Calvin
+  worldview: christianity
+  role: primary
+  displayOrder: 2
+  schools: [Reformed theology]
+  birthYear: 1509
+  deathYear: 1564
+  description: Reformer of Geneva whose Institutes of the Christian Religion shaped Reformed doctrine, notably on the knowledge of God, the image of God, the fall and providence.
+  bio: >-
+    John Calvin (1509–1564) was born at Noyon in Picardy and studied in Paris and then law at
+    Orléans and Bourges, before committing himself to the Protestant Reformation in the early
+    1530s. The first edition of his Institutes of the Christian Religion appeared at Basel in 1536.
+    He ministered in Geneva from 1536 until his expulsion in 1538, spent three years in
+    Strasbourg, and returned to Geneva in 1541, where he remained as pastor, preacher, teacher and
+    commentator until his death. He revised the Institutes repeatedly; the definitive Latin
+    edition of 1559 became the most influential systematic statement of Reformed doctrine.
+  significance: >-
+    Calvin supplies the classic Reformed account of humanity as a ruined image: created excellence,
+    corrupted natural gifts, withdrawn supernatural gifts, and a restraint of sin that leaves room
+    for real human achievement. His treatment in Institutes II.1–3 is a principal source for the
+    Christian answer to why people are both great and terrible.
+  keyIdeas:
+    - Knowledge of God and of ourselves
+    - Image of God as marred but not destroyed
+    - Natural gifts corrupted, supernatural gifts lost
+    - God's restraint of sin and the gifts of the Spirit to unbelievers
+    - Necessity without compulsion
+  representativeWorks:
+    - { title: Institutes of the Christian Religion, year: 1559, sourceId: calvin-institutes-beveridge }
+    - { title: Commentary on Romans, year: 1540, sourceId: calvin-commentary-romans }
+
+- id: witsius
+  slug: herman-witsius
+  name: Herman Witsius
+  worldview: christianity
+  role: primary
+  displayOrder: 4
+  schools: [Reformed covenant theology]
+  birthYear: 1636
+  deathYear: 1708
+  description: Dutch Reformed theologian whose systematic treatment of the covenants shaped Reformed covenant theology.
+  bio: >-
+    Herman Witsius (1636–1708) was born at Enkhuizen in the Dutch Republic. After studying at
+    Groningen, Utrecht and Leiden he served as a pastor in several towns, then held professorships
+    of divinity at Franeker (1675), Utrecht (1680) and Leiden (1698), where he died. His chief
+    work, De oeconomia foederum Dei cum hominibus (Leeuwarden, 1677; English translation as The
+    Economy of the Covenants between God and Man), set out Reformed covenant theology in a
+    systematic form. Writing amid the Voetian and Cocceian controversies in the Dutch church, he
+    tried to mediate between the parties, and was not fully accepted by either.
+  significance: >-
+    Witsius states federal headship, the imputation of Adam's first sin and the Adam–Christ parallel
+    of Romans 5 in classic Reformed covenantal form. This is the confessional explanation for the
+    universality of human corruption, and he is used on that point rather than as a general
+    spokesman for the tradition.
+  keyIdeas:
+    - Covenant of works with Adam as head
+    - Imputation of Adam's first sin
+    - Adam as type of Christ
+    - Covenant of grace
+    - Mediation between Voetians and Cocceians
+  representativeWorks:
+    - { title: The Economy of the Covenants between God and Man, year: 1677, sourceId: witsius-economy-covenants }
+  notes: Original Latin title De oeconomia foederum Dei cum hominibus; the year is that of the Latin first edition.
+
+- id: edwards
+  slug: jonathan-edwards
+  name: Jonathan Edwards
+  worldview: christianity
+  role: specialist
+  displayOrder: 1
+  usedFor: [affections, will, beauty, desire, religious experience]
+  schools: [New England Reformed theology]
+  birthYear: 1703
+  deathYear: 1758
+  description: American theologian and philosopher whose analyses of the affections, the will and the beauty of God have been influential in Reformed thought.
+  bio: >-
+    Jonathan Edwards (1703–1758) was born at East Windsor, Connecticut, and educated at Yale,
+    where he later served as a tutor. From the mid-1720s he was a minister at Northampton,
+    Massachusetts, and a leading figure in the revivals of the 1730s and 1740s. Dismissed by his
+    congregation in 1750, he worked as a missionary and pastor at Stockbridge until 1757, when he
+    was called to the presidency of the College of New Jersey (Princeton); he died in March 1758
+    after a smallpox inoculation. Working in the New England Puritan Reformed tradition, he wrote
+    on religious experience, freedom of the will, original sin and virtue, combining Reformed
+    theology with philosophical argument.
+  significance: >-
+    Edwards explains how a person can approve the good yet be morally unable to will it, and why
+    natural pity, gratitude and conscience can restrain vice without amounting to true virtue.
+    He is used for the moral psychology of the Reformed account, not as a general spokesman for
+    the tradition.
+  keyIdeas:
+    - Natural versus moral inability
+    - The will follows the strongest motive
+    - True virtue as benevolence to being in general
+    - Natural conscience distinct from true virtue
+    - Religious affections
+    - Original sin inferred from a universal tendency
+  representativeWorks:
+    - { title: A Treatise Concerning Religious Affections, year: 1746 }
+    - { title: Freedom of the Will, year: 1754, sourceId: edwards-works-hickman-1 }
+    - { title: Original Sin, year: 1758, sourceId: edwards-works-hickman-1 }
+    - { title: The Nature of True Virtue, year: 1765, sourceId: edwards-works-hickman-1 }
+  notes: The Nature of True Virtue was written in the 1750s and published posthumously in 1765. Freedom of the Will and Original Sin are the usual short titles of longer original titles.
+
+- id: bavinck
+  slug: herman-bavinck
+  name: Herman Bavinck
+  worldview: christianity
+  role: primary
+  displayOrder: 5
+  schools: [Dutch Reformed theology]
+  birthYear: 1854
+  deathYear: 1921
+  description: Dutch Reformed theologian who treated revelation, religion, anthropology and modernity within a single dogmatic system.
+  bio: >-
+    Herman Bavinck (1854–1921) was born at Hoogeveen in the Netherlands. He studied briefly at
+    Kampen and then at Leiden, completing a doctorate on the ethics of Zwingli in 1880. He taught
+    dogmatics at the Theological School at Kampen and in 1902 moved to the Free University of
+    Amsterdam, where he succeeded Abraham Kuyper. His four-volume Gereformeerde Dogmatiek
+    (1895–1901) is the major systematic work of Dutch neo-Calvinism, and he also wrote on ethics,
+    education and psychology and took part in Dutch public life, serving in the Senate from 1911.
+    He delivered the Stone Lectures at Princeton in 1908.
+  significance: >-
+    Bavinck interprets Calvin's doctrine of common grace as the Reformed explanation of how human
+    culture, arts and sciences flourish outside the church despite the fall. He is used mainly for
+    this account of the gifts and restraint that coexist with sin, not as a spokesman for the whole
+    tradition.
+  keyIdeas:
+    - Grace restores nature
+    - Common grace restrains sin and preserves creation
+    - Arts and sciences as gifts of the Spirit
+    - Remnants of the image of God in human gifts
+    - Organic unity in diversity
+  representativeWorks:
+    - { title: Reformed Dogmatics (Gereformeerde Dogmatiek), year: 1895, sourceId: bavinck-reformed-dogmatics }
+    - { title: Calvin and Common Grace, year: 1909, sourceId: bavinck-calvin-common-grace }
+  notes: Reformed Dogmatics appeared in Dutch in four volumes, 1895–1901 (English translation 2003–2008); the year field gives the first volume. His start date at Kampen is disputed (1881 or 1883) and is omitted.
+
+- id: van-til
+  slug: cornelius-van-til
+  name: Cornelius Van Til
+  worldview: christianity
+  role: primary
+  displayOrder: 7
+  schools: [Presuppositional apologetics]
+  birthYear: 1895
+  deathYear: 1987
+  description: Reformed apologist who developed the Creator-creature distinction, analogical knowledge and the transcendental method into a distinctive apologetic.
+  bio: >-
+    Cornelius Van Til (1895–1987) was born at Grootegast in the Netherlands and emigrated with his
+    family to the United States as a boy, settling at Highland, Indiana. After studying at Calvin
+    College (graduating 1922) and Princeton Theological Seminary, he took a doctorate in
+    philosophy at Princeton University in 1927. From 1929 until his retirement in 1972 he taught
+    apologetics at Westminster Theological Seminary near Philadelphia, where he was a member of
+    the original faculty, and he continued to teach part-time into 1979. Working within the
+    Reformed tradition and drawing on Kuyper, Bavinck and others, he developed an apologetic
+    grounded in the Creator-creature distinction, and became the best-known proponent of what
+    came to be called presuppositional apologetics.
+  significance: >-
+    Van Til matters to this site for the Creator-creature distinction, analogical knowledge,
+    antithesis, transcendental apologetics and the denial of religious neutrality. He supplies the
+    method by which Reformed answers are argued against rival worldviews, rather than evidence on
+    the question of human greatness and misery itself.
+  keyIdeas:
+    - Creator-creature distinction
+    - Analogical knowledge
+    - Antithesis
+    - Transcendental argument
+    - No brute facts
+    - Denial of religious neutrality
+  representativeWorks:
+    - { title: The Defense of the Faith, year: 1955, sourceId: van-til-defense }
+
+# --- Naturalistic atheism ----------------------------------------------------------------
+- id: hume
+  slug: david-hume
+  name: David Hume
+  worldview: naturalism
+  role: primary
+  displayOrder: 1
+  schools: [Empiricism, Scottish Enlightenment]
+  birthYear: 1711
+  deathYear: 1776
+  description: Scottish philosopher and a major historical critic of natural theology, causation and induction.
+  bio: >-
+    David Hume (1711–1776) was born in Edinburgh and educated at the university there, then
+    worked on his first major book in France, where he lived from 1734. A Treatise of Human Nature
+    (1739–40) was followed by the two Enquiries (1748, 1751), political and moral essays and a
+    six-volume History of England (1754–62). He was refused academic posts at Edinburgh and
+    Glasgow, and earned his living as a librarian and in diplomatic service. An empiricist and
+    a central figure of the Scottish Enlightenment, he proposed a science of human nature built on
+    experience and observation. His Dialogues Concerning Natural Religion appeared posthumously
+    in 1779.
+  significance: >-
+    Hume is the classic naturalistic anatomy of human nature as a mix of benevolence and self-love,
+    with morality grounded in sentiment and sympathy rather than reason alone. He supplies the
+    historical form of the naturalist answer to why people are both good and bad, and he is also
+    used on the site as a historical critic of natural theology.
+  keyIdeas:
+    - Reason as servant of the passions
+    - Moral distinctions from sentiment
+    - Sympathy and the common point of view
+    - Justice as an artificial virtue
+    - Compatibilist liberty
+    - Uniformity of human nature
+  representativeWorks:
+    - { title: A Treatise of Human Nature, year: 1739, sourceId: hume-treatise }
+    - { title: An Enquiry Concerning Human Understanding, year: 1748, sourceId: hume-enquiry }
+    - { title: An Enquiry Concerning the Principles of Morals, year: 1751, sourceId: hume-epm }
+    - { title: Dialogues Concerning Natural Religion, year: 1779 }
+  notes: Hume was not an atheist in a simple sense; he is included as a historical critic of natural theology. The Treatise year is that of Books 1–2; Book 3 followed in 1740.
+
+- id: russell
+  slug: bertrand-russell
+  name: Bertrand Russell
+  worldview: naturalism
+  role: primary
+  displayOrder: 2
+  schools: [Analytic philosophy]
+  birthYear: 1872
+  deathYear: 1970
+  description: British philosopher and logician who argued against religious belief on philosophical and moral grounds.
+  bio: >-
+    Bertrand Russell (1872–1970) was born in Trellech, Monmouthshire, into the British
+    aristocracy and educated at Trinity College, Cambridge, where he later became a Fellow and
+    lecturer. With A. N. Whitehead he wrote Principia Mathematica (1910–13), and he was a founder
+    of twentieth-century analytic philosophy. He was also a prominent public intellectual:
+    imprisoned for pacifist activity in the First World War, an advocate of nuclear disarmament,
+    and the author of many popular works on religion, ethics and politics. He was awarded the
+    Nobel Prize in Literature in 1950.
+  significance: >-
+    Russell supplies a humanist framing of man as a product of purposeless causes who nonetheless
+    creates value through desire and love, with a sober, gradual remedy: knowledge, self-control
+    and sympathy. He is used for that stance toward human greatness and misery, not as the sole
+    voice of naturalism.
+  keyIdeas:
+    - Man as product of purposeless causes
+    - Value created by human desire and love
+    - The good life inspired by love and guided by knowledge
+    - No short cut to the good life
+    - Refusal to worship power
+  representativeWorks:
+    - { title: The Problems of Philosophy, year: 1912 }
+    - { title: Mysticism and Logic, year: 1918, sourceId: russell-mysticism-logic }
+    - { title: What I Believe, year: 1925, sourceId: russell-what-i-believe }
+    - { title: Why I Am Not a Christian, year: 1927 }
+  notes: Mysticism and Logic reprints "A Free Man's Worship" (first published 1903).
+
+- id: mackie
+  slug: j-l-mackie
+  name: J. L. Mackie
+  worldview: naturalism
+  role: primary
+  displayOrder: 3
+  schools: [Analytic philosophy, Moral error theory]
+  birthYear: 1917
+  deathYear: 1981
+  description: Australian philosopher known for the logical argument from evil and for his error theory of morality.
+  bio: >-
+    John Leslie Mackie (1917–1981) was born in Sydney and educated at the University of Sydney and
+    at Oxford. He taught at the universities of Otago, Sydney and York, and from 1967 was a
+    Fellow of University College, Oxford; he was elected a Fellow of the British Academy in
+    1974. A leading figure in Australian and British analytic philosophy, he wrote on causation,
+    ethics and the philosophy of religion. His book Ethics: Inventing Right and Wrong (1977)
+    defended a moral error theory, and The Miracle of Theism (1982), published after his death,
+    gave an influential atheist critique of arguments for God.
+  significance: >-
+    Mackie represents the naturalist view that morality is a human device for counteracting
+    limited sympathies, and that its apparent objectivity is projected onto the world. He thus
+    states the sharpest naturalist alternative to the Christian claim that human dignity and moral
+    law are grounded in God.
+  keyIdeas:
+    - No objective values
+    - Argument from queerness
+    - Objectification of moral attitudes
+    - Morality as a device to counteract limited sympathies
+    - Logical problem of evil
+  representativeWorks:
+    - { title: "Ethics: Inventing Right and Wrong", year: 1977, sourceId: mackie-ethics }
+    - { title: The Miracle of Theism, year: 1982 }
+  notes: Mackie's moral error theory is not shared by all naturalists.
+
+- id: dennett
+  slug: daniel-dennett
+  name: Daniel Dennett
+  worldview: naturalism
+  role: primary
+  displayOrder: 4
+  schools: [Philosophy of mind, Evolutionary naturalism]
+  birthYear: 1942
+  deathYear: 2024
+  description: American philosopher who defended a naturalistic account of mind, consciousness and religion.
+  bio: >-
+    Daniel Dennett (1942–2024) was an American philosopher. After a degree at Harvard, he took a
+    doctorate at Oxford in 1965 under Gilbert Ryle, and for about five decades taught at Tufts
+    University, where he co-directed the Center for Cognitive Studies. Working in philosophy of
+    mind, cognitive science and evolutionary biology, he developed the intentional stance and a
+    naturalistic theory of consciousness, and defended a compatibilist account of free will in
+    evolutionary terms. He also wrote on religion as a natural phenomenon and was a prominent
+    public advocate of atheism and secular thought. He died in Portland, Maine.
+  significance: >-
+    Dennett gives a naturalist account of agency and responsibility that keeps persons, reasons and
+    selves real while explaining them as products of evolution and culture. He is used on the
+    question of what human capacities for deliberation and responsibility are, and how a naturalist
+    can speak of moral accountability.
+  keyIdeas:
+    - Intentional stance
+    - Self as center of narrative gravity
+    - Reasons-giving as a distinctively human layer of control
+    - Free will worth wanting
+    - Competence without comprehension
+    - Cultural evolution
+  representativeWorks:
+    - { title: Consciousness Explained, year: 1991 }
+    - { title: Freedom Evolves, year: 2003 }
+    - { title: "The Self as a Responding and Responsible Artifact", year: 2003, sourceId: dennett-self-artifact }
+    - { title: "Breaking the Spell: Religion as a Natural Phenomenon", year: 2006 }
+
+- id: railton
+  slug: peter-railton
+  name: Peter Railton
+  worldview: naturalism
+  role: specialist
+  displayOrder: 1
+  usedFor: [ethics, naturalistic moral realism]
+  schools: [Naturalistic moral realism]
+  birthYear: 1950
+  description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
+  bio: >-
+    Peter Railton (born 1950) is an American philosopher and the Gregory S. Kavka Distinguished
+    University Professor at the University of Michigan, Ann Arbor, where he has taught since 1979.
+    He took his doctorate at Princeton in 1980 under David Lewis. Working in metaethics and
+    normative ethics, he is a leading defender of naturalistic moral realism, the view that moral
+    facts are natural facts that can be investigated and learned about. His best-known paper
+    "Moral Realism" appeared in the Philosophical Review in 1986, and his papers on ethics were
+    collected in Facts, Values, and Norms (2003).
+  significance: >-
+    Railton shows that a naturalist can hold that cruelty and exclusion are objectively wrong and that
+    moral learning tracks real facts, giving a naturalist account of both moral progress and moral
+    failure. He is used for ethics, as a contrast with error theory, not as representative of all
+    naturalists.
+  keyIdeas:
+    - Naturalistic moral realism
+    - Good as idealized interests
+    - Moral rightness as social rationality
+    - Feedback between wants and interests
+    - Moral progress without guarantee
+  representativeWorks:
+    - { title: Moral Realism, year: 1986, sourceId: railton-moral-realism }
+    - { title: "Facts, Values, and Norms", year: 2003 }
+  notes: Birth year and career details come from Wikipedia because the University of Michigan faculty page was unavailable; confirm against it.
+
+- id: darwin
+  slug: charles-darwin
+  name: Charles Darwin
+  worldview: naturalism
+  role: specialist
+  displayOrder: 4
+  usedFor: [evolutionary origins of the moral sense, human nature]
+  schools: [Evolutionary biology]
+  birthYear: 1809
+  deathYear: 1882
+  description: English naturalist whose theory of evolution by natural selection, applied to humans in The Descent of Man, offers an account of the origin of the moral sense.
+  bio: >-
+    Charles Darwin (1809–1882) was born at Shrewsbury, England. He studied medicine at Edinburgh
+    and then took a Cambridge degree at Christ's College, and from 1831 spent nearly five years as
+    naturalist on HMS Beagle. He later lived at Down House in Kent. On the Origin of Species
+    (1859) set out the theory of evolution by natural selection; The Descent of Man (1871)
+    applied it to humans, treating mind, language and the moral sense as products of descent with
+    modification, and The Expression of the Emotions in Man and Animals followed in 1872. He died at
+    Downe and was buried in Westminster Abbey.
+  significance: >-
+    Darwin gives the founding evolutionary account of the moral sense as arising from social
+    instincts joined to intellect, and so of how the same animal nature can produce both sympathy and
+    cruelty. He is used for evolutionary anthropology, as the source of the explanation later
+    naturalists build on.
+  keyIdeas:
+    - Moral sense from social instincts plus intellect
+    - Conscience as backward-looking remorse
+    - Sympathy limited to one's own group but extendable
+    - Selection of social virtues among competing groups
+    - Continuity of human and animal minds
+  representativeWorks:
+    - { title: On the Origin of Species, year: 1859 }
+    - { title: "The Descent of Man, and Selection in Relation to Sex", year: 1871, sourceId: darwin-descent }
+    - { title: The Expression of the Emotions in Man and Animals, year: 1872 }
+  notes: Darwin described himself as an agnostic (letter to John Fordyce, 7 May 1879) and is used for evolutionary anthropology, not as a representative of atheism.
+
+- id: kitcher
+  slug: philip-kitcher
+  name: Philip Kitcher
+  worldview: naturalism
+  role: specialist
+  displayOrder: 5
+  usedFor: [pragmatic naturalist ethics, evolution of ethics]
+  schools: [Pragmatic naturalism, Philosophy of biology]
+  birthYear: 1947
+  description: British-born American philosopher of science who offers a pragmatist naturalist account of the origin and progress of ethics.
+  bio: >-
+    Philip Kitcher (born 1947) is a British-born American philosopher. He studied at Christ's
+    College, Cambridge, and took a doctorate at Princeton in 1974. He taught at Vermont,
+    Minnesota and the University of California, San Diego, before joining Columbia University,
+    where he is John Dewey Professor of Philosophy Emeritus. Known first for work in the
+    philosophy of science and biology, including critiques of creationism and sociobiology,
+    he later turned to ethics and secular humanism, writing Living with Darwin (2007), The Ethical
+    Project (2011) and Life After Faith (2014).
+  significance: >-
+    Kitcher gives the most developed philosophical naturalist account of the origin of ethics and of
+    moral progress: humans are incomplete psychological altruists, and ethics is a social technology
+    for remedying that failure. He answers the question about human goodness and badness with a
+    pragmatic, non-theistic history of how morality was built and refined.
+  keyIdeas:
+    - Humans as incomplete psychological altruists
+    - Altruism failures
+    - Ethics as social technology
+    - Moral progress as functional refinement
+    - Pragmatist (Deweyan) naturalism
+  representativeWorks:
+    - { title: Living with Darwin, year: 2007 }
+    - { title: The Ethical Project, year: 2011, sourceId: kitcher-ethical-project }
+    - { title: Precis of The Ethical Project, year: 2012, sourceId: kitcher-ethical-project-precis }
+    - { title: "Life After Faith: The Case for Secular Humanism", year: 2014 }
+  notes: Represents one pragmatist form of naturalist ethics, not naturalism as a whole. His account of progress as functional refinement differs from moral realism (Railton) and error theory (Mackie).

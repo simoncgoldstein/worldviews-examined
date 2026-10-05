@@ -26,9 +26,13 @@ function rel(path: string): string {
   return relative(root, path).replaceAll('\\', '/');
 }
 
+// Astro loads content YAML with js-yaml, whose default schema resolves unquoted dates such as
+// 2026-10-05 to Date objects. Parse the same way so a value that would fail the build fails here.
+const parseYaml = (text: string): unknown => parse(text, { customTags: ['timestamp'] });
+
 function loadRegistry<T>(file: string, schema: ZodType<T>): T[] {
   const path = join(contentDir, file);
-  const raw: unknown = parse(readFileSync(path, 'utf8'));
+  const raw: unknown = parseYaml(readFileSync(path, 'utf8'));
   if (!Array.isArray(raw)) {
     errors.push(`${rel(path)}: expected a YAML list`);
     return [];
@@ -60,7 +64,7 @@ function loadAnswers(): AnswerRecord[] {
       errors.push(`${rel(path)}: missing YAML frontmatter`);
       continue;
     }
-    const result = answerSchema.safeParse(parse(match[1]!));
+    const result = answerSchema.safeParse(parseYaml(match[1]!));
     if (!result.success) {
       for (const issue of result.error.issues) errors.push(`${rel(path)}: ${issue.path.join('.') || '(root)'}: ${issue.message}`);
       continue;

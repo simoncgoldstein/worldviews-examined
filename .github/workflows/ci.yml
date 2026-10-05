@@ -1,0 +1,29 @@
+name: CI
+
+# Validates pull requests into main: content validation, astro check and the static build
+# (`npm run build` runs all three). It never deploys; GitHub Pages deployment stays in
+# deploy.yml, which runs only on pushes to main or manual dispatch.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Validate and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
