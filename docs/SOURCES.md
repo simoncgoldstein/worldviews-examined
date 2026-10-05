@@ -31,7 +31,18 @@ Thinkers are listed below in their explicit `displayOrder`, not alphabetically. 
 
 ## Source verification
 
-Sources in the registry carry `verificationStatus`: `unverified` (seed bibliography) or `checked` (title, author/editor/translator, edition, publication details, locator conventions and URL verified against the actual edition, with `verifiedOn`). Outline, draft and researched answers may cite unverified sources; **reviewed and complete answers may cite only checked sources**. All current seed sources are unverified. Verification is done source by source as research reaches reviewed or complete status, not in bulk; a source is marked `checked` only after its author/editor, title, edition and publication data, URL and locator convention have actually been verified.
+Sources in the registry carry `verificationStatus`: `unverified` (seed bibliography) or `checked` (title, author/editor/translator, edition, publication details, locator conventions and URL verified against the actual edition, with `verifiedOn`). Outline, draft and researched answers may cite unverified sources; **reviewed and complete answers may cite only checked sources**. Verification is done source by source as research reaches reviewed or complete status, not in bulk; a source is marked `checked` only after its author/editor, title, edition and publication data, URL and locator convention have actually been verified.
+
+### Verification protocol
+
+A source is marked `checked` only when all of the following hold, and its `notes` record in one line how verification was done:
+
+1. **Bibliographic metadata** (author, title, translator/editor, edition, place, publisher, year) was confirmed against the edition itself, the publisher's record, or a library catalog record.
+2. **URL**, if given, resolves to that work.
+3. **Locator convention** is confirmed (book.chapter.section, surah:ayah, sutta number, tractate and folio, Upanishad section, or that edition's page numbers).
+4. **Every cited passage** was read and supports the specific claim it is attached to: in the cited edition, or, where that edition is not openly accessible, in an accessible text sharing the same canonical locator system (Bible verse, Qur'an ayah, Talmud folio, sutta and verse, Institutes book.chapter.section, Upanishad section). In the second case the translation is not quoted verbatim and its pagination is not cited.
+
+Page-number locators require access to that edition's pagination. Prefer editions whose text readers can open; an accessible edition that can be checked is better for this site than a prestigious one that cannot. Research dossiers for each question (under `research/questions/`) keep the claim-to-citation record behind each answer.
 
 ## Citation expectations
 

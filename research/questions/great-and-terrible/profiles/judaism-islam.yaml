@@ -1,0 +1,446 @@
+# Verified thinker profiles: Judaism and Islam lanes (question: great-and-terrible).
+# Source material: packets/judaism.md and packets/islam.md section 16, re-checked against references below.
+# Not merged into src/content/thinkers/thinkers.yaml; the integrator should copy entries over.
+#
+# Reference URLs consulted (Britannica returned 403 and Jewish Virtual Library returned mostly empty pages
+# in this environment; Wikipedia used only as a cross-check for items SEP does not cover):
+#
+# saadia        https://plato.stanford.edu/entries/saadya/ (882 Fayyum - 942 Baghdad, Sura, works)
+#               https://www.jewishencyclopedia.com/articles/12953-saadia-b-joseph-sa-id-al-fayyumi (gaon 928; Emunot completed 933)
+#               https://en.wikipedia.org/wiki/Saadia_Gaon
+#               Correction: none to dates. Added year 933 for Emunot (Jewish Encyclopedia).
+# halevi        https://en.wikipedia.org/wiki/Judah_Halevi (c. 1075 Toledo or Tudela; d. 1141; Kuzari revised c. 1130-40)
+#               https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/yehudah-ha-levi
+#               Correction: birth is approximate, so dating moved to `era` plus deathYear 1141 (birthYear removed).
+#               Kuzari sourceId set to the packet's halevi-kuzari-hirschfeld (existing registry id is halevi-kuzari;
+#               use whichever id is actually registered). The 1140 departure and 1141 death follow the packet and
+#               Wikipedia; not confirmed in SEP/Britannica.
+# maimonides    https://plato.stanford.edu/entries/maimonides/ (1138-1204; Almohads; Fez 1160; Egypt 1166;
+#               Commentary on the Mishnah 1168; Guide completed 1190)
+#               https://www.jewishvirtuallibrary.org/maimonides-moses (Mishneh Torah 1180; head of Fustat community c. 1177;
+#               physician to al-Fadil after 1185; d. 13 Dec 1204)
+#               Correction: none to dates. Guide sourceId set to the packet's maimonides-guide-friedlander (existing
+#               registry id is maimonides-guide).
+# nachmanides   https://en.wikipedia.org/wiki/Nachmanides (Girona 1194; Barcelona disputation 1263; aliyah 1267; d. 1270 Acre)
+#               Correction: none. Death remains "c. 1270"; era kept.
+# soloveitchik  https://en.wikipedia.org/wiki/Joseph_B._Soloveitchik (27 Feb 1903 Pruzhany - 9 Apr 1993 Boston; Berlin
+#               doctorate on Cohen, 1932; Maimonides School 1937; RIETS 1941-1986; Ish ha-Halakhah 1944; Kol Dodi Dofek 1956;
+#               Lonely Man of Faith 1965)
+#               Correction: none. Halakhic Man English translation (1983) is from the packet, not re-verified.
+# ghazali       https://plato.stanford.edu/entries/al-ghazali/ (born 1055 or 1056 at Tabaran-Tus; Nizamiyya Baghdad 1091;
+#               left 1095; pilgrimage 1096; Nishapur 1106; d. Dec 1111; Tahafut c. 1095)
+#               CORRECTION: registry birthYear 1058 replaced with era "c. 1056-1111" (SEP: 1055 or 1056; 1058-59 is a later
+#               historians' dating). birthYear field removed. deathYear 1111 kept.
+# razi          https://plato.stanford.edu/entries/al-din-al-razi/ (1149/544 AH - 1210/606 AH, Rayy to Herat)
+#               CORRECTION: deathYear 1209 -> 1210. birthYear 1149 confirmed. Dates-only entry below, no bio.
+# ibn-taymiyya  https://plato.stanford.edu/entries/ibn-taymiyya/ (1263-1328; Harran; Damascus; Sukkariyya 1284;
+#               imprisonments 1306-09, 1318, 1326-28)
+#               Correction: none. The 1269 move to Damascus in the packet is not repeated in the bio (unverified).
+# maturidi      https://plato.stanford.edu/entries/arabic-islamic-religion/ (d. 944)
+#               https://en.wikipedia.org/wiki/Al-Maturidi (Samarqand, Hanafi; Kitab al-Tawhid, Ta'wilat)
+#               Correction: none; birth unknown (a Wikipedia figure of 852 is not used). Added Ta'wilat work.
+# ash-ari       https://plato.stanford.edu/entries/arabic-islamic-religion/ ; https://en.wikipedia.org/wiki/Al-Ash%27ari
+#               Correction: registry 874-936 replaced by era "c. 873/4-935/6" (SEP gives d. 935/6; sources vary by a year).
+#               Authenticity of al-Ibana is disputed by some scholars (noted in the work entry).
+# ibn-sina      https://plato.stanford.edu/entries/ibn-sina/ ; https://en.wikipedia.org/wiki/Avicenna (c. 980 Afshana near
+#               Bukhara - 1037 Hamadan; vizier under Shams al-Dawla to 1021; Isfahan from 1023; Shifa begun 1014, completed
+#               c. 1020; Isharat after 1030)
+#               Correction: none. One fetched SEP summary gave "ca. 970", conflicting with the standard 980 (370 AH) in
+#               other sources; not adopted but worth a human check against the SEP text.
+# ibn-arabi     https://plato.stanford.edu/entries/ibn-arabi/ ; https://en.wikipedia.org/wiki/Ibn_Arabi (Murcia 1165 - Damascus
+#               1240; left al-Andalus 1200; Mecca 1202; Damascus 1223; Fusus 1229; Futuhat begun c. 1202)
+#               Correction: none.
+
+- id: saadia
+  slug: saadia-gaon
+  name: Saadia Gaon
+  worldview: judaism
+  role: primary
+  displayOrder: 1
+  schools: [Medieval Jewish rationalism, Geonic tradition]
+  birthYear: 882
+  deathYear: 942
+  description: Head of the Sura academy who gave the first systematic philosophical defense of rabbinic Judaism.
+  bio: >-
+    Saadia ben Joseph (882-942) was born in the Fayyum in Egypt and worked in Palestine,
+    Syria and Iraq. In 928 he was appointed gaon, or head, of the Sura academy in Babylonia,
+    and he spent his later years in Baghdad, where he died. Writing in Arabic within the
+    intellectual world of early Islamic kalam, he composed the Book of Beliefs and Opinions
+    (completed 933), usually regarded as the first systematic work of Jewish philosophy. He
+    also produced an Arabic translation of the Bible with commentary, a commentary on the Sefer
+    Yetzirah, a prayer book, and works on grammar, law and the calendar. He defended rabbinic
+    Judaism against Karaite and other critics.
+  significance: >-
+    Saadia supplies an early Jewish account of why humans, as the creatures endowed with wisdom, are commanded, judged
+    and free, and so of both human dignity and accountability. On the site he also anchors the claim that reason and
+    revelation are complementary sources of knowledge.
+  keyIdeas:
+    - Reason and revelation as joint sources of knowledge
+    - Rational and revelational commandments
+    - Humanity as the purpose and culmination of creation
+    - Free choice without divine compulsion
+    - Reward and punishment as just
+  representativeWorks:
+    - { title: "The Book of Beliefs and Opinions (Kitab al-Amanat wa-l-I'tiqadat; Emunot ve-De'ot)", year: 933, sourceId: saadia-emunot-ibn-tibbon }
+    - { title: Arabic translation of the Torah (Tafsir) }
+    - { title: Siddur (prayer book) }
+
+- id: halevi
+  slug: judah-halevi
+  name: Judah Halevi
+  worldview: judaism
+  role: primary
+  displayOrder: 2
+  schools: [Medieval Jewish philosophy]
+  era: c. 1075–1141
+  deathYear: 1141
+  description: Poet and philosopher who defended revealed religion and the particular vocation of Israel against philosophical rationalism.
+  bio: >-
+    Judah Halevi was born around 1075 in Toledo or Tudela in al-Andalus and was trained in
+    Hebrew and Arabic learning. He lived in Muslim and Christian Spain, practiced medicine, and
+    became one of the greatest Hebrew poets of the Middle Ages, writing secular verse, liturgical
+    poems and poems of longing for Zion. His philosophical work, the Kuzari, is a dialogue
+    between a king and a Jewish sage, written in Arabic and revised during the 1130s. It defends
+    Judaism as grounded in public revelation and tradition, and criticizes Aristotelian
+    philosophy. In 1140 he left Spain for Egypt, intending to reach the Land of Israel, and he
+    died around 1141.
+  significance: >-
+    Halevi offers a hierarchy of natural, animal, rational and divine levels of existence and sees human excellence as
+    ordered rather than suppressed desire under divine influence. He also provides a Jewish counterweight to
+    Maimonidean rationalism.
+  keyIdeas:
+    - The divine influence (amr ilahi)
+    - Tradition and public revelation over speculation
+    - Degrees of being
+    - The election of Israel and the Land
+    - Ordered rather than suppressed desire
+  representativeWorks:
+    - { title: "The Kuzari (Kitab al-Hujja wa-l-Dalil fi Nusr al-Din al-Dhalil)", sourceId: halevi-kuzari-hirschfeld }
+    - { title: Poems of Zion }
+  notes: Birth place and year are approximate. Registry sourceId halevi-kuzari should be reconciled with halevi-kuzari-hirschfeld.
+
+- id: maimonides
+  slug: maimonides
+  name: Moses Maimonides
+  worldview: judaism
+  role: primary
+  displayOrder: 3
+  schools: [Medieval Jewish rationalism, Halakhic codification]
+  birthYear: 1138
+  deathYear: 1204
+  description: Physician, philosopher and codifier of Jewish law whose work joined rabbinic tradition with Aristotelian philosophy.
+  bio: >-
+    Moses ben Maimon (1138-1204), called Rambam, was born in Cordoba. His family left after the
+    Almohad conquest and eventually settled in Fustat, Egypt, in 1166. He completed his
+    Arabic Commentary on the Mishnah in 1168 and, around 1180, the Mishneh Torah, a
+    comprehensive code of Jewish law in Hebrew. His philosophical masterpiece, the Guide of the
+    Perplexed, was completed around 1190. He earned his living as a physician, later attached to
+    the court of Saladin's vizier al-Qadi al-Fadil, and was recognized as head of the Fustat Jewish
+    community. His authority was immense, and his thought was also contested from the start.
+  significance: >-
+    Maimonides gives the classic Jewish statements on free will, repentance, the divine image as intellect, the
+    training of character, and the claim that most human evils are self-inflicted. He is the main medieval
+    rationalist foil to Nachmanides on Eden and the origin of desire.
+  keyIdeas:
+    - Free choice as a foundation of Torah
+    - Repentance (teshuvah) as cessation, regret, resolve and confession
+    - The divine image as intellect
+    - Most evils are self-inflicted
+    - The ethical mean and the training of dispositions
+  representativeWorks:
+    - { title: Commentary on the Mishnah (including the Eight Chapters, Shemonah Perakim), year: 1168, sourceId: maimonides-eight-chapters }
+    - { title: Mishneh Torah, year: 1180, sourceId: maimonides-mishneh-torah-touger }
+    - { title: Guide of the Perplexed, year: 1190, sourceId: maimonides-guide-friedlander }
+  notes: Birth year follows SEP (1138); some sources give 1135 or 1137. Mishneh Torah and Guide years are completion dates (the Guide's is sometimes given as c. 1185-1190). Registry sourceId maimonides-guide should be reconciled with maimonides-guide-friedlander.
+
+- id: nachmanides
+  slug: nachmanides
+  name: Nachmanides (Moses ben Nahman)
+  worldview: judaism
+  role: primary
+  displayOrder: 4
+  schools: [Medieval Talmudic scholarship, Kabbalah]
+  birthYear: 1194
+  era: 1194–c. 1270
+  description: Spanish Talmudist and biblical commentator who combined halakhic scholarship with mystical interpretation and defended Judaism in the Barcelona disputation.
+  bio: >-
+    Moses ben Nahman (1194-c. 1270), known as Nachmanides or the Ramban, was born in Girona in
+    Catalonia, where he became a leading rabbi and Talmudist, and he was later regarded as the
+    chief rabbi of Catalonia. He wrote novellae on the Talmud, legal works including Torat
+    ha-Adam, and Milhamot ha-Shem, a defence of Alfasi against criticism. In 1263 he represented
+    Judaism in the Barcelona Disputation against the convert Pablo Christiani. Forced to leave
+    Spain, he emigrated to the Land of Israel in 1267 and died in Acre around 1270. His Torah
+    commentary, completed late in life, joins plain-sense exegesis with Kabbalistic allusion.
+  significance: >-
+    Nachmanides reads the tree of knowledge as the origin of human will and desire, and the messianic healing of the
+    heart as its remedy, the strongest medieval alternative to Maimonides on Eden. He gives the Jewish lane an
+    account in which choice is both godlike and a burden.
+  keyIdeas:
+    - Original human nature acting naturally, as the heavens do
+    - Choice as godlike yet burdensome
+    - Divine assistance to the person who seeks purity
+    - Messianic restoration of natural goodness
+    - Kabbalistic layers within the plain sense of Torah
+  representativeWorks:
+    - { title: Commentary on the Torah, sourceId: ramban-torah-chavel }
+    - { title: Torat ha-Adam }
+    - { title: Milhamot ha-Shem }
+    - { title: Sefer ha-Vikkuah (account of the 1263 disputation) }
+  notes: Often critical of Maimonidean positions.
+
+- id: soloveitchik
+  slug: joseph-b-soloveitchik
+  name: Joseph B. Soloveitchik
+  worldview: judaism
+  role: primary
+  displayOrder: 5
+  schools: [Modern Orthodox Judaism]
+  birthYear: 1903
+  deathYear: 1993
+  description: Talmudist and philosopher who gave modern Orthodoxy a religious anthropology and an account of halakhic life.
+  bio: >-
+    Joseph Ber Soloveitchik (1903-1993) was born in Pruzhany, then in the Russian Empire, into
+    a family of Lithuanian Talmudists of the Brisker tradition. He earned a doctorate at the
+    University of Berlin in 1932 with a dissertation on the philosophy of Hermann Cohen. He
+    emigrated to the United States and settled in Boston, where he founded the Maimonides School
+    in 1937. From 1941 until 1986 he led the rabbinic training programme at Yeshiva University's
+    RIETS, ordaining some two thousand rabbis. His essays, such as Halakhic Man and The Lonely
+    Man of Faith, combine Talmudic method with neo-Kantian and existentialist philosophy. He
+    died in Boston.
+  significance: >-
+    Soloveitchik offers a modern Jewish anthropology of two Adams, one majestic and creative, one covenantal and
+    obedient, and grounds dignity in responsibility. He speaks directly to technology, creativity and civilization in
+    this question.
+  keyIdeas:
+    - Adam the first and Adam the second
+    - Dignity as responsibility
+    - Majesty and covenant as complementary
+    - Halakhic man as creator
+    - Loneliness and the covenantal community
+  representativeWorks:
+    - { title: "Halakhic Man (Ish ha-Halakhah)", year: 1944, sourceId: soloveitchik-halakhic-man }
+    - { title: The Lonely Man of Faith, year: 1965, sourceId: soloveitchik-lonely-man-of-faith }
+    - { title: Kol Dodi Dofek, year: 1956 }
+  notes: Years are those of first publication (Halakhic Man in Hebrew, 1944; English translation 1983).
+
+- id: ash-ari
+  slug: al-ashari
+  name: Abu al-Hasan al-Ash'ari
+  worldview: islam
+  role: primary
+  displayOrder: 1
+  schools: [Ash'ari kalam]
+  era: c. 873/4–935/6
+  description: Theologian whose method gave rise to the Ash'ari school of Sunni kalam.
+  bio: >-
+    Abu al-Hasan 'Ali ibn Isma'il al-Ash'ari was born in Basra around 874 and died in Baghdad
+    around 936. He studied under the Mu'tazili theologian al-Jubba'i and held Mu'tazili views
+    until, around the age of forty, he broke with the school. Tradition attributes his change
+    to dreams of the Prophet in Ramadan. He then defended the creed of the Sunni traditionists
+    using the rational methods of kalam. His surviving writings include the Maqalat
+    al-Islamiyyin, a survey of Muslim sects, the Kitab al-Luma', and the al-Ibana. His
+    followers developed the Ash'ari school, which became dominant in Sunni theology.
+  significance: >-
+    Al-Ash'ari supplies the framework that al-Ghazali inherits: God creates all acts, humans "acquire" them (kasb), and
+    moral obligation comes from revelation. The site uses him for the Sunni kalam view of will and responsibility.
+  keyIdeas:
+    - God's will and power extend to all events, including human acts
+    - Acquisition (kasb) as the human relation to created acts
+    - Obligation grounded in revelation, not in intrinsic moral properties
+    - Divine attributes affirmed "without asking how"
+    - Rational kalam used to defend scriptural doctrine
+  representativeWorks:
+    - { title: Maqalat al-Islamiyyin }
+    - { title: Kitab al-Luma' }
+    - { title: "al-Ibana 'an Usul al-Diyana (The Elucidation of Islam's Foundation)", sourceId: ashari-ibana-klein }
+  notes: Dates are approximate. The authenticity of al-Ibana is questioned by some scholars.
+
+- id: maturidi
+  slug: al-maturidi
+  name: Abu Mansur al-Maturidi
+  worldview: islam
+  role: primary
+  displayOrder: 2
+  schools: [Maturidi kalam]
+  deathYear: 944
+  description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
+  bio: >-
+    Abu Mansur Muhammad al-Maturidi died in Samarqand in 944 (333 AH); his birth date is
+    unknown. He came from Maturid, a district of Samarqand in Transoxiana, and belonged to the
+    Hanafi legal tradition. His main works are the Kitab al-Tawhid, a systematic theological
+    treatise, and the Ta'wilat, a large commentary on the Qur'an. He defended Sunni belief
+    against Mu'tazili and other rivals using reasoned argument. Later scholars in
+    Transoxiana and beyond built on his work, and the Maturidi school became the dominant
+    theology among Hanafi Muslims, alongside the Ash'ari school.
+  significance: >-
+    Al-Maturidi represents the Hanafi-Maturidi strand, with greater confidence than the Ash'aris in reason's moral
+    competence and in real human choice. He gives the Islamic lane a second, distinct Sunni account of freedom and
+    responsibility.
+  keyIdeas:
+    - Knowing God is rationally obligatory
+    - Reason can often know good and bad, though revelation is final
+    - Human nature as natural constitution plus intellect
+    - Real choice (ikhtiyar) within God's creation of acts
+    - Divine wisdom (hikma) grounding the moral order
+  representativeWorks:
+    - { title: Kitab al-Tawhid }
+    - { title: Ta'wilat (Qur'an commentary) }
+  notes: Death date is firm; birth is unknown. Some modern sources give c. 852, which is not securely attested.
+
+- id: ghazali
+  slug: al-ghazali
+  name: Abu Hamid al-Ghazali
+  worldview: islam
+  role: primary
+  displayOrder: 4
+  schools: [Ash'ari kalam, Sufism]
+  era: c. 1056–1111
+  deathYear: 1111
+  description: Theologian, jurist and mystic whose critique of the philosophers and synthesis of kalam and Sufism were widely influential.
+  bio: >-
+    Abu Hamid Muhammad al-Ghazali was born in 1055 or 1056 at Tabaran-Tus in Khurasan and died
+    in 1111. A Shafi'i jurist and Ash'ari theologian, he studied at Nishapur and in 1091 was
+    appointed to the Nizamiyya madrasa in Baghdad. In 1095, after a personal crisis, he left
+    his post, and he subsequently adopted the Sufi path, performing the pilgrimage in 1096.
+    He taught again at the Nizamiyya in Nishapur from 1106, while also maintaining a private school and
+    Sufi convent in Tus. His works include the Incoherence of the Philosophers (c. 1095) and
+    the Revival of the Religious Sciences, a compendium of religious practice and ethics.
+  significance: >-
+    The Ihya' gives the fullest classical Sunni moral psychology of heart, self, desire, sin and repentance, which
+    is why al-Ghazali is the main Islamic source on how one nature is both great and fallen. He also sets the
+    Sunni relation between kalam, Sufism and philosophy.
+  keyIdeas:
+    - The heart (qalb) as a subtle, lordly reality and the true self
+    - Four qualities within each person (brutish, predatory, demonic, lordly)
+    - The heart as a mirror and sin as rust
+    - Virtue as balance of faculties acquired by discipline (riyada)
+    - Repentance as knowledge, remorse and action
+    - Moral value known through revelation (Ash'ari)
+  representativeWorks:
+    - { title: "Ihya' 'Ulum al-Din, Book 21: The Marvels of the Heart", sourceId: ghazali-marvels-heart }
+    - { title: "Ihya' 'Ulum al-Din, Books 22-23: On Disciplining the Soul and On Breaking the Two Desires", sourceId: ghazali-disciplining-soul }
+    - { title: "Ihya' 'Ulum al-Din, Book 31: On Repentance", sourceId: ghazali-repentance-stern }
+    - { title: Tahafut al-Falasifa, year: 1095 }
+    - { title: al-Munqidh min al-Dalal }
+  notes: Birth year corrected from the registry's 1058 to c. 1056 (SEP, from his own letters and autobiography); 1058-59 is a later historians' dating. Tahafut year is approximate.
+
+- id: razi
+  slug: fakhr-al-din-al-razi
+  name: Fakhr al-Din al-Razi
+  worldview: islam
+  role: primary
+  displayOrder: 5
+  schools: [Ash'ari kalam, Philosophical theology]
+  birthYear: 1149
+  deathYear: 1210
+  description: Theologian, philosopher and Qur'an commentator who integrated Avicennan philosophy into Ash'ari kalam.
+  representativeWorks:
+    - { title: Mafatih al-Ghayb }
+    - { title: al-Matalib al-'Aliya }
+  notes: Dates-only correction. Death year corrected from the registry's 1209 to 1210 (606 AH; SEP).
+
+- id: ibn-taymiyya
+  slug: ibn-taymiyya
+  name: Ibn Taymiyya
+  worldview: islam
+  role: primary
+  displayOrder: 6
+  schools: [Hanbali jurisprudence, Athari theology]
+  birthYear: 1263
+  deathYear: 1328
+  description: Damascene jurist and theologian who argued from revelation against kalam and philosophical rationalism.
+  bio: >-
+    Taqi al-Din Ahmad ibn Taymiyya (1263-1328) was born in Harran, in what is now southeastern
+    Turkey, and raised in Damascus after his family left in the face of the Mongol advance. A
+    Hanbali jurist, he inherited his father's teaching post at the Sukkariyya madrasa in 1284.
+    He issued influential legal opinions, wrote against Ash'ari and philosophical theology, Shi'i
+    doctrine and some Sufi practices, and took part in public life in Syria. His positions led
+    to repeated trials and several periods of imprisonment in Cairo, Alexandria and Damascus,
+    and he died in the Damascus citadel in 1328.
+  significance: >-
+    Ibn Taymiyya offers the strongest account of the fitra, an innate disposition to know and worship God that
+    includes moral intuitions, and of humans as beings who necessarily love and worship something. He is the main
+    Athari alternative to Ash'ari and Maturidi kalam on human nature and agency.
+  keyIdeas:
+    - The fitra as innate disposition, perfected by prophecy
+    - Humans necessarily love and worship something
+    - God creates acts through human will and power
+    - Divine acts have wise purposes
+    - Revealed law as coextensive with justice and benefit
+    - Revelation and sound reason do not truly conflict
+  representativeWorks:
+    - { title: al-'Aqida al-Wasitiyya }
+    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql (Averting the Conflict between Reason and Revealed Tradition)" }
+    - { title: "al-Siyasa al-Shar'iyya (Law-Guided Public Policy)" }
+  notes: Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP). Wasitiyya date not verified.
+
+- id: ibn-sina
+  slug: avicenna-ibn-sina
+  name: Avicenna (Ibn Sina)
+  worldview: islam
+  role: primary
+  displayOrder: 3
+  schools: [Islamic philosophy, Peripatetic tradition]
+  birthYear: 980
+  deathYear: 1037
+  description: Philosopher and physician whose metaphysics of the Necessary Existent shaped later Islamic theology and philosophy.
+  bio: >-
+    Abu 'Ali al-Husayn ibn Sina (c. 980-1037) was born at Afshana near Bukhara and educated
+    there. He worked as a physician and counsellor to rulers across Iran and Central Asia,
+    served as a vizier at Hamadan, and spent his last years in Isfahan under the Kakuyid
+    ruler 'Ala' al-Dawla, dying at Hamadan in 1037. In the Peripatetic tradition of falsafa, he
+    developed a comprehensive philosophical system in the Book of Healing (al-Shifa'),
+    completed around 1020, and the later Pointers and Reminders. His Canon of Medicine was a
+    standard medical text for centuries. His metaphysics of the Necessary Existent and his
+    psychology of the soul influenced Muslim, Jewish and Latin Christian thinkers.
+  significance: >-
+    Ibn Sina offers the philosophical account of human greatness as the perfection of the rational soul through
+    knowledge, and of evil as privation. He represents falsafa, which is not identical with kalam: Ash'ari and
+    other theologians accepted parts of his thought and rejected others.
+  keyIdeas:
+    - Immaterial rational soul
+    - Internal senses, including estimation (wahm)
+    - Happiness as the intellectual perfection of the soul
+    - Prophecy as supremely developed intellect and imagination
+    - Evil as privation in a world of generation and corruption
+    - Necessary Existent and contingent beings
+  representativeWorks:
+    - { title: "The Book of Healing (al-Shifa')", year: 1020 }
+    - { title: al-Najat }
+    - { title: al-Isharat wa-l-Tanbihat }
+    - { title: Canon of Medicine }
+  notes: Birth year is conventionally given as c. 980 (370 AH). The Shifa' year is the approximate completion date. Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
+
+- id: ibn-arabi
+  slug: ibn-arabi
+  name: Ibn Arabi
+  worldview: islam
+  role: specialist
+  displayOrder: 1
+  usedFor: [mystical theology, Sufi metaphysics]
+  schools: [Sufism]
+  birthYear: 1165
+  deathYear: 1240
+  description: Andalusian mystic and author of an influential Sufi metaphysics of divine self-disclosure.
+  bio: >-
+    Muhyi al-Din Ibn al-'Arabi (1165-1240) was born in Murcia in al-Andalus and educated in
+    Seville. He left the Muslim West in 1200 and went to Mecca, where he began writing his
+    vast work al-Futuhat al-Makkiyya around 1202. After travelling through Syria, Iraq and
+    Anatolia, he settled in Damascus in 1223 and remained there until his death in 1240. In
+    1229 he composed the shorter Fusus al-Hikam, which became the subject of more than a hundred
+    commentaries. His writings on the divine names, the cosmos and the Perfect Human shaped later
+    Sufism and Islamic philosophy.
+  significance: >-
+    Ibn Arabi gives the human as the comprehensive being able to realise every divine name, and hence every
+    possibility, high and low. His views are contested within Sunni thought, so he serves as a specialist source for
+    mystical theology and not as the default Islamic account.
+  keyIdeas:
+    - The human created in the form of the all-comprehensive name Allah
+    - Deiformity (takhalluq bi-asma' Allah)
+    - The Perfect Human (al-insan al-kamil)
+    - Divine self-disclosure
+    - Creative command versus prescriptive command
+  representativeWorks:
+    - { title: al-Futuhat al-Makkiyya, year: 1202 }
+    - { title: Fusus al-Hikam, year: 1229 }
+  notes: Futuhat year is the start of composition (drafts completed 1231 and 1238). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.

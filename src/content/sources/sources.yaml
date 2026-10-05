@@ -9,13 +9,13 @@
 #     -> major Reformed theologians -> Van Til/Bahnsen on apologetic method -> reliable
 #     historical and philosophical scholarship.
 #
-# This is a seed registry to prove the architecture, not a bibliography. Bibliographic
-# details have not yet been checked against the cited editions. Every entry is "unverified"
-# (the default) until title, author/editor/translator, edition, publication details, locator
-# conventions and URL are verified; then set verificationStatus: checked and verifiedOn. Reviewed
-# and complete answers may cite only checked sources.
+# Seed entries were registered to prove the architecture; entries from the "great-and-terrible"
+# research round were verified 2026-10-05. A source is "checked" only when it meets all four
+# conditions of the Verification protocol in docs/SOURCES.md (metadata, URL, locator convention,
+# every cited passage read); notes records how. Anything else stays "unverified" (the default) and
+# says what is missing. Reviewed and complete answers may cite only checked sources.
 
-# --- Reformed Christianity ---------------------------------------------------------------
+# --- Reformed Christianity -----------------------------------------------------------
 - id: bible-esv
   type: scripture
   title: The Holy Bible, English Standard Version
@@ -23,14 +23,31 @@
   traditionTags: [christianity]
   publisher: Crossway
   year: 2001
+  url: https://www.esv.org/
+  notes: >-
+    Current ESV text (2016); publisher and first-publication year confirmed on esv.org. Verses read
+    on BibleGateway 2026-10-05: Gen 1:26-28, 6:5, 8:21, 9:6; Exod 31:2-3; Deut 29:4, 30:6; Lev
+    17:11; Ps 8:4-6, 51:1-5, 51:10; Eccl 7:29; Isa 53:4-6, 53:10-12; Jer 17:9, 31:31-34; Ezek
+    36:25-27; Matt 5:45; John 3:3; Acts 14:16-17; Rom 1:18-28, 2:14-15, 3:23-26, 5:12, 5:18-19,
+    7:15-25, 8:7; 2 Cor 3:18; Eph 2:1-5, 4:17-18, 4:24; Col 3:10; Jas 3:9; 1 John 1:9.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
 - id: wcf
   type: confessional
   title: The Westminster Confession of Faith
   shortCitation: WCF
+  author: Westminster Assembly
   traditionTags: [christianity]
   year: 1647
   url: https://www.opc.org/wcf.html
+  notes: >-
+    Text as published by the Orthodox Presbyterian Church (its constitutional text; later American
+    revisions fall in chapters not cited); the OPC page does not itself state the revision it
+    prints. Read at the OPC URL 2026-10-05: chs. 1, 4-7, 8.5-6, 9, 10, 11.3, 13, 15.1-3, 16, 21.1.
+    Locator chapter.section.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
 - id: calvin-institutes
   type: primary
@@ -65,6 +82,10 @@
   translator: John Vriend
   publisher: Baker Academic
   year: 2003
+  notes: >-
+    Four volumes, ed. John Bolt, trans. John Vriend (Baker Academic, 2003-2008). Relevant: vol. 2 on
+    the image of God; vol. 3 on original sin and common grace. Not read for this question; needs
+    library access for page verification.
 
 - id: vos-biblical-theology
   type: book
@@ -84,6 +105,8 @@
   traditionTags: [christianity]
   publisher: Presbyterian and Reformed
   year: 1955
+  notes: >-
+    Not read; the 1967 3rd edition is cited by Frame. Do not cite directly.
 
 - id: bahnsen-van-til-apologetic
   type: book
@@ -94,14 +117,281 @@
   publisher: P&R Publishing
   year: 1998
 
-# --- Naturalistic atheism ----------------------------------------------------------------
+- id: augustine-city-of-god
+  type: primary
+  title: The City of God
+  shortCitation: Augustine, City of God
+  author: Augustine of Hippo
+  traditionTags: [christianity]
+  containerTitle: Nicene and Post-Nicene Fathers, First Series, vol. 2
+  editor: Philip Schaff
+  translator: Marcus Dods
+  place: Buffalo, NY
+  publisher: Christian Literature Publishing Co.
+  year: 1887
+  url: https://www.newadvent.org/fathers/1201.htm
+  notes: >-
+    New Advent online edition (revised and edited by Kevin Knight) of the Dods translation; imprint
+    from New Advent's source line. Locator book.chapter. Read 2026-10-05: XII.6–7; XIV.6–7, 13, 28;
+    XXII.22, 24.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: augustine-confessions
+  type: primary
+  title: Confessions
+  shortCitation: Augustine, Confessions
+  author: Augustine of Hippo
+  traditionTags: [christianity]
+  containerTitle: Nicene and Post-Nicene Fathers, First Series, vol. 1
+  editor: Philip Schaff
+  translator: J. G. Pilkington
+  place: Buffalo, NY
+  publisher: Christian Literature Publishing Co.
+  year: 1887
+  url: https://www.newadvent.org/fathers/1101.htm
+  notes: >-
+    Text read in New Advent's online edition ("Revised and edited for New Advent by Kevin Knight";
+    archaic pronouns modernized), whose source line gives the NPNF imprint and 1887; some library
+    records date NPNF¹ vol. 1 to 1886. Locator book.chapter.paragraph. Read 2026-10-05: II.4.9,
+    II.5.11, II.6.12–14, II.7.15, II.8.16; VIII.5.10–12, VIII.9.21, VIII.10.22–24.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: augustine-enchiridion
+  type: primary
+  title: The Enchiridion
+  shortCitation: Augustine, Enchiridion
+  author: Augustine of Hippo
+  traditionTags: [christianity]
+  containerTitle: Nicene and Post-Nicene Fathers, First Series, vol. 3
+  editor: Philip Schaff
+  translator: J. F. Shaw
+  place: Buffalo, NY
+  publisher: Christian Literature Publishing Co.
+  year: 1887
+  url: https://www.newadvent.org/fathers/1302.htm
+  notes: >-
+    New Advent online edition of the Shaw translation; imprint from New Advent's source line.
+    Locator: chapter (NPNF numbering). Read 2026-10-05: chs. 11–14, 30.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: bavinck-calvin-common-grace
+  type: article
+  title: Calvin and Common Grace
+  shortCitation: Bavinck, "Calvin and Common Grace"
+  author: Herman Bavinck
+  traditionTags: [christianity]
+  containerTitle: "Calvin and the Reformation: Four Studies"
+  translator: Geerhardus Vos
+  place: New York
+  publisher: Fleming H. Revell Company
+  year: 1909
+  url: https://archive.org/details/calvinandreform00warfgoog
+  notes: >-
+    pp. 99–130 of the book reissue; first published in The Princeton Theological Review 7 (1909).
+    Preface (read) names Vos as translator. Page numbers are this book's, read on the archive.org
+    scan 2026-10-05 (pp. 99–101, 111–121 read). Bavinck is here expounding Calvin.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: calvin-commentary-romans
+  type: commentary
+  title: Commentaries on the Epistle of Paul the Apostle to the Romans
+  shortCitation: Calvin, Comm. Romans
+  author: John Calvin
+  traditionTags: [christianity]
+  translator: John Owen
+  place: Edinburgh
+  publisher: Calvin Translation Society
+  year: 1849
+  url: https://ccel.org/ccel/calvin/calcom38
+  notes: >-
+    John Owen (vicar of Thrussington) translation, CCEL digitization; imprint confirmed against
+    archive.org catalog records ("Edinburgh: Printed for the Calvin Translation Society", 1849).
+    Locator: verse commented on. Comment on Rom 7:14–15 read 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: calvin-institutes-beveridge
+  type: primary
+  title: Institutes of the Christian Religion
+  shortCitation: Calvin, Institutes (Beveridge)
+  author: John Calvin
+  traditionTags: [christianity]
+  translator: Henry Beveridge
+  place: Edinburgh
+  publisher: Calvin Translation Society
+  year: 1845
+  url: https://ccel.org/ccel/calvin/institutes
+  notes: >-
+    Beveridge translation (1845) as digitized by CCEL; imprint confirmed against archive.org catalog
+    records of the 1845 Edinburgh volumes. Locators book.chapter.section (shared with
+    McNeill/Battles). Read 2026-10-05: I.1.1; I.3.1-3; I.5.3-4; I.15.1, 3-4, 8; II.1.2, 4, 8-11;
+    II.2.12-18, 22-26; II.3.3-5; II.11.7-8, 10; III.7.6.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: crc-acts-synod-1924
+  type: confessional
+  title: Acts of Synod 1924 of the Christian Reformed Church
+  shortCitation: CRC, Acts of Synod 1924
+  author: Christian Reformed Church in North America, Synod
+  traditionTags: [christianity]
+  translator: Henry De Mots
+  edition: English translation produced by the Archives of the Christian Reformed Church, Calvin College (May 2000)
+  place: Grand Rapids, MI
+  publisher: Archives of the Christian Reformed Church, Calvin College
+  year: 2000
+  url: https://www.calvin.edu/library/database/crcnasynod/1924acts_et.pdf
+  notes: >-
+    English translation by Henry De Mots (Archives of the CRC, May 2000); title page and preface
+    read in the PDF 2026-10-05. Locator: article and page of this translation; Art. 132, pp. 145-147
+    (Three Points; Danhof and Hoeksema) read. Correspondence of these pages to the Dutch pagination
+    is not confirmed.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: edwards-works-hickman-1
+  type: primary
+  title: The Works of Jonathan Edwards, Volume One
+  shortCitation: Edwards, Works (Hickman) 1
+  author: Jonathan Edwards
+  traditionTags: [christianity]
+  editor: Edward Hickman
+  place: Edinburgh
+  publisher: Banner of Truth Trust
+  year: 1974
+  url: https://ccel.org/ccel/edwards/works1
+  notes: >-
+    Banner of Truth 1974 reprint of the 1834 Hickman edition; edition statement and text read in the
+    CCEL digitization 2026-10-05. Cite by work and part/section/chapter, not page. Read: Freedom of
+    the Will I.4, III.4; True Virtue chs. 1, 5, 7; Original Sin I.1.1, IV.1, IV.3 (Turnbull is
+    quoted by Edwards; Turnbull's own text not read).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: kant-religion-greene-hudson
+  type: primary
+  title: Religion within the Limits of Reason Alone
+  shortCitation: Kant, Religion
+  author: Immanuel Kant
+  traditionTags: [christianity]
+  translator: Theodore M. Greene and Hoyt H. Hudson
+  edition: Harper Torchbooks reissue, with an essay by John R. Silber
+  place: New York
+  publisher: Harper & Row
+  year: 1960
+  url: https://archive.org/details/religionwithinli0000kant_r6f5
+  notes: >-
+    Cited by Book and section (Bk. I, sections I-IV; General Observation). Passages read 2026-10-05
+    in the Greene-Hudson text at the CUHK Humanum site (lightly corrected; marks G-H pages);
+    metadata from the archive.org catalog record (lending-only, scan not checked), so page numbers
+    are not used as locators. Before review, confirm wording against the printed edition.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-sin-christian
+  type: academic
+  title: Sin in Christian Thought
+  shortCitation: Timpe, "Sin in Christian Thought"
+  author: Kevin Timpe
+  traditionTags: [christianity]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/sin-christian/
+  notes: >-
+    First published 15 April 2021; substantive revision 7 November 2025 (the version read). Cited by
+    section number. Read 2026-10-05: §4.3 (original guilt "defended by very few philosophers"; list
+    of corruption-only holders; Rea's principle) and §4.4 (federalism as a "legal fiction").
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: taylor-original-sin
+  type: book
+  title: The Scripture-Doctrine of Original Sin Proposed to Free and Candid Examination
+  shortCitation: Taylor, Scripture-Doctrine of Original Sin
+  author: John Taylor
+  traditionTags: [christianity]
+  edition: First edition
+  place: London
+  publisher: Printed for the author by J. Wilson
+  year: 1740
+  url: https://archive.org/details/scripturedoctrin00tayl
+  notes: >-
+    Cited by Part and page of the 1740 first edition. Checked 2026-10-05 against the archive.org
+    scan (Princeton Theological Seminary copy) and its OCR text: title page imprint, running heads
+    giving Part and page, and the passages at Part I pp. 33–34 and Part III p. 222. The scan lacks
+    pp. 183–186. The volume also binds the separately paginated 1741 Supplement (see
+    taylor-original-sin-supplement).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: taylor-original-sin-supplement
+  type: book
+  title: A Supplement to the Scripture-Doctrine of Original Sin, Containing Some Remarks upon Two Books, viz. The Vindication of the Scripture-Doctrine of Original Sin, and The Ruin and Recovery of Mankind
+  shortCitation: Taylor, Supplement
+  author: John Taylor
+  traditionTags: [christianity]
+  place: London
+  publisher: Mary Fenner
+  year: 1741
+  url: https://archive.org/details/scripturedoctrin00tayl
+  notes: >-
+    Bound with the 1740 first edition in the same archive.org volume, with its own pagination. Cited
+    by page. Checked 2026-10-05 against the scan and OCR text: Supplement title page (Mary Fenner,
+    1741) and pp. 108–109 (objection III against "R. R.", i.e. The Ruin and Recovery of Mankind,
+    conventionally attributed to Isaac Watts).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: westminster-larger-catechism
+  type: confessional
+  title: The Westminster Larger Catechism
+  shortCitation: WLC
+  author: Westminster Assembly
+  traditionTags: [christianity]
+  year: 1648
+  url: https://www.opc.org/lc.html
+  notes: >-
+    Unverified: year 1648 not confirmed against a catalog record (reviewer to confirm or omit). Text
+    as published by the OPC; Q&A 17-28 read at the OPC URL 2026-10-05; locator Q. n.
+  verificationStatus: unverified
+
+- id: witsius-economy-covenants
+  type: primary
+  title: The Economy of the Covenants between God and Man
+  shortCitation: Witsius, Economy of the Covenants
+  author: Herman Witsius
+  traditionTags: [christianity]
+  translator: William Crookshank
+  place: Edinburgh
+  publisher: Thomas Turnbull
+  year: 1803
+  url: https://archive.org/details/economycovenant01witsgoog
+  notes: >-
+    Two volumes; vol. 1 title page read on the archive.org scan (Google digitization). Locator
+    book.chapter.section. Book I, ch. 8, §§30–35 (Adam as head; Rom 5:12) read 2026-10-05 in the OCR
+    text (OCR is poor; quotations should be checked against page images before use).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+# --- Naturalistic atheism ------------------------------------------------------------
 - id: hume-enquiry
   type: primary
   title: An Enquiry Concerning Human Understanding
   shortCitation: Hume, Enquiry
   author: David Hume
   traditionTags: [naturalism]
+  containerTitle: Hume Texts Online
+  editor: Amyas Merivale and Peter Millican
   year: 1748
+  url: https://davidhume.org/texts/e/
+  notes: >-
+    Cited by section.paragraph (site label "E 8.23", with SBN pages). Verified 2026-10-05 for 8.7
+    and 8.23.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
 - id: sep-naturalism
   type: academic
@@ -111,9 +401,229 @@
   traditionTags: [naturalism]
   containerTitle: Stanford Encyclopedia of Philosophy
   url: https://plato.stanford.edu/entries/naturalism/
-  notes: Reference article for the scope of philosophical naturalism.
+  notes: >-
+    First published 2007; substantive revision 31 March 2020. Cited by section (§1 ontological
+    naturalism; §1.7 moral facts; §2 methodological naturalism).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
-# --- Rabbinic Judaism --------------------------------------------------------------------
+- id: darwin-descent
+  type: primary
+  title: The Descent of Man, and Selection in Relation to Sex
+  shortCitation: Darwin, Descent of Man
+  author: Charles Darwin
+  traditionTags: [naturalism]
+  edition: 2nd ed. (tenth thousand)
+  place: London
+  publisher: John Murray
+  year: 1874
+  url: https://darwin-online.org.uk/converted/published/1874_Descent_F944/1874_Descent_F944.html
+  notes: >-
+    Darwin Online F944 (ed. John van Wyhe). Cited by chapter and page of this edition. Passages read
+    2026-10-05 in the Darwin Online text and cross-checked against Project Gutenberg #2300 (same
+    2nd-edition text): ch. IV pp. 97, 98, 113–114, 122; ch. V p. 130; ch. XXI p. 619.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: dennett-self-artifact
+  type: article
+  title: The Self as a Responding—and Responsible—Artifact
+  shortCitation: Dennett, "The Self as a Responding—and Responsible—Artifact"
+  author: Daniel C. Dennett
+  traditionTags: [naturalism]
+  containerTitle: Annals of the New York Academy of Sciences
+  edition: vol. 1001
+  year: 2003
+  url: https://doi.org/10.1196/annals.1279.003
+  doi: 10.1196/annals.1279.003
+  notes: >-
+    pp. 39-50 (Annals NYAS 1001); adapted from Freedom Evolves (2003). Metadata and pages verified
+    2026-10-05 against the article PDF (Zenodo 915272; 12 pp. = printed 39-50): p. 39 abstract; p.
+    48 reasons-giving, transformers; p. 49 center of narrative gravity; p. 50 control and
+    responsibility.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: hume-epm
+  type: primary
+  title: An Enquiry Concerning the Principles of Morals
+  shortCitation: Hume, Enquiry concerning the Principles of Morals
+  author: David Hume
+  traditionTags: [naturalism]
+  containerTitle: Hume Texts Online
+  editor: Amyas Merivale and Peter Millican
+  year: 1751
+  url: https://davidhume.org/texts/m/
+  notes: >-
+    Cited by section.paragraph (e.g. 9.4; the site labels these "M 9.4", with SBN pages). Verified
+    2026-10-05: 9.4, 9.5, 9.6.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: hume-treatise
+  type: primary
+  title: A Treatise of Human Nature
+  shortCitation: Hume, Treatise
+  author: David Hume
+  traditionTags: [naturalism]
+  containerTitle: Hume Texts Online
+  editor: Amyas Merivale and Peter Millican
+  year: 1739
+  url: https://davidhume.org/texts/t/
+  notes: >-
+    Cited by book.part.section.paragraph (e.g. 2.3.3.10), as displayed on Hume Texts Online, which
+    also gives SBN pages. Verified 2026-10-05 on davidhume.org: T 2.3.3.4, 2.3.3.6, 2.3.3.10,
+    3.1.1.6, 3.1.1.26–27, 3.2.2.5, 3.2.2.7, 3.2.2.9, 3.2.2.18, 3.3.1.10, 3.3.1.15.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: kitcher-ethical-project-precis
+  type: article
+  title: Précis of The Ethical Project
+  shortCitation: Kitcher, "Précis"
+  author: Philip Kitcher
+  traditionTags: [naturalism]
+  containerTitle: Analyse & Kritik
+  edition: vol. 34, no. 1
+  year: 2012
+  url: https://www.analyse-und-kritik.net/Dateien/569650ef31a90_ak_kitcher_2012.pdf
+  notes: >-
+    pp. 1–19. Verified 2026-10-05 in the journal PDF: p. 4 (altruism failures; conscience "built"),
+    p. 6 (progress rare), p. 10 (ethics as social technology), p. 12 (progress as fulfilling
+    functions), p. 18 ("incomplete psychological altruists").
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: mackie-ethics
+  type: book
+  title: "Ethics: Inventing Right and Wrong"
+  shortCitation: Mackie, Ethics
+  author: J. L. Mackie
+  traditionTags: [naturalism]
+  place: London
+  publisher: Penguin Books
+  year: 1977
+  notes: >-
+    First published Pelican 1977; pagination checked 2026-10-05 in a scan of the Penguin reprint
+    (1990; scan not linked): pp. 15, 29, 33, 35 (ch. 1 sections 1, 6, 7), 42-43, 107-108.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: railton-moral-realism
+  type: article
+  title: Moral Realism
+  shortCitation: Railton, "Moral Realism"
+  author: Peter Railton
+  traditionTags: [naturalism]
+  containerTitle: The Philosophical Review
+  edition: vol. 95, no. 2
+  year: 1986
+  url: https://www.jstor.org/stable/2185589
+  doi: 10.2307/2185589
+  notes: >-
+    pp. 163-207. Verified 2026-10-05 against a JSTOR PDF of the journal pages (page numbers from
+    printed folios): pp. 168-169 (the Knave), 190-191 (social point of view; substantive moral
+    theory), 191-194 (social feedback), 201 (not categorical), 202 (analogy with logic; impartial
+    standpoint).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: russell-what-i-believe
+  type: primary
+  title: What I Believe
+  shortCitation: Russell, What I Believe
+  author: Bertrand Russell
+  traditionTags: [naturalism]
+  place: New York
+  publisher: E. P. Dutton
+  year: 1925
+  url: https://en.wikisource.org/wiki/What_I_Believe_(Russell)
+  notes: >-
+    To-day and To-morrow series. Cited by chapter (1 Nature and Man; 2 The Good Life; 4 Salvation:
+    Individual and Social). Wikisource transcription of the 1925 Dutton edition. Verified
+    2026-10-05: ch. 1, ch. 2, ch. 4 passages.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-altruism-biological
+  type: academic
+  title: Biological Altruism
+  shortCitation: Okasha, "Biological Altruism"
+  author: Samir Okasha
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/altruism-biological/
+  notes: >-
+    First published 2003; substantive revision 21 July 2013. Cited by section. Verified 2026-10-05
+    (kin selection, reciprocal altruism, group selection, biological vs psychological altruism).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-morality-biology
+  type: academic
+  title: Morality and Evolutionary Biology
+  shortCitation: FitzPatrick, "Morality and Evolutionary Biology"
+  author: William FitzPatrick
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/morality-biology/
+  notes: >-
+    First published 2008; substantive revision 15 July 2025. Cited by section. Verified 2026-10-05
+    (§§1.1, 2.2, 2.3, 4.1).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-weakness-will
+  type: academic
+  title: Weakness of Will
+  shortCitation: Stroud, "Weakness of Will"
+  author: Sarah Stroud
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/weakness-will/
+  notes: >-
+    First published 2008; substantive revision 18 September 2025. Cited by section (§2 Davidson;
+    §3.3 Holton; §3.4.2 empirical psychology). Not a naturalist-specific source; used for the
+    analysis of akrasia.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: tennie-ratchet
+  type: article
+  title: "Ratcheting Up the Ratchet: On the Evolution of Cumulative Culture"
+  shortCitation: Tennie, Call and Tomasello, "Ratcheting Up the Ratchet"
+  author: Claudio Tennie, Josep Call and Michael Tomasello
+  traditionTags: [naturalism]
+  containerTitle: Philosophical Transactions of the Royal Society B
+  edition: vol. 364, no. 1528
+  year: 2009
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2865079/
+  doi: 10.1098/rstb.2009.0052
+  notes: >-
+    pp. 2405–2415 (PubMed 19620111). Cited by section (Abstract; §5 "Cooperation and social
+    transmission"). Verified 2026-10-05 in the PubMed Central full text.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: wrangham-two-types
+  type: article
+  title: Two Types of Aggression in Human Evolution
+  shortCitation: Wrangham, "Two Types of Aggression"
+  author: Richard W. Wrangham
+  traditionTags: [naturalism]
+  containerTitle: Proceedings of the National Academy of Sciences of the United States of America
+  edition: vol. 115, no. 2
+  year: 2018
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5777045/
+  doi: 10.1073/pnas.1713611115
+  notes: >-
+    pp. 245–253 (PubMed 29279379). Cited by section (Abstract; "Proactive vs. Reactive Aggression";
+    "Resolving the Rousseau–Kropotkin vs. Hobbes–Huxley Debate"). Verified 2026-10-05 in the PubMed
+    Central full text of the published article.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+# --- Rabbinic Judaism ----------------------------------------------------------------
 - id: maimonides-guide
   type: primary
   title: The Guide of the Perplexed
@@ -144,17 +654,459 @@
   publisher: Jewish Publication Society
   year: 1983
 
-# --- Classical Islam ---------------------------------------------------------------------
+- id: ccar-principles-1999
+  type: primary
+  title: A Statement of Principles for Reform Judaism
+  shortCitation: CCAR, Statement of Principles (1999)
+  author: Central Conference of American Rabbis
+  traditionTags: [judaism]
+  place: Pittsburgh
+  year: 1999
+  url: https://www.ccarnet.org/rabbinic-voice/platforms/article-statement-principles-reform-judaism/
+  notes: >-
+    Adopted May 1999 at the Pittsburgh convention. Read for image of God, mitzvot, repentance.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: halevi-kuzari-hirschfeld
+  type: primary
+  title: Judah Hallevi's Kitab al Khazari
+  shortCitation: Halevi, Kuzari
+  author: Judah Halevi
+  traditionTags: [judaism]
+  translator: Hartwig Hirschfeld
+  place: London; New York
+  publisher: George Routledge; E. P. Dutton
+  year: 1905
+  url: https://archive.org/details/judahhalleviskit00juda
+  notes: >-
+    Metadata from archive.org record. Locators part.paragraph as printed (Sefaria segment index is
+    offset). I.27, I.31-43, I.95, III.5 read on Sefaria; I.95 and III.5 matched against the
+    archive.org full text.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: maimonides-eight-chapters
+  type: primary
+  title: The Eight Chapters of Maimonides on Ethics (Shemonah Perakim)
+  shortCitation: Maimonides, Eight Chapters
+  author: Moses Maimonides
+  traditionTags: [judaism]
+  editor: Joseph I. Gorfinkle
+  translator: Joseph I. Gorfinkle
+  place: New York
+  publisher: Columbia University Press
+  year: 1912
+  url: https://www.sefaria.org/Eight_Chapters.6
+  notes: >-
+    Unverified: publisher and year are standard for Gorfinkle (Columbia 1912) but no catalog record
+    was opened. Public-domain text read on Sefaria 2026-10-05 (chs. 6 and 8); locators by chapter.
+    Footnotes are editorial.
+  verificationStatus: unverified
+
+- id: maimonides-guide-friedlander
+  type: primary
+  title: The Guide for the Perplexed
+  shortCitation: Maimonides, Guide
+  author: Moses Maimonides
+  traditionTags: [judaism]
+  translator: M. Friedländer
+  edition: 2nd ed., revised
+  place: London; New York
+  publisher: George Routledge & Sons; E. P. Dutton
+  year: 1904
+  url: https://archive.org/details/guideforperplexe00maimiala
+  notes: >-
+    Metadata from archive.org record (UC Libraries copy; title page "Second edition published 1904";
+    lix, 414 p.). Locators part.chapter. I.1, I.2, III.8, III.12 read in Sefaria (Friedlander) and
+    matched verbatim against the archive.org full text of this edition.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: maimonides-mishneh-torah-touger
+  type: primary
+  title: Mishneh Torah
+  shortCitation: Maimonides, Mishneh Torah
+  author: Moses Maimonides
+  traditionTags: [judaism]
+  translator: Eliyahu Touger
+  place: Jerusalem
+  publisher: Moznaim
+  year: 1986
+  url: https://www.sefaria.org/Mishneh_Torah,_Repentance.5.1
+  notes: >-
+    Unverified: the NLI catalog record linked from the Sefaria version was not opened; volumes
+    1986-2007. Touger translation read on Sefaria 2026-10-05; locators Hilkhot [section]
+    chapter:halakhah (Teshuvah 2:1-2, 3:4, 5:1-5, 6:3, 7:4, 7:6-7; Yesodei ha-Torah 4:8-9).
+    Bracketed additions are Touger's.
+  verificationStatus: unverified
+
+- id: midrash-rabbah-sefaria
+  type: primary
+  title: Bereshit Rabbah (The Sefaria Midrash Rabbah)
+  shortCitation: Bereshit Rabbah
+  traditionTags: [judaism]
+  publisher: Sefaria
+  year: 2022
+  url: https://www.sefaria.org/Bereshit_Rabbah.9.7
+  notes: >-
+    "The Sefaria Midrash Rabbah, 2022" English (CC-BY). Locators parashah:section (Sefaria
+    numbering). Read: 8:5 (angels debate man's creation), 8:11 (upper and lower traits), 9:7 ("very
+    good" = evil inclination), 14:4 (two yetzarim), 24:7 (Ben Azzai, R. Tanhuma).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: mishnah-kulp
+  type: primary
+  title: Mishnah Yomit
+  shortCitation: Mishnah
+  traditionTags: [judaism]
+  translator: Joshua Kulp
+  publisher: Conservative Yeshiva
+  url: https://www.sefaria.org/Pirkei_Avot.3.14
+  notes: >-
+    Unverified: version record gives no year or place (metadata partial). Kulp English (Mishnah
+    Yomit, CC-BY) read on Sefaria 2026-10-05; locators tractate chapter:mishnah (Avot follows
+    Sefaria numbering). Read: Berakhot 9:5; Avot 2:4, 3:14, 3:15, 4:1, 4:21; Yoma 8:8-9; Sanhedrin
+    4:5 (printed text reads from Israel).
+  verificationStatus: unverified
+
+- id: ramban-torah-chavel
+  type: commentary
+  title: Commentary on the Torah
+  shortCitation: Ramban
+  author: Nachmanides (Moses ben Nahman)
+  traditionTags: [judaism]
+  translator: Charles B. Chavel
+  place: New York
+  publisher: Shilo Publishing House
+  year: 1971
+  url: https://www.sefaria.org/Ramban_on_Genesis.2.9
+  notes: >-
+    Chavel translation read on Sefaria (CC-BY). Locators "on [book] chapter:verse". Read: on Gen
+    2:9; on Deut 30:6. Chavel's notes (e.g. citing R. Yeruham on Deut 30:6) are editorial, not
+    Ramban. Volumes published 1971-1976.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: rashi-tanakh-judaica-press
+  type: commentary
+  title: The Judaica Press Complete Tanach with Rashi
+  shortCitation: Rashi
+  author: Rashi (Solomon ben Isaac)
+  traditionTags: [judaism]
+  translator: A. J. Rosenberg
+  publisher: Judaica Press
+  url: https://www.sefaria.org/Rashi_on_Isaiah.53.3
+  notes: >-
+    Unverified: print metadata not confirmed (the NLI catalog record returned HTTP 403; Rosenberg,
+    Judaica Press 1982-83 is believed from bookseller listings only). Rashi on Isa 52:13, 53:3, 53:4
+    read on Sefaria 2026-10-05; locator on [book] chapter:verse. Confirm a catalog record or cut the
+    Rashi sentence before review.
+  verificationStatus: unverified
+
+- id: saadia-emunot-ibn-tibbon
+  type: primary
+  title: Sefer ha-Emunot ve-ha-De'ot
+  shortCitation: Saadia, Emunot ve-De'ot
+  author: Saadia Gaon
+  traditionTags: [judaism]
+  translator: Judah ibn Tibbon (Hebrew)
+  place: Leipzig
+  year: 1864
+  url: https://www.sefaria.org/Emunot_VeDeot
+  notes: >-
+    Hebrew text (Leipzig 1864) read on Sefaria; treatise.chapter locators follow that edition's
+    divisions. Read: III.1 (rational commandments), IV.1 (human superiority through wisdom; "axis of
+    the world"), IV.4 (no divine compulsion), X.1 (many loves to be balanced). English renderings in
+    drafts are the researcher's paraphrases; do not quote as Rosenblatt. Rosenblatt (Yale, 1948)
+    numbering not checked.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: soloveitchik-lonely-man-of-faith
+  type: article
+  title: The Lonely Man of Faith
+  shortCitation: Soloveitchik, Lonely Man of Faith
+  author: Joseph B. Soloveitchik
+  traditionTags: [judaism]
+  containerTitle: "Tradition: A Journal of Orthodox Thought 7, no. 2 (Summer 1965): 5-67"
+  publisher: Rabbinical Council of America
+  year: 1965
+  url: https://traditiononline.org/the-lonely-man-of-faith/
+  notes: >-
+    Scanned original journal issue (PDF linked from the Tradition page) read; page numbers are the
+    journal's printed pages (first page 5; PDF page n = journal page n+4). Read: pp. 5, 10, 12-14,
+    17, 51-52. Not the 1992/2006 Doubleday pagination.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: talmud-bavli-koren
+  type: primary
+  title: Koren Talmud Bavli (The William Davidson Talmud)
+  shortCitation: b.
+  traditionTags: [judaism]
+  editor: Adin Even-Israel Steinsaltz
+  place: Jerusalem
+  publisher: Koren Publishers
+  year: 2012
+  url: https://www.sefaria.org/texts/Talmud
+  notes: >-
+    Unverified: year range 2012-2019 taken from the publisher series, not checked against a catalog
+    record. William Davidson Edition English read on Sefaria 2026-10-05; locators tractate and folio
+    (Berakhot 17a, 34b, 61a; Shabbat 55b, 146a; Yoma 69b, 86b; Sukkah 52a-b; Kiddushin 30b, 40b;
+    Sanhedrin 91b; Bava Batra 16a). Quotations include Steinsaltz glosses.
+  verificationStatus: unverified
+
+- id: tanakh-jps-gender-sensitive
+  type: scripture
+  title: "The JPS Tanakh: Gender-Sensitive Edition"
+  shortCitation: JPS Tanakh
+  traditionTags: [judaism]
+  place: Philadelphia
+  publisher: Jewish Publication Society
+  year: 2023
+  url: https://www.sefaria.org/texts/Tanakh
+  notes: >-
+    Read on Sefaria (version "THE JPS TANAKH: Gender-Sensitive Edition", source jps.org), cited by
+    book chapter:verse. Year 2023 confirmed from bookseller/publisher listings (ISBN 9780827615595).
+    Passages read: Gen 1:26-28, 4:7, 6:5, 8:21, 9:6; Ps 8:4-7; Deut 30:11-19; Ezek 18:20, 36:26-27;
+    Jer 31:30-33; Eccl 7:20, 7:29.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: tanya-kehot
+  type: primary
+  title: Likutei Amarim — Tanya (Bilingual Edition)
+  shortCitation: Tanya
+  author: Shneur Zalman of Liadi
+  traditionTags: [judaism]
+  translator: Nissan Mindel, Nissan Mangel, Zalman I. Posner, Jacob Immanuel Schochet
+  place: Brooklyn
+  publisher: Kehot Publication Society
+  year: 1973
+  url: https://www.sefaria.org/Tanya,_Part_I;_Likkutei_Amarim.12
+  notes: >-
+    Unverified: translator list and 1973 first bilingual edition come from publisher/bookseller
+    listings only; which translator rendered Part I is not confirmed. Kehot English (CC-BY-NC) read
+    on Sefaria 2026-10-05, chs. 1 and 12; locator Likkutei Amarim [chapter].
+  verificationStatus: unverified
+
+- id: yerushalmi-guggenheimer
+  type: primary
+  title: The Jerusalem Talmud
+  shortCitation: y.
+  traditionTags: [judaism]
+  translator: Heinrich W. Guggenheimer
+  place: Berlin
+  publisher: De Gruyter
+  year: 1999
+  url: https://www.sefaria.org/Jerusalem_Talmud_Sanhedrin.4.9
+  notes: >-
+    Read on Sefaria (Guggenheimer edition, CC-BY). Locators tractate chapter:halakhah. Read:
+    Sanhedrin 4:9 (Mishnah text reads universally, "anybody who destroys a single life"); Nedarim
+    9:4 (Ben Azzai / R. Akiva / R. Tanhuma). Volumes published 1999-2015.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+# --- Classical Islam -----------------------------------------------------------------
 - id: quran-haleem
   type: scripture
   title: The Qur'an
   shortCitation: Qur'an
   traditionTags: [islam]
   translator: M. A. S. Abdel Haleem
+  edition: Oxford World's Classics
+  place: Oxford
   publisher: Oxford University Press
   year: 2004
+  url: https://quran.com/
+  notes: >-
+    Cited by surah:ayah. Read in Abdel Haleem's translation as hosted on quran.com (resource 85; may
+    reflect a later printing) 2026-10-05, including 9:118; no page numbers cited. Publication data
+    checked against OUP and retailer records.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
-# --- Hindu traditions --------------------------------------------------------------------
+- id: ashari-ibana-klein
+  type: primary
+  title: Al-Ibanah 'an Usul ad-Diyanah (The Elucidation of Islam's Foundation)
+  shortCitation: al-Ash'ari, Ibanah
+  author: Abu al-Hasan al-Ash'ari
+  traditionTags: [islam]
+  translator: Walter C. Klein
+  edition: American Oriental Series 19
+  place: New Haven, CT
+  publisher: American Oriental Society
+  year: 1940
+  url: https://archive.org/details/theelucidationofisalamsfoundation
+  notes: >-
+    Cited by page of Klein's translation. Text read in the archive.org scan. The Ibanah's relation
+    to al-Ash'ari's kalam works is debated; cite it for the creed's own statements, not Klein's
+    evaluative introduction.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: bukhari-sahih-khan
+  type: primary
+  title: Sahih al-Bukhari
+  shortCitation: Bukhari
+  author: Muhammad ibn Isma'il al-Bukhari
+  traditionTags: [islam]
+  translator: Muhammad Muhsin Khan
+  url: https://sunnah.com/bukhari
+  notes: >-
+    Cited by sunnah.com hadith number (e.g. 1385), the standard numbering shown there as "Reference:
+    Sahih al-Bukhari N"; sunnah.com states the translation is by Dr. M. Muhsin Khan. The translation
+    inserts interpretive glosses in parentheses; paraphrase rather than quote those.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: ghazali-disciplining-soul
+  type: primary
+  title: "On Disciplining the Soul (Kitab riyadat al-nafs) and On Breaking the Two Desires (Kitab kasr al-shahwatayn): Books XXII and XXIII of the Revival of the Religious Sciences"
+  shortCitation: al-Ghazali, Disciplining the Soul
+  author: Abu Hamid al-Ghazali
+  traditionTags: [islam]
+  translator: T. J. Winter
+  place: Cambridge
+  publisher: The Islamic Texts Society
+  year: 1995
+  notes: >-
+    Unverified: page markers for pp. 23-25 are out of order in the scan and need confirming against
+    a print copy. Title and copyright pages (Islamic Texts Society 1995, ISBN 0 946621 43 8) read;
+    pp. 18-19, 23-25, 37 read in the full-text scan. Cited by page.
+  verificationStatus: unverified
+
+- id: ghazali-marvels-heart
+  type: primary
+  title: "The Marvels of the Heart: Science of the Spirit (Kitab sharh 'aja'ib al-qalb), Book 21 of the Revival of the Religious Sciences"
+  shortCitation: al-Ghazali, Marvels of the Heart
+  author: Abu Hamid al-Ghazali
+  traditionTags: [islam]
+  editor: Muhammad I. Hozien and Valerie J. Turner
+  translator: Walter James Skellie
+  place: Louisville, KY
+  publisher: Fons Vitae
+  year: 2010
+  url: https://fonsvitae.com/product/al-ghazali-the-marvels-of-the-heart-science-of-the-spirit-book-xxi-of-the-revival-of-the-religious-sciences/
+  notes: >-
+    Foreword by T. J. Winter. ISBN 978-1-887752-31-2. Cited by page of this edition. Passages read
+    in a full-text scan of this edition showing its title page, copyright page and printed
+    pagination.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: ghazali-repentance-stern
+  type: primary
+  title: Al-Ghazzali on Repentance
+  shortCitation: al-Ghazali, Repentance
+  author: Abu Hamid al-Ghazali
+  traditionTags: [islam]
+  translator: M. S. Stern
+  place: New Delhi
+  publisher: Sterling Publishers
+  year: 1990
+  notes: >-
+    Translation of Kitab al-tawba, Book XXXI of Ihya' 'Ulum al-Din (translation begins p. 29). Cited
+    by page of this edition. Passages read in a full-text scan of a library copy (Princeton
+    University Library) showing title, copyright page and pagination. The translation's wording
+    ("hereditary trait", p. 30) is idiomatic; do not use it to imply inherited guilt.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: harvey-transcendent-god
+  type: academic
+  title: "Transcendent God, Rational World: A Maturidi Theology"
+  shortCitation: Harvey, Transcendent God
+  author: Ramon Harvey
+  traditionTags: [islam]
+  place: Edinburgh
+  publisher: Edinburgh University Press
+  year: 2021
+  url: https://library.oapen.org/handle/20.500.12657/62332
+  notes: >-
+    Open access. ISBN 978 1 4744 5164 2 (hb). Cited by page of the EUP edition (PDF read via the
+    archive.org mirror of the OAPEN file). Reports al-Maturidi's Kitab al-Tawhid (Topaloglu/Aruci
+    ed.).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: hoover-theodicy
+  type: academic
+  title: Ibn Taymiyya's Theodicy of Perpetual Optimism
+  shortCitation: Hoover, Theodicy of Perpetual Optimism
+  author: Jon Hoover
+  traditionTags: [islam]
+  edition: Islamic Philosophy, Theology and Science 73
+  place: Leiden and Boston
+  publisher: Brill
+  year: 2007
+  notes: >-
+    ISBN 978 90 04 15847 4. Cited by page of this edition. Read in a full-text scan showing title
+    and copyright pages and printed pagination (pp. 39-44, 200-203). Translates Ibn Taymiyya with
+    primary locators (Dar' ta'arud, Majmu' al-fatawa, Nubuwwat); quote only passages Hoover marks as
+    translation.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: muslim-sahih-siddiqui
+  type: primary
+  title: Sahih Muslim
+  shortCitation: Muslim
+  author: Muslim ibn al-Hajjaj
+  traditionTags: [islam]
+  translator: Abdul Hamid Siddiqui
+  url: https://sunnah.com/muslim
+  notes: >-
+    Cited by sunnah.com number including letter suffix (e.g. 2658b), shown there as "Reference:
+    Sahih Muslim N"; sunnah.com states the translation is by Abdul Hamid Siddiqui.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-arabic-islamic-religion
+  type: academic
+  title: Arabic and Islamic Philosophy of Religion
+  shortCitation: McGinnis, "Arabic and Islamic Philosophy of Religion"
+  author: Jon McGinnis
+  traditionTags: [islam]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2023
+  url: https://plato.stanford.edu/entries/arabic-islamic-religion/
+  notes: >-
+    First published 31 May 2023. Cite by section number (§5 evil; §7 ethics).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-ibn-arabi
+  type: academic
+  title: Ibn 'Arabi
+  shortCitation: Chittick, "Ibn 'Arabi"
+  author: William Chittick
+  traditionTags: [islam]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2025
+  url: https://plato.stanford.edu/entries/ibn-arabi/
+  notes: >-
+    First published 5 Aug 2008; substantive revision 5 Dec 2025. Cite by section number.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-ibn-sina
+  type: academic
+  title: Ibn Sina [Avicenna]
+  shortCitation: Gutas, "Ibn Sina"
+  author: Dimitri Gutas
+  traditionTags: [islam]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2025
+  url: https://plato.stanford.edu/entries/ibn-sina/
+  notes: >-
+    First published 15 Sep 2016; substantive revision 31 Oct 2025. Cite by section number.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+# --- Hindu traditions ----------------------------------------------------------------
 - id: olivelle-upanishads
   type: primary
   title: Upaniṣads
@@ -164,7 +1116,218 @@
   publisher: Oxford University Press
   year: 1996
 
-# --- Buddhist traditions -----------------------------------------------------------------
+- id: govindacharya-gita-ramanuja
+  type: primary
+  title: Sri Bhagavad-Gita with Sri Ramanujacharya's Visishtadvaita-Commentary
+  shortCitation: Rāmānuja, Gītā-bhāṣya
+  author: Rāmānuja
+  traditionTags: [hinduism]
+  translator: A. Govindacharya
+  place: Madras
+  publisher: Vaijayanti Press
+  year: 1898
+  url: https://archive.org/details/india.history.resource.74429
+  notes: >-
+    Cite by Gītā chapter.verse, with page of this edition where helpful. Translator's own footnotes
+    (including comparative remarks) are not Rāmānuja's. Verified against the archive.org scan,
+    2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: iep-madhva
+  type: academic
+  title: Madhva (1238—1317)
+  shortCitation: Stoker, "Madhva"
+  author: Valerie Stoker
+  traditionTags: [hinduism]
+  containerTitle: Internet Encyclopedia of Philosophy
+  url: https://iep.utm.edu/madhva/
+  notes: >-
+    Cite by section (intro; §3 Dvaita Vedanta). Read 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: iep-ramanuja
+  type: academic
+  title: Rāmānuja (c. 1017 – c. 1137)
+  shortCitation: Ranganathan, "Rāmānuja"
+  author: Shyam Ranganathan
+  traditionTags: [hinduism]
+  containerTitle: Internet Encyclopedia of Philosophy
+  url: https://iep.utm.edu/ramanuja/
+  notes: >-
+    Quotes Vedārthasaṅgraha §99 in translation. Cite by section title. No publication year on page.
+    Read 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: jha-slokavarttika
+  type: primary
+  title: Ślokavārtika
+  shortCitation: Kumārila, Ślokavārttika
+  author: Kumārila Bhaṭṭa
+  traditionTags: [hinduism]
+  translator: Ganganatha Jha
+  edition: Sri Garib Das Oriental Series 8; reprint of the Calcutta (Bibliotheca Indica) ed., 1900–1908
+  place: Delhi
+  publisher: Sri Satguru Publications
+  year: 1983
+  url: https://archive.org/details/in.ernet.dli.2015.188365
+  notes: >-
+    Cite by section and verse (e.g. "Codanā-sūtra 16–18", "Ātmavāda 29"). Jha's introduction and
+    notes are his, not Kumārila's. Edition details from the reprint title page and SEP Kumārila
+    bibliography. Verified against the archive.org scan, 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: muller-upanishads-1
+  type: scripture
+  title: The Upanishads, Part I
+  shortCitation: Upaniṣads (SBE 1)
+  traditionTags: [hinduism]
+  containerTitle: Sacred Books of the East, vol. 1
+  translator: F. Max Müller
+  place: Oxford
+  publisher: Clarendon Press
+  year: 1879
+  url: https://archive.org/details/upanishads01mluoft
+  notes: >-
+    Contains Chāndogya, Kena, Aitareya-Āraṇyaka (incl. Aitareya Upaniṣad = AA II.4–6), Kauṣītaki,
+    Īśā. Cite text + canonical section (e.g. "AA II.3.2.4"). Verified against the archive.org scan,
+    2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sastri-gita-shankara
+  type: primary
+  title: The Bhagavad-Gita, with the Commentary of Sri Sankaracharya
+  shortCitation: Śaṅkara, Gītā-bhāṣya
+  author: Śaṅkara
+  traditionTags: [hinduism]
+  translator: A. Mahadeva Sastri
+  edition: 2nd ed., revised
+  place: Mysore
+  publisher: G. T. A. Printing Works
+  year: 1901
+  url: https://archive.org/details/bhagavadgitawith00maharich
+  notes: >-
+    Gītā text and Śaṅkara's commentary. Cite by Gītā chapter.verse (add "comm." for the bhāṣya).
+    Verified against the archive.org scan (title page and running heads), 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-shankara
+  type: academic
+  title: Śaṅkara
+  shortCitation: Dalal, "Śaṅkara"
+  author: Neil Dalal
+  traditionTags: [hinduism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2021
+  url: https://plato.stanford.edu/entries/shankara/
+  notes: >-
+    First published 4 October 2021. Cite by section number. Read 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: subbarau-madhva-brahmasutra
+  type: primary
+  title: The Vedanta-Sutras with the Commentary by Sri Madhwacharya
+  shortCitation: Madhva, Brahmasūtra-bhāṣya
+  author: Madhva
+  traditionTags: [hinduism]
+  translator: S. Subba Rau
+  place: Madras
+  publisher: Thompson and Co., Minerva Press
+  year: 1904
+  url: https://archive.org/details/the-vedanta-sutras-1904
+  notes: >-
+    Madhva's sūtra division differs from Śaṅkara's (e.g. Śaṅkara II.1.34–36 = Madhva II.1.35–37);
+    cite Madhva's numbering plus page. Year from preface (Aug. 1904) and catalog. Verified against
+    the archive.org scan, 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: thibaut-ramanuja-sribhashya
+  type: primary
+  title: The Vedânta-Sûtras with the Commentary of Râmânuga, Part III
+  shortCitation: Rāmānuja, Śrī Bhāṣya
+  author: Rāmānuja
+  traditionTags: [hinduism]
+  containerTitle: Sacred Books of the East, vol. 48
+  editor: F. Max Müller
+  translator: George Thibaut
+  place: Oxford
+  publisher: Clarendon Press
+  year: 1904
+  url: https://archive.org/details/vedntasutrastr03badauoft
+  notes: >-
+    Cite adhyaya.pada.sutra plus SBE page. Verified against the archive.org scan 2026-10-05,
+    including II.2.3 (p. 487) and IV.1.13 (pp. 722-723).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: thibaut-shankara-brahmasutra
+  type: primary
+  title: The Vedânta-Sûtras with the Commentary by Sankarâkârya, Part I
+  shortCitation: Śaṅkara, Brahmasūtra-bhāṣya
+  author: Śaṅkara
+  traditionTags: [hinduism]
+  containerTitle: Sacred Books of the East, vol. 34
+  editor: F. Max Müller
+  translator: George Thibaut
+  place: Oxford
+  publisher: Clarendon Press
+  year: 1890
+  url: https://archive.org/details/vedntasutrastr01bdar
+  notes: >-
+    Covers BS I.1–II.2. Cite adhyāya.pāda.sūtra plus SBE page. Verified against the archive.org scan
+    (title page, running heads), 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: vidyabhusana-nyaya-sutras
+  type: primary
+  title: The Nyâya Sûtras of Gotama
+  shortCitation: Nyāya-sūtra
+  author: Gautama (Akṣapāda)
+  traditionTags: [hinduism]
+  containerTitle: The Sacred Books of the Hindus, vol. 8
+  editor: B. D. Basu
+  translator: Satisa Chandra Vidyabhusana
+  place: Allahabad
+  publisher: Pāṇini Office
+  year: 1913
+  url: https://archive.org/details/TheNyayaSutrasOfGotama
+  notes: >-
+    Cite book.chapter.sūtra (e.g. NS 1.1.2). Translator's bracketed glosses are his, not the
+    sūtra's. OCR page numbers unreliable; do not cite pages. Verified against the archive.org scan,
+    2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: woods-yoga-sutra
+  type: primary
+  title: The Yoga-System of Patañjali
+  shortCitation: Yoga Sūtra (Woods)
+  author: Patañjali
+  traditionTags: [hinduism]
+  containerTitle: Harvard Oriental Series, vol. 17
+  translator: James Haughton Woods
+  place: Cambridge, Mass.
+  publisher: Harvard University Press
+  year: 1914
+  url: https://archive.org/details/yogasystemofpata00pata
+  notes: >-
+    Sūtras with Vyāsa's Yoga-bhāṣya and Vācaspati Miśra's gloss. Cite by book.sūtra (e.g. YS 2.3).
+    Metadata from the archive.org catalog record of the 1914 HOS scan; text of ii.3–9 read in the
+    OCR of a derived copy of the same HOS 17 scan
+    (archive.org/details/yogasystemofpata00wooduoft_202005; HOS 17 signatures visible). Do not cite
+    page numbers. Verified 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+# --- Buddhist traditions -------------------------------------------------------------
 - id: majjhima-nikaya-bodhi
   type: primary
   title: The Middle Length Discourses of the Buddha
@@ -181,18 +1344,34 @@
   author: Buddhaghosa
   traditionTags: [buddhism]
   translator: Bhikkhu Ñāṇamoli
+  edition: 4th ed. (online edition 2011)
+  place: Kandy
   publisher: Buddhist Publication Society
-  year: 1991
+  year: 2010
+  url: https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf
+  notes: >-
+    Cite by chapter.paragraph (e.g. XIV.142), which is stable across BPS editions. Verified
+    2026-10-05 against the BPS PDF (imprint page: 1st ed. 1956, 3rd ed. 1991, 4th ed. 2010; ISBN
+    978-955-24-0023-6). Registry previously gave year 1991 (3rd ed.); update recommended.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
 - id: nagarjuna-mmk
   type: primary
-  title: The Fundamental Wisdom of the Middle Way
+  title: "The Fundamental Wisdom of the Middle Way: Nāgārjuna's Mūlamadhyamakakārikā"
   shortCitation: Nāgārjuna, Fundamental Wisdom
   author: Nāgārjuna
   traditionTags: [buddhism]
   translator: Jay L. Garfield
+  place: New York
   publisher: Oxford University Press
   year: 1995
+  notes: >-
+    Metadata confirmed via Open Library record for ISBN 9780195093360 (OUP, New York, 1995). Cite by
+    chapter.verse; cited verses (8.12, 17.1-3, 18.4-6, 23.1, 24.18-19, 24.32-33, 26.10-11) read in
+    the Sanskrit GRETIL e-text, same numbering. Garfield wording not seen: do not quote verbatim.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
 
 - id: shantideva-bodhicaryavatara
   type: primary
@@ -201,5 +1380,200 @@
   author: Śāntideva
   traditionTags: [buddhism]
   translator: Kate Crosby and Andrew Skilton
+  edition: Oxford World's Classics reissue (general introduction by Paul Williams)
+  place: Oxford and New York
   publisher: Oxford University Press
-  year: 1995
+  year: 2008
+  notes: >-
+    Metadata confirmed 2026-10-05 from LoC/Harvard MARC via Open Library (ISBN 9780199540433; OUP
+    2008, Oxford World's Classics; originally published 1998; the often-cited 1995 date is not
+    confirmed). Cite by chapter.verse; cited verses read in the Sanskrit GRETIL e-text (same
+    numbering) and Batchelor's English. Crosby and Skilton wording not seen: do not quote verbatim.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: anguttara-nikaya-sujato
+  type: primary
+  title: "Numbered Discourses: A Sensible Translation of the Aṅguttara Nikāya"
+  shortCitation: Aṅguttara Nikāya (Sujato)
+  traditionTags: [buddhism]
+  translator: Bhikkhu Sujato
+  publisher: SuttaCentral
+  year: 2018
+  url: https://suttacentral.net/an
+  notes: >-
+    Cite by SuttaCentral numbering (e.g. AN 3.69; AN 1.49–52 = PTS A I 10). Verified 2026-10-05:
+    metadata (scpub5, 2018, CC0) from SuttaCentral publication API; passages read in Sujato's
+    English with Pali root text.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: dogen-shobogenzo
+  type: primary
+  title: "Treasury of the True Dharma Eye: Zen Master Dogen's Shobo Genzo"
+  shortCitation: Dōgen, Shōbōgenzō
+  author: Dōgen
+  traditionTags: [buddhism]
+  editor: Kazuaki Tanahashi
+  place: Boston
+  publisher: Shambhala
+  year: 2010
+  notes: >-
+    Metadata confirmed 2026-10-05 from LoC and Columbia MARC via Open Library (ISBN 9781590304747).
+    Cite by fascicle (Busshō, Shoaku makusa); read in the Japanese original (Zenchōji web text).
+    Tanahashi wording not seen: do not quote verbatim. Bendōwa not cited.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: majjhima-nikaya-sujato
+  type: primary
+  title: "Middle Discourses: A Lucid Translation of the Majjhima Nikāya"
+  shortCitation: Majjhima Nikāya (Sujato)
+  traditionTags: [buddhism]
+  translator: Bhikkhu Sujato
+  publisher: SuttaCentral
+  year: 2018
+  url: https://suttacentral.net/mn
+  notes: >-
+    Cite by sutta and SuttaCentral segment/section number (e.g. MN 14.2–4). Verified 2026-10-05:
+    metadata (scpub3, 2018, CC0) from the SuttaCentral publication API; passages read in Sujato's
+    English with Pali root text. Prefer this over majjhima-nikaya-bodhi where page-accessible
+    verification matters.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: ratnagotravibhaga-johnston
+  type: primary
+  title: Ratnagotravibhāga Mahāyānottaratantraśāstra (Sanskrit e-text after E. H. Johnston)
+  shortCitation: Ratnagotravibhāga
+  traditionTags: [buddhism]
+  editor: E. H. Johnston (base edition, Patna 1950; repr. H. S. Prasad, Delhi 1991)
+  publisher: GRETIL, SUB Göttingen
+  url: https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_ratnagotravibhAga.xml
+  notes: >-
+    Cite by chapter.verse in Johnston numbering (I.28, I.40–41, I.60–63); vyākhyā by Johnston page
+    (marked "Rgv NN" in e-text). Read 2026-10-05. Takasaki (1966) and Tibetan-based translations may
+    number differently: confirm before citing in a reviewed answer.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: samyutta-nikaya-sujato
+  type: primary
+  title: "Linked Discourses: A Plain Translation of the Saṁyutta Nikāya"
+  shortCitation: Saṁyutta Nikāya (Sujato)
+  traditionTags: [buddhism]
+  translator: Bhikkhu Sujato
+  publisher: SuttaCentral
+  year: 2018
+  url: https://suttacentral.net/sn
+  notes: >-
+    Cite by sutta (e.g. SN 56.11, SN 22.100:2.3). Verified 2026-10-05: metadata (scpub4, 2018, CC0)
+    from SuttaCentral publication API; passages read in Sujato's English with Pali.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-buddhism-tiantai
+  type: academic
+  title: Tiantai Buddhism
+  author: Brook Ziporyn
+  traditionTags: [buddhism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2022
+  url: https://plato.stanford.edu/entries/buddhism-tiantai/
+  notes: >-
+    First published 19 Nov 2014; substantive revision 13 Nov 2022. Read §4.1 ("evil is inherently
+    included in Buddhahood") on 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-japanese-zen
+  type: academic
+  title: Japanese Zen Buddhist Philosophy
+  author: Shigenori Nagatomo
+  traditionTags: [buddhism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2024
+  url: https://plato.stanford.edu/entries/japanese-zen/
+  notes: >-
+    First published 28 Jun 2006; substantive revision 7 Mar 2024. Read §2 (Dōgen's
+    practice-realization, shushō; practice and realization "not two") on 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-korean-philosophy
+  type: academic
+  title: Korean Philosophy
+  author: Halla Kim
+  traditionTags: [buddhism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2022
+  url: https://plato.stanford.edu/entries/korean-philosophy/
+  notes: >-
+    First published 14 Jan 2022. Read §2.2 (Xuanzang's five lineages, pañcagotra, including
+    icchantikas "beyond the possibility of salvation"; Wŏnch'ŭk's reconciliation) on 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: sep-tsongkhapa
+  type: academic
+  title: Tsongkhapa
+  author: Gareth Sparham and Chandra Chiara Ehm
+  traditionTags: [buddhism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2024
+  url: https://plato.stanford.edu/entries/tsongkhapa/
+  notes: >-
+    First published 2011; substantive revision 17 Apr 2024. Read §1.1, §3, §5 on 2026-10-05.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: shinran-tannisho-cws
+  type: primary
+  title: A Record in Lament of Divergences (Tannishō)
+  shortCitation: Tannishō
+  traditionTags: [buddhism]
+  containerTitle: The Collected Works of Shinran
+  publisher: Jōdo Shinshū Hongwanji-ha
+  year: 1997
+  url: https://shinranworks.com/related-works-by-other-authors/a-record-in-lament-of-divergences/
+  notes: >-
+    Cite by section number (arabic, 1–18). Read section 3 on 2026-10-05: a good person attains
+    birth, so an evil person all the more; Amida's Vow established for the evil person; self-power
+    versus Other Power. Publisher/year from the page footer (© 1997 Jōdo Shinshū Hongwanji-ha). Text
+    compiled by Yuien, recording Shinran's sayings.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: tsongkhapa-three-principal-aspects
+  type: primary
+  title: Three Principal Aspects of the Path
+  shortCitation: Tsongkhapa, Three Principal Aspects
+  author: Tsongkhapa Lobzang Drakpa
+  traditionTags: [buddhism]
+  translator: Adam Pearcey
+  edition: revised 2012
+  publisher: Lotsawa House
+  year: 2006
+  url: https://www.lotsawahouse.org/tibetan-masters/tsongkhapa/three-principal-aspects
+  notes: >-
+    Cite by verse (1–14, numbered in the translation). Verified 2026-10-05: page resolves;
+    translator and dates from the page colophon; Tibetan source given as gdams ngag mdzod vol. 4:
+    435–438.
+  verificationStatus: checked
+  verifiedOn: 2026-10-05
+
+- id: vasubandhu-trimsika
+  type: primary
+  title: Triṃśikāvijñaptikārikā (Thirty Verses), Sanskrit e-text
+  shortCitation: Vasubandhu, Triṃśikā
+  author: Vasubandhu
+  traditionTags: [buddhism]
+  publisher: GRETIL, SUB Göttingen (input by the Digital Sanskrit Buddhist Canon Project)
+  url: https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_vasubandhu-triMzikAvijJaptikArikA.xml
+  notes: >-
+    Cite by verse (Tvk 2–6, 10–13, 17, 19). Verified 2026-10-05: URL resolves to the TEI e-text;
+    verse numbering read directly. For an English rendering consult Anacker, Seven Works of
+    Vasubandhu (Motilal Banarsidass, 1984), not checked here. The e-text's base edition is not
+    stated (cf. Lévi 1925).
+  verificationStatus: checked
+  verifiedOn: 2026-10-05

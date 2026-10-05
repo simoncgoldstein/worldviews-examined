@@ -19,8 +19,28 @@
   birthYear: 1509
   deathYear: 1564
   description: Reformer of Geneva whose Institutes of the Christian Religion shaped Reformed doctrine, notably on the knowledge of God, the image of God, the fall and providence.
+  bio: >-
+    John Calvin (1509–1564) was born at Noyon in Picardy and studied in Paris and then law at
+    Orléans and Bourges, before committing himself to the Protestant Reformation in the early
+    1530s. The first edition of his Institutes of the Christian Religion appeared at Basel in 1536.
+    He ministered in Geneva from 1536 until his expulsion in 1538, spent three years in
+    Strasbourg, and returned to Geneva in 1541, where he remained as pastor, preacher, teacher and
+    commentator until his death. He revised the Institutes repeatedly; the definitive Latin
+    edition of 1559 became the most influential systematic statement of Reformed doctrine.
+  significance: >-
+    Calvin supplies the classic Reformed account of humanity as a ruined image: created excellence,
+    corrupted natural gifts, withdrawn supernatural gifts, and a restraint of sin that leaves room
+    for real human achievement. His treatment in Institutes II.1–3 is a principal source for the
+    Christian answer to why people are both great and terrible.
+  keyIdeas:
+    - Knowledge of God and of ourselves
+    - Image of God as marred but not destroyed
+    - Natural gifts corrupted, supernatural gifts lost
+    - God's restraint of sin and the gifts of the Spirit to unbelievers
+    - Necessity without compulsion
   representativeWorks:
-    - { title: Institutes of the Christian Religion, year: 1559, sourceId: calvin-institutes }
+    - { title: Institutes of the Christian Religion, year: 1559, sourceId: calvin-institutes-beveridge }
+    - { title: Commentary on Romans, year: 1540, sourceId: calvin-commentary-romans }
 
 - id: turretin
   slug: francis-turretin
@@ -45,8 +65,29 @@
   birthYear: 1854
   deathYear: 1921
   description: Dutch Reformed theologian who treated revelation, religion, anthropology and modernity within a single dogmatic system.
+  bio: >-
+    Herman Bavinck (1854–1921) was born at Hoogeveen in the Netherlands. He studied briefly at
+    Kampen and then at Leiden, completing a doctorate on the ethics of Zwingli in 1880. He taught
+    dogmatics at the Theological School at Kampen and in 1902 moved to the Free University of
+    Amsterdam, where he succeeded Abraham Kuyper. His four-volume Gereformeerde Dogmatiek
+    (1895–1901) is the major systematic work of Dutch neo-Calvinism, and he also wrote on ethics,
+    education and psychology and took part in Dutch public life, serving in the Senate from 1911.
+    He delivered the Stone Lectures at Princeton in 1908.
+  significance: >-
+    Bavinck interprets Calvin's doctrine of common grace as the Reformed explanation of how human
+    culture, arts and sciences flourish outside the church despite the fall. He is used mainly for
+    this account of the gifts and restraint that coexist with sin, not as a spokesman for the whole
+    tradition.
+  keyIdeas:
+    - Grace restores nature
+    - Common grace restrains sin and preserves creation
+    - Arts and sciences as gifts of the Spirit
+    - Remnants of the image of God in human gifts
+    - Organic unity in diversity
   representativeWorks:
-    - { title: Reformed Dogmatics, sourceId: bavinck-reformed-dogmatics }
+    - { title: Reformed Dogmatics (Gereformeerde Dogmatiek), year: 1895, sourceId: bavinck-reformed-dogmatics }
+    - { title: Calvin and Common Grace, year: 1909, sourceId: bavinck-calvin-common-grace }
+  notes: Reformed Dogmatics appeared in Dutch in four volumes, 1895–1901 (English translation 2003–2008); the year field gives the first volume. His start date at Kampen is disputed (1881 or 1883) and is omitted.
 
 - id: vos
   slug: geerhardus-vos
@@ -71,19 +112,21 @@
   birthYear: 1895
   deathYear: 1987
   description: Reformed apologist who developed the Creator-creature distinction, analogical knowledge and the transcendental method into a distinctive apologetic.
-  # Drafted as a worked example of the profile fields; not yet reviewed against sources.
   bio: >-
-    Cornelius Van Til (1895–1987) was born in the Netherlands and emigrated to the United
-    States as a boy. After studying at Calvin College and Princeton Theological Seminary, he
-    completed a doctorate at Princeton University in 1927. From 1929 until his retirement in
-    1972 he taught apologetics at Westminster Theological Seminary in Philadelphia, where he
-    was a member of the original faculty. Working within the Reformed tradition and drawing on
-    Kuyper, Bavinck and others, he developed an approach to apologetics grounded in the
-    Creator-creature distinction. His writings made him the best-known twentieth-century
-    proponent of what came to be called presuppositional apologetics.
+    Cornelius Van Til (1895–1987) was born at Grootegast in the Netherlands and emigrated with his
+    family to the United States as a boy, settling at Highland, Indiana. After studying at Calvin
+    College (graduating 1922) and Princeton Theological Seminary, he took a doctorate in
+    philosophy at Princeton University in 1927. From 1929 until his retirement in 1972 he taught
+    apologetics at Westminster Theological Seminary near Philadelphia, where he was a member of
+    the original faculty, and he continued to teach part-time into 1979. Working within the
+    Reformed tradition and drawing on Kuyper, Bavinck and others, he developed an apologetic
+    grounded in the Creator-creature distinction, and became the best-known proponent of what
+    came to be called presuppositional apologetics.
   significance: >-
-    Van Til matters particularly for the Creator-creature distinction, analogical knowledge,
-    antithesis, transcendental apologetics and the denial of religious neutrality.
+    Van Til matters to this site for the Creator-creature distinction, analogical knowledge,
+    antithesis, transcendental apologetics and the denial of religious neutrality. He supplies the
+    method by which Reformed answers are argued against rival worldviews, rather than evidence on
+    the question of human greatness and misery itself.
   keyIdeas:
     - Creator-creature distinction
     - Analogical knowledge
@@ -94,6 +137,7 @@
   representativeWorks:
     - { title: The Defense of the Faith, year: 1955, sourceId: van-til-defense }
 
+# --- Naturalistic atheism ----------------------------------------------------------------
 - id: bahnsen
   slug: greg-bahnsen
   name: Greg L. Bahnsen
@@ -117,10 +161,30 @@
   birthYear: 354
   deathYear: 430
   description: North African bishop and theologian whose work on will, grace, evil, the two cities and history is foundational to Reformed anthropology and soteriology.
+  bio: >-
+    Augustine (354–430) was born at Thagaste in Roman North Africa. Trained in rhetoric, he
+    taught in Carthage, Rome and Milan and passed through Manichaeism and Neoplatonism before
+    turning to Christianity in 386; he was baptised by Ambrose at Easter 387. He was ordained a
+    priest at Hippo Regius in 391, became its bishop around 396, and served there until his death
+    during the Vandal siege in 430. His Confessions examine his own will and loves before God, and
+    The City of God, begun in 412, interprets history as the interplay of two loves. His
+    controversies with the Manichees, Donatists and Pelagians shaped Western Latin teaching on
+    evil, sin and grace.
+  significance: >-
+    For the question "Why is man so great and so terrible?", Augustine supplies much of the
+    conceptual vocabulary the Reformed answer inherits: evil as privation, pride and disordered
+    love, the divided will, and human gifts coexisting with misery. He is a primary Christian
+    antecedent of the Reformed tradition, not himself a Reformed theologian.
+  keyIdeas:
+    - Evil as privation of good
+    - Pride and disordered love
+    - Two loves and two cities
+    - The divided will and the chain of habit
+    - Grace as remedy for a bound will
   representativeWorks:
-    - { title: Confessions }
-    - { title: The City of God }
-  notes: Included as a primary Christian antecedent of the Reformed tradition, not as a Reformed theologian.
+    - { title: Confessions, year: 400, sourceId: augustine-confessions }
+    - { title: The City of God, year: 426, sourceId: augustine-city-of-god }
+  notes: Included as a primary Christian antecedent of the Reformed tradition, not as a Reformed theologian. Confessions is dated ca. 396–400 and The City of God 412–426; the year given is the completion date.
 
 - id: witsius
   slug: herman-witsius
@@ -132,8 +196,28 @@
   birthYear: 1636
   deathYear: 1708
   description: Dutch Reformed theologian whose systematic treatment of the covenants shaped Reformed covenant theology.
+  bio: >-
+    Herman Witsius (1636–1708) was born at Enkhuizen in the Dutch Republic. After studying at
+    Groningen, Utrecht and Leiden he served as a pastor in several towns, then held professorships
+    of divinity at Franeker (1675), Utrecht (1680) and Leiden (1698), where he died. His chief
+    work, De oeconomia foederum Dei cum hominibus (Leeuwarden, 1677; English translation as The
+    Economy of the Covenants between God and Man), set out Reformed covenant theology in a
+    systematic form. Writing amid the Voetian and Cocceian controversies in the Dutch church, he
+    tried to mediate between the parties, and was not fully accepted by either.
+  significance: >-
+    Witsius states federal headship, the imputation of Adam's first sin and the Adam–Christ parallel
+    of Romans 5 in classic Reformed covenantal form. This is the confessional explanation for the
+    universality of human corruption, and he is used on that point rather than as a general
+    spokesman for the tradition.
+  keyIdeas:
+    - Covenant of works with Adam as head
+    - Imputation of Adam's first sin
+    - Adam as type of Christ
+    - Covenant of grace
+    - Mediation between Voetians and Cocceians
   representativeWorks:
-    - { title: The Economy of the Covenants between God and Man }
+    - { title: The Economy of the Covenants between God and Man, year: 1677, sourceId: witsius-economy-covenants }
+  notes: Original Latin title De oeconomia foederum Dei cum hominibus; the year is that of the Latin first edition.
 
 - id: edwards
   slug: jonathan-edwards
@@ -146,10 +230,33 @@
   birthYear: 1703
   deathYear: 1758
   description: American theologian and philosopher whose analyses of the affections, the will and the beauty of God have been influential in Reformed thought.
+  bio: >-
+    Jonathan Edwards (1703–1758) was born at East Windsor, Connecticut, and educated at Yale,
+    where he later served as a tutor. From the mid-1720s he was a minister at Northampton,
+    Massachusetts, and a leading figure in the revivals of the 1730s and 1740s. Dismissed by his
+    congregation in 1750, he worked as a missionary and pastor at Stockbridge until 1757, when he
+    was called to the presidency of the College of New Jersey (Princeton); he died in March 1758
+    after a smallpox inoculation. Working in the New England Puritan Reformed tradition, he wrote
+    on religious experience, freedom of the will, original sin and virtue, combining Reformed
+    theology with philosophical argument.
+  significance: >-
+    Edwards explains how a person can approve the good yet be morally unable to will it, and why
+    natural pity, gratitude and conscience can restrain vice without amounting to true virtue.
+    He is used for the moral psychology of the Reformed account, not as a general spokesman for
+    the tradition.
+  keyIdeas:
+    - Natural versus moral inability
+    - The will follows the strongest motive
+    - True virtue as benevolence to being in general
+    - Natural conscience distinct from true virtue
+    - Religious affections
+    - Original sin inferred from a universal tendency
   representativeWorks:
     - { title: A Treatise Concerning Religious Affections, year: 1746 }
-    - { title: Freedom of the Will, year: 1754 }
-    - { title: The Nature of True Virtue }
+    - { title: Freedom of the Will, year: 1754, sourceId: edwards-works-hickman-1 }
+    - { title: Original Sin, year: 1758, sourceId: edwards-works-hickman-1 }
+    - { title: The Nature of True Virtue, year: 1765, sourceId: edwards-works-hickman-1 }
+  notes: The Nature of True Virtue was written in the 1750s and published posthumously in 1765. Freedom of the Will and Original Sin are the usual short titles of longer original titles.
 
 - id: owen
   slug: john-owen
@@ -221,11 +328,33 @@
   birthYear: 1711
   deathYear: 1776
   description: Scottish philosopher and a major historical critic of natural theology, causation and induction.
+  bio: >-
+    David Hume (1711–1776) was born in Edinburgh and educated at the university there, then
+    worked on his first major book in France, where he lived from 1734. A Treatise of Human Nature
+    (1739–40) was followed by the two Enquiries (1748, 1751), political and moral essays and a
+    six-volume History of England (1754–62). He was refused academic posts at Edinburgh and
+    Glasgow, and earned his living as a librarian and in diplomatic service. An empiricist and
+    a central figure of the Scottish Enlightenment, he proposed a science of human nature built on
+    experience and observation. His Dialogues Concerning Natural Religion appeared posthumously
+    in 1779.
+  significance: >-
+    Hume is the classic naturalistic anatomy of human nature as a mix of benevolence and self-love,
+    with morality grounded in sentiment and sympathy rather than reason alone. He supplies the
+    historical form of the naturalist answer to why people are both good and bad, and he is also
+    used on the site as a historical critic of natural theology.
+  keyIdeas:
+    - Reason as servant of the passions
+    - Moral distinctions from sentiment
+    - Sympathy and the common point of view
+    - Justice as an artificial virtue
+    - Compatibilist liberty
+    - Uniformity of human nature
   representativeWorks:
-    - { title: A Treatise of Human Nature, year: 1739 }
+    - { title: A Treatise of Human Nature, year: 1739, sourceId: hume-treatise }
     - { title: An Enquiry Concerning Human Understanding, year: 1748, sourceId: hume-enquiry }
+    - { title: An Enquiry Concerning the Principles of Morals, year: 1751, sourceId: hume-epm }
     - { title: Dialogues Concerning Natural Religion, year: 1779 }
-  notes: Hume was not an atheist in a simple sense; he is included as a historical critic of natural theology.
+  notes: Hume was not an atheist in a simple sense; he is included as a historical critic of natural theology. The Treatise year is that of Books 1–2; Book 3 followed in 1740.
 
 - id: russell
   slug: bertrand-russell
@@ -237,9 +366,31 @@
   birthYear: 1872
   deathYear: 1970
   description: British philosopher and logician who argued against religious belief on philosophical and moral grounds.
+  bio: >-
+    Bertrand Russell (1872–1970) was born in Trellech, Monmouthshire, into the British
+    aristocracy and educated at Trinity College, Cambridge, where he later became a Fellow and
+    lecturer. With A. N. Whitehead he wrote Principia Mathematica (1910–13), and he was a founder
+    of twentieth-century analytic philosophy. He was also a prominent public intellectual:
+    imprisoned for pacifist activity in the First World War, an advocate of nuclear disarmament,
+    and the author of many popular works on religion, ethics and politics. He was awarded the
+    Nobel Prize in Literature in 1950.
+  significance: >-
+    Russell supplies a humanist framing of man as a product of purposeless causes who nonetheless
+    creates value through desire and love, with a sober, gradual remedy: knowledge, self-control
+    and sympathy. He is used for that stance toward human greatness and misery, not as the sole
+    voice of naturalism.
+  keyIdeas:
+    - Man as product of purposeless causes
+    - Value created by human desire and love
+    - The good life inspired by love and guided by knowledge
+    - No short cut to the good life
+    - Refusal to worship power
   representativeWorks:
     - { title: The Problems of Philosophy, year: 1912 }
+    - { title: Mysticism and Logic, year: 1918 }
+    - { title: What I Believe, year: 1925, sourceId: russell-what-i-believe }
     - { title: Why I Am Not a Christian, year: 1927 }
+  notes: Mysticism and Logic reprints "A Free Man's Worship" (first published 1903).
 
 - id: mackie
   slug: j-l-mackie
@@ -251,8 +402,27 @@
   birthYear: 1917
   deathYear: 1981
   description: Australian philosopher known for the logical argument from evil and for his error theory of morality.
+  bio: >-
+    John Leslie Mackie (1917–1981) was born in Sydney and educated at the University of Sydney and
+    at Oxford. He taught at the universities of Otago, Sydney and York, and from 1967 was a
+    Fellow of University College, Oxford; he was elected a Fellow of the British Academy in
+    1974. A leading figure in Australian and British analytic philosophy, he wrote on causation,
+    ethics and the philosophy of religion. His book Ethics: Inventing Right and Wrong (1977)
+    defended a moral error theory, and The Miracle of Theism (1982), published after his death,
+    gave an influential atheist critique of arguments for God.
+  significance: >-
+    Mackie represents the naturalist view that morality is a human device for counteracting
+    limited sympathies, and that its apparent objectivity is projected onto the world. He thus
+    states the sharpest naturalist alternative to the Christian claim that human dignity and moral
+    law are grounded in God.
+  keyIdeas:
+    - No objective values
+    - Argument from queerness
+    - Objectification of moral attitudes
+    - Morality as a device to counteract limited sympathies
+    - Logical problem of evil
   representativeWorks:
-    - { title: "Ethics: Inventing Right and Wrong", year: 1977 }
+    - { title: "Ethics: Inventing Right and Wrong", year: 1977, sourceId: mackie-ethics }
     - { title: The Miracle of Theism, year: 1982 }
   notes: Mackie's moral error theory is not shared by all naturalists.
 
@@ -266,8 +436,30 @@
   birthYear: 1942
   deathYear: 2024
   description: American philosopher who defended a naturalistic account of mind, consciousness and religion.
+  bio: >-
+    Daniel Dennett (1942–2024) was an American philosopher. After a degree at Harvard, he took a
+    doctorate at Oxford in 1965 under Gilbert Ryle, and for about five decades taught at Tufts
+    University, where he co-directed the Center for Cognitive Studies. Working in philosophy of
+    mind, cognitive science and evolutionary biology, he developed the intentional stance and a
+    naturalistic theory of consciousness, and defended a compatibilist account of free will in
+    evolutionary terms. He also wrote on religion as a natural phenomenon and was a prominent
+    public advocate of atheism and secular thought. He died in Portland, Maine.
+  significance: >-
+    Dennett gives a naturalist account of agency and responsibility that keeps persons, reasons and
+    selves real while explaining them as products of evolution and culture. He is used on the
+    question of what human capacities for deliberation and responsibility are, and how a naturalist
+    can speak of moral accountability.
+  keyIdeas:
+    - Intentional stance
+    - Self as center of narrative gravity
+    - Reasons-giving as a distinctively human layer of control
+    - Free will worth wanting
+    - Competence without comprehension
+    - Cultural evolution
   representativeWorks:
     - { title: Consciousness Explained, year: 1991 }
+    - { title: Freedom Evolves, year: 2003 }
+    - { title: "The Self as a Responding and Responsible Artifact", year: 2003, sourceId: dennett-self-artifact }
     - { title: "Breaking the Spell: Religion as a Natural Phenomenon", year: 2006 }
 
 - id: oppy
@@ -289,9 +481,31 @@
   displayOrder: 1
   usedFor: [ethics, naturalistic moral realism]
   schools: [Naturalistic moral realism]
+  birthYear: 1950
   description: American philosopher associated with a naturalistic moral realism on which objective moral facts are part of the natural world.
+  bio: >-
+    Peter Railton (born 1950) is an American philosopher and the Gregory S. Kavka Distinguished
+    University Professor at the University of Michigan, Ann Arbor, where he has taught since 1979.
+    He took his doctorate at Princeton in 1980 under David Lewis. Working in metaethics and
+    normative ethics, he is a leading defender of naturalistic moral realism, the view that moral
+    facts are natural facts that can be investigated and learned about. His best-known paper
+    "Moral Realism" appeared in the Philosophical Review in 1986, and his papers on ethics were
+    collected in Facts, Values, and Norms (2003).
+  significance: >-
+    Railton shows that a naturalist can hold that cruelty and exclusion are objectively wrong and that
+    moral learning tracks real facts, giving a naturalist account of both moral progress and moral
+    failure. He is used for ethics, as a contrast with error theory, not as representative of all
+    naturalists.
+  keyIdeas:
+    - Naturalistic moral realism
+    - Good as idealized interests
+    - Moral rightness as social rationality
+    - Feedback between wants and interests
+    - Moral progress without guarantee
   representativeWorks:
+    - { title: Moral Realism, year: 1986, sourceId: railton-moral-realism }
     - { title: "Facts, Values, and Norms", year: 2003 }
+  notes: Birth year and career details come from Wikipedia because the University of Michigan faculty page was unavailable; confirm against it.
 
 - id: rosenberg
   slug: alex-rosenberg
@@ -305,6 +519,78 @@
   representativeWorks:
     - { title: "The Atheist's Guide to Reality", year: 2011 }
   notes: Represents one demanding form of naturalism, not naturalism as a whole.
+
+- id: darwin
+  slug: charles-darwin
+  name: Charles Darwin
+  worldview: naturalism
+  role: specialist
+  displayOrder: 4
+  usedFor: [evolutionary origins of the moral sense, human nature]
+  schools: [Evolutionary biology]
+  birthYear: 1809
+  deathYear: 1882
+  description: English naturalist whose theory of evolution by natural selection, applied to humans in The Descent of Man, offers an account of the origin of the moral sense.
+  bio: >-
+    Charles Darwin (1809–1882) was born at Shrewsbury, England. He studied medicine at Edinburgh
+    and then took a Cambridge degree at Christ's College, and from 1831 spent nearly five years as
+    naturalist on HMS Beagle. He later lived at Down House in Kent. On the Origin of Species
+    (1859) set out the theory of evolution by natural selection; The Descent of Man (1871)
+    applied it to humans, treating mind, language and the moral sense as products of descent with
+    modification, and The Expression of the Emotions in Man and Animals followed in 1872. He died at
+    Downe and was buried in Westminster Abbey.
+  significance: >-
+    Darwin gives the founding evolutionary account of the moral sense as arising from social
+    instincts joined to intellect, and so of how the same animal nature can produce both sympathy and
+    cruelty. He is used for evolutionary anthropology, as the source of the explanation later
+    naturalists build on.
+  keyIdeas:
+    - Moral sense from social instincts plus intellect
+    - Conscience as backward-looking remorse
+    - Sympathy limited to one's own group but extendable
+    - Selection of social virtues among competing groups
+    - Continuity of human and animal minds
+  representativeWorks:
+    - { title: On the Origin of Species, year: 1859 }
+    - { title: "The Descent of Man, and Selection in Relation to Sex", year: 1871, sourceId: darwin-descent }
+    - { title: The Expression of the Emotions in Man and Animals, year: 1872 }
+  notes: Darwin described himself as an agnostic (letter to John Fordyce, 7 May 1879) and is used for evolutionary anthropology, not as a representative of atheism.
+
+- id: kitcher
+  slug: philip-kitcher
+  name: Philip Kitcher
+  worldview: naturalism
+  role: specialist
+  displayOrder: 5
+  usedFor: [pragmatic naturalist ethics, evolution of ethics]
+  schools: [Pragmatic naturalism, Philosophy of biology]
+  birthYear: 1947
+  description: British-born American philosopher of science who offers a pragmatist naturalist account of the origin and progress of ethics.
+  bio: >-
+    Philip Kitcher (born 1947) is a British-born American philosopher. He studied at Christ's
+    College, Cambridge, and took a doctorate at Princeton in 1974. He taught at Vermont,
+    Minnesota and the University of California, San Diego, before joining Columbia University,
+    where he is John Dewey Professor of Philosophy Emeritus. Known first for work in the
+    philosophy of science and biology, including critiques of creationism and sociobiology,
+    he later turned to ethics and secular humanism, writing Living with Darwin (2007), The Ethical
+    Project (2011) and Life After Faith (2014).
+  significance: >-
+    Kitcher gives the most developed philosophical naturalist account of the origin of ethics and of
+    moral progress: humans are incomplete psychological altruists, and ethics is a social technology
+    for remedying that failure. He answers the question about human goodness and badness with a
+    pragmatic, non-theistic history of how morality was built and refined.
+  keyIdeas:
+    - Humans as incomplete psychological altruists
+    - Altruism failures
+    - Ethics as social technology
+    - Moral progress as functional refinement
+    - Pragmatist (Deweyan) naturalism
+  representativeWorks:
+    - { title: Living with Darwin, year: 2007 }
+    - { title: The Ethical Project, year: 2011 }
+    - { title: Precis of The Ethical Project, year: 2012, sourceId: kitcher-ethical-project-precis }
+    - { title: "Life After Faith: The Case for Secular Humanism", year: 2014 }
+  notes: Represents one pragmatist form of naturalist ethics, not naturalism as a whole. His account of progress as functional refinement differs from moral realism (Railton) and error theory (Mackie).
 
 - id: quine
   slug: w-v-o-quine
@@ -333,10 +619,29 @@
   birthYear: 1138
   deathYear: 1204
   description: Physician, philosopher and codifier of Jewish law whose work joined rabbinic tradition with Aristotelian philosophy.
+  bio: >-
+    Moses ben Maimon (1138-1204), called Rambam, was born in Cordoba. His family left after the
+    Almohad conquest and eventually settled in Fustat, Egypt, in 1166. He completed his
+    Arabic Commentary on the Mishnah in 1168 and, around 1180, the Mishneh Torah, a
+    comprehensive code of Jewish law in Hebrew. His philosophical masterpiece, the Guide of the
+    Perplexed, was completed around 1190. He earned his living as a physician, later attached to
+    the court of Saladin's vizier al-Qadi al-Fadil, and was recognized as head of the Fustat Jewish
+    community. His authority was immense, and his thought was also contested from the start.
+  significance: >-
+    Maimonides gives the classic Jewish statements on free will, repentance, the divine image as intellect, the
+    training of character, and the claim that most human evils are self-inflicted. He is the main medieval
+    rationalist foil to Nachmanides on Eden and the origin of desire.
+  keyIdeas:
+    - Free choice as a foundation of Torah
+    - Repentance (teshuvah) as cessation, regret, resolve and confession
+    - The divine image as intellect
+    - Most evils are self-inflicted
+    - The ethical mean and the training of dispositions
   representativeWorks:
-    - { title: Mishneh Torah }
-    - { title: Guide of the Perplexed, sourceId: maimonides-guide }
-  notes: Birth year follows the usual dating; some sources give 1135.
+    - { title: "Commentary on the Mishnah (including the Eight Chapters, Shemonah Perakim)", year: 1168, sourceId: maimonides-eight-chapters }
+    - { title: Mishneh Torah, year: 1180, sourceId: maimonides-mishneh-torah-touger }
+    - { title: Guide of the Perplexed, year: 1190, sourceId: maimonides-guide-friedlander }
+  notes: Birth year follows SEP (1138); some sources give 1135 or 1137. Mishneh Torah and Guide years are completion dates (the Guide's is sometimes given as c. 1185-1190). Registry sourceId maimonides-guide should be reconciled with maimonides-guide-friedlander.
 
 - id: halevi
   slug: judah-halevi
@@ -345,12 +650,32 @@
   role: primary
   displayOrder: 2
   schools: [Medieval Jewish philosophy]
-  birthYear: 1075
+  era: c. 1075–1141
   deathYear: 1141
   description: Poet and philosopher who defended revealed religion and the particular vocation of Israel against philosophical rationalism.
+  bio: >-
+    Judah Halevi was born around 1075 in Toledo or Tudela in al-Andalus and was trained in
+    Hebrew and Arabic learning. He lived in Muslim and Christian Spain, practiced medicine, and
+    became one of the greatest Hebrew poets of the Middle Ages, writing secular verse, liturgical
+    poems and poems of longing for Zion. His philosophical work, the Kuzari, is a dialogue
+    between a king and a Jewish sage, written in Arabic and revised during the 1130s. It defends
+    Judaism as grounded in public revelation and tradition, and criticizes Aristotelian
+    philosophy. In 1140 he left Spain for Egypt, intending to reach the Land of Israel, and he
+    died around 1141.
+  significance: >-
+    Halevi offers a hierarchy of natural, animal, rational and divine levels of existence and sees human excellence as
+    ordered rather than suppressed desire under divine influence. He also provides a Jewish counterweight to
+    Maimonidean rationalism.
+  keyIdeas:
+    - The divine influence (amr ilahi)
+    - Tradition and public revelation over speculation
+    - Degrees of being
+    - The election of Israel and the Land
+    - Ordered rather than suppressed desire
   representativeWorks:
-    - { title: The Kuzari, sourceId: halevi-kuzari }
-  notes: Dates are approximate.
+    - { title: "The Kuzari (Kitab al-Hujja wa-l-Dalil fi Nusr al-Din al-Dhalil)", sourceId: halevi-kuzari-hirschfeld }
+    - { title: Poems of Zion }
+  notes: Birth place and year are approximate. Registry sourceId halevi-kuzari should be reconciled with halevi-kuzari-hirschfeld.
 
 - id: soloveitchik
   slug: joseph-b-soloveitchik
@@ -362,9 +687,30 @@
   birthYear: 1903
   deathYear: 1993
   description: Talmudist and philosopher who gave modern Orthodoxy a religious anthropology and an account of halakhic life.
+  bio: >-
+    Joseph Ber Soloveitchik (1903-1993) was born in Pruzhany, then in the Russian Empire, into
+    a family of Lithuanian Talmudists of the Brisker tradition. He earned a doctorate at the
+    University of Berlin in 1932 with a dissertation on the philosophy of Hermann Cohen. He
+    emigrated to the United States and settled in Boston, where he founded the Maimonides School
+    in 1937. From 1941 until 1986 he led the rabbinic training programme at Yeshiva University's
+    RIETS, ordaining some two thousand rabbis. His essays, such as Halakhic Man and The Lonely
+    Man of Faith, combine Talmudic method with neo-Kantian and existentialist philosophy. He
+    died in Boston.
+  significance: >-
+    Soloveitchik offers a modern Jewish anthropology of two Adams, one majestic and creative, one covenantal and
+    obedient, and grounds dignity in responsibility. He speaks directly to technology, creativity and civilization in
+    this question.
+  keyIdeas:
+    - Adam the first and Adam the second
+    - Dignity as responsibility
+    - Majesty and covenant as complementary
+    - Halakhic man as creator
+    - Loneliness and the covenantal community
   representativeWorks:
-    - { title: Halakhic Man, sourceId: soloveitchik-halakhic-man }
-    - { title: The Lonely Man of Faith, year: 1965 }
+    - { title: "Halakhic Man (Ish ha-Halakhah)", year: 1944, sourceId: soloveitchik-halakhic-man }
+    - { title: The Lonely Man of Faith, year: 1965, sourceId: soloveitchik-lonely-man-of-faith }
+    - { title: Kol Dodi Dofek, year: 1956 }
+  notes: Years are those of first publication (Halakhic Man in Hebrew, 1944; English translation 1983).
 
 - id: saadia
   slug: saadia-gaon
@@ -376,8 +722,29 @@
   birthYear: 882
   deathYear: 942
   description: Head of the Sura academy who gave the first systematic philosophical defense of rabbinic Judaism.
+  bio: >-
+    Saadia ben Joseph (882-942) was born in the Fayyum in Egypt and worked in Palestine,
+    Syria and Iraq. In 928 he was appointed gaon, or head, of the Sura academy in Babylonia,
+    and he spent his later years in Baghdad, where he died. Writing in Arabic within the
+    intellectual world of early Islamic kalam, he composed the Book of Beliefs and Opinions
+    (completed 933), usually regarded as the first systematic work of Jewish philosophy. He
+    also produced an Arabic translation of the Bible with commentary, a commentary on the Sefer
+    Yetzirah, a prayer book, and works on grammar, law and the calendar. He defended rabbinic
+    Judaism against Karaite and other critics.
+  significance: >-
+    Saadia supplies an early Jewish account of why humans, as the creatures endowed with wisdom, are commanded, judged
+    and free, and so of both human dignity and accountability. On the site he also anchors the claim that reason and
+    revelation are complementary sources of knowledge.
+  keyIdeas:
+    - Reason and revelation as joint sources of knowledge
+    - Rational and revelational commandments
+    - Humanity as the purpose and culmination of creation
+    - Free choice without divine compulsion
+    - Reward and punishment as just
   representativeWorks:
-    - { title: The Book of Beliefs and Opinions (Emunot ve-De'ot) }
+    - { title: "The Book of Beliefs and Opinions (Kitab al-Amanat wa-l-I'tiqadat; Emunot ve-De'ot)", year: 933, sourceId: saadia-emunot-ibn-tibbon }
+    - { title: Arabic translation of the Torah (Tafsir) }
+    - { title: Siddur (prayer book) }
 
 - id: nachmanides
   slug: nachmanides
@@ -389,8 +756,30 @@
   birthYear: 1194
   era: 1194–c. 1270
   description: Spanish Talmudist and biblical commentator who combined halakhic scholarship with mystical interpretation and defended Judaism in the Barcelona disputation.
+  bio: >-
+    Moses ben Nahman (1194-c. 1270), known as Nachmanides or the Ramban, was born in Girona in
+    Catalonia, where he became a leading rabbi and Talmudist, and he was later regarded as the
+    chief rabbi of Catalonia. He wrote novellae on the Talmud, legal works including Torat
+    ha-Adam, and Milhamot ha-Shem, a defence of Alfasi against criticism. In 1263 he represented
+    Judaism in the Barcelona Disputation against the convert Pablo Christiani. Forced to leave
+    Spain, he emigrated to the Land of Israel in 1267 and died in Acre around 1270. His Torah
+    commentary, completed late in life, joins plain-sense exegesis with Kabbalistic allusion.
+  significance: >-
+    Nachmanides reads the tree of knowledge as the origin of human will and desire, and the messianic healing of the
+    heart as its remedy, the strongest medieval alternative to Maimonides on Eden. He gives the Jewish lane an
+    account in which choice is both godlike and a burden.
+  keyIdeas:
+    - Original human nature acting naturally, as the heavens do
+    - Choice as godlike yet burdensome
+    - Divine assistance to the person who seeks purity
+    - Messianic restoration of natural goodness
+    - Kabbalistic layers within the plain sense of Torah
   representativeWorks:
-    - { title: Commentary on the Torah }
+    - { title: Commentary on the Torah, sourceId: ramban-torah-chavel }
+    - { title: Torat ha-Adam }
+    - { title: Milhamot ha-Shem }
+    - { title: Sefer ha-Vikkuah (account of the 1263 disputation) }
+  notes: Often critical of Maimonidean positions.
 
 # --- Classical Islam ---------------------------------------------------------------------
 - id: ash-ari
@@ -400,13 +789,30 @@
   role: primary
   displayOrder: 1
   schools: [Ash'ari kalam]
-  birthYear: 874
-  deathYear: 936
+  era: c. 873/4–935/6
   description: Theologian whose method gave rise to the Ash'ari school of Sunni kalam.
+  bio: >-
+    Abu al-Hasan 'Ali ibn Isma'il al-Ash'ari was born in Basra around 874 and died in Baghdad
+    around 936. He studied under the Mu'tazili theologian al-Jubba'i and held Mu'tazili views
+    until, around the age of forty, he broke with the school. Tradition attributes his change
+    to dreams of the Prophet in Ramadan. He then defended the creed of the Sunni traditionists
+    using the rational methods of kalam. His surviving writings include the Maqalat
+    al-Islamiyyin, a survey of Muslim sects, the Kitab al-Luma', and the al-Ibana. His
+    followers developed the Ash'ari school, which became dominant in Sunni theology.
+  significance: >-
+    Al-Ash'ari supplies the framework that al-Ghazali inherits: God creates all acts, humans "acquire" them (kasb), and
+    moral obligation comes from revelation. The site uses him for the Sunni kalam view of will and responsibility.
+  keyIdeas:
+    - God's will and power extend to all events, including human acts
+    - Acquisition (kasb) as the human relation to created acts
+    - Obligation grounded in revelation, not in intrinsic moral properties
+    - Divine attributes affirmed "without asking how"
+    - Rational kalam used to defend scriptural doctrine
   representativeWorks:
     - { title: Maqalat al-Islamiyyin }
     - { title: Kitab al-Luma' }
-  notes: Dates are approximate.
+    - { title: "al-Ibana 'an Usul al-Diyana (The Elucidation of Islam's Foundation)", sourceId: ashari-ibana-klein }
+  notes: Dates are approximate. The authenticity of al-Ibana is questioned by some scholars.
 
 - id: maturidi
   slug: al-maturidi
@@ -417,9 +823,28 @@
   schools: [Maturidi kalam]
   deathYear: 944
   description: Samarqand theologian and eponym of the Maturidi school of Sunni kalam.
+  bio: >-
+    Abu Mansur Muhammad al-Maturidi died in Samarqand in 944 (333 AH); his birth date is
+    unknown. He came from Maturid, a district of Samarqand in Transoxiana, and belonged to the
+    Hanafi legal tradition. His main works are the Kitab al-Tawhid, a systematic theological
+    treatise, and the Ta'wilat, a large commentary on the Qur'an. He defended Sunni belief
+    against Mu'tazili and other rivals using reasoned argument. Later scholars in
+    Transoxiana and beyond built on his work, and the Maturidi school became the dominant
+    theology among Hanafi Muslims, alongside the Ash'ari school.
+  significance: >-
+    Al-Maturidi represents the Hanafi-Maturidi strand, with greater confidence than the Ash'aris in reason's moral
+    competence and in real human choice. He gives the Islamic lane a second, distinct Sunni account of freedom and
+    responsibility.
+  keyIdeas:
+    - Knowing God is rationally obligatory
+    - Reason can often know good and bad, though revelation is final
+    - Human nature as natural constitution plus intellect
+    - Real choice (ikhtiyar) within God's creation of acts
+    - Divine wisdom (hikma) grounding the moral order
   representativeWorks:
     - { title: Kitab al-Tawhid }
-  notes: Death date is approximate; the date of birth is unknown.
+    - { title: Ta'wilat (Qur'an commentary) }
+  notes: Death date is firm; birth is unknown. Some modern sources give c. 852, which is not securely attested.
 
 - id: ghazali
   slug: al-ghazali
@@ -428,12 +853,35 @@
   role: primary
   displayOrder: 4
   schools: [Ash'ari kalam, Sufism]
-  birthYear: 1058
+  era: c. 1056–1111
   deathYear: 1111
   description: Theologian, jurist and mystic whose critique of the philosophers and synthesis of kalam and Sufism were widely influential.
+  bio: >-
+    Abu Hamid Muhammad al-Ghazali was born in 1055 or 1056 at Tabaran-Tus in Khurasan and died
+    in 1111. A Shafi'i jurist and Ash'ari theologian, he studied at Nishapur and in 1091 was
+    appointed to the Nizamiyya madrasa in Baghdad. In 1095, after a personal crisis, he left
+    his post, and he subsequently adopted the Sufi path, performing the pilgrimage in 1096.
+    He taught again at the Nizamiyya in Nishapur from 1106, while also maintaining a private school and
+    Sufi convent in Tus. His works include the Incoherence of the Philosophers (c. 1095) and
+    the Revival of the Religious Sciences, a compendium of religious practice and ethics.
+  significance: >-
+    The Ihya' gives the fullest classical Sunni moral psychology of heart, self, desire, sin and repentance, which
+    is why al-Ghazali is the main Islamic source on how one nature is both great and fallen. He also sets the
+    Sunni relation between kalam, Sufism and philosophy.
+  keyIdeas:
+    - The heart (qalb) as a subtle, lordly reality and the true self
+    - Four qualities within each person (brutish, predatory, demonic, lordly)
+    - The heart as a mirror and sin as rust
+    - Virtue as balance of faculties acquired by discipline (riyada)
+    - Repentance as knowledge, remorse and action
+    - Moral value known through revelation (Ash'ari)
   representativeWorks:
-    - { title: Tahafut al-Falasifa }
-    - { title: Ihya' 'Ulum al-Din }
+    - { title: "Ihya' 'Ulum al-Din, Book 21: The Marvels of the Heart", sourceId: ghazali-marvels-heart }
+    - { title: "Ihya' 'Ulum al-Din, Books 22-23: On Disciplining the Soul and On Breaking the Two Desires", sourceId: ghazali-disciplining-soul }
+    - { title: "Ihya' 'Ulum al-Din, Book 31: On Repentance", sourceId: ghazali-repentance-stern }
+    - { title: Tahafut al-Falasifa, year: 1095 }
+    - { title: al-Munqidh min al-Dalal }
+  notes: Birth year corrected from the registry's 1058 to c. 1056 (SEP, from his own letters and autobiography); 1058-59 is a later historians' dating. Tahafut year is approximate.
 
 - id: razi
   slug: fakhr-al-din-al-razi
@@ -443,7 +891,7 @@
   displayOrder: 5
   schools: [Ash'ari kalam, Philosophical theology]
   birthYear: 1149
-  deathYear: 1209
+  deathYear: 1210
   description: Theologian, philosopher and Qur'an commentator who integrated Avicennan philosophy into Ash'ari kalam.
   representativeWorks:
     - { title: Mafatih al-Ghayb }
@@ -459,9 +907,30 @@
   birthYear: 1263
   deathYear: 1328
   description: Damascene jurist and theologian who argued from revelation against kalam and philosophical rationalism.
+  bio: >-
+    Taqi al-Din Ahmad ibn Taymiyya (1263-1328) was born in Harran, in what is now southeastern
+    Turkey, and raised in Damascus after his family left in the face of the Mongol advance. A
+    Hanbali jurist, he inherited his father's teaching post at the Sukkariyya madrasa in 1284.
+    He issued influential legal opinions, wrote against Ash'ari and philosophical theology, Shi'i
+    doctrine and some Sufi practices, and took part in public life in Syria. His positions led
+    to repeated trials and several periods of imprisonment in Cairo, Alexandria and Damascus,
+    and he died in the Damascus citadel in 1328.
+  significance: >-
+    Ibn Taymiyya offers the strongest account of the fitra, an innate disposition to know and worship God that
+    includes moral intuitions, and of humans as beings who necessarily love and worship something. He is the main
+    Athari alternative to Ash'ari and Maturidi kalam on human nature and agency.
+  keyIdeas:
+    - The fitra as innate disposition, perfected by prophecy
+    - Humans necessarily love and worship something
+    - God creates acts through human will and power
+    - Divine acts have wise purposes
+    - Revealed law as coextensive with justice and benefit
+    - Revelation and sound reason do not truly conflict
   representativeWorks:
     - { title: al-'Aqida al-Wasitiyya }
-    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql" }
+    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql (Averting the Conflict between Reason and Revealed Tradition)" }
+    - { title: "al-Siyasa al-Shar'iyya (Law-Guided Public Policy)" }
+  notes: Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP). Wasitiyya date not verified.
 
 - id: ibn-sina
   slug: avicenna-ibn-sina
@@ -473,10 +942,32 @@
   birthYear: 980
   deathYear: 1037
   description: Philosopher and physician whose metaphysics of the Necessary Existent shaped later Islamic theology and philosophy.
+  bio: >-
+    Abu 'Ali al-Husayn ibn Sina (c. 980-1037) was born at Afshana near Bukhara and educated
+    there. He worked as a physician and counsellor to rulers across Iran and Central Asia,
+    served as a vizier at Hamadan, and spent his last years in Isfahan under the Kakuyid
+    ruler 'Ala' al-Dawla, dying at Hamadan in 1037. In the Peripatetic tradition of falsafa, he
+    developed a comprehensive philosophical system in the Book of Healing (al-Shifa'),
+    completed around 1020, and the later Pointers and Reminders. His Canon of Medicine was a
+    standard medical text for centuries. His metaphysics of the Necessary Existent and his
+    psychology of the soul influenced Muslim, Jewish and Latin Christian thinkers.
+  significance: >-
+    Ibn Sina offers the philosophical account of human greatness as the perfection of the rational soul through
+    knowledge, and of evil as privation. He represents falsafa, which is not identical with kalam: Ash'ari and
+    other theologians accepted parts of his thought and rejected others.
+  keyIdeas:
+    - Immaterial rational soul
+    - Internal senses, including estimation (wahm)
+    - Happiness as the intellectual perfection of the soul
+    - Prophecy as supremely developed intellect and imagination
+    - Evil as privation in a world of generation and corruption
+    - Necessary Existent and contingent beings
   representativeWorks:
-    - { title: The Book of Healing (al-Shifa') }
+    - { title: "The Book of Healing (al-Shifa')", year: 1020 }
+    - { title: al-Najat }
     - { title: al-Isharat wa-l-Tanbihat }
-  notes: Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
+    - { title: Canon of Medicine }
+  notes: Birth year is conventionally given as c. 980 (370 AH). The Shifa' year is the approximate completion date. Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
 
 - id: ibn-arabi
   slug: ibn-arabi
@@ -489,10 +980,28 @@
   birthYear: 1165
   deathYear: 1240
   description: Andalusian mystic and author of an influential Sufi metaphysics of divine self-disclosure.
+  bio: >-
+    Muhyi al-Din Ibn al-'Arabi (1165-1240) was born in Murcia in al-Andalus and educated in
+    Seville. He left the Muslim West in 1200 and went to Mecca, where he began writing his
+    vast work al-Futuhat al-Makkiyya around 1202. After travelling through Syria, Iraq and
+    Anatolia, he settled in Damascus in 1223 and remained there until his death in 1240. In
+    1229 he composed the shorter Fusus al-Hikam, which became the subject of more than a hundred
+    commentaries. His writings on the divine names, the cosmos and the Perfect Human shaped later
+    Sufism and Islamic philosophy.
+  significance: >-
+    Ibn Arabi gives the human as the comprehensive being able to realise every divine name, and hence every
+    possibility, high and low. His views are contested within Sunni thought, so he serves as a specialist source for
+    mystical theology and not as the default Islamic account.
+  keyIdeas:
+    - The human created in the form of the all-comprehensive name Allah
+    - Deiformity (takhalluq bi-asma' Allah)
+    - The Perfect Human (al-insan al-kamil)
+    - Divine self-disclosure
+    - Creative command versus prescriptive command
   representativeWorks:
-    - { title: Fusus al-Hikam }
-    - { title: al-Futuhat al-Makkiyya }
-  notes: Used for mystical theology. His views are contested within mainstream Sunni thought and should not be treated as the default Islamic account.
+    - { title: al-Futuhat al-Makkiyya, year: 1202 }
+    - { title: Fusus al-Hikam, year: 1229 }
+  notes: Futuhat year is the start of composition (drafts completed 1231 and 1238). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.
 
 # --- Hindu traditions --------------------------------------------------------------------
 - id: shankara
@@ -502,10 +1011,23 @@
   role: primary
   displayOrder: 1
   schools: [Advaita Vedanta]
-  era: 8th century CE (dates debated)
+  era: 8th century CE (dates debated; proposals include 788–820, 700–750, or late 7th–early 8th century)
   description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
+  bio: >-
+    Shankara (Śaṅkara) was a Sanskrit commentator whose dates are debated: older scholarship gave 788–820 CE, Nakamura proposed 700–750, and others the late seventh or early eighth century. No dependable historical record of his life survives beyond his writings. Hagiographies composed centuries later place his birth in Kerala, describe him as a young renouncer and travelling teacher, and say he died at thirty-two; these details are traditional, not verified. He was a systematizer rather than the founder of Advaita Vedanta, a pupil of Govinda, who was himself a pupil of Gaudapada. His earliest complete extant commentaries treat the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, and he also wrote the Upadeshasahasri. Many other texts are attributed to him but probably come from later monastic leaders.
+  significance: Shankara supplies the classical non-dual Vedanta account of human greatness and failure, tracing misery and wrongdoing to a beginningless misidentification of the self, and his Gita commentary analyses how desire veils knowledge. Advaita is one Hindu school among several and must not stand for Hindu traditions as a whole.
+  keyIdeas:
+    - Adhyāsa (superimposition)
+    - Avidyā (ignorance)
+    - Identity of ātman and brahman
+    - Two levels of reality
+    - Sākṣin (witness-consciousness)
+    - Knowledge as the means of liberation
   representativeWorks:
-    - { title: Brahma-sutra-bhashya }
+    - { title: Brahmasutra-bhashya, sourceId: thibaut-shankara-brahmasutra }
+    - { title: Bhagavad-gita-bhashya, sourceId: sastri-gita-shankara }
+    - { title: Upanishad commentaries }
+    - { title: Upadeshasahasri }
   notes: Advaita is one Hindu school and must not stand for Hindu traditions as a whole.
 
 - id: ramanuja
@@ -515,10 +1037,23 @@
   role: primary
   displayOrder: 2
   schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
-  era: 11th–12th century CE
+  era: traditionally 1017–1137 CE; recent scholarship proposes 1077–1157
   description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
+  bio: >-
+    Ramanuja (Rāmānuja) is traditionally dated 1017–1137 CE, though recent scholarship proposes 1077–1157. He was born at Sriperumbudur near modern Chennai into a Tamil-speaking Brahmin family and studied at Kanchipuram under Yadavaprakasha, with whom he came to disagree. He became the leading figure of the Sri Vaishnava community, a Tamil devotional tradition shaped by Yamunacarya, and set out its philosophy in Sanskrit for a pan-Indian audience. His main works are the Sri Bhashya on the Brahma Sutras, the Vedarthasamgraha, and a commentary on the Bhagavad Gita. Some scholars question the authenticity of the Gadyatraya and some shorter works. He articulated Vishishtadvaita, "qualified non-dualism", and defended theism against non-dualist readings of Vedanta.
+  significance: Ramanuja offers a theistic Vedanta account in which the individual self is real, eternal and a mode of God, its knowledge contracted by karma and restored through devotion and surrender. This contrasts with Advaita and shows internal diversity within Hindu answers on human dignity and evil.
+  keyIdeas:
+    - Viśiṣṭādvaita (qualified non-dualism)
+    - Body–soul (śarīra–śarīrin) relation of world to God
+    - Real, individual selves
+    - Karma contracting the self's knowledge
+    - Bhakti and prapatti (surrender)
+    - Critique of Advaita avidyā
   representativeWorks:
-    - { title: Sri Bhashya }
+    - { title: Sri Bhashya, sourceId: thibaut-ramanuja-sribhashya }
+    - { title: Vedarthasamgraha }
+    - { title: Bhagavad-gita-bhashya, sourceId: govindacharya-gita-ramanuja }
+    - { title: Gadyatraya (authenticity contested) }
 
 - id: madhva
   slug: madhva
@@ -527,10 +1062,21 @@
   role: primary
   displayOrder: 3
   schools: [Dvaita Vedanta]
-  era: 13th century CE
+  era: 13th–14th century CE (traditionally 1238–1317)
   description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
+  bio: >-
+    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated 1238–1317 CE. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main centre at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works such as the Anuvyakhyana. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of both Advaita and Vishishtadvaita.
+  significance: Madhva makes souls permanently distinct, dependent agents with differing natures, which changes how Hindu traditions answer questions about dignity, merit and evil. He extends the project's range beyond Advaita and Vishishtadvaita.
+  keyIdeas:
+    - Pañcabheda (five fundamental differences)
+    - Svatantra and paratantra (independent and dependent reality)
+    - Tāratamya (gradation of souls)
+    - Realism (Tattvavāda)
+    - Liberation through Viṣṇu's grace and bhakti
   representativeWorks:
-    - { title: Brahma-sutra-bhashya }
+    - { title: Brahmasutra-bhashya, sourceId: subbarau-madhva-brahmasutra }
+    - { title: Anuvyakhyana }
+    - { title: Bhagavad-gita-bhashya }
 
 - id: udayana
   slug: udayana
@@ -552,11 +1098,21 @@
   role: primary
   displayOrder: 5
   schools: [Mimamsa]
-  era: c. 7th century CE
+  era: flourished c. 660 CE
   description: Mimamsa philosopher who defended the authority of the Veda and developed theories of language and knowledge.
+  bio: >-
+    Kumarila Bhatta (Kumārila Bhaṭṭa) flourished around 660 CE, a contemporary of the Buddhist logician Dharmakirti. Little is securely known of his life; there is some evidence that he came from South India. He belonged to Purva Mimamsa, the school concerned with interpreting the Vedic ritual texts and the nature of dharma, and gave his name to the Bhatta sub-school. His main works are the Slokavarttika, a verse treatise on epistemology and language; the Tantravarttika, on the interpretation of the Veda; and the Tuptika. A longer commentary, the Brhattika, is lost. He engaged critically with Buddhist philosophers, especially Dignaga and Dharmakirti, and his arguments influenced later Buddhist thought.
+  significance: Kumarila shows how Vedic authority and the intrinsic reliability of knowledge ground Hindu accounts of moral knowledge, and his defence of an enduring self underwrites responsibility across lives against the Buddhist no-self view. He is used chiefly for knowledge, language and authority.
+  keyIdeas:
+    - Svataḥ prāmāṇya (intrinsic validity of cognition)
+    - Apauruṣeyatva (authorless Veda)
+    - Dharma known through Vedic injunction
+    - Realism about universals and language
+    - Enduring self against Buddhist no-self
   representativeWorks:
-    - { title: Slokavarttika }
+    - { title: Slokavarttika, sourceId: jha-slokavarttika }
     - { title: Tantravarttika }
+    - { title: Tuptika }
   notes: Represents Mimamsa, particularly Vedic authority, language and epistemology.
 
 - id: abhinavagupta
@@ -580,10 +1136,20 @@
   role: primary
   displayOrder: 1
   schools: [Theravada]
-  era: 5th century CE
+  era: flourished early 5th century CE
   description: Commentator who systematized the Theravada understanding of the Pali Canon.
+  bio: >-
+    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century CE. Tradition and the Pali chronicles hold that he was an Indian monk who travelled to Sri Lanka during the reign of Mahanama, who was reigning in 428, and worked at the Mahavihara monastery in Anuradhapura, where he rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopaedic summary of Mahavihara Theravada doctrine and meditation, organised around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures since at least the twelfth century.
+  significance: Buddhaghosa gives the most systematic Theravada map of the mental factors behind good and evil and of their purification, supplying the Theravada side of the Buddhist answer to human greatness and failure.
+  keyIdeas:
+    - Path of purification (virtue, concentration, understanding)
+    - Near and far enemies of the divine abidings
+    - Conscience and moral dread as guardians of the world
+    - Dependent origination without a creator
+    - Anusaya (latent tendencies)
   representativeWorks:
     - { title: Visuddhimagga, sourceId: buddhaghosa-path-of-purification }
+    - { title: Commentaries on the Pali Nikayas }
 
 - id: nagarjuna
   slug: nagarjuna
@@ -592,10 +1158,21 @@
   role: primary
   displayOrder: 2
   schools: [Madhyamaka, Mahayana]
-  era: c. 2nd–3rd century CE
+  era: c. 150–250 CE
   description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
+  bio: >-
+    Nagarjuna (Nāgārjuna) lived roughly between 150 and 250 CE, probably in southern India, and was a Buddhist monk. Very little can be said precisely about his life, and the traditional biographies, with their legends of serpent-spirits (nagas), are largely legendary. Works were often attributed to him later, and more than one author named Nagarjuna may be involved, though scholars generally accept groups of argumentative works, hymns and letters as his. His most important work is the Mulamadhyamakakarika, about 450 verses arguing that nothing has intrinsic nature (svabhava). He is regarded as the founder of Madhyamaka, the "Middle Way" school, and a reading of him as Prasangika became the official position of Tibetan Buddhism.
+  significance: Nagarjuna shows how moral agency and transformation can be understood without a substantial self, and argues that emptiness makes action and ethics possible rather than undermining them. He anchors the Madhyamaka strand used across the site.
+  keyIdeas:
+    - Śūnyatā (emptiness) as absence of svabhāva
+    - Emptiness identified with dependent origination
+    - Two truths
+    - Mutual dependence of agent and action
+    - Defilements from conceptual proliferation (prapañca)
   representativeWorks:
     - { title: Mulamadhyamakakarika, sourceId: nagarjuna-mmk }
+    - { title: Ratnavali }
+    - { title: Vigrahavyavartani }
 
 - id: vasubandhu
   slug: vasubandhu
@@ -604,11 +1181,22 @@
   role: primary
   displayOrder: 3
   schools: [Abhidharma, Yogacara]
-  era: 4th or 5th century CE
+  era: 4th or 5th century CE (dating disputed)
   description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
+  bio: >-
+    Vasubandhu lived in the fourth or fifth century CE, in the Gupta period; the dating is disputed. Tradition makes him a native of Gandhara who studied in Kashmir and later lived at Ayodhya under royal patronage. He wrote the Abhidharmakosa and its commentary, a systematic treatment of Abhidharma from a Sarvastivada and Sautrantika standpoint, and is also credited with Yogacara works, including the Twenty Verses, the Thirty Verses and the Exposition of the Three Natures. Since the 1950s some scholars, following Frauwallner, have argued that two authors of this name were merged into one; others defend a single author. His writings treat no-self, momentariness, karma as intention and "appearance-only" (vijnaptimatra).
+  significance: Vasubandhu's doctrine of latent tendencies and, in Yogacara, the storehouse and afflicted mind give a deep Buddhist account of habitual, pre-reflective disorder, which bears on the "terrible" half of the question.
+  keyIdeas:
+    - Karma as intention (cetanā)
+    - Anuśaya (latent tendencies)
+    - Ālayavijñāna (storehouse consciousness)
+    - Vijñaptimātra (appearance-only)
+    - Three natures (trisvabhāva)
   representativeWorks:
-    - { title: Abhidharmakosa }
-    - { title: Vimshatika }
+    - { title: Abhidharmakosa and Bhashya }
+    - { title: Vimshatika (Twenty Verses) }
+    - { title: Trimshika (Thirty Verses), sourceId: vasubandhu-trimsika }
+    - { title: Trisvabhavanirdesha }
 
 - id: shantideva
   slug: shantideva
@@ -618,10 +1206,20 @@
   displayOrder: 1
   usedFor: [ethics, the bodhisattva path]
   schools: [Madhyamaka, Mahayana]
-  era: 8th century CE
+  era: late 7th to mid-8th century CE
   description: Indian Mahayana poet-monk whose work sets out the path of the bodhisattva.
+  bio: >-
+    Shantideva (Śāntideva) lived between the late seventh and mid-eighth century CE and is thought to have studied at the monastic university of Nalanda in northern India. He is associated with Madhyamaka, and Tibetan tradition counts him as a Prasangika. Knowledge of his life comes mainly from later Tibetan accounts. One legend says that fellow monks, who thought him idle, asked him for an original composition; he recited the Bodhicaryavatara, rose into the air, and vanished at the verses on emptiness. This story is traditional. The Bodhicaryavatara ("Entering the Bodhisattva's Way of Life") is a poem of about a thousand verses on generating the awakening mind and practising the perfections. He also compiled the Shiksasamuccaya, an anthology of Mahayana sutra passages with commentary.
+  significance: Shantideva gives the most penetrating Buddhist first-person account of weakness of will, self-cherishing and the sources of suffering, and his bodhisattva ideal is the Mahayana picture of human greatness. He is used chiefly for ethics.
+  keyIdeas:
+    - Bodhicitta (awakening mind)
+    - The precious human birth
+    - Afflictions as inner enemies
+    - Patience grounded in conditionality
+    - Equalising and exchanging self and other
   representativeWorks:
     - { title: Bodhicaryavatara, sourceId: shantideva-bodhicaryavatara }
+    - { title: Shiksasamuccaya }
 
 - id: dogen
   slug: dogen
@@ -634,8 +1232,19 @@
   birthYear: 1200
   deathYear: 1253
   description: Japanese Zen master who founded the Soto school in Japan and wrote on practice, time and enlightenment.
+  bio: >-
+    Dogen (Dōgen, 1200–1253) was a Japanese Buddhist monk who founded the Soto school of Zen in Japan, one of the two Zen traditions still flourishing there. He studied Chan in Song China before returning to Japan to teach. His major work is the Shobogenzo, a collection of essays in Japanese on practice, time and Buddha-nature, written over many years. He taught shikantaza, "just sitting", as the expression of an enlightenment already present, and developed concepts such as practice-realisation and being-time.
+  significance: Dogen gives a non-substantialist account of Buddha-nature and the unity of practice and realisation, and a distinctive reading of the gap between knowing and doing the good. He is used for questions of practice, time and the nature of awakening.
+  keyIdeas:
+    - Shushō ittō (practice-realisation as one)
+    - Shikantaza (just sitting)
+    - Entire being as Buddha-nature
+    - Uji (being-time)
+    - Study of the self as forgetting the self
   representativeWorks:
-    - { title: Shobogenzo }
+    - { title: Shobogenzo, sourceId: dogen-shobogenzo }
+    - { title: Bendowa }
+    - { title: Eihei Koroku }
 
 - id: tsongkhapa
   slug: tsongkhapa
@@ -647,8 +1256,20 @@
   birthYear: 1357
   deathYear: 1419
   description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
+  bio: >-
+    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and trained in Central Tibet under teachers including Rendawa Shonu Lodro, his principal master in epistemology and Madhyamaka. He founded Ganden Monastery in 1409, which became the base of the Gelug school; Drepung and Sera followed soon after. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
+  significance: Tsongkhapa integrates the value of human life, renunciation, compassion and the view of emptiness into one graded path, so that the ethical person remains conventionally real. He represents the Tibetan synthesis in the Buddhist lane.
+  keyIdeas:
+    - Lamrim (stages of the path)
+    - Freedoms and advantages of human life
+    - Three principal aspects of the path
+    - Identifying the object of negation
+    - Emptiness compatible with dependent origination
   representativeWorks:
-    - { title: Lamrim Chenmo }
+    - { title: Lamrim Chenmo, year: 1402 }
+    - { title: Three Principal Aspects of the Path, sourceId: tsongkhapa-three-principal-aspects }
+    - { title: Legs bshad snying po (Essence of Eloquence), year: 1407 }
+    - { title: Rigs pa'i rgya mtsho (Ocean of Reasoning), year: 1408 }
 
 - id: dharmakirti
   slug: dharmakirti
@@ -657,9 +1278,21 @@
   role: primary
   displayOrder: 4
   schools: [Buddhist epistemology, Yogacara-Sautrantika]
-  era: c. 7th century CE
+  era: c. 6th–7th century CE (often c. 600–660; some scholars earlier)
   description: Buddhist logician and epistemologist whose work on valid cognition became the basis of Buddhist philosophy of knowledge in India and Tibet.
+  bio: >-
+    Dharmakirti (Dharmakīrti) lived in the sixth or seventh century CE; most evidence suggests activity around 600–660, though some scholars argue for a date half a century earlier. He is said to have been born in South India and to have moved to Nalanda monastery. With his predecessor Dignaga he founded the Buddhist epistemological school, known in Tibetan as "those who follow reasoning". He composed seven treatises, of which the Pramanavarttika, a commentary on Dignaga's Pramanasamuccaya, is the most significant; others include the Pramanaviniscaya, Nyayabindu and Hetubindu. His thought combines nominalism about universals, momentariness and a causal account of knowledge, and he debated non-Buddhist rivals, among them the Mimamsa tradition.
+  significance: Dharmakirti argues that faults stem from a single defeasible cognition, the self-view, and that liberation is therefore rationally possible. He is the project's main Buddhist voice on knowledge and truth, and is set against Kumarila.
+  keyIdeas:
+    - Pramāṇa (valid cognition)
+    - Perception and inference as the two means of knowledge
+    - Nominalism about universals
+    - Momentariness and causal efficacy
+    - Self-view as root of attachment and hatred
+    - Luminous mind and adventitious stains
   representativeWorks:
     - { title: Pramanavarttika }
+    - { title: Pramanaviniscaya }
     - { title: Nyayabindu }
+    - { title: Hetubindu }
   notes: Represents Buddhist logic and epistemology, central to the Knowledge & Truth domain.
