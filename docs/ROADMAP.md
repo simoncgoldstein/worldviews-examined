@@ -80,11 +80,13 @@ Implement one complete showcase question before mass-writing content:
 
 **Process used** (reusable for Phase 4; dossiers in `research/questions/great-and-terrible/`): shared research brief; six isolated steelman researchers plus an independent objection researcher; independent steelman QA and adjudication; five independent Christian-response researchers; thinker profiles; registry merge; three independent citation verifiers re-reading every cited passage; an independent adversarial review by a different model family (Codex, GPT-6.1 Sol), adjudication, remediation and a focused re-review.
 
-**Exit condition (met):** this page establishes the quality bar for all later entries.
+**Exit condition (met):** this page establishes the quality bar for all later entries. Phase 3 is complete: merged to `main` in PR #1 (merge commit `7078789`, 2026-10-05) after an editorial distillation pass and green PR CI.
 
 Architecture changes made during Phase 3, each the minimum needed for a concrete deficiency the flagship exposed: content validation now parses YAML dates as Astro does (unquoted `verifiedOn` dates passed validation but failed the build); answer subheadings get per-answer ids (two Deep dives with the same `####` heading produced duplicate ids on the question page); paired answer cards share subgrid rows on wide screens so comparable sections can be read across. No schema changed.
 
 ## Phase 4: Core V1 content
+
+Before starting, read `research/PHASE-4-REUSE-MAP.md` (coverage matrix, reusable verified works, gaps, recommended order) and the production policy in `docs/METHODOLOGY.md`. The map recommends the domain order Morality & Evil, Salvation & Destiny, Human Nature, Ultimate Reality, Knowledge & Truth, Revelation & History, chosen for research reuse rather than catalog order.
 
 Populate the core question catalog in batches:
 

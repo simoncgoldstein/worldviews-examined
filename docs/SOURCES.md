@@ -59,6 +59,37 @@ Store sources in a structured registry with stable IDs. A citation should record
 
 Quotations should be checked against the cited edition. Avoid unattributed quote collections.
 
+## Source priorities for production
+
+These priorities govern Phase 4 onward, alongside the production policy in `docs/METHODOLOGY.md`. In every lane, represent the prominent position first and surface internal differences only where they materially change the answer. Before seeking a source, check `research/PHASE-4-REUSE-MAP.md` for the verified works and locators already established.
+
+- **Reformed Christianity.**
+  1. Scripture.
+  2. The Westminster Standards: the Confession, Larger Catechism and Shorter Catechism. Westminster is the primary confessional standard for this lane, not one source among many.
+  3. Other major Reformed standards where useful: the Heidelberg Catechism, Belgic Confession and Canons of Dort. These are not yet in the registry; register and verify them when first used.
+  4. Augustine and Calvin.
+  5. Other major Reformed primary voices where the question warrants: Turretin, Witsius, Bavinck, Vos, Owen, Edwards, Van Til, Bahnsen, and others in the registry.
+- **Rabbinic Judaism.** Tanakh; major rabbinic sources; representative major thinkers in the registry; strong internal Jewish or academic scholarship where interpretation requires it.
+- **Classical Islam.**
+  - Qur'an; sound hadith where relevant; major Sunni theological sources.
+  - Al-Ghazali as a major synthesizing voice where appropriate.
+  - Ash'ari, Maturidi and Ibn Taymiyya distinctions only where they materially affect the question.
+  - Philosophical or mystical strands (Ibn Sina, Ibn Arabi) only where actually relevant.
+- **Hindu traditions.**
+  - Do not represent every school on every question. Give a broad account from the prominent traditions.
+  - Use Vedānta as the principal centre of gravity for broad worldview questions: Advaita (Śaṅkara), Viśiṣṭādvaita (Rāmānuja) and Dvaita (Madhva).
+  - Bring in Nyāya, Mīmāṃsā, Yoga or other schools when the question materially requires them.
+- **Buddhist traditions.**
+  - Do not survey every school on every question.
+  - Begin with broadly shared concepts where appropriate: the Four Noble Truths, dependent origination, impermanence, no-self, karma, craving, ignorance and liberation.
+  - Then use traditions selectively:
+    - early Buddhism and Theravāda as a baseline;
+    - Madhyamaka where metaphysics matters;
+    - Yogācāra where mind and cognition matter;
+    - Dharmakīrti and Buddhist epistemology where knowledge and reason matter;
+    - Mahāyāna, Zen, Pure Land and others when the question genuinely requires them.
+- **Naturalism.** There is no canon or confession. Organize sources around the strongest representative explanation for the question, using thinkers and specialists by problem area rather than citing the same roster every time.
+
 ---
 
 # Reformed Christianity

@@ -139,6 +139,19 @@ The Christian reply should be the strongest confessional Reformed answer availab
 
 Research depth and publication depth are intentionally different. Research dossiers (`research/questions/<id>/`) may preserve extensive thinker, school, source and citation detail, while public answers should surface only the material necessary to represent the worldview accurately, explain the decisive issues clearly, and support the published claims. The Phase 3 flagship's research and citation density is an upper bound, not the default production target for later questions.
 
+## Phase 4 production and research policy
+
+Phase 3 was a maximum-rigor calibration run. Its workflow of about thirty agents is **not** the production model. `research/PHASE-4-REUSE-MAP.md` records what already exists, what to reuse and where the genuine gaps are; read it before starting any question.
+
+- **Agents.** No subagents by default. Prefer one focused top-level session for one bounded task. Separate parallel chats may be used when useful, each with a narrow scope and each consuming the existing dossiers first.
+- **Reuse first.** Every research session begins with the existing research dossiers, the source registry, the thinker profiles and the reuse map. Do not rediscover or reread already verified material unless a new claim genuinely requires it. New research begins only after that check.
+- **Stopping rule.** Stop researching once there is enough primary/internal and high-quality secondary evidence to represent the prominent position accurately, disclose materially important internal differences, and support the important published claims with reliable locators. Do not keep gathering sources merely because more exist.
+- **Minimum sufficient corpus.** For each worldview and domain, seek the smallest high-quality source set sufficient for accurate representation. Do not build comprehensive bibliographies or read every major thinker's works.
+- **Review.** Routine derivative answers do not automatically require independent adversarial review. A newly researched domain batch may receive one independent batch review. Major anchor questions may receive stronger review when warranted. Phase 3 remains the upper bound for rigor and process complexity, not the default.
+- **Question depth.** Questions are classed as anchor, medium or concise/derivative (see the reuse map). Concise questions are answered briefly and link to the anchor question that carries the argument.
+
+The verification protocol in `docs/SOURCES.md` is unchanged: reviewed answers still cite only checked sources.
+
 ## Tone
 
 - precise;
