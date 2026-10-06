@@ -16,6 +16,7 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `buddhism/great-and-terrible.mdx` | Psalm 51:4 | 1 | 7 | 36 | 1 |
 
 
+
 | `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
 
 Totals: **51 quoted words**, **257 quoted bytes**, **16 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); original flagship checks retain their original provenance.
@@ -38,6 +39,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / death | 548 | 0 | 0.00% |
 | buddhism / evil | 932 | 0 | 0.00% |
 | buddhism / fail-the-good | 407 | 0 | 0.00% |
+| buddhism / final-end | 618 | 0 | 0.00% |
 | buddhism / great-and-terrible | 1083 | 9 | 0.83% |
 | buddhism / guilt | 593 | 0 | 0.00% |
 | buddhism / know-the-good | 504 | 0 | 0.00% |
@@ -47,6 +49,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / death | 535 | 0 | 0.00% |
 | christianity / evil | 953 | 0 | 0.00% |
 | christianity / fail-the-good | 381 | 0 | 0.00% |
+| christianity / final-end | 614 | 0 | 0.00% |
 | christianity / great-and-terrible | 1081 | 11 | 1.02% |
 | christianity / guilt | 597 | 13 | 2.18% |
 | christianity / know-the-good | 577 | 0 | 0.00% |
@@ -56,6 +59,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | hinduism / death | 562 | 0 | 0.00% |
 | hinduism / evil | 933 | 0 | 0.00% |
 | hinduism / fail-the-good | 389 | 0 | 0.00% |
+| hinduism / final-end | 588 | 0 | 0.00% |
 | hinduism / great-and-terrible | 1053 | 3 | 0.28% |
 | hinduism / guilt | 600 | 0 | 0.00% |
 | hinduism / know-the-good | 529 | 0 | 0.00% |
@@ -65,6 +69,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | islam / death | 574 | 0 | 0.00% |
 | islam / evil | 936 | 0 | 0.00% |
 | islam / fail-the-good | 400 | 0 | 0.00% |
+| islam / final-end | 618 | 0 | 0.00% |
 | islam / great-and-terrible | 998 | 3 | 0.30% |
 | islam / guilt | 612 | 0 | 0.00% |
 | islam / know-the-good | 531 | 0 | 0.00% |
@@ -74,6 +79,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / death | 530 | 0 | 0.00% |
 | judaism / evil | 883 | 0 | 0.00% |
 | judaism / fail-the-good | 392 | 0 | 0.00% |
+| judaism / final-end | 636 | 0 | 0.00% |
 | judaism / great-and-terrible | 966 | 4 | 0.41% |
 | judaism / guilt | 589 | 0 | 0.00% |
 | judaism / know-the-good | 540 | 0 | 0.00% |
@@ -83,13 +89,14 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / death | 552 | 0 | 0.00% |
 | naturalism / evil | 916 | 0 | 0.00% |
 | naturalism / fail-the-good | 396 | 0 | 0.00% |
+| naturalism / final-end | 637 | 0 | 0.00% |
 | naturalism / great-and-terrible | 1043 | 8 | 0.77% |
 | naturalism / guilt | 604 | 0 | 0.00% |
 | naturalism / know-the-good | 556 | 0 | 0.00% |
 | naturalism / self-deception | 362 | 0 | 0.00% |
 | naturalism / suffering | 525 | 0 | 0.00% |
 
-Corpus measure: 51 ESV words / approximately 33,350 answer-body words = **0.15%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 51 ESV words / approximately 37,061 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
