@@ -2,14 +2,14 @@
 
 Concise/derivative question produced from the checked domain corpus. All six answers received one self-review. No new research, source records, direct ESV quotations, subagents, or external reviewers.
 
-Total authored answer prose: **2,282 words**. Counts exclude headings, citation labels, bibliography, and thinker metadata. Visible counts exclude the one-sentence thesis. Citations count distinct source/locator pairs; uses count markers.
+Total authored answer prose: **2,271 words**. Counts exclude headings, citation labels, bibliography, and thinker metadata. Visible counts exclude the one-sentence thesis. Citations count distinct source/locator pairs; uses count markers.
 
 | Lane | Thesis | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|
-| christianity | 19 | 218 | 149 | 8 | 8 |
-| naturalism | 23 | 210 | 161 | 6 | 6 |
+| christianity | 19 | 218 | 148 | 8 | 8 |
+| naturalism | 23 | 205 | 157 | 6 | 6 |
 | judaism | 19 | 200 | 155 | 6 | 7 |
-| islam | 25 | 198 | 150 | 7 | 7 |
+| islam | 25 | 198 | 149 | 7 | 7 |
 | hinduism | 22 | 207 | 144 | 6 | 8 |
 | buddhism | 22 | 209 | 151 | 5 | 7 |
 
@@ -24,7 +24,7 @@ Total authored answer prose: **2,282 words**. Counts exclude headings, citation 
 
 ## Self-review and limits
 
-Compared all six lanes. Kept unconscious distortion distinct from deliberate refusal, doctrines of humanity distinct from diagnoses of individuals, and biased mechanisms distinct from ultimate moral interpretation. Naturalism uses the registered secondary survey because the corpus lacks an accessible checked primary specialist paper; Russell supplies a primary moral illustration. No new source was sought. Scripture leads the Reformed account; only paraphrases are used.
+Compared all six lanes. Kept unconscious distortion distinct from deliberate refusal, doctrines of humanity distinct from diagnoses of individuals, and biased mechanisms distinct from ultimate moral interpretation. Naturalism uses the registered secondary survey because the corpus lacks an accessible checked primary specialist paper; Russell supplies a primary moral illustration. No new source was sought. Scripture leads the Reformed account; only paraphrases are used. Final domain pass retained the six-lane distinctions and depth hierarchy, removed production asides where present, and clarified mortality’s significance where needed. Final validation recorded below.
 
 Omitted/narrowed claims: No settled adaptation claim for naturalistic self-deception; no inference that every religious disagreement is culpable suppression; no equation of Advaita superimposition with every everyday lie.
 

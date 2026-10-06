@@ -2,15 +2,15 @@
 
 Medium question produced from the checked domain corpus. All six answers received one self-review. No new research, source records, direct ESV quotations, subagents, or external reviewers.
 
-Total authored answer prose: **3,337 words**. Counts exclude headings, citation labels, bibliography, and thinker metadata. Visible counts exclude the one-sentence thesis. Citations count distinct source/locator pairs; uses count markers.
+Total authored answer prose: **3,330 words**. Counts exclude headings, citation labels, bibliography, and thinker metadata. Visible counts exclude the one-sentence thesis. Citations count distinct source/locator pairs; uses count markers.
 
 | Lane | Thesis | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|
 | christianity | 28 | 319 | 241 | 12 | 12 |
-| naturalism | 27 | 318 | 220 | 7 | 9 |
+| naturalism | 27 | 305 | 220 | 7 | 9 |
 | judaism | 20 | 297 | 205 | 9 | 10 |
-| islam | 23 | 307 | 227 | 9 | 11 |
-| hinduism | 25 | 313 | 219 | 9 | 11 |
+| islam | 23 | 307 | 239 | 9 | 11 |
+| hinduism | 25 | 313 | 213 | 9 | 11 |
 | buddhism | 23 | 319 | 206 | 8 | 10 |
 
 ## Source and thinker reuse
@@ -24,7 +24,7 @@ Total authored answer prose: **3,337 words**. Counts exclude headings, citation 
 
 ## Self-review and limits
 
-Reviewed causes, blame, meaning and response separately. Kept Jewish plurality, distinct Bukhari expiation/Muslim gratitude-patience claims, Hindu school-specific selfhood, and Buddhist pain versus wider dukkha. Removed workflow details from public prose and removed an unused Ghazali thinker link. Scripture leads Christianity using mapped Romans passages; no direct ESV wording.
+Reviewed causes, blame, meaning and response separately. Kept Jewish plurality, distinct Bukhari expiation/Muslim gratitude-patience claims, Hindu school-specific selfhood, and Buddhist pain versus wider dukkha. Removed workflow details from public prose and removed an unused Ghazali thinker link. Scripture leads Christianity using mapped Romans passages; no direct ESV wording. Final domain pass retained the six-lane distinctions and depth hierarchy, removed production asides where present, and clarified mortality’s significance where needed. Final validation recorded below.
 
 Omitted/narrowed claims: No primary evolutionary pain theory is claimed: Hume is philosophical and the aging paper supports only age-related vulnerability. No personal guilt or previous-life deed is assigned to an individual victim. No modern post-Holocaust survey or unread Ghazali books reconstructed. Shantideva paraphrased from checked Sanskrit; Bavinck’s dated science omitted.
 
