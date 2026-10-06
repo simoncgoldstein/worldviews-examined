@@ -17,9 +17,11 @@ This is a manual inventory, not an automatic certification of copyright permissi
 
 
 
-| `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
 
-Totals: **51 quoted words**, **257 quoted bytes**, **16 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); original flagship checks retain their original provenance.
+| `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
+| `christianity/self-salvation.mdx` | Ephesians 2:8 | 1 | 8 | 42 | 1 |
+
+Totals: **59 quoted words**, **299 quoted bytes**, **17 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); original flagship checks retain their original provenance.
 
 | Biblical book | Charged verse instances | Quoted words | Quoted bytes |
 |---|---:|---:|---:|
@@ -28,6 +30,7 @@ Totals: **51 quoted words**, **257 quoted bytes**, **16 conservative verse insta
 | Genesis | 1 | 8 | 33 |
 | Isaiah | 1 | 4 | 21 |
 | Psalms | 1 | 7 | 36 |
+| Ephesians | 1 | 8 | 42 |
 
 ## Proportions and publication checks
 
@@ -44,6 +47,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / guilt | 593 | 0 | 0.00% |
 | buddhism / know-the-good | 504 | 0 | 0.00% |
 | buddhism / self-deception | 360 | 0 | 0.00% |
+| buddhism / self-salvation | 963 | 0 | 0.00% |
 | buddhism / suffering | 525 | 0 | 0.00% |
 | christianity / after-death | 639 | 0 | 0.00% |
 | christianity / death | 535 | 0 | 0.00% |
@@ -54,6 +58,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / guilt | 597 | 13 | 2.18% |
 | christianity / know-the-good | 577 | 0 | 0.00% |
 | christianity / self-deception | 366 | 0 | 0.00% |
+| christianity / self-salvation | 984 | 8 | 0.81% |
 | christianity / suffering | 581 | 0 | 0.00% |
 | hinduism / after-death | 592 | 0 | 0.00% |
 | hinduism / death | 562 | 0 | 0.00% |
@@ -64,6 +69,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | hinduism / guilt | 600 | 0 | 0.00% |
 | hinduism / know-the-good | 529 | 0 | 0.00% |
 | hinduism / self-deception | 351 | 0 | 0.00% |
+| hinduism / self-salvation | 961 | 0 | 0.00% |
 | hinduism / suffering | 526 | 0 | 0.00% |
 | islam / after-death | 604 | 0 | 0.00% |
 | islam / death | 574 | 0 | 0.00% |
@@ -74,6 +80,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | islam / guilt | 612 | 0 | 0.00% |
 | islam / know-the-good | 531 | 0 | 0.00% |
 | islam / self-deception | 347 | 0 | 0.00% |
+| islam / self-salvation | 954 | 0 | 0.00% |
 | islam / suffering | 546 | 0 | 0.00% |
 | judaism / after-death | 636 | 0 | 0.00% |
 | judaism / death | 530 | 0 | 0.00% |
@@ -84,6 +91,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / guilt | 589 | 0 | 0.00% |
 | judaism / know-the-good | 540 | 0 | 0.00% |
 | judaism / self-deception | 355 | 0 | 0.00% |
+| judaism / self-salvation | 948 | 0 | 0.00% |
 | judaism / suffering | 514 | 0 | 0.00% |
 | naturalism / after-death | 644 | 0 | 0.00% |
 | naturalism / death | 552 | 0 | 0.00% |
@@ -94,9 +102,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / guilt | 604 | 0 | 0.00% |
 | naturalism / know-the-good | 556 | 0 | 0.00% |
 | naturalism / self-deception | 362 | 0 | 0.00% |
+| naturalism / self-salvation | 998 | 0 | 0.00% |
 | naturalism / suffering | 525 | 0 | 0.00% |
 
-Corpus measure: 51 ESV words / approximately 37,061 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 59 ESV words / approximately 42,869 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
