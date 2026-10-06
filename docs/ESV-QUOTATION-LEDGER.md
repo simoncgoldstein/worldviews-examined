@@ -1,8 +1,8 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-05. Scope: all twelve public answer files under `src/content/answers/`: six `great-and-terrible` and six `fail-the-good` entries. The new question uses Scripture references and paraphrases, adding no direct ESV quotations. All twelve bodies were checked for quoted ESV wording. Bible references and doctrinal paraphrases without direct quotation do not consume the quotation inventory below.
+Inventory date: 2026-10-05. Scope: all 18 public answer files under `src/content/answers/`. New Morality/Evil questions use Scripture references and paraphrases without adding direct ESV wording. The original quotation rows below remain unchanged. All new bodies were checked for quoted ESV wording.
 
-This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the six `fail-the-good` entries do not.
+This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the other domain answers use references and paraphrases.
 
 | Answer file (under `src/content/answers/`) | Locator accompanying quotation | Fragments | Quoted words | Quoted bytes | Conservative verse charge |
 |---|---|---:|---:|---:|---:|
@@ -31,20 +31,26 @@ For an approximate per-answer denominator, count prose-body words after removing
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
-| christianity / great-and-terrible | 1125 | 11 | 0.98% |
-| naturalism / great-and-terrible | 1088 | 8 | 0.74% |
-| islam / great-and-terrible | 1049 | 3 | 0.29% |
-| judaism / great-and-terrible | 1004 | 4 | 0.40% |
-| hinduism / great-and-terrible | 1103 | 3 | 0.27% |
-| buddhism / great-and-terrible | 1131 | 9 | 0.80% |
-| christianity / fail-the-good | 407 | 0 | 0.00% |
-| naturalism / fail-the-good | 419 | 0 | 0.00% |
-| judaism / fail-the-good | 415 | 0 | 0.00% |
-| islam / fail-the-good | 422 | 0 | 0.00% |
-| hinduism / fail-the-good | 413 | 0 | 0.00% |
 | buddhism / fail-the-good | 429 | 0 | 0.00% |
+| buddhism / great-and-terrible | 1131 | 9 | 0.80% |
+| buddhism / self-deception | 383 | 0 | 0.00% |
+| christianity / fail-the-good | 407 | 0 | 0.00% |
+| christianity / great-and-terrible | 1125 | 11 | 0.98% |
+| christianity / self-deception | 394 | 0 | 0.00% |
+| hinduism / fail-the-good | 413 | 0 | 0.00% |
+| hinduism / great-and-terrible | 1103 | 3 | 0.27% |
+| hinduism / self-deception | 374 | 0 | 0.00% |
+| islam / fail-the-good | 422 | 0 | 0.00% |
+| islam / great-and-terrible | 1049 | 3 | 0.29% |
+| islam / self-deception | 372 | 0 | 0.00% |
+| judaism / fail-the-good | 415 | 0 | 0.00% |
+| judaism / great-and-terrible | 1004 | 4 | 0.40% |
+| judaism / self-deception | 379 | 0 | 0.00% |
+| naturalism / fail-the-good | 419 | 0 | 0.00% |
+| naturalism / great-and-terrible | 1088 | 8 | 0.74% |
+| naturalism / self-deception | 396 | 0 | 0.00% |
 
-Corpus measure: 38 ESV words / approximately 9,005 answer-body words = **0.42%**.
+Corpus measure: 38 ESV words / approximately 11,303 answer-body words = **0.34%**.
 
 Before adding or publishing quotations:
 
@@ -53,4 +59,4 @@ Before adding or publishing quotations:
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-No new ESV quotations were added by the methodology refinement or by `fail-the-good` production. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+No new ESV quotations were added by this production batch. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
