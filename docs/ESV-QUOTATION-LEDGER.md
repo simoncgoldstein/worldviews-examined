@@ -1,8 +1,8 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-05. Scope: all 42 public answer files under `src/content/answers/`. New Morality/Evil questions use Scripture references and paraphrases without adding direct ESV wording. The original quotation rows below remain unchanged. All new bodies were checked for quoted ESV wording.
+Inventory date: 2026-10-05. Scope: all 66 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny adds the checked quotations itemized below; other new Scripture citations are references/paraphrases.
 
-This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the other domain answers use references and paraphrases.
+This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the new quotations below are the only additions outside the flagship.
 
 | Answer file (under `src/content/answers/`) | Locator accompanying quotation | Fragments | Quoted words | Quoted bytes | Conservative verse charge |
 |---|---|---:|---:|---:|---:|
@@ -14,16 +14,19 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `hinduism/great-and-terrible.mdx` | Romans 1:24, 28 | 1 | 3 | 12 | 2 |
 | `buddhism/great-and-terrible.mdx` | Romans 1:21 | 1 | 2 | 8 | 1 |
 | `buddhism/great-and-terrible.mdx` | Psalm 51:4 | 1 | 7 | 36 | 1 |
+| `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
+| `christianity/self-salvation.mdx` | Ephesians 2:8 | 1 | 8 | 42 | 1 |
 
-Totals: **38 quoted words**, **184 quoted bytes**, **15 conservative verse instances** (including repeated cited ranges; 10 distinct conservatively charged verses). The quoted fragments are associated with eight distinct verses (including both locators attached to the Hinduism fragment); charging whole ranges avoids understating volume.
+Totals: **59 quoted words**, **299 quoted bytes**, **17 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); original flagship checks retain their original provenance.
 
-| Biblical book | Charged verse instances | Quoted bytes |
-|---|---:|---:|
-| Romans | 11 | 64 |
-| Colossians | 1 | 30 |
-| Genesis | 1 | 33 |
-| Isaiah | 1 | 21 |
-| Psalms | 1 | 36 |
+| Biblical book | Charged verse instances | Quoted words | Quoted bytes |
+|---|---:|---:|---:|
+| Romans | 12 | 26 | 137 |
+| Colossians | 1 | 6 | 30 |
+| Genesis | 1 | 8 | 33 |
+| Isaiah | 1 | 4 | 21 |
+| Psalms | 1 | 7 | 36 |
+| Ephesians | 1 | 8 | 42 |
 
 ## Proportions and publication checks
 
@@ -31,50 +34,74 @@ For an approximate per-answer denominator, count prose-body words after removing
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
-| buddhism / death | 571 | 0 | 0.00% |
-| buddhism / evil | 964 | 0 | 0.00% |
-| buddhism / fail-the-good | 429 | 0 | 0.00% |
-| buddhism / great-and-terrible | 1131 | 9 | 0.80% |
-| buddhism / know-the-good | 528 | 0 | 0.00% |
-| buddhism / self-deception | 383 | 0 | 0.00% |
-| buddhism / suffering | 551 | 0 | 0.00% |
-| christianity / death | 558 | 0 | 0.00% |
-| christianity / evil | 988 | 0 | 0.00% |
-| christianity / fail-the-good | 407 | 0 | 0.00% |
-| christianity / great-and-terrible | 1125 | 11 | 0.98% |
-| christianity / know-the-good | 600 | 0 | 0.00% |
-| christianity / self-deception | 393 | 0 | 0.00% |
-| christianity / suffering | 583 | 0 | 0.00% |
-| hinduism / death | 585 | 0 | 0.00% |
-| hinduism / evil | 968 | 0 | 0.00% |
-| hinduism / fail-the-good | 413 | 0 | 0.00% |
-| hinduism / great-and-terrible | 1103 | 3 | 0.27% |
-| hinduism / know-the-good | 552 | 0 | 0.00% |
-| hinduism / self-deception | 374 | 0 | 0.00% |
-| hinduism / suffering | 549 | 0 | 0.00% |
-| islam / death | 596 | 0 | 0.00% |
-| islam / evil | 971 | 0 | 0.00% |
-| islam / fail-the-good | 422 | 0 | 0.00% |
-| islam / great-and-terrible | 1049 | 3 | 0.29% |
-| islam / know-the-good | 558 | 0 | 0.00% |
-| islam / self-deception | 371 | 0 | 0.00% |
-| islam / suffering | 570 | 0 | 0.00% |
-| judaism / death | 556 | 0 | 0.00% |
-| judaism / evil | 914 | 0 | 0.00% |
-| judaism / fail-the-good | 415 | 0 | 0.00% |
-| judaism / great-and-terrible | 1004 | 4 | 0.40% |
-| judaism / know-the-good | 565 | 0 | 0.00% |
-| judaism / self-deception | 379 | 0 | 0.00% |
-| judaism / suffering | 526 | 0 | 0.00% |
-| naturalism / death | 575 | 0 | 0.00% |
-| naturalism / evil | 945 | 0 | 0.00% |
-| naturalism / fail-the-good | 419 | 0 | 0.00% |
-| naturalism / great-and-terrible | 1088 | 8 | 0.74% |
-| naturalism / know-the-good | 587 | 0 | 0.00% |
-| naturalism / self-deception | 387 | 0 | 0.00% |
-| naturalism / suffering | 548 | 0 | 0.00% |
+| buddhism / after-death | 602 | 0 | 0.00% |
+| buddhism / death | 548 | 0 | 0.00% |
+| buddhism / evil | 932 | 0 | 0.00% |
+| buddhism / fail-the-good | 407 | 0 | 0.00% |
+| buddhism / final-end | 618 | 0 | 0.00% |
+| buddhism / great-and-terrible | 1083 | 9 | 0.83% |
+| buddhism / guilt | 593 | 0 | 0.00% |
+| buddhism / know-the-good | 504 | 0 | 0.00% |
+| buddhism / self-deception | 360 | 0 | 0.00% |
+| buddhism / self-salvation | 963 | 0 | 0.00% |
+| buddhism / suffering | 525 | 0 | 0.00% |
+| christianity / after-death | 639 | 0 | 0.00% |
+| christianity / death | 535 | 0 | 0.00% |
+| christianity / evil | 953 | 0 | 0.00% |
+| christianity / fail-the-good | 381 | 0 | 0.00% |
+| christianity / final-end | 614 | 0 | 0.00% |
+| christianity / great-and-terrible | 1081 | 11 | 1.02% |
+| christianity / guilt | 615 | 13 | 2.11% |
+| christianity / know-the-good | 577 | 0 | 0.00% |
+| christianity / self-deception | 366 | 0 | 0.00% |
+| christianity / self-salvation | 984 | 8 | 0.81% |
+| christianity / suffering | 581 | 0 | 0.00% |
+| hinduism / after-death | 592 | 0 | 0.00% |
+| hinduism / death | 562 | 0 | 0.00% |
+| hinduism / evil | 933 | 0 | 0.00% |
+| hinduism / fail-the-good | 389 | 0 | 0.00% |
+| hinduism / final-end | 588 | 0 | 0.00% |
+| hinduism / great-and-terrible | 1053 | 3 | 0.28% |
+| hinduism / guilt | 600 | 0 | 0.00% |
+| hinduism / know-the-good | 529 | 0 | 0.00% |
+| hinduism / self-deception | 351 | 0 | 0.00% |
+| hinduism / self-salvation | 961 | 0 | 0.00% |
+| hinduism / suffering | 526 | 0 | 0.00% |
+| islam / after-death | 625 | 0 | 0.00% |
+| islam / death | 574 | 0 | 0.00% |
+| islam / evil | 936 | 0 | 0.00% |
+| islam / fail-the-good | 400 | 0 | 0.00% |
+| islam / final-end | 647 | 0 | 0.00% |
+| islam / great-and-terrible | 998 | 3 | 0.30% |
+| islam / guilt | 612 | 0 | 0.00% |
+| islam / know-the-good | 531 | 0 | 0.00% |
+| islam / self-deception | 347 | 0 | 0.00% |
+| islam / self-salvation | 954 | 0 | 0.00% |
+| islam / suffering | 546 | 0 | 0.00% |
+| judaism / after-death | 636 | 0 | 0.00% |
+| judaism / death | 530 | 0 | 0.00% |
+| judaism / evil | 883 | 0 | 0.00% |
+| judaism / fail-the-good | 392 | 0 | 0.00% |
+| judaism / final-end | 636 | 0 | 0.00% |
+| judaism / great-and-terrible | 966 | 4 | 0.41% |
+| judaism / guilt | 589 | 0 | 0.00% |
+| judaism / know-the-good | 540 | 0 | 0.00% |
+| judaism / self-deception | 355 | 0 | 0.00% |
+| judaism / self-salvation | 948 | 0 | 0.00% |
+| judaism / suffering | 514 | 0 | 0.00% |
+| naturalism / after-death | 644 | 0 | 0.00% |
+| naturalism / death | 552 | 0 | 0.00% |
+| naturalism / evil | 916 | 0 | 0.00% |
+| naturalism / fail-the-good | 396 | 0 | 0.00% |
+| naturalism / final-end | 637 | 0 | 0.00% |
+| naturalism / great-and-terrible | 1043 | 8 | 0.77% |
+| naturalism / guilt | 604 | 0 | 0.00% |
+| naturalism / know-the-good | 556 | 0 | 0.00% |
+| naturalism / self-deception | 362 | 0 | 0.00% |
+| naturalism / self-salvation | 998 | 0 | 0.00% |
+| naturalism / suffering | 525 | 0 | 0.00% |
 
-Corpus measure: 38 ESV words / approximately 27,200 answer-body words = **0.14%**.
+Corpus measure: 59 ESV words / approximately 42,937 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
@@ -83,4 +110,4 @@ Before adding or publishing quotations:
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-No new ESV quotations were added by this production batch. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+The Salvation/Destiny batch uses the two short quotations itemized above where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
