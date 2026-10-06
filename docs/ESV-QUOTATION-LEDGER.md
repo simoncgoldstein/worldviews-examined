@@ -25,6 +25,11 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/something-rather-than-nothing.mdx` | Genesis 1:1 | 1 | 10 | 56 | 1 |
 | `christianity/something-rather-than-nothing.mdx` | Romans 4:17 | 1 | 9 | 49 | 1 |
 | `christianity/something-rather-than-nothing.mdx` | Revelation 4:11 | 1 | 8 | 42 | 1 |
+| `christianity/ultimate-personal.mdx` | Ephesians 1:11 | 1 | 10 | 53 | 1 |
+| `christianity/ultimate-personal.mdx` | 1 John 4:8 | 1 | 3 | 11 | 1 |
+| `christianity/ultimate-personal.mdx` | John 4:24 | 1 | 3 | 13 | 1 |
+| `christianity/ultimate-personal.mdx` | John 17:24 | 1 | 10 | 55 | 1 |
+| `islam/ultimate-personal.mdx` | John 17:24 | 1 | 6 | 34 | 1 |
 
 Totals: **87 quoted words**, **430 quoted bytes**, **21 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); original flagship checks retain their original provenance.
 
