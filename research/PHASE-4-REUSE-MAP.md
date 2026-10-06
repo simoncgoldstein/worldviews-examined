@@ -93,6 +93,16 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
 
 ### Ultimate Reality
 
+> **Superseded for this domain (2026-10-06):** the domain research pass in `research/domains/ultimate-reality/`
+> closed every P and N cell below (19 Ready, 11 Ready with narrow caveat, 0 Blocked) and added 15 checked sources:
+> - al-Ghazali's *Tahāfut* Disc. 1 and 17 via Bouyges 1930, the *Munqidh* (Field), and Ibn Sina's *Ishārāt*
+>   (Forget);
+> - Vasubandhu AKBh II.64 and Udayana's *Kusumāñjali*;
+> - Ṛgveda X.129;
+> - Carroll (2018) and six SEP maps for naturalism.
+>
+> Van Til and Oppy remain lawfully unavailable. Start there; the grades and notes below are the pre-pass baseline.
+
 | Question | Depth | Ref | Nat | Jud | Isl | Hin | Bud |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|
 | `ultimate-reality` | Anchor | P | P | P | P | P | P |
@@ -420,10 +430,10 @@ A reviewed answer may not cite any of them until it is verified under the protoc
 
 ## 6. Largest research gaps
 
-1. **Van Til and Bahnsen (Reformed).** The site's apologetic method rests on them, yet no text was lawfully readable in Phase 3. This blocks `knowledge-possible`, `logic-binding`, `one-and-many` and `ultimate-authority` at full strength. Securing a readable edition is a practical prerequisite, not a research task.
+1. **Van Til and Bahnsen (Reformed).** The site's apologetic method rests on them, yet no text was lawfully readable in Phase 3. This blocks `knowledge-possible`, `logic-binding`, `one-and-many` and `ultimate-authority` at full strength. Securing a readable edition is a practical prerequisite, not a research task. *Update (Ultimate Reality pass, 2026-10-06):* still unavailable. *Defense of the Faith* (1955) is controlled lending only, and other archive.org copies are user uploads without rights provenance. The `one-and-many` Reformed cell is now carried by Bavinck II §27.25 with a caveat.
 2. **Buddhist epistemology.** No checked Dharmakīrti or Dignāga source (numbering problems sank the Phase 3 record). This affects all of Knowledge & Truth.
-3. **Islamic metaphysics and epistemology.** Al-Ghazali's *Tahafut* (causation, eternity of the world) and *Munqidh*, the kalam cosmological argument and Ibn Sina's necessary existent are unregistered.
-4. **Naturalist metaphysics and epistemology.** Oppy was never readable. Quine, philosophy of logic and laws of nature are unresearched; Hume's *Enquiry* §IV is cheap because the source is checked.
+3. **Islamic metaphysics and epistemology.** Al-Ghazali's *Tahafut* (causation, eternity of the world) and *Munqidh*, the kalam cosmological argument and Ibn Sina's necessary existent are unregistered. *Update (2026-10-06):* metaphysics closed. *Tahāfut* Disc. 1 and 17 are registered via Bouyges 1930 (`averroes-tahafut-bouyges`), the *Munqidh* via Field 1909, Ibn Sina's *Ishārāt* via Forget 1892, and Ibn Taymiyya via SEP (Hoover 2024). Kalam epistemology (*Munqidh* on knowledge) remains for Knowledge & Truth.
+4. **Naturalist metaphysics and epistemology.** Oppy was never readable. Quine, philosophy of logic and laws of nature are unresearched; Hume's *Enquiry* §IV is cheap because the source is checked. *Update (2026-10-06):* laws of nature, physicalism, emergence and existence are now mapped (Carroll 2018; six SEP entries; Hume E IV, VII; D VIII–IX). Oppy is still blocked (403). Quine and the philosophy of logic remain for Knowledge & Truth.
 5. **Jewish philosophical prolegomena.** Saadia's introduction and Treatise I, and Maimonides' *Guide* I (negative theology). The editions are checked, so this is cheap.
 6. **Eschatology across lanes.** WCF 32–33, the World to Come, the Qur'anic judgment, liberation states by school, nirvāṇa. Mostly locator work in checked editions.
 7. **Jesus in non-Christian lanes.** Qur'anic Christology (cheap: the Qur'an is checked), Jewish disputation literature, Hindu and Buddhist receptions, historical-Jesus scholarship.
