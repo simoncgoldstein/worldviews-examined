@@ -40,6 +40,8 @@
     13; Isa 43:7; 44:9-20; Mal 2:14-15; Matt 4:10; 10:28; 19:4-6; 22:37-40; John 4:23-24; Acts 17:24-29;
     Rom 1:21-25; 11:36; 12:1; 13:8-10; 1 Cor 7:7-9, 32-35; 10:31; 13:4-7; Eph 4:24; 5:25-33; 6:1-4; Phil
     4:8; Col 1:16; 3:5; Heb 13:4; Jas 3:9; 1 John 4:7-12, 19; 5:21; Rev 4:11. No public quotation added.
+    Man/Human Nature production (2026-10-06): quotations Col 1:15, 1 John 4:19, Ps 27:4 and references
+    Eccl 9:7-10, Mark 12:29-30, John 14:15, 1 John 4:9-10 checked at BibleGateway (ESV); see ledger.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1375,6 +1377,7 @@
     Nature (2026-10-06): read (resource 85): 1:5; 2:21, 165, 187; 3:14, 31; 4:1, 36; 5:54; 6:76-79;
     7:31-32; 9:24; 13:38; 15:28-29; 16:5-8, 72; 17:23-24; 18:46; 25:74; 30:21; 31:13; 32:7-9; 39:3;
     40:64; 46:15; 51:56-58; 57:27; 64:3, 14-15; 67:3-4; 85:14; 112:1-4.
+    Man/Human Nature production (2026-10-06): also read 3:191, 6:162, 42:11 (resource 85).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1416,6 +1419,9 @@
     sunnah.com/bukhari:7439 for resurrection/intercession and rescue of some believers from fire.
     Man/Human Nature (2026-10-06): read at sunnah.com: 13 (Book 2, Hadith 6); 50 (Book 2, Hadith 43);
     5063 (Book 67, Hadith 1); 5065 (Book 67, Hadith 3); 6502 (Book 81, Hadith 91).
+    Domain review (2026-10-06): 6227 (Asking Permission, Book 79, Hadith 1; Adam created "in His picture")
+    read in the same Khan translation via the fawazahmed0 hadith-api mirror (cdn.jsdelivr.net), since
+    sunnah.com returns 403; same canonical number, so paraphrased, not quoted.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -2260,8 +2266,10 @@
   url: https://en.wikisource.org/wiki/A_Free_Man%27s_Worship
   notes: >-
     First published 1903 (date per Phase 3 packet; journal not re-verified here); Wikisource transcription dated 1918 (the Mysticism and
-    Logic text). Cite by paragraph as numbered in that transcription (the Mephistopheles preface is
-    paras. 1-3). Read 2026-10-06: paras. 3-9, 13, 15-16, 18-20. Early Russell: objective ideals; contrast
+    Logic text). Cite by paragraph as numbered in that transcription (the Mephistopheles preface, an introductory sentence plus
+    three quoted paragraphs, is paras. 1-4; "no prevision" is para. 5, the closing paragraph para. 21;
+    numbering corrected 2026-10-06 in domain review after recount of the wikitext, earlier citations were one low).
+    Read 2026-10-06: paras. 4-10, 14, 16-17, 19-21. Early Russell: objective ideals; contrast
     What I Believe (1925), where value is conferred by desire.
   verificationStatus: checked
   verifiedOn: '2026-10-06'
@@ -2276,7 +2284,8 @@
   url: https://plato.stanford.edu/entries/life-meaning/
   notes: >-
     First published 15 May 2007; substantive revision 26 June 2026; copyright Thaddeus Metz. Debate map,
-    not a naturalist confession. Cite by section. Read 2026-10-06: §§3, 3.1-3.3, 4.
+    not a naturalist confession. Cite by section. Read 2026-10-06: §§3, 3.1-3.3, 4. Production check
+    (2026-10-06): §2.1 objection that a purpose-assigning God would degrade us (Sartre, Baier).
   verificationStatus: checked
   verifiedOn: '2026-10-06'
 - id: sep-religion-science

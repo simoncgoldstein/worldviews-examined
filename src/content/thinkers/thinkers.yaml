@@ -52,7 +52,27 @@
   birthYear: 1623
   deathYear: 1687
   description: Genevan theologian whose scholastic method gave Reformed doctrine its most systematic polemical statement in the seventeenth century.
+  bio: >-
+    Francis Turretin (1623–1687) was born in Geneva into a family of Italian Protestant refugees
+    from Lucca; his father, Benedict Turretin, was a pastor and professor of theology there. After
+    studying in Geneva and at several Dutch and French academies, he became pastor of Geneva's
+    Italian congregation in 1648 and professor of theology at the Genevan Academy in 1653, a post he
+    held until his death. His Institutio theologiae elencticae (1679–1685) sets out Reformed
+    doctrine as a series of disputed questions, each answered against Roman Catholic, Lutheran,
+    Socinian and Remonstrant positions. It became a standard textbook of Reformed orthodoxy and was
+    still used at Princeton Theological Seminary in the nineteenth century.
+  significance: >-
+    Turretin gives precise scholastic definitions of doctrines that Scripture states and the
+    confessions summarize. He is used here mainly for the image of God, distinguishing the image
+    retained after the Fall from the original righteousness that was lost, and for the line he
+    draws between lawful art and images in worship.
+  keyIdeas:
+    - Elenctic (disputational) method
+    - Image of God in nature, uprightness and dominion
+    - Image partly retained after the Fall
+    - Art lawful; images of God in worship forbidden
   representativeWorks:
+    - { title: Institutio theologiae elencticae, year: 1679, sourceId: turretin-institutio-1847 }
     - { title: Institutes of Elenctic Theology, sourceId: turretin-institutes }
 
 - id: bavinck
@@ -1284,3 +1304,37 @@
     - { title: Nyayabindu }
     - { title: Hetubindu }
   notes: Represents Buddhist logic and epistemology, central to the Knowledge & Truth domain.
+
+- id: shinran
+  slug: shinran
+  name: Shinran
+  worldview: buddhism
+  role: specialist
+  displayOrder: 3
+  usedFor: [Pure Land devotion, Other Power, entrusting]
+  schools: [Jōdo Shinshū (True Pure Land)]
+  birthYear: 1173
+  deathYear: 1263
+  description: Japanese Pure Land teacher, regarded as the founder of Jōdo Shinshū, who taught complete reliance on Amida Buddha's vow rather than on one's own power.
+  bio: >-
+    Shinran (1173–1263) trained for about twenty years as a Tendai monk on Mount Hiei before
+    becoming a disciple of Hōnen, who taught exclusive reliance on the recitation of Amida Buddha's
+    name. When the nembutsu movement was suppressed in 1207 he was laicized and exiled to Echigo,
+    where he married and lived as neither monk nor layman. He later taught in the Kantō region and
+    returned to Kyoto in his last decades. His major work is the Kyōgyōshinshō; the Tannishō, a
+    record of his sayings compiled after his death by his follower Yuien, is the most widely read
+    account of his teaching. Jōdo Shinshū, the school that regards him as founder, became one of the
+    largest Buddhist traditions in Japan.
+  significance: >-
+    Shinran gives the sharpest Buddhist statement of liberation through another's power: entrusting
+    oneself to Amida's vow, which was made above all for those unable to free themselves. He is used
+    for Pure Land devotion and for the comparison with grace, not as a representative of Buddhism as
+    a whole.
+  keyIdeas:
+    - Other Power (tariki) versus self-power (jiriki)
+    - Entrusting (shinjin) to Amida's vow
+    - The nembutsu as the vow's working, not a meritorious act
+    - Amida's vow made for the evil person
+  representativeWorks:
+    - { title: Kyōgyōshinshō }
+    - { title: Tannishō (compiled by Yuien), sourceId: shinran-tannisho-cws }
