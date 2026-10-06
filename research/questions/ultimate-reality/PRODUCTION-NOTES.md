@@ -8,12 +8,12 @@ Counts exclude headings, citation tags, bibliography and thinker metadata; visib
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 31 | 173 | 501 | 387 | 26 | 28 |
 | naturalism | 29 | 185 | 466 | 350 | 9 | 14 |
-| judaism | 30 | 170 | 473 | 378 | 15 | 18 |
-| islam | 26 | 167 | 485 | 368 | 16 | 19 |
-| hinduism | 30 | 197 | 507 | 367 | 14 | 19 |
+| judaism | 30 | 170 | 473 | 353 | 12 | 16 |
+| islam | 26 | 167 | 481 | 377 | 16 | 19 |
+| hinduism | 30 | 197 | 507 | 331 | 11 | 16 |
 | buddhism | 31 | 205 | 436 | 303 | 11 | 13 |
 
-Total authored prose: 5,198 words (including theses). Visible prose sits at the top of the 350–500 anchor range (two lanes a few words over, because the Christian response and pressure questions are part of the visible count); Deep Dives are 303–387, at or below the low end of the 350–550 guide, since the four following questions carry personality, explanation, order and plurality.
+Total authored prose: 5,142 words (including theses). Visible prose sits at the top of the 350–500 anchor range (two lanes a few words over, because the Christian response and pressure questions are part of the visible count); Deep Dives are 303–387, at or below the low end of the 350–550 guide, since the four following questions carry personality, explanation, order and plurality.
 
 ## Editorial hierarchy
 
@@ -23,7 +23,7 @@ Each thesis gives the elementary answer with no thinker names: God alone from hi
 
 - christianity: Scripture (Ps 90:2; John 5:26; Acts 17:24–25; Gen 1:1; Rev 4:11; Col 1:16–17; Deut 6:4; Matt 28:19; Heb 11:3; 1 Kgs 8:27; Ps 139:7–10; Jer 23:23–24); theologians Augustine (*Conf.* XI.4.6, XI.5.7, XII.7.7; CoG XI.10), Calvin I.13.1, I.14.1, Turretin III.7.1–4 (Latin, paraphrased), Bavinck II §26.1, §26.5, §26.16; confessions WCF 2.1–2, WLC Q. 7, WSC Q. 4, Belgic 1. Objection voices Hume D 9.7 (Cleanthes) and Carroll §5. Thinkers augustine, calvin, turretin, bavinck. Links `what-is-man`, `something-rather-than-nothing`, `ultimate-personal`, `one-and-many`.
 - naturalism: Russell *What I Believe* ch. 1 (founding voice); debate maps SEP Naturalism §§1.1, 1.8, 2; SEP Physicalism §§1–2, 3.1, 4.4, 5.5; SEP Emergent Properties §§3–4. Thinker russell. Links `what-is-man`, `something-rather-than-nothing`.
-- judaism: Tanakh (Deut 4:35, 39; 6:4; Isa 45:7, 18); Mishnah Avot 5:1, Sanhedrin 4:5; Bereshit Rabbah 1:9; Maimonides YT 1:1–3, 1:7, *Guide* I.51, I.54, I.58; Saadia II.4 (Hebrew, paraphrased); Halevi *Kuzari* IV.3, IV.16; Tanya *Sha'ar ha-Yiḥud* 3 (Hebrew, paraphrase; variant). Christian response cites John 1:1–3. Thinkers maimonides, halevi, saadia. Links `ultimate-personal`, `one-and-many`.
+- judaism: Tanakh (Deut 4:35, 39; 6:4; Isa 45:7, 18); Mishnah Avot 5:1, Sanhedrin 4:5; Bereshit Rabbah 1:9; Maimonides YT 1:1–3, 1:7; JPS Exod 3:14 (with the translators' note); Halevi *Kuzari* IV.3; Tanya *Sha'ar ha-Yiḥud* 3 (Hebrew, paraphrase; variant). Christian response cites John 1:1–3. Thinkers maimonides, halevi. Links `ultimate-personal`, `one-and-many`. (In the final consistency pass, Saadia II.4, *Guide* I.51/I.54/I.58 and the Halevi IV.16 material were moved out of this Deep dive to avoid repeating `ultimate-personal`; Exod 3:14 and the YT 1:7 incorporeality argument replaced them.)
 - islam: Qur'an 112:1–4, 57:3, 35:15, 13:16, 36:82, 28:88, 42:11; Bukhari 3191; al-Ash'ari *Ibāna* pp. 50–51; Maturidi via Harvey pp. 120–121; Ibn Sina *Ishārāt* Namaṭ 4 (Forget Arabic, paraphrase only) with SEP AIR §2.2 as control; SEP AIR §§6.2.1–6.2.3; SEP Ibn Taymiyya §4.1; SEP Ibn 'Arabi §3.1. Christian response cites Matt 28:19. Thinkers ash-ari, ibn-sina, ibn-taymiyya. Links `something-rather-than-nothing`, `one-and-many`.
 - hinduism: ChU VI.2.1–3; Taitt III.1; Muṇḍaka I.1.7; Śvet IV.10; Śaṅkara BSBh I.1.2, II.1.14; Rāmānuja Śrī Bhāṣya I.1.1 (pp. 103, 140); Madhva BSBh I.1.17; Gītā 9.4–6 with Śaṅkara and Rāmānuja; SEP Śaṅkara §2.3 and IEP Madhva §3 (secondary). Christian response cites Rev 4:11. Thinkers shankara, ramanuja, madhva. Links `something-rather-than-nothing`, `ultimate-personal`.
 - buddhism: SN 12.20, SN 12.15; Ud 8.3; Buddhaghosa Vism XVIII.25–28; Nāgārjuna MMK 1.1, 13.8, 15.1–2, 24.8–10, 24.18–19 (Sanskrit, paraphrase); Vasubandhu *Triṃśikā* 17. Christian response cites Acts 17:24–25. Thinkers buddhaghosa, nagarjuna. Links `something-rather-than-nothing`, `what-is-man`.

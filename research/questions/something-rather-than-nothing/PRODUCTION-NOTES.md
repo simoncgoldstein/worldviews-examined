@@ -6,12 +6,12 @@ Medium question. Produced 2026-10-06 from the frozen Ultimate Reality dossier by
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 33 | 194 | 423 | 272 | 21 | 21 |
 | naturalism | 35 | 206 | 395 | 358 | 10 | 13 |
-| judaism | 29 | 176 | 402 | 327 | 13 | 15 |
+| judaism | 29 | 176 | 401 | 327 | 13 | 15 |
 | islam | 36 | 213 | 412 | 298 | 15 | 17 |
 | hinduism | 37 | 209 | 409 | 298 | 11 | 12 |
-| buddhism | 30 | 176 | 414 | 282 | 11 | 12 |
+| buddhism | 30 | 176 | 414 | 260 | 11 | 12 |
 
-Total authored prose: 4,490 words. Visible prose is 395–423, at or a little above the 275–400 medium guide, because four lanes must present more than one answer (brute fact/necessary universe/rejecting the question; kalām/Ibn Sina/Ibn Taymiyya; *līlā* across three schools plus Advaita's qualification; the two rejected origins). Deep Dives are 272–358.
+Total authored prose: 4,467 words. Visible prose is 395–423, at or a little above the 275–400 medium guide, because four lanes must present more than one answer (brute fact/necessary universe/rejecting the question; kalām/Ibn Sina/Ibn Taymiyya; *līlā* across three schools plus Advaita's qualification; the two rejected origins). Deep Dives are 272–358.
 
 ## Framing decisions
 

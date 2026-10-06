@@ -7,11 +7,11 @@ Medium question. Produced 2026-10-06 from the frozen Ultimate Reality dossier by
 | christianity | 33 | 173 | 442 | 295 | 19 | 19 |
 | naturalism | 30 | 185 | 430 | 240 | 6 | 10 |
 | judaism | 32 | 201 | 379 | 258 | 11 | 13 |
-| islam | 33 | 186 | 387 | 203 | 10 | 12 |
-| hinduism | 39 | 235 | 406 | 218 | 15 | 15 |
-| buddhism | 29 | 195 | 412 | 247 | 9 | 10 |
+| islam | 33 | 186 | 387 | 194 | 10 | 12 |
+| hinduism | 39 | 235 | 406 | 188 | 13 | 13 |
+| buddhism | 29 | 195 | 430 | 242 | 9 | 10 |
 
-Total authored prose: 4,113 words. Visible prose is 379–442; the Christian lane is highest because objection and reply belong to the visible count. Islam and Hindu Deep Dives (203, 218) fall slightly under the 225 guide because the attribute debate and the Vedānta school split are carried in the anchor.
+Total authored prose: 4,087 words. Visible prose is 379–442; the Christian lane is highest because objection and reply belong to the visible count. Islam and Hindu Deep Dives (194, 188) fall under the 225 guide because the attribute formula and *līlā* were moved out, and the locus-of-ignorance argument condensed, in the final consistency pass to avoid repeating the anchor and `something-rather-than-nothing`.
 
 ## Framing decisions
 

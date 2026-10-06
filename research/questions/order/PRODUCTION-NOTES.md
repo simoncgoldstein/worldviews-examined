@@ -7,7 +7,7 @@ Medium question. Produced 2026-10-06 from the frozen Ultimate Reality dossier by
 | christianity | 31 | 188 | 448 | 239 | 23 | 24 |
 | naturalism | 33 | 206 | 415 | 257 | 14 | 15 |
 | judaism | 39 | 210 | 388 | 231 | 12 | 15 |
-| islam | 38 | 223 | 404 | 239 | 13 | 17 |
+| islam | 38 | 223 | 408 | 239 | 13 | 17 |
 | hinduism | 40 | 210 | 417 | 221 | 9 | 12 |
 | buddhism | 28 | 177 | 355 | 197 | 6 | 8 |
 

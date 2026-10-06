@@ -6,9 +6,9 @@ Concise question. Produced 2026-10-06 from the frozen Ultimate Reality dossier b
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 34 | 186 | 285 | 187 | 11 | 13 |
 | naturalism | 29 | 173 | 270 | 170 | 7 | 9 |
-| judaism | 34 | 187 | 270 | 152 | 6 | 6 |
+| judaism | 34 | 187 | 270 | 144 | 6 | 6 |
 | islam | 33 | 184 | 297 | 146 | 6 | 7 |
-| hinduism | 34 | 203 | 285 | 184 | 9 | 12 |
+| hinduism | 33 | 204 | 285 | 169 | 9 | 12 |
 | buddhism | 33 | 206 | 277 | 163 | 7 | 8 |
 
 Totals are recomputed in the domain report. Visible prose is 270–297, at or slightly above the 180–275 concise guide. The Christian lane includes objection and reply; the Islam and Hindu lanes must state three positions in very little space. Deep Dives are 146–187.
