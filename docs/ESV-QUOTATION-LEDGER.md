@@ -1,6 +1,6 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-05. Scope: all 18 public answer files under `src/content/answers/`. New Morality/Evil questions use Scripture references and paraphrases without adding direct ESV wording. The original quotation rows below remain unchanged. All new bodies were checked for quoted ESV wording.
+Inventory date: 2026-10-05. Scope: all 24 public answer files under `src/content/answers/`. New Morality/Evil questions use Scripture references and paraphrases without adding direct ESV wording. The original quotation rows below remain unchanged. All new bodies were checked for quoted ESV wording.
 
 This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the other domain answers use references and paraphrases.
 
@@ -33,24 +33,30 @@ For an approximate per-answer denominator, count prose-body words after removing
 |---|---:|---:|---:|
 | buddhism / fail-the-good | 429 | 0 | 0.00% |
 | buddhism / great-and-terrible | 1131 | 9 | 0.80% |
+| buddhism / know-the-good | 528 | 0 | 0.00% |
 | buddhism / self-deception | 383 | 0 | 0.00% |
 | christianity / fail-the-good | 407 | 0 | 0.00% |
 | christianity / great-and-terrible | 1125 | 11 | 0.98% |
+| christianity / know-the-good | 599 | 0 | 0.00% |
 | christianity / self-deception | 394 | 0 | 0.00% |
 | hinduism / fail-the-good | 413 | 0 | 0.00% |
 | hinduism / great-and-terrible | 1103 | 3 | 0.27% |
+| hinduism / know-the-good | 557 | 0 | 0.00% |
 | hinduism / self-deception | 374 | 0 | 0.00% |
 | islam / fail-the-good | 422 | 0 | 0.00% |
 | islam / great-and-terrible | 1049 | 3 | 0.29% |
+| islam / know-the-good | 559 | 0 | 0.00% |
 | islam / self-deception | 372 | 0 | 0.00% |
 | judaism / fail-the-good | 415 | 0 | 0.00% |
 | judaism / great-and-terrible | 1004 | 4 | 0.40% |
+| judaism / know-the-good | 556 | 0 | 0.00% |
 | judaism / self-deception | 379 | 0 | 0.00% |
 | naturalism / fail-the-good | 419 | 0 | 0.00% |
 | naturalism / great-and-terrible | 1088 | 8 | 0.74% |
+| naturalism / know-the-good | 587 | 0 | 0.00% |
 | naturalism / self-deception | 396 | 0 | 0.00% |
 
-Corpus measure: 38 ESV words / approximately 11,303 answer-body words = **0.34%**.
+Corpus measure: 38 ESV words / approximately 14,689 answer-body words = **0.26%**.
 
 Before adding or publishing quotations:
 
