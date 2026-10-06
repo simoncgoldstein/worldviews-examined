@@ -22,6 +22,9 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/love-beauty-creativity.mdx` | Psalm 27:4 | 1 | 8 | 35 | 1 |
 | `christianity/ultimate-reality.mdx` | Acts 17:24–25 | 1 | 5 | 28 | 2 |
 | `christianity/ultimate-reality.mdx` | Colossians 1:16–17 | 1 | 6 | 31 | 2 |
+| `christianity/something-rather-than-nothing.mdx` | Genesis 1:1 | 1 | 10 | 56 | 1 |
+| `christianity/something-rather-than-nothing.mdx` | Romans 4:17 | 1 | 9 | 49 | 1 |
+| `christianity/something-rather-than-nothing.mdx` | Revelation 4:11 | 1 | 8 | 42 | 1 |
 
 Totals: **87 quoted words**, **430 quoted bytes**, **21 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); original flagship checks retain their original provenance.
 

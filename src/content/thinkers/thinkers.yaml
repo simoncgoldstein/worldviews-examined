@@ -1096,8 +1096,18 @@
   schools: [Nyaya]
   era: late 10th century CE
   description: Nyaya philosopher who developed the realist natural-theological tradition, arguing for God as creator and answering Buddhist critics.
+  bio: >-
+    Udayana (Udayanācārya) is usually dated to the late tenth or early eleventh century CE and is associated with Mithila in north-eastern India. He worked within the combined Nyaya-Vaisesika tradition, which held that the world is made of real, enduring substances and atoms, knowable through perception and inference. His Nyayakusumanjali ("Handful of Flowers of Reasoning") is the classical Hindu treatise arguing for the existence of God (Isvara) by reason; his Atmatattvaviveka defends an enduring self against Buddhist critics. He also wrote commentaries on earlier Nyaya and Vaisesika works. Later Indian logicians regarded him as a forerunner of the "new" Nyaya (Navya-Nyaya) school.
+  significance: Udayana is the site's principal Hindu witness for arguing to God from the world rather than from scripture alone. His Kusumanjali infers an omniscient maker from the world's being an effect and from the joining of atoms at the start of each world-cycle, which the Vedanta schools, Ramanuja especially, rejected as a route to Brahman. He is used for the existence question and for natural order.
+  keyIdeas:
+    - Inference to God (Isvara) from effects
+    - Intelligent agency in the combining of atoms
+    - Realism about substances and atoms (Nyaya-Vaisesika)
+    - God as orderer of atoms, not creator from nothing
+    - Defence of an enduring self against Buddhism
   representativeWorks:
-    - { title: Nyayakusumanjali }
+    - { title: Nyayakusumanjali, sourceId: cowell-kusumanjali }
+    - { title: Atmatattvaviveka }
   notes: Represents the Nyaya realist and natural-theological strand, widening Hindu representation beyond Vedanta.
 
 - id: kumarila
