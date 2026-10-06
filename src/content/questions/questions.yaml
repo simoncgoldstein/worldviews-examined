@@ -142,7 +142,7 @@
   category: morality-evil
   summary: Why is there a gap between moral knowledge and moral conduct?
   order: 17
-  relatedQuestions: [know-the-good, great-and-terrible, self-salvation]
+  relatedQuestions: [great-and-terrible, know-the-good, evil]
 
 - id: evil
   slug: what-is-evil

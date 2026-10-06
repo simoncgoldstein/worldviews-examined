@@ -1,0 +1,17 @@
+---
+// Resolve answer cross-links from stable IDs, respecting the site base and catalog slugs.
+import { getContent, lookup, questionUrl } from '../lib/content';
+
+interface Props {
+  question: string;
+  worldview?: string;
+}
+
+const { question, worldview } = Astro.props;
+const content = await getContent();
+const target = lookup(content.questionById, question, 'question');
+if (worldview) lookup(content.worldviewById, worldview, 'worldview');
+const href = `${questionUrl(target)}${worldview ? `#${worldview}` : ''}`;
+---
+
+<a href={href}><slot /></a>

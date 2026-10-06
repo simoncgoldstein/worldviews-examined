@@ -1,8 +1,8 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-05. Scope: the six existing public `great-and-terrible` answer files under `src/content/answers/`; no Phase 4 answer has been written. All six bodies were read for ESV wording. Bible references and doctrinal paraphrases without direct quotation do not consume the quotation inventory below.
+Inventory date: 2026-10-05. Scope: all twelve public answer files under `src/content/answers/`: six `great-and-terrible` and six `fail-the-good` entries. The new question uses Scripture references and paraphrases, adding no direct ESV quotations. All twelve bodies were checked for quoted ESV wording. Bible references and doctrinal paraphrases without direct quotation do not consume the quotation inventory below.
 
-This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). All six public answer files contain ESV fragments.
+This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the six `fail-the-good` entries do not.
 
 | Answer file (under `src/content/answers/`) | Locator accompanying quotation | Fragments | Quoted words | Quoted bytes | Conservative verse charge |
 |---|---|---:|---:|---:|---:|
@@ -29,16 +29,22 @@ Totals: **38 quoted words**, **184 quoted bytes**, **15 conservative verse insta
 
 For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination.
 
-| Answer | Approximate prose words | ESV words | Approximate ESV proportion |
+| Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
-| christianity | 1125 | 11 | 0.98% |
-| naturalism | 1088 | 8 | 0.74% |
-| islam | 1049 | 3 | 0.29% |
-| judaism | 1004 | 4 | 0.40% |
-| hinduism | 1103 | 3 | 0.27% |
-| buddhism | 1131 | 9 | 0.80% |
+| christianity / great-and-terrible | 1125 | 11 | 0.98% |
+| naturalism / great-and-terrible | 1088 | 8 | 0.74% |
+| islam / great-and-terrible | 1049 | 3 | 0.29% |
+| judaism / great-and-terrible | 1004 | 4 | 0.40% |
+| hinduism / great-and-terrible | 1103 | 3 | 0.27% |
+| buddhism / great-and-terrible | 1131 | 9 | 0.80% |
+| christianity / fail-the-good | 407 | 0 | 0.00% |
+| naturalism / fail-the-good | 419 | 0 | 0.00% |
+| judaism / fail-the-good | 415 | 0 | 0.00% |
+| islam / fail-the-good | 422 | 0 | 0.00% |
+| hinduism / fail-the-good | 413 | 0 | 0.00% |
+| buddhism / fail-the-good | 429 | 0 | 0.00% |
 
-Corpus measure: 38 ESV words / approximately 6,500 answer-body words = **0.58%**.
+Corpus measure: 38 ESV words / approximately 9,005 answer-body words = **0.42%**.
 
 Before adding or publishing quotations:
 
@@ -47,4 +53,4 @@ Before adding or publishing quotations:
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-No new ESV quotations were added by this refinement. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+No new ESV quotations were added by the methodology refinement or by `fail-the-good` production. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
