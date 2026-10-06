@@ -185,6 +185,11 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
 
 ### Man & Human Nature
 
+> **Superseded for this domain (2026-10-06):** the domain research pass in
+> `research/domains/man-human-nature/` closed every P and N cell below (21 Ready, 9 Ready with narrow caveat,
+> 0 Blocked), added 8 checked sources and maps passages for all five questions. Start there; the grades and notes
+> below are the pre-pass baseline.
+
 | Question | Depth | Ref | Nat | Jud | Isl | Hin | Bud |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|
 | `what-is-man` | Anchor | S | S | S | S | S | S |
