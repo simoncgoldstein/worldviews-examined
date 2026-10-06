@@ -17,6 +17,7 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
 | `christianity/self-salvation.mdx` | Ephesians 2:8 | 1 | 8 | 42 | 1 |
 | `judaism/what-is-man.mdx` | Colossians 1:15 | 1 | 6 | 30 | 1 |
+| `hinduism/worship.mdx` | 1 John 4:19 | 1 | 7 | 33 | 1 |
 
 Totals: **59 quoted words**, **299 quoted bytes**, **17 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); original flagship checks retain their original provenance.
 

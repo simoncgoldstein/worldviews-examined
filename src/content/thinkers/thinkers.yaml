@@ -1304,3 +1304,37 @@
     - { title: Nyayabindu }
     - { title: Hetubindu }
   notes: Represents Buddhist logic and epistemology, central to the Knowledge & Truth domain.
+
+- id: shinran
+  slug: shinran
+  name: Shinran
+  worldview: buddhism
+  role: specialist
+  displayOrder: 3
+  usedFor: [Pure Land devotion, Other Power, entrusting]
+  schools: [Jōdo Shinshū (True Pure Land)]
+  birthYear: 1173
+  deathYear: 1263
+  description: Japanese Pure Land teacher, regarded as the founder of Jōdo Shinshū, who taught complete reliance on Amida Buddha's vow rather than on one's own power.
+  bio: >-
+    Shinran (1173–1263) trained for about twenty years as a Tendai monk on Mount Hiei before
+    becoming a disciple of Hōnen, who taught exclusive reliance on the recitation of Amida Buddha's
+    name. When the nembutsu movement was suppressed in 1207 he was laicized and exiled to Echigo,
+    where he married and lived as neither monk nor layman. He later taught in the Kantō region and
+    returned to Kyoto in his last decades. His major work is the Kyōgyōshinshō; the Tannishō, a
+    record of his sayings compiled after his death by his follower Yuien, is the most widely read
+    account of his teaching. Jōdo Shinshū, the school that regards him as founder, became one of the
+    largest Buddhist traditions in Japan.
+  significance: >-
+    Shinran gives the sharpest Buddhist statement of liberation through another's power: entrusting
+    oneself to Amida's vow, which was made above all for those unable to free themselves. He is used
+    for Pure Land devotion and for the comparison with grace, not as a representative of Buddhism as
+    a whole.
+  keyIdeas:
+    - Other Power (tariki) versus self-power (jiriki)
+    - Entrusting (shinjin) to Amida's vow
+    - The nembutsu as the vow's working, not a meritorious act
+    - Amida's vow made for the evil person
+  representativeWorks:
+    - { title: Kyōgyōshinshō }
+    - { title: Tannishō (compiled by Yuien), sourceId: shinran-tannisho-cws }
