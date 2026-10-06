@@ -30,6 +30,11 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/ultimate-personal.mdx` | John 4:24 | 1 | 3 | 13 | 1 |
 | `christianity/ultimate-personal.mdx` | John 17:24 | 1 | 10 | 55 | 1 |
 | `islam/ultimate-personal.mdx` | John 17:24 | 1 | 6 | 34 | 1 |
+| `christianity/order.mdx` | Proverbs 3:19 | 1 | 7 | 36 | 1 |
+| `christianity/order.mdx` | Genesis 8:22 | 1 | 3 | 15 | 1 |
+| `christianity/order.mdx` | Jeremiah 33:25 | 1 | 14 | 70 | 1 |
+| `christianity/order.mdx` | Matthew 10:29 | 1 | 4 | 22 | 1 |
+| `naturalism/order.mdx` | Jeremiah 33:25 | 1 | 6 | 31 | 1 |
 
 Totals: **87 quoted words**, **430 quoted bytes**, **21 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); original flagship checks retain their original provenance.
 
