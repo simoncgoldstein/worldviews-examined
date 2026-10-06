@@ -34,4 +34,4 @@ No materially blocked cell; no claim fills a source gap by improvisation.
 
 ESV quotations: Christianity: Ephesians 2:8, one partial verse, 8 words. Ledger updated where applicable.
 
-Validation passed: content validation, Astro/type check, production build, generated local link/fragment checks (88 pages; 4,457 local links; 3,198 fragments), and git diff whitespace check. External links were not comprehensively network-probed.
+Validation passed after domain consistency corrections: content validation; Astro/type check (0 errors, 0 warnings, 0 hints); production build (88 pages); all generated local links/fragments (4,467 links, 3,209 fragments); git diff --check. External URLs were not comprehensively network-probed.

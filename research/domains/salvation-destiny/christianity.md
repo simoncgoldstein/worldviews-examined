@@ -29,6 +29,7 @@ G: distinguish guilt from guilty feeling, ground from response, forgiveness from
 | bible-esv | Hebrews 9:11–28 | Christ offers himself; conscience; death and judgment | G, A, S | NEW |
 | bible-esv | Philippians 1:21–23; 2 Corinthians 5:1–10 | With Christ after departure; embodiment; judgment | A | NEW |
 | bible-esv | 1 Corinthians 15:35–58; 1 John 3:1–3; Revelation 21:1–8; 22:1–5 | Resurrection transformation; likeness; renewal; exclusion; service | A, F | NEW |
+| bible-esv | Luke 19:1–10; Matthew 5:23–24; Romans 6:1–14; John 5:28–29 | Repentance and repair; union and new life; resurrection to life/judgment | G, A, S | NEW (Phase A, before gate) |
 | wcf | 8.4–5; 10.1–2; 11.1–5; 13; 14; 15; 16.2; 17; 18 | Satisfaction, application, faith, repentance, fruit, preservation, assurance | G, S | NEW/reuse |
 | wcf | 32–33 | Immediate state; same bodies with different qualities; judgment | A, F | REUSE |
 | heidelberg-catechism | Q&A 56–64; 86–90 | Imputation; faith receives; gratitude and conversion | G, S | NEW |

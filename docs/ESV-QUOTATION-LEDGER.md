@@ -18,6 +18,7 @@ This is a manual inventory, not an automatic certification of copyright permissi
 
 
 
+
 | `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
 | `christianity/self-salvation.mdx` | Ephesians 2:8 | 1 | 8 | 42 | 1 |
 
@@ -55,7 +56,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / fail-the-good | 381 | 0 | 0.00% |
 | christianity / final-end | 614 | 0 | 0.00% |
 | christianity / great-and-terrible | 1081 | 11 | 1.02% |
-| christianity / guilt | 597 | 13 | 2.18% |
+| christianity / guilt | 615 | 13 | 2.11% |
 | christianity / know-the-good | 577 | 0 | 0.00% |
 | christianity / self-deception | 366 | 0 | 0.00% |
 | christianity / self-salvation | 984 | 8 | 0.81% |
@@ -71,11 +72,11 @@ For an approximate per-answer denominator, count prose-body words after removing
 | hinduism / self-deception | 351 | 0 | 0.00% |
 | hinduism / self-salvation | 961 | 0 | 0.00% |
 | hinduism / suffering | 526 | 0 | 0.00% |
-| islam / after-death | 604 | 0 | 0.00% |
+| islam / after-death | 625 | 0 | 0.00% |
 | islam / death | 574 | 0 | 0.00% |
 | islam / evil | 936 | 0 | 0.00% |
 | islam / fail-the-good | 400 | 0 | 0.00% |
-| islam / final-end | 618 | 0 | 0.00% |
+| islam / final-end | 647 | 0 | 0.00% |
 | islam / great-and-terrible | 998 | 3 | 0.30% |
 | islam / guilt | 612 | 0 | 0.00% |
 | islam / know-the-good | 531 | 0 | 0.00% |
@@ -105,7 +106,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / self-salvation | 998 | 0 | 0.00% |
 | naturalism / suffering | 525 | 0 | 0.00% |
 
-Corpus measure: 59 ESV words / approximately 42,869 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 59 ESV words / approximately 42,937 answer-body words = **0.14%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
