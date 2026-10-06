@@ -35,6 +35,9 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/order.mdx` | Jeremiah 33:25 | 1 | 14 | 70 | 1 |
 | `christianity/order.mdx` | Matthew 10:29 | 1 | 4 | 22 | 1 |
 | `naturalism/order.mdx` | Jeremiah 33:25 | 1 | 6 | 31 | 1 |
+| `christianity/one-and-many.mdx` | Deuteronomy 6:4 | 1 | 8 | 33 | 1 |
+| `christianity/one-and-many.mdx` | Romans 11:36 | 1 | 11 | 50 | 1 |
+| `christianity/one-and-many.mdx` | 1 Corinthians 8:6 | 2 | 18 | 96 | 1 |
 
 Totals: **87 quoted words**, **430 quoted bytes**, **21 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); original flagship checks retain their original provenance.
 
