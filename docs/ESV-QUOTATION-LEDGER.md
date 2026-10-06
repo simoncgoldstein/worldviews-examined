@@ -1,6 +1,6 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-05. Scope: all 48 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny adds the checked quotations itemized below; other new Scripture citations are references/paraphrases.
+Inventory date: 2026-10-05. Scope: all 66 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny adds the checked quotations itemized below; other new Scripture citations are references/paraphrases.
 
 This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the new quotations below are the only additions outside the flagship.
 
@@ -14,11 +14,6 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `hinduism/great-and-terrible.mdx` | Romans 1:24, 28 | 1 | 3 | 12 | 2 |
 | `buddhism/great-and-terrible.mdx` | Romans 1:21 | 1 | 2 | 8 | 1 |
 | `buddhism/great-and-terrible.mdx` | Psalm 51:4 | 1 | 7 | 36 | 1 |
-
-
-
-
-
 | `christianity/guilt.mdx` | Romans 8:1 | 1 | 13 | 73 | 1 |
 | `christianity/self-salvation.mdx` | Ephesians 2:8 | 1 | 8 | 42 | 1 |
 
@@ -115,4 +110,4 @@ Before adding or publishing quotations:
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-The Salvation/Destiny batch uses the two short quotations below where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+The Salvation/Destiny batch uses the two short quotations itemized above where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.

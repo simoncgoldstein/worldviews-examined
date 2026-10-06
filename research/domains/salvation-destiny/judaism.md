@@ -25,7 +25,7 @@ G: lead Tanakh then Yoma; repair interpersonal wrongs, divine mercy and confessi
 | tanakh-jps-gender-sensitive | Leviticus 5:11–13; 1 Kings 8:46–50 | Offering, repentance and divine forgiveness | G, S | REUSE |
 | tanakh-jps-gender-sensitive | Daniel 12:2 | Awakening of the dead; differing outcomes | A, F | NEW canonical Hebrew check |
 | mishnah-kulp | Yoma 8:8–9; Avot 4:17; 4:22 | Atonement with repentance; interpersonal wrongs; accountability | G, A, F, S | REUSE |
-| talmud-bavli-koren | Kiddushin 30b; Sanhedrin 91b | Torah as antidote; resurrection and joint accountability of body/soul | A, S | REUSE |
+| talmud-bavli-koren | Kiddushin 30b; Sanhedrin 91b | Torah as antidote; resurrection and joint accountability of body/soul | A, S | REUSE (Kiddushin 30b; Sanhedrin 91b yetzer clause); blind/lame guards parable checked in PR #6 review, 2026-10-06, against the same Koren/Steinsaltz English on Sefaria (setup ends 91a, parable and joint judgment 91b) |
 | maimonides-mishneh-torah-touger | Teshuvah 2:1–2; 7:4 | Abandon wrong; remorse; resolve; confession; restored favor | G, S | REUSE |
 | maimonides-mishneh-torah-touger | Teshuvah 7:1–6 | Urgent repentance of dispositions; nearness; communal redemption | S | NEW/reuse |
 | maimonides-mishneh-torah-touger | Teshuvah 8:1–2 | Final good; incorporeal reward and knowledge; exclusion | A, F | NEW |
