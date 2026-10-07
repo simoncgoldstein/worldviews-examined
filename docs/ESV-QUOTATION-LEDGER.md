@@ -38,6 +38,12 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/one-and-many.mdx` | Deuteronomy 6:4 | 1 | 8 | 33 | 1 |
 | `christianity/one-and-many.mdx` | Romans 11:36 | 1 | 11 | 50 | 1 |
 | `christianity/one-and-many.mdx` | 1 Corinthians 8:6 | 2 | 18 | 96 | 1 |
+| `christianity/knowledge-possible.mdx` | Proverbs 20:12 | 1 | 13 | 63 | 1 |
+| `christianity/knowledge-possible.mdx` | 1 Corinthians 13:12 | 1 | 5 | 18 | 1 |
+| `christianity/knowledge-possible.mdx` | Romans 1:18–21 | 1 | 3 | 18 | 4 |
+| `christianity/knowledge-possible.mdx` | Psalm 36:9 | 1 | 7 | 29 | 1 |
+| `judaism/knowledge-possible.mdx` | Colossians 2:3 | 1 | 11 | 60 | 1 |
+| `islam/knowledge-possible.mdx` | Romans 1:20 | 2 | 9 | 53 | 1 |
 
 Totals: **228 quoted words**, **1155 quoted bytes**, **41 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); original flagship checks retain their original provenance.
 
