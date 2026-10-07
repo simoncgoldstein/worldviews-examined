@@ -288,9 +288,28 @@
   birthYear: 1616
   deathYear: 1683
   description: English Puritan theologian known for detailed treatments of indwelling sin, the work of the Spirit, the atonement and communion with God.
+  bio: >-
+    John Owen (1616–1683) was an English Puritan theologian and pastor. Educated at Queen's College,
+    Oxford, he published his first book, A Display of Arminianism, in 1642, and was given the living
+    of Fordham in Essex. He preached before Parliament, served as a chaplain to Oliver Cromwell, and
+    was Dean of Christ Church and Vice-Chancellor of the University of Oxford in the 1650s. A leading
+    Independent (Congregationalist), he took part in drafting the Savoy Declaration of 1658. After
+    the Restoration he ministered to a congregation in London until his death. His writings fill
+    twenty-four volumes in William Goold's nineteenth-century edition.
+  significance: >-
+    Owen is the classic English Reformed expositor of the atonement and of indwelling sin. He is
+    used here for what Scripture means by Christ bearing sin and making satisfaction, and as the
+    best-known defender of definite atonement, the particular design of Christ's death taught in the
+    Canons of Dort and the Westminster Confession; his own arguments for it are attributed to him.
+    He is also used for the deceitfulness of indwelling sin.
+  keyIdeas:
+    - Satisfaction as the bearing of sin's penalty
+    - Definite (particular) atonement
+    - Oblation and intercession as one priestly work
+    - Indwelling sin and mortification
   representativeWorks:
-    - { title: The Death of Death in the Death of Christ, year: 1647 }
-    - { title: Of the Mortification of Sin in Believers, year: 1656 }
+    - { title: The Death of Death in the Death of Christ, year: 1647, sourceId: owen-works-goold-10 }
+    - { title: Of the Mortification of Sin in Believers, year: 1656, sourceId: owen-works-goold-6 }
     - { title: Communion with God, year: 1657 }
 
 - id: aquinas
