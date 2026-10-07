@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 293
+  "citeCount": 316
  },
  {
   "id": "wcf",
@@ -32,7 +32,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 103
+  "citeCount": 109
  },
  {
   "id": "calvin-institutes",
@@ -174,7 +174,7 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 27,
+  "answers": 28,
   "lanes": [
    "christianity",
    "naturalism",
@@ -182,7 +182,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 54
+  "citeCount": 62
  },
  {
   "id": "crc-acts-synod-1924",
@@ -221,7 +221,7 @@
   "lanes": [
    "christianity"
   ],
-  "citeCount": 5
+  "citeCount": 6
  },
  {
   "id": "sep-sin-christian",
@@ -295,11 +295,11 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 4,
+  "answers": 5,
   "lanes": [
    "christianity"
   ],
-  "citeCount": 4
+  "citeCount": 5
  },
  {
   "id": "heidelberg-catechism",
@@ -313,7 +313,7 @@
    "christianity",
    "islam"
   ],
-  "citeCount": 10
+  "citeCount": 12
  },
  {
   "id": "canons-of-dort",
@@ -322,11 +322,11 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 2,
+  "answers": 3,
   "lanes": [
    "christianity"
   ],
-  "citeCount": 3
+  "citeCount": 4
  },
  {
   "id": "belgic-confession",
@@ -354,6 +354,19 @@
    "christianity"
   ],
   "citeCount": 1
+ },
+ {
+  "id": "owen-works-goold-10",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 4
  },
  {
   "id": "bavinck-reformed-dogmatics-monergism-1",
@@ -1582,13 +1595,13 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 15,
+  "answers": 16,
   "lanes": [
    "christianity",
    "judaism",
    "islam"
   ],
-  "citeCount": 31
+  "citeCount": 34
  },
  {
   "id": "hume-natural-history-religion",

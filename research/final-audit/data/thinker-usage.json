@@ -4,7 +4,7 @@
   "name": "John Calvin",
   "worldview": "christianity",
   "role": "primary",
-  "answers": 19,
+  "answers": 20,
   "answerIds": [
    "christianity/ultimate-reality",
    "christianity/ultimate-personal",
@@ -23,6 +23,7 @@
    "christianity/death",
    "christianity/self-deception",
    "christianity/self-salvation",
+   "christianity/guilt",
    "christianity/revelation",
    "christianity/jesus"
   ],
@@ -42,7 +43,7 @@
   "name": "Francis Turretin",
   "worldview": "christianity",
   "role": "primary",
-  "answers": 9,
+  "answers": 10,
   "answerIds": [
    "christianity/ultimate-reality",
    "christianity/something-rather-than-nothing",
@@ -52,12 +53,14 @@
    "christianity/induction",
    "christianity/ultimate-authority",
    "christianity/what-is-man",
+   "christianity/guilt",
    "christianity/jesus"
   ],
   "domains": [
    "ultimate-reality",
    "knowledge-truth",
    "human-nature",
+   "salvation-destiny",
    "revelation-history"
   ],
   "bio": true,
@@ -219,11 +222,15 @@
   "name": "John Owen",
   "worldview": "christianity",
   "role": "specialist",
-  "answers": 0,
-  "answerIds": [],
-  "domains": [],
-  "bio": false,
-  "worksWithSource": 0
+  "answers": 1,
+  "answerIds": [
+   "christianity/guilt"
+  ],
+  "domains": [
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 2
  },
  {
   "id": "aquinas",

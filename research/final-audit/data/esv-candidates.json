@@ -1,6 +1,56 @@
 {
  "candidates": [
   {
+   "file": "christianity/death.mdx",
+   "locator": "Hebrews 2:14–15",
+   "fragments": [
+    "through death he might destroy the one who has the power of death,"
+   ],
+   "words": 13
+  },
+  {
+   "file": "christianity/death.mdx",
+   "locator": "2 Timothy 1:10",
+   "fragments": [
+    "abolished death and brought life and immortality to light."
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/death.mdx",
+   "locator": "1 Corinthians 15:54–57",
+   "fragments": [
+    "O death, where is your victory? O death, where is your sting?"
+   ],
+   "words": 12
+  },
+  {
+   "file": "christianity/death.mdx",
+   "locator": "1 Corinthians 15:20",
+   "fragments": [
+    "the firstfruits."
+   ],
+   "words": 2
+  },
+  {
+   "file": "christianity/death.mdx",
+   "locator": "Revelation 21:4",
+   "fragments": [
+    "death shall be no more."
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/evil.mdx",
+   "locator": "Acts 2:23; 4:27–28",
+   "fragments": [
+    "delivered up according to the definite plan and foreknowledge of God,",
+    "lawless men.",
+    "to do whatever your hand and your plan had predestined to take place."
+   ],
+   "words": 26
+  },
+  {
    "file": "christianity/great-and-terrible.mdx",
    "locator": "Colossians 3:10",
    "fragments": [
@@ -19,11 +69,69 @@
   },
   {
    "file": "christianity/guilt.mdx",
+   "locator": "Romans 3:21–26",
+   "fragments": [
+    "through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood.",
+    "passed over former sins,",
+    "so that he might be just and the justifier of the one who has faith in Jesus."
+   ],
+   "words": 39
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "1 John 4:10",
+   "fragments": [
+    "sent his Son to be the propitiation for our sins."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "Isaiah 53:4–6, 10–11",
+   "fragments": [
+    "an offering for guilt,"
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "1 Peter 2:24; 3:18; Galatians 3:13",
+   "fragments": [
+    "the righteous for the unrighteous, that he might bring us to God."
+   ],
+   "words": 12
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "2 Corinthians 5:21",
+   "fragments": [
+    "For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God."
+   ],
+   "words": 24
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "Hebrews 9:11–14; 10:10–14",
+   "fragments": [
+    "offered himself without blemish to God"
+   ],
+   "words": 6
+  },
+  {
+   "file": "christianity/guilt.mdx",
    "locator": "Romans 8:1",
    "fragments": [
     "There is therefore now no condemnation for those who are in Christ Jesus."
    ],
    "words": 13
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "Colossians 2:13–15",
+   "fragments": [
+    "the record of debt that stood against us,"
+   ],
+   "words": 8
   },
   {
    "file": "christianity/history.mdx",
@@ -126,7 +234,7 @@
    "file": "christianity/jesus.mdx",
    "locator": "Mark 10:45",
    "fragments": [
-    "to give his life as a ransom for many"
+    "to give his life as a ransom for many."
    ],
    "words": 9
   },
@@ -404,6 +512,39 @@
    "words": 2
   },
   {
+   "file": "christianity/suffering.mdx",
+   "locator": "Hebrews 2:14–18; 5:7–8",
+   "fragments": [
+    "made like his brothers in every respect,"
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/suffering.mdx",
+   "locator": "Hebrews 4:15; 2:10",
+   "fragments": [
+    "to sympathize with our weaknesses,"
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/suffering.mdx",
+   "locator": "Psalm 22:1; Mark 15:34",
+   "fragments": [
+    "My God, my God, why have you forsaken me?"
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/suffering.mdx",
+   "locator": "2 Corinthians 4:17; Revelation 21:4",
+   "fragments": [
+    "an eternal weight of glory beyond all comparison,",
+    "will wipe away every tear from their eyes."
+   ],
+   "words": 16
+  },
+  {
    "file": "christianity/ultimate-authority.mdx",
    "locator": "Numbers 23:19",
    "fragments": [
@@ -511,7 +652,7 @@
    "file": "judaism/great-and-terrible.mdx",
    "locator": "Isaiah 53:10",
    "fragments": [
-    "an offering for guilt."
+    "an offering for guilt,"
    ],
    "words": 4
   },
@@ -689,5 +830,5 @@
    "verses": 1
   }
  ],
- "ledgerRows": 77
+ "ledgerRows": 94
 }
