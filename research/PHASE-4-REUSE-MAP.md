@@ -400,6 +400,26 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
   - Hindu (N): Hindu receptions of Jesus not researched
   - Buddhist (N): Buddhist receptions of Jesus not researched
 
+*Update (Revelation & History pass, 2026-10-07):* all eighteen cells researched; see
+`research/domains/revelation-history/` (README, six lane packets, shared `jesus-evidence.md`). Readiness: 9 Ready, 9
+Ready with narrow caveat, 0 Blocked. Named gaps closed:
+- City of God XII.13, XV.1, XIX.17, XXII.30;
+- WCF 1, 7, 8, 32–33;
+- Hume E §X;
+- *Kuzari* I.2–11, 87–89;
+- Maimonides YT 7–10 and Kings 11–12 (uncensored);
+- Nachmanides' *Vikuach* (Hebrew Wikisource) with the EJ article;
+- Qur'anic Christology with al-Tabari, al-Razi and Ibn Kathir on 4:157 (Arabic), and Fatoohi 2023;
+- *iʿjāz* (Qur'an, al-Ghazali *Munqidh* pp. 53–56, Halevi I.6);
+- Ibn Khaldun (de Slane pp. 349–350);
+- yugas and kalpas (Gītā 8–9, Manu I, *Viṣṇu Purāṇa* III.2, IV.24; BS I.3.28–30);
+- Buddhist cycles and decline (SN 15, DN 26–27, AN 7.66, 8.51, SN 16.13);
+- Mahāyāna authority (Lotus II, XV; BCA 9.42–44);
+- Hindu and Buddhist receptions of Jesus (Roy, Vivekananda, Gandhi; Soyen Shaku, the Dalai Lama via Cobb);
+- the historical-Jesus track (Martin, Ehrman, Lowder vs Craig, Habermas, Hurtado; Josephus, Tacitus, Pliny).
+
+Dōgen was deliberately not used for `history`.
+
 </details>
 
 ## 5. Reusable works already verified
@@ -452,8 +472,8 @@ A reviewed answer may not cite any of them until it is verified under the protoc
 4. **Naturalist metaphysics and epistemology.** Oppy was never readable. Quine, philosophy of logic and laws of nature are unresearched; Hume's *Enquiry* §IV is cheap because the source is checked. *Update (2026-10-06):* laws of nature, physicalism, emergence and existence are now mapped (Carroll 2018; six SEP entries; Hume E IV, VII; D VIII–IX). Oppy is still blocked (403). Quine and the philosophy of logic remain for Knowledge & Truth. *Update (2026-10-07):* closed. Hume E IV–V, XII; Russell's *Problems* VI–VIII; SEP Induction, Logical Truth, Naturalism in Epistemology, Quine, Scientific Realism. Quine's primaries are still not lawfully readable, so quote him via SEP.
 5. **Jewish philosophical prolegomena.** Saadia's introduction and Treatise I, and Maimonides' *Guide* I (negative theology). The editions are checked, so this is cheap. *Update (2026-10-07):* closed. Saadia Intro 2, 5–6, II.13, III.1, 3, 8 (Hebrew); *Guide* I.31, I.73, II.25, III.15; YT 8–9.
 6. **Eschatology across lanes.** WCF 32–33, the World to Come, the Qur'anic judgment, liberation states by school, nirvāṇa. Mostly locator work in checked editions.
-7. **Jesus in non-Christian lanes.** Qur'anic Christology (cheap: the Qur'an is checked), Jewish disputation literature, Hindu and Buddhist receptions, historical-Jesus scholarship.
-8. **Time and history.** Yugas, kalpas and the decline of the Dharma, Ibn Khaldun, Augustine's two cities (*City of God* XV–XXII is checked but unmined).
+7. **Jesus in non-Christian lanes.** Qur'anic Christology (cheap: the Qur'an is checked), Jewish disputation literature, Hindu and Buddhist receptions, historical-Jesus scholarship. *Update (2026-10-07):* closed. See `research/domains/revelation-history/jesus-evidence.md` and the lane packets. Remaining: Ant. 20.200's separate authenticity; Wright, Lüdemann and Allison unavailable; Thich Nhat Hanh unavailable.
+8. **Time and history.** Yugas, kalpas and the decline of the Dharma, Ibn Khaldun, Augustine's two cities (*City of God* XV–XXII is checked but unmined). *Update (2026-10-07):* closed: City of God XV–XXII mined; yugas and kalpas, the Dharma's decline and Ibn Khaldun read. *Mappō* and Buddhaghosa on eons are not read (not material).
 9. **Family and aesthetics.** Householder ethics in Hindu and Buddhist sources, Islamic marriage, Abhinavagupta's *rasa*, al-Ghazali on love.
 
 ## 7. Production and research policy (summary)
