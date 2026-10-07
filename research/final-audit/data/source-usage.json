@@ -1,0 +1,2641 @@
+[
+ {
+  "id": "bible-esv",
+  "type": "scripture",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 128,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 293
+ },
+ {
+  "id": "wcf",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 47,
+  "lanes": [
+   "christianity",
+   "judaism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 103
+ },
+ {
+  "id": "calvin-institutes",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "turretin-institutes",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "bavinck-reformed-dogmatics",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "vos-biblical-theology",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "van-til-defense",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "bahnsen-van-til-apologetic",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "augustine-city-of-god",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 18,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 30
+ },
+ {
+  "id": "augustine-confessions",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 12,
+  "lanes": [
+   "christianity",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "augustine-enchiridion",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "bavinck-calvin-common-grace",
+  "type": "article",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "calvin-commentary-romans",
+  "type": "commentary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "calvin-institutes-beveridge",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 27,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 54
+ },
+ {
+  "id": "crc-acts-synod-1924",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "edwards-works-hickman-1",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 11
+ },
+ {
+  "id": "kant-religion-greene-hudson",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "sep-sin-christian",
+  "type": "academic",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "taylor-original-sin",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "taylor-original-sin-supplement",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "westminster-larger-catechism",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "witsius-economy-covenants",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "westminster-shorter-catechism",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "heidelberg-catechism",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "christianity",
+   "islam"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "canons-of-dort",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "belgic-confession",
+  "type": "confessional",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 12,
+  "lanes": [
+   "christianity",
+   "islam"
+  ],
+  "citeCount": 13
+ },
+ {
+  "id": "owen-works-goold-6",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "bavinck-reformed-dogmatics-monergism-1",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "christianity",
+   "hinduism"
+  ],
+  "citeCount": 18
+ },
+ {
+  "id": "bavinck-reformed-dogmatics-monergism-2",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 9,
+  "lanes": [
+   "christianity",
+   "hinduism"
+  ],
+  "citeCount": 23
+ },
+ {
+  "id": "bavinck-reformed-dogmatics-monergism-3",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "christianity",
+   "judaism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "bavinck-reformed-dogmatics-monergism-4",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "bavinck-gereformeerde-dogmatiek-3",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "hume-enquiry",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 10,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 30
+ },
+ {
+  "id": "sep-naturalism",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 11
+ },
+ {
+  "id": "darwin-descent",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 15,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 34
+ },
+ {
+  "id": "dennett-self-artifact",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "hume-epm",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "hume-treatise",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 10,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "kitcher-ethical-project-precis",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "mackie-ethics",
+  "type": "book",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "railton-moral-realism",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 9,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 21
+ },
+ {
+  "id": "russell-what-i-believe",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 31
+ },
+ {
+  "id": "sep-altruism-biological",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-morality-biology",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "sep-weakness-will",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "tennie-ratchet",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "wrangham-two-types",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-cognitive-disability",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "hume-dialogues",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 9,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 22
+ },
+ {
+  "id": "epicurus-letter-menoeceus-hicks",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-death",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "flatt-partridge-evolution-aging",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-self-deception",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-concept-evil",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "maimonides-guide",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "halevi-kuzari",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "soloveitchik-halakhic-man",
+  "type": "book",
+  "tags": [
+   "judaism"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "ccar-principles-1999",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "halevi-kuzari-hirschfeld",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 9,
+  "lanes": [
+   "judaism",
+   "islam"
+  ],
+  "citeCount": 22
+ },
+ {
+  "id": "maimonides-eight-chapters",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "maimonides-guide-friedlander",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "christianity",
+   "judaism"
+  ],
+  "citeCount": 34
+ },
+ {
+  "id": "maimonides-mishneh-torah-touger",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 20,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 61
+ },
+ {
+  "id": "midrash-rabbah-sefaria",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 17
+ },
+ {
+  "id": "mishnah-kulp",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 18,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 43
+ },
+ {
+  "id": "ramban-torah-chavel",
+  "type": "commentary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 12
+ },
+ {
+  "id": "rashi-tanakh-judaica-press",
+  "type": "commentary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "saadia-emunot-ibn-tibbon",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 14,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 25
+ },
+ {
+  "id": "soloveitchik-lonely-man-of-faith",
+  "type": "article",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "talmud-bavli-koren",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 19,
+  "lanes": [
+   "judaism",
+   "islam"
+  ],
+  "citeCount": 52
+ },
+ {
+  "id": "tanakh-jps-gender-sensitive",
+  "type": "scripture",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 25,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 58
+ },
+ {
+  "id": "tanya-kehot",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "unverified",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "yerushalmi-guggenheimer",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "tanya-hebrew-sefaria",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "luzzatto-mesillat-yesharim-sebag",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "quran-haleem",
+  "type": "scripture",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 27,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 184
+ },
+ {
+  "id": "ashari-ibana-klein",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "bukhari-sahih-khan",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 33
+ },
+ {
+  "id": "ghazali-disciplining-soul",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "ghazali-marvels-heart",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "ghazali-repentance-stern",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 9
+ },
+ {
+  "id": "harvey-transcendent-god",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 11
+ },
+ {
+  "id": "hoover-theodicy",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 11
+ },
+ {
+  "id": "muslim-sahih-siddiqui",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 14
+ },
+ {
+  "id": "sep-arabic-islamic-religion",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 10,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 21
+ },
+ {
+  "id": "sep-ibn-arabi",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-ibn-sina",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "olivelle-upanishads",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "govindacharya-gita-ramanuja",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 15,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 26
+ },
+ {
+  "id": "iep-madhva",
+  "type": "academic",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "iep-ramanuja",
+  "type": "academic",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "jha-slokavarttika",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "muller-upanishads-1",
+  "type": "scripture",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "sastri-gita-shankara",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 21,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 78
+ },
+ {
+  "id": "sep-shankara",
+  "type": "academic",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "subbarau-madhva-brahmasutra",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 12,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 24
+ },
+ {
+  "id": "thibaut-ramanuja-sribhashya",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 17,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 44
+ },
+ {
+  "id": "thibaut-shankara-brahmasutra",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 20,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 48
+ },
+ {
+  "id": "vidyabhusana-nyaya-sutras",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 14
+ },
+ {
+  "id": "woods-yoga-sutra",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "muller-upanishads-2",
+  "type": "scripture",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 14,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 29
+ },
+ {
+  "id": "buhler-manu",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 17
+ },
+ {
+  "id": "majjhima-nikaya-bodhi",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "buddhaghosa-path-of-purification",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 18,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 34
+ },
+ {
+  "id": "nagarjuna-mmk",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "shantideva-bodhicaryavatara",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 12
+ },
+ {
+  "id": "anguttara-nikaya-sujato",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 48
+ },
+ {
+  "id": "dogen-shobogenzo",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "unverified",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "dogen-shobogenzo-ja",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "majjhima-nikaya-sujato",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 16,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 43
+ },
+ {
+  "id": "ratnagotravibhaga-johnston",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "samyutta-nikaya-sujato",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 20,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 60
+ },
+ {
+  "id": "sep-buddhism-tiantai",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-japanese-zen",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "sep-korean-philosophy",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "sep-tsongkhapa",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "shinran-tannisho-cws",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 16
+ },
+ {
+  "id": "tsongkhapa-three-principal-aspects",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "vasubandhu-trimsika",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "aha-humanist-manifesto-iii",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "sep-forgiveness",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "sep-personal-identity",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "three-pure-land-sutras-inagaki",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "turretin-institutio-1847",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 15,
+  "lanes": [
+   "christianity",
+   "judaism",
+   "islam"
+  ],
+  "citeCount": 31
+ },
+ {
+  "id": "hume-natural-history-religion",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "hume-standard-of-taste",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "russell-free-mans-worship",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 12
+ },
+ {
+  "id": "sep-meaning-of-life",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "sep-religion-science",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "ghazali-alchemy-field",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "digha-nikaya-sujato",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 9,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 22
+ },
+ {
+  "id": "carroll-something-rather-than-nothing",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 13
+ },
+ {
+  "id": "sep-physicalism",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 9
+ },
+ {
+  "id": "sep-laws-of-nature",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "sep-properties-emergent",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "sep-fine-tuning",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-cosmological-argument",
+  "type": "academic",
+  "tags": [
+   "naturalism",
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "sep-nothingness",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "averroes-tahafut-bouyges",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "ghazali-confessions-field",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 12
+ },
+ {
+  "id": "ibn-sina-isharat-forget",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "sep-ibn-taymiyya",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 8,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 20
+ },
+ {
+  "id": "griffith-rigveda-4",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "cowell-kusumanjali",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 7,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "vasubandhu-akbh-gretil",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "buddhism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "udana-sujato",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "augustine-christian-doctrine",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "judaism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "augustine-trinity",
+  "type": "primary",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "bavinck-gereformeerde-dogmatiek-1",
+  "type": "book",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "russell-problems-philosophy",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "sep-induction-problem",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "sep-epistemology-naturalized",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 11
+ },
+ {
+  "id": "sep-quine",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "sep-logical-truth",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "sep-scientific-realism",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "darwin-letter-graham-1881",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "ndpr-naturalism-defeated",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "macdonald-muslim-theology",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "sep-al-ghazali",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 9
+ },
+ {
+  "id": "sep-epistemology-india",
+  "type": "academic",
+  "tags": [
+   "hinduism",
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 12
+ },
+ {
+  "id": "cowell-gough-sarvadarsanasamgraha",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "stcherbatsky-buddhist-logic-2",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "dharmakirti-pv-gretil",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sep-dharmakirti",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 15
+ },
+ {
+  "id": "nagarjuna-vigrahavyavartani-gretil",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "josephus-antiquities-whiston",
+  "type": "primary",
+  "tags": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "tacitus-annals-church-brodribb",
+  "type": "primary",
+  "tags": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 6,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "islam",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "pliny-letters-melmoth",
+  "type": "primary",
+  "tags": [
+   "christianity",
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 0,
+  "lanes": [],
+  "citeCount": 0
+ },
+ {
+  "id": "martin-yale-new-testament",
+  "type": "academic",
+  "tags": [
+   "christianity",
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "craig-empty-tomb-nts",
+  "type": "article",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "lowder-empty-tomb-jhc",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "craig-ehrman-debate-2006",
+  "type": "web",
+  "tags": [
+   "christianity",
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "habermas-resurrection-research",
+  "type": "article",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "hurtado-worship-of-christ",
+  "type": "article",
+  "tags": [
+   "christianity",
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 5,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "judaism",
+   "hinduism",
+   "buddhism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "posen-testimonium-flavianum",
+  "type": "academic",
+  "tags": [
+   "christianity",
+   "naturalism",
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "jewish-encyclopedia-jesus",
+  "type": "academic",
+  "tags": [
+   "judaism",
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism",
+   "judaism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-miracles",
+  "type": "academic",
+  "tags": [
+   "naturalism",
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 10
+ },
+ {
+  "id": "sep-religious-experience",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "christianity",
+   "naturalism",
+   "buddhism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "farber-torahs-exodus",
+  "type": "academic",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "gottlieb-sinai-argument",
+  "type": "web",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "nachmanides-vikuach-wikisource",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "ej-barcelona-disputation",
+  "type": "academic",
+  "tags": [
+   "judaism",
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "ej-jesus",
+  "type": "academic",
+  "tags": [
+   "judaism",
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "christianity"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "tabari-jami-al-bayan",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "razi-mafatih-al-ghayb",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "ibn-kathir-tafsir",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "fatoohi-end-of-jesus-life",
+  "type": "article",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "birmingham-quran-manuscript",
+  "type": "web",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "ibn-khaldun-prolegomenes-slane",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "wilson-vishnu-purana",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "jamison-witzel-vedic-hinduism",
+  "type": "academic",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "roy-final-appeal",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "vivekananda-complete-works-4",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "gandhi-autobiography-desai",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "kern-lotus-sutra",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "geiger-mahavamsa",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "sep-buddha",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "sep-abhidharma",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "soyen-shaku-sermons",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "cobb-review-good-heart",
+  "type": "article",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-arabic-islamic-language",
+  "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
+ }
+]
