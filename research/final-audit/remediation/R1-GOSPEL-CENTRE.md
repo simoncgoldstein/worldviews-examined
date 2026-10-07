@@ -1,4 +1,4 @@
-# R1: Reformed gospel centre (remediation record)
+# R1: Reformed gospel center (remediation record)
 
 2026-10-07. Branch `r1-reformed-gospel-centre`, from `main` @ `68a13db` (merge of PR #15, the final corpus audit). One Claude Opus 5.5 top-level session; no subagents; no reviewer invoked during production. **An independent review is required before merge** (`REMEDIATION-PLAN.md`: conceptual risk high).
 
@@ -6,7 +6,7 @@ The audit files in this directory are a historical record and were not edited. T
 
 ## Purpose
 
-Make the atonement and Christ's redemptive work the clear canonical centre of the Christian account of guilt, salvation, evil, suffering and death, so that later Christian critiques can point to a doctrine the site has actually explained.
+Make the atonement and Christ's redemptive work the clear canonical center of the Christian account of guilt, salvation, evil, suffering and death, so that later Christian critiques can point to a doctrine the site has actually explained.
 
 ## Findings addressed
 
@@ -50,7 +50,7 @@ Not addressed (belongs to later batches): CHR-24 ("the human-nature anchor" labe
 
 **Deep dive:**
 
-- One work, several images: sacrifice, ransom, reconciliation, curse-bearing and victory (Colossians 2:13–15); substitution as the centre, not a replacement.
+- One work, several images: sacrifice, ransom, reconciliation, curse-bearing and victory (Colossians 2:13–15); substitution as the center, not a replacement.
 - Satisfaction, the word and the thing (Owen; Turretin XIV.13); WCF 8 (accomplishment) kept distinct from WCF 11 (application, 11.4).
 - Owen and definite atonement, attributed and bounded.
 - Kant's own substitute.

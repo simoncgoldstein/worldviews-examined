@@ -140,7 +140,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / evil | 932 | 0 | 0.00% |
 | buddhism / fail-the-good | 407 | 0 | 0.00% |
 | buddhism / final-end | 618 | 0 | 0.00% |
-| buddhism / great-and-terrible | 1154 | 9 | 0.78% |
+| buddhism / great-and-terrible | 1151 | 9 | 0.78% |
 | buddhism / guilt | 645 | 0 | 0.00% |
 | buddhism / history | 721 | 0 | 0.00% |
 | buddhism / induction | 696 | 0 | 0.00% |
@@ -164,12 +164,12 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / why-alive | 690 | 0 | 0.00% |
 | buddhism / worship | 697 | 0 | 0.00% |
 | christianity / after-death | 639 | 0 | 0.00% |
-| christianity / death | 757 | 41 | 5.42% |
-| christianity / evil | 1211 | 26 | 2.15% |
+| christianity / death | 758 | 41 | 5.41% |
+| christianity / evil | 1213 | 26 | 2.14% |
 | christianity / fail-the-good | 381 | 0 | 0.00% |
 | christianity / final-end | 614 | 0 | 0.00% |
 | christianity / great-and-terrible | 1081 | 11 | 1.02% |
-| christianity / guilt | 1623 | 116 | 7.15% |
+| christianity / guilt | 1781 | 116 | 6.51% |
 | christianity / history | 731 | 57 | 7.80% |
 | christianity / induction | 767 | 50 | 6.52% |
 | christianity / jesus | 1452 | 64 | 4.41% |
@@ -184,7 +184,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / self-deception | 366 | 0 | 0.00% |
 | christianity / self-salvation | 1118 | 8 | 0.72% |
 | christianity / something-rather-than-nothing | 735 | 27 | 3.67% |
-| christianity / suffering | 869 | 37 | 4.26% |
+| christianity / suffering | 874 | 37 | 4.23% |
 | christianity / ultimate-authority | 971 | 25 | 2.57% |
 | christianity / ultimate-personal | 775 | 26 | 3.35% |
 | christianity / ultimate-reality | 930 | 11 | 1.18% |
@@ -224,7 +224,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | islam / evil | 936 | 0 | 0.00% |
 | islam / fail-the-good | 400 | 0 | 0.00% |
 | islam / final-end | 647 | 0 | 0.00% |
-| islam / great-and-terrible | 1068 | 3 | 0.28% |
+| islam / great-and-terrible | 1069 | 3 | 0.28% |
 | islam / guilt | 693 | 0 | 0.00% |
 | islam / history | 676 | 10 | 1.48% |
 | islam / induction | 741 | 0 | 0.00% |
@@ -252,7 +252,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / evil | 883 | 0 | 0.00% |
 | judaism / fail-the-good | 392 | 0 | 0.00% |
 | judaism / final-end | 636 | 0 | 0.00% |
-| judaism / great-and-terrible | 1018 | 4 | 0.39% |
+| judaism / great-and-terrible | 1020 | 4 | 0.39% |
 | judaism / guilt | 670 | 0 | 0.00% |
 | judaism / history | 700 | 11 | 1.57% |
 | judaism / induction | 655 | 0 | 0.00% |
@@ -266,7 +266,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / order | 648 | 0 | 0.00% |
 | judaism / revelation | 948 | 0 | 0.00% |
 | judaism / self-deception | 355 | 0 | 0.00% |
-| judaism / self-salvation | 1015 | 0 | 0.00% |
+| judaism / self-salvation | 1025 | 0 | 0.00% |
 | judaism / something-rather-than-nothing | 762 | 0 | 0.00% |
 | judaism / suffering | 514 | 0 | 0.00% |
 | judaism / ultimate-authority | 863 | 0 | 0.00% |
@@ -304,7 +304,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / why-alive | 672 | 0 | 0.00% |
 | naturalism / worship | 718 | 0 | 0.00% |
 
-Corpus measure: 799 ESV words / approximately 123,422 answer-body words = **0.65%** (recomputed by script on 2026-10-07 for all 168 answers with the same definition, after remediation batch R1). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 799 ESV words / approximately 123,598 answer-body words = **0.65%** (recomputed by script on 2026-10-07 for all 168 answers with the same definition, after remediation batch R1 and its review). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
