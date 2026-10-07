@@ -743,6 +743,7 @@
     2026-10-05 in the Darwin Online text and cross-checked against Project Gutenberg #2300 (same
     2nd-edition text): ch. IV pp. 97, 98, 113–114, 122; ch. V p. 130; ch. XXI p. 619. Man/Human Nature
     (2026-10-06): read ch. III pp. 66, 92-96; ch. IV p. 98; ch. XIX p. 572; ch. XX pp. 590-591.
+    Revelation & History production (2026-10-07): ch. V sentence "We must remember that progress is no invariable rule" read in Project Gutenberg #2300 (same 2nd-edition text); cited by chapter only because the Darwin Online page was not rechecked.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1377,6 +1378,8 @@
     Revelation & History (2026-10-07): read Sanhedrin 43a (segments 20-22: the uncensored baraita on Jesus the
     Nazarene and his five disciples), 97a-b (6,000 years; cursing calculators of the end), 99a (R. Hillel and Rav
     Yosef).
+    Revelation & History independent review (2026-10-07): read Sanhedrin 99a segment 11 (Davidson; R. Yohanan:
+    the prophets' consolations concern the messianic era, disputing Shmuel's "only servitude to the kingdoms").
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1515,6 +1518,7 @@
     17:16, 17:88, 19:29-36, 21:104, 26:192-197, 28:88, 29:48-51, 30:9, 33:40, 39:68-69, 41:42, 43:57-61, 52:33-34,
     53:2-11, 55:26-27, 61:6, 81:1-6, 96:1-5, 99:6-8; Arabic of 3:55, 4:157-158, 5:117, 19:33, 43:61 checked
     (quran.com Uthmani).
+    Revelation & History production (2026-10-07): also read 3:47 and 19:20-21 (Mary: 'no man has touched me') in the quran.com resource 85 text.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1864,6 +1868,7 @@
     Knowledge & Truth (2026-10-07): read 16.23-24 with Sankara (pp. 382-383).
     Revelation & History (2026-10-07): read 4.6-10 (pp. 106-108: born by My own Maya, appearing embodied "but not
     in reality"), 8.17-19 (pp. 208-209), 9.7-10 (pp. 220-221).
+    Revelation & History production (2026-10-07): new locator 8.16 (p. 208: 'on reaching Me... there is no rebirth').
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -2078,6 +2083,7 @@
     Domain pass morality-evil (2026-10-05) also read: VIII.1-10, VIII.41 (mindfulness of death);
     XVI.49-52 (sorrow, lamentation, pain, grief).
     Ultimate Reality (2026-10-06): read XVIII.25-28 (BPS PDF pp. 617-618).
+    Revelation & History production (2026-10-07): read XIII.29-30 (four incalculables of the eon; kinds of contraction) and XIII.64-65 (destruction by fire, water, wind rooted in greed, hate, delusion) in a cached copy of the registered BPS PDF text (printed p. 408 ff.).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -2579,6 +2585,7 @@
     the PDF's first page (Walter Burke Institute, Caltech). A physicist's philosophical argument, not a consensus of
     physics. Cite by section. Read 2026-10-06: abstract; §3 (can the universe simply be; BGV theorem not proof of a
     beginning); §5 (creation, metaverse, principle, coherence, brute fact; "no necessary beings").
+    Revelation & History production (2026-10-07): read §1 n. 1 (the emergence of causal asymmetry traced partly to the very low entropy of the early universe; no arrow of time at the level of few degrees of freedom).
   verificationStatus: checked
   verifiedOn: '2026-10-06'
 - id: sep-physicalism
@@ -3044,6 +3051,7 @@
     text and for the general four-source scheme only.
     Revelation & History (2026-10-07): read the section on the Qur'an's inimitability and early literary challenges
     (Ibn al-Muqaffa, Bashshar, Musaylima; Mu'tazilite attitude) for historical context only; dated tone.
+    Revelation & History production (2026-10-07): pp. 149-151 located by the Gutenberg page anchors (inimitability as poetry; Bashshar ibn Burd's comparisons; Ibn al-Muqaffa's reputed imitation; the Mu'tazilite attitude) and p. 241 (Fakhr al-Din al-Razi, d. 606: the Mafatih al-Ghayb, Ibn Sina, Ibn Arabi), used for the new razi thinker profile.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: sep-al-ghazali
@@ -3313,6 +3321,7 @@
     pagan sources mention Jesus only about 80 years after his death; his closing reconstruction: scripture-driven belief
     in vindication, then visions and stories of visions. Craig: four facts (burial, empty tomb, appearances, origin of
     the belief); a best-explanation argument; Ehrman's maxim is Humean.
+    Revelation & History production (2026-10-07): segments relocated in the live transcript: Ehrman opening statement (miracles 'not impossible'; 'the least probable occurrence'; the illustrative family-reburial scenario; Gospels '30, 40, 50, 60 years later'); Ehrman first rebuttal (Paul writing 25 years later and never naming Joseph; 'appearance does not need to mean reanimation'); Ehrman conclusion (scripture, exaltation, then visions and stories of visions); Q&A (pagan sources 80 years later).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: habermas-resurrection-research
@@ -3502,6 +3511,28 @@
     Mishneh Torah's Kings chapter targeted, proceedings against Nachmanides, his emigration in 1267.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
+- id: ej-jesus
+  type: academic
+  title: Jesus
+  shortCitation: Encyclopaedia Judaica, "Jesus"
+  traditionTags:
+  - judaism
+  - christianity
+  containerTitle: Encyclopaedia Judaica (2nd ed.), via Jewish Virtual Library
+  publisher: Gale Group
+  year: 2007
+  url: https://www.jewishvirtuallibrary.org/jesus
+  notes: >-
+    Read 2026-10-07 (Revelation & History production, narrow check on Josephus, Antiquities 20.200). The reprint's
+    source line reads "Encyclopaedia Judaica. (c) 2007 The Gale Group"; the article's author is not named on the page,
+    so no author is recorded. Opening paragraph: "The martyrdom of his brother James is narrated by Josephus (Ant.
+    20:200-3), but the passage in the same work (18:63-64) speaking about the life and death of Jesus was either
+    rewritten by a Christian or represents a Christian interpolation." Also: Jesus most probably died in 30; Pilate had
+    him executed by crucifixion; after his death his family overcame their disbelief, and James headed the Jerusalem
+    congregation until he was killed in 62. Cite by section heading. Use for a Jewish-scholarly reference
+    characterization, attributed, not as a survey of current consensus.
+  verificationStatus: checked
+  verifiedOn: '2026-10-07'
 - id: tabari-jami-al-bayan
   type: primary
   title: Jamiʿ al-bayan ʿan taʾwil ay al-Qurʾan, Arabic text
@@ -3572,6 +3603,7 @@
     century AH. The return of Jesus is mainly hadith-based, and Ibn Hazm records no consensus on it. Modern minority
     views: Sayyid Ahmad Khan's survival theory; Mirza Ghulam Ahmad; natural death (Muhammad ʿAbduh, Rashid Rida,
     al-Maraghi, Mahmud Shaltut, Muhammad al-Ghazali). The author's own reading: raised alive, later died, no return.
+    Revelation & History production (2026-10-07): page numbers confirmed from the PDF's printed folios: p. 1 (near-universal denial of death by crucifixion; Isma'ili exception), pp. 2-3 (the majority view of a living, returning Jesus; no consensus on the return, per Ibn Hazm), p. 6 (modern minority views), p. 19 (the author's conclusion; return reports said to be ahad).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: birmingham-quran-manuscript
@@ -3607,6 +3639,7 @@
     Cite the Muqaddimah by de Slane page; our translation. Read 2026-10-07: pp. 16-17 (reported Israelite army numbers
     criticized as implausible); pp. 349-350 (dynasties ordinarily last three generations, about 120 years; empires have a
     natural life like individuals; their hour can be neither advanced nor delayed).
+    Revelation & History production (2026-10-07): reread pp. 348-350 (three generations of about forty years each; the dynasty's hour cannot be advanced or delayed; empires like individuals); de Slane's introduction pp. iii-v read for the biography used in the new ibn-khaldun thinker profile.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: wilson-vishnu-purana
@@ -3660,6 +3693,7 @@
     Jesus' moral precepts as sufficient for "peace and happiness"; argues for God's unity against the Trinity and
     Jesus' Deity (contents, ch. II: Jesus "receives all power from God"; "Jesus's disavowal of his own Deity"); miracle
     reports would add no weight in India. A Unitarian-Hindu reformer, not a representative of classical Vedanta.
+    Revelation & History production (2026-10-07): p. 17 located (miracle reports would add no weight in India, where 'miracles infinitely more wonderful are related of their gods and saints').
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: vivekananda-complete-works-4
@@ -3716,6 +3750,7 @@
     one sole Buddha-vehicle, taught by skilful means; no second or third vehicle); ch. XV (pp. 298-302: Sakyamuni's
     enlightenment "many hundred thousand myriads of kotis of aeons ago"; all the Dharma-paryayas he reveals are true,
     though adapted to beings). Kern's footnotes (e.g. comparisons with Vishnu) are editorial.
+    Revelation & History production (2026-10-07): the 'one sole vehicle' and 'only one vehicle, the Buddha-vehicle' sentences fall on pp. 40-41 by the scan's running heads; XV p. 299 ('many hundred thousand myriads of kotis of Aeons ago'), pp. 301-302 ('all those Dharmaparyayas... are true').
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: geiger-mahavamsa
