@@ -925,9 +925,27 @@
   birthYear: 1149
   deathYear: 1210
   description: Theologian, philosopher and Qur'an commentator who integrated Avicennan philosophy into Ash'ari kalam.
+  bio: >-
+    Fakhr al-Din al-Razi was an Ash'ari theologian and philosopher of the eastern Islamic world who died
+    in 1210 (606 AH). He wrote the great Qur'an commentary Mafatih al-Ghayb ("The Keys of the Unseen"),
+    commented on works of Ibn Sina, and, like al-Ghazali before him, fought the philosophers on their
+    own ground; Duncan Black Macdonald's 1903 history also records his correspondence with the Sufi
+    Ibn Arabi. His commentary characteristically sets out the objections to a reading and the rival
+    opinions of earlier scholars at length before giving its answers, as it does on Qur'an 4:157.
+  significance: >-
+    Al-Razi matters to Worldviews Examined because his commentary on Qur'an 4:157 states, from within the tradition,
+    the strongest objection to the substitution reading of Jesus' death: that God's casting one man's likeness on
+    another would undermine sense knowledge and mass-transmitted testimony. He also records that the substitution
+    stories conflict with one another.
+  keyIdeas:
+    - Kalam engaged with Avicennan philosophy
+    - Mass-transmitted report (tawatur) as a source of certain knowledge
+    - The objection that substitution "opens the door of sophistry"
+    - Commentary as systematic disputation of objections and replies
   representativeWorks:
-    - { title: Mafatih al-Ghayb }
+    - { title: "Mafatih al-Ghayb (al-Tafsir al-kabir)", sourceId: razi-mafatih-al-ghayb }
     - { title: al-Matalib al-'Aliya }
+  notes: Biography from Macdonald, Development of Muslim Theology (1903), p. 241 (death 606 AH, the Mafatih al-Ghayb, Ibn Sina, Ibn Arabi), and from al-Razi's commentary on 4:157 as read 2026-10-07; the registry's birth year (1149) was not re-verified. Profiled at first public use (Islam `jesus`).
 
 - id: ibn-taymiyya
   slug: ibn-taymiyya
