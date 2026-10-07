@@ -44,6 +44,10 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/knowledge-possible.mdx` | Psalm 36:9 | 1 | 7 | 29 | 1 |
 | `judaism/knowledge-possible.mdx` | Colossians 2:3 | 1 | 11 | 60 | 1 |
 | `islam/knowledge-possible.mdx` | Romans 1:20 | 2 | 9 | 53 | 1 |
+| `christianity/ultimate-authority.mdx` | Numbers 23:19 | 1 | 7 | 30 | 1 |
+| `christianity/ultimate-authority.mdx` | John 17:17 | 1 | 4 | 18 | 1 |
+| `christianity/ultimate-authority.mdx` | 2 Timothy 3:16 | 1 | 4 | 19 | 1 |
+| `christianity/ultimate-authority.mdx` | Acts 17:11 | 1 | 10 | 51 | 1 |
 
 Totals: **228 quoted words**, **1155 quoted bytes**, **41 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); original flagship checks retain their original provenance.
 
