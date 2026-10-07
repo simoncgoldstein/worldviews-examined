@@ -153,6 +153,21 @@ Columns, in order: Ref = Reformed Christianity, Nat = naturalism, Jud = Judaism,
 
 ### Knowledge & Truth
 
+> **Superseded for this domain (2026-10-07):** the domain research pass in `research/domains/knowledge-truth/`
+> closed every P and N cell below (13 Ready, 11 Ready with narrow caveat, 0 Blocked). It upgraded `van-til-defense`
+> to checked and added 19 checked sources:
+> - Van Til, *The Defense of the Faith* (1955; public domain per the HathiTrust review recorded on the Princeton
+>   Theological Seminary scan);
+> - Augustine's *On Christian Doctrine* and *On the Trinity*, and the Dutch Bavinck vol. 1 control;
+> - Russell's *Problems of Philosophy*, Darwin's 1881 letter, an NDPR review of the EAAN debate, and five SEP maps;
+> - Macdonald 1903 (the Nasafi creed; *uṣūl*) and SEP al-Ghazali;
+> - SEP Epistemology in Classical Indian Philosophy and the Cārvāka chapter of the *Sarvadarśanasaṃgraha*;
+> - Dharmakīrti's *Nyāyabindu* (Stcherbatsky 1930), PV II (GRETIL), SEP Dharmakīrti and Nāgārjuna's
+>   *Vigrahavyāvartanī*.
+>
+> Bahnsen and Quine's primaries remain lawfully unavailable. Start there; the grades and notes below are the pre-pass
+> baseline.
+
 | Question | Depth | Ref | Nat | Jud | Isl | Hin | Bud |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|
 | `knowledge-possible` | Anchor | P | P | N | P | P | N |
@@ -419,10 +434,11 @@ All entries below are `checked` in `src/content/sources/sources.yaml`. The locat
 | `nagarjuna-mmk`, `shantideva-bodhicaryavatara`, `ratnagotravibhaga-johnston`, `vasubandhu-trimsika` | Madhyamaka, Śāntideva, Buddha-nature, Yogācāra (Buddhist) | MMK 8.12, 24.32–33, 26.11 (24.18–19 in packet); BCA 1.28, 4.24–28, 6.39–40, 8.101–134; RGV I.28, I.40–41, I.63; Triṃśikā 6, 19 | ultimate-reality, one-and-many, final-end, love (compassion) |
 | `shinran-tannisho-cws`, `dogen-shobogenzo-ja` | Pure Land; Zen (Buddhist) | Tannishō 3; Shōbōgenzō *Busshō*, *Shoaku makusa* | self-salvation, worship |
 
-**Not reusable as-is.** Thirteen `unverified` seed or alternative-edition records remain:
+**Not reusable as-is.** Twelve `unverified` seed or alternative-edition records remain (`van-til-defense` was
+verified in the Knowledge & Truth pass, 2026-10-07):
 
 - `calvin-institutes` (Battles), `turretin-institutes`, `bavinck-reformed-dogmatics`, `vos-biblical-theology`;
-- `van-til-defense`, `bahnsen-van-til-apologetic`;
+- `bahnsen-van-til-apologetic`;
 - `maimonides-guide` (Pines), `halevi-kuzari` (Korobkin), `soloveitchik-halakhic-man`, `tanya-kehot`;
 - `olivelle-upanishads`, `majjhima-nikaya-bodhi`, `dogen-shobogenzo` (Tanahashi).
 
@@ -430,11 +446,11 @@ A reviewed answer may not cite any of them until it is verified under the protoc
 
 ## 6. Largest research gaps
 
-1. **Van Til and Bahnsen (Reformed).** The site's apologetic method rests on them, yet no text was lawfully readable in Phase 3. This blocks `knowledge-possible`, `logic-binding`, `one-and-many` and `ultimate-authority` at full strength. Securing a readable edition is a practical prerequisite, not a research task. *Update (Ultimate Reality pass, 2026-10-06):* still unavailable. *Defense of the Faith* (1955) is controlled lending only, and other archive.org copies are user uploads without rights provenance. The `one-and-many` Reformed cell is now carried by Bavinck II §27.25 with a caveat.
-2. **Buddhist epistemology.** No checked Dharmakīrti or Dignāga source (numbering problems sank the Phase 3 record). This affects all of Knowledge & Truth.
-3. **Islamic metaphysics and epistemology.** Al-Ghazali's *Tahafut* (causation, eternity of the world) and *Munqidh*, the kalam cosmological argument and Ibn Sina's necessary existent are unregistered. *Update (2026-10-06):* metaphysics closed. *Tahāfut* Disc. 1 and 17 are registered via Bouyges 1930 (`averroes-tahafut-bouyges`), the *Munqidh* via Field 1909, Ibn Sina's *Ishārāt* via Forget 1892, and Ibn Taymiyya via SEP (Hoover 2024). Kalam epistemology (*Munqidh* on knowledge) remains for Knowledge & Truth.
-4. **Naturalist metaphysics and epistemology.** Oppy was never readable. Quine, philosophy of logic and laws of nature are unresearched; Hume's *Enquiry* §IV is cheap because the source is checked. *Update (2026-10-06):* laws of nature, physicalism, emergence and existence are now mapped (Carroll 2018; six SEP entries; Hume E IV, VII; D VIII–IX). Oppy is still blocked (403). Quine and the philosophy of logic remain for Knowledge & Truth.
-5. **Jewish philosophical prolegomena.** Saadia's introduction and Treatise I, and Maimonides' *Guide* I (negative theology). The editions are checked, so this is cheap.
+1. **Van Til and Bahnsen (Reformed).** The site's apologetic method rests on them, yet no text was lawfully readable in Phase 3. This blocks `knowledge-possible`, `logic-binding`, `one-and-many` and `ultimate-authority` at full strength. Securing a readable edition is a practical prerequisite, not a research task. *Update (Ultimate Reality pass, 2026-10-06):* still unavailable. *Defense of the Faith* (1955) is controlled lending only, and other archive.org copies are user uploads without rights provenance. The `one-and-many` Reformed cell is now carried by Bavinck II §27.25 with a caveat. *Update (Knowledge & Truth pass, 2026-10-07):* **Van Til closed.** A second archive.org copy of *Defense of the Faith* (1955, `defenseoffaith00vant`, Princeton Theological Seminary Library) carries a rights review: "Public domain according to HathiTrust rights database". `van-til-defense` is now checked (pp. 54–62, 100, 116–120, 164–165, 171–172, 264–265, 295–298). **Bahnsen** remains unavailable (restricted lending only).
+2. **Buddhist epistemology.** No checked Dharmakīrti or Dignāga source (numbering problems sank the Phase 3 record). This affects all of Knowledge & Truth. *Update (2026-10-07):* closed. The *Nyāyabindu* with Dharmottara (Stcherbatsky 1930, US public domain since 2026) and PV II (GRETIL; traditional chapter order recorded) are checked, with SEP Dharmakīrti for PV I. Dignāga is represented through SEP.
+3. **Islamic metaphysics and epistemology.** Al-Ghazali's *Tahafut* (causation, eternity of the world) and *Munqidh*, the kalam cosmological argument and Ibn Sina's necessary existent are unregistered. *Update (2026-10-06):* metaphysics closed. *Tahāfut* Disc. 1 and 17 are registered via Bouyges 1930 (`averroes-tahafut-bouyges`), the *Munqidh* via Field 1909, Ibn Sina's *Ishārāt* via Forget 1892, and Ibn Taymiyya via SEP (Hoover 2024). Kalam epistemology (*Munqidh* on knowledge) remains for Knowledge & Truth. *Update (2026-10-07):* closed. *Munqidh* pp. 14–19, 30–32, 51–52; the Nasafi creed (Macdonald 1903); SEP al-Ghazali; SEP Ibn Taymiyya §§3.1–3.2, 4.2.
+4. **Naturalist metaphysics and epistemology.** Oppy was never readable. Quine, philosophy of logic and laws of nature are unresearched; Hume's *Enquiry* §IV is cheap because the source is checked. *Update (2026-10-06):* laws of nature, physicalism, emergence and existence are now mapped (Carroll 2018; six SEP entries; Hume E IV, VII; D VIII–IX). Oppy is still blocked (403). Quine and the philosophy of logic remain for Knowledge & Truth. *Update (2026-10-07):* closed. Hume E IV–V, XII; Russell's *Problems* VI–VIII; SEP Induction, Logical Truth, Naturalism in Epistemology, Quine, Scientific Realism. Quine's primaries are still not lawfully readable, so quote him via SEP.
+5. **Jewish philosophical prolegomena.** Saadia's introduction and Treatise I, and Maimonides' *Guide* I (negative theology). The editions are checked, so this is cheap. *Update (2026-10-07):* closed. Saadia Intro 2, 5–6, II.13, III.1, 3, 8 (Hebrew); *Guide* I.31, I.73, II.25, III.15; YT 8–9.
 6. **Eschatology across lanes.** WCF 32–33, the World to Come, the Qur'anic judgment, liberation states by school, nirvāṇa. Mostly locator work in checked editions.
 7. **Jesus in non-Christian lanes.** Qur'anic Christology (cheap: the Qur'an is checked), Jewish disputation literature, Hindu and Buddhist receptions, historical-Jesus scholarship.
 8. **Time and history.** Yugas, kalpas and the decline of the Dharma, Ibn Khaldun, Augustine's two cities (*City of God* XV–XXII is checked but unmined).
