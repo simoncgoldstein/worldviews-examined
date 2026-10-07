@@ -35,6 +35,8 @@ for it and (4) what follows theologically. Examples:
 
 ## Six-column fact audit (mandatory)
 
+> **Superseded in part by the independent review** ([`REVIEW.md`](../../domains/revelation-history/REVIEW.md), I1–I5): the crucifixion, early-proclamation and early-Christology sentences were reworded in every lane that uses them, and the James family clause was removed.
+
 Canonical wording, used verbatim wherever a lane states the fact (checked by script, `grep -F`, after the consistency
 pass):
 

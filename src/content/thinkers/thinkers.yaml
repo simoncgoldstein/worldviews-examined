@@ -922,7 +922,6 @@
   role: primary
   displayOrder: 5
   schools: [Ash'ari kalam, Philosophical theology]
-  birthYear: 1149
   deathYear: 1210
   description: Theologian, philosopher and Qur'an commentator who integrated Avicennan philosophy into Ash'ari kalam.
   bio: >-
@@ -945,7 +944,7 @@
   representativeWorks:
     - { title: "Mafatih al-Ghayb (al-Tafsir al-kabir)", sourceId: razi-mafatih-al-ghayb }
     - { title: al-Matalib al-'Aliya }
-  notes: Biography from Macdonald, Development of Muslim Theology (1903), p. 241 (death 606 AH, the Mafatih al-Ghayb, Ibn Sina, Ibn Arabi), and from al-Razi's commentary on 4:157 as read 2026-10-07; the registry's birth year (1149) was not re-verified. Profiled at first public use (Islam `jesus`).
+  notes: Biography from Macdonald, Development of Muslim Theology (1903), p. 241 (death 606 AH, the Mafatih al-Ghayb, Ibn Sina, Ibn Arabi), and from al-Razi's commentary on 4:157 as read 2026-10-07; the previously registered birth year (1149) could not be verified in a read source during the 2026-10-07 independent review and was removed, so only the death year (606 AH / 1210) is published. Profiled at first public use (Islam `jesus`).
 
 - id: ibn-taymiyya
   slug: ibn-taymiyya
