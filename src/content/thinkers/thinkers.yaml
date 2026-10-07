@@ -619,7 +619,28 @@
   birthYear: 1908
   deathYear: 2000
   description: American philosopher whose naturalized epistemology treats knowledge as part of empirical inquiry rather than as grounded in a prior first philosophy.
+  bio: >-
+    Willard Van Orman Quine (1908–2000) was born in Akron, Ohio. He studied mathematics at Oberlin
+    College and took his doctorate at Harvard with a dissertation on Whitehead and Russell's
+    Principia Mathematica. In 1932–33 he travelled in Europe and met Rudolf Carnap in Prague. He
+    taught at Harvard from 1936 until 1978, apart from naval intelligence work during the Second
+    World War. He wrote widely on logic and set theory, and his essays "Two Dogmas of Empiricism"
+    (1951) and "Epistemology Naturalized" (1969) and his book Word and Object (1960) made him one of
+    the most influential analytic philosophers of the twentieth century.
+  significance: >-
+    Quine is the site's principal witness for naturalized epistemology: the view that there is no
+    "first philosophy" outside science from which knowledge could be certified, so that the study of
+    knowledge becomes part of natural science. He is also used for the claim that no statement, not
+    even a law of logic, is in principle immune to revision. His own texts are under copyright and
+    are quoted only as the Stanford Encyclopedia of Philosophy quotes them.
+  keyIdeas:
+    - No first philosophy outside science
+    - Epistemology as a chapter of psychology
+    - Holism about the testing of beliefs
+    - No statement immune to revision
+    - Rejection of the analytic-synthetic distinction
   representativeWorks:
+    - { title: Two Dogmas of Empiricism, year: 1951 }
     - { title: Word and Object, year: 1960 }
     - { title: Epistemology Naturalized, year: 1969 }
   notes: Used for epistemology and ontology. Quine did not write on religion in a way that represents naturalistic atheism generally.
