@@ -5,13 +5,13 @@ Anchor question. Produced 2026-10-07 from the frozen Knowledge & Truth dossier (
 | Lane | Thesis | Chars | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 34 | 196 | 533 | 357 | 24 | 25 |
-| naturalism | 27 | 198 | 512 | 366 | 12 | 14 |
-| judaism | 33 | 214 | 526 | 319 | 15 | 20 |
-| islam | 32 | 217 | 534 | 299 | 16 | 19 |
-| hinduism | 35 | 225 | 529 | 300 | 13 | 15 |
-| buddhism | 25 | 183 | 533 | 325 | 17 | 17 |
+| naturalism | 27 | 198 | 512 | 363 | 12 | 14 |
+| judaism | 33 | 214 | 530 | 319 | 15 | 20 |
+| islam | 32 | 217 | 545 | 299 | 16 | 19 |
+| hinduism | 35 | 225 | 546 | 300 | 13 | 15 |
+| buddhism | 25 | 183 | 533 | 305 | 16 | 16 |
 
-Total 5,319 words. Visible prose is 512–534, at or just above the 375–525 guide; it was cut twice, moving the Nyāya lamp argument, Rāmānuja's self-refutation argument, Dharmakīrti's theory of truth and the *mutawātir* detail into the Deep dives.
+Total 5,328 words (after the final editorial pass). Visible prose is 512–546, at or just above the 375–525 guide; it was cut twice, moving the Nyāya lamp argument, Rāmānuja's self-refutation argument, Dharmakīrti's theory of truth and the *mutawātir* detail into the Deep dives.
 
 ## Framing decisions
 

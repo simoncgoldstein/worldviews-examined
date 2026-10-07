@@ -54,29 +54,32 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/induction.mdx` | Jeremiah 33:25 | 1 | 14 | 70 | 1 |
 | `christianity/induction.mdx` | Psalm 119:89–91 | 2 | 21 | 128 | 3 |
 
-Totals: **228 quoted words**, **1155 quoted bytes**, **41 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); original flagship checks retain their original provenance.
+Totals: **362 quoted words**, **1855 quoted bytes**, **61 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); Knowledge & Truth quotations (15 rows above, from `christianity/knowledge-possible.mdx` onward) checked against the ESV text at esv.org (2026-10-07); original flagship checks retain their original provenance.
 
 | Biblical book | Charged verse instances | Quoted words | Quoted bytes |
 |---|---:|---:|---:|
-| Colossians | 4 | 18 | 91 |
-| Romans | 14 | 46 | 236 |
-| Genesis | 3 | 21 | 104 |
-| Isaiah | 1 | 4 | 21 |
-| Psalms | 2 | 15 | 71 |
+| Colossians | 5 | 29 | 151 |
+| Romans | 19 | 58 | 307 |
+| Genesis | 4 | 36 | 190 |
+| Isaiah | 2 | 10 | 53 |
+| Psalms | 6 | 43 | 228 |
 | Ephesians | 2 | 18 | 95 |
 | 1 John | 3 | 17 | 77 |
-| Acts | 2 | 5 | 28 |
+| Acts | 3 | 15 | 79 |
 | Revelation | 1 | 8 | 42 |
-| John | 3 | 19 | 102 |
-| Proverbs | 1 | 7 | 36 |
-| Jeremiah | 2 | 20 | 101 |
+| John | 4 | 23 | 120 |
+| Proverbs | 2 | 20 | 99 |
+| Jeremiah | 3 | 34 | 171 |
 | Matthew | 1 | 4 | 22 |
 | Deuteronomy | 1 | 8 | 33 |
-| 1 Corinthians | 1 | 18 | 96 |
+| 1 Corinthians | 2 | 23 | 114 |
+| Numbers | 1 | 7 | 30 |
+| 2 Timothy | 1 | 4 | 19 |
+| Hebrews | 1 | 5 | 25 |
 
 ## Proportions and publication checks
 
-For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed.
+For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed. The 24 Knowledge & Truth rows and the corpus denominator were computed by script on 2026-10-07 with the same definition; other rows were not recomputed.
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
@@ -87,7 +90,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / final-end | 618 | 0 | 0.00% |
 | buddhism / great-and-terrible | 1083 | 9 | 0.83% |
 | buddhism / guilt | 593 | 0 | 0.00% |
+| buddhism / induction | 696 | 0 | 0.00% |
 | buddhism / know-the-good | 504 | 0 | 0.00% |
+| buddhism / knowledge-possible | 871 | 0 | 0.00% |
+| buddhism / logic-binding | 683 | 0 | 0.00% |
 | buddhism / love-beauty-creativity | 441 | 0 | 0.00% |
 | buddhism / offspring-family | 443 | 0 | 0.00% |
 | buddhism / one-and-many | 469 | 0 | 0.00% |
@@ -96,6 +102,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | buddhism / self-salvation | 963 | 0 | 0.00% |
 | buddhism / something-rather-than-nothing | 706 | 0 | 0.00% |
 | buddhism / suffering | 525 | 0 | 0.00% |
+| buddhism / ultimate-authority | 805 | 0 | 0.00% |
 | buddhism / ultimate-personal | 707 | 0 | 0.00% |
 | buddhism / ultimate-reality | 773 | 0 | 0.00% |
 | buddhism / what-is-man | 938 | 0 | 0.00% |
@@ -108,7 +115,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / final-end | 614 | 0 | 0.00% |
 | christianity / great-and-terrible | 1081 | 11 | 1.02% |
 | christianity / guilt | 615 | 13 | 2.11% |
+| christianity / induction | 767 | 50 | 6.52% |
 | christianity / know-the-good | 577 | 0 | 0.00% |
+| christianity / knowledge-possible | 927 | 28 | 3.02% |
+| christianity / logic-binding | 843 | 11 | 1.30% |
 | christianity / love-beauty-creativity | 467 | 15 | 3.21% |
 | christianity / offspring-family | 467 | 0 | 0.00% |
 | christianity / one-and-many | 505 | 37 | 7.33% |
@@ -117,6 +127,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / self-salvation | 984 | 8 | 0.81% |
 | christianity / something-rather-than-nothing | 735 | 27 | 3.67% |
 | christianity / suffering | 581 | 0 | 0.00% |
+| christianity / ultimate-authority | 971 | 25 | 2.57% |
 | christianity / ultimate-personal | 775 | 26 | 3.35% |
 | christianity / ultimate-reality | 930 | 11 | 1.18% |
 | christianity / what-is-man | 1093 | 0 | 0.00% |
@@ -129,7 +140,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | hinduism / final-end | 588 | 0 | 0.00% |
 | hinduism / great-and-terrible | 1053 | 3 | 0.28% |
 | hinduism / guilt | 600 | 0 | 0.00% |
+| hinduism / induction | 706 | 0 | 0.00% |
 | hinduism / know-the-good | 529 | 0 | 0.00% |
+| hinduism / knowledge-possible | 883 | 0 | 0.00% |
+| hinduism / logic-binding | 712 | 0 | 0.00% |
 | hinduism / love-beauty-creativity | 403 | 0 | 0.00% |
 | hinduism / offspring-family | 431 | 0 | 0.00% |
 | hinduism / one-and-many | 485 | 0 | 0.00% |
@@ -138,6 +152,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | hinduism / self-salvation | 961 | 0 | 0.00% |
 | hinduism / something-rather-than-nothing | 742 | 0 | 0.00% |
 | hinduism / suffering | 526 | 0 | 0.00% |
+| hinduism / ultimate-authority | 818 | 0 | 0.00% |
 | hinduism / ultimate-personal | 623 | 0 | 0.00% |
 | hinduism / ultimate-reality | 876 | 0 | 0.00% |
 | hinduism / what-is-man | 897 | 0 | 0.00% |
@@ -150,7 +165,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | islam / final-end | 647 | 0 | 0.00% |
 | islam / great-and-terrible | 998 | 3 | 0.30% |
 | islam / guilt | 612 | 0 | 0.00% |
+| islam / induction | 741 | 0 | 0.00% |
 | islam / know-the-good | 531 | 0 | 0.00% |
+| islam / knowledge-possible | 879 | 9 | 1.02% |
+| islam / logic-binding | 668 | 0 | 0.00% |
 | islam / love-beauty-creativity | 396 | 0 | 0.00% |
 | islam / offspring-family | 439 | 0 | 0.00% |
 | islam / one-and-many | 472 | 0 | 0.00% |
@@ -159,6 +177,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | islam / self-salvation | 954 | 0 | 0.00% |
 | islam / something-rather-than-nothing | 748 | 0 | 0.00% |
 | islam / suffering | 546 | 0 | 0.00% |
+| islam / ultimate-authority | 849 | 0 | 0.00% |
 | islam / ultimate-personal | 614 | 6 | 0.98% |
 | islam / ultimate-reality | 896 | 0 | 0.00% |
 | islam / what-is-man | 953 | 0 | 0.00% |
@@ -171,7 +190,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / final-end | 636 | 0 | 0.00% |
 | judaism / great-and-terrible | 966 | 4 | 0.41% |
 | judaism / guilt | 589 | 0 | 0.00% |
+| judaism / induction | 655 | 0 | 0.00% |
 | judaism / know-the-good | 540 | 0 | 0.00% |
+| judaism / knowledge-possible | 890 | 11 | 1.24% |
+| judaism / logic-binding | 639 | 0 | 0.00% |
 | judaism / love-beauty-creativity | 427 | 0 | 0.00% |
 | judaism / offspring-family | 470 | 0 | 0.00% |
 | judaism / one-and-many | 438 | 0 | 0.00% |
@@ -180,6 +202,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | judaism / self-salvation | 948 | 0 | 0.00% |
 | judaism / something-rather-than-nothing | 762 | 0 | 0.00% |
 | judaism / suffering | 514 | 0 | 0.00% |
+| judaism / ultimate-authority | 863 | 0 | 0.00% |
 | judaism / ultimate-personal | 669 | 0 | 0.00% |
 | judaism / ultimate-reality | 862 | 0 | 0.00% |
 | judaism / what-is-man | 979 | 6 | 0.61% |
@@ -192,7 +215,10 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / final-end | 637 | 0 | 0.00% |
 | naturalism / great-and-terrible | 1043 | 8 | 0.77% |
 | naturalism / guilt | 604 | 0 | 0.00% |
+| naturalism / induction | 755 | 0 | 0.00% |
 | naturalism / know-the-good | 556 | 0 | 0.00% |
+| naturalism / knowledge-possible | 912 | 0 | 0.00% |
+| naturalism / logic-binding | 699 | 0 | 0.00% |
 | naturalism / love-beauty-creativity | 468 | 0 | 0.00% |
 | naturalism / offspring-family | 425 | 0 | 0.00% |
 | naturalism / one-and-many | 468 | 0 | 0.00% |
@@ -201,13 +227,14 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / self-salvation | 998 | 0 | 0.00% |
 | naturalism / something-rather-than-nothing | 787 | 0 | 0.00% |
 | naturalism / suffering | 525 | 0 | 0.00% |
+| naturalism / ultimate-authority | 848 | 0 | 0.00% |
 | naturalism / ultimate-personal | 699 | 0 | 0.00% |
 | naturalism / ultimate-reality | 855 | 0 | 0.00% |
 | naturalism / what-is-man | 1010 | 0 | 0.00% |
 | naturalism / why-alive | 672 | 0 | 0.00% |
 | naturalism / worship | 718 | 0 | 0.00% |
 
-Corpus measure: 228 ESV words / approximately 83,084 answer-body words = **0.27%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 362 ESV words / approximately 104,803 answer-body words = **0.35%**. Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
@@ -216,4 +243,4 @@ Before adding or publishing quotations:
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-The Salvation/Destiny batch uses two short quotations, the Man & Human Nature batch four, and the Ultimate Reality batch eighteen (141 words, 725 bytes, 20 verse charges), itemized above, where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+The Salvation/Destiny batch uses two short quotations, the Man & Human Nature batch four, the Ultimate Reality batch eighteen (141 words, 725 bytes, 20 verse charges), and the Knowledge & Truth batch fifteen rows (134 words, 700 bytes, 20 verse charges), itemized above, where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.

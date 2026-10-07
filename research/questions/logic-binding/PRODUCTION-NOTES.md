@@ -5,13 +5,13 @@ Medium question. Produced 2026-10-07 from the frozen Knowledge & Truth dossier b
 | Lane | Thesis | Chars | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 36 | 195 | 427 | 373 | 19 | 19 |
-| naturalism | 37 | 223 | 418 | 245 | 6 | 11 |
-| judaism | 35 | 206 | 405 | 248 | 6 | 8 |
+| naturalism | 35 | 209 | 418 | 245 | 6 | 11 |
+| judaism | 35 | 206 | 405 | 201 | 5 | 7 |
 | islam | 33 | 227 | 412 | 225 | 8 | 10 |
-| hinduism | 34 | 207 | 410 | 264 | 7 | 12 |
-| buddhism | 37 | 237 | 423 | 223 | 9 | 10 |
+| hinduism | 34 | 208 | 410 | 264 | 7 | 12 |
+| buddhism | 34 | 217 | 423 | 223 | 9 | 10 |
 
-Total 4,285 words. Visible prose is 405–427, slightly above the 275–400 guide, after two passes that moved the five-membered argument, Turretin and Bavinck's formulations, Sher and Azzouni, Maimonides' remark on disputed cases and Dharmakīrti's nominalism into the Deep dives. Every lane has to separate *using* logic from *theorizing* it and then present more than one theory; the Christian lane also carries objection and reply.
+Total 4,233 words (after the final editorial pass). Visible prose is 405–427, slightly above the 275–400 guide, after two passes that moved the five-membered argument, Turretin and Bavinck's formulations, Sher and Azzouni, Maimonides' remark on disputed cases and Dharmakīrti's nominalism into the Deep dives. Every lane has to separate *using* logic from *theorizing* it and then present more than one theory; the Christian lane also carries objection and reply.
 
 ## Framing decisions
 

@@ -5,13 +5,13 @@ Anchor question. Produced 2026-10-07 from the frozen Knowledge & Truth dossier b
 | Lane | Thesis | Chars | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|---:|
 | christianity | 36 | 199 | 536 | 397 | 29 | 30 |
-| naturalism | 29 | 199 | 529 | 298 | 10 | 11 |
+| naturalism | 30 | 207 | 513 | 298 | 10 | 11 |
 | judaism | 35 | 223 | 547 | 279 | 11 | 13 |
 | islam | 34 | 209 | 525 | 289 | 11 | 13 |
-| hinduism | 34 | 227 | 545 | 259 | 13 | 18 |
+| hinduism | 34 | 227 | 541 | 244 | 13 | 18 |
 | buddhism | 26 | 146 | 540 | 231 | 15 | 18 |
 
-Total 5,169 words. Visible prose is 525–547, slightly above the 375–525 guide after three trims. The excess comes from the Christian objection-and-reply pair and from lanes that must show a school split in the view itself (Hindu: Mīmāṃsā vs. Nyāya plus three Vedānta readings plus Advaita's realization; Islam: four sources plus al-Ghazali vs. Ibn Taymiyya). The Hindu answer carries three pressure questions.
+Total 5,135 words (after the final editorial pass). Visible prose is 513–547, slightly above the 375–525 guide after three trims. The excess comes from the Christian objection-and-reply pair and from lanes that must show a school split in the view itself (Hindu: Mīmāṃsā vs. Nyāya plus three Vedānta readings plus Advaita's realization; Islam: four sources plus al-Ghazali vs. Ibn Taymiyya). The Hindu answer carries three pressure questions.
 
 ## Framing decisions
 

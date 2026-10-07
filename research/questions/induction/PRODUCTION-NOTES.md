@@ -4,14 +4,14 @@ Medium question. Produced 2026-10-07 from the frozen Knowledge & Truth dossier b
 
 | Lane | Thesis | Chars | Visible | Deep dive | Citations | Uses |
 |---|---:|---:|---:|---:|---:|---:|
-| christianity | 33 | 206 | 439 | 350 | 12 | 13 |
-| naturalism | 32 | 207 | 405 | 322 | 12 | 14 |
-| judaism | 36 | 228 | 424 | 214 | 5 | 6 |
-| islam | 33 | 215 | 420 | 296 | 12 | 14 |
-| hinduism | 36 | 227 | 439 | 218 | 8 | 11 |
-| buddhism | 35 | 234 | 418 | 266 | 6 | 11 |
+| christianity | 33 | 206 | 461 | 293 | 11 | 12 |
+| naturalism | 35 | 220 | 405 | 322 | 12 | 14 |
+| judaism | 36 | 228 | 424 | 199 | 5 | 6 |
+| islam | 33 | 215 | 437 | 271 | 12 | 14 |
+| hinduism | 33 | 229 | 453 | 218 | 8 | 11 |
+| buddhism | 35 | 234 | 396 | 266 | 6 | 11 |
 
-Total 4,443 words. Visible prose is 405–439, above the 275–400 guide after three passes. The passes moved the seven-response map, Ibn Taymiyya's empiricism, Ibn Rushd, the Nyāya pragmatic reply, the Buddhist reply in Mādhava's survey and the H₂O analogy into the Deep dives. The draft pass also broke two theses over the 240-character limit (Islam and Hindu, 252 each); both were shortened.
+Total 4,331 words (after the final editorial pass). Visible prose is 396–453, mostly above the 275–400 guide after three passes. The passes moved the seven-response map, Ibn Taymiyya's empiricism, Ibn Rushd, the Nyāya pragmatic reply, the Buddhist reply in Mādhava's survey and the H₂O analogy into the Deep dives. The draft pass also broke two theses over the 240-character limit (Islam and Hindu, 252 each); both were shortened.
 
 ## Framing decisions
 
@@ -25,7 +25,7 @@ Total 4,443 words. Visible prose is 405–439, above the 275–400 guide after t
 
 ## Sources, thinkers and links
 
-- christianity: ESV Gen 8:22, Jer 33:25, Ps 119:89–91, Heb 6:17–18, Exod 4:1–5; Augustine DDC II.30.47; WCF 5.2–3; Hume E 4.19 (objection), 5.21; Calvin I.16.1; Turretin VI.1.5–6 (Latin, paraphrase); Van Til p. 120. Thinkers augustine, calvin, turretin, van-til. Links `order`, naturalism `induction`, `ultimate-authority`.
+- christianity: ESV Gen 8:22, Jer 33:25, Ps 119:89–91, Heb 6:17–18, Exod 4:1–5; Augustine DDC II.30.47; WCF 5.2–3; Hume E 4.19 (objection), 5.21; Turretin VI.1.5–6 (Latin, paraphrase); Van Til p. 120. Thinkers augustine, turretin, van-til (Calvin, and Turretin's fuller treatment of second causes, are carried by `order`, to which the answer links). Links `order`, naturalism `induction`, `ultimate-authority`.
 - naturalism: Hume E 4.18–19, 4.23, 5.6; T 1.3.6.4, 1.3.6.11; Russell ch. VI; SEP Induction §§3–6; SEP NE §§2, 3.1; SEP Laws §§2, 8. Thinkers hume, russell, quine. Link Christian `induction`.
 - judaism: JPS Jer 33:25, Ps 148:6; Talmud AZ 54b; *Guide* I.73 (tenth proposition); WCF 5.2–3 in the response. Thinkers maimonides, nachmanides. Links `order`, Christian and Islamic `induction`.
 - islam: SEP al-Ghazali §§7.2, 7.4; Bouyges *Tahāfut* Phys. Disc. I pp. 517–519 (Arabic, paraphrase); Qur'an 33:62, 48:23, 35:43; SEP Ibn Taymiyya §§3.2, 4.5; WCF 5.2 in the response. Thinkers ghazali, ibn-taymiyya, maturidi. Links `order`, Christian `induction`.
