@@ -48,6 +48,8 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/ultimate-authority.mdx` | John 17:17 | 1 | 4 | 18 | 1 |
 | `christianity/ultimate-authority.mdx` | 2 Timothy 3:16 | 1 | 4 | 19 | 1 |
 | `christianity/ultimate-authority.mdx` | Acts 17:11 | 1 | 10 | 51 | 1 |
+| `christianity/logic-binding.mdx` | Isaiah 1:18 | 1 | 6 | 32 | 1 |
+| `christianity/logic-binding.mdx` | Hebrews 6:18 | 1 | 5 | 25 | 1 |
 
 Totals: **228 quoted words**, **1155 quoted bytes**, **41 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); original flagship checks retain their original provenance.
 
