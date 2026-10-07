@@ -1,0 +1,693 @@
+{
+ "candidates": [
+  {
+   "file": "christianity/great-and-terrible.mdx",
+   "locator": "Colossians 3:10",
+   "fragments": [
+    "after the image of its creator."
+   ],
+   "words": 6
+  },
+  {
+   "file": "christianity/great-and-terrible.mdx",
+   "locator": "Romans 1:18–21",
+   "fragments": [
+    "knew God",
+    "suppress the truth."
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/guilt.mdx",
+   "locator": "Romans 8:1",
+   "fragments": [
+    "There is therefore now no condemnation for those who are in Christ Jesus."
+   ],
+   "words": 13
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Genesis 12:3",
+   "fragments": [
+    "all the families of the earth shall be blessed."
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Galatians 4:4",
+   "fragments": [
+    "when the fullness of time had come, God sent forth his Son."
+   ],
+   "words": 12
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Matthew 28:20",
+   "fragments": [
+    "to the end of the age,"
+   ],
+   "words": 6
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Revelation 21:5",
+   "fragments": [
+    "Behold, I am making all things new."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Ephesians 1:9–10",
+   "fragments": [
+    "a plan for the fullness of time, to unite all things in Christ."
+   ],
+   "words": 13
+  },
+  {
+   "file": "christianity/history.mdx",
+   "locator": "Hebrews 9:26",
+   "fragments": [
+    "appeared once for all at the end of the ages."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/induction.mdx",
+   "locator": "Genesis 8:22",
+   "fragments": [
+    "seedtime and harvest, cold and heat, summer and winter, day and night, shall not cease."
+   ],
+   "words": 15
+  },
+  {
+   "file": "christianity/induction.mdx",
+   "locator": "Jeremiah 33:25",
+   "fragments": [
+    "my covenant with day and night and the fixed order of heaven and earth."
+   ],
+   "words": 14
+  },
+  {
+   "file": "christianity/induction.mdx",
+   "locator": "Psalm 119:89–91",
+   "fragments": [
+    "Your faithfulness endures to all generations; you have established the earth, and it stands fast,",
+    "for all things are your servants."
+   ],
+   "words": 21
+  },
+  {
+   "file": "christianity/induction.mdx",
+   "locator": "Exodus 4:1–5",
+   "fragments": [
+    "above"
+   ],
+   "words": 1
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "John 1:14",
+   "fragments": [
+    "the Word became flesh and dwelt among us."
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "Colossians 2:9",
+   "fragments": [
+    "the whole fullness of deity dwells bodily."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "Mark 10:45",
+   "fragments": [
+    "to give his life as a ransom for many"
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "Romans 1:3–4",
+   "fragments": [
+    "declared to be the Son of God in power... by his resurrection from the dead."
+   ],
+   "words": 15
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "Acts 2:36",
+   "fragments": [
+    "both Lord and Christ,"
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "1 Corinthians 15:20",
+   "fragments": [
+    "the firstfruits"
+   ],
+   "words": 2
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "1 Corinthians 15:3–8",
+   "fragments": [
+    "received"
+   ],
+   "words": 1
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "Galatians 1:18–19",
+   "fragments": [
+    "James the Lord's brother"
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "1 Corinthians 15:4",
+   "fragments": [
+    "was buried"
+   ],
+   "words": 2
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "1 Corinthians 8:6",
+   "fragments": [
+    "one God, the Father... and one Lord, Jesus Christ"
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/jesus.mdx",
+   "locator": "1 Corinthians 16:22",
+   "fragments": [
+    "Our Lord, come!"
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/knowledge-possible.mdx",
+   "locator": "Proverbs 20:12",
+   "fragments": [
+    "The hearing ear and the seeing eye, the LORD has made them both."
+   ],
+   "words": 13
+  },
+  {
+   "file": "christianity/knowledge-possible.mdx",
+   "locator": "1 Corinthians 13:12",
+   "fragments": [
+    "Now I know in part."
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/knowledge-possible.mdx",
+   "locator": "Romans 1:18–21",
+   "fragments": [
+    "suppress the truth"
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/knowledge-possible.mdx",
+   "locator": "Psalm 36:9",
+   "fragments": [
+    "In your light do we see light."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/logic-binding.mdx",
+   "locator": "Isaiah 1:18",
+   "fragments": [
+    "Come now, let us reason together,"
+   ],
+   "words": 6
+  },
+  {
+   "file": "christianity/logic-binding.mdx",
+   "locator": "Hebrews 6:18",
+   "fragments": [
+    "impossible for God to lie."
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/love-beauty-creativity.mdx",
+   "locator": "1 John 4:19",
+   "fragments": [
+    "We love because he first loved us."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/love-beauty-creativity.mdx",
+   "locator": "Psalm 27:4",
+   "fragments": [
+    "to gaze upon the beauty of the LORD."
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/one-and-many.mdx",
+   "locator": "Deuteronomy 6:4",
+   "fragments": [
+    "the Lord our God, the Lord is one."
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/one-and-many.mdx",
+   "locator": "Romans 11:36",
+   "fragments": [
+    "from him and through him and to him are all things."
+   ],
+   "words": 11
+  },
+  {
+   "file": "christianity/one-and-many.mdx",
+   "locator": "1 Corinthians 8:6",
+   "fragments": [
+    "one God, the Father, from whom are all things,",
+    "one Lord, Jesus Christ, through whom are all things."
+   ],
+   "words": 18
+  },
+  {
+   "file": "christianity/order.mdx",
+   "locator": "Proverbs 3:19",
+   "fragments": [
+    "The Lord by wisdom founded the earth."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/order.mdx",
+   "locator": "Genesis 8:22",
+   "fragments": [
+    "shall not cease."
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/order.mdx",
+   "locator": "Jeremiah 33:25",
+   "fragments": [
+    "my covenant with day and night and the fixed order of heaven and earth."
+   ],
+   "words": 14
+  },
+  {
+   "file": "christianity/order.mdx",
+   "locator": "Matthew 10:29",
+   "fragments": [
+    "apart from your Father."
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "Psalm 19:1–4",
+   "fragments": [
+    "The heavens declare the glory of God,"
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "Hebrews 1:1–2",
+   "fragments": [
+    "Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son."
+   ],
+   "words": 30
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "Acts 2:22",
+   "fragments": [
+    "in your midst, as you yourselves know,"
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "Luke 1:1–4",
+   "fragments": [
+    "may have certainty."
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "Acts 17:30–31",
+   "fragments": [
+    "has given assurance to all by raising him from the dead,"
+   ],
+   "words": 11
+  },
+  {
+   "file": "christianity/revelation.mdx",
+   "locator": "1 Corinthians 15:17",
+   "fragments": [
+    "if Christ has not been raised, your faith is futile."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/self-salvation.mdx",
+   "locator": "Ephesians 2:8–10",
+   "fragments": [
+    "by grace you have been saved through faith"
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/something-rather-than-nothing.mdx",
+   "locator": "Genesis 1:1",
+   "fragments": [
+    "In the beginning, God created the heavens and the earth."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/something-rather-than-nothing.mdx",
+   "locator": "Romans 4:17",
+   "fragments": [
+    "calls into existence the things that do not exist,"
+   ],
+   "words": 9
+  },
+  {
+   "file": "christianity/something-rather-than-nothing.mdx",
+   "locator": "Revelation 4:11",
+   "fragments": [
+    "by your will they existed and were created."
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/something-rather-than-nothing.mdx",
+   "locator": "Hebrews 11:3",
+   "fragments": [
+    "from nothing"
+   ],
+   "words": 2
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "Numbers 23:19",
+   "fragments": [
+    "is not man, that he should lie,"
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "John 17:17",
+   "fragments": [
+    "your word is truth."
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "2 Timothy 3:16",
+   "fragments": [
+    "breathed out by God,"
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "Acts 17:11",
+   "fragments": [
+    "the Scriptures daily to see if these things were so."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/ultimate-personal.mdx",
+   "locator": "Ephesians 1:11",
+   "fragments": [
+    "works all things according to the counsel of his will."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/ultimate-personal.mdx",
+   "locator": "1 John 4:8",
+   "fragments": [
+    "God is love."
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/ultimate-personal.mdx",
+   "locator": "John 4:24",
+   "fragments": [
+    "God is spirit,"
+   ],
+   "words": 3
+  },
+  {
+   "file": "christianity/ultimate-personal.mdx",
+   "locator": "John 17:24",
+   "fragments": [
+    "because you loved me before the foundation of the world."
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/ultimate-reality.mdx",
+   "locator": "Acts 17:24–25",
+   "fragments": [
+    "as though he needed anything."
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/ultimate-reality.mdx",
+   "locator": "Colossians 1:16–17",
+   "fragments": [
+    "in him all things hold together."
+   ],
+   "words": 6
+  },
+  {
+   "file": "naturalism/great-and-terrible.mdx",
+   "locator": "Genesis 9:6",
+   "fragments": [
+    "for God made man in his own image."
+   ],
+   "words": 8
+  },
+  {
+   "file": "naturalism/jesus.mdx",
+   "locator": "1 Corinthians 15:4",
+   "fragments": [
+    "was buried"
+   ],
+   "words": 2
+  },
+  {
+   "file": "naturalism/order.mdx",
+   "locator": "Jeremiah 33:25",
+   "fragments": [
+    "fixed order of heaven and earth,"
+   ],
+   "words": 6
+  },
+  {
+   "file": "judaism/great-and-terrible.mdx",
+   "locator": "Isaiah 53:10",
+   "fragments": [
+    "an offering for guilt."
+   ],
+   "words": 4
+  },
+  {
+   "file": "judaism/history.mdx",
+   "locator": "Hebrews 9:26",
+   "fragments": [
+    "has appeared once for all at the end of the ages."
+   ],
+   "words": 11
+  },
+  {
+   "file": "judaism/jesus.mdx",
+   "locator": "Hebrews 9:28",
+   "fragments": [
+    "will appear a second time"
+   ],
+   "words": 5
+  },
+  {
+   "file": "judaism/knowledge-possible.mdx",
+   "locator": "Colossians 2:3",
+   "fragments": [
+    "in whom are hidden all the treasures of wisdom and knowledge."
+   ],
+   "words": 11
+  },
+  {
+   "file": "judaism/what-is-man.mdx",
+   "locator": "Colossians 1:15",
+   "fragments": [
+    "the image of the invisible God"
+   ],
+   "words": 6
+  },
+  {
+   "file": "islam/great-and-terrible.mdx",
+   "locator": "Romans 1:18–21",
+   "fragments": [
+    "suppress the truth."
+   ],
+   "words": 3
+  },
+  {
+   "file": "islam/history.mdx",
+   "locator": "Hebrews 9:26",
+   "fragments": [
+    "appeared once for all at the end of the ages."
+   ],
+   "words": 10
+  },
+  {
+   "file": "islam/knowledge-possible.mdx",
+   "locator": "Romans 1:20",
+   "fragments": [
+    "clearly perceived... in the things that have been made"
+   ],
+   "words": 9
+  },
+  {
+   "file": "islam/ultimate-personal.mdx",
+   "locator": "John 17:24",
+   "fragments": [
+    "before the foundation of the world."
+   ],
+   "words": 6
+  },
+  {
+   "file": "hinduism/great-and-terrible.mdx",
+   "locator": "Romans 1:24, 28",
+   "fragments": [
+    "delight in such actions",
+    "gave them up"
+   ],
+   "words": 7
+  },
+  {
+   "file": "hinduism/jesus.mdx",
+   "locator": "1 Corinthians 8:6",
+   "fragments": [
+    "one God, the Father... and one Lord, Jesus Christ."
+   ],
+   "words": 9
+  },
+  {
+   "file": "hinduism/jesus.mdx",
+   "locator": "John 1:14",
+   "fragments": [
+    "became flesh,"
+   ],
+   "words": 2
+  },
+  {
+   "file": "hinduism/worship.mdx",
+   "locator": "1 John 4:19",
+   "fragments": [
+    "We love because he first loved us."
+   ],
+   "words": 7
+  },
+  {
+   "file": "buddhism/great-and-terrible.mdx",
+   "locator": "Romans 1:21",
+   "fragments": [
+    "knew God"
+   ],
+   "words": 2
+  },
+  {
+   "file": "buddhism/great-and-terrible.mdx",
+   "locator": "Psalm 51:4",
+   "fragments": [
+    "Against you, you only, have I sinned"
+   ],
+   "words": 7
+  },
+  {
+   "file": "buddhism/jesus.mdx",
+   "locator": "Mark 14:36",
+   "fragments": [
+    "Abba, Father,"
+   ],
+   "words": 2
+  },
+  {
+   "file": "buddhism/order.mdx",
+   "locator": "Hebrews 1:3",
+   "fragments": [
+    "persists"
+   ],
+   "words": 1
+  }
+ ],
+ "unledgered": [
+  {
+   "file": "christianity/induction.mdx",
+   "locator": "Exodus 4:1–5",
+   "fragments": [
+    "above"
+   ],
+   "words": 1
+  },
+  {
+   "file": "christianity/self-salvation.mdx",
+   "locator": "Ephesians 2:8–10",
+   "fragments": [
+    "by grace you have been saved through faith"
+   ],
+   "words": 8
+  },
+  {
+   "file": "christianity/something-rather-than-nothing.mdx",
+   "locator": "Hebrews 11:3",
+   "fragments": [
+    "from nothing"
+   ],
+   "words": 2
+  },
+  {
+   "file": "buddhism/order.mdx",
+   "locator": "Hebrews 1:3",
+   "fragments": [
+    "persists"
+   ],
+   "words": 1
+  }
+ ],
+ "orphanLedger": [
+  {
+   "file": "christianity/self-salvation.mdx",
+   "locator": "Ephesians 2:8",
+   "fragments": 1,
+   "words": 8,
+   "bytes": 42,
+   "verses": 1
+  }
+ ],
+ "ledgerRows": 77
+}

@@ -1,0 +1,1137 @@
+[
+ {
+  "id": "calvin",
+  "name": "John Calvin",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 19,
+  "answerIds": [
+   "christianity/ultimate-reality",
+   "christianity/ultimate-personal",
+   "christianity/order",
+   "christianity/one-and-many",
+   "christianity/knowledge-possible",
+   "christianity/ultimate-authority",
+   "christianity/what-is-man",
+   "christianity/offspring-family",
+   "christianity/love-beauty-creativity",
+   "christianity/worship",
+   "christianity/great-and-terrible",
+   "christianity/know-the-good",
+   "christianity/fail-the-good",
+   "christianity/evil",
+   "christianity/death",
+   "christianity/self-deception",
+   "christianity/self-salvation",
+   "christianity/revelation",
+   "christianity/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "turretin",
+  "name": "Francis Turretin",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 9,
+  "answerIds": [
+   "christianity/ultimate-reality",
+   "christianity/something-rather-than-nothing",
+   "christianity/ultimate-personal",
+   "christianity/order",
+   "christianity/logic-binding",
+   "christianity/induction",
+   "christianity/ultimate-authority",
+   "christianity/what-is-man",
+   "christianity/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "bavinck",
+  "name": "Herman Bavinck",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 21,
+  "answerIds": [
+   "christianity/ultimate-reality",
+   "christianity/something-rather-than-nothing",
+   "christianity/ultimate-personal",
+   "christianity/order",
+   "christianity/one-and-many",
+   "christianity/knowledge-possible",
+   "christianity/logic-binding",
+   "christianity/ultimate-authority",
+   "christianity/what-is-man",
+   "christianity/why-alive",
+   "christianity/offspring-family",
+   "christianity/worship",
+   "christianity/evil",
+   "christianity/suffering",
+   "christianity/death",
+   "christianity/self-salvation",
+   "christianity/after-death",
+   "christianity/final-end",
+   "christianity/revelation",
+   "christianity/history",
+   "christianity/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "vos",
+  "name": "Geerhardus Vos",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 1
+ },
+ {
+  "id": "van-til",
+  "name": "Cornelius Van Til",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 4,
+  "answerIds": [
+   "christianity/knowledge-possible",
+   "christianity/logic-binding",
+   "christianity/induction",
+   "christianity/ultimate-authority"
+  ],
+  "domains": [
+   "knowledge-truth"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "bahnsen",
+  "name": "Greg L. Bahnsen",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 1
+ },
+ {
+  "id": "augustine",
+  "name": "Augustine of Hippo",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 17,
+  "answerIds": [
+   "christianity/ultimate-reality",
+   "christianity/something-rather-than-nothing",
+   "christianity/ultimate-personal",
+   "christianity/order",
+   "christianity/one-and-many",
+   "christianity/knowledge-possible",
+   "christianity/logic-binding",
+   "christianity/induction",
+   "christianity/why-alive",
+   "christianity/love-beauty-creativity",
+   "christianity/great-and-terrible",
+   "christianity/evil",
+   "christianity/suffering",
+   "christianity/death",
+   "christianity/self-deception",
+   "christianity/revelation",
+   "christianity/history"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "witsius",
+  "name": "Herman Witsius",
+  "worldview": "christianity",
+  "role": "primary",
+  "answers": 1,
+  "answerIds": [
+   "christianity/guilt"
+  ],
+  "domains": [
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "edwards",
+  "name": "Jonathan Edwards",
+  "worldview": "christianity",
+  "role": "specialist",
+  "answers": 5,
+  "answerIds": [
+   "christianity/why-alive",
+   "christianity/love-beauty-creativity",
+   "christianity/great-and-terrible",
+   "christianity/fail-the-good",
+   "christianity/self-salvation"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 3
+ },
+ {
+  "id": "owen",
+  "name": "John Owen",
+  "worldview": "christianity",
+  "role": "specialist",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "aquinas",
+  "name": "Thomas Aquinas",
+  "worldview": "christianity",
+  "role": "interlocutor",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "athanasius",
+  "name": "Athanasius of Alexandria",
+  "worldview": "christianity",
+  "role": "interlocutor",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "anselm",
+  "name": "Anselm of Canterbury",
+  "worldview": "christianity",
+  "role": "interlocutor",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "hume",
+  "name": "David Hume",
+  "worldview": "naturalism",
+  "role": "primary",
+  "answers": 17,
+  "answerIds": [
+   "naturalism/something-rather-than-nothing",
+   "naturalism/order",
+   "naturalism/one-and-many",
+   "naturalism/knowledge-possible",
+   "naturalism/induction",
+   "naturalism/ultimate-authority",
+   "naturalism/offspring-family",
+   "naturalism/love-beauty-creativity",
+   "naturalism/worship",
+   "naturalism/great-and-terrible",
+   "naturalism/know-the-good",
+   "naturalism/fail-the-good",
+   "naturalism/evil",
+   "naturalism/suffering",
+   "naturalism/self-salvation",
+   "naturalism/revelation",
+   "naturalism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 3
+ },
+ {
+  "id": "russell",
+  "name": "Bertrand Russell",
+  "worldview": "naturalism",
+  "role": "primary",
+  "answers": 17,
+  "answerIds": [
+   "naturalism/ultimate-reality",
+   "naturalism/something-rather-than-nothing",
+   "naturalism/ultimate-personal",
+   "naturalism/one-and-many",
+   "naturalism/logic-binding",
+   "naturalism/induction",
+   "naturalism/ultimate-authority",
+   "naturalism/what-is-man",
+   "naturalism/why-alive",
+   "naturalism/worship",
+   "naturalism/suffering",
+   "naturalism/death",
+   "naturalism/self-deception",
+   "naturalism/self-salvation",
+   "naturalism/after-death",
+   "naturalism/final-end",
+   "naturalism/history"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "mackie",
+  "name": "J. L. Mackie",
+  "worldview": "naturalism",
+  "role": "primary",
+  "answers": 3,
+  "answerIds": [
+   "naturalism/great-and-terrible",
+   "naturalism/know-the-good",
+   "naturalism/evil"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "dennett",
+  "name": "Daniel Dennett",
+  "worldview": "naturalism",
+  "role": "primary",
+  "answers": 2,
+  "answerIds": [
+   "naturalism/what-is-man",
+   "naturalism/self-deception"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "oppy",
+  "name": "Graham Oppy",
+  "worldview": "naturalism",
+  "role": "primary",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "railton",
+  "name": "Peter Railton",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 8,
+  "answerIds": [
+   "naturalism/great-and-terrible",
+   "naturalism/know-the-good",
+   "naturalism/fail-the-good",
+   "naturalism/evil",
+   "naturalism/self-salvation",
+   "naturalism/guilt",
+   "naturalism/final-end",
+   "naturalism/history"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "rosenberg",
+  "name": "Alex Rosenberg",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "darwin",
+  "name": "Charles Darwin",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 11,
+  "answerIds": [
+   "naturalism/knowledge-possible",
+   "naturalism/what-is-man",
+   "naturalism/offspring-family",
+   "naturalism/love-beauty-creativity",
+   "naturalism/worship",
+   "naturalism/great-and-terrible",
+   "naturalism/know-the-good",
+   "naturalism/fail-the-good",
+   "naturalism/evil",
+   "naturalism/guilt",
+   "naturalism/history"
+  ],
+  "domains": [
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "kitcher",
+  "name": "Philip Kitcher",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "quine",
+  "name": "W. V. O. Quine",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 4,
+  "answerIds": [
+   "naturalism/knowledge-possible",
+   "naturalism/logic-binding",
+   "naturalism/induction",
+   "naturalism/ultimate-authority"
+  ],
+  "domains": [
+   "knowledge-truth"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "maimonides",
+  "name": "Moses Maimonides",
+  "worldview": "judaism",
+  "role": "primary",
+  "answers": 28,
+  "answerIds": [
+   "judaism/ultimate-reality",
+   "judaism/something-rather-than-nothing",
+   "judaism/ultimate-personal",
+   "judaism/order",
+   "judaism/one-and-many",
+   "judaism/knowledge-possible",
+   "judaism/logic-binding",
+   "judaism/induction",
+   "judaism/ultimate-authority",
+   "judaism/what-is-man",
+   "judaism/why-alive",
+   "judaism/offspring-family",
+   "judaism/love-beauty-creativity",
+   "judaism/worship",
+   "judaism/great-and-terrible",
+   "judaism/know-the-good",
+   "judaism/fail-the-good",
+   "judaism/evil",
+   "judaism/suffering",
+   "judaism/death",
+   "judaism/self-deception",
+   "judaism/self-salvation",
+   "judaism/guilt",
+   "judaism/after-death",
+   "judaism/final-end",
+   "judaism/revelation",
+   "judaism/history",
+   "judaism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 3
+ },
+ {
+  "id": "halevi",
+  "name": "Judah Halevi",
+  "worldview": "judaism",
+  "role": "primary",
+  "answers": 6,
+  "answerIds": [
+   "judaism/ultimate-reality",
+   "judaism/something-rather-than-nothing",
+   "judaism/ultimate-personal",
+   "judaism/knowledge-possible",
+   "judaism/ultimate-authority",
+   "judaism/revelation"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "soloveitchik",
+  "name": "Joseph B. Soloveitchik",
+  "worldview": "judaism",
+  "role": "primary",
+  "answers": 1,
+  "answerIds": [
+   "judaism/love-beauty-creativity"
+  ],
+  "domains": [
+   "human-nature"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "saadia",
+  "name": "Saadia Gaon",
+  "worldview": "judaism",
+  "role": "primary",
+  "answers": 13,
+  "answerIds": [
+   "judaism/something-rather-than-nothing",
+   "judaism/ultimate-personal",
+   "judaism/knowledge-possible",
+   "judaism/logic-binding",
+   "judaism/ultimate-authority",
+   "judaism/what-is-man",
+   "judaism/why-alive",
+   "judaism/great-and-terrible",
+   "judaism/know-the-good",
+   "judaism/evil",
+   "judaism/revelation",
+   "judaism/history",
+   "judaism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "nachmanides",
+  "name": "Nachmanides (Moses ben Nahman)",
+  "worldview": "judaism",
+  "role": "primary",
+  "answers": 8,
+  "answerIds": [
+   "judaism/something-rather-than-nothing",
+   "judaism/order",
+   "judaism/induction",
+   "judaism/ultimate-authority",
+   "judaism/great-and-terrible",
+   "judaism/self-salvation",
+   "judaism/final-end",
+   "judaism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "ash-ari",
+  "name": "Abu al-Hasan al-Ash'ari",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 7,
+  "answerIds": [
+   "islam/ultimate-reality",
+   "islam/ultimate-personal",
+   "islam/one-and-many",
+   "islam/great-and-terrible",
+   "islam/know-the-good",
+   "islam/evil",
+   "islam/self-salvation"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "maturidi",
+  "name": "Abu Mansur al-Maturidi",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 7,
+  "answerIds": [
+   "islam/order",
+   "islam/knowledge-possible",
+   "islam/induction",
+   "islam/ultimate-authority",
+   "islam/what-is-man",
+   "islam/know-the-good",
+   "islam/evil"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "ghazali",
+  "name": "Abu Hamid al-Ghazali",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 22,
+  "answerIds": [
+   "islam/something-rather-than-nothing",
+   "islam/ultimate-personal",
+   "islam/order",
+   "islam/knowledge-possible",
+   "islam/logic-binding",
+   "islam/induction",
+   "islam/ultimate-authority",
+   "islam/what-is-man",
+   "islam/why-alive",
+   "islam/offspring-family",
+   "islam/love-beauty-creativity",
+   "islam/worship",
+   "islam/great-and-terrible",
+   "islam/fail-the-good",
+   "islam/evil",
+   "islam/death",
+   "islam/self-deception",
+   "islam/self-salvation",
+   "islam/guilt",
+   "islam/after-death",
+   "islam/final-end",
+   "islam/revelation"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 3
+ },
+ {
+  "id": "razi",
+  "name": "Fakhr al-Din al-Razi",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 1,
+  "answerIds": [
+   "islam/jesus"
+  ],
+  "domains": [
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "ibn-taymiyya",
+  "name": "Ibn Taymiyya",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 15,
+  "answerIds": [
+   "islam/ultimate-reality",
+   "islam/something-rather-than-nothing",
+   "islam/ultimate-personal",
+   "islam/order",
+   "islam/one-and-many",
+   "islam/knowledge-possible",
+   "islam/logic-binding",
+   "islam/induction",
+   "islam/ultimate-authority",
+   "islam/why-alive",
+   "islam/worship",
+   "islam/great-and-terrible",
+   "islam/fail-the-good",
+   "islam/evil",
+   "islam/suffering"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "ibn-sina",
+  "name": "Avicenna (Ibn Sina)",
+  "worldview": "islam",
+  "role": "primary",
+  "answers": 2,
+  "answerIds": [
+   "islam/ultimate-reality",
+   "islam/something-rather-than-nothing"
+  ],
+  "domains": [
+   "ultimate-reality"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "ibn-arabi",
+  "name": "Ibn Arabi",
+  "worldview": "islam",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "islam/one-and-many"
+  ],
+  "domains": [
+   "ultimate-reality"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "ibn-khaldun",
+  "name": "Ibn Khaldun",
+  "worldview": "islam",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "islam/history"
+  ],
+  "domains": [
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "shankara",
+  "name": "Shankara",
+  "worldview": "hinduism",
+  "role": "primary",
+  "answers": 28,
+  "answerIds": [
+   "hinduism/ultimate-reality",
+   "hinduism/something-rather-than-nothing",
+   "hinduism/ultimate-personal",
+   "hinduism/order",
+   "hinduism/one-and-many",
+   "hinduism/knowledge-possible",
+   "hinduism/logic-binding",
+   "hinduism/induction",
+   "hinduism/ultimate-authority",
+   "hinduism/what-is-man",
+   "hinduism/why-alive",
+   "hinduism/offspring-family",
+   "hinduism/love-beauty-creativity",
+   "hinduism/worship",
+   "hinduism/great-and-terrible",
+   "hinduism/know-the-good",
+   "hinduism/fail-the-good",
+   "hinduism/evil",
+   "hinduism/suffering",
+   "hinduism/death",
+   "hinduism/self-deception",
+   "hinduism/self-salvation",
+   "hinduism/guilt",
+   "hinduism/after-death",
+   "hinduism/final-end",
+   "hinduism/revelation",
+   "hinduism/history",
+   "hinduism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "ramanuja",
+  "name": "Ramanuja",
+  "worldview": "hinduism",
+  "role": "primary",
+  "answers": 22,
+  "answerIds": [
+   "hinduism/ultimate-reality",
+   "hinduism/something-rather-than-nothing",
+   "hinduism/ultimate-personal",
+   "hinduism/order",
+   "hinduism/one-and-many",
+   "hinduism/knowledge-possible",
+   "hinduism/ultimate-authority",
+   "hinduism/what-is-man",
+   "hinduism/why-alive",
+   "hinduism/love-beauty-creativity",
+   "hinduism/worship",
+   "hinduism/great-and-terrible",
+   "hinduism/fail-the-good",
+   "hinduism/evil",
+   "hinduism/suffering",
+   "hinduism/death",
+   "hinduism/self-deception",
+   "hinduism/self-salvation",
+   "hinduism/guilt",
+   "hinduism/after-death",
+   "hinduism/final-end",
+   "hinduism/revelation"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "madhva",
+  "name": "Madhva",
+  "worldview": "hinduism",
+  "role": "primary",
+  "answers": 11,
+  "answerIds": [
+   "hinduism/ultimate-reality",
+   "hinduism/ultimate-personal",
+   "hinduism/one-and-many",
+   "hinduism/knowledge-possible",
+   "hinduism/ultimate-authority",
+   "hinduism/what-is-man",
+   "hinduism/great-and-terrible",
+   "hinduism/evil",
+   "hinduism/self-salvation",
+   "hinduism/after-death",
+   "hinduism/final-end"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "udayana",
+  "name": "Udayana",
+  "worldview": "hinduism",
+  "role": "primary",
+  "answers": 4,
+  "answerIds": [
+   "hinduism/something-rather-than-nothing",
+   "hinduism/order",
+   "hinduism/logic-binding",
+   "hinduism/induction"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "kumarila",
+  "name": "Kumarila Bhatta",
+  "worldview": "hinduism",
+  "role": "primary",
+  "answers": 3,
+  "answerIds": [
+   "hinduism/knowledge-possible",
+   "hinduism/ultimate-authority",
+   "hinduism/know-the-good"
+  ],
+  "domains": [
+   "knowledge-truth",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "abhinavagupta",
+  "name": "Abhinavagupta",
+  "worldview": "hinduism",
+  "role": "specialist",
+  "answers": 0,
+  "answerIds": [],
+  "domains": [],
+  "bio": false,
+  "worksWithSource": 0
+ },
+ {
+  "id": "buddhaghosa",
+  "name": "Buddhaghosa",
+  "worldview": "buddhism",
+  "role": "primary",
+  "answers": 18,
+  "answerIds": [
+   "buddhism/ultimate-reality",
+   "buddhism/something-rather-than-nothing",
+   "buddhism/ultimate-personal",
+   "buddhism/one-and-many",
+   "buddhism/what-is-man",
+   "buddhism/offspring-family",
+   "buddhism/love-beauty-creativity",
+   "buddhism/great-and-terrible",
+   "buddhism/know-the-good",
+   "buddhism/fail-the-good",
+   "buddhism/evil",
+   "buddhism/suffering",
+   "buddhism/death",
+   "buddhism/self-deception",
+   "buddhism/self-salvation",
+   "buddhism/guilt",
+   "buddhism/after-death",
+   "buddhism/history"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "human-nature",
+   "morality-evil",
+   "salvation-destiny",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "nagarjuna",
+  "name": "Nagarjuna",
+  "worldview": "buddhism",
+  "role": "primary",
+  "answers": 8,
+  "answerIds": [
+   "buddhism/ultimate-reality",
+   "buddhism/order",
+   "buddhism/one-and-many",
+   "buddhism/knowledge-possible",
+   "buddhism/logic-binding",
+   "buddhism/ultimate-authority",
+   "buddhism/great-and-terrible",
+   "buddhism/evil"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "vasubandhu",
+  "name": "Vasubandhu",
+  "worldview": "buddhism",
+  "role": "primary",
+  "answers": 5,
+  "answerIds": [
+   "buddhism/something-rather-than-nothing",
+   "buddhism/order",
+   "buddhism/knowledge-possible",
+   "buddhism/what-is-man",
+   "buddhism/self-deception"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "knowledge-truth",
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "shantideva",
+  "name": "Shantideva",
+  "worldview": "buddhism",
+  "role": "specialist",
+  "answers": 5,
+  "answerIds": [
+   "buddhism/great-and-terrible",
+   "buddhism/evil",
+   "buddhism/suffering",
+   "buddhism/death",
+   "buddhism/revelation"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "dogen",
+  "name": "Dogen",
+  "worldview": "buddhism",
+  "role": "specialist",
+  "answers": 2,
+  "answerIds": [
+   "buddhism/great-and-terrible",
+   "buddhism/evil"
+  ],
+  "domains": [
+   "human-nature",
+   "morality-evil"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "tsongkhapa",
+  "name": "Tsongkhapa",
+  "worldview": "buddhism",
+  "role": "primary",
+  "answers": 3,
+  "answerIds": [
+   "buddhism/why-alive",
+   "buddhism/self-salvation",
+   "buddhism/final-end"
+  ],
+  "domains": [
+   "human-nature",
+   "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "dharmakirti",
+  "name": "Dharmakirti",
+  "worldview": "buddhism",
+  "role": "primary",
+  "answers": 4,
+  "answerIds": [
+   "buddhism/knowledge-possible",
+   "buddhism/logic-binding",
+   "buddhism/induction",
+   "buddhism/ultimate-authority"
+  ],
+  "domains": [
+   "knowledge-truth"
+  ],
+  "bio": true,
+  "worksWithSource": 0
+ },
+ {
+  "id": "shinran",
+  "name": "Shinran",
+  "worldview": "buddhism",
+  "role": "specialist",
+  "answers": 3,
+  "answerIds": [
+   "buddhism/ultimate-personal",
+   "buddhism/worship",
+   "buddhism/jesus"
+  ],
+  "domains": [
+   "ultimate-reality",
+   "human-nature",
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ }
+]
