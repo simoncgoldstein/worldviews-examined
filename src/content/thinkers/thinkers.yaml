@@ -1035,6 +1035,39 @@
   notes: Futuhat drafts completed 1231 and 1238 (start year not verified). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.
 
 # --- Hindu traditions --------------------------------------------------------------------
+- id: ibn-khaldun
+  slug: ibn-khaldun
+  name: Ibn Khaldun
+  worldview: islam
+  role: specialist
+  displayOrder: 2
+  usedFor: [philosophy of history, rise and fall of dynasties]
+  schools: [Maliki jurisprudence, Historiography]
+  birthYear: 1332
+  deathYear: 1406
+  description: North African historian and jurist whose Muqaddimah analysed the rise and decline of dynasties.
+  bio: >-
+    Ibn Khaldun was born in Tunis in 1332 to a family of Yemeni origin long settled in Seville. At
+    twenty he became secretary to the Hafsid sultan, and he went on to serve the Marinid court at Fez,
+    the Nasrid king of Granada (who sent him on an embassy to Pedro the Cruel of Castile), and princes
+    at Bougie and Tlemcen, with a spell in prison along the way. In a four-year retreat at the castle of
+    Qal'at Ibn Salama, in present-day Algeria, he composed the Muqaddimah (Prolegomena) and drafted his
+    universal history. From 1382 he lived in Cairo, where he was several times appointed chief Maliki
+    judge. In 1400, accompanying the sultan to Syria, he fell into the hands of Timur, and was later released. He died in Cairo in 1406.
+  significance: >-
+    Ibn Khaldun is the classical Muslim thinker who described recurring cycles in political history: dynasties rise
+    on group solidarity and decline within about three generations. He matters to Worldviews Examined because his
+    cycles operate inside the Qur'an's linear sacred history, showing that recurring patterns are not a cyclical
+    cosmology.
+  keyIdeas:
+    - Group solidarity (asabiyya) as the force that founds dynasties
+    - Dynasties last about three generations, roughly 120 years
+    - Empires have a natural life like individuals
+    - History as a science of civilization, open to critical testing of reports
+  representativeWorks:
+    - { title: "Muqaddimah (Les prolégomènes, vol. 1, trans. de Slane)", year: 1863, sourceId: ibn-khaldun-prolegomenes-slane }
+  notes: Biography from de Slane's introduction to the Prolégomènes (vol. 1, pp. iii-v, read 2026-10-07). Profiled at first public use (Islam `history`).
+
 - id: shankara
   slug: shankara
   name: Shankara
