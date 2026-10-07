@@ -550,6 +550,32 @@
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
+- id: owen-works-goold-10
+  type: primary
+  title: The Works of John Owen, Volume 10
+  shortCitation: Owen, Works 10
+  author: John Owen
+  traditionTags: [christianity]
+  editor: William H. Goold
+  place: Edinburgh
+  publisher: T. & T. Clark
+  year: 1862
+  url: https://archive.org/details/worksofjohnowen10owen
+  notes: >-
+    Metadata from the archive.org record and the scanned title page (University of California
+    Libraries copy; "NOT_IN_COPYRIGHT", 1862). Contains A Display of Arminianism, Salus Electorum,
+    Sanguis Jesu: or The Death of Death in the Death of Christ (1647), and Of the Death of Christ.
+    Cite treatise, book.chapter and Goold page. Read 2026-10-07 in the archive.org OCR text (R1):
+    Goold's prefatory note to The Death of Death, pp. 140-141 (positions on the extent of the
+    atonement; Owen's definite atonement; the universal offer); Death of Death I.3, pp. 173-174 (the
+    dilemma: all the sins of all men, all the sins of some, or some sins of all); III.6, pp. 263-264
+    (reconciliation); III.7, pp. 265-267 (satisfaction a legal term; "to bear iniquity" is to undergo
+    its punishment; Isa 53, 1 Pet 2:24, 2 Cor 5:21 as sin offering; God more pleased with the Son's
+    obedience and offering than displeased with the sins). The pages carry the running head "Arguments
+    against universal redemption": attribute their use to Owen's case for definite atonement.
+  verificationStatus: checked
+  verifiedOn: "2026-10-07"
+
 - id: bavinck-reformed-dogmatics-monergism-1
   type: primary
   title: "Reformed Dogmatics, Vol. 1: Prolegomena"
