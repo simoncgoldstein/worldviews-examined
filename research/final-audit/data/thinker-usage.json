@@ -718,11 +718,13 @@
   "name": "Fakhr al-Din al-Razi",
   "worldview": "islam",
   "role": "primary",
-  "answers": 1,
+  "answers": 2,
   "answerIds": [
+   "islam/evil",
    "islam/jesus"
   ],
   "domains": [
+   "morality-evil",
    "revelation-history"
   ],
   "bio": true,
@@ -733,7 +735,7 @@
   "name": "Ibn Taymiyya",
   "worldview": "islam",
   "role": "primary",
-  "answers": 15,
+  "answers": 17,
   "answerIds": [
    "islam/ultimate-reality",
    "islam/something-rather-than-nothing",
@@ -749,16 +751,19 @@
    "islam/great-and-terrible",
    "islam/fail-the-good",
    "islam/evil",
-   "islam/suffering"
+   "islam/suffering",
+   "islam/revelation",
+   "islam/jesus"
   ],
   "domains": [
    "ultimate-reality",
    "knowledge-truth",
    "human-nature",
-   "morality-evil"
+   "morality-evil",
+   "revelation-history"
   ],
   "bio": true,
-  "worksWithSource": 0
+  "worksWithSource": 3
  },
  {
   "id": "ibn-sina",
@@ -801,6 +806,38 @@
    "islam/history"
   ],
   "domains": [
+   "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "shafii",
+  "name": "al-Shafi'i",
+  "worldview": "islam",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "islam/ultimate-authority"
+  ],
+  "domains": [
+   "knowledge-truth"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "saduq",
+  "name": "al-Shaykh al-Saduq",
+  "worldview": "islam",
+  "role": "specialist",
+  "answers": 2,
+  "answerIds": [
+   "islam/ultimate-authority",
+   "islam/history"
+  ],
+  "domains": [
+   "knowledge-truth",
    "revelation-history"
   ],
   "bio": true,

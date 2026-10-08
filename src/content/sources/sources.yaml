@@ -64,6 +64,8 @@
     Remediation R1 (2026-10-07): read on esv.org Isa 53:4-12; Rom 3:19-26, 4:25, 5:8-10, 5:18-19, 6:3-5, 8:32; 2 Cor 4:16-18, 5:18-21; Gal 2:20, 3:13-14; Eph 1:3-7; Phil 3:8-9; Col 2:13-15; 1 Pet 2:21, 2:24, 3:18; Heb 1:1-2, 2:9-10, 2:14-18, 4:15-16, 5:7-8, 7:24-27, 9:11-14, 9:24-28, 10:5-14; 1 John 4:10; Acts 2:23, 4:27-28; 1 Cor 15:24-26, 15:54-57; 2 Tim 1:10; John 11:25-26; Job 38:1-4, 42:5-7; Ps 13:1-2, 22:1; Mark 15:34; Rev 21:3-5.
     Remediation R2 (2026-10-08): read on esv.org Gen 1:26-28; Rom 5:12-21; Jer 17:9; Rom 2:14-16; Jas 4:11-12; Matt 5:17-19;
     John 10:34-36; Luke 24:25-27, 44-47; 1 Cor 15:12-22, 45 (new quotations itemized in the ledger).
+    R4 independent review (2026-10-08): read on esv.org 1 Cor 1:23, 15:3-4; Mark 15:40-41; John 19:25-26 (locator-only
+    citations in islam/jesus; no quotation added).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1575,6 +1577,7 @@
     53:2-11, 55:26-27, 61:6, 81:1-6, 96:1-5, 99:6-8; Arabic of 3:55, 4:157-158, 5:117, 19:33, 43:61 checked
     (quran.com Uthmani).
     Revelation & History production (2026-10-07): also read 3:47 and 19:20-21 (Mary: 'no man has touched me') in the quran.com resource 85 text.
+    R4 Islam sources and fairness (2026-10-08): read via quran.com API (resource 85), with the Uthmani Arabic: 2:75-79, 3:3-4, 3:78, 4:46, 4:59, 5:13-15, 5:41-48, 5:68, 10:94, 14:27, 26:78-81, 40:45-46, 52:35. Haleem renders yuḥarrifūna al-kalim (4:46; 5:13, 41) as distorting the meaning of words; the Arabic is 'shift words from their places'.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1626,6 +1629,7 @@
     Him); Khan's parenthetical glosses not quoted.
     Revelation & History (2026-10-07): read 3448-3449 (Book 60, Hadith 118-119: descent of the son of Mary) via the
     fawazahmed0 mirror.
+    R4 (2026-10-08): sunnah.com is bot-blocked, so the same Khan text and sunnah.com numbering were read in the fawazahmed0 hadith-api dataset on jsDelivr: 1338 and 1374 (two angels question the dead in the grave; the believer shown his place in paradise; the hypocrite or unbeliever struck); 4699 and, in Arabic, 1369 (Q 14:27 applied to the believer's answer in the grave; 'revealed about the punishment of the grave'); 7363 (Ibn ʿAbbas: the People of the Book changed their scripture and wrote it with their own hands); 7542 ('do not believe the people of the Scripture, and do not disbelieve them').
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -3623,6 +3627,7 @@
     convert), Ibn Jurayj and Mujahid. Al-Tabari prefers Wahb's account that the likeness fell on all in the house without
     Jesus' request; the disciples who reported the crucifixion were not liars, since they reported what appeared true;
     "they did not kill him certainly" refers to their conjecture.
+    R4 (2026-10-08): read on Q 3:78 (sura3-aya78), reports 7290-7295: 'twisting their tongues' means distorting; the Jews around Medina in the Prophet's time adding to God's Book what he had not revealed (Mujahid, Qatada, Ibn ʿAbbas via al-ʿAwfi, Ibn Jurayj).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: razi-mafatih-al-ghayb
@@ -3642,6 +3647,7 @@
     deceived the public, and Christian tawatur goes back to a few people who could agree on a lie; (2) four substitution
     variants, which al-Razi calls "mutually conflicting", ending "God knows best". Also the Nestorian view (crucified in
     his humanity).
+    R4 (2026-10-08): read on Q 4:78, pp. 1-3 (p. 2: 'all is from God' covers obedience and disobedience; everything other than the Necessary Being is possible in itself and depends on it, angel, inanimate or animal act alike; p. 3: the Mu'tazili objection from God's wonder at their not understanding is the argument from praise and blame, met by God's knowledge) and on Q 4:79, pp. 1-3 (al-Jubba'i assigns misfortune to God and sin to the servant; al-Razi: faith is a good and every good is from God, and so too unbelief; 'from yourself' as courtesy of speech, cf. Abraham at 26:80, or a question of denial).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: ibn-kathir-tafsir
@@ -3658,6 +3664,7 @@
     2026-10-07 on Q 4:157: a youth took Jesus' likeness and was crucified; those in the house saw Jesus raised; other
     Christians accepted the crucifixion; God clarified the matter in the Qur'an, revealed by "the most truthful of
     speakers", who knows the hidden. This states the Islamic ground for preferring the later source.
+    R4 (2026-10-08): read on Q 3:78 (al-Bukhari reports Ibn ʿAbbas: no one removes a word of God's books, they distort by misinterpreting; R4 review: this is the unchained chapter-heading comment of Bukhari, Tawḥīd ch. 55, whose second clause Ibn Ḥajar says may be al-Bukhārī's own (see ibn-hajar-fath-al-bari); Ibn Kathir's text reads 'yuḥarrifūna wa-yazīdūna' where al-Bukhārī has 'yuḥarrifūna: yuzīlūna'; Wahb b. Munabbih: the Torah and Gospel as revealed were not changed by a letter; Ibn Kathir: the copies in their hands suffered alteration, addition and omission, God's books as revealed are preserved) and on Q 2:79 (reports on Jewish scholars writing by hand).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: fatoohi-end-of-jesus-life
@@ -3925,3 +3932,242 @@
     superiority in the arrangement (nazm) of meanings, not in words (quoting Larkin 1982). Use only for that point.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
+- id: ibn-taymiyya-jawab-sahih
+  type: primary
+  title: al-Jawāb al-ṣaḥīḥ li-man baddala dīn al-Masīḥ, Arabic text
+  shortCitation: Ibn Taymiyya, al-Jawāb al-ṣaḥīḥ
+  author: Ibn Taymiyya
+  editor: ʿAlī b. Ḥasan, ʿAbd al-ʿAzīz b. Ibrāhīm and Ḥamdān b. Muḥammad
+  traditionTags:
+  - islam
+  edition: 2nd ed., 6 vols.
+  place: Saudi Arabia
+  publisher: Dār al-ʿĀṣima
+  year: 1999
+  url: https://shamela.ws/book/170
+  notes: >-
+    Arabic text read 2026-10-08 in the al-Maktaba al-Shāmila transcription of the Dār al-ʿĀṣima 2nd edition (1419/1999),
+    whose catalog card names the editors, publisher and edition and states that its page numbering follows the print;
+    no print scan was seen. Cite volume:page; paraphrase only ("Arabic; paraphrased"). Passages read: 1:368-369 (Jews and
+    Christians altered the meanings and rulings of the earlier book); 2:301-305 (the evangelists and disciples did not
+    witness the crucifixion; only a band of Jews did, who either lied knowingly (some kalam theologians and Ibn Hazm) or,
+    on the majority view, were themselves deceived by the likeness; mistaken disciples are excused, not damned);
+    2:354-362 (Q 10:94 is conditional and implies neither doubt nor asking; the People of the Book hold what confirms
+    the Prophet, e.g. monotheism, human messengers); 2:395-398 (the majority's case: the Torah and Gospels are not
+    mass-transmitted; the Gospels were written after Jesus by Matthew and John, who knew him, and Mark and Luke, who did
+    not, recording some of his words and deeds; the disciples were not infallible); 2:418-421 (Muslims do not claim
+    all copies everywhere were altered; Muslim and Christian scholars agree meanings and interpretation were distorted;
+    some Muslims deny any change of wording, many affirm some, before or after Muhammad; extremes treat most as altered;
+    "little was altered" is "more evident"; many say the Injil that is God's speech is not these Gospels; the Torah in
+    their hands still contains God's judgment); 2:423-425 (read in the R4 review: no one could gather and alter all the scattered copies; textual change, where it occurred, was in narrative reports, hardly in laws; some scholars read Q 5:47 as addressed to Christians before Muhammad, matching Ḥamza's reading li-yaḥkuma); 2:434-442 (Q 5:43-48, 5:68: the Torah and likewise the Gospel after Jesus
+    still contained God's judgment, binding where not abrogated; a few altered narrative words are exposed by the
+    unaltered text, as sound hadith exposes weak); 3:415-425 (four Gospels after Christ, two by men who never saw him;
+    not mass-transmitted; no one can certify that all copies agree; contrast with the Qur'an's mass transmission by
+    memory and script; views on the Torah after the destruction of Jerusalem); 5:122-126 (what conflicts with Muhammad
+    is mostly distortion of meaning and interpretation, a little of wording; Jews, Christians and Muslims agree some
+    distortion occurred in translation and interpretation; the dispute is over wording; an objector must establish the
+    wording, its meaning and its translation).
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: ibn-hajar-fath-al-bari
+  type: primary
+  title: Fatḥ al-Bārī bi-sharḥ Ṣaḥīḥ al-Bukhārī, Arabic text
+  shortCitation: Ibn Ḥajar, Fatḥ al-Bārī
+  author: Ibn Ḥajar al-ʿAsqalānī
+  editor: Muḥibb al-Dīn al-Khaṭīb (numbering by Muḥammad Fuʾād ʿAbd al-Bāqī)
+  traditionTags:
+  - islam
+  edition: al-Salafiyya 1st ed., 13 vols.
+  place: Cairo
+  publisher: al-Maktaba al-Salafiyya
+  year: 1960
+  url: https://shamela.ws/book/1673
+  notes: >-
+    Arabic text read 2026-10-08 (R4 independent review) in the al-Maktaba al-Shāmila transcription of the Salafiyya
+    edition (1380-1390 AH, 13 vols.; later reprinted by Dār al-Maʿrifa and others), whose catalog card names the
+    numberer, editor, publisher and edition and states that its page numbering follows the print; no print scan was
+    seen, and the year given is the first year of the 1380-1390 AH printing. Cite volume:page; paraphrase only.
+    Passages read: 13:523-525 (commentary on al-Bukhārī, Kitāb al-Tawḥīd, chapter 55, whose heading quotes Ibn ʿAbbās
+    without a chain: "yuḥarrifūna" means "they remove", "and no one removes the wording of a book of God's books, but
+    they distort it, interpreting it wrongly". Ibn Ḥajar has not found the gloss "they remove" connected to Ibn ʿAbbās by
+    a sound route, and notes a report from Ibn ʿAbbās to the contrary. Ibn al-Mulaqqin took the clause "no one removes..."
+    as al-Bukhārī's own preferred view, which Ibn Ḥajar says is almost explicit that the clause is al-Bukhārī's comment,
+    though it may be the rest of Ibn ʿAbbās's words. A later commentator lists four views on the alteration of the
+    Torah and Gospel: all changed (an excess), most changed, a little changed with most intact (championed by Ibn
+    Taymiyya in his Jawāb), or meanings only. Ibn Ḥazm is cited for alteration of wording).
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: ibn-taymiyya-dar-taarud
+  type: primary
+  title: Darʾ taʿāruḍ al-ʿaql wa-l-naql, Arabic text
+  shortCitation: Ibn Taymiyya, Darʾ taʿāruḍ
+  author: Ibn Taymiyya
+  editor: Muḥammad Rashād Sālim
+  traditionTags:
+  - islam
+  edition: 2nd ed., 10 vols.
+  place: Riyadh
+  publisher: Jāmiʿat al-Imām Muḥammad ibn Saʿūd al-Islāmiyya
+  year: 1991
+  url: https://shamela.ws/book/21506
+  notes: >-
+    Arabic text read 2026-10-08 in the al-Maktaba al-Shāmila transcription of Sālim's 2nd edition (1411/1991), whose
+    catalog card states that its page numbering follows the print; Sālim's edition is the one Hoover's SEP entry cites
+    (first edition 1979-1983). Only vol. 1 was examined. Cite volume:page; paraphrase only. Passages read: 1:3-7 (the
+    "universal rule" of al-Razi and his followers: when reason and transmitted revelation conflict, reason, as the basis
+    of revelation, is put first and the text reinterpreted or its meaning consigned to God; al-Ghazali preceded them);
+    1:145-148 (human reasonings disagree, so disputes are referred to God and the Messenger, Q 4:59; what clear reason
+    knows can never be contradicted by authentic revelation, nor authentic revelation by clear reason; apparent
+    conflicts arise from fabricated reports or weak inferences; prophets tell of what bewilders reason, not of what
+    reason knows impossible). The shamela text of 1:147 has a typographical slip in that last phrase; do not quote it.
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: ibn-taymiyya-radd-mantiqiyyin
+  type: primary
+  title: al-Radd ʿalā al-manṭiqiyyīn, Arabic text
+  shortCitation: Ibn Taymiyya, al-Radd ʿalā al-manṭiqiyyīn
+  author: Ibn Taymiyya
+  traditionTags:
+  - islam
+  place: Beirut
+  publisher: Dār al-Maʿrifa
+  url: https://shamela.ws/book/7626
+  notes: >-
+    Undated Dār al-Maʿrifa printing (545 pp.), read 2026-10-08 in the al-Maktaba al-Shāmila transcription, whose card
+    states that its numbering follows the print. Its pages agree with the Bombay 1949 edition (ed. ʿAbd al-Ṣamad Sharaf
+    al-Dīn al-Kutubī) that SEP cites first: the equivalence of analogy and syllogism at p. 116 and "this is not
+    disputed" at p. 293 match SEP's Bombay figures exactly; SEP's p. 296 ("lean camel meat") falls at pp. 296-297 here.
+    Cite by page; paraphrase only. Passages read: pp. 115-116 (knowledge of universals rests on likening the absent to
+    the present; analogy and syllogism are equal, certainty depending on the premises); pp. 250-253 (a proof is whatever
+    entails its conclusion; one premise or many as the inquirer needs; the syllogism gives only the form of proof, not
+    the truth of premises; "the reality in every proof is entailment"; Q 52:35 shows that whatever comes to be needs a
+    maker, a premise "innate (fiṭrī), self-evident, settled in souls" that no one of sound nature can deny);
+    pp. 293-294 (a syllogism with known premises yields certainty, "this is not disputed"; every sound proof entails its
+    conclusion, so a claim known to be false has no sound proof); pp. 296-297 (the figures are of little use; those who
+    reason by the natural disposition God gave err less than those bound to the logicians' conventions); p. 300 (the
+    senses grasp only particulars; for "fire burns" the logicians have no knowledge of its universality, only experience and custom; fire does not burn everything; "I
+    know of no universal sensory proposition that cannot be broken").
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: shafii-risala-shakir
+  type: primary
+  title: al-Risāla, Arabic text
+  shortCitation: al-Shāfiʿī, Risāla
+  author: Muḥammad ibn Idrīs al-Shāfiʿī
+  editor: Aḥmad Muḥammad Shākir
+  traditionTags:
+  - islam
+  edition: 1st ed.
+  place: Cairo
+  publisher: Muṣṭafā al-Bābī al-Ḥalabī
+  year: 1938
+  url: https://shamela.ws/book/8180
+  notes: >-
+    Shākir's edition from al-Rabīʿ b. Sulaymān's manuscript (1357/1938, 601 pp.), read 2026-10-08 in the al-Maktaba
+    al-Shāmila transcription, whose card states that its numbering follows the print and that Shākir's addenda are
+    inserted in place. Cite Shākir's paragraph number and page (e.g. "§120, p. 39"); paraphrase, with "our translation"
+    only for short phrases checked against the Arabic. Passages read: §48 (p. 20: every case that befalls a Muslim has
+    guidance in God's Book); §§53-59 (pp. 21-22: kinds of bayān: explicit text; a duty in the Book detailed by the
+    Prophet; what the Prophet instituted where the Book has no text, accepted because the Book commands obedience to him;
+    ijtihād); §§60-67 (pp. 22-24, read in the R4 review: the direction of prayer found by the stars and signs God made, the example of ijtihād); §§112-121 (pp. 38-39: ijtihād by the signs and reason God gave; "the way of knowledge is the report in the
+    Book or the Sunna, or consensus, or analogy"; this is the meaning of analogy); §§247-264 (pp. 77-80: the "wisdom"
+    paired with the Book is the Sunna, which explains God's meaning; nothing is called obligatory except by the Book and
+    then the Sunna; Q 4:59's "those in authority" read as the Prophet's appointed commanders, owed conditional
+    obedience); §§1309-1330 (pp. 471-478: consensus is followed because the Sunna cannot escape the whole community and
+    "their generality does not agree on what contradicts the Sunna, nor on error"; analogy only where Book, Sunna and
+    consensus are silent; analogy and ijtihād "two names for one meaning"; certain knowledge only from a Qur'anic text or
+    a Sunna transmitted by the many); §§1331-1348 (pp. 479-481: knowledge by analogy is right 'in the outward' for the one reasoning, only God knows the hidden; analogists mostly agree but sometimes differ; facing the Kaʿba when seen versus seeking its direction from afar). Khadduri's English translation was not consulted.
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: saduq-shiite-creed-fyzee
+  type: primary
+  title: "A Shiʿite Creed: A Translation of Risālatu'l-Iʿtiqādāt al-Imāmiyya"
+  shortCitation: al-Ṣadūq, Shiʿite Creed
+  author: Ibn Bābawayh al-Qummī (al-Shaykh al-Ṣadūq)
+  translator: Asaf A. A. Fyzee
+  traditionTags:
+  - islam
+  containerTitle: Islamic Research Association Series 9
+  place: London
+  publisher: Oxford University Press (Humphrey Milford) for the Islamic Research Association
+  year: 1942
+  url: https://archive.org/details/in.ernet.dli.2015.57172
+  notes: >-
+    Digital Library of India scan (its record marks the book "Out_of_copyright"), read 2026-10-08 in archive.org's OCR
+    text with the printed page numbers; title page and preface checked. Cite by Fyzee's page; quote only short phrases
+    and keep the creed's text distinct from Fyzee's notes, which are secondary. Passages read: preface and introduction
+    (al-Ṣadūq, d. 381/991 at Rayy, author of one of the "four books"; one of the earliest Twelver creeds); ch. 33,
+    pp. 85-86 (the Qur'an revealed to Muhammad is what lies "between the two boards", no more; whoever says the Imamis hold
+    otherwise lies; much other revelation, not part of the Qur'an, also came down; Fyzee's note p. 85 n. 2 records that some
+    Shi'a have held that part of the Qur'an is missing from the received text and is with the hidden Imam, a view he rejects); ch. 35, pp. 92-99 (124,000 prophets and as many awṣiyāʾ, each prophet with his waṣī; Muhammad the
+    most excellent of the prophets; after the Prophet the "proofs" (ḥujaj) of God are the Twelve Imams, from ʿAlī to
+    Muhammad b. al-Ḥasan, present on earth but hidden; they are "in authority" (ulu'l-amr), "the interpreters of His
+    revelations", immune from sins and errors, and their command is God's command; the earth is never without a proof,
+    manifest or hidden; the twelfth Imam is al-Qāʾim, the Expected One, the Mahdi, who will fill the earth with justice as
+    it is filled with oppression, Jesus descending to pray behind him; there is no Qāʾim but he, however long the
+    occultation); ch. 36, pp. 99-100 (prophets, apostles, Imams and angels are infallible). Fyzee's note p. 99 n. 1
+    compares the twelfth Imam with the Sunni mahdi.
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: ibn-khaldun-prolegomenes-slane-2
+  type: primary
+  title: Les prolégomènes d'Ibn Khaldoun, vol. 2
+  shortCitation: Ibn Khaldun, Prolégomènes, vol. 2
+  author: Ibn Khaldun
+  translator: William MacGuckin de Slane
+  traditionTags:
+  - islam
+  place: Paris
+  publisher: Imprimerie impériale
+  year: 1863
+  url: https://archive.org/details/lesprolgomne02abdauoft
+  notes: >-
+    French translation, vol. 2 (University of Toronto copy, marked not in copyright), read 2026-10-08 in archive.org's OCR
+    text by the printed page numbers. Cite by de Slane page; our translation or paraphrase. Passages read: pp. 158-159
+    (Muslims have long held that before the end a man of the Prophet's family, the Mahdi, will appear and make justice
+    triumph, Jesus descending in his time; the traditions, reported by al-Tirmidhi, Abu Dawud and others, have had their
+    authenticity contested); p. 188 (of all the traditions on the Mahdi "only a very small number" escape criticism;
+    those who deny any Mahdi rely on a report "No Mahdi but Jesus son of Mary").
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: codex-sinaiticus-project
+  type: web
+  title: About Codex Sinaiticus
+  shortCitation: Codex Sinaiticus Project, "About Codex Sinaiticus"
+  traditionTags:
+  - christianity
+  publisher: The Codex Sinaiticus Project
+  url: https://codexsinaiticus.org/en/codex/
+  notes: >-
+    Project pages read 2026-10-08: "About" (a manuscript of the Christian Bible written in the middle of the fourth
+    century, containing the earliest complete copy of the New Testament), "Date" (generally dated to the fourth century,
+    sometimes more precisely to its middle, by palaeography; only Codex Vaticanus is of similarly early date; earlier
+    manuscripts contain small portions only), "Content" (the whole New Testament survives) and "Significance" (no other
+    early manuscript of the Christian Bible has been so extensively corrected; corrections range from the fourth to the
+    twelfth century). Cite by page name.
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
+- id: baqillani-ijaz-saqr
+  type: primary
+  title: Iʿjāz al-Qurʾān, Arabic text
+  shortCitation: al-Bāqillānī, Iʿjāz al-Qurʾān
+  author: Abū Bakr al-Bāqillānī
+  editor: al-Sayyid Aḥmad Ṣaqr
+  traditionTags:
+  - islam
+  edition: 5th ed.
+  place: Cairo
+  publisher: Dār al-Maʿārif
+  year: 1997
+  url: https://shamela.ws/book/953
+  notes: >-
+    Ṣaqr's edition (Dhakhāʾir al-ʿArab), read 2026-10-08 in the al-Maktaba al-Shāmila transcription of the 5th printing
+    (314 pp.), whose card states that its numbering follows the print; the editor's introduction is paginated
+    separately. Cite the text by page; paraphrase only. Passages read: pp. 33-36 ("chapter on the aspects of the
+    Qur'an's inimitability": the Ash'aris and others name three: (1) reports of hidden things that came true, e.g. Q 9:33,
+    3:12, 8:7; (2) the unlettered Prophet's account of earlier prophets and kings from Adam on, which could come only by
+    revelation, Q 29:48; (3) its composition (naẓm), outside every known form of Arabic speech, poetry and rhymed prose
+    alike, equally eloquent through its length (Q 4:82, 39:23) and across narrative, law, exhortation and warning,
+    where poets excel in one genre and fall short in another).
+  verificationStatus: checked
+  verifiedOn: '2026-10-08'
