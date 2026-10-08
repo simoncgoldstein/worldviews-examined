@@ -141,7 +141,7 @@ Totals: **872 quoted words**, **4410 quoted bytes**, **177 conservative verse in
 
 ## Proportions and publication checks
 
-For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed. The 24 Knowledge & Truth rows and the corpus denominator were computed by script on 2026-10-07 with the same definition; the 18 Revelation & History rows and the updated corpus denominator were computed the same way on 2026-10-07; the 16 rows for answers edited in remediation batch R1 and the corpus denominator were recomputed the same way on 2026-10-07 (the four non-Christian `great-and-terrible` rows had used an older count, so their change exceeds the R1 additions); the 6 rows for answers edited in remediation batch R2 and the corpus denominator were recomputed the same way on 2026-10-08; other rows were not recomputed.
+For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed. The 24 Knowledge & Truth rows and the corpus denominator were computed by script on 2026-10-07 with the same definition; the 18 Revelation & History rows and the updated corpus denominator were computed the same way on 2026-10-07; the 16 rows for answers edited in remediation batch R1 and the corpus denominator were recomputed the same way on 2026-10-07 (the four non-Christian `great-and-terrible` rows had used an older count, so their change exceeds the R1 additions); the 6 rows for answers edited in remediation batch R2 and the corpus denominator were recomputed the same way on 2026-10-08, and again after the R2 review; other rows were not recomputed.
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
@@ -178,27 +178,27 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / evil | 1213 | 26 | 2.14% |
 | christianity / fail-the-good | 381 | 0 | 0.00% |
 | christianity / final-end | 614 | 0 | 0.00% |
-| christianity / great-and-terrible | 1708 | 49 | 2.87% |
+| christianity / great-and-terrible | 1696 | 49 | 2.89% |
 | christianity / guilt | 1781 | 116 | 6.51% |
 | christianity / history | 731 | 57 | 7.80% |
 | christianity / induction | 767 | 50 | 6.52% |
 | christianity / jesus | 1452 | 64 | 4.41% |
-| christianity / know-the-good | 1278 | 14 | 1.10% |
+| christianity / know-the-good | 1333 | 14 | 1.05% |
 | christianity / knowledge-possible | 927 | 28 | 3.02% |
-| christianity / logic-binding | 966 | 12 | 1.24% |
+| christianity / logic-binding | 980 | 12 | 1.22% |
 | christianity / love-beauty-creativity | 467 | 15 | 3.21% |
 | christianity / offspring-family | 467 | 0 | 0.00% |
-| christianity / one-and-many | 790 | 37 | 4.68% |
+| christianity / one-and-many | 870 | 37 | 4.25% |
 | christianity / order | 719 | 28 | 3.89% |
 | christianity / revelation | 1028 | 68 | 6.61% |
 | christianity / self-deception | 366 | 0 | 0.00% |
 | christianity / self-salvation | 1118 | 8 | 0.72% |
 | christianity / something-rather-than-nothing | 735 | 27 | 3.67% |
 | christianity / suffering | 874 | 37 | 4.23% |
-| christianity / ultimate-authority | 1271 | 45 | 3.54% |
+| christianity / ultimate-authority | 1283 | 45 | 3.51% |
 | christianity / ultimate-personal | 775 | 26 | 3.35% |
 | christianity / ultimate-reality | 930 | 11 | 1.18% |
-| christianity / what-is-man | 1321 | 0 | 0.00% |
+| christianity / what-is-man | 1339 | 0 | 0.00% |
 | christianity / why-alive | 682 | 0 | 0.00% |
 | christianity / worship | 716 | 0 | 0.00% |
 | hinduism / after-death | 592 | 0 | 0.00% |
@@ -314,7 +314,7 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / why-alive | 672 | 0 | 0.00% |
 | naturalism / worship | 718 | 0 | 0.00% |
 
-Corpus measure: 872 ESV words / approximately 125,580 answer-body words = **0.69%** (recomputed by script on 2026-10-08 for all 168 answers with the same definition, after remediation batch R2). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 872 ESV words / approximately 125,748 answer-body words = **0.69%** (recomputed by script on 2026-10-08 for all 168 answers with the same definition, after remediation batch R2 and its review). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
