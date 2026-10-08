@@ -989,7 +989,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 196
+  "citeCount": 197
  },
  {
   "id": "ashari-ibana-klein",
@@ -1063,11 +1063,11 @@
    "islam"
   ],
   "status": "checked",
-  "answers": 8,
+  "answers": 9,
   "lanes": [
    "islam"
   ],
-  "citeCount": 11
+  "citeCount": 12
  },
  {
   "id": "hoover-theodicy",
@@ -1233,7 +1233,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 6
+  "citeCount": 7
  },
  {
   "id": "subbarau-madhva-brahmasutra",
@@ -1272,7 +1272,20 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 52
+  "citeCount": 54
+ },
+ {
+  "id": "thibaut-shankara-brahmasutra-2",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 2
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
