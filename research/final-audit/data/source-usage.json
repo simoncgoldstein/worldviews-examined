@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 339
+  "citeCount": 341
  },
  {
   "id": "wcf",
@@ -24,7 +24,7 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 47,
+  "answers": 48,
   "lanes": [
    "christianity",
    "judaism",
@@ -32,7 +32,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 113
+  "citeCount": 117
  },
  {
   "id": "calvin-institutes",
@@ -550,7 +550,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 23
+  "citeCount": 25
  },
  {
   "id": "russell-what-i-believe",
@@ -564,7 +564,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 31
+  "citeCount": 32
  },
  {
   "id": "sep-altruism-biological",
@@ -1219,7 +1219,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 78
+  "citeCount": 79
  },
  {
   "id": "sep-shankara",
@@ -1271,7 +1271,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 48
+  "citeCount": 49
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -1346,7 +1346,7 @@
   "lanes": [
    "buddhism"
   ],
-  "citeCount": 34
+  "citeCount": 35
  },
  {
   "id": "nagarjuna-mmk",
@@ -1596,13 +1596,13 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 18,
+  "answers": 19,
   "lanes": [
    "christianity",
    "judaism",
    "islam"
   ],
-  "citeCount": 42
+  "citeCount": 43
  },
  {
   "id": "hume-natural-history-religion",
