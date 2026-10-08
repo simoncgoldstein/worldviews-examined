@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 348
+  "citeCount": 351
  },
  {
   "id": "wcf",
@@ -295,11 +295,12 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 5,
+  "answers": 6,
   "lanes": [
-   "christianity"
+   "christianity",
+   "naturalism"
   ],
-  "citeCount": 5
+  "citeCount": 6
  },
  {
   "id": "heidelberg-catechism",
@@ -846,7 +847,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 44
+  "citeCount": 45
  },
  {
   "id": "ramban-torah-chavel",
@@ -912,7 +913,7 @@
    "judaism",
    "islam"
   ],
-  "citeCount": 52
+  "citeCount": 53
  },
  {
   "id": "tanakh-jps-gender-sensitive",
@@ -925,7 +926,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 58
+  "citeCount": 60
  },
  {
   "id": "tanya-kehot",
@@ -1258,7 +1259,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 44
+  "citeCount": 47
  },
  {
   "id": "thibaut-shankara-brahmasutra",
@@ -1271,7 +1272,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 50
+  "citeCount": 52
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -1346,7 +1347,7 @@
   "lanes": [
    "buddhism"
   ],
-  "citeCount": 35
+  "citeCount": 36
  },
  {
   "id": "nagarjuna-mmk",
@@ -1596,13 +1597,14 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 19,
+  "answers": 20,
   "lanes": [
    "christianity",
    "judaism",
-   "islam"
+   "islam",
+   "hinduism"
   ],
-  "citeCount": 43
+  "citeCount": 44
  },
  {
   "id": "hume-natural-history-religion",
