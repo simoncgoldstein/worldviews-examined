@@ -954,9 +954,11 @@
     Al-Razi matters to Worldviews Examined because his commentary on Qur'an 4:157 states, from within the tradition,
     the strongest objection to the substitution reading of Jesus' death: that God's casting one man's likeness on
     another would undermine sense knowledge and mass-transmitted testimony. He also records that the substitution
-    stories conflict with one another.
+    stories conflict with one another. His commentary on Qur'an 4:78-79 is also a clear statement of the Ash'ari reading
+    of divine decree, in which God creates acts of obedience and disobedience alike.
   keyIdeas:
     - Kalam engaged with Avicennan philosophy
+    - All things other than God, human acts included, depend on him as merely possible in themselves
     - Mass-transmitted report (tawatur) as a source of certain knowledge
     - The objection that substitution "opens the door of sophistry"
     - Commentary as systematic disputation of objections and replies
@@ -986,7 +988,9 @@
   significance: >-
     Ibn Taymiyya offers the strongest account of the fitra, an innate disposition to know and worship God that
     includes moral intuitions, and of humans as beings who necessarily love and worship something. He is the main
-    Athari alternative to Ash'ari and Maturidi kalam on human nature and agency.
+    Athari alternative to Ash'ari and Maturidi kalam on human nature and agency. His Correct Answer gives the classic
+    Muslim account of how the Qur'an can confirm the Torah and the Gospel while correcting the Jewish and Christian
+    readings of them.
   keyIdeas:
     - The fitra as innate disposition, perfected by prophecy
     - Humans necessarily love and worship something
@@ -994,11 +998,15 @@
     - Divine acts have wise purposes
     - Revealed law as coextensive with justice and benefit
     - Revelation and sound reason do not truly conflict
+    - Every proof rests on entailment; the logicians' syllogism is valid but not required for certainty
+    - Earlier scriptures distorted chiefly in meaning and interpretation, only a little in wording
   representativeWorks:
     - { title: al-'Aqida al-Wasitiyya }
-    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql (Averting the Conflict between Reason and Revealed Tradition)" }
+    - { title: "Dar' Ta'arud al-'Aql wa-l-Naql (Averting the Conflict between Reason and Revealed Tradition)", sourceId: ibn-taymiyya-dar-taarud }
+    - { title: "al-Radd 'ala al-Mantiqiyyin (Refutation of the Logicians)", sourceId: ibn-taymiyya-radd-mantiqiyyin }
+    - { title: "al-Jawab al-Sahih li-man Baddala Din al-Masih (The Correct Answer to Those Who Changed the Religion of the Messiah)", sourceId: ibn-taymiyya-jawab-sahih }
     - { title: "al-Siyasa al-Shar'iyya (Law-Guided Public Policy)" }
-  notes: Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP). Wasitiyya date not verified.
+  notes: Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP). Wasitiyya date not verified. R4 (2026-10-08) read passages of the Dar' (vol. 1), the Radd and the Jawab in Arabic; see their source records.
 
 - id: ibn-sina
   slug: avicenna-ibn-sina
@@ -1103,6 +1111,66 @@
   representativeWorks:
     - { title: "Muqaddimah (Les prolégomènes, vol. 1, trans. de Slane)", year: 1863, sourceId: ibn-khaldun-prolegomenes-slane }
   notes: Biography from de Slane's introduction to the Prolégomènes (vol. 1, pp. iii-v, read 2026-10-07). Profiled at first public use (Islam `history`).
+
+- id: shafii
+  slug: al-shafii
+  name: al-Shafi'i
+  worldview: islam
+  role: specialist
+  displayOrder: 3
+  usedFor: [jurisprudence, sources of law]
+  schools: [Shafi'i jurisprudence]
+  birthYear: 767
+  deathYear: 820
+  description: Jurist whose Risala set out how the Qur'an, Sunna, consensus and analogy yield Islamic law.
+  bio: >-
+    Muhammad ibn Idris al-Shafi'i (150-204 AH, 767-820) lived in the generation when Muslim jurists were divided
+    between traditionists, who wished to build law on the Qur'an and prophetic reports alone, and speculative
+    lawyers, who leaned on reasoned opinion. Duncan Black Macdonald's history presents him as the mediator between
+    them: deeply reverent toward prophetic tradition, yet willing to extend the law by disciplined analogy. His
+    Risala, preserved in the copy of his pupil al-Rabi' ibn Sulayman, sets out how the Qur'an, the Sunna, consensus
+    and analogy yield knowledge of God's law, and the school of law that bears his name grew from his teaching.
+  significance: >-
+    Al-Shafi'i matters to Worldviews Examined because his Risala shows from the inside how Sunni Islam binds
+    authority to revelation: the Sunna is authoritative because the Qur'an commands obedience to the Prophet,
+    consensus binds because it cannot contradict the Sunna, and analogy works only where those are silent.
+  keyIdeas:
+    - The Sunna as the "wisdom" taught with the Book and its authoritative explanation
+    - Consensus binding because the whole community cannot agree against the Sunna
+    - Analogy and ijtihad as "two names for one meaning", certain only in the outward
+  representativeWorks:
+    - { title: "al-Risala", sourceId: shafii-risala-shakir }
+  notes: Dates from the catalog card of Shakir's edition (150-204 AH); characterization from Macdonald pp. 103-108 and the Risala as read 2026-10-08. Profiled at first public use from the primary text (Islam `ultimate-authority`).
+
+- id: saduq
+  slug: al-shaykh-al-saduq
+  name: al-Shaykh al-Saduq
+  worldview: islam
+  role: specialist
+  displayOrder: 4
+  usedFor: [Twelver Shi'a doctrine, the Imamate]
+  schools: [Twelver (Imami) Shi'ism]
+  deathYear: 991
+  description: Twelver Shi'a scholar whose short creed is one of the earliest statements of Imami belief.
+  bio: >-
+    Abu Ja'far Muhammad ibn 'Ali Ibn Babawayh al-Qummi, known as al-Shaykh al-Saduq, died at Rayy in 381 AH (991).
+    He compiled one of the "four books" of Twelver hadith and is regarded among the Twelver Shi'a as a great
+    authority. His Risalat al-I'tiqadat, translated by Asaf A. A. Fyzee as A Shi'ite Creed (1942), is one of the
+    earliest surviving Twelver creeds, setting out belief in God, the prophets, the twelve Imams, infallibility and
+    the last things.
+  significance: >-
+    Al-Saduq matters to Worldviews Examined because his creed states the Twelver doctrine of authority after the
+    Prophet: twelve infallible Imams as God's proofs and the interpreters of revelation, the last of them hidden
+    and awaited as the Mahdi. It lets the site mark where Shi'a belief differs from the Sunni baseline without
+    relying on a hostile summary.
+  keyIdeas:
+    - The twelve Imams as God's proofs and interpreters of revelation after the Prophet
+    - Infallibility of prophets and Imams
+    - The hidden twelfth Imam as the awaited Mahdi
+    - The received Qur'an as the complete Qur'an
+  representativeWorks:
+    - { title: "Risalat al-I'tiqadat al-Imamiyya (A Shi'ite Creed, trans. Fyzee)", year: 1942, sourceId: saduq-shiite-creed-fyzee }
+  notes: Biography from Fyzee's preface and introduction (death at Rayy 381/991; author of one of the four books); birthplace and birth year not given there and not published. Profiled at first public use (Islam `ultimate-authority`, `history`).
 
 - id: shankara
   slug: shankara
