@@ -989,7 +989,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 187
+  "citeCount": 196
  },
  {
   "id": "ashari-ibana-klein",
@@ -1011,11 +1011,11 @@
    "islam"
   ],
   "status": "checked",
-  "answers": 16,
+  "answers": 17,
   "lanes": [
    "islam"
   ],
-  "citeCount": 33
+  "citeCount": 36
  },
  {
   "id": "ghazali-disciplining-soul",
@@ -1845,7 +1845,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 20
+  "citeCount": 18
  },
  {
   "id": "griffith-rigveda-4",
@@ -2213,12 +2213,13 @@
    "naturalism"
   ],
   "status": "checked",
-  "answers": 2,
+  "answers": 3,
   "lanes": [
    "christianity",
-   "naturalism"
+   "naturalism",
+   "islam"
   ],
-  "citeCount": 7
+  "citeCount": 8
  },
  {
   "id": "craig-empty-tomb-nts",
@@ -2431,7 +2432,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 2
+  "citeCount": 3
  },
  {
   "id": "razi-mafatih-al-ghayb",
@@ -2440,11 +2441,11 @@
    "islam"
   ],
   "status": "checked",
-  "answers": 1,
+  "answers": 2,
   "lanes": [
    "islam"
   ],
-  "citeCount": 4
+  "citeCount": 5
  },
  {
   "id": "ibn-kathir-tafsir",
@@ -2457,7 +2458,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 3
+  "citeCount": 5
  },
  {
   "id": "fatoohi-end-of-jesus-life",
@@ -2644,6 +2645,110 @@
  {
   "id": "sep-arabic-islamic-language",
   "type": "academic",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "ibn-taymiyya-jawab-sahih",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 7
+ },
+ {
+  "id": "ibn-taymiyya-dar-taarud",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "ibn-taymiyya-radd-mantiqiyyin",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "shafii-risala-shakir",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "saduq-shiite-creed-fyzee",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "ibn-khaldun-prolegomenes-slane-2",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "codex-sinaiticus-project",
+  "type": "web",
+  "tags": [
+   "christianity"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "baqillani-ijaz-saqr",
+  "type": "primary",
   "tags": [
    "islam"
   ],

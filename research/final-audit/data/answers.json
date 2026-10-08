@@ -4524,15 +4524,15 @@
   "order": 6,
   "tier": "anchor",
   "status": "reviewed",
-  "words": 870,
-  "mainWords": 545,
+  "words": 906,
+  "mainWords": 581,
   "deepWords": 313,
   "thesisWords": 32,
   "lede": "People can know because God gave them senses, reason and an inborn disposition toward truth, and filled the world with signs. Knowledge comes through perception, reliable report and reasoning; revelation completes it.",
-  "scope": "The Qur'an on human faculties and signs; the Sunni creed of al-Nasafi (Maturidi); al-Ghazali's crisis of certainty; Ibn Taymiyya on the natural disposition (fitra), as presented in SEP",
-  "citations": 19,
-  "distinctWorks": 7,
-  "foundationalWorks": 3,
+  "scope": "The Qur'an on human faculties and signs; the Sunni creed of al-Nasafi (Maturidi); al-Ghazali's crisis of certainty; Ibn Taymiyya on the natural disposition (fitra), from SEP and his al-Radd ʿalā al-manṭiqiyyīn",
+  "citations": 21,
+  "distinctWorks": 8,
+  "foundationalWorks": 4,
   "secondaryWorks": 4,
   "thinkers": [
    "maturidi",
@@ -4550,7 +4550,7 @@
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 0,
+   "provenanceNotes": 1,
    "universal": 0
   },
   "universal": [],
@@ -4558,6 +4558,7 @@
    "quran-haleem",
    "macdonald-muslim-theology",
    "sep-ibn-taymiyya",
+   "ibn-taymiyya-radd-mantiqiyyin",
    "ghazali-confessions-field",
    "bible-esv",
    "harvey-transcendent-god",
@@ -4565,7 +4566,9 @@
   ],
   "unknownSources": [],
   "uncheckedSources": [],
-  "provenanceNotes": []
+  "provenanceNotes": [
+   "ibn-taymiyya-radd-mantiqiyyin pp. 252–253: Arabic; paraphrased"
+  ]
  },
  {
   "worldview": "islam",
@@ -4574,15 +4577,15 @@
   "order": 7,
   "tier": "medium",
   "status": "reviewed",
-  "words": 667,
-  "mainWords": 419,
-  "deepWords": 236,
+  "words": 715,
+  "mainWords": 464,
+  "deepWords": 239,
   "thesisWords": 33,
   "lede": "Islamic thought treats the basic laws of reasoning as immediate knowledge that God built into every sound mind. Its scholars all accepted valid inference but disagreed over whether Aristotelian logic deserves special authority.",
-  "scope": "Sunni accounts of necessary rational knowledge (al-Nasafi's creed; al-Juwayni and Ibn Taymiyya via SEP), and the contrast between al-Ghazali's acceptance of Aristotelian logic and Ibn Taymiyya's critique",
-  "citations": 10,
-  "distinctWorks": 5,
-  "foundationalWorks": 2,
+  "scope": "Sunni accounts of necessary rational knowledge (al-Nasafi's creed; al-Juwayni via SEP; Ibn Taymiyya via SEP and his al-Radd ʿalā al-manṭiqiyyīn), and the contrast between al-Ghazali's acceptance of Aristotelian logic and Ibn Taymiyya's critique",
+  "citations": 11,
+  "distinctWorks": 6,
+  "foundationalWorks": 3,
   "secondaryWorks": 3,
   "thinkers": [
    "ghazali",
@@ -4591,7 +4594,7 @@
   "scriptureCites": 0,
   "esvQuoteRuns": 0,
   "crossLinks": 2,
-  "mainSentences": 19,
+  "mainSentences": 21,
   "thinkerLed": 1,
   "confessionLed": 0,
   "flags": {
@@ -4599,7 +4602,7 @@
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 3,
+   "provenanceNotes": 2,
    "universal": 0
   },
   "universal": [],
@@ -4608,15 +4611,16 @@
    "sep-al-ghazali",
    "sep-ibn-taymiyya",
    "ghazali-confessions-field",
+   "ibn-taymiyya-radd-mantiqiyyin",
    "turretin-institutio-1847"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
   "provenanceNotes": [
    "sep-al-ghazali §7.3: al-Juwayni, as quoted by SEP",
-   "sep-ibn-taymiyya §3.2: quoting al-Radd ʿalā al-manṭiqiyyīn via SEP",
+   "ibn-taymiyya-radd-mantiqiyyin pp. 250–253, 293–294: Arabic; paraphrased",
    "turretin-institutio-1847 I.10.1–3: Latin; paraphrased",
-   "sep-ibn-taymiyya §3.2: quoting al-Radd ʿalā al-manṭiqiyyīn via SEP"
+   "ibn-taymiyya-radd-mantiqiyyin pp. 250–251, 293, 296–297: Arabic checked; quotations in SEP's translation"
   ]
  },
  {
@@ -4626,15 +4630,15 @@
   "order": 8,
   "tier": "medium",
   "status": "reviewed",
-  "words": 736,
+  "words": 766,
   "mainWords": 440,
-  "deepWords": 284,
+  "deepWords": 314,
   "thesisWords": 33,
   "lede": "Muslim theologians expect nature's patterns to continue because God keeps a constant custom in creating. They disagreed over whether created causes have real powers of their own or merely accompany what God creates.",
-  "scope": "Al-Ghazali on causation and God's unchanging custom (Tahafut 17 and Ihya' 31, via SEP and the Bouyges Arabic); created causal powers in Ibn Taymiyya and the Maturidis; Ibn Taymiyya's empiricism; Ibn Rushd's necessitarian reply",
-  "citations": 14,
-  "distinctWorks": 5,
-  "foundationalWorks": 3,
+  "scope": "Al-Ghazali on causation and God's unchanging custom (Tahafut 17 and Ihya' 31, via SEP and the Bouyges Arabic); created causal powers in Ibn Taymiyya and the Maturidis; Ibn Taymiyya's empiricism (al-Radd ʿalā al-manṭiqiyyīn and SEP); Ibn Rushd's necessitarian reply",
+  "citations": 15,
+  "distinctWorks": 6,
+  "foundationalWorks": 4,
   "secondaryWorks": 2,
   "thinkers": [
    "ghazali",
@@ -4652,7 +4656,7 @@
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 1,
-   "provenanceNotes": 2,
+   "provenanceNotes": 3,
    "universal": 0
   },
   "universal": [],
@@ -4661,7 +4665,8 @@
    "averroes-tahafut-bouyges",
    "quran-haleem",
    "sep-ibn-taymiyya",
-   "wcf"
+   "wcf",
+   "ibn-taymiyya-radd-mantiqiyyin"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
@@ -4669,7 +4674,8 @@
    "sep-al-ghazali §7.2: quoting the Tahāfut, Discussion 17",
    "averroes-tahafut-bouyges Phys. Disc. I, pp. 517–518: Arabic; paraphrased",
    "sep-al-ghazali §7.4: on Iḥyāʾ, book 31",
-   "averroes-tahafut-bouyges Phys. Disc. I, p. 519: Arabic; paraphrased"
+   "averroes-tahafut-bouyges Phys. Disc. I, p. 519: Arabic; paraphrased",
+   "ibn-taymiyya-radd-mantiqiyyin p. 300: Arabic; paraphrased, with the quoted sentence in our translation"
   ]
  },
  {
@@ -4679,48 +4685,62 @@
   "order": 9,
   "tier": "anchor",
   "status": "reviewed",
-  "words": 873,
-  "mainWords": 559,
-  "deepWords": 302,
+  "words": 1458,
+  "mainWords": 972,
+  "deepWords": 474,
   "thesisWords": 34,
   "lede": "The Qur'an and the authentic Sunna of the Prophet are the final authorities. Reason recognizes that revelation is genuine and helps interpret it, and the scholars' consensus and methods extend it to new cases.",
-  "scope": "Sunni authority: the Qur'an and Sunna; al-Shafi'i's four sources of law as summarized by Macdonald (1903); al-Nasafi's creed on prophetic report; al-Ghazali's rule of interpretation and Ibn Taymiyya's no-conflict thesis (via SEP)",
-  "citations": 13,
-  "distinctWorks": 6,
-  "foundationalWorks": 3,
+  "scope": "Sunni authority: the Qur'an and Sunna; al-Shafi'i's Risāla on the Sunna, consensus and analogy, with Macdonald's (1903) account of the later four-source scheme; al-Nasafi's creed on prophetic report; al-Ghazali's rule of interpretation and Ibn Taymiyya's no-conflict thesis (Darʾ taʿāruḍ); the Twelver Shi'a Imamate in al-Saduq's creed",
+  "citations": 25,
+  "distinctWorks": 9,
+  "foundationalWorks": 6,
   "secondaryWorks": 3,
   "thinkers": [
+   "shafii",
    "ghazali",
    "ibn-taymiyya",
-   "maturidi"
+   "maturidi",
+   "saduq"
   ],
   "scriptureCites": 0,
   "esvQuoteRuns": 0,
-  "crossLinks": 1,
-  "mainSentences": 20,
+  "crossLinks": 2,
+  "mainSentences": 41,
   "thinkerLed": 1,
   "confessionLed": 0,
   "flags": {
-   "contradiction": 1,
+   "contradiction": 3,
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 0,
+   "provenanceNotes": 5,
    "universal": 0
   },
   "universal": [],
   "sources": [
    "quran-haleem",
    "macdonald-muslim-theology",
+   "shafii-risala-shakir",
    "sep-al-ghazali",
-   "sep-ibn-taymiyya",
+   "ibn-taymiyya-dar-taarud",
+   "saduq-shiite-creed-fyzee",
    "wcf",
-   "belgic-confession"
+   "belgic-confession",
+   "sep-ibn-taymiyya"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
   "provenanceNotes": [
-   "macdonald-muslim-theology pp. 106–108: a 1903 summary, not a reading of al-Shafi'i's Risala"
+   "shafii-risala-shakir §48, p. 20: Arabic; paraphrased",
+   "shafii-risala-shakir §§53–59, pp. 21–22: Arabic; paraphrased",
+   "shafii-risala-shakir §120, p. 39: Arabic; our translation",
+   "shafii-risala-shakir §§1309–1312, 1321–1332, pp. 471–479: Arabic; paraphrased",
+   "ibn-taymiyya-dar-taarud 1:4–6, 147: Arabic; paraphrased",
+   "shafii-risala-shakir §§259–264, pp. 79–80: Arabic; paraphrased",
+   "shafii-risala-shakir §§252–257, pp. 78–79: Arabic; paraphrased",
+   "shafii-risala-shakir §§1309–1312, pp. 471–472: Arabic; paraphrased",
+   "shafii-risala-shakir §§1321–1334, pp. 476–479: Arabic; paraphrased, with the quoted phrase in our translation",
+   "ibn-taymiyya-dar-taarud 1:146–147: Arabic; paraphrased"
   ]
  },
  {
@@ -5121,20 +5141,21 @@
   "order": 18,
   "tier": "anchor",
   "status": "reviewed",
-  "words": 953,
+  "words": 1141,
   "mainWords": 508,
-  "deepWords": 433,
+  "deepWords": 621,
   "thesisWords": 25,
   "lede": "Evil occurs within God’s decree while human wrongdoing remains blameworthy; Sunni schools differ over moral knowledge, divine wisdom and the relation between creation and guilt.",
-  "scope": "Qur’anic good and ill, with differentiated Sunni theological accounts",
-  "citations": 20,
-  "distinctWorks": 8,
-  "foundationalWorks": 5,
+  "scope": "Qur’anic good and ill (4:78–79), with differentiated Sunni theological accounts: al-Ash’ari, al-Maturidi, al-Razi’s commentary and Ibn Taymiyya",
+  "citations": 22,
+  "distinctWorks": 9,
+  "foundationalWorks": 6,
   "secondaryWorks": 3,
   "thinkers": [
    "ash-ari",
    "maturidi",
    "ghazali",
+   "razi",
    "ibn-taymiyya"
   ],
   "scriptureCites": 0,
@@ -5148,7 +5169,7 @@
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 0,
+   "provenanceNotes": 1,
    "universal": 1
   },
   "universal": [
@@ -5162,11 +5183,14 @@
    "harvey-transcendent-god",
    "hoover-theodicy",
    "wcf",
-   "westminster-larger-catechism"
+   "westminster-larger-catechism",
+   "razi-mafatih-al-ghayb"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
-  "provenanceNotes": []
+  "provenanceNotes": [
+   "razi-mafatih-al-ghayb on 4:78, pp. 2–3; on 4:79, pp. 1–2: Arabic; paraphrased"
+  ]
  },
  {
   "worldview": "islam",
@@ -5409,13 +5433,13 @@
   "order": 24,
   "tier": "medium",
   "status": "reviewed",
-  "words": 683,
+  "words": 797,
   "mainWords": 353,
-  "deepWords": 318,
+  "deepWords": 432,
   "thesisWords": 22,
   "lede": "Death is followed by a barrier until bodily resurrection and judgment; divine mercy and permitted intercession remain central to the final outcome.",
-  "scope": "Qur’anic resurrection and judgment with Sunni intercession reports",
-  "citations": 14,
+  "scope": "Qur’anic resurrection and judgment with Sunni reports on the grave and on intercession",
+  "citations": 17,
   "distinctWorks": 6,
   "foundationalWorks": 5,
   "secondaryWorks": 1,
@@ -5504,31 +5528,32 @@
   "order": 26,
   "tier": "anchor",
   "status": "reviewed",
-  "words": 955,
-  "mainWords": 585,
-  "deepWords": 358,
+  "words": 1233,
+  "mainWords": 780,
+  "deepWords": 441,
   "thesisWords": 30,
   "lede": "Yes. The Qur'an is God's final revelation, sent down to Muhammad. Its matchless character, consistency and message, together with the Prophet's life and signs, show that it comes from God.",
-  "scope": "Sunni account of revelation: the Qur'an as sent down to Muhammad, its challenge of inimitability (iʿjāz), consistency and confirmation of earlier scripture, and al-Ghazali's converging-evidence account of how a prophet is known; textual preservation treated separately from inspiration",
-  "citations": 21,
-  "distinctWorks": 6,
-  "foundationalWorks": 3,
+  "scope": "Sunni account of revelation: the Qur'an as sent down to Muhammad, its challenge of inimitability (iʿjāz, with al-Baqillani's three aspects), consistency and confirmation of earlier scripture (with the doctrine of taḥrīf), and al-Ghazali's converging-evidence account of how a prophet is known; the Twelver Shi'a view of the Imams and the received Qur'an noted; textual preservation treated separately from inspiration",
+  "citations": 25,
+  "distinctWorks": 9,
+  "foundationalWorks": 6,
   "secondaryWorks": 3,
   "thinkers": [
-   "ghazali"
+   "ghazali",
+   "ibn-taymiyya"
   ],
   "scriptureCites": 0,
   "esvQuoteRuns": 0,
-  "crossLinks": 2,
-  "mainSentences": 17,
+  "crossLinks": 4,
+  "mainSentences": 24,
   "thinkerLed": 0,
   "confessionLed": 0,
   "flags": {
-   "contradiction": 1,
+   "contradiction": 0,
    "cannotAccount": 0,
    "borrow": 0,
-   "provenance": 0,
-   "provenanceNotes": 0,
+   "provenance": 1,
+   "provenanceNotes": 1,
    "universal": 1
   },
   "universal": [
@@ -5536,15 +5561,21 @@
   ],
   "sources": [
    "quran-haleem",
+   "saduq-shiite-creed-fyzee",
+   "ibn-taymiyya-jawab-sahih",
    "ghazali-confessions-field",
    "halevi-kuzari-hirschfeld",
    "birmingham-quran-manuscript",
    "sep-arabic-islamic-language",
+   "baqillani-ijaz-saqr",
    "macdonald-muslim-theology"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
-  "provenanceNotes": []
+  "provenanceNotes": [
+   "ibn-taymiyya-jawab-sahih 2:418–420: Arabic; paraphrased",
+   "baqillani-ijaz-saqr pp. 33–36: Arabic; paraphrased"
+  ]
  },
  {
   "worldview": "islam",
@@ -5553,18 +5584,19 @@
   "order": 27,
   "tier": "medium",
   "status": "reviewed",
-  "words": 668,
+  "words": 852,
   "mainWords": 412,
-  "deepWords": 244,
+  "deepWords": 428,
   "thesisWords": 33,
   "lede": "History is a single line of sacred history, from creation through God's messengers to Muhammad, ending in the Hour of resurrection and judgement. Within it, peoples rise and fall under God's moral law.",
-  "scope": "Qur'anic sacred history from creation through the succession of messengers to Muhammad and the Hour of resurrection and judgement; the rise and fall of peoples as moral lessons; Ibn Khaldun's dynastic cycles read within that linear frame; hadith on Jesus' return",
-  "citations": 17,
-  "distinctWorks": 5,
-  "foundationalWorks": 4,
+  "scope": "Qur'anic sacred history from creation through the succession of messengers to Muhammad and the Hour of resurrection and judgement; the rise and fall of peoples as moral lessons; Ibn Khaldun's dynastic cycles read within that linear frame; hadith on Jesus' return; Sunni expectations of the Mahdi and the Twelver doctrine of the hidden twelfth Imam",
+  "citations": 19,
+  "distinctWorks": 7,
+  "foundationalWorks": 6,
   "secondaryWorks": 1,
   "thinkers": [
-   "ibn-khaldun"
+   "ibn-khaldun",
+   "saduq"
   ],
   "scriptureCites": 1,
   "esvQuoteRuns": 1,
@@ -5577,7 +5609,7 @@
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 1,
+   "provenanceNotes": 2,
    "universal": 0
   },
   "universal": [],
@@ -5586,13 +5618,16 @@
    "ibn-khaldun-prolegomenes-slane",
    "bible-esv",
    "bukhari-sahih-khan",
-   "fatoohi-end-of-jesus-life"
+   "fatoohi-end-of-jesus-life",
+   "ibn-khaldun-prolegomenes-slane-2",
+   "saduq-shiite-creed-fyzee"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
   "provenanceNotes": [
    "ibn-khaldun-prolegomenes-slane pp. 348–350: French; our translation",
-   "ibn-khaldun-prolegomenes-slane pp. 348–349: French; our translation"
+   "ibn-khaldun-prolegomenes-slane pp. 348–349: French; our translation",
+   "ibn-khaldun-prolegomenes-slane-2 pp. 158–159, 188: French; our paraphrase"
   ]
  },
  {
@@ -5602,31 +5637,32 @@
   "order": 28,
   "tier": "anchor",
   "status": "reviewed",
-  "words": 1141,
-  "mainWords": 643,
-  "deepWords": 486,
+  "words": 1766,
+  "mainWords": 1045,
+  "deepWords": 709,
   "thesisWords": 39,
   "lede": "Jesus is the Messiah and a uniquely honoured prophet born of Mary, but not God or God's Son. The standard Muslim reading holds that his enemies did not kill or crucify him, and that God raised him to himself.",
-  "scope": "The Qur'anic Jesus (3:45–59, 4:157–159, 4:171, 5:72–75, 19:30–34, 61:6) and the classical exegesis of 4:157 in al-Tabari, al-Razi and Ibn Kathir, with modern Muslim readings (Fatoohi) and a historical comparison with the first-century evidence for the crucifixion",
-  "citations": 23,
-  "distinctWorks": 8,
-  "foundationalWorks": 7,
-  "secondaryWorks": 1,
+  "scope": "The Qur'anic Jesus (3:45–59, 4:157–159, 4:171, 5:72–75, 19:30–34, 61:6) and the classical exegesis of 4:157 in al-Tabari, al-Razi and Ibn Kathir; the classical doctrine of taḥrīf (Qur'an 2:75–79, 3:78, 5:13–15, 5:43–48, 10:94; Ibn Taymiyya's al-Jawāb al-ṣaḥīḥ); modern Muslim readings (Fatoohi); and a historical comparison with the first-century evidence for the crucifixion",
+  "citations": 39,
+  "distinctWorks": 12,
+  "foundationalWorks": 9,
+  "secondaryWorks": 3,
   "thinkers": [
-   "razi"
+   "razi",
+   "ibn-taymiyya"
   ],
   "scriptureCites": 2,
   "esvQuoteRuns": 0,
   "crossLinks": 4,
-  "mainSentences": 28,
-  "thinkerLed": 1,
+  "mainSentences": 44,
+  "thinkerLed": 2,
   "confessionLed": 0,
   "flags": {
-   "contradiction": 0,
+   "contradiction": 2,
    "cannotAccount": 0,
    "borrow": 0,
    "provenance": 0,
-   "provenanceNotes": 5,
+   "provenanceNotes": 10,
    "universal": 0
   },
   "universal": [],
@@ -5636,9 +5672,13 @@
    "ibn-kathir-tafsir",
    "razi-mafatih-al-ghayb",
    "fatoohi-end-of-jesus-life",
-   "tacitus-annals-church-brodribb",
+   "ibn-taymiyya-jawab-sahih",
    "bible-esv",
-   "talmud-bavli-koren"
+   "tacitus-annals-church-brodribb",
+   "talmud-bavli-koren",
+   "martin-yale-new-testament",
+   "codex-sinaiticus-project",
+   "bukhari-sahih-khan"
   ],
   "unknownSources": [],
   "uncheckedSources": [],
@@ -5647,11 +5687,20 @@
    "ibn-kathir-tafsir on 4:157: Arabic; our paraphrase",
    "razi-mafatih-al-ghayb on 4:157, p. 2: Arabic; our translation",
    "ibn-kathir-tafsir on 4:157: Arabic; our paraphrase",
+   "ibn-taymiyya-jawab-sahih 2:418–421; 5:123: Arabic; paraphrased",
+   "ibn-taymiyya-jawab-sahih 2:302–304, 397: Arabic; paraphrased",
    "razi-mafatih-al-ghayb on 4:157, p. 1: Arabic; our paraphrase",
    "tabari-jami-al-bayan on 4:157, reports 10779–10792: Arabic; our paraphrase, with Mujahid's words in our translation",
    "ibn-kathir-tafsir on 4:157: Arabic; our paraphrase",
    "razi-mafatih-al-ghayb on 4:157, p. 1: Arabic; our paraphrase",
-   "razi-mafatih-al-ghayb on 4:157, p. 2: Arabic; our translation"
+   "razi-mafatih-al-ghayb on 4:157, p. 2: Arabic; our translation",
+   "ibn-kathir-tafsir on 3:78: Arabic; our paraphrase",
+   "tabari-jami-al-bayan on 3:78, reports 7290–7295: Arabic; our paraphrase",
+   "ibn-kathir-tafsir on 3:78: Arabic; our paraphrase",
+   "ibn-taymiyya-jawab-sahih 2:418–420: Arabic; paraphrased",
+   "ibn-taymiyya-jawab-sahih 2:356–359: Arabic; paraphrased",
+   "ibn-taymiyya-jawab-sahih 2:435–442: Arabic; paraphrased",
+   "ibn-taymiyya-jawab-sahih 5:123–125: Arabic; paraphrased"
   ]
  },
  {
