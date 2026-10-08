@@ -989,7 +989,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 197
+  "citeCount": 199
  },
  {
   "id": "ashari-ibana-klein",
@@ -1067,7 +1067,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 12
+  "citeCount": 14
  },
  {
   "id": "hoover-theodicy",
@@ -1259,7 +1259,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 47
+  "citeCount": 48
  },
  {
   "id": "thibaut-shankara-brahmasutra",
@@ -1281,11 +1281,11 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 2,
+  "answers": 3,
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 2
+  "citeCount": 3
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -1976,7 +1976,7 @@
   "lanes": [
    "naturalism"
   ],
-  "citeCount": 2
+  "citeCount": 3
  },
  {
   "id": "sep-epistemology-naturalized",
@@ -1990,7 +1990,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 11
+  "citeCount": 12
  },
  {
   "id": "sep-quine",
