@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 341
+  "citeCount": 348
  },
  {
   "id": "wcf",
@@ -32,7 +32,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 117
+  "citeCount": 120
  },
  {
   "id": "calvin-institutes",
@@ -204,11 +204,11 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 5,
+  "answers": 6,
   "lanes": [
    "christianity"
   ],
-  "citeCount": 11
+  "citeCount": 12
  },
  {
   "id": "kant-religion-greene-hudson",
@@ -820,7 +820,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 61
+  "citeCount": 62
  },
  {
   "id": "midrash-rabbah-sefaria",
@@ -846,7 +846,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 43
+  "citeCount": 44
  },
  {
   "id": "ramban-torah-chavel",
@@ -988,7 +988,7 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 184
+  "citeCount": 187
  },
  {
   "id": "ashari-ibana-klein",
@@ -1219,7 +1219,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 79
+  "citeCount": 80
  },
  {
   "id": "sep-shankara",
@@ -1267,11 +1267,11 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 20,
+  "answers": 21,
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 49
+  "citeCount": 50
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -1310,7 +1310,7 @@
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 29
+  "citeCount": 30
  },
  {
   "id": "buhler-manu",
@@ -2051,11 +2051,11 @@
    "islam"
   ],
   "status": "checked",
-  "answers": 4,
+  "answers": 5,
   "lanes": [
    "islam"
   ],
-  "citeCount": 10
+  "citeCount": 11
  },
  {
   "id": "sep-al-ghazali",
