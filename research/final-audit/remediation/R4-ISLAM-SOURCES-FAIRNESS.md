@@ -274,6 +274,7 @@ No Christian criticism became stronger. Two became more qualified: `jesus`, on t
 - `git diff --check`: clean.
 - `node scripts/audit-inventory.mjs`: 168 answers, 128,938 words, 2,718 citations. ESV candidates 106, unledgered 4, orphan 1 (pre-existing). `research/final-audit/data/` regenerated and committed.
 - Built-site link and fragment checker (`linkcheck.mjs`, as in R3): 92 pages, 5,769 links, 0 broken, 0 duplicate IDs.
+- *Correction (R4 independent review, 2026-10-08):* that run counted only same-page fragment links, because Git Bash rewrote the base-path argument and the checker skipped every cross-page link. Run correctly on this head: 9,761 links (3,994 cross-page), 8,030 fragments, 0 broken, 0 duplicate IDs. See `R4-REVIEW.md` (R4R-03) and `scripts/check-built-links.mjs`.
 
 ## Remaining limitations and deferred items
 
