@@ -43,7 +43,7 @@
   "name": "Francis Turretin",
   "worldview": "christianity",
   "role": "primary",
-  "answers": 10,
+  "answers": 11,
   "answerIds": [
    "christianity/ultimate-reality",
    "christianity/something-rather-than-nothing",
@@ -53,6 +53,7 @@
    "christianity/induction",
    "christianity/ultimate-authority",
    "christianity/what-is-man",
+   "christianity/know-the-good",
    "christianity/guilt",
    "christianity/jesus"
   ],
@@ -60,6 +61,7 @@
    "ultimate-reality",
    "knowledge-truth",
    "human-nature",
+   "morality-evil",
    "salvation-destiny",
    "revelation-history"
   ],
@@ -122,14 +124,16 @@
   "name": "Cornelius Van Til",
   "worldview": "christianity",
   "role": "primary",
-  "answers": 4,
+  "answers": 5,
   "answerIds": [
+   "christianity/one-and-many",
    "christianity/knowledge-possible",
    "christianity/logic-binding",
    "christianity/induction",
    "christianity/ultimate-authority"
   ],
   "domains": [
+   "ultimate-reality",
    "knowledge-truth"
   ],
   "bio": true,

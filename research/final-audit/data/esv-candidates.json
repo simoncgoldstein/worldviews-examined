@@ -52,6 +52,30 @@
   },
   {
    "file": "christianity/great-and-terrible.mdx",
+   "locator": "Genesis 1:26–28",
+   "fragments": [
+    "in the image of God,"
+   ],
+   "words": 5
+  },
+  {
+   "file": "christianity/great-and-terrible.mdx",
+   "locator": "Romans 5:12",
+   "fragments": [
+    "sin came into the world through one man, and death through sin,"
+   ],
+   "words": 12
+  },
+  {
+   "file": "christianity/great-and-terrible.mdx",
+   "locator": "Jeremiah 17:9",
+   "fragments": [
+    "The heart is deceitful above all things."
+   ],
+   "words": 7
+  },
+  {
+   "file": "christianity/great-and-terrible.mdx",
    "locator": "Colossians 3:10",
    "fragments": [
     "after the image of its creator."
@@ -66,6 +90,14 @@
     "suppress the truth."
    ],
    "words": 5
+  },
+  {
+   "file": "christianity/great-and-terrible.mdx",
+   "locator": "1 Corinthians 15:21–22",
+   "fragments": [
+    "as in Adam all die, so also in Christ shall all be made alive."
+   ],
+   "words": 14
   },
   {
    "file": "christianity/guilt.mdx",
@@ -303,6 +335,22 @@
    "words": 3
   },
   {
+   "file": "christianity/know-the-good.mdx",
+   "locator": "Romans 2:14–15",
+   "fragments": [
+    "the work of the law is written on their hearts,"
+   ],
+   "words": 10
+  },
+  {
+   "file": "christianity/know-the-good.mdx",
+   "locator": "James 4:12",
+   "fragments": [
+    "one lawgiver and judge"
+   ],
+   "words": 4
+  },
+  {
    "file": "christianity/knowledge-possible.mdx",
    "locator": "Proverbs 20:12",
    "fragments": [
@@ -336,19 +384,19 @@
   },
   {
    "file": "christianity/logic-binding.mdx",
-   "locator": "Isaiah 1:18",
-   "fragments": [
-    "Come now, let us reason together,"
-   ],
-   "words": 6
-  },
-  {
-   "file": "christianity/logic-binding.mdx",
    "locator": "Hebrews 6:18",
    "fragments": [
     "impossible for God to lie."
    ],
    "words": 5
+  },
+  {
+   "file": "christianity/logic-binding.mdx",
+   "locator": "1 Corinthians 15:13",
+   "fragments": [
+    "then not even Christ has been raised."
+   ],
+   "words": 7
   },
   {
    "file": "christianity/love-beauty-creativity.mdx",
@@ -567,6 +615,30 @@
     "breathed out by God,"
    ],
    "words": 4
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "Matthew 5:17–18",
+   "fragments": [
+    "not an iota, not a dot"
+   ],
+   "words": 6
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "John 10:35",
+   "fragments": [
+    "Scripture cannot be broken."
+   ],
+   "words": 4
+  },
+  {
+   "file": "christianity/ultimate-authority.mdx",
+   "locator": "Luke 24:25–27, 44",
+   "fragments": [
+    "the Law of Moses and the Prophets and the Psalms"
+   ],
+   "words": 10
   },
   {
    "file": "christianity/ultimate-authority.mdx",
@@ -830,5 +902,5 @@
    "verses": 1
   }
  ],
- "ledgerRows": 94
+ "ledgerRows": 103
 }

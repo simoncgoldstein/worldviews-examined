@@ -1,6 +1,6 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-06, updated 2026-10-07 for the Knowledge & Truth and Revelation & History batches and for remediation batch R1. Scope: all 168 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny, Man & Human Nature and Ultimate Reality add the checked quotations itemized below; other new Scripture citations are references/paraphrases.
+Inventory date: 2026-10-06, updated 2026-10-07 for the Knowledge & Truth and Revelation & History batches and for remediation batch R1, and 2026-10-08 for remediation batch R2. Scope: all 168 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny, Man & Human Nature and Ultimate Reality add the checked quotations itemized below; other new Scripture citations are references/paraphrases.
 
 This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the later quotations below are the only additions outside the flagship.
 
@@ -48,7 +48,6 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/ultimate-authority.mdx` | John 17:17 | 1 | 4 | 18 | 1 |
 | `christianity/ultimate-authority.mdx` | 2 Timothy 3:16 | 1 | 4 | 19 | 1 |
 | `christianity/ultimate-authority.mdx` | Acts 17:11 | 1 | 10 | 51 | 1 |
-| `christianity/logic-binding.mdx` | Isaiah 1:18 | 1 | 6 | 32 | 1 |
 | `christianity/logic-binding.mdx` | Hebrews 6:18 | 1 | 5 | 25 | 1 |
 | `christianity/induction.mdx` | Genesis 8:22 | 1 | 15 | 86 | 1 |
 | `christianity/induction.mdx` | Jeremiah 33:25 | 1 | 14 | 70 | 1 |
@@ -100,38 +99,49 @@ This is a manual inventory, not an automatic certification of copyright permissi
 | `christianity/death.mdx` | 1 Corinthians 15:54–57 | 1 | 12 | 61 | 4 |
 | `christianity/death.mdx` | 1 Corinthians 15:20 | 1 | 2 | 15 | 1 |
 | `christianity/death.mdx` | Revelation 21:4 | 1 | 5 | 22 | 1 |
+| `christianity/great-and-terrible.mdx` | Genesis 1:26–28 | 1 | 5 | 19 | 3 |
+| `christianity/great-and-terrible.mdx` | Romans 5:12 | 1 | 12 | 62 | 1 |
+| `christianity/great-and-terrible.mdx` | Jeremiah 17:9 | 1 | 7 | 39 | 1 |
+| `christianity/great-and-terrible.mdx` | 1 Corinthians 15:21–22 | 1 | 14 | 61 | 2 |
+| `christianity/ultimate-authority.mdx` | Matthew 5:17–18 | 1 | 6 | 22 | 2 |
+| `christianity/ultimate-authority.mdx` | John 10:35 | 1 | 4 | 26 | 1 |
+| `christianity/ultimate-authority.mdx` | Luke 24:25–27, 44 | 1 | 10 | 48 | 4 |
+| `christianity/logic-binding.mdx` | 1 Corinthians 15:13 | 1 | 7 | 36 | 1 |
+| `christianity/know-the-good.mdx` | Romans 2:14–15 | 1 | 10 | 46 | 2 |
+| `christianity/know-the-good.mdx` | James 4:12 | 1 | 4 | 22 | 1 |
 
-Totals: **799 quoted words**, **4061 quoted bytes**, **160 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); Knowledge & Truth quotations (15 rows above, from `christianity/knowledge-possible.mdx` onward) checked against the ESV text at esv.org (2026-10-07); Revelation & History quotations (30 rows above, from `christianity/revelation.mdx` onward) checked against the ESV text at esv.org (2026-10-07); Remediation batch R1 quotations (17 rows above, from `christianity/guilt.mdx` Romans 3:21–26 onward) checked against the ESV text at esv.org (2026-10-07); original flagship checks retain their original provenance.
+Totals: **872 quoted words**, **4410 quoted bytes**, **177 conservative verse instances**, including repeated ranges. Salvation quotations checked at ESV.org current text (2026-10-05); Man & Human Nature quotations (Colossians 1:15, 1 John 4:19 twice, Psalm 27:4) checked against the ESV text at Bible Gateway (2026-10-06); Ultimate Reality quotations (18 rows above, from `christianity/ultimate-reality.mdx` onward) checked against the ESV text at esv.org (2026-10-06); Knowledge & Truth quotations (15 rows above, from `christianity/knowledge-possible.mdx` onward) checked against the ESV text at esv.org (2026-10-07); Revelation & History quotations (30 rows above, from `christianity/revelation.mdx` onward) checked against the ESV text at esv.org (2026-10-07); Remediation batch R1 quotations (17 rows above, from `christianity/guilt.mdx` Romans 3:21–26 onward) checked against the ESV text at esv.org (2026-10-07); remediation batch R2 quotations (10 rows above, from `christianity/great-and-terrible.mdx` Genesis 1:26–28 onward) checked against the ESV text at esv.org (2026-10-08), and the R2 removal of the `logic-binding` Isaiah 1:18 quotation is reflected in the totals; original flagship checks retain their original provenance.
 
 | Biblical book | Charged verse instances | Quoted words | Quoted bytes |
 |---|---:|---:|---:|
 | Colossians | 9 | 44 | 232 |
-| Romans | 27 | 112 | 576 |
-| Genesis | 5 | 45 | 236 |
-| Isaiah | 7 | 14 | 74 |
+| Romans | 30 | 134 | 684 |
+| Genesis | 8 | 50 | 255 |
+| Isaiah | 6 | 8 | 42 |
 | Psalms | 12 | 59 | 305 |
 | Ephesians | 4 | 31 | 157 |
 | 1 John | 4 | 27 | 125 |
 | Acts | 10 | 63 | 338 |
 | Revelation | 3 | 20 | 98 |
-| John | 6 | 33 | 172 |
+| John | 7 | 37 | 198 |
 | Proverbs | 2 | 20 | 99 |
-| Jeremiah | 3 | 34 | 171 |
-| Matthew | 2 | 10 | 43 |
+| Jeremiah | 4 | 41 | 210 |
+| Matthew | 4 | 16 | 65 |
 | Deuteronomy | 1 | 8 | 33 |
-| 1 Corinthians | 20 | 75 | 389 |
+| 1 Corinthians | 23 | 96 | 486 |
 | Numbers | 1 | 7 | 30 |
 | 2 Timothy | 2 | 13 | 76 |
 | Hebrews | 27 | 102 | 498 |
-| Luke | 4 | 3 | 18 |
+| Luke | 8 | 13 | 66 |
 | Galatians | 3 | 16 | 82 |
 | Mark | 2 | 11 | 49 |
 | 1 Peter | 3 | 12 | 64 |
 | 2 Corinthians | 3 | 40 | 196 |
+| James | 1 | 4 | 22 |
 
 ## Proportions and publication checks
 
-For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed. The 24 Knowledge & Truth rows and the corpus denominator were computed by script on 2026-10-07 with the same definition; the 18 Revelation & History rows and the updated corpus denominator were computed the same way on 2026-10-07; the 16 rows for answers edited in remediation batch R1 and the corpus denominator were recomputed the same way on 2026-10-07 (the four non-Christian `great-and-terrible` rows had used an older count, so their change exceeds the R1 additions); other rows were not recomputed.
+For an approximate per-answer denominator, count prose-body words after removing frontmatter and citation tags (Markdown headings remain, so this is an approximate editorial measure). The 30 Man & Human Nature rows were computed by script with the same definition (also removing `QuestionLink` tags but keeping their text); earlier rows are unchanged and may differ from a script recount by a few percent. The present public answers contain far more original prose than ESV wording; the ratios below are useful tracking figures, not a permissions determination. The 30 Ultimate Reality rows were computed by script on 2026-10-06 (whitespace-delimited words after removing frontmatter, `Cite` tags and `QuestionLink` tags but keeping link text and headings); earlier rows were not recomputed. The 24 Knowledge & Truth rows and the corpus denominator were computed by script on 2026-10-07 with the same definition; the 18 Revelation & History rows and the updated corpus denominator were computed the same way on 2026-10-07; the 16 rows for answers edited in remediation batch R1 and the corpus denominator were recomputed the same way on 2026-10-07 (the four non-Christian `great-and-terrible` rows had used an older count, so their change exceeds the R1 additions); the 6 rows for answers edited in remediation batch R2 and the corpus denominator were recomputed the same way on 2026-10-08; other rows were not recomputed.
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
@@ -168,27 +178,27 @@ For an approximate per-answer denominator, count prose-body words after removing
 | christianity / evil | 1213 | 26 | 2.14% |
 | christianity / fail-the-good | 381 | 0 | 0.00% |
 | christianity / final-end | 614 | 0 | 0.00% |
-| christianity / great-and-terrible | 1081 | 11 | 1.02% |
+| christianity / great-and-terrible | 1708 | 49 | 2.87% |
 | christianity / guilt | 1781 | 116 | 6.51% |
 | christianity / history | 731 | 57 | 7.80% |
 | christianity / induction | 767 | 50 | 6.52% |
 | christianity / jesus | 1452 | 64 | 4.41% |
-| christianity / know-the-good | 577 | 0 | 0.00% |
+| christianity / know-the-good | 1278 | 14 | 1.10% |
 | christianity / knowledge-possible | 927 | 28 | 3.02% |
-| christianity / logic-binding | 843 | 11 | 1.30% |
+| christianity / logic-binding | 966 | 12 | 1.24% |
 | christianity / love-beauty-creativity | 467 | 15 | 3.21% |
 | christianity / offspring-family | 467 | 0 | 0.00% |
-| christianity / one-and-many | 505 | 37 | 7.33% |
+| christianity / one-and-many | 790 | 37 | 4.68% |
 | christianity / order | 719 | 28 | 3.89% |
 | christianity / revelation | 1028 | 68 | 6.61% |
 | christianity / self-deception | 366 | 0 | 0.00% |
 | christianity / self-salvation | 1118 | 8 | 0.72% |
 | christianity / something-rather-than-nothing | 735 | 27 | 3.67% |
 | christianity / suffering | 874 | 37 | 4.23% |
-| christianity / ultimate-authority | 971 | 25 | 2.57% |
+| christianity / ultimate-authority | 1271 | 45 | 3.54% |
 | christianity / ultimate-personal | 775 | 26 | 3.35% |
 | christianity / ultimate-reality | 930 | 11 | 1.18% |
-| christianity / what-is-man | 1093 | 0 | 0.00% |
+| christianity / what-is-man | 1321 | 0 | 0.00% |
 | christianity / why-alive | 682 | 0 | 0.00% |
 | christianity / worship | 716 | 0 | 0.00% |
 | hinduism / after-death | 592 | 0 | 0.00% |
@@ -304,13 +314,13 @@ For an approximate per-answer denominator, count prose-body words after removing
 | naturalism / why-alive | 672 | 0 | 0.00% |
 | naturalism / worship | 718 | 0 | 0.00% |
 
-Corpus measure: 799 ESV words / approximately 123,598 answer-body words = **0.65%** (recomputed by script on 2026-10-07 for all 168 answers with the same definition, after remediation batch R1 and its review). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 872 ESV words / approximately 125,580 answer-body words = **0.69%** (recomputed by script on 2026-10-08 for all 168 answers with the same definition, after remediation batch R2). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
 1. Add rows with file, exact verse/range, occurrences, quoted words/bytes, and the checked text edition. Keep reference-only citations out of the quotation count; inventory internal research and exported products separately if published.
-2. Recalculate totals and book-level words/bytes, recording repeats rather than deduplicating them away. Check the 500-verse allowance and no-more-than-half-a-book condition against the edition's book text. Current charges (at most 27 verse instances in any book, Romans and Hebrews) are far below half a book; future large extracts need an actual book-text byte comparison.
+2. Recalculate totals and book-level words/bytes, recording repeats rather than deduplicating them away. Check the 500-verse allowance and no-more-than-half-a-book condition against the edition's book text. Current charges (at most 30 verse instances in any book, Romans) are far below half a book; future large extracts need an actual book-text byte comparison.
 3. Recalculate quotation proportions for each work and the corpus; stay below 25%. Check publication eligibility separately, especially the commentary/biblical-reference exclusion and Creative Commons prohibition. Do not treat numerical headroom as permission.
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
-The Salvation/Destiny batch uses two short quotations, the Man & Human Nature batch four, the Ultimate Reality batch eighteen (141 words, 725 bytes, 20 verse charges), the Knowledge & Truth batch fifteen rows (134 words, 700 bytes, 20 verse charges), the Revelation & History batch thirty rows (230 words, 1,121 bytes, 46 verse charges), and remediation batch R1 seventeen rows (207 words, 1,085 bytes, 53 verse charges), itemized above, where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+The Salvation/Destiny batch uses two short quotations, the Man & Human Nature batch four, the Ultimate Reality batch eighteen (141 words, 725 bytes, 20 verse charges), the Knowledge & Truth batch fifteen rows (134 words, 700 bytes, 20 verse charges), the Revelation & History batch thirty rows (230 words, 1,121 bytes, 46 verse charges), remediation batch R1 seventeen rows (207 words, 1,085 bytes, 53 verse charges), and remediation batch R2 ten rows (79 words, 381 bytes, 18 verse charges) less one removed row (6 words, 32 bytes, 1 verse charge), itemized above, where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.

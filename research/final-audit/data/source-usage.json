@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 317
+  "citeCount": 338
  },
  {
   "id": "wcf",
@@ -32,7 +32,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 110
+  "citeCount": 113
  },
  {
   "id": "calvin-institutes",
@@ -81,11 +81,11 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 4,
+  "answers": 5,
   "lanes": [
    "christianity"
   ],
-  "citeCount": 10
+  "citeCount": 14
  },
  {
   "id": "bahnsen-van-til-apologetic",
@@ -182,7 +182,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 62
+  "citeCount": 63
  },
  {
   "id": "crc-acts-synod-1924",
@@ -273,7 +273,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 16
+  "citeCount": 17
  },
  {
   "id": "witsius-economy-covenants",
@@ -380,7 +380,7 @@
    "christianity",
    "hinduism"
   ],
-  "citeCount": 18
+  "citeCount": 20
  },
  {
   "id": "bavinck-reformed-dogmatics-monergism-2",
@@ -545,11 +545,12 @@
    "naturalism"
   ],
   "status": "checked",
-  "answers": 9,
+  "answers": 10,
   "lanes": [
+   "christianity",
    "naturalism"
   ],
-  "citeCount": 21
+  "citeCount": 23
  },
  {
   "id": "russell-what-i-believe",
@@ -1595,13 +1596,13 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 16,
+  "answers": 17,
   "lanes": [
    "christianity",
    "judaism",
    "islam"
   ],
-  "citeCount": 34
+  "citeCount": 42
  },
  {
   "id": "hume-natural-history-religion",
