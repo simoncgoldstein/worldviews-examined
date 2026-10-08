@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 351
+  "citeCount": 352
  },
  {
   "id": "wcf",
@@ -2666,7 +2666,20 @@
   "lanes": [
    "islam"
   ],
-  "citeCount": 7
+  "citeCount": 8
+ },
+ {
+  "id": "ibn-hajar-fath-al-bari",
+  "type": "primary",
+  "tags": [
+   "islam"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "islam"
+  ],
+  "citeCount": 1
  },
  {
   "id": "ibn-taymiyya-dar-taarud",
