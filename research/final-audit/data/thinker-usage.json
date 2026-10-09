@@ -1002,10 +1002,14 @@
   "name": "Abhinavagupta",
   "worldview": "hinduism",
   "role": "specialist",
-  "answers": 0,
-  "answerIds": [],
-  "domains": [],
-  "bio": false,
+  "answers": 1,
+  "answerIds": [
+   "hinduism/love-beauty-creativity"
+  ],
+  "domains": [
+   "human-nature"
+  ],
+  "bio": true,
   "worksWithSource": 0
  },
  {
@@ -1143,6 +1147,21 @@
   "domains": [
    "human-nature",
    "salvation-destiny"
+  ],
+  "bio": true,
+  "worksWithSource": 1
+ },
+ {
+  "id": "fazang",
+  "name": "Fazang",
+  "worldview": "buddhism",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "buddhism/one-and-many"
+  ],
+  "domains": [
+   "ultimate-reality"
   ],
   "bio": true,
   "worksWithSource": 1
