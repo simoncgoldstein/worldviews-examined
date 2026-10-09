@@ -66,6 +66,8 @@
     John 10:34-36; Luke 24:25-27, 44-47; 1 Cor 15:12-22, 45 (new quotations itemized in the ledger).
     R4 independent review (2026-10-08): read on esv.org 1 Cor 1:23, 15:3-4; Mark 15:40-41; John 19:25-26 (locator-only
     citations in islam/jesus; no quotation added).
+    C1 (2026-10-09): read on esv.org Exod 20:3-6, 32:4-5; Deut 4:15-19 (locator-only citations in hinduism/worship; no
+    quotation added).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -451,6 +453,7 @@
     Knowledge & Truth (2026-10-07): read Q. 2-4 on opc.org.
     Revelation & History (2026-10-07): read Q. 36, 43, 52, 56, 88, 191.
     Remediation R2 (2026-10-08): re-read Q. 22, 93, 95-96 on opc.org.
+    C1 (2026-10-09): re-read Q. 109 on opc.org (it forbids "all worshiping of it, or God in it or by it").
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -2081,6 +2084,12 @@
     every-day world in which we distinguish a ruler and the objects of his rule') and IV.1.3 (pp. 338-340; the reply
     also 'disposes of the objection ... that a system of non-duality cannot be established because the Self is affected
     with duality by Nescience').
+    C1 (2026-10-09): read IV.1.4-6 (pp. 340-345) in the same OCR text. IV.1.4: the Self is not to be contemplated in
+    symbols (pratika) such as mind, ether or the sun "as Brahman", because the symbols' own character is not sublated
+    while one meditates on them. IV.1.5: the contemplation of Brahman is superimposed on the symbol, not the reverse,
+    "on account of exaltation", as one views the king's charioteer as a king (p. 343); Brahman, the ruler of all, gives
+    the fruit of such meditations, and Brahman is meditated on "in so far as a contemplation on Brahman is superinduced
+    on its symbols, analogously as a contemplation on Vishnu is superinduced on his images" (p. 345).
   verificationStatus: checked
   verifiedOn: "2026-10-08"
 
@@ -4236,3 +4245,197 @@
     where poets excel in one genre and fall short in another).
   verificationStatus: checked
   verifiedOn: '2026-10-08'
+
+# --- C1 Hindu and Buddhist completeness (2026-10-09) -------------------------------------
+# Hindu: image theology (Śrīvaiṣṇava), Bhāgavata Purāṇa, Gauḍīya Vaiṣṇava, Śaiva Siddhānta, rasa theory.
+- id: govindacharya-artha-pancaka
+  type: primary
+  title: The Artha-pañcaka of Pillai Lokācārya
+  shortCitation: Piḷḷai Lokācārya, Artha-pañcaka
+  author: Piḷḷai Lokācārya
+  translator: Alkondavilli Govindācārya
+  editor: G. A. Grierson
+  traditionTags: [hinduism]
+  containerTitle: Journal of the Royal Asiatic Society of Great Britain and Ireland (1910), pp. 565-607
+  place: London
+  publisher: Royal Asiatic Society
+  year: 1910
+  url: https://archive.org/details/in.ernet.dli.2015.70557
+  notes: >-
+    Śrīvaiṣṇava (Teṅkalai) summary of doctrine, written in Tamil maṇipravāḷa in the 13th century by Piḷḷai Lokācārya
+    (b. 1213). Govindācārya's English is, by his own and Grierson's account, a free translation "expanded and illustrated
+    wherever necessary" (pp. 568, 570), so it is never quoted as Lokācārya's wording; the appendices and notes are the
+    translator's. Grierson prints Nārāyaṇa Yati's Sanskrit version after it (pp. 598ff.), which Govindācārya calls "rather
+    a paraphrase than a literal translation of the Tamil" (p. 568 n. 2). Verified 2026-10-09 against the archive.org scan
+    of the 1910 JRAS volume (Digital Library of India copy; running heads with page numbers) in its OCR text; public domain
+    (1910). Cite section and JRAS page. Read: introduction pp. 565-570; II "Para-svarūpa" pp. 576-577: the Lord's nature
+    under five forms, para, vyūha, vibhava, antaryāmin and arcā; the arcā form "consists in the images of Bhagavan (God)
+    which accommodate themselves to the various tastes of His creatures for their worship", taking the name and form
+    the worshipper chooses, "all-knowing, but seeming as if not-knowing; all-powerful, but seeming as if powerless",
+    "choosing to be ocularly manifest to him in temples and homes"; III U 4-5 pp. 578-579 (soul-bliss, kaivalya, versus
+    God-bliss, true mokṣa); E 2-3 pp. 582-583 (meditation fixed on the Lord's form; bhakti as loving, uninterrupted
+    contemplation); O 2 p. 589: among things "hostile to God" is "thinking that the images of God are inert and
+    powerless"; Appendix V pp. 594-595 (translator's note quoting a verse comparing the Lord's general presence in all
+    to fire latent in wood and his special presence in the image to fire in red-hot iron). Sanskrit version p. 601:
+    "arcāvatāro dāru-loha-śilā-mṛt-svādhīna-vigrahaḥ"; images self-manifest, installed by gods, by sages or by men;
+    though these are made of natural material, "the notion of material is forbidden everywhere; only the notion of
+    deity is to be held" (upādāna-buddhir niṣiddhā, devatā-buddhir eva kartavyā) - our translation of the Sanskrit,
+    paraphrase only.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: subbarau-bhagavata-1
+  type: primary
+  title: Srimad Bhagavatam, Translated into Easy English Prose, vol. I (Skandhas 1 to 7)
+  shortCitation: Bhāgavata Purāṇa (Subba Rau)
+  translator: S. Subba Rau
+  traditionTags: [hinduism]
+  place: Tirupati
+  publisher: S. Lakshmana Rao (Sri Vyasa Press)
+  year: 1928
+  url: https://archive.org/details/in.ernet.dli.2015.272624
+  notes: >-
+    Title page: "embodying the interpretations of the Three leading Schools of Thought (Advaita, Visistadvaita and
+    Dvaita)". The prefatory note says the main rendering follows Śrīdhara's commentary, so word choices are interpretive
+    (e.g. "Sri Krishna" for Adhokṣaja at I.2.6), with the Viśiṣṭādvaita commentary of Vīrarāghava (V.) and the Dvaita
+    commentary of Vijayadhvaja (D.) in footnotes. Subba Rau also
+    translated Madhva's Brahma Sūtra commentary (subbarau-madhva-brahmasutra). Public domain in the US (published 1928).
+    Verified 2026-10-09 against the archive.org scan (Digital Library of India) in its OCR text: title page; running
+    heads "Sk. n. Adh. n." with page numbers. Cite skandha.adhyāya.verse in the standard numbering, plus page where the
+    head is legible; footnotes are commentary, not text. Read: I.2.6-14 (pp. 6-7): no dharma higher than that by which
+    devotion to Kṛṣṇa arises, "induced by no motive (desire) and unobstructed in its course"; I.2.11: the one truth is
+    called Brahman, Paramātman and Bhagavān; I.3.27-28: other descents are portions or powers, "but Sri Krishna is the
+    identical Narayana, the Supreme Being of all power"; III.29.7-27 (pp. 357-360): Kapila on devotion; v. 13 (p. 358):
+    those with true devotion do not accept, though the Lord offers them, dwelling in his world, equal glory, nearness,
+    likeness of form or union with him, but only his service; vv. 21-25 (pp. 359-360): the Lord dwells in all beings,
+    and one who neglects him there and worships an image is "throwing his offerings into ashes"; he is not pleased by
+    image-worship from one who scorns other beings; the devout should worship him "until he realises Me in his own
+    heart"; the footnote to v. 22 reports Vīrarāghava's (V.) reading that the
+    verse condemns image-worship only in ignorant men, since the scripture elsewhere enjoins it. III.29.11-12 are illegible in the OCR and were not used. The second volume (Skandhas 8-12) has unusable
+    OCR and was not used.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: sarkar-chaitanya-charitamrita
+  type: primary
+  title: "Chaitanya's Pilgrimages and Teachings, from his Contemporary Bengali Biography the Chaitanya-charit-amrita: Madhya-lila"
+  shortCitation: Kṛṣṇadāsa Kavirāja, Caitanya-caritāmṛta (Sarkar)
+  author: Kṛṣṇadāsa Kavirāja
+  translator: Jadunath Sarkar
+  traditionTags: [hinduism]
+  place: Calcutta and London
+  publisher: M. C. Sarkar and Sons; Luzac and Co.
+  year: 1913
+  url: https://archive.org/details/chaitanyaspilgri018817mbp
+  notes: >-
+    English translation of the Madhya-līlā of the Caitanya-caritāmṛta (completed 1582), the principal Gauḍīya Vaiṣṇava
+    account of Caitanya's teaching. Sarkar calls his version literal but abridged, with scriptural quotations given only
+    as references (preface). His chapter numbers are his own and run two behind the Bengali Madhya-līlā (e.g. his ch.
+    XVIII is Madhya 20, the teaching to Sanātana); cite Sarkar's chapter and page. Public domain (1913). Verified
+    2026-10-09 against the archive.org scan in its OCR text (title page; running heads with pages; p. 252 is printed
+    "352" in the OCR). Read: preface and "The Author and his Book"; ch. VII pp. 97-99 (at Udupi: love of Kṛṣṇa is "the
+    fifth human end, the limit of human attainment"; the devoted "renounce the fivefold salvation"); ch. XVII pp. 241-244
+    (the love of Kṛṣṇa takes five chief forms or rasas: śānta, dāsya, sakhya, vātsalya and madhura, each including
+    the qualities of the one before); ch. XVIII pp. 252-255 ("The soul of man is the eternal servant of Krishna"; love
+    is "the (supreme) need ... and the highest achievement of humanity"; "Krishna is God Himself", citing Bhāgavata
+    I.3.28; Kṛṣṇa appears as Brahman, Paramātman and Bhagavān according to knowledge, yoga or devotion, citing I.2.11).
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: nallaswami-sivajnanabodham
+  type: primary
+  title: Sivagnana Botham of Meykanda Deva
+  shortCitation: Meykaṇḍār, Śivajñānabodham (Nallaswami Pillai)
+  author: Meykaṇḍār
+  translator: J. M. Nallaswami Pillai
+  traditionTags: [hinduism]
+  place: Madras
+  year: 1895
+  url: https://archive.org/details/SivagnanaBothamOfMeykandaDeva
+  notes: >-
+    The twelve-sūtra root text of Tamil Śaiva Siddhānta, with Meykaṇḍār's Tamil exposition, translated with notes by
+    J. M. Nallaswami Pillai (1895). The copy read is a retyped reproduction of the 1895 translation (it reprints the
+    "Preface (1895 Edition)"), not a scan, so its pagination is not cited: cite sūtra number only; the notes are the
+    translator's exposition, never Meykaṇḍār's words. Nallaswami Pillai dates Meykaṇḍār about 1200 CE (introduction).
+    Verified 2026-10-09 (title, translator, preface; locator by sūtra). Read: sūtra 1 (the world, which arises, persists
+    and perishes, has Hara as its first cause) and concluding remarks (pati, the Lord, and pāśa, the three bonds);
+    sūtra 2 (the Lord is one with souls, different from them, and both, and through his power causes their births
+    according to their deeds) with the note on the three relations; sūtra 8 (the Lord appears as teacher to the ripened
+    soul, which leaves the senses and is united to his feet); sūtra 11 (as the soul enables the eye to see, Hara enables
+    the soul to know, and knowledge and undying love unite it to his feet); sūtra 12 (the freed soul worships the forms
+    of the devotees "and the Forms in the temples as His Form"); translator's notes to sūtras 3 and 6 (the soul is
+    without beginning and "co-eternal" with God) and 5 (God's grace, arul, is his eternal power, śakti).
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: de-sanskrit-poetics-2
+  type: academic
+  title: Studies in the History of Sanskrit Poetics, vol. II
+  shortCitation: De, Sanskrit Poetics II
+  author: Sushil Kumar De
+  traditionTags: [hinduism]
+  place: London
+  publisher: Luzac and Co.
+  year: 1925
+  url: https://archive.org/details/in.ernet.dli.2015.277166
+  notes: >-
+    Vol. II, "Systems and Theories". Public domain in the US (published 1925). Verified 2026-10-09 against the archive.org
+    scan (Digital Library of India) in its OCR text: title page, preface, running heads with pages. Read: pp. 155-169
+    (the rasa theories of Lollaṭa, Śaṅkuka, Bhaṭṭa Nāyaka and Abhinavagupta): Bhaṭṭa Nāyaka compares aesthetic relish to
+    the bliss of contemplating Brahman (brahmāsvāda-sacivaḥ) while distinguishing the aesthetic from the philosophic
+    attitude (pp. 156-159); Bharata made the evocation of the eight rasas the business of drama (p. 159); for
+    Abhinavagupta rasa is the relish (āsvāda, carvaṇā) manifested by suggestion, not the hero's or the actor's mood
+    "but its reflection in the form of a subjective condition of aesthetic enjoyment in the reader", alaukika rather
+    than an ordinary effect (pp. 164-166); a permanent emotion latent in the spectator as an impression is awakened and
+    generalised, so that it is relished "not ... by him alone, but by all persons of poetic sensibility" (pp. 167-168);
+    rasa is "not an objective entity which can reside in the hero or the actor" but is realised by the cultivated
+    spectator, the sahṛdaya (p. 169); n. 35 (pp. 165-166) on why pity or horror in art yield relish (citing later
+    writers). Pp. 335-336: Rūpa Gosvāmin's Ujjvala-nīlamaṇi recasts rasa as bhakti-rasa, with five rasas (śānta,
+    dāsya, sakhya, vātsalya, mādhurya), love of Kṛṣṇa as the dominant emotion, and the devotee rather than the literary
+    connoisseur as its recipient. Vol. I (1923, in.ernet.dli.2015.80969) pp. 117-119 and 137 were read for Abhinavagupta's
+    works and date (his fame rests chiefly on Kashmir Śaiva philosophy; Abhinavabhāratī on Bharata and Locana on
+    Ānandavardhana; latest known date 1015 CE).
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+# Buddhist: Huayan.
+- id: sep-buddhism-huayan
+  type: academic
+  title: Huayan Buddhism
+  author: Bryan W. Van Norden and Nicholaos Jones
+  traditionTags: [buddhism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  year: 2024
+  url: https://plato.stanford.edu/entries/buddhism-huayan/
+  notes: >-
+    First published 5 Nov 2019; substantive revision 17 Sep 2024. Read 2026-10-09 (full text fetched from the URL):
+    preamble; §1.1-1.3 (Huayan inherits Madhyamaka's claim that everything is conditioned and argues that because each
+    thing's identity depends on others "one is all", and because the whole depends on its parts "all is one"; Fazang's
+    rafter and building; Indra's net "frequently used" from the Avataṃsaka Sūtra; the golden lion); §§2-3 (Dushun's li
+    and shi, mutual non-obstruction; Zhiyan's ten mysteries, each shi including and included in all others "without
+    losing its distinctness"); §4.2 (Fazang identifies One Mind with tathāgatagarbha, "the one and only source of all
+    that exists ... albeit without separation from that realm"); §4.3 (each dharma both exists, as numerically distinct,
+    and is empty; Indra's net and the framed building among Fazang's metaphors; six characteristics); §4.4 (Fazang's
+    panjiao ranks Abhidharma lowest and Madhyamaka and Yogācāra as "Elementary" Mahāyāna below his own "Round"
+    teaching).
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: fazang-golden-lion-cbeta
+  type: primary
+  title: Jin shizi zhang (金師子章, Essay on the Golden Lion), Chinese text, in Huayan jing jin shizi zhang zhu (華嚴經金師子章註)
+  shortCitation: Fazang, Golden Lion (Chinese text)
+  author: Fazang
+  editor: CBETA (from the Taishō canon, T45 no. 1881)
+  traditionTags: [buddhism]
+  publisher: CBETA Chinese Electronic Tripiṭaka Collection
+  url: https://cbetaonline.dila.edu.tw/zh/T1881_001
+  notes: >-
+    Fazang's essay as embedded in Chengqian's (承遷) Song-dynasty commentary, Taishō vol. 45, no. 1881, pp. 668a-670c. The
+    CBETA TEI P5 file (cbeta-org/xml-p5 on GitHub, T45n1881.xml) marks Fazang's text (div type "orig") separately from
+    the commentary; only the "orig" text was used. Verified 2026-10-09: URL resolves; author line 唐 法藏撰．宋 承遷註.
+    Cite section of the essay with Taishō page. Any English is our paraphrase of the Chinese, never a quotation. Read the
+    whole essay: §1 (the gold has no self-nature; through the craftsman's conditions the lion's form arises); §2 (the
+    lion is empty, only the gold is real); §6 (five teachings; in the "round" teaching the myriad phenomena are
+    profuse yet "intermingle without confusion", 參而不雜; all is one because all lack self-nature, one is all because
+    cause and effect remain distinct); §7, gate 2 (one and many interpenetrate without obstruction, each keeping its
+    own position) and gate 4, "Indra's net" (p. 669c: in every hair of the lion there is a golden lion; the lions in
+    every hair enter a single hair, and each hair with its countless lions enters again, layer upon layer without end,
+    like the jewels of the heavenly emperor's net); §8 (six characteristics: eye and ear are different, each condition
+    "remains in its own position", 諸緣各住自位); §§9-10.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
