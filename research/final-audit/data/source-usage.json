@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 353
+  "citeCount": 354
  },
  {
   "id": "wcf",
@@ -265,7 +265,7 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 16,
+  "answers": 17,
   "lanes": [
    "christianity",
    "naturalism",
@@ -273,7 +273,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 17
+  "citeCount": 18
  },
  {
   "id": "witsius-economy-covenants",
@@ -1281,11 +1281,11 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 3,
+  "answers": 4,
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 3
+  "citeCount": 4
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -1373,7 +1373,7 @@
   "lanes": [
    "buddhism"
   ],
-  "citeCount": 16
+  "citeCount": 17
  },
  {
   "id": "shantideva-bodhicaryavatara",
@@ -1536,7 +1536,7 @@
   "lanes": [
    "buddhism"
   ],
-  "citeCount": 7
+  "citeCount": 8
  },
  {
   "id": "vasubandhu-trimsika",
@@ -2784,5 +2784,96 @@
    "islam"
   ],
   "citeCount": 1
+ },
+ {
+  "id": "govindacharya-artha-pancaka",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "subbarau-bhagavata-1",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "sarkar-chaitanya-charitamrita",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 5
+ },
+ {
+  "id": "nallaswami-sivajnanabodham",
+  "type": "primary",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "de-sanskrit-poetics-2",
+  "type": "academic",
+  "tags": [
+   "hinduism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "hinduism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-buddhism-huayan",
+  "type": "academic",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 6
+ },
+ {
+  "id": "fazang-golden-lion-cbeta",
+  "type": "primary",
+  "tags": [
+   "buddhism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "buddhism"
+  ],
+  "citeCount": 2
  }
 ]

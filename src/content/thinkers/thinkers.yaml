@@ -1300,9 +1300,19 @@
   displayOrder: 1
   usedFor: [nondual Shaiva philosophy, aesthetics, consciousness]
   schools: [Kashmir Shaivism]
-  era: c. 10th–11th century CE
+  era: c. 10th–11th century CE (latest known date 1015)
   description: Kashmir Shaiva philosopher and aesthetic theorist who set out a nondual philosophy of consciousness and a theory of aesthetic experience.
+  bio: >-
+    Abhinavagupta was a Kashmiri scholar of the late tenth and early eleventh centuries; his latest known date is 1015 CE. His fame rests chiefly on his philosophical works on Kashmir Shaivism, which include two commentaries on the Ishvarapratyabhijna of Utpala, his teacher's teacher. In poetics he wrote two commentaries that carry the weight of independent treatises: the Abhinavabharati on Bharata's Natyashastra, the classical treatise on drama, and the Locana on Anandavardhana's Dhvanyaloka, the founding work of the theory of suggestion (dhvani). Later writers on poetics, among them Mammata and Vishvanatha, took up his account of rasa.
+  significance: Abhinavagupta gives classical Indian aesthetics its most influential theory of how art produces delight, rasa as the relish of a generalised emotion in the responsive spectator. He is used for the question of beauty and creativity, not as a representative of Hindu theology as a whole.
+  keyIdeas:
+    - Rasa as relish (asvada, carvana) manifested by suggestion
+    - Generalisation of emotion in aesthetic experience
+    - The responsive spectator (sahrdaya)
+    - Suggestion (dhvani) as the soul of poetry
   representativeWorks:
+    - { title: Abhinavabharati (commentary on the Natyashastra) }
+    - { title: Locana (commentary on the Dhvanyaloka) }
     - { title: Tantraloka }
 
 # --- Buddhist traditions -----------------------------------------------------------------
@@ -1446,6 +1456,31 @@
     - { title: Three Principal Aspects of the Path, sourceId: tsongkhapa-three-principal-aspects }
     - { title: Legs bshad snying po (Essence of Eloquence), year: 1407 }
     - { title: Rigs pa'i rgya mtsho (Ocean of Reasoning), year: 1408 }
+
+- id: fazang
+  slug: fazang
+  name: Fazang
+  worldview: buddhism
+  role: specialist
+  displayOrder: 4
+  usedFor: [Huayan metaphysics, the one and the many]
+  schools: [Huayan]
+  birthYear: 643
+  deathYear: 712
+  description: Chinese Buddhist scholar-monk, counted the third patriarch of the Huayan school, who systematized its teaching that all phenomena interpenetrate.
+  bio: >-
+    Fazang (643–712) was born in the Tang capital Chang'an to a family of Sogdian descent. As a young monk he assisted Xuanzang's translation work, then became a disciple of Zhiyan, later counted the second patriarch of the Huayan school, probably around 663. He won the favour of Empress Wu, lectured widely on the Avatamsaka (Flower Garland) Sutra, and wrote standard commentaries on it and on the Awakening of Faith in Mahayana. His Treatise on the Five Teachings of Huayan and his short Essay on the Golden Lion set out the school's doctrine that each phenomenon includes and is included in all others, illustrated by the rafter and the building and by Indra's net.
+  significance: Fazang supplies the classic Buddhist account of how the one and the many are related, in which each thing contains all things without losing its own place. He is used for that question as a distinct Chinese Mahayana school, not as the voice of Buddhism generally.
+  keyIdeas:
+    - Mutual inclusion and identity of phenomena
+    - Principle (li) and phenomena (shi) without obstruction
+    - Indra's net
+    - Six characteristics (the rafter and the building)
+    - Classification of teachings (panjiao)
+  representativeWorks:
+    - { title: Essay on the Golden Lion, sourceId: fazang-golden-lion-cbeta }
+    - { title: Treatise on the Five Teachings of Huayan }
+    - { title: Commentary on the Awakening of Faith in Mahayana }
 
 - id: dharmakirti
   slug: dharmakirti
