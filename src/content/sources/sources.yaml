@@ -1167,6 +1167,10 @@
   url: https://www.ccarnet.org/rabbinic-voice/platforms/article-statement-principles-reform-judaism/
   notes: >-
     Adopted May 1999 at the Pittsburgh convention. Read for image of God, mitzvot, repentance.
+    C2 (2026-10-09): page re-read in full (Preamble, God, Torah, Israel). Torah: "God's ongoing revelation to our
+    people and the record of our people's ongoing relationship with God"; commitment to study "the whole array of
+    mitzvot" and to fulfil "those that address us as individuals and as a community"; God section: "the spirit within
+    us is eternal". The statement acknowledges "the diversity of Reform Jewish beliefs and practices". Cite by section.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1319,6 +1323,9 @@
     Knowledge & Truth (2026-10-07): read Avot 1:1.
     R3 review (2026-10-08): read Sanhedrin 10:1 on Sefaria (Kulp version: "He who maintains that
     resurrection is not a biblical doctrine" has no portion in the world to come).
+    C2 (2026-10-09): read Berakhot 5:2 via the Sefaria API (Kulp version): God's power to bring rain is mentioned "in the
+    blessing for the resurrection of the dead" (Hebrew bi-teḥiyyat ha-metim), i.e. the Mishnah already names the second
+    Amidah blessing by its resurrection theme. Sanhedrin 10:1 reread.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1389,6 +1396,13 @@
     III.1.1, III.3.1, III.8.1 (Hebrew; our translation).
     Revelation & History (2026-10-07): read VIII.1, VIII.8-9 (redemption; fifteen refutations of fulfilment in the
     Second Temple; Daniel 9 against Christian readings), III.7 (Torah not abrogable). Hebrew; our translation.
+    C2 (2026-10-09): read the whole of Treatise VII (chapters 1-8, Sefaria node "[Treatise VII] The Resurrection of the
+    Dead") and Treatise IX chapters 1-6 ("[Treatise IX] The World to Come") via the Sefaria API; version "Emunot
+    we-Deot; Leipzig, 1864". Treatise.chapter locators follow Sefaria's divisions of that edition. Recension note:
+    Treatise VII survives in two Arabic versions; Ibn Tibbon's Hebrew represents one, and Rosenblatt's Yale translation
+    also renders the variant (Yale University Press catalogue: "the first translation into a modern language of the
+    variant of the seventh treatise"). This site cites only the Ibn Tibbon Hebrew; English is our paraphrase of the
+    Hebrew, never a translation of the Arabic and never Rosenblatt's wording.
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1406,6 +1420,14 @@
     Scanned original journal issue (PDF linked from the Tradition page) read; page numbers are the
     journal's printed pages (first page 5; PDF page n = journal page n+4). Read: pp. 5, 10, 12-14,
     17, 51-52. Not the 1992/2006 Doubleday pagination.
+    C2 (2026-10-09): page images re-read for pp. 10-11 (two creation accounts; Soloveitchik "unreservedly" accepts "the
+    unity and integrity of the Scriptures and their divine character" and rejects the documentary hypothesis; the two
+    accounts describe "two Adams ... two types"; Adam the first's image of God is his creative endowment and mandate to
+    fill and subdue the earth), 17-19 (Adam the second, formed from dust and given God's breath, seeks an intimate
+    relation with God; the redemptive is not identical with the dignified) and 51-52 (the man of faith oscillates
+    between majesty and covenant; the Halakhah seeks one community "where man is both the creative, free agent, and the
+    obedient servant of God"). Correction: the scan's offset is journal page = PDF page + 4 (PDF p. 6 shows journal p.
+    10).
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1441,6 +1463,8 @@
     the prophets' consolations concern the messianic era, disputing Shmuel's "only servitude to the kingdoms").
     R3 Review A (2026-10-08): re-read Sukkah 52a (the inclination's seven names; Genesis 8:21) and 52b (Resh Lakish:
     it attacks daily, and without God's help one would not overcome it) in a cached copy of the Davidson text.
+    C2 (2026-10-09): read Sanhedrin 90a via the Sefaria API (segments 15-19: the Mishnah, and the baraita that one who
+    denied the resurrection of the dead will have no share in it, "measure for measure").
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -4448,5 +4472,229 @@
     every hair enter a single hair, and each hair with its countless lions enters again, layer upon layer without end,
     like the jewels of the heavenly emperor's net); §8 (six characteristics: eye and ear are different, each condition
     "remains in its own position", 諸緣各住自位); §§9-10.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: ramban-shaar-ha-gemul-hebrew
+  type: primary
+  title: Sha'ar ha-Gemul (The Gate of Recompense), Hebrew text, in Torat ha-Adam
+  shortCitation: Nachmanides, Sha'ar ha-Gemul
+  author: Nachmanides (Moses ben Nahman)
+  traditionTags: [judaism]
+  place: Jerusalem
+  publisher: Mossad Harav Kook
+  year: 1963
+  url: https://www.sefaria.org/Torat_HaAdam%2C_The_Gate_of_Recompense
+  notes: >-
+    The final gate of Nachmanides' Torat ha-Adam. Sefaria's version record for Torat ha-Adam is "Mossad Harav Kook,
+    Jerusalem 1963" with a National Library of Israel catalogue link (NLI blocks automated access, so the record itself
+    was not opened; whether this is the Kitvei Ramban volume edited by C. B. Chavel was not confirmed and is not
+    claimed). Text read 2026-10-09 through the Sefaria API (the web page refuses scripted requests). Sefaria also hosts a
+    separate transcription ("Sha'ar HaGemul of the Ramban", source tora.ws, base edition unstated), which was not used.
+    Locator: Sefaria paragraph number of "Torat HaAdam, The Gate of Recompense" (87 paragraphs), cited as ¶n; no printed
+    pagination is cited. English is our paraphrase of the Hebrew, not Chavel's 1983 English translation. Read: ¶64 (two
+    rabbinic rewards besides the goods of this world: Gan Eden immediately after death, and the World to Come), ¶¶69-73
+    (the Mishnah's "World to Come" is ambiguous, but Sanhedrin 90a's "measure for measure" shows it is the world of the
+    resurrection, renewed after the messianic days, not the world of souls; Beit Hillel: formation in the world to come
+    begins with skin, flesh, sinews and bones), ¶¶75-78 (the resurrected live in body and soul, sustained like Moses on
+    the mountain by the radiance of the Shekhinah rather than food; the body's existence becomes like the soul's;
+    summary in ¶78: souls' reward is Gan Eden; then the messianic days, part of this world; at their end the judgment and
+    the resurrection, "the reward that includes body and soul", the great principle and hope, which is the World to
+    Come, enduring forever), ¶80 (Nachmanides praises Maimonides' account of the soul's delight in knowing God as "pure
+    words"), ¶¶82-84 and ¶87 (Maimonides makes the World to Come the bodiless world of souls and limits the duration of
+    the resurrection; all agree on the resurrection itself; Nachmanides keeps "the people of the resurrection" alive
+    forever into the World to Come; he cites Saadia's Daniel commentary as using "World to Come" as he does, and says
+    that with some Spanish authors who call the world of souls the World to Come the difference is one of names).
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: maimonides-helek-abelson
+  type: primary
+  title: Maimonides on the Jewish Creed (Introduction to Perek Helek, Commentary on Mishnah Sanhedrin 10)
+  shortCitation: Maimonides, Introduction to Helek (Abelson)
+  author: Moses Maimonides
+  translator: J. Abelson
+  traditionTags: [judaism]
+  containerTitle: "The Jewish Quarterly Review 19, no. 1 (October 1906): 24-58"
+  year: 1906
+  url: https://en.wikisource.org/wiki/Maimonides_on_the_Jewish_Creed
+  notes: >-
+    Public-domain English translation of Maimonides' Judeo-Arabic introduction to Sanhedrin chapter 10, made from J.
+    Holzer's 1901 parallel edition of the Arabic and the medieval Hebrew (Wikisource header). Metadata confirmed from the
+    Wikimedia Commons scan record (JQR 19:1, October 1906, pp. 24-58; PD-US) and the scan's own running heads; the PDF
+    was downloaded and its printed pages located (journal page = PDF page + 23). Cite the JQR page. Read 2026-10-09:
+    pp. 42-44 (resurrection "is one of the cardinal doctrines of the Law of Moses"; "it is the reward of the righteous
+    only"; "man is bound to die and become dissolved into his component parts"; the days of the Messiah are this-worldly
+    and lead to "the life of the world to come", which is the final goal and is the survival of the intellect), pp.
+    53-54 (eighth principle: "the whole of this Torah found in our hands this day is the Torah that was handed down by
+    Moses and that it is all of divine origin"; its interpretation is likewise of divine origin) and p. 56 (twelfth and
+    thirteenth principles; the thirteenth reads in full: "The resurrection of the dead. We have already explained
+    this."). The later liturgical Ani Ma'amin summaries are not Maimonides' wording and are not cited.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: maimonides-treatise-resurrection-hebrew
+  type: primary
+  title: Ma'amar Teḥiyyat ha-Metim (Treatise on Resurrection), Hebrew translation of Samuel ibn Tibbon
+  shortCitation: Maimonides, Treatise on Resurrection
+  author: Moses Maimonides
+  translator: Samuel ibn Tibbon (Hebrew)
+  traditionTags: [judaism]
+  containerTitle: Kovetz Teshuvot ha-Rambam
+  place: Leipzig
+  year: 1859
+  url: https://www.sefaria.org/Iggerot_HaRambam%2C_Maamar_Tekhiyat_HaMetim
+  notes: >-
+    Arabic original c. 1191 (the text gives the Seleucid year 1502); the Hebrew opens "Samuel son of Judah ibn Tibbon
+    said". Sefaria's version record: "Kobetz Teshuvot HaRambam, 1859" with an NLI catalogue link (not opened; NLI
+    blocks automated access); the editor is not named here because it was not confirmed. Read in full 2026-10-09
+    through the Sefaria API (ref "Iggerot HaRambam, Maamar Tekhiyat HaMetim"); the text is undivided, so locators are
+    descriptive. Passages: Maimonides answers reports from Damascus and Yemen that his Helek commentary and Mishneh
+    Torah were being used to deny resurrection; he replied that resurrection is "a pillar of the Torah", "the return of
+    the soul to the body", not to be interpreted figuratively, and that the life of the World to Come follows the
+    resurrection; denying that the soul will ever return to the body leads to denying miracles and is heresy; Daniel
+    12:2 cannot be interpreted otherwise; those whose souls return to their bodies will eat, drink, marry, beget and die
+    after very long lives, while the life with no death after it is the bodiless World to Come. English is our
+    paraphrase of the Hebrew.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: siddur-metsudah-hebrew
+  type: primary
+  title: "The Metsudah Siddur: A New Linear Siddur (Hebrew text of the weekday Amidah)"
+  shortCitation: Metsudah Siddur
+  translator: Avrohom Davis
+  traditionTags: [judaism]
+  year: 1981
+  url: https://www.sefaria.org/Siddur_Ashkenaz%2C_Weekday%2C_Shacharit%2C_Amidah%2C_Divine_Might
+  notes: >-
+    Ashkenazi rite. Sefaria's Siddur Ashkenaz Hebrew version "The Metsudah siddur: a new linear siddur with English
+    translation by Avrohom Davis, 1981" (CC-BY; NLI record linked, not opened; publisher not confirmed from a title page
+    and therefore omitted). Cite the Hebrew text by blessing, not by page. Read 2026-10-09 via the Sefaria API: weekday
+    Shacharit Amidah, second blessing ("Divine Might"): God is mighty forever, "reviver of the dead" (meḥayyeh metim),
+    sustains the living, supports the fallen, heals the sick, frees the captive and "keeps faith with those who sleep in
+    the dust"; "faithful are You to revive the dead"; closing: "Blessed are You, Lord, who revives the dead" (meḥayyeh
+    ha-metim). English is our translation of the Hebrew; Davis's English and notes are not quoted. Wording of other
+    rites and of modern movement prayer books was not checked.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: emet-ve-emunah-1988
+  type: primary
+  title: "Emet Ve-Emunah: Statement of Principles of Conservative Judaism"
+  shortCitation: Emet Ve-Emunah
+  author: Commission on the Philosophy of Conservative Judaism
+  traditionTags: [judaism]
+  place: New York
+  publisher: The Jewish Theological Seminary of America, The Rabbinical Assembly and United Synagogue of America
+  year: 1988
+  url: https://www.bjpa.org/content/upload/bjpa/stat/STATEMENT%20OF%20PRINCIPLES%20OF%20CONSERVATIVE%20JUDAISM.pdf
+  notes: >-
+    Scan hosted by the Berman Jewish Policy Archive; title, copyright and contents pages read (copyright 1988 by JTS,
+    the Rabbinical Assembly and the United Synagogue of America; ISBN 0-916219-06-2; LC 88-60314; commission chaired by
+    Robert Gordis). Cite the printed page (in the body, PDF page n = printed page n-6). Read 2026-10-09: pp. 19-20
+    (Revelation: affirms revelation as "the uncovering of an external source of truth emanating from God"; rejects
+    relativism and also "fundamentalism and literalism, which do not admit a human component in revelation"; Sinai the
+    single greatest event of revelation, continued in prophets, sages, Talmud, codes and responsa; three views held
+    within the movement: verbal revelation whose content is normative as defined by rabbinic interpretation; an
+    ineffable encounter that inspires human formulation; continuing discovery through nature and history), pp. 21-25
+    (Halakhah indispensable, "what the Jewish community understands God's will to be"; its sanctity attaches to "the
+    body of the law, not to each law separately"; change only through rabbinic decision, with the burden of proof on
+    those who would alter practice; the Committee on Jewish Law and Standards and the congregational rabbi), pp. 25-27
+    (problem of evil; denies "as false and blasphemous" that the Holocaust was the result of its victims'
+    transgressions), pp. 28-30 (eschatology: bodily resurrection and the immortality of the soul named as the
+    tradition's two doctrines; "For some of us, they are literal truths ... Others understand these teachings in a more
+    figurative way"). A movement statement of 1988, not a timeless definition.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: ccar-pittsburgh-platform-1885
+  type: primary
+  title: The Pittsburgh Platform (Declaration of Principles)
+  shortCitation: Pittsburgh Platform (1885)
+  author: Pittsburgh Rabbinical Conference
+  traditionTags: [judaism]
+  place: Pittsburgh
+  year: 1885
+  url: https://www.ccarnet.org/rabbinic-voice/platforms/article-declaration-principles/
+  notes: >-
+    Text as published by the Central Conference of American Rabbis (meeting of November 16-19, 1885, Isaac Mayer Wise
+    presiding; the CCAR 1999 preamble calls it the guidelines issued by "fifteen rabbis" that defined Reform Judaism for
+    the next fifty years). Read in full 2026-10-09. Cite by numbered article. Art. 3: "we accept as binding only its
+    moral laws, and maintain only such ceremonies as elevate and sanctify our lives"; art. 7: the soul is immortal; "We
+    reject as ideas not rooted in Judaism, the beliefs both in bodily resurrection and in Gehenna and Eden". A historical
+    platform, later restated by the Columbus Platform (1937), the Centenary Perspective (1976) and the 1999 Statement.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: ccar-centenary-perspective-1976
+  type: primary
+  title: "Reform Judaism: A Centenary Perspective"
+  shortCitation: CCAR, Centenary Perspective (1976)
+  author: Central Conference of American Rabbis
+  traditionTags: [judaism]
+  year: 1976
+  url: https://www.ccarnet.org/rabbinic-voice/platforms/article-reform-judaism-centenary-perspective/
+  notes: >-
+    CCAR text read in full 2026-10-09 (the 1999 Statement's preamble dates it to 1976). Cite by numbered section. §3
+    Torah: "Torah results from the relationship between God and the Jewish people"; the creation of Torah has not
+    ceased. §4 Religious obligations: Reform Jews "are called upon to confront the claims of Jewish tradition, however
+    differently perceived, and to exercise their individual autonomy, choosing and creating on the basis of commitment
+    and knowledge". The introduction names "the Reform principle of the autonomy of the individual".
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: hirsch-nineteen-letters-drachman
+  type: primary
+  title: "The Nineteen Letters of Ben Uziel: Being a Spiritual Presentation of the Principles of Judaism"
+  shortCitation: Hirsch, Nineteen Letters
+  author: Samson Raphael Hirsch
+  translator: Bernard Drachman
+  traditionTags: [judaism]
+  place: New York and London
+  publisher: Funk & Wagnalls
+  year: 1899
+  url: https://archive.org/details/nineteenletters00hirs
+  notes: >-
+    German original 1836. Title page of the 1899 scan read (Princeton Theological Seminary copy; Funk & Wagnalls, New
+    York and London, copyright 1899; translator Bernard Drachman). Public domain. Cite letter and printed page. Read
+    2026-10-09: Letter 17, pp. 170-174 (Reform rightly understood is "education, progress to the Torah height, not,
+    however, lowering the Torah to the level of the age"; to destroy "the eternal code set up for all ages by the God of
+    Eternity" "is not and never can be Reform"); Letters 10-11, pp. 103-108 (the binding contents of the Torah; its
+    teachings rest on "historically-revealed manifestations of Divine truth").
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: fackenheim-jewish-faith-holocaust
+  type: article
+  title: "Jewish Faith and the Holocaust: A Fragment"
+  shortCitation: Fackenheim, "Jewish Faith and the Holocaust"
+  author: Emil L. Fackenheim
+  traditionTags: [judaism]
+  containerTitle: Commentary (August 1968)
+  year: 1968
+  url: https://www.commentary.org/articles/emil-fackenheim/jewish-faith-and-the-holocaust-a-fragment/
+  notes: >-
+    Full text read 2026-10-09 on commentary.org (publication date 1968-08-01 in the page metadata). Printed page numbers
+    were not available, so cite by section (II, III). Section II: Auschwitz resists rational and religious explanation;
+    "Good Orthodox Jews have resorted to the ancient 'for our sins are we punished,' but this recourse, unacceptable
+    already to Job, is in this case all the more impossible"; "No purpose, religious or non-religious, will ever be found
+    in Auschwitz"; seeking a purpose is ruled out, seeking a response is "inescapable"; "a commanding Voice" from
+    Auschwitz: Jews "are forbidden to grant posthumous victories to Hitler", commanded to survive and remember, forbidden
+    to despair of man and of "the God of Israel"; a religious Jew "may be forced into new, possibly revolutionary,
+    relationships" with God. He also rejects a Christian theologian's view of Auschwitz as a divine reminder of Christ's
+    sufferings. One thinker's response, not a consensus position.
+  verificationStatus: checked
+  verifiedOn: '2026-10-09'
+- id: jewish-encyclopedia-sefirot
+  type: academic
+  title: Sefirot, The Ten
+  shortCitation: Jewish Encyclopedia, "Sefirot, The Ten"
+  author: Executive Committee of the Editorial Board and Isaac Broydé
+  traditionTags: [judaism]
+  containerTitle: The Jewish Encyclopedia, vol. 11, pp. 154-155
+  publisher: Funk and Wagnalls
+  place: New York
+  url: https://www.jewishencyclopedia.com/articles/13387-sefirot-the-ten
+  notes: >-
+    Public-domain encyclopedia (1901-1906); the site gives the article's page images as vol. 11, pp. 154-155 (volume
+    year not separately confirmed, so `year` is omitted). Read in full 2026-10-09. The Sefirot are the "potencies or
+    agencies by means of which, according to the Cabala, God manifested His existence in the production of the
+    universe"; the developed doctrine dates from the twelfth century; Kabbalists diverged on their relation to the En Sof
+    (Azriel and Recanati: distinct from the Divine Being; the Ma'arekhet: identical with it in their totality; the Zohar:
+    names of the Deity; Luria and Cordovero: the One reveals himself through them but they "can never include the
+    Infinite"). Dated and pre-Scholem: used only for this basic description, not for historical judgments. Lurianic
+    tzimtzum is not covered by this entry and is not claimed.
   verificationStatus: checked
   verifiedOn: '2026-10-09'
