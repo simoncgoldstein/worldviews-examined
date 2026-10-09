@@ -693,8 +693,11 @@
     - The divine image as intellect
     - Most evils are self-inflicted
     - The ethical mean and the training of dispositions
+    - Resurrection affirmed as a principle; the final World to Come incorporeal
   representativeWorks:
     - { title: "Commentary on the Mishnah (including the Eight Chapters, Shemonah Perakim)", year: 1168, sourceId: maimonides-eight-chapters }
+    - { title: "Introduction to Perek Helek, with the Thirteen Principles (Commentary on Mishnah Sanhedrin 10)", sourceId: maimonides-helek-abelson }
+    - { title: "Treatise on Resurrection (Ma'amar Tehiyyat ha-Metim)", year: 1191, sourceId: maimonides-treatise-resurrection-hebrew }
     - { title: Mishneh Torah, sourceId: maimonides-mishneh-torah-touger }
     - { title: Guide of the Perplexed, year: 1190, sourceId: maimonides-guide-friedlander }
   notes: Birth year follows SEP (1138); some sources give 1135 or 1137. Mishneh Torah and Guide years are completion dates (the Guide's is sometimes given as c. 1185-1190). Registry sourceId maimonides-guide should be reconciled with maimonides-guide-friedlander.
@@ -795,6 +798,7 @@
     - Humanity as the purpose and culmination of creation
     - Free choice without divine compulsion
     - Reward and punishment as just
+    - Bodily resurrection at the redemption; recompense of body and soul together
   representativeWorks:
     - { title: "The Book of Beliefs and Opinions (Kitab al-Amanat wa-l-I'tiqadat; Emunot ve-De'ot)", sourceId: saadia-emunot-ibn-tibbon }
     - { title: Arabic translation of the Torah (Tafsir) }
@@ -821,19 +825,51 @@
   significance: >-
     Nachmanides reads the tree of knowledge as the origin of human will and desire, and the messianic healing of the
     heart as its remedy, the strongest medieval alternative to Maimonides on Eden. He gives the Jewish lane an
-    account in which choice is both godlike and a burden.
+    account in which choice is both godlike and a burden. His Gate of Recompense is the classic statement of a final
+    World to Come in which the resurrected live forever in body and soul.
   keyIdeas:
     - Original human nature acting naturally, as the heavens do
     - Choice as godlike yet burdensome
     - Divine assistance to the person who seeks purity
     - Messianic restoration of natural goodness
     - Kabbalistic layers within the plain sense of Torah
+    - The World to Come as the embodied world of the resurrection
   representativeWorks:
     - { title: Commentary on the Torah, sourceId: ramban-torah-chavel }
-    - { title: Torat ha-Adam }
+    - { title: "Torat ha-Adam, including Sha'ar ha-Gemul (The Gate of Recompense)", sourceId: ramban-shaar-ha-gemul-hebrew }
     - { title: Milhamot ha-Shem }
     - { title: Sefer ha-Vikkuah (account of the 1263 disputation) }
   notes: Often critical of Maimonidean positions.
+
+- id: fackenheim
+  slug: emil-fackenheim
+  name: Emil L. Fackenheim
+  worldview: judaism
+  role: specialist
+  usedFor: [post-Holocaust Jewish theology]
+  schools: [Modern Jewish philosophy]
+  era: 1916–2003
+  description: German-born Jewish philosopher whose post-Holocaust theology refused any purpose for Auschwitz while calling Jews to a commanded response.
+  bio: >-
+    Emil Ludwig Fackenheim was born in Halle, Germany. In 1938-1939 he was interned at the Sachsenhausen camp; after
+    his release he escaped to Britain and was sent to Canada as an enemy alien in 1940. He served as a rabbi in Hamilton, Ontario, and taught philosophy for decades at the
+    University of Toronto, writing on Hegel and on Jewish thought. From the late 1960s the Holocaust became the centre
+    of his work, in essays such as "Jewish Faith and the Holocaust" (1968) and the books God's Presence in History
+    (1970) and To Mend the World (1982). He later settled in Jerusalem, where he died in 2003.
+  significance: >-
+    Fackenheim gives the Jewish suffering answer a modern voice that rejects both "for our sins are we punished" and
+    any purpose for Auschwitz, while insisting on a commanded response: survival, memory, and refusal to despair of God
+    or the world.
+  keyIdeas:
+    - No purpose can be found in Auschwitz
+    - Seeking a response rather than an explanation
+    - The commanding Voice of Auschwitz
+    - No posthumous victories to Hitler
+  representativeWorks:
+    - { title: "Jewish Faith and the Holocaust: A Fragment", year: 1968, sourceId: fackenheim-jewish-faith-holocaust }
+    - { title: "God's Presence in History", year: 1970 }
+    - { title: "To Mend the World", year: 1982 }
+  notes: Birth year 1916 follows most reference works (some give 1917). Biographical details follow standard reference accounts; the essay cited is the one read.
 
 # --- Classical Islam ---------------------------------------------------------------------
 - id: ash-ari
