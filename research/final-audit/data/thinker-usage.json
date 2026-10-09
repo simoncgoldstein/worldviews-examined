@@ -528,7 +528,7 @@
    "revelation-history"
   ],
   "bio": true,
-  "worksWithSource": 3
+  "worksWithSource": 5
  },
  {
   "id": "halevi",
@@ -557,12 +557,15 @@
   "name": "Joseph B. Soloveitchik",
   "worldview": "judaism",
   "role": "primary",
-  "answers": 1,
+  "answers": 3,
   "answerIds": [
-   "judaism/love-beauty-creativity"
+   "judaism/what-is-man",
+   "judaism/love-beauty-creativity",
+   "judaism/revelation"
   ],
   "domains": [
-   "human-nature"
+   "human-nature",
+   "revelation-history"
   ],
   "bio": true,
   "worksWithSource": 2
@@ -572,7 +575,7 @@
   "name": "Saadia Gaon",
   "worldview": "judaism",
   "role": "primary",
-  "answers": 13,
+  "answers": 15,
   "answerIds": [
    "judaism/something-rather-than-nothing",
    "judaism/ultimate-personal",
@@ -584,6 +587,8 @@
    "judaism/great-and-terrible",
    "judaism/know-the-good",
    "judaism/evil",
+   "judaism/after-death",
+   "judaism/final-end",
    "judaism/revelation",
    "judaism/history",
    "judaism/jesus"
@@ -593,6 +598,7 @@
    "knowledge-truth",
    "human-nature",
    "morality-evil",
+   "salvation-destiny",
    "revelation-history"
   ],
   "bio": true,
@@ -603,7 +609,7 @@
   "name": "Nachmanides (Moses ben Nahman)",
   "worldview": "judaism",
   "role": "primary",
-  "answers": 8,
+  "answers": 9,
   "answerIds": [
    "judaism/something-rather-than-nothing",
    "judaism/order",
@@ -611,6 +617,7 @@
    "judaism/ultimate-authority",
    "judaism/great-and-terrible",
    "judaism/self-salvation",
+   "judaism/after-death",
    "judaism/final-end",
    "judaism/jesus"
   ],
@@ -620,6 +627,21 @@
    "human-nature",
    "salvation-destiny",
    "revelation-history"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "fackenheim",
+  "name": "Emil L. Fackenheim",
+  "worldview": "judaism",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "judaism/suffering"
+  ],
+  "domains": [
+   "morality-evil"
   ],
   "bio": true,
   "worksWithSource": 1
