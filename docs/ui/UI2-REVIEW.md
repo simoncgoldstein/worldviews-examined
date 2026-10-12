@@ -14,7 +14,9 @@
 | `origin/main` at review start, re-fetched before integration (unchanged) | `f3b17b8f4bfae06a651ebe6e37781f98fc1501cb` |
 | Merge commit bringing `main` into the branch | `2301b12` |
 | Merge base after integration | `f3b17b8` (the branch now contains all of `main`) |
-| Final branch head | the commit that adds this record (its SHA is reported in the PR comment and the final report) |
+| Review fixes | `dbb5403` |
+| Review record and screenshots | `d80bfd8` |
+| Final branch head | the docs-only commit that records these SHAs, the child of `d80bfd8` |
 
 **Method.** `git fetch` confirmed `main` was still `f3b17b8` (PR #28 `0428e56`, PR #29 `641ad2f`). The branch was updated with a normal merge commit (`git merge --no-ff origin/main`). Production commits were kept, and no history was rewritten or force-pushed.
 
