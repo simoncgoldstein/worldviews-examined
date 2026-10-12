@@ -1,0 +1,24 @@
+---
+// Reading level 3 ("Examine"): the answer's analytical sections, grouped by
+// src/lib/remark-answer-sections.mjs into one native disclosure. The summary names the real
+// section titles from the MDX body; the sections inside keep their own headings and ids, and a
+// fragment link to either one opens this disclosure (src/scripts/reveal-hash.ts).
+interface Props {
+  ns: string;
+  /** Section titles inside this level, joined with "|". */
+  titles: string;
+}
+
+const { ns, titles } = Astro.props;
+const names = titles.split('|').filter(Boolean);
+---
+
+<details class="level level--examine" data-level="examine">
+  <summary class="level__summary" id={`${ns}-examine`}>
+    <span class="level__kicker">Examine</span>
+    <span class="level__title">{names.join(' and ')}</span>
+  </summary>
+  <div class="level__body">
+    <slot />
+  </div>
+</details>

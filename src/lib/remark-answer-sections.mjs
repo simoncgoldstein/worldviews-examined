@@ -66,6 +66,40 @@ export default function remarkAnswerSections() {
         output.push(node);
       }
     }
-    tree.children = output;
+    tree.children = groupExamineLevel(output, ns);
   };
+}
+
+// The analytical sections (reading level 3, "Examine") are presented together as one disclosure:
+// Christian response + Pressure questions, or Strongest objection + Christian reply. This is a
+// presentation wrapper only; the sections, their titles, order and ids are unchanged.
+const EXAMINE_SLUGS = new Set(['christian-response', 'pressure-questions', 'strongest-objection', 'christian-reply']);
+
+const sectionSlug = (node) =>
+  node.type === 'mdxJsxFlowElement' && node.name === 'AnswerSection'
+    ? node.attributes.find((a) => a.name === 'slug')?.value
+    : undefined;
+const sectionTitle = (node) => node.attributes.find((a) => a.name === 'title')?.value;
+
+function groupExamineLevel(nodes, ns) {
+  const out = [];
+  let group;
+  for (const node of nodes) {
+    if (EXAMINE_SLUGS.has(sectionSlug(node))) {
+      if (!group) {
+        group = { type: 'mdxJsxFlowElement', name: 'AnswerLevel', attributes: [attribute('ns', ns)], children: [] };
+        out.push(group);
+      }
+      group.children.push(node);
+    } else {
+      group = undefined;
+      out.push(node);
+    }
+  }
+  for (const node of out) {
+    if (node.name === 'AnswerLevel') {
+      node.attributes.push(attribute('titles', node.children.map(sectionTitle).join('|')));
+    }
+  }
+  return out;
 }

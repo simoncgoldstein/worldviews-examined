@@ -1,0 +1,43 @@
+---
+// Reading level 1 ("At a glance"): the six worldview names and their reviewed one-sentence
+// theses (`lede` frontmatter), in worldview order. Each card links to the worldview's full answer
+// on the same page (#<worldviewId>), so it works as a plain anchor without JavaScript; with
+// JavaScript the link opens that answer's panel (src/scripts/answer-panels.ts).
+// No scope strings, thinker lists or body prose appear here.
+import type { Worldview } from '../content/schemas';
+import type { AnswerEntry } from '../lib/content';
+
+interface Props {
+  worldviews: Worldview[];
+  answers: Map<string, AnswerEntry>;
+}
+
+const { worldviews, answers } = Astro.props;
+---
+
+<ol class="thesis-grid" role="list">
+  {
+    worldviews.map((worldview) => {
+      const answer = answers.get(worldview.id);
+      return (
+        <li class="thesis-card" data-worldview={worldview.id} data-thesis-card={worldview.id}>
+          <p class="thesis-card__head">
+            <a class="thesis-card__link" href={`#${worldview.id}`}>
+              <span class="thesis-card__name">{worldview.name}</span>
+              <span class="visually-hidden">: read the full answer</span>
+            </a>
+            <span class="thesis-card__cue" aria-hidden="true">
+              <span class="thesis-card__cue-closed">Read</span>
+              <span class="thesis-card__cue-open">Open below</span>
+            </span>
+          </p>
+          {answer?.data.lede ? (
+            <p class="thesis-card__thesis">{answer.data.lede}</p>
+          ) : (
+            <p class="thesis-card__thesis thesis-card__thesis--empty">No answer has been written for this question yet.</p>
+          )}
+        </li>
+      );
+    })
+  }
+</ol>

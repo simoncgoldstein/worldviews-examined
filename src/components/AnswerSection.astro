@@ -1,9 +1,9 @@
 ---
 // One semantic section of an answer body. Injected around each "## Heading" by
-// src/lib/remark-answer-sections.mjs. The "Deep dive" section is collapsible; every other
-// section is always visible. Section marks (§, ◇) come from CSS keyed on `data-section`.
-import { symbols } from '../lib/labels';
-
+// src/lib/remark-answer-sections.mjs. The "Deep dive" section (reading level 4, "Study") is a
+// collapsible <details>; the analytical sections are grouped by AnswerLevel; every other section
+// is always visible once its answer is open. Section marks (§, ◇) come from CSS keyed on
+// `data-section`.
 interface Props {
   ns: string;
   slug: string;
@@ -16,11 +16,12 @@ const id = `${ns}-${slug}`;
 
 {
   slug === 'deep-dive' ? (
-    <details class="deep-dive" data-section={slug}>
-      <summary id={id}>
-        <span aria-hidden="true">{symbols.forward} </span>{title}
+    <details class="level level--study deep-dive" data-level="study" data-section={slug}>
+      <summary class="level__summary" id={id}>
+        <span class="level__kicker">Study</span>
+        <span class="level__title">{title}</span>
       </summary>
-      <div class="deep-dive__body prose">
+      <div class="level__body deep-dive__body prose">
         <slot />
       </div>
     </details>
