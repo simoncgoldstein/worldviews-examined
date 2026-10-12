@@ -12,7 +12,7 @@ const content = await getContent();
 >
   <div class="container page">
     <header class="page-head">
-      <p class="eyebrow">Worldview Explorer</p>
+      <p class="eyebrow">Reference</p>
       <h1>Worldviews</h1>
       <p class="lede">
         Six comparison families, not claims of total internal uniformity. Each page states its
@@ -23,7 +23,7 @@ const content = await getContent();
     <ul class="card-grid">
       {
         content.worldviews.map((worldview) => (
-          <li>
+          <li data-worldview={worldview.id}>
             <h2 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
             <p>{worldview.description}</p>
             <p class="meta">

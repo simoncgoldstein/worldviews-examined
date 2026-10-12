@@ -1,0 +1,159 @@
+/* Homepage: questions first, then domains, worldviews, reading modes and reference links. */
+
+.home-hero {
+  padding: var(--space-6) 0 var(--space-4);
+}
+@media (min-width: 48rem) {
+  .home-hero { padding: var(--space-12) 0 var(--space-6); }
+}
+.home-hero h1 {
+  font-size: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-4);
+}
+.home-hero__tagline {
+  font-size: var(--text-xl);
+  line-height: 1.35;
+  max-width: 34ch;
+  margin-bottom: var(--space-4);
+}
+.home-hero__text {
+  max-width: var(--measure);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+.home-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-6);
+  margin: 0;
+}
+
+.home-section .section-title { margin-top: var(--space-12); }
+
+/* Starting questions: compact cards, three across on wide screens. */
+.question-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+}
+.question-card {
+  position: relative;
+  margin: 0;
+  padding: var(--space-4) var(--space-5) var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+}
+.question-card:hover { border-color: var(--color-rule-strong); background: var(--color-bg); }
+.question-card__domain {
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+}
+.question-card__title { font-size: var(--text-lg); line-height: 1.3; margin: 0 0 var(--space-2); }
+.question-card__title a { color: var(--color-text); text-decoration: none; }
+.question-card__title a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.question-card:hover .question-card__title a { text-decoration: underline; text-decoration-thickness: 0.06em; }
+@supports selector(:has(a)) {
+  .question-card__title a:focus-visible { outline: none; }
+  .question-card:has(a:focus-visible) { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+}
+.question-card__summary { font-size: var(--text-ui); line-height: 1.5; color: var(--color-text-muted); margin: 0; }
+
+/* Domains: a numbered, ruled list in two or three columns. */
+.domain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: domain;
+  display: grid;
+  gap: 0 var(--space-8);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+.domain-list__item {
+  counter-increment: domain;
+  margin: 0;
+  padding: var(--space-4) 0 var(--space-5);
+  border-bottom: 1px solid var(--color-rule);
+}
+.domain-list__title { font-size: var(--text-lg); margin: 0 0 var(--space-2); }
+.domain-list__title a { color: var(--color-text); text-decoration-color: var(--color-rule-strong); }
+.domain-list__title a:hover { color: var(--color-link-hover); text-decoration-color: currentColor; }
+.domain-list__title::before {
+  content: counter(domain, decimal-leading-zero);
+  content: counter(domain, decimal-leading-zero) / '';
+  display: block;
+  margin-bottom: var(--space-1);
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  color: var(--color-text-muted);
+}
+.domain-list__text { font-size: var(--text-ui); line-height: 1.5; margin: 0 0 var(--space-2); }
+.domain-list__count { font: 500 var(--text-sm) / 1.4 var(--font-sans); color: var(--color-text-muted); margin: 0; }
+
+/* Worldviews: names with their accent mark; colour orients, the words identify. */
+.worldview-strip {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0 var(--space-6);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  font-family: var(--font-sans);
+  font-size: var(--text-ui);
+  font-weight: 500;
+}
+.worldview-strip li { margin: 0; border-bottom: 1px solid var(--color-rule); }
+.worldview-strip a {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch);
+  padding-block: var(--space-1);
+  color: var(--color-text);
+  text-decoration: none;
+}
+.worldview-strip a:hover { text-decoration: underline; }
+
+/* Reading modes: described, with honest availability. */
+.mode-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4) var(--space-8);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+}
+.mode-list__item { margin: 0; padding-top: var(--space-3); border-top: 2px solid var(--color-rule); }
+.mode-list__item:first-child { border-top-color: var(--color-accent); }
+.mode-list__name { font-size: var(--text-lg); margin: 0 0 var(--space-2); }
+.mode-list__text { font-size: var(--text-ui); line-height: 1.5; margin: 0 0 var(--space-2); }
+.mode-list__status { font: 500 var(--text-sm) / 1.4 var(--font-sans); color: var(--color-text-muted); margin: 0; }
+
+/* Reference links. */
+.reference-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0 var(--space-8);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+}
+.reference-list li {
+  margin: 0;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-rule);
+}
+.reference-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  font: 600 var(--text-ui) / 1.2 var(--font-sans);
+}
+.reference-list span { display: block; font-size: var(--text-ui); line-height: 1.45; color: var(--color-text-muted); }
