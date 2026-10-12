@@ -3667,6 +3667,7 @@
   traditionTags:
   - judaism
   containerTitle: Hebrew Wikisource
+  edition: "online Hebrew transcription; printed base edition not named"
   year: 2021
   url: https://he.wikisource.org/wiki/%D7%95%D7%99%D7%9B%D7%95%D7%97_%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94
   notes: >-
@@ -3730,6 +3731,7 @@
   traditionTags:
   - islam
   containerTitle: King Saud University Quran Project
+  edition: "online Arabic text; printed base edition not named"
   url: https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya157.html
   notes: >-
     Arabic text on the KSU Qur'an site (base edition not named; report numbers 10779-10792 as printed). Cite by sura:aya
@@ -3749,6 +3751,7 @@
   traditionTags:
   - islam
   containerTitle: Altafsir.com (Royal Aal al-Bayt Institute for Islamic Thought)
+  edition: "online Arabic text; printed base edition not named"
   url: https://www.altafsir.com/Tafasir.asp?tMadhNo=1&tTafsirNo=4&tSoraNo=4&tAyahNo=157&tDisplay=yes&UserProfile=0&LanguageId=1
   notes: >-
     Arabic text on altafsir.com (windows-1256 encoding; base edition not named). Cite by sura:aya; our translation or
@@ -3769,6 +3772,7 @@
   traditionTags:
   - islam
   containerTitle: King Saud University Quran Project
+  edition: "online Arabic text; printed base edition not named"
   url: https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya157.html
   notes: >-
     Arabic text on the KSU Qur'an site (reading view; base edition not named). Cite by sura:aya; paraphrase only. Read
