@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 354
+  "citeCount": 355
  },
  {
   "id": "wcf",
@@ -763,11 +763,11 @@
    "judaism"
   ],
   "status": "checked",
-  "answers": 2,
+  "answers": 4,
   "lanes": [
    "judaism"
   ],
-  "citeCount": 2
+  "citeCount": 4
  },
  {
   "id": "halevi-kuzari-hirschfeld",
@@ -821,7 +821,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 62
+  "citeCount": 60
  },
  {
   "id": "midrash-rabbah-sefaria",
@@ -860,7 +860,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 12
+  "citeCount": 11
  },
  {
   "id": "rashi-tanakh-judaica-press",
@@ -882,11 +882,11 @@
    "judaism"
   ],
   "status": "checked",
-  "answers": 14,
+  "answers": 16,
   "lanes": [
    "judaism"
   ],
-  "citeCount": 25
+  "citeCount": 34
  },
  {
   "id": "soloveitchik-lonely-man-of-faith",
@@ -895,11 +895,11 @@
    "judaism"
   ],
   "status": "checked",
-  "answers": 1,
+  "answers": 3,
   "lanes": [
    "judaism"
   ],
-  "citeCount": 1
+  "citeCount": 4
  },
  {
   "id": "talmud-bavli-koren",
@@ -908,12 +908,12 @@
    "judaism"
   ],
   "status": "checked",
-  "answers": 19,
+  "answers": 20,
   "lanes": [
    "judaism",
    "islam"
   ],
-  "citeCount": 53
+  "citeCount": 55
  },
  {
   "id": "tanakh-jps-gender-sensitive",
@@ -926,7 +926,7 @@
   "lanes": [
    "judaism"
   ],
-  "citeCount": 61
+  "citeCount": 60
  },
  {
   "id": "tanya-kehot",
@@ -2875,5 +2875,135 @@
    "buddhism"
   ],
   "citeCount": 2
+ },
+ {
+  "id": "ramban-shaar-ha-gemul-hebrew",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 8
+ },
+ {
+  "id": "maimonides-helek-abelson",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 3,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "maimonides-treatise-resurrection-hebrew",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "siddur-metsudah-hebrew",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "emet-ve-emunah-1988",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 4,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 4
+ },
+ {
+  "id": "ccar-pittsburgh-platform-1885",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "ccar-centenary-perspective-1976",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "hirsch-nineteen-letters-drachman",
+  "type": "primary",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "fackenheim-jewish-faith-holocaust",
+  "type": "article",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "jewish-encyclopedia-sefirot",
+  "type": "academic",
+  "tags": [
+   "judaism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "judaism"
+  ],
+  "citeCount": 1
  }
 ]
