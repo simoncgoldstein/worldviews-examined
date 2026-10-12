@@ -217,7 +217,7 @@ Sources for all answers are listed once, after the reading region (see Citations
 
 ### Compare mode (UI-2)
 
-`?mode=compare&views=<first>,<second>` on the same question page shows any two answers in paired rows, by semantic section identity: At a glance (`lede`, scope), Understand (the view / The Christian view; What this explains well), Examine (each answer's own analytical `<details>`, unrenamed), Study (Deep dive; thinkers and links). The rows reuse the answers' own rendered elements; no prose is duplicated or summarised. Details in `docs/ui/UI2-COMPARE.md`.
+`?mode=compare&views=<first>,<second>` on the same question page shows any two answers in paired rows, by semantic section identity: At a glance (the `lede` thesis only: `scope` and `traditionNotes` stay frontmatter metadata and, since PR #28, are not shown under a thesis in Explore or Compare), Understand (the view / The Christian view; What this explains well), Examine (each answer's own analytical `<details>`, unrenamed), Study (Deep dive; thinkers and links). The rows reuse the answers' own rendered elements; no prose is duplicated or summarised. Details in `docs/ui/UI2-COMPARE.md`.
 
 ### Editorial notation
 

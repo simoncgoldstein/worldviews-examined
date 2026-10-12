@@ -47,7 +47,7 @@ DOM movement is the simplest arrangement in which DOM order, tab order and visua
 
 ## 3. Why content is not duplicated
 
-- Compare shows the selected answers' own rendered elements (`lede`, scope, tradition notes, the MDX sections, the Deep dive, the thinker list).
+- Compare shows the selected answers' own rendered elements (`lede`, the MDX sections, the Deep dive, the thinker list). *(Review update: the scope and tradition notes were removed from the reading flow by PR #28 and are no longer moved or shown; see `UI2-REVIEW.md`.)*
 - No comparison summaries, generated counterarguments, pairwise text or second citation registry exist. No MDX file was added or edited.
 - **Test:** for every ordered pair on every question, the text of the two Compare columns (excluding the interface labels) equals the text of the corresponding Explore answers, and nothing of either answer is left behind in its panel.
 
@@ -96,7 +96,7 @@ Nothing in the selectors implies order of merit. First and second are positions,
 1. question title;
 2. the mode switch;
 3. the two selectors;
-4. **At a glance:** the two worldview names (h3, in their accents) with their reviewed theses and scope lines;
+4. **At a glance:** the two worldview names (h3, in their accents) with their reviewed theses (no scope lines since PR #28);
 5. **Understand**, starting immediately below.
 
 The six-card overview is not shown in Compare.
@@ -105,7 +105,7 @@ The six-card overview is not shown in Compare.
 
 | Stage (h2) | Row | Each side shows |
 |---|---|---|
-| At a glance | glance | `lede`, scope, tradition notes |
+| At a glance | glance | `lede` (scope and tradition notes are frontmatter only since PR #28) |
 | Understand | view | *The view* / *The Christian view* |
 | Understand | strengths | *What this explains well* |
 | Examine | examine | the answer's own Examine `<details>` (§8) |
@@ -133,6 +133,7 @@ The reader therefore meets *The view* (A), *The view* (B), then *What this expla
 - This is the same DOM as the desktop layout, so there is no separate mobile content system.
 - Cells keep the 64ch reading measure on tablets.
 - At 320 and 390px nothing overflows, including with 150% default text (§21).
+- *(Review update, `UI2-REVIEW.md` I4: each passage's worldview label is sticky within its passage on these layouts, so it stays in view while a long passage scrolls.)*
 
 ## 8. Christian / non-Christian analytical asymmetry
 
@@ -259,7 +260,7 @@ Canonical form: `/questions/<slug>/?mode=compare&views=<first>,<second>`, using 
 **Section identity** (from `src/lib/answer-sections.ts` and the remark plugin):
 
 - `[data-section="the-view" | "the-christian-view"]`, `[data-section="what-this-explains-well"]`, `[data-level="examine"]`, `[data-level="study"]`;
-- the panel's `.answer__thesis`, `.answer__scope`, `.tradition-notes` and `.answer__footer`.
+- the panel's `.answer__thesis` and `.answer__footer` (`.answer__scope` and `.tradition-notes` are no longer rendered, PR #28).
 
 Any unexpected body element would be kept with the footer row rather than lost; the validator currently allows none.
 
@@ -317,7 +318,7 @@ No loading shell hides content without a bounded fallback (§16).
 - The URL decides the mode.
 - Explore's saved state only reopens panels inside the hidden Explore region, ready for the reader's return.
 
-**Decision — a module that arrives late still applies a Compare URL.** The reader asked for a comparison. Unlike UI-1's collapse case, no text inside the comparison is hidden; the four unselected answers move out of view. This is recorded as a judgment, not a defect.
+**Decision — a module that arrives late still applies a Compare URL.** The reader asked for a comparison. Unlike UI-1's collapse case, no text inside the comparison is hidden; the four unselected answers move out of view. This is recorded as a judgment, not a defect. *(Review update, `UI2-REVIEW.md` I2: a late script now applies the comparison only if the reader is still idle at the top; if they have scrolled or focused, the page stays in Explore and the Compare link offers the requested pair.)*
 
 ## 17. Print behaviour
 
@@ -424,6 +425,8 @@ Driven by Playwright scripts kept in the session scratchpad (not committed):
 | `05-phone-matched-390-light.png` | Phone matched pair: end of the Hindu view, then the Buddhist view |
 | `06-compare-dark-1280.png` | Dark theme, Examine open, Naturalism / Buddhism (both with a Christian response) |
 | `07-deep-dive-1280-light.png` | Long Deep dives side by side: the shorter side ends with no padding |
+
+*Review note:* screenshots 01–04, 06 and 07 were taken before PR #28 and still show the scope lines under the theses; the current state is in `docs/ui/screenshots/ui2-review/` (`UI2-REVIEW.md`).
 
 **Visual defects fixed during QA:**
 

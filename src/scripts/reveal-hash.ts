@@ -88,12 +88,18 @@ try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
   const late = !document.documentElement.classList.contains('js');
+  // The controls that appear above a late reader's position must not push the text they are reading.
+  const anchor = late ? document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3) : null;
+  const anchorTop = anchor?.getBoundingClientRect().top;
   const hashTarget = targetOf(window.location.hash);
   initAnswerPanels(hashTarget, late);
-  initCompare(hashTarget);
+  initCompare(hashTarget, late);
   document.documentElement.classList.add('js');
   // Hands panel visibility from the pre-script CSS rule (explore.css) to the `hidden` attributes.
   document.documentElement.classList.add('js-ready');
+  if (anchor && anchorTop !== undefined && !window.location.hash && anchor.getClientRects().length > 0) {
+    window.scrollBy(0, anchor.getBoundingClientRect().top - anchorTop);
+  }
 } catch (error) {
   // Never lock a reader out of the text: fall back to the no-JavaScript reading, every answer open.
   resetCompare();

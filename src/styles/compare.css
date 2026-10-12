@@ -131,7 +131,8 @@
   .compare__stage[data-stage='glance'] > .compare__stage-head { border-top: 0; padding-top: var(--space-2); }
 }
 @media (max-width: 69.99rem) {
-  html:has(.question-page[data-mode='compare']) { scroll-padding-top: var(--space-6); }
+  /* Room for a passage's sticky worldview label (below) above any anchor. */
+  html:has(.question-page[data-mode='compare']) { scroll-padding-top: 3rem; }
 }
 
 .compare__notice {
@@ -189,6 +190,18 @@
   color: var(--wv);
 }
 .compare__name { font-size: var(--text-sm); margin-bottom: var(--space-3); }
+/* Stacked: as an open answer's heading does in Explore, the label stays in view while its passage
+   scrolls (a Deep dive can run for many phone screens), so the reader always knows whose text it is. */
+@media (max-width: 69.99rem) {
+  .compare__label {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-top: calc(-1 * var(--space-2));
+    padding-block: var(--space-2);
+    background: var(--color-bg);
+  }
+}
 
 @media (min-width: 70rem) {
   .compare__row {
@@ -205,7 +218,6 @@
 /* The moved answer parts keep their Explore styling; only their spacing adapts to the cells. */
 .compare__cell > :last-child { margin-bottom: 0; }
 .compare__cell .answer__thesis { margin-bottom: var(--space-3); }
-.compare__cell .tradition-notes { font-family: var(--font-sans); line-height: 1.5; }
 .compare__cell > .level { border-bottom: 1px solid var(--color-rule); }
 /* The stage heading already says Examine / Study; the summaries keep the real section titles. */
 .compare__cell .level__kicker { display: none; }

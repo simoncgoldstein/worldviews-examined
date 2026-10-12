@@ -61,8 +61,10 @@ function urlFor(mode: Mode, pair: Pair | null, hash = ''): string {
 
 // The parts of an answer that each row receives, by semantic identity (section slugs from
 // src/lib/answer-sections.ts, level names from the remark plugin), never by text or position.
+// At a glance is the thesis alone: the scope and tradition notes stay in the answer's frontmatter
+// and are not part of the public reading flow (PR #28), in Explore or in Compare.
 const ROWS: [row: string, selector: string][] = [
-  ['glance', ':scope > .answer__panel > .answer__inner > :is(.answer__thesis, .answer__scope, .tradition-notes)'],
+  ['glance', ':scope > .answer__panel > .answer__inner > .answer__thesis'],
   ['view', ':scope .answer__body > :is([data-section="the-view"], [data-section="the-christian-view"])'],
   ['strengths', ':scope .answer__body > [data-section="what-this-explains-well"]'],
   ['examine', ':scope .answer__body > [data-level="examine"]'],
@@ -119,9 +121,23 @@ function mount(next: Pair): void {
   });
 }
 
+/**
+ * Puts every moved node back at its placeholder, last moved first. An entry is forgotten only once
+ * its node is home, so if anything throws part-way, resetCompare() can finish the job.
+ */
 function unmount(): void {
   region.querySelectorAll('[data-compare-prefix]').forEach((prefix) => prefix.remove());
-  for (const { node, placeholder } of moved.splice(0).reverse()) placeholder.replaceWith(node);
+  let failure: unknown = null;
+  for (let i = moved.length - 1; i >= 0; i--) {
+    const { node, placeholder } = moved[i]!;
+    try {
+      placeholder.replaceWith(node);
+      moved.splice(i, 1);
+    } catch (error) {
+      failure ??= error;
+    }
+  }
+  if (failure) throw failure;
 }
 
 const visible = (el: Element) => el.getClientRects().length > 0;
@@ -135,7 +151,20 @@ function keepingFocus(change: () => void): void {
   }
 }
 
+/**
+ * Shows `next` with `nextPair`. A rearrangement that fails part-way must never leave an answer
+ * split between the two layouts: the page falls back to plain Explore with every node restored.
+ */
 function apply(next: Mode, nextPair: Pair): void {
+  try {
+    arrange(next, nextPair);
+  } catch (error) {
+    resetCompare();
+    throw error;
+  }
+}
+
+function arrange(next: Mode, nextPair: Pair): void {
   keepingFocus(() => {
     if (moved.length) unmount();
     mode = next;
@@ -248,6 +277,7 @@ function record(state: unknown, url: string): boolean {
 
 /** A reader's choice of mode or pair: a new history entry, and the URL that represents it. */
 function navigate(next: Mode, nextPair: Pair): void {
+  if (!ready) return;
   const notice = region.querySelector<HTMLElement>('[data-compare-notice]');
   if (notice) notice.hidden = true;
   saveLevels();
@@ -267,10 +297,19 @@ function navigate(next: Mode, nextPair: Pair): void {
 
 function onPopState(): void {
   const parsed = parseQuery(location.search, ids);
+  // Compare was withdrawn after a failure: an older entry's comparison URL now shows Explore.
+  if (!ready) {
+    if (!parsed.canonical) replaceUrl(urlFor('explore', null, location.hash));
+    return;
+  }
   const nextPair = parsed.pair ?? pair;
   if (parsed.mode !== mode || (parsed.mode === 'compare' && nextPair.join() !== pair.join())) {
+    // Firefox restores the entry's scroll position before this event; its scroll anchoring would
+    // then shift that position while the layout changes. Keep it (other browsers restore later).
+    const y = window.scrollY;
     apply(parsed.mode, nextPair);
     if (parsed.mode === 'compare') restoreLevels();
+    window.scrollTo(window.scrollX, y);
   }
   if (!parsed.canonical) replaceUrl(urlFor(parsed.mode, nextPair, location.hash));
 }
@@ -323,26 +362,42 @@ function updateBothButtons(): void {
   });
 }
 
-/** Restores the plain Explore page if initialization failed part-way. Never throws. */
+/**
+ * Restores the plain Explore page after a failure (during setup, a pair change, or the return to
+ * Explore) and withdraws Compare, whose controls can no longer be trusted. Never throws.
+ */
 export function resetCompare(): void {
-  try {
-    if (moved.length) unmount();
-    region?.setAttribute('hidden', '');
-    overview?.removeAttribute('hidden');
-    reading?.removeAttribute('hidden');
-    document.querySelectorAll('.sources__group[hidden]').forEach((group) => group.removeAttribute('hidden'));
-    if (page) page.dataset.mode = 'explore';
-    suspendExploreState(false);
-  } catch {
-    // Nothing more can be done; the reader still has whatever is in the document.
+  ready = false;
+  mode = 'explore';
+  const steps = [
+    () => moved.length && unmount(),
+    () => moved.length && unmount(), // a second pass for any node the first could not place
+    () => region?.setAttribute('hidden', ''),
+    () => overview?.removeAttribute('hidden'),
+    () => reading?.removeAttribute('hidden'),
+    () => document.querySelectorAll('.sources__group[hidden]').forEach((group) => group.removeAttribute('hidden')),
+    () => document.querySelector('[data-compare-sources-note]')?.setAttribute('hidden', ''),
+    () => document.querySelector('[data-modes]')?.setAttribute('hidden', ''),
+    () => page && (page.dataset.mode = 'explore'),
+    () => suspendExploreState(false),
+    // The address bar must not go on claiming a comparison the page no longer shows.
+    () => /(?:^|[?&])(?:mode|views)=/i.test(location.search) && replaceUrl(urlFor('explore', null, location.hash)),
+  ];
+  for (const step of steps) {
+    try {
+      step();
+    } catch {
+      // Carry on: each remaining step still makes the page more readable.
+    }
   }
 }
 
 /**
  * Sets up Compare on a question page. `hashTarget` is the current fragment target, if any: a
- * comparison URL whose fragment points outside the comparison opens in Explore instead.
+ * comparison URL whose fragment points outside the comparison opens in Explore instead. `late`
+ * means the layout's fallback has already shown all six answers because this script was slow.
  */
-export function initCompare(hashTarget: Element | null): void {
+export function initCompare(hashTarget: Element | null, late = false): void {
   const pageEl = document.querySelector<HTMLElement>('.question-page');
   const regionEl = document.querySelector<HTMLElement>('[data-compare]');
   if (!pageEl || !regionEl) return;
@@ -365,6 +420,13 @@ export function initCompare(hashTarget: Element | null): void {
   const first = parsed.pair ?? ([ids[0], ids[1]] as Pair);
   let canonical = parsed.canonical;
   if (next === 'compare' && hashTarget && !shownInCompare(hashTarget, first)) {
+    next = 'explore';
+    canonical = false;
+  }
+  // A late script never pulls text away from someone already reading the fallback (scrolled, or
+  // focused on a link): the page stays in Explore and the Compare link offers the requested pair.
+  const active = document.activeElement;
+  if (next === 'compare' && late && (window.scrollY > 0 || (active && active !== document.body && active !== document.documentElement))) {
     next = 'explore';
     canonical = false;
   }
