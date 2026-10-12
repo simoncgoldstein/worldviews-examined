@@ -118,7 +118,7 @@ There will eventually be 28 core questions x 6 worldview families. Separate answ
 
 ## Client-side interaction
 
-Currently the only script is `src/scripts/reveal-hash.ts`, which opens a closed `<details>` that contains a fragment target (see CONTENT-MODEL.md). It is an enhancement; the site works without it.
+The only script is `src/scripts/reveal-hash.ts` (about 3 KB with `src/scripts/answer-panels.ts`, inlined by Astro). It turns the question page's answer headings into disclosure buttons, provides the open/close-all controls, and opens whatever hides a fragment target (see CONTENT-MODEL.md and `docs/ui/UI1-RESEARCH-LIBRARY.md`). It is an enhancement: without it every answer is rendered open and the inner levels are native `<details>`.
 
 Core reading must work without JavaScript. JavaScript may enhance:
 

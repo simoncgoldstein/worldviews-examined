@@ -143,7 +143,7 @@ Non-Christian answers (`kind: nonChristian`):
 ## Deep dive
 ```
 
-At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. Subheadings inside a section (`####` in the Deep dive, which render as `h4`) also get IDs namespaced to the answer, so identical subheadings in different answers do not collide on the question page. The Deep dive renders as a collapsible `<details>`; every other section is always visible. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
+At build time a remark plugin wraps each section in an `AnswerSection` component and renders its heading one level down (an `h3` inside the worldview's `h2`) with an ID unique to that answer. Subheadings inside a section (`####` in the Deep dive, which render as `h4`) also get IDs namespaced to the answer, so identical subheadings in different answers do not collide on the question page. The two analytical sections are grouped by the plugin into one `AnswerLevel` disclosure ("Examine"), and the Deep dive renders as a collapsible `<details>` ("Study"); the view and What this explains well are always visible once the answer is open (see UI contract). The grouping is presentation only: section titles, order and ids are unchanged. Section marks (`§` before Christian response; `◇` before Strongest objection and Pressure questions) are CSS, keyed to the section, and hidden from assistive technology.
 
 **Status rules**
 
@@ -170,7 +170,7 @@ Write citations inline in any section of an answer body:
 - Numbering runs once across the whole question page (1…N). Within an answer, each distinct (source, locator) pair gets one number in order of first appearance; repeating the same pair, even in another section or the Deep dive, reuses the number and gives its Sources entry one `↩` backlink per use. Each answer's numbers continue from the previous answer in worldview order (`AnswerEntry.offset` in `src/lib/content.ts`). The same pair cited in two different answers gets a number in each, because sources are listed under the answer where the reader met them.
 - The same source cited at a different locator gets its own number; its Sources entry uses the source's `shortCitation`.
 - Markers render as `<sup class="cite"><a href="#…-src-N">N</a></sup>`, a real anchor needing no JavaScript, with an `aria-label` such as "Source 1: Calvin, Institutes, I.1.1". One consolidated **Sources** section follows all the cards on the question page, subdivided by the answer in which each source is cited (not by the source's own tradition), and its entries are the `:target`. Anchor ids stay namespaced per answer, so the displayed number can change without changing any link.
-- **Deep dive fragment behavior.** The Deep dive is a semantic `<details>`. A small framework-free script (`src/scripts/reveal-hash.ts`) opens any closed ancestor `<details>` of the fragment target on initial load and on `hashchange`, then scrolls the target into view (instantly, so it never animates and respects reduced motion). It exists because a source's `↩` backlink can point at a citation inside a closed Deep dive, and browsers other than Chrome are not guaranteed to open it. Citation to source navigation is plain anchor navigation and needs no JavaScript; the script only improves the closed-details case.
+- **Fragment behavior.** The Examine level and the Deep dive are semantic `<details>`, and with JavaScript a whole answer can be closed (see UI contract). A small framework-free script (`src/scripts/reveal-hash.ts`, with `src/scripts/answer-panels.ts`) opens the fragment target's answer and every closed ancestor `<details>` on initial load, on `hashchange` (including back/forward) and on same-page fragment link clicks, then scrolls the target into view (instantly, so it never animates and respects reduced motion). It exists because a source's `↩` backlink or a shared section link can point inside a closed level, and browsers other than Chrome are not guaranteed to open `<details>` for a fragment. Citation to source navigation is plain anchor navigation and needs no JavaScript.
 
 ## Source hierarchy
 
@@ -192,27 +192,28 @@ Consider adding later:
 
 ## UI contract
 
-Section headings come from the MDX body; the card renders them in the order written. On wide screens the two cards in each row share subgrid rows (header, five sections, thinkers, sources), so comparable sections line up and can be read across; on narrow screens cards stack and each stands alone.
+Section headings come from the MDX body and render in the order written. The question page (Explore mode, UI-1; details in `docs/ui/UI1-RESEARCH-LIBRARY.md`) has two regions:
 
-### Non-Christian answer card
+- **Overview (level 1, At a glance):** six cards, each the worldview's name and its reviewed `lede`, linking to `#<worldviewId>`. 3 × 2 on wide screens, 2 × 3 on medium, one column on phones.
+- **Reading region:** one answer panel per worldview, full reading width, in worldview order. Without JavaScript every panel is open. With JavaScript the worldview heading is a disclosure button and panels start closed, except one containing the URL fragment.
 
-1. The view
-2. What this explains well
-3. § Christian response
-4. ◇ Pressure questions
-5. Deep dive (collapsible)
-6. Representative thinkers
+### Non-Christian answer panel
 
-### Christian answer card
+1. Thesis (`lede`), scope
+2. The view · What this explains well (level 2, Understand; visible when open)
+3. Examine: § Christian response · ◇ Pressure questions (level 3, one disclosure)
+4. Study: Deep dive (level 4, disclosure)
+5. Representative thinkers; links to the answer's sources and worldview page
 
-1. The Christian view
-2. What this explains well
-3. ◇ Strongest objection
-4. Christian reply
-5. Deep dive (collapsible)
-6. Representative thinkers
+### Christian answer panel
 
-Each card opens with the worldview name and its one-sentence thesis (`lede`). Sources for all cards are listed once, after the cards (see Citations).
+1. Thesis (`lede`), scope
+2. The Christian view · What this explains well
+3. Examine: ◇ Strongest objection · Christian reply
+4. Study: Deep dive
+5. Representative thinkers; links to the answer's sources and worldview page
+
+Sources for all answers are listed once, after the reading region (see Citations).
 
 ### Editorial notation
 
