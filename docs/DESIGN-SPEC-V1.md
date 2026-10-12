@@ -203,3 +203,80 @@ Small, reviewable PRs, without mixing design code into C3 or C4:
 **Provisional until prototype:** Font pairing/loading, exact accent hex values, dark-mode translations, font scale, spacing, radius, precise breakpoints/control placement, URL query encoding and homepage feature selection.
 
 Locked decisions require explicit discussion to change. Provisional values should be judged visually on real content before finalizing.
+
+
+## 13. Approved UI refinements — 2026-10-12
+
+These refinements reflect the reviewed UI-1 screenshot and subsequent user decisions. **The interactions described here are approved product requirements; implementation remains in the appropriate later UI PRs.** They supplement, and where specifically noted supersede, earlier provisional suggestions. No change to audited MDX content, quotation ledger, citation IDs, or GitHub Pages publishing follows from this design document alone.
+
+### 13.1 Global theme switch (locked; replaces the proposed three-way Appearance control)
+
+Add **one compact binary Light/Dark switch at the top-right of the site header**, based on the supplied reference image but scaled and simplified for this editorial interface.
+
+- Left position: **sun** (Light); right position: **crescent moon** (Dark). Use two small monochrome pictograms within/around a subtle pill track and a clearly visible movable thumb, not oversized circular icon buttons.
+- Initial visual trial: approximately 60–72px wide by 30–36px tall, with a full **44px minimum touch target**; fine border and restrained contrast matching the site's header. The supplied picture establishes the interaction concept, not its literal large size or thick high-contrast decoration.
+- **No visible third System option, no large Appearance panel, no labels taking header space, no emoji.** Accessible name and state must still be explicit (e.g., a button labelled "Switch to dark mode" or a switch named "Dark mode" with correct checked state).
+- Before any manual choice, use the device's \`prefers-color-scheme\` preference as the initial mode. On user activation, toggle Light ↔ Dark and persist the explicit preference across pages/visits with a small local setting (e.g. localStorage); never claim an explicit user selection while merely following the device.
+- Apply the selected mode **before visible first paint** to avoid a light/dark flash; handle unavailable storage safely and fall back to system settings. The separate dark/light token sets should be expressible as theme overrides without duplicate styles or a frontend framework.
+- Support keyboard activation, visible focus, readable screen-reader state, reduced motion, high zoom and narrow mobile headers. All controls retain sufficient contrast; a theme is not indicated by icon alone.
+- The switch should appear across the entire site, including Explore, Compare, Christian Case, sources and thinker pages. Printing remains on a legible print palette.
+- This requirement supersedes the provisional V1 suggestion to leave out a manual theme control. **It does not authorize a new UI-2 feature**: implement as a small independently reviewed UI polish PR or within the later research-interface polish work.
+
+### 13.2 Citation previews (locked, UI-4)
+
+A citation marker should be inspectable **without forcing the reader to scroll to the consolidated bibliography**.
+
+- Click/tap/keyboard activation opens a compact accessible preview with registered author, work/title, **exact cited locator**, applicable translator/edition qualification where material, and a genuine source link if registered.
+- Offer a clear path to **View full reference** and, from the source, to navigate back to the exact citing text. Preserve existing numbered citations, unique IDs, full Sources section, fragment navigation, and backwards compatibility.
+- An optional hover preview may supplement the click/focus behavior; do not require hover. Escape and explicit dismissal must work, with sensible focus restoration and mobile placement; avoid covering the underlying paragraph or producing nested inaccessible overlays.
+- Render the registered bibliographic facts; do not generate summary claims or invented quotations. No unsupported permission assertions.
+- If JavaScript fails or is disabled, numbered citations must remain real working links to their existing full references.
+- A source anchor opened by a direct URL or backlink must be revealed even if its tradition group is currently filtered out.
+
+### 13.3 End-of-answer "Further Study" organization (approved direction; scoped UI polish)
+
+After the existing **Examine** and **Study / Deep dive** disclosures, provide a concise, deliberately organized **Further Study** footer:
+
+- **Key thinkers:** names displayed legibly with small subordinate school/role descriptors; avoid an unstructured run-on inline list. When numerous, show a compact set initially and provide "View all" access. Render actual attached thinker metadata, not invented selections or new scholarly descriptions.
+- **Sources and references:** show a derived count and a link to that answer's exact numbered sources; also allow browsing the wider Source Library. Do not repeat a large bibliography in the answer footer.
+- **Secondary navigation:** "About this worldview" and "Back to all six views" in a visually quieter final row, distinct from research references.
+- Optionally use a two-column layout on wide screens, stacked on phones; restrained hairlines and small worldview color mark, not a promotional card cluster.
+- The layout must work before thinker portraits exist. Future optional historical portraits should fit without redesign; images remain separate **post-launch** work.
+
+### 13.4 Question references (approved direction, UI-4)
+
+The question-specific consolidated Sources section retains all existing citation identifiers/backlinks and one numbering sequence. Enhance navigation with:
+
+- **All** plus six named worldview filters, using the established accent mapping but always visible words.
+- Collapsible groups as appropriate; an anchor or citation click must reveal a filtered-out or collapsed target reliably.
+- **Do not paginate the question-specific citations**; doing so would complicate precise source and backlink anchors.
+- Without JavaScript, show the complete source list. Printing should include all references needed for the printed answers.
+
+### 13.5 Global Sources Library (approved direction, UI-4)
+
+The /sources/ page should become a browsable, searchable **research library**, not an endless chronological or tradition-grouped list.
+
+- Search by author, title and relevant registered search text; case-insensitive, accent-friendly where practical.
+- Filter by all six traditions and by the **actual registry source types** (do not invent types). A source can have multiple tradition tags; filters must use all of them, while an unfiltered list shows that source **once**.
+- Default page size trial: **25 sources per page**, with visible result count, Previous/Next, and accessible page controls. Pagination follows filtering/search, with stable deterministic sorting. Reset or correct the page number after filter changes.
+- Display source type, author/title and minimal helpful metadata. Hide long lists of citing answers under an explicit **"Cited in N questions — Show questions"** disclosure; preserve links.
+- Existing \`#source-<id>\` deep links must continue to work. A direct source anchor should automatically reveal the correct item despite filters/pagination, or move to a valid visible detail state. Do not break current source-to-question or question-to-source navigation.
+- Static Astro output remains the fallback. The bibliography must be usable and accessible with JavaScript blocked; a client-side index of the checked registry is sufficient, with no database or API requirement.
+
+### 13.6 Accent-color refinement (provisional visual trial)
+
+The existing palette is sound, but the dark-mode screenshot suggests the worldview identity could be somewhat clearer. Test, **do not yet adopt blindly**, the following more distinctive light-theme accents:
+
+| Christianity | Naturalism | Judaism | Islam | Hindu traditions | Buddhist traditions |
+|---|---|---|---|---|---|
+| #315784 | #506A73 | #716028 | #297467 | #99513A | #784F91 |
+
+They all meet the normal-text WCAG AA contrast minimum against the present light source-card surface; new dark equivalents require independent testing.
+
+Try slightly more distinct heading and selected-state color, a very faint tinted worldview header only where it adds orientation, and a thin source/thinker section marker. **Never color long prose blocks, create large saturated panels, encode truth/ranking in color, or compromise content readability.** Retain current colors until the UI visual review approves a change.
+
+### Delivery and regression gates
+
+- The header toggle may be a **small independent polish PR** after UI-1 (rather than enlarging Compare). Source previews, question filters, and the global library belong in **UI-4**. Further Study footer may be an independent small PR when shared components are stable.
+- Preserve the UI-1 focus/scroll, slow-load fallback, Deep Dive and citation-fragment fixes. UI-2 must continue to compare any two views from the one authoritative corpus.
+- Test 320/390/768/1280px, keyboard navigation, light and dark themes, and citation anchors. Real Safari/screen readers remain explicit release-QA checks rather than assumed successes.
