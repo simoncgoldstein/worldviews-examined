@@ -39,12 +39,6 @@ const panelId = `${ns}-panel`;
   <div class="answer__panel" id={panelId} data-answer-panel>
     <div class="answer__inner">
       {data.lede && <p class="answer__thesis">{data.lede}</p>}
-      {data.scope && <p class="answer__scope">{data.scope}</p>}
-      {data.traditionNotes.length > 0 && (
-        <ul class="tradition-notes">
-          {data.traditionNotes.map((note) => <li>{note}</li>)}
-        </ul>
-      )}
 
       <div class="answer__tools" data-answer-tools hidden>
         <button type="button" class="control" data-expand-sections aria-label={`Expand all sections of the ${worldview.name} answer`}>
