@@ -239,14 +239,6 @@
    "words": 21
   },
   {
-   "file": "christianity/induction.mdx",
-   "locator": "Exodus 4:1–5",
-   "fragments": [
-    "above"
-   ],
-   "words": 1
-  },
-  {
    "file": "christianity/jesus.mdx",
    "locator": "John 1:14",
    "fragments": [
@@ -852,14 +844,6 @@
  ],
  "unledgered": [],
  "knownNonEsv": [
-  {
-   "file": "christianity/induction.mdx",
-   "locator": "Exodus 4:1–5",
-   "fragments": [
-    "above"
-   ],
-   "words": 1
-  },
   {
    "file": "buddhism/order.mdx",
    "locator": "Hebrews 1:3",

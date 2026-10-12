@@ -160,9 +160,10 @@ for (const r of ledgerRows) ledgerKeys.set(key(r), (ledgerKeys.get(key(r)) ?? 0)
 const candKeys = new Map();
 for (const c of esvCandidates) candKeys.set(key(c), (candKeys.get(key(c)) ?? 0) + 1);
 // Quotation runs beside an ESV citation that were checked and are not ESV wording (C4 reconciliation).
+// Keyed to file, ESV locator and exact fragment, so any new or changed quotation is still reported.
+// (The C4 review gave the `christianity/induction` "above" its own WCF 5.3 citation, retiring that entry.)
 const KNOWN_NON_ESV = new Set([
-  'christianity/induction.mdx|Exodus 4:1–5|above', // a word of WCF 5.3
-  'buddhism/order.mdx|Hebrews 1:3|persists', // a word from SN 12.20
+  'buddhism/order.mdx|Hebrews 1:3|persists', // a word from SN 12.20, quoted earlier in the answer
 ]);
 const isKnownNonEsv = (c) => c.fragments.every((f) => KNOWN_NON_ESV.has(`${key(c)}|${f}`));
 const knownNonEsv = esvCandidates.filter((c) => !ledgerKeys.has(key(c)) && isKnownNonEsv(c));
