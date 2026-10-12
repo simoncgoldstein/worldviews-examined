@@ -390,12 +390,13 @@
    "christianity"
   ],
   "status": "checked",
-  "answers": 9,
+  "answers": 10,
   "lanes": [
    "christianity",
+   "naturalism",
    "hinduism"
   ],
-  "citeCount": 23
+  "citeCount": 25
  },
  {
   "id": "bavinck-reformed-dogmatics-monergism-3",
@@ -657,7 +658,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 22
+  "citeCount": 23
  },
  {
   "id": "epicurus-letter-menoeceus-hicks",
@@ -1999,12 +2000,12 @@
    "naturalism"
   ],
   "status": "checked",
-  "answers": 4,
+  "answers": 3,
   "lanes": [
    "christianity",
    "naturalism"
   ],
-  "citeCount": 7
+  "citeCount": 5
  },
  {
   "id": "sep-logical-truth",
@@ -3005,5 +3006,111 @@
    "judaism"
   ],
   "citeCount": 1
+ },
+ {
+  "id": "chalmers-facing-up",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "papineau-explanatory-gap",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "christianity",
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "papineau-rise-physicalism",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
+ },
+ {
+  "id": "frankish-illusionism",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "dennett-consciousness-seem",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 1
+ },
+ {
+  "id": "chalmers-panpsychism-panprotopsychism",
+  "type": "article",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "sep-panpsychism",
+  "type": "academic",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 1,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 3
+ },
+ {
+  "id": "quine-two-dogmas",
+  "type": "primary",
+  "tags": [
+   "naturalism"
+  ],
+  "status": "checked",
+  "answers": 2,
+  "lanes": [
+   "naturalism"
+  ],
+  "citeCount": 2
  }
 ]
