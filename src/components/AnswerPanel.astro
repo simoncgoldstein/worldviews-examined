@@ -31,7 +31,7 @@ const headingId = `${ns}-heading`;
 const panelId = `${ns}-panel`;
 ---
 
-<article class="answer" id={worldview.id} data-answer data-worldview={worldview.id} aria-labelledby={headingId}>
+<article class="answer" id={worldview.id} data-answer data-worldview={worldview.id} data-ns={ns} aria-labelledby={headingId}>
   <h2 class="answer__heading" id={headingId}>
     <span class="answer__name" data-answer-name>{worldview.name}</span>
   </h2>

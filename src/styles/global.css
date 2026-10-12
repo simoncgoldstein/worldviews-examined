@@ -8,6 +8,7 @@
 @import './home.css';
 @import './catalog.css';
 @import './explore.css';
+@import './compare.css';
 
 *, *::before, *::after { box-sizing: border-box; }
 

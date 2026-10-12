@@ -1,0 +1,88 @@
+---
+// Compare mode (UI-2): any two of the question's answers, section by section. This component is
+// only an empty, hidden scaffold of reading stages and rows. It contains no answer text: with
+// JavaScript, src/scripts/compare.ts moves the two selected answers' existing section elements
+// (the same DOM nodes Explore shows, with their ids, citations and links) into the rows, and moves
+// them back when the reader returns to Explore. Every answer therefore exists exactly once in the
+// document. Without JavaScript the scaffold stays hidden and Explore shows all six answers.
+//
+// Each row has one cell per side. Rows pair corresponding material, not equal-length text:
+//   glance     the reviewed thesis (lede), scope and tradition notes
+//   view       The view / The Christian view
+//   strengths  What this explains well
+//   examine    the answer's own analytical sections (Christian response and Pressure questions,
+//              or Strongest objection and Christian reply), unrenamed, in their <details>
+//   study      the Deep dive <details>
+//   footer     representative thinkers and the answer's links
+import type { Worldview } from '../content/schemas';
+
+interface Props {
+  /** Worldviews that have an answer to this question, in worldview order. */
+  worldviews: Worldview[];
+}
+
+const { worldviews } = Astro.props;
+
+const stages = [
+  { id: 'glance', title: 'At a glance', rows: ['glance'] },
+  { id: 'understand', title: 'Understand', hint: 'Each positive account, then what it explains well.', rows: ['view', 'strengths'] },
+  { id: 'examine', title: 'Examine', hint: 'Each answer’s own analysis, under its own headings.', rows: ['examine'], both: 'Examine sections' },
+  { id: 'study', title: 'Study', hint: 'Deep dives, representative thinkers and sources.', rows: ['study', 'footer'], both: 'Deep dives' },
+];
+const sides = [
+  { index: 0, label: 'First', id: 'compare-first' },
+  { index: 1, label: 'Second', id: 'compare-second' },
+];
+---
+
+<section class="compare" id="compare" data-compare hidden aria-labelledby="compare-heading">
+  <h2 class="visually-hidden" id="compare-heading">Compare two answers</h2>
+  <div class="compare__picker">
+    {
+      sides.map((side) => (
+        <>
+          {side.index === 1 && <button type="button" class="control compare__swap" data-compare-swap>Swap sides</button>}
+          <div class="compare__choice" data-side={side.index}>
+            <label class="compare__choice-label" for={side.id}>{side.label}<span class="compare__choice-label-rest"> worldview</span></label>
+            <select class="compare__select" id={side.id} data-compare-select={side.index}>
+              {worldviews.map((worldview) => (
+                <option value={worldview.id}>{worldview.name}</option>
+              ))}
+            </select>
+          </div>
+        </>
+      ))
+    }
+  </div>
+  <p class="compare__notice" data-compare-notice hidden></p>
+  <p class="compare__print-title" data-compare-print-title></p>
+
+  {
+    stages.map((stage) => (
+      <section class="compare__stage" data-stage={stage.id} aria-labelledby={`compare-${stage.id}`}>
+        <div class="compare__stage-head">
+          <h2 class="kicker compare__stage-title" id={`compare-${stage.id}`}>{stage.title}</h2>
+          {stage.hint && <p class="compare__stage-hint">{stage.hint}</p>}
+          {stage.both && (
+            <button type="button" class="control compare__both" data-compare-both={stage.id} data-noun={stage.both}>
+              Open both
+            </button>
+          )}
+        </div>
+        {stage.rows.map((row) => (
+          <div class="compare__row" data-row={row}>
+            {sides.map((side) => (
+              <div class="compare__cell" data-side={side.index}>
+                {row === 'glance' ? (
+                  <h3 class="compare__name" data-compare-label />
+                ) : (
+                  <p class="compare__label" aria-hidden="true" data-compare-label />
+                )}
+              </div>
+            ))}
+          </div>
+        ))}
+      </section>
+    ))
+  }
+</section>

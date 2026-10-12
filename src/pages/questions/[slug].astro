@@ -2,6 +2,8 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerPanel from '../../components/AnswerPanel.astro';
+import CompareView from '../../components/CompareView.astro';
+import ModeSwitch from '../../components/ModeSwitch.astro';
 import SourceList from '../../components/SourceList.astro';
 import ThesisOverview from '../../components/ThesisOverview.astro';
 import { answersForQuestion, getContent, lookup, questionUrl, worldviewUrl } from '../../lib/content';
@@ -21,6 +23,9 @@ const answers = answersForQuestion(content, question.id);
 const answerByWorldview = new Map(answers.map((a) => [a.data.worldviewId, a]));
 const related = question.relatedQuestions.map((rid) => lookup(content.questionById, rid, 'question'));
 const hasSources = answers.some((a) => a.citations.length > 0);
+// Compare offers the worldviews that answer this question; it opens on the first two.
+const answered = content.worldviews.filter((w) => answerByWorldview.has(w.id));
+const firstPair: [string, string] = [answered[0]?.id ?? '', answered[1]?.id ?? ''];
 ---
 
 <BaseLayout title={question.title} description={question.summary}>
@@ -38,6 +43,8 @@ const hasSources = answers.some((a) => a.citations.length > 0);
       <p class="lede">{question.summary}</p>
     </header>
 
+    {answered.length >= 2 && <ModeSwitch path={questionUrl(question)} pair={firstPair} />}
+
     <section class="overview" id="overview" aria-labelledby="overview-heading">
       <div class="overview__head">
         <h2 class="kicker" id="overview-heading">Six answers at a glance</h2>
@@ -45,6 +52,8 @@ const hasSources = answers.some((a) => a.citations.length > 0);
       </div>
       <ThesisOverview worldviews={content.worldviews} answers={answerByWorldview} />
     </section>
+
+    {answered.length >= 2 && <CompareView worldviews={answered} />}
 
     <section class="reading" aria-labelledby="reading-heading">
       <div class="reading__head">
@@ -74,6 +83,7 @@ const hasSources = answers.some((a) => a.citations.length > 0);
         <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
           <h2 class="section-title" id="sources-heading">Sources</h2>
           <p class="meta">Numbered once across the page, grouped by the answer in which each source is cited.</p>
+          <p class="meta" data-compare-sources-note hidden></p>
           {answers.map((answer) => (
             <SourceList
               ns={answer.ns}
@@ -93,7 +103,7 @@ const hasSources = answers.some((a) => a.citations.length > 0);
           <ul class="related__list">
             {related.map((r) => (
               <li>
-                <a href={questionUrl(r)}>{r.title}</a>
+                <a href={questionUrl(r)} data-related-link>{r.title}</a>
               </li>
             ))}
           </ul>

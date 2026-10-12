@@ -1,0 +1,224 @@
+/* Question page, mode switch and Compare mode (UI-2). Compare shows two answers in paired rows:
+   two columns on wide screens, matched pairs stacked on tablets and phones. See CompareView.astro
+   and src/scripts/compare.ts. */
+
+/* --- Mode switch ------------------------------------------------------------------------- */
+
+.modes { margin: 0 0 var(--space-8); }
+.modes__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--color-rule);
+  font-family: var(--font-sans);
+  font-size: var(--text-ui);
+}
+.modes__list li { margin: 0; }
+.modes__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+.modes__link:hover { color: var(--color-text); border-bottom-color: var(--color-rule-strong); }
+.modes__link[aria-current] { color: var(--color-text); border-bottom-color: var(--color-accent); }
+.modes__link:focus-visible { outline-offset: 0; }
+.modes__pending { color: var(--color-text-muted); font-weight: 500; }
+.modes__status {
+  margin-left: 0.35em;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  font-style: italic;
+}
+.modes__noscript {
+  margin: 0 0 var(--space-6);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* A comparison URL: until the script arranges the page, keep the Explore regions out of sight.
+   The layout's fallback removes .js if the script fails, which shows them again. */
+.js.compare-pending:not(.js-ready) :is(.overview, .reading, .page-sources, .related) { display: none; }
+
+/* --- Picker: two native selects and Swap sides ------------------------------------------- */
+
+/* compare.ts keeps the reading position itself when a side changes; the browser's own scroll
+   anchoring would adjust a second time. */
+.compare { margin-bottom: var(--space-12); overflow-anchor: none; }
+.compare__picker {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  gap: var(--space-3) var(--space-4);
+  padding-bottom: var(--space-4);
+  background: var(--color-bg);
+}
+.compare__choice-label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.compare__select {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;   /* WebKit sizes the inner text box to the longest option */
+  text-overflow: ellipsis;
+  min-height: var(--touch);
+  padding: 0 2.25rem 0 var(--space-3);
+  border: 1px solid var(--color-rule-strong);
+  border-left: 4px solid var(--wv);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  /* A monochrome chevron. */
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-muted) 50%),
+    linear-gradient(135deg, var(--color-text-muted) 50%, transparent 50%);
+  background-position: calc(100% - 1.15rem) 52%, calc(100% - 0.8rem) 52%;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  color: var(--color-text);
+  font: 600 var(--text-ui) / 1.2 var(--font-sans);
+  appearance: none;
+  cursor: pointer;
+}
+.compare__select:hover { background-color: var(--color-control-hover); }
+.compare__select option { color: var(--color-text); background: var(--color-surface); font-weight: 500; }
+@media (forced-colors: active) {
+  .compare__select { appearance: auto; background-image: none; padding-right: var(--space-3); }
+}
+.compare__swap { justify-self: end; }
+
+/* Phones: each label sits beside its select ("First", "Second"; the full label is still read). */
+@media (max-width: 39.99rem) {
+  .compare__picker { gap: var(--space-2); }
+  .compare__choice { display: grid; grid-template-columns: minmax(4.25rem, auto) minmax(0, 1fr); column-gap: var(--space-2); align-items: center; }
+  .compare__choice-label { margin: 0; }
+  .compare__choice-label-rest { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .compare__select { padding-right: 1.75rem; background-position: calc(100% - 0.95rem) 52%, calc(100% - 0.6rem) 52%; }
+  .modes__list { column-gap: var(--space-5); }
+}
+
+@media (min-width: 40rem) {
+  .compare__picker { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  .compare__swap { justify-self: start; }
+}
+
+/* Wide screens: the picker heads the two columns and stays in view while long rows scroll, so the
+   reader always knows which side is which and can change either side from anywhere. */
+@media (min-width: 70rem) {
+  .compare__picker {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding-top: var(--space-2);
+    column-gap: var(--space-5);
+    border-bottom: 1px solid var(--color-rule);
+  }
+  html:has(.question-page[data-mode='compare']) { scroll-padding-top: 7rem; }
+  /* The picker's own rule heads the first stage. */
+  .compare__stage[data-stage='glance'] > .compare__stage-head { border-top: 0; padding-top: var(--space-2); }
+}
+@media (max-width: 69.99rem) {
+  html:has(.question-page[data-mode='compare']) { scroll-padding-top: var(--space-6); }
+}
+
+.compare__notice {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+.compare__print-title { display: none; }
+
+/* --- Stages and paired rows ---------------------------------------------------------------- */
+
+.compare__stage { margin-top: var(--space-10); }
+.compare__stage[data-stage='glance'] { margin-top: var(--space-5); }
+.compare__stage-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-4);
+  margin-bottom: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-rule-strong);
+}
+.compare__stage-title { margin: 0; }
+.compare__stage-hint {
+  flex: 1 1 14rem;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.compare__both { margin-left: auto; align-self: center; }
+
+.compare__row + .compare__row { margin-top: var(--space-10); }
+.compare__cell {
+  /* Each side keeps its own height: no padding to match the longer text. */
+  align-self: start;
+  min-width: 0;
+  max-width: calc(var(--measure) + var(--space-6) + 2px);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--wv);
+}
+/* Tablets and phones: matched pairs, one above the other, each labelled with its worldview. */
+.compare__cell + .compare__cell { margin-top: var(--space-8); }
+.compare__label,
+.compare__name {
+  margin: 0 0 var(--space-2);
+  font: 650 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--wv);
+}
+.compare__name { font-size: var(--text-sm); margin-bottom: var(--space-3); }
+
+@media (min-width: 70rem) {
+  .compare__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-10);
+  }
+  .compare__cell { padding-left: var(--space-5); }
+  .compare__cell + .compare__cell { margin-top: 0; }
+  /* The sticky picker names both columns; the per-row label is only needed when stacked. */
+  .compare__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* The moved answer parts keep their Explore styling; only their spacing adapts to the cells. */
+.compare__cell > :last-child { margin-bottom: 0; }
+.compare__cell .answer__thesis { margin-bottom: var(--space-3); }
+.compare__cell .tradition-notes { font-family: var(--font-sans); line-height: 1.5; }
+.compare__cell > .level { border-bottom: 1px solid var(--color-rule); }
+/* The stage heading already says Examine / Study; the summaries keep the real section titles. */
+.compare__cell .level__kicker { display: none; }
+.compare__cell > .answer__footer { margin-top: 0; }
+
+/* --- Print: matched pairs stacked, each labelled; controls omitted ------------------------- */
+
+@media print {
+  .modes, .modes__noscript, .compare__picker, .compare__both, .compare__stage-hint, .compare__notice { display: none !important; }
+  .compare__print-title { display: block; font: 600 11pt / 1.4 var(--font-sans); margin: 0 0 var(--space-4); }
+  .compare__row { display: block; }
+  .compare__cell { border-left: 0; padding-left: 0; max-width: none; break-inside: auto; }
+  .compare__cell + .compare__cell { margin-top: var(--space-6); }
+  .compare__label { position: static; width: auto; height: auto; overflow: visible; clip-path: none; color: inherit; }
+  .compare__name, .compare__label { color: inherit; }
+}

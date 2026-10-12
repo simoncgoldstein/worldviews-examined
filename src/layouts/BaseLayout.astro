@@ -39,6 +39,8 @@ const fullTitle = title ? `${title} · ${siteTitle}` : siteTitle;
       // text and then collapse it). If the script arrives later it leaves the answers open.
       var root = document.documentElement;
       root.classList.add('js');
+      // A comparison URL: keep the Explore regions out of sight until compare.ts arranges the page.
+      if (/[?&]mode=compare(?:&|$)/i.test(location.search)) root.classList.add('compare-pending');
       function readable() {
         if (!root.classList.contains('js-ready')) root.classList.remove('js');
       }
