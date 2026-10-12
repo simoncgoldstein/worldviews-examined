@@ -1,8 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import AnswerCard from '../../components/AnswerCard.astro';
+import AnswerPanel from '../../components/AnswerPanel.astro';
 import SourceList from '../../components/SourceList.astro';
+import ThesisOverview from '../../components/ThesisOverview.astro';
 import { answersForQuestion, getContent, lookup, questionUrl, worldviewUrl } from '../../lib/content';
 import { symbols } from '../../lib/labels';
 import { url } from '../../lib/paths';
@@ -19,46 +20,57 @@ const category = lookup(content.categoryById, question.category, 'category');
 const answers = answersForQuestion(content, question.id);
 const answerByWorldview = new Map(answers.map((a) => [a.data.worldviewId, a]));
 const related = question.relatedQuestions.map((rid) => lookup(content.questionById, rid, 'question'));
+const hasSources = answers.some((a) => a.citations.length > 0);
 ---
 
 <BaseLayout title={question.title} description={question.summary}>
-  <div class="container page">
-    <a class="back-link" href={url('questions/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All questions</a>
+  <div class="container page question-page" data-mode="explore">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href={url('questions/')}>Questions</a></li>
+        <li><a href={url(`questions/#${category.slug}`)}>{category.title}</a></li>
+      </ol>
+    </nav>
 
-    <header class="page-head page-head--wide">
-      <p class="eyebrow">
-        <span aria-hidden="true">{symbols.section} </span>{category.title}
-        {question.featured && <><span aria-hidden="true"> {symbols.separator} </span>Featured question</>}
-      </p>
+    <header class="question-head">
+      {question.featured && <p class="eyebrow">Featured question</p>}
       <h1>{question.title}</h1>
       <p class="lede">{question.summary}</p>
     </header>
 
-    <nav aria-label="Worldviews on this question">
-      <ul class="jump-list">
-        {content.worldviews.map((w) => <li><a href={`#${w.id}`}>{w.name}</a></li>)}
-        {answers.some((a) => a.citations.length > 0) && <li><a href="#sources">Sources</a></li>}
-      </ul>
-    </nav>
+    <section class="overview" id="overview" aria-labelledby="overview-heading">
+      <div class="overview__head">
+        <h2 class="kicker" id="overview-heading">Six answers at a glance</h2>
+        <p class="overview__hint">Select a worldview to read its full answer.</p>
+      </div>
+      <ThesisOverview worldviews={content.worldviews} answers={answerByWorldview} />
+    </section>
 
-    <div class="compare-grid">
+    <section class="reading" aria-labelledby="reading-heading">
+      <div class="reading__head">
+        <h2 class="kicker" id="reading-heading">Full answers</h2>
+        <div class="reading__tools" data-reading-tools hidden>
+          <button type="button" class="control" data-open-answers>Open all six answers</button>
+          <button type="button" class="control" data-close-answers>Close all answers</button>
+        </div>
+      </div>
       {
         content.worldviews.map((worldview) => {
           const answer = answerByWorldview.get(worldview.id);
           return answer ? (
-            <AnswerCard answer={answer} />
+            <AnswerPanel answer={answer} />
           ) : (
-            <article class="answer answer--empty" id={worldview.id}>
-              <h2 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
-              <p class="status-note">No entry has been written for this question yet.</p>
+            <article class="answer answer--empty" id={worldview.id} data-worldview={worldview.id}>
+              <h2 class="answer__heading"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
+              <p class="status-note">No answer has been written for this question yet.</p>
             </article>
           );
         })
       }
-    </div>
+    </section>
 
     {
-      answers.some((a) => a.citations.length > 0) && (
+      hasSources && (
         <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
           <h2 class="section-title" id="sources-heading">Sources</h2>
           <p class="meta">Numbered once across the page, grouped by the answer in which each source is cited.</p>
@@ -76,15 +88,21 @@ const related = question.relatedQuestions.map((rid) => lookup(content.questionBy
 
     {
       related.length > 0 && (
-        <>
-          <h2 class="section-title">Related questions</h2>
-          <ul class="inline-list">
+        <section class="related" aria-labelledby="related-heading">
+          <h2 class="section-title" id="related-heading">Related questions</h2>
+          <ul class="related__list">
             {related.map((r) => (
-              <li><a href={questionUrl(r)}>{r.shortTitle ?? r.title}</a></li>
+              <li>
+                <a href={questionUrl(r)}>{r.title}</a>
+              </li>
             ))}
           </ul>
-        </>
+        </section>
       )
     }
+
+    <p class="question-page__back">
+      <a href={url('questions/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All questions</a>
+    </p>
   </div>
 </BaseLayout>

@@ -1,5 +1,7 @@
-/* Design tokens. Typography and spacing carry the visual language; colour is restrained to
-   ink, paper and a single slate-blue accent family. No per-worldview colours. */
+/* Design tokens: a modern research library. Warm paper, dark ink, a restrained navy interface
+   colour and six subdued worldview accents. Accents orient the reader (which answer am I in?);
+   they never rank or evaluate, and a worldview is always named in words beside its colour.
+   Values follow docs/DESIGN-SPEC-V1.md §6 and are recorded in docs/ui/UI1-RESEARCH-LIBRARY.md. */
 :root {
   color-scheme: light dark;
 
@@ -11,57 +13,91 @@
   --color-text-muted: #545b64;
   --color-rule: #d8d2c3;
   --color-rule-strong: #8c8778;
-  --color-accent: #2c3e55;
+  --color-accent: #2c3e55;            /* interface navy */
   --color-accent-contrast: #faf8f3;
   --color-link: #1f4a73;
   --color-link-hover: #10304f;
   --color-focus: #a84e08;
   --color-target: #efe7c9;
+  --color-control-hover: #ebe6d8;
 
-  /* Typography */
-  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --text-xs: 0.78rem;
-  --text-sm: 0.9rem;
-  --text-base: clamp(1.0625rem, 1.02rem + 0.2vw, 1.1875rem);
-  --text-lg: clamp(1.15rem, 1.1rem + 0.3vw, 1.3rem);
-  --text-xl: clamp(1.4rem, 1.2rem + 1vw, 1.9rem);
-  --text-2xl: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
-  --leading-tight: 1.2;
+  /* Worldview accents (orientation only) */
+  --wv-christianity: #334d6e;         /* deep navy */
+  --wv-naturalism: #4d6774;           /* slate blue */
+  --wv-judaism: #59633b;              /* olive */
+  --wv-islam: #376b62;                /* deep teal */
+  --wv-hinduism: #935f42;             /* terracotta */
+  --wv-buddhism: #765b77;             /* muted plum */
+
+  /* Typography. Source Serif 4 and Inter are bundled, open-licence (OFL 1.1) variable fonts. */
+  --font-serif: 'Source Serif 4 Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --text-xs: 0.8125rem;   /* 13px: tracked-capital kickers, source metadata minimum */
+  --text-sm: 0.875rem;    /* 14px: UI labels and metadata */
+  --text-ui: 0.9375rem;   /* 15px: controls and navigation */
+  --text-base: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem);   /* 17px phones -> 18px desktop */
+  --text-thesis: clamp(1.0625rem, 1.02rem + 0.2vw, 1.125rem);
+  --text-lg: clamp(1.1875rem, 1.12rem + 0.3vw, 1.3125rem);
+  --text-xl: clamp(1.375rem, 1.22rem + 0.75vw, 1.75rem);
+  --text-2xl: clamp(1.875rem, 1.35rem + 2.3vw, 2.875rem);   /* 30px phones -> 46px desktop */
+  --leading-tight: 1.18;
+  --leading-snug: 1.45;
   --leading-body: 1.62;
-  --tracking-caps: 0.12em;
+  --tracking-caps: 0.09em;
 
   /* Spacing (4px scale) */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
+  --space-5: 1.25rem;
   --space-6: 1.5rem;
   --space-8: 2rem;
+  --space-10: 2.5rem;
   --space-12: 3rem;
   --space-16: 4rem;
 
-  /* Layout */
-  --measure: 66ch;
-  --container: 78rem;
+  /* Layout and shape */
+  --measure: 64ch;
+  --container: 76rem;
   --gutter: clamp(1rem, 4vw, 2.5rem);
-  --touch: 2.75rem; /* 44px minimum touch target */
+  --touch: 2.75rem;      /* 44px minimum touch target */
+  --radius: 8px;
+  --radius-sm: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #14171a;
-    --color-surface: #181c20;
-    --color-surface-alt: #1e2328;
-    --color-text: #e6e3dc;
-    --color-text-muted: #a3a8af;
-    --color-rule: #323840;
-    --color-rule-strong: #6d7480;
-    --color-accent: #bccde0;
+    --color-surface: #1a1e23;
+    --color-surface-alt: #21262c;
+    --color-text: #e7e3da;
+    --color-text-muted: #a9aeb5;
+    --color-rule: #343a42;
+    --color-rule-strong: #646b75;
+    --color-accent: #b9c9dd;
     --color-accent-contrast: #14171a;
-    --color-link: #8db9e2;
-    --color-link-hover: #b7d5ef;
+    --color-link: #93bce3;
+    --color-link-hover: #bcd7f0;
     --color-focus: #f0a35e;
     --color-target: #3a3622;
+    --color-control-hover: #262c33;
+
+    --wv-christianity: #93aed3;
+    --wv-naturalism: #9db5c2;
+    --wv-judaism: #b4bf86;
+    --wv-islam: #86c2b5;
+    --wv-hinduism: #dda27f;
+    --wv-buddhism: #c6a3c8;
   }
 }
+
+/* Each worldview-scoped element picks up its accent as --wv. Unknown ids fall back to navy. */
+[data-worldview] { --wv: var(--color-accent); }
+[data-worldview='christianity'] { --wv: var(--wv-christianity); }
+[data-worldview='naturalism'] { --wv: var(--wv-naturalism); }
+[data-worldview='judaism'] { --wv: var(--wv-judaism); }
+[data-worldview='islam'] { --wv: var(--wv-islam); }
+[data-worldview='hinduism'] { --wv: var(--wv-hinduism); }
+[data-worldview='buddhism'] { --wv: var(--wv-buddhism); }

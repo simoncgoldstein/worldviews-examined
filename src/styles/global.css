@@ -1,10 +1,19 @@
+/* Bundled webfonts: weight-axis variable files, split by unicode-range so a page downloads only
+   the subsets its text uses (Latin, plus Latin Extended for transliterations). font-display: swap. */
+@import '@fontsource-variable/source-serif-4/wght.css';
+@import '@fontsource-variable/source-serif-4/wght-italic.css';
+@import '@fontsource-variable/inter/wght.css';
 @import './tokens.css';
 @import './components.css';
+@import './home.css';
+@import './catalog.css';
+@import './explore.css';
 
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   scroll-padding-top: var(--space-6);
 }
 
@@ -19,6 +28,7 @@ body {
   font-size: var(--text-base);
   line-height: var(--leading-body);
   font-kerning: normal;
+  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
 }
@@ -30,20 +40,21 @@ h1, h2, h3, h4 {
   line-height: var(--leading-tight);
   font-weight: 600;
   margin: var(--space-8) 0 var(--space-3);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   text-wrap: balance;
 }
-h1 { font-size: var(--text-2xl); margin-top: 0; font-weight: 500; }
-h2 { font-size: var(--text-xl); font-weight: 500; }
+h1 { font-size: var(--text-2xl); margin-top: 0; letter-spacing: -0.012em; }
+h2 { font-size: var(--text-xl); letter-spacing: -0.006em; }
 h3 { font-size: var(--text-lg); }
 h4 { font-size: var(--text-base); }
 
 p, ul, ol, dl { margin: 0 0 var(--space-4); }
 ul, ol { padding-left: 1.4em; }
 li { margin-bottom: var(--space-1); }
+p { text-wrap: pretty; }
 
 a { color: var(--color-link); text-underline-offset: 0.18em; text-decoration-thickness: 0.06em; }
-a:hover { color: var(--color-link-hover); }
+a:hover { color: var(--color-link-hover); text-decoration-thickness: 0.1em; }
 
 :focus-visible {
   outline: 3px solid var(--color-focus);
@@ -51,6 +62,12 @@ a:hover { color: var(--color-link-hover); }
 }
 
 hr { border: 0; border-top: 1px solid var(--color-rule); margin: var(--space-8) 0; }
+
+blockquote {
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-rule);
+}
 
 cite { font-style: normal; }
 cite.is-work { font-style: italic; }
@@ -83,15 +100,27 @@ cite.is-work { font-style: italic; }
   background: var(--color-accent);
   color: var(--color-accent-contrast);
   font-family: var(--font-sans);
+  font-size: var(--text-ui);
 }
 .skip-link:focus { top: var(--space-2); }
+
+[hidden]:not([hidden='until-found']) { display: none !important; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
+/* Print: the actual answer text, every section and the sources, whatever is collapsed on screen.
+   answer-panels.ts also opens everything on `beforeprint`; these rules cover printing without it. */
 @media print {
-  .site-header, .site-footer, .skip-link { display: none; }
-  details > summary { display: none; }
+  :root { color-scheme: light; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .site-header, .site-footer, .skip-link, .control, .answer__cue, .thesis-card__cue,
+  .reading__tools, .answer__tools, .answer__links { display: none !important; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
   details:not([open]) > * { display: block; }
+  details::details-content { content-visibility: visible; display: block; }
+  [data-answer-panel] { display: block !important; content-visibility: visible !important; }
+  a { color: inherit; }
 }

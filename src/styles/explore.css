@@ -1,0 +1,383 @@
+/* Question page, Explore mode: the six-thesis overview (level 1) and the reading region with
+   progressive levels (2 Understand, 3 Examine, 4 Study). See AnswerPanel.astro. */
+
+/* An open answer's heading sticks while its long text scrolls; leave room for it at anchors. */
+html:has(.question-page) { scroll-padding-top: 4.75rem; }
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+.breadcrumb li { margin: 0; display: inline-flex; align-items: center; }
+.breadcrumb li + li::before {
+  content: '/';
+  content: '/' / '';
+  margin-inline: var(--space-2);
+  color: var(--color-rule-strong);
+}
+.breadcrumb a { display: inline-flex; align-items: center; min-height: var(--touch); }
+
+.question-head { margin-bottom: var(--space-8); }
+.question-head h1 { max-width: 26ch; margin-bottom: var(--space-3); }
+.question-head .lede { margin-bottom: 0; }
+
+/* --- Level 1: six theses at a glance -------------------------------------------------- */
+
+.overview__head,
+.reading__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-6);
+  margin-bottom: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-rule-strong);
+}
+.overview__head .kicker,
+.reading__head .kicker { margin: 0; }
+.overview__hint {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* 1 column on phones, 2 x 3 on medium screens, 3 x 2 on wide screens. Never six narrow columns. */
+.thesis-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 40rem) {
+  .thesis-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+}
+@media (min-width: 64rem) {
+  .thesis-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+}
+
+.thesis-card {
+  position: relative;
+  margin: 0;
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-top: 3px solid var(--wv);
+  border-radius: var(--radius-sm);
+}
+@media (min-width: 40rem) {
+  .thesis-card { padding: var(--space-4) var(--space-5) var(--space-5); }
+}
+.thesis-card:hover { border-color: var(--color-rule-strong); border-top-color: var(--wv); background: var(--color-bg); }
+.thesis-card[data-open] { border-color: var(--wv); }
+
+.thesis-card__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--space-3);
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-sans);
+}
+.thesis-card__link {
+  color: var(--wv);
+  font-size: var(--text-sm);
+  font-weight: 650;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.thesis-card__link:hover { color: var(--wv); text-decoration: underline; }
+/* The whole card is the link's hit area; the visible text stays selectable-free and simple. */
+.thesis-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+@supports selector(:has(a)) {
+  .thesis-card__link:focus-visible { outline: none; }
+  .thesis-card:has(.thesis-card__link:focus-visible) { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+}
+.thesis-card__cue {
+  flex: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+.thesis-card__cue-closed::after {
+  content: '';
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  margin-left: 0.45em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.2em) rotate(45deg);
+}
+.thesis-card__cue-open { display: none; }
+.thesis-card[data-open] .thesis-card__cue-closed { display: none; }
+.thesis-card[data-open] .thesis-card__cue-open { display: inline; color: var(--color-text); }
+
+.thesis-card__thesis {
+  margin: 0;
+  font-size: var(--text-thesis);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+.thesis-card__thesis--empty { color: var(--color-text-muted); font-style: italic; }
+
+/* --- Reading region ------------------------------------------------------------------- */
+
+.reading { margin-top: var(--space-12); }
+.reading__tools { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* Before the panel script runs, keep answers collapsed (except a fragment target) so the page
+   does not flash open; the inline script in BaseLayout removes .js if the panel script fails. */
+.js:not(.js-ready) [data-answer-panel] { display: none; }
+.js:not(.js-ready) [data-answer]:target > [data-answer-panel],
+.js:not(.js-ready) [data-answer]:has(:target) > [data-answer-panel] { display: block; }
+
+.answer {
+  border-top: 1px solid var(--color-rule);
+  min-width: 0;
+}
+.answer--empty { color: var(--color-text-muted); padding-bottom: var(--space-4); }
+
+.answer__heading {
+  margin: 0;
+  font-size: var(--text-xl);
+  line-height: 1.25;
+}
+.answer__heading > a,
+.answer__name { color: var(--color-text); }
+/* Very narrow screens: keep the name on one line; the chevron alone shows the state there
+   (assistive technology reads aria-expanded either way). */
+@media (max-width: 24rem) {
+  .answer__heading { font-size: var(--text-lg); }
+  .answer__cue > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+/* Without JavaScript the heading is plain text; with it, a full-width disclosure button. */
+/* Same box as the button, so enhancing the heading does not shift the page. */
+.answer__heading:not(:has(button)) {
+  display: flex;
+  align-items: center;
+  min-height: 3.75rem;
+  padding: var(--space-2) 0;
+}
+.answer__name::before {
+  content: '';
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin-right: 0.55em;
+  border-radius: 1px;
+  background: var(--wv);
+  vertical-align: 0.14em;
+}
+
+.answer__toggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-height: 3.75rem;
+  padding: var(--space-2) var(--space-1) var(--space-2) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.answer__toggle:hover .answer__name { text-decoration: underline; text-decoration-thickness: 0.06em; text-underline-offset: 0.18em; }
+.answer__toggle:focus-visible { outline-offset: -3px; }
+.answer__cue {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font: 500 var(--text-sm) / 1 var(--font-sans);
+  color: var(--color-text-muted);
+}
+.answer__cue::after {
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.15em) rotate(45deg);
+}
+.answer__cue-open { display: none; }
+.answer[data-open] .answer__cue-closed { display: none; }
+.answer[data-open] .answer__cue-open { display: inline; }
+.answer[data-open] .answer__cue::after { transform: translateY(0.15em) rotate(-135deg); }
+
+/* While an answer is open its heading stays in view, so the reader always knows whose text this is
+   and can close it from anywhere. */
+.answer[data-open] > .answer__heading {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.answer__inner {
+  max-width: calc(var(--measure) + var(--space-6) + 2px);
+  margin: var(--space-4) 0 var(--space-10);
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--wv);
+}
+@media (min-width: 48rem) {
+  .answer__inner { padding-left: var(--space-6); }
+}
+
+/* Level 2 opens with the reviewed thesis. Not italic: it is a claim to read, not a pull quote. */
+.answer__thesis {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  margin: 0 0 var(--space-3);
+}
+.answer__scope {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+.answer__inner .tradition-notes { font-family: var(--font-sans); line-height: 1.5; }
+.answer__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.answer__body > :last-child { margin-bottom: 0; }
+.answer__section { margin: 0 0 var(--space-8); }
+.answer__label {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0 0 var(--space-3);
+}
+/* Editorial marks keyed to the semantic section; hidden from assistive technology. */
+[data-section='christian-response'] > .answer__label::before { content: '§ '; content: '§ ' / ''; color: var(--color-text-muted); font-weight: 400; }
+[data-section='strongest-objection'] > .answer__label::before,
+[data-section='pressure-questions'] > .answer__label::before { content: '◇ '; content: '◇ ' / ''; color: var(--color-text-muted); font-weight: 400; }
+
+/* --- Levels 3 and 4: native disclosures ------------------------------------------------ */
+
+.level {
+  border-top: 1px solid var(--color-rule);
+}
+.level + .level { border-top-color: var(--color-rule); }
+.answer__body > .level:last-child { border-bottom: 1px solid var(--color-rule); }
+.level__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-3);
+  position: relative;
+  min-height: 3.25rem;
+  padding: var(--space-3) var(--space-8) var(--space-3) 0;
+  cursor: pointer;
+  list-style: none;
+}
+.level__summary::-webkit-details-marker { display: none; }
+.level__summary::after {
+  content: '';
+  position: absolute;
+  right: var(--space-2);
+  top: 1.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 1.5px solid var(--color-text-muted);
+  border-bottom: 1.5px solid var(--color-text-muted);
+  transform: rotate(45deg);
+}
+.level[open] > .level__summary::after { top: 1.5rem; transform: rotate(-135deg); }
+.level__summary:hover .level__title { text-decoration: underline; text-decoration-thickness: 0.06em; text-underline-offset: 0.18em; }
+.level__summary:focus-visible { outline-offset: -3px; }
+.level__kicker {
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  min-width: 4.75rem;
+}
+/* Phones: the kicker always takes its own line, so short and long level titles align alike. */
+@media (max-width: 40rem) {
+  .level__kicker { flex-basis: 100%; }
+}
+.level__title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.level__body { padding: var(--space-3) 0 var(--space-4); }
+.level--examine > .level__body > .answer__section:last-child { margin-bottom: var(--space-2); }
+
+.deep-dive__body h4 { font-size: var(--text-base); margin: var(--space-6) 0 var(--space-2); }
+.deep-dive__body h4:first-child { margin-top: 0; }
+
+/* --- Level 4 footer: thinkers and links -------------------------------------------------- */
+
+.answer__footer { margin-top: var(--space-6); }
+.answer__footer-label {
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-1);
+}
+.answer__thinkers .inline-list { font-size: var(--text-ui); gap: 0 var(--space-5); margin-bottom: var(--space-3); }
+.answer__thinkers .inline-list .muted { font-family: var(--font-sans); font-size: var(--text-sm); }
+.answer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+.answer__links li { margin: 0; }
+.answer__links a { display: inline-flex; align-items: center; min-height: var(--touch); }
+
+/* --- Related questions and footer ------------------------------------------------------- */
+
+.related__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0 var(--space-8);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+.related__list li { margin: 0; border-bottom: 1px solid var(--color-rule); }
+.related__list a { display: flex; align-items: center; min-height: var(--touch); padding-block: var(--space-2); line-height: 1.35; }
+.question-page__back { margin: var(--space-10) 0 0; font-family: var(--font-sans); font-size: var(--text-sm); }
+
+/* Print: no sticky heading, no colour bars. */
+@media print {
+  .answer[data-open] > .answer__heading { position: static; border: 0; }
+  .answer__inner { border-left: 0; padding-left: 0; max-width: none; }
+  .thesis-card { break-inside: avoid; }
+  .level { border: 0; }
+  .level__summary::after { display: none; }
+}

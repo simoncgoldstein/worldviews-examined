@@ -15,11 +15,13 @@ The project does **not** claim that each label names a perfectly uniform system.
 
 ## Product goal
 
-Build a rigorous, source-backed site that works in three modes:
+Build a rigorous, source-backed site with three reading modes on every question (see `docs/DESIGN-SPEC-V1.md`):
 
-1. **Question Explorer**: compare all six worldviews on one question.
-2. **Worldview Explorer**: trace one worldview across all major domains.
-3. **Apologetics Mode**: review a worldview's strongest claims, explanatory strengths, Christian responses, and precise pressure questions.
+1. **Explore** (implemented in UI-1): all six theses at a glance, then any answer opened in full, with its analysis and sources.
+2. **Compare** (UI-2): any two worldviews side by side on the same question.
+3. **Christian Case** (UI-3): one alternative followed through its account, strengths, the Christian response and pressure questions.
+
+Worldview pages trace one worldview across all the questions.
 
 The site must steelman before critiquing. Non-Christian positions should be sourced first from primary texts and serious representative thinkers from within the tradition. The Christian column is itself one of the competing worldviews and receives its own strongest objections and replies.
 
