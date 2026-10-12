@@ -376,7 +376,7 @@
    "morality-evil"
   ],
   "bio": true,
-  "worksWithSource": 1
+  "worksWithSource": 2
  },
  {
   "id": "oppy",
@@ -481,7 +481,37 @@
    "knowledge-truth"
   ],
   "bio": true,
-  "worksWithSource": 0
+  "worksWithSource": 1
+ },
+ {
+  "id": "papineau",
+  "name": "David Papineau",
+  "worldview": "naturalism",
+  "role": "specialist",
+  "answers": 1,
+  "answerIds": [
+   "naturalism/what-is-man"
+  ],
+  "domains": [
+   "human-nature"
+  ],
+  "bio": true,
+  "worksWithSource": 2
+ },
+ {
+  "id": "chalmers",
+  "name": "David J. Chalmers",
+  "worldview": "naturalism",
+  "role": "interlocutor",
+  "answers": 1,
+  "answerIds": [
+   "naturalism/what-is-man"
+  ],
+  "domains": [
+   "human-nature"
+  ],
+  "bio": true,
+  "worksWithSource": 2
  },
  {
   "id": "maimonides",

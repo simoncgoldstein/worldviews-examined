@@ -661,6 +661,11 @@
     Ultimate Reality (2026-10-06): read §26.1 (PDF pp. 151-155); §26.5 (p. 185); §26.16 (pp. 262, 267, 271); §27.25
     (pp. 385-387); §29.2 (p. 479); §29.3 (p. 485); §29.5 (p. 493); §29.9 (pp. 511-512); §29.12 (pp. 519-520).
     Compare §27.25 and §29.12 wording with the Dutch before quotation.
+    C3 (2026-10-12): read §33.9, "Fourthly, the body" (PDF pp. 665-666): the union of soul and body is
+    "incomprehensible" yet closer than occasionalism, pre-established harmony or influx allow; one person is
+    the subject of all activities; the same soul "thinks through the brains". Checked against the Dutch
+    (Gutenberg 67966, Tweede deel): "De aard der vereeniging van ziel en lichaam is onbegrijpelijk ... denkt door
+    de hersenen".
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -1036,6 +1041,9 @@
     matter: most cited lines are Philo's (Demea's at 10.3 and 10.8), not Hume speaking in his own
     voice; attribute accordingly. Verified 2026-10-05: 10.3-4, 10.8-9, 10.25-26, 11.4-16.
     Ultimate Reality (2026-10-06): read D 8.2-8.6 (Philo); D 9.4-9.9 (Cleanthes, not Philo); D 9.10 (Philo).
+    C3 (2026-10-12): re-read D 9.1-9.11. Demea gives the a priori argument (9.1, 9.3); Cleanthes answers it
+    (9.4-9.9), including the "whole" as "an arbitrary act of the mind" (9.9), a point about the causes of a
+    series; Philo replies at 9.10 ("the reasonings, which you have urged, Cleanthes").
   verificationStatus: checked
   verifiedOn: "2026-10-05"
 
@@ -4700,3 +4708,208 @@
     tzimtzum is not covered by this entry and is not claimed.
   verificationStatus: checked
   verifiedOn: '2026-10-09'
+
+# --- C3 naturalist philosophical completeness (2026-10-12) ---------------------------------
+- id: chalmers-facing-up
+  type: article
+  title: Facing Up to the Problem of Consciousness
+  shortCitation: Chalmers, "Facing Up to the Problem of Consciousness"
+  author: David J. Chalmers
+  traditionTags: [naturalism]
+  containerTitle: Journal of Consciousness Studies
+  edition: vol. 2, no. 3, pp. 200-219
+  year: 1995
+  url: https://consc.net/papers/facing.html
+  notes: >-
+    Author-posted text of the JCS article (its header gives JCS 2(3):200-19, 1995). The web text has no print
+    pagination, so it is cited by the paper's numbered sections and quoted only in short phrases. Read in full
+    2026-10-12: §2 (easy problems: discrimination, integration, report, access, attention, control, wakefulness;
+    the hard problem is "the problem of experience", that there is "something it is like"); §3 (functions are
+    explained by mechanisms; a "further unanswered question" remains: why the performance of these functions is
+    accompanied by experience); §4 (Dennett 1991 among those who "deny the phenomenon"); §5 (experience is "not
+    entailed by the physical"; disanalogy with vitalism; a conceptual point that further neuroscience will not
+    affect); §6 (experience taken as fundamental, with psychophysical laws; "naturalistic dualism", compatible with
+    physical theory and not "spiritual or mystical"). Chalmers is a critic of reductive physicalism, not a
+    representative physicalist, and his argument is conceptual, not an experimental result.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: papineau-explanatory-gap
+  type: article
+  title: What Exactly is the Explanatory Gap?
+  shortCitation: Papineau, "What Exactly is the Explanatory Gap?"
+  author: David Papineau
+  traditionTags: [naturalism]
+  containerTitle: Philosophia
+  edition: vol. 39, no. 1, pp. 5-19
+  year: 2011
+  url: https://www.davidpapineau.co.uk/uploads/1/8/5/5/18551740/explanatorygappdf.pdf
+  doi: 10.1007/s11406-010-9273-6
+  notes: >-
+    Published version uploaded by the author (journal pagination printed; journal page = PDF page + 3; DOI, volume
+    and pages confirmed on Crossref). Read in full 2026-10-12: p. 5 (the gap arises "only because we cannot stop
+    ourselves thinking about the mind-brain relation in a dualist way"); p. 6 (materialism as a posteriori
+    mind-brain identities, with causal closure as general evidence; n. 1 covers non-reductive realization; Levine's
+    explanatory gap); pp. 7-8 (the conventional account: phenomenal concepts are not descriptive, so the conscious
+    facts cannot be derived a priori from the physical; most philosophers reject Chalmers' and Jackson's inference
+    from this to the falsity of materialism); pp. 8-11 (Papineau rejects this conventional account: the felt gap
+    has nothing to do with a priori underivability; p. 9, identities with proper names and indexicals are also
+    underivable yet raise no gap); pp. 11-12 (identities leave nothing unexplained; "generate" and "give rise to"
+    talk betrays an intuition of dualism); p. 13 ("a problem for materialists, not for materialism"); pp. 13-14
+    (the intuition is no evidence for dualism, since on dualism experience could not cause the belief); pp. 14-18
+    (candidate explanations: culture, Bloom, the antipathetic fallacy, transparency, Melnyk; each faces
+    difficulties); pp. 18-19 (conclusions: the cause of the intuition is an open empirical question). A leading physicalist reply; Papineau defends materialism.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: papineau-rise-physicalism
+  type: article
+  title: The Rise of Physicalism
+  shortCitation: Papineau, "The Rise of Physicalism"
+  author: David Papineau
+  traditionTags: [naturalism]
+  containerTitle: Physicalism and Its Discontents
+  editor: Carl Gillett and Barry Loewer
+  edition: pp. 3-36
+  place: Cambridge
+  publisher: Cambridge University Press
+  year: 2001
+  url: https://www.davidpapineau.co.uk/uploads/1/8/5/5/18551740/papineau_in_gillett_and_loewer.pdf
+  doi: 10.1017/CBO9780511570797.002
+  notes: >-
+    Chapter as published, uploaded by the author (book pagination printed; page = PDF page + 2; book and pp. 3-36
+    confirmed on Crossref). Read 2026-10-12: pp. 3-4 (physicalism is an ontological thesis, that everything is
+    "physically constituted", held in subtler forms: supervenience, realization, token identity); pp. 8-9 (the
+    completeness of physics, "All physical effects are fully determined by law by prior physical occurrences", and
+    the causal argument for physicalism); pp. 30-33 (the argument from physiology: twentieth-century biochemistry
+    and neurophysiology found no special vital or mental forces; completeness is an empirical thesis with "no
+    knock-down argument", but in his judgment established by normal inductive standards). A contemporary
+    naturalist's own case for physicalism, used for the causal-closure motive.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: frankish-illusionism
+  type: article
+  title: Illusionism as a Theory of Consciousness
+  shortCitation: Frankish, "Illusionism as a Theory of Consciousness"
+  author: Keith Frankish
+  traditionTags: [naturalism]
+  containerTitle: Journal of Consciousness Studies
+  edition: vol. 23, no. 11-12, pp. 11-39
+  year: 2016
+  url: https://keithfrankish.github.io/articles/Frankish_Illusionism%20as%20a%20theory%20of%20consciousness_eprint.pdf
+  notes: >-
+    Author's eprint, linked from keithfrankish.com/illusionism. Its cover note gives JCS 23(11-12): 11-39 (2016),
+    reprinted in Frankish (ed.), Illusionism as a Theory of Consciousness (Imprint Academic, 2017), and says it
+    "may differ in minor ways from the print version". Cited by numbered section and paraphrased, not quoted or
+    paginated. Read 2026-10-12: opening (illusionism "remains a minority position"; Dennett its pre-eminent
+    defender); §1.1 (radical realism, conservative realism, which includes most physicalist and representational
+    theories, and illusionism; illusionists deny that experiences have phenomenal properties and explain why they
+    seem to, "the illusion problem"); §1.2 (strong vs weak illusionism: the strong form, which Frankish defends, denies qualitative properties
+    whether physical or non-physical, whereas the weak form, a kind of conservative realism, denies only features
+    such as ineffability and intrinsicness; quasi-phenomenal properties); §1.6
+    (illusionists do not deny conscious experiences in an inclusive sense, only that they have phenomenal
+    properties); §1.7 (we are not zombies with no inner life; experiences are "like something" in a functional
+    sense); §3.1 (the objection that illusionism denies the data, and the reply).
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: dennett-consciousness-seem
+  type: article
+  title: Why and How Does Consciousness Seem the Way It Seems?
+  shortCitation: Dennett, "Why and How Does Consciousness Seem the Way It Seems?"
+  author: Daniel C. Dennett
+  traditionTags: [naturalism]
+  containerTitle: Open MIND 10(T)
+  editor: Thomas Metzinger and Jennifer M. Windt
+  place: Frankfurt am Main
+  publisher: MIND Group
+  year: 2015
+  url: https://open-mind.net/papers/why-and-how-does-consciousness-seem-the-way-it-seems
+  doi: 10.15502/9783958570245
+  notes: >-
+    Open-access target paper; DOI from the publisher's page. The HTML edition has no print pagination, so it is
+    cited by section. Read in full 2026-10-12: §1 (the "consciousness is an illusion" slogan misreads his view;
+    outline); §2 (no "double transduction" into a second medium, so qualia "as traditionally conceived" have no
+    home in the brain); §3 ("it still seems that qualia exist"; Hume's "strange inversion": the seeming is
+    explained by expectations projected outward); §5 (qualia seem simple and ineffable because of the low
+    resolution of the brain's access to itself, a "user-illusion"); §7 (the Clapgras thought experiment).
+    Dennett's own version of illusionism; Frankish (2016) is used for the general position.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: chalmers-panpsychism-panprotopsychism
+  type: article
+  title: Panpsychism and Panprotopsychism
+  shortCitation: Chalmers, "Panpsychism and Panprotopsychism"
+  author: David J. Chalmers
+  traditionTags: [naturalism]
+  containerTitle: The Amherst Lecture in Philosophy
+  edition: lecture 8, pp. 1-35
+  year: 2013
+  url: http://www.amherstlecture.org/chalmers2013/
+  notes: >-
+    Published lecture PDF (chalmers2013_ALP.pdf; printed page = PDF page - 2), which gives the preferred citation
+    "The Amherst Lecture in Philosophy 8 (2013): 1-35"; reprinted in Brüntrup and Jaskolla (eds.), Panpsychism
+    (OUP, 2016), pp. 19-47. Read 2026-10-12: p. 2 (Chalmers is "by no means confident that panpsychism is true");
+    §4, p. 15 (panprotopsychism: protophenomenal properties are not themselves phenomenal but can collectively
+    constitute phenomenal properties); §5, p. 18 (Russellian monism; whether it is physicalism is "a largely
+    verbal question"; Russellian monism is the disjunction of constitutive Russellian panpsychism and
+    panprotopsychism); §6, pp. 22-23 (the combination problem, posed by James and named by Seager: "how do
+    microexperiences combine to yield macroexperiences?"); pp. 24-25 (a separate combination problem for
+    panprotopsychism, how protoexperiences yield experiences; the subject-subject gap versus the
+    nonphenomenal-phenomenal gap; "challenges rather than refutations"). Chalmers presents the view as a serious option, not as
+    his settled position.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: sep-panpsychism
+  type: academic
+  title: Panpsychism
+  shortCitation: Goff, Seager and Allen-Hermanson, "Panpsychism"
+  author: Philip Goff, William Seager and Sean Allen-Hermanson
+  traditionTags: [naturalism]
+  containerTitle: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/entries/panpsychism/
+  notes: >-
+    First published 23 May 2001; substantive revision 13 May 2022. Cite by section. Read 2026-10-12: §1 (Spinoza:
+    mind and matter as attributes of the one substance he identified with God; Leibniz's monads following a
+    God-imposed rule); §2.1 (panpsychism as the view that mentality is fundamental and ubiquitous;
+    panexperientialism vs pancognitivism); §§2.3-2.5 (panprotopsychism; cosmopsychism, not to be confused with
+    pantheism; Russellian monism, from Russell's 1927 Analysis of Matter and Eddington); §3.1 (the anti-emergence
+    argument; Chalmers' hard problem; Galen Strawson 2006a argues that experience cannot intelligibly emerge from
+    the wholly non-experiential, and that his conclusion is panpsychism, not merely panprotopsychism; SEP's
+    bibliography prints the title as "Realistic Materialism: Why Physicalism Entails Panpsychism", JCS 13(10-11),
+    whereas the published title is "Realistic Monism: ..."; the subtitle states the scope, a physicalism realistic
+    about experience); §4.2 (the combination
+    problem, "the hardest problem facing panpsychism"). Used for Strawson, whose paper has no lawful open copy (the
+    Reading repository record has no file); his view is reported through this entry, not quoted.
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'
+
+- id: quine-two-dogmas
+  type: primary
+  title: Two Dogmas of Empiricism
+  shortCitation: Quine, "Two Dogmas of Empiricism"
+  author: W. V. Quine
+  traditionTags: [naturalism]
+  containerTitle: The Philosophical Review
+  edition: vol. 60, no. 1, pp. 20-43
+  year: 1951
+  url: https://archive.org/details/sim_philosophical-review_1951-01_60_1
+  notes: >-
+    Original journal printing, read 2026-10-12 in the Internet Archive microfilm scan of the January 1951 issue
+    (openly downloadable, not access-restricted). Rights: the Online Books Page copyright-information page for
+    the journal (onlinebooks.library.upenn.edu/webbin/cinfo/philosophicalreview, last updated 2018) reports no
+    issue renewals and no contribution renewals found in CCE or CPRS; the renewal window for 1951 (1978-79) falls
+    within CPRS coverage. On that records-based evidence this 1951 US printing is understood to be in the US public
+    domain; this is not a legal opinion, and the site quotes only a short phrase. The status of the revised 1953
+    reprint in From a Logical Point of View (which SEP cites as "1951: 43") was not investigated; it is not used.
+    Page numbers are this printing's, read from the scan's text layer. Read: p. 20 (the two dogmas; "a shift toward
+    pragmatism"); p. 38 (§V: statements face "the tribunal of sense experience not individually but only as a
+    corporate body"); pp. 39-40 (§VI: total science "a man-made fabric which impinges on experience only along the
+    edges"; logical laws are further statements of the system; "no statement is immune to revision", even the law
+    of excluded middle); p. 41 ("our natural tendency to disturb the total system as little as possible"; logic and
+    ontology "relatively centrally located"); p. 43 (a "more thorough pragmatism").
+  verificationStatus: checked
+  verifiedOn: '2026-10-12'

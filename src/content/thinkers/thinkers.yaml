@@ -485,7 +485,8 @@
     Dennett gives a naturalist account of agency and responsibility that keeps persons, reasons and
     selves real while explaining them as products of evolution and culture. He is used on the
     question of what human capacities for deliberation and responsibility are, and how a naturalist
-    can speak of moral accountability.
+    can speak of moral accountability. He is also the leading illusionist about consciousness: he
+    denies that experiences have intrinsic, ineffable qualia and explains why they seem to.
   keyIdeas:
     - Intentional stance
     - Self as center of narrative gravity
@@ -493,11 +494,13 @@
     - Free will worth wanting
     - Competence without comprehension
     - Cultural evolution
+    - Illusionism about qualia
   representativeWorks:
     - { title: Consciousness Explained, year: 1991 }
     - { title: Freedom Evolves, year: 2003 }
     - { title: "The Self as a Responding and Responsible Artifact", year: 2003, sourceId: dennett-self-artifact }
     - { title: "Breaking the Spell: Religion as a Natural Phenomenon", year: 2006 }
+    - { title: "Why and How Does Consciousness Seem the Way It Seems?", year: 2015, sourceId: dennett-consciousness-seem }
 
 - id: oppy
   slug: graham-oppy
@@ -650,8 +653,9 @@
     Quine is the site's principal witness for naturalized epistemology: the view that there is no
     "first philosophy" outside science from which knowledge could be certified, so that the study of
     knowledge becomes part of natural science. He is also used for the claim that no statement, not
-    even a law of logic, is in principle immune to revision. His own texts are under copyright and
-    are quoted only as the Stanford Encyclopedia of Philosophy quotes them.
+    even a law of logic, is in principle immune to revision. That claim is read in the 1951 journal
+    printing of "Two Dogmas of Empiricism"; his later essays are under copyright and are quoted only as
+    the Stanford Encyclopedia of Philosophy quotes them.
   keyIdeas:
     - No first philosophy outside science
     - Epistemology as a chapter of psychology
@@ -659,10 +663,77 @@
     - No statement immune to revision
     - Rejection of the analytic-synthetic distinction
   representativeWorks:
-    - { title: Two Dogmas of Empiricism, year: 1951 }
+    - { title: Two Dogmas of Empiricism, year: 1951, sourceId: quine-two-dogmas }
     - { title: Word and Object, year: 1960 }
     - { title: Epistemology Naturalized, year: 1969 }
   notes: Used for epistemology and ontology. Quine did not write on religion in a way that represents naturalistic atheism generally.
+
+- id: papineau
+  slug: david-papineau
+  name: David Papineau
+  worldview: naturalism
+  role: specialist
+  displayOrder: 6
+  usedFor: [physicalism, consciousness and the explanatory gap]
+  schools: [Physicalism, Philosophy of mind]
+  birthYear: 1947
+  description: British philosopher who defends physicalism from the completeness of physics and argues that the explanatory gap reflects an intuition of dualism.
+  bio: >-
+    David Papineau was born in 1947 in Como, Italy, and went to school in Trinidad, England and
+    Durban, South Africa, where he studied mathematics and statistics at the University of Natal. He
+    then read philosophy at Cambridge and took a doctorate on conceptual change and scientific
+    rationality. He taught at Reading, Macquarie, Birkbeck and Cambridge before becoming Professor of
+    Philosophy of Science at King's College London in 1990, and from 2015 to 2020 also taught at the
+    Graduate Center of the City University of New York. He has been President of the British Society
+    for the Philosophy of Science, the Mind Association and the Aristotelian Society.
+  significance: >-
+    Papineau gives a contemporary naturalist's own case for physicalism, the causal argument from the
+    completeness of physics, and one of the main physicalist replies to the hard problem: that mind-brain
+    identities leave nothing unexplained, and that the felt gap comes from our way of thinking about
+    experience. He is used for the physicalist side of the consciousness debate, not for naturalism as a
+    whole.
+  keyIdeas:
+    - Completeness of physics and the causal argument
+    - Physicalism as an empirically supported thesis
+    - Phenomenal concepts
+    - The intuition of dualism
+  representativeWorks:
+    - { title: The Rise of Physicalism, year: 2001, sourceId: papineau-rise-physicalism }
+    - { title: Thinking about Consciousness, year: 2002 }
+    - { title: "What Exactly is the Explanatory Gap?", year: 2011, sourceId: papineau-explanatory-gap }
+  notes: One physicalist position among several; non-reductive physicalists and illusionists answer the hard problem differently.
+
+- id: chalmers
+  slug: david-chalmers
+  name: David J. Chalmers
+  worldview: naturalism
+  role: interlocutor
+  schools: [Philosophy of mind]
+  description: Australian philosopher who named the hard problem of consciousness and argues that physical and functional explanation does not by itself explain experience.
+  bio: >-
+    David Chalmers was born in Sydney and grew up there and in Adelaide, where he studied mathematics
+    at the University of Adelaide. After a period at Oxford he took a PhD in philosophy and cognitive
+    science at Indiana University in 1993, working in Douglas Hofstadter's Center for Research on
+    Concepts and Cognition. He taught at Washington University in St. Louis, UC Santa Cruz, the
+    University of Arizona and the Australian National University, and has been at New York University
+    full-time since 2014. He co-founded the Association for the Scientific Study of Consciousness.
+  significance: >-
+    Chalmers is the site's source for the hard problem of consciousness: the question why the
+    performance of cognitive functions is accompanied by experience at all. He is an interlocutor, not
+    a representative of naturalistic atheism. He criticizes reductive physicalism, calls his own
+    proposal "naturalistic dualism", and treats panpsychism and Russellian monism as serious options
+    without endorsing them.
+  keyIdeas:
+    - Easy problems and the hard problem
+    - Experience as not entailed by the physical
+    - Naturalistic dualism
+    - Panprotopsychism and Russellian monism
+    - The combination problem
+  representativeWorks:
+    - { title: Facing Up to the Problem of Consciousness, year: 1995, sourceId: chalmers-facing-up }
+    - { title: The Conscious Mind, year: 1996 }
+    - { title: Panpsychism and Panprotopsychism, year: 2013, sourceId: chalmers-panpsychism-panprotopsychism }
+  notes: Not presented as a physicalist or as a spokesman for naturalism; his conceivability arguments are contested by physicalists such as Papineau.
 
 # --- Rabbinic Judaism --------------------------------------------------------------------
 - id: maimonides
