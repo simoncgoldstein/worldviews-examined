@@ -215,6 +215,10 @@ Section headings come from the MDX body and render in the order written. The que
 
 Sources for all answers are listed once, after the reading region (see Citations).
 
+### Compare mode (UI-2)
+
+`?mode=compare&views=<first>,<second>` on the same question page shows any two answers in paired rows, by semantic section identity: At a glance (`lede`, scope), Understand (the view / The Christian view; What this explains well), Examine (each answer's own analytical `<details>`, unrenamed), Study (Deep dive; thinkers and links). The rows reuse the answers' own rendered elements; no prose is duplicated or summarised. Details in `docs/ui/UI2-COMPARE.md`.
+
 ### Editorial notation
 
 `§` analytical or major subsection; `◇` pressure question or strongest objection; `↩` citation backlink; `↗` external source; `·` metadata separator; `→` deeper navigation; `←` return navigation. Use sparingly; do not add decorative religious icons.

@@ -18,7 +18,7 @@ The project does **not** claim that each label names a perfectly uniform system.
 Build a rigorous, source-backed site with three reading modes on every question (see `docs/DESIGN-SPEC-V1.md`):
 
 1. **Explore** (implemented in UI-1): all six theses at a glance, then any answer opened in full, with its analysis and sources.
-2. **Compare** (UI-2): any two worldviews side by side on the same question.
+2. **Compare** (implemented in UI-2): any two worldviews on the same question, section by section, with a shareable `?mode=compare&views=…` URL.
 3. **Christian Case** (UI-3): one alternative followed through its account, strengths, the Christian response and pressure questions.
 
 Worldview pages trace one worldview across all the questions.
