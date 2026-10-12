@@ -4,6 +4,9 @@ import Footer from '../components/Footer.astro';
 import { siteTitle, siteTagline } from '../data/site';
 import { url } from '../lib/paths';
 import '../styles/global.css';
+// The two Latin faces used above the fold; other subsets load on demand through unicode-range.
+import serifLatin from '@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2?url';
+import sansLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 
 interface Props {
   title?: string;
@@ -19,10 +22,24 @@ const fullTitle = title ? `${title} · ${siteTitle}` : siteTitle;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14171a" media="(prefers-color-scheme: dark)" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="preload" href={serifLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={sansLatin} as="font" type="font/woff2" crossorigin />
+    <script is:inline>
+      // Lets CSS keep question-page answers collapsed until src/scripts/answer-panels.ts takes over.
+      // If that script never runs (blocked or failed), drop the flag so every answer stays readable.
+      document.documentElement.classList.add('js');
+      setTimeout(function () {
+        var root = document.documentElement;
+        if (!root.classList.contains('js-ready')) root.classList.remove('js');
+      }, 4000);
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
