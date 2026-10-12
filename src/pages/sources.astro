@@ -3,14 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SourceCitation from '../components/SourceCitation.astro';
 import { answersCitingSource, getContent, lookup, questionUrl } from '../lib/content';
 import { sourceTypeLabels } from '../lib/format';
-import { symbols } from '../lib/labels';
 
 const content = await getContent();
 const groups = content.worldviews
   .map((worldview) => ({
     worldview,
     sources: content.sources
-      .filter((s) => s.traditionTags[0] === worldview.id)
+      .filter((s) => s.traditionTags[0] === worldview.id && s.verificationStatus === 'checked')
       .sort((a, b) => (a.author ?? a.title).localeCompare(b.author ?? b.title)),
   }))
   .filter((group) => group.sources.length > 0);
@@ -25,9 +24,8 @@ const groups = content.worldviews
       <p class="eyebrow">Registry</p>
       <h1>Sources</h1>
       <p class="lede">
-        Each work is registered once here and cited elsewhere with its own locator. This is a seed
-        registry, not a bibliography. Entries marked unverified have not been checked against the
-        cited edition; reviewed and complete answers may cite only checked sources.
+        Each work is registered once here and cited in the answers with its own locator. Every work
+        cited in an answer has been checked against the edition named.
       </p>
     </header>
 
@@ -67,14 +65,7 @@ const groups = content.worldviews
                       <p>
                         <SourceCitation source={source} />
                       </p>
-                      <p class="meta">
-                        {sourceTypeLabels[source.type]}
-                        <span aria-hidden="true"> {symbols.separator} </span>
-                        <span class={`verification verification--${source.verificationStatus}`}>
-                          {source.verificationStatus === 'checked' ? `Checked ${source.verifiedOn}` : 'Unverified seed entry'}
-                        </span>
-                        {source.notes && <><span aria-hidden="true"> {symbols.separator} </span>{source.notes}</>}
-                      </p>
+                      <p class="meta">{sourceTypeLabels[source.type]}</p>
                       {citing.length > 0 && (
                         <p class="meta">
                           Cited in:{' '}
