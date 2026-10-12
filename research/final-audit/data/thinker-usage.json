@@ -43,7 +43,7 @@
   "name": "Francis Turretin",
   "worldview": "christianity",
   "role": "primary",
-  "answers": 12,
+  "answers": 13,
   "answerIds": [
    "christianity/ultimate-reality",
    "christianity/something-rather-than-nothing",
@@ -53,6 +53,7 @@
    "christianity/induction",
    "christianity/ultimate-authority",
    "christianity/what-is-man",
+   "christianity/worship",
    "christianity/great-and-terrible",
    "christianity/know-the-good",
    "christianity/guilt",
@@ -228,11 +229,13 @@
   "name": "John Owen",
   "worldview": "christianity",
   "role": "specialist",
-  "answers": 1,
+  "answers": 2,
   "answerIds": [
+   "christianity/self-deception",
    "christianity/guilt"
   ],
   "domains": [
+   "morality-evil",
    "salvation-destiny"
   ],
   "bio": true,
@@ -488,11 +491,13 @@
   "name": "David Papineau",
   "worldview": "naturalism",
   "role": "specialist",
-  "answers": 1,
+  "answers": 2,
   "answerIds": [
+   "naturalism/ultimate-reality",
    "naturalism/what-is-man"
   ],
   "domains": [
+   "ultimate-reality",
    "human-nature"
   ],
   "bio": true,

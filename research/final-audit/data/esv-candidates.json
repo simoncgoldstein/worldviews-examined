@@ -239,14 +239,6 @@
    "words": 21
   },
   {
-   "file": "christianity/induction.mdx",
-   "locator": "Exodus 4:1–5",
-   "fragments": [
-    "above"
-   ],
-   "words": 1
-  },
-  {
    "file": "christianity/jesus.mdx",
    "locator": "John 1:14",
    "fragments": [
@@ -521,7 +513,7 @@
   },
   {
    "file": "christianity/self-salvation.mdx",
-   "locator": "Ephesians 2:8–10",
+   "locator": "Ephesians 2:8",
    "fragments": [
     "by grace you have been saved through faith"
    ],
@@ -550,14 +542,6 @@
     "by your will they existed and were created."
    ],
    "words": 8
-  },
-  {
-   "file": "christianity/something-rather-than-nothing.mdx",
-   "locator": "Hebrews 11:3",
-   "fragments": [
-    "from nothing"
-   ],
-   "words": 2
   },
   {
    "file": "christianity/suffering.mdx",
@@ -858,31 +842,8 @@
    "words": 1
   }
  ],
- "unledgered": [
-  {
-   "file": "christianity/induction.mdx",
-   "locator": "Exodus 4:1–5",
-   "fragments": [
-    "above"
-   ],
-   "words": 1
-  },
-  {
-   "file": "christianity/self-salvation.mdx",
-   "locator": "Ephesians 2:8–10",
-   "fragments": [
-    "by grace you have been saved through faith"
-   ],
-   "words": 8
-  },
-  {
-   "file": "christianity/something-rather-than-nothing.mdx",
-   "locator": "Hebrews 11:3",
-   "fragments": [
-    "from nothing"
-   ],
-   "words": 2
-  },
+ "unledgered": [],
+ "knownNonEsv": [
   {
    "file": "buddhism/order.mdx",
    "locator": "Hebrews 1:3",
@@ -892,15 +853,6 @@
    "words": 1
   }
  ],
- "orphanLedger": [
-  {
-   "file": "christianity/self-salvation.mdx",
-   "locator": "Ephesians 2:8",
-   "fragments": 1,
-   "words": 8,
-   "bytes": 42,
-   "verses": 1
-  }
- ],
+ "orphanLedger": [],
  "ledgerRows": 103
 }

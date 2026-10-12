@@ -15,7 +15,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 355
+  "citeCount": 358
  },
  {
   "id": "wcf",
@@ -32,7 +32,7 @@
    "hinduism",
    "buddhism"
   ],
-  "citeCount": 121
+  "citeCount": 122
  },
  {
   "id": "calvin-institutes",
@@ -514,7 +514,7 @@
   "lanes": [
    "naturalism"
   ],
-  "citeCount": 16
+  "citeCount": 17
  },
  {
   "id": "kitcher-ethical-project-precis",
@@ -552,7 +552,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 25
+  "citeCount": 23
  },
  {
   "id": "russell-what-i-believe",
@@ -1230,11 +1230,12 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 6,
+  "answers": 7,
   "lanes": [
+   "christianity",
    "hinduism"
   ],
-  "citeCount": 7
+  "citeCount": 8
  },
  {
   "id": "subbarau-madhva-brahmasutra",
@@ -1269,11 +1270,12 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 21,
+  "answers": 22,
   "lanes": [
+   "christianity",
    "hinduism"
   ],
-  "citeCount": 54
+  "citeCount": 55
  },
  {
   "id": "thibaut-shankara-brahmasutra-2",
@@ -1282,11 +1284,11 @@
    "hinduism"
   ],
   "status": "checked",
-  "answers": 4,
+  "answers": 5,
   "lanes": [
    "hinduism"
   ],
-  "citeCount": 4
+  "citeCount": 5
  },
  {
   "id": "vidyabhusana-nyaya-sutras",
@@ -2005,7 +2007,7 @@
    "christianity",
    "naturalism"
   ],
-  "citeCount": 5
+  "citeCount": 4
  },
  {
   "id": "sep-logical-truth",
@@ -3107,10 +3109,11 @@
    "naturalism"
   ],
   "status": "checked",
-  "answers": 2,
+  "answers": 3,
   "lanes": [
+   "christianity",
    "naturalism"
   ],
-  "citeCount": 2
+  "citeCount": 3
  }
 ]

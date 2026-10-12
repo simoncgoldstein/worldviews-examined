@@ -545,7 +545,6 @@
   representativeWorks:
     - { title: Moral Realism, year: 1986, sourceId: railton-moral-realism }
     - { title: "Facts, Values, and Norms", year: 2003 }
-  notes: Birth year and Princeton PhD details removed as unverified (Michigan page returned 403); titles from Oxford Uehiro bio.
 
 - id: rosenberg
   slug: alex-rosenberg
@@ -644,7 +643,7 @@
   bio: >-
     Willard Van Orman Quine (1908–2000) was born in Akron, Ohio. He studied mathematics at Oberlin
     College and took his doctorate at Harvard with a dissertation on Whitehead and Russell's
-    Principia Mathematica. In 1932–33 he travelled in Europe and met Rudolf Carnap in Prague. He
+    Principia Mathematica. In 1932–33 he traveled in Europe and met Rudolf Carnap in Prague. He
     taught at Harvard from 1936 until 1978, apart from naval intelligence work during the Second
     World War. He wrote widely on logic and set theory, and his essays "Two Dogmas of Empiricism"
     (1951) and "Epistemology Naturalized" (1969) and his book Word and Object (1960) made him one of
@@ -771,7 +770,7 @@
     - { title: "Treatise on Resurrection (Ma'amar Tehiyyat ha-Metim)", year: 1191, sourceId: maimonides-treatise-resurrection-hebrew }
     - { title: Mishneh Torah, sourceId: maimonides-mishneh-torah-touger }
     - { title: Guide of the Perplexed, year: 1190, sourceId: maimonides-guide-friedlander }
-  notes: Birth year follows SEP (1138); some sources give 1135 or 1137. Mishneh Torah and Guide years are completion dates (the Guide's is sometimes given as c. 1185-1190). Registry sourceId maimonides-guide should be reconciled with maimonides-guide-friedlander.
+  notes: "Birth year follows SEP (1138); some sources give 1135 or 1137. The years given for the Mishneh Torah and the Guide are completion dates (the Guide's is sometimes given as c. 1185-1190)."
 
 - id: halevi
   slug: judah-halevi
@@ -784,7 +783,7 @@
   description: Poet and philosopher who defended revealed religion and the particular vocation of Israel against philosophical rationalism.
   bio: >-
     Judah Halevi was born in the Iberian peninsula, probably at Tudela, in the 1050s or 1060s;
-    his birth year is not known. He practised medicine and became one of the greatest Hebrew poets of the
+    his birth year is not known. He practiced medicine and became one of the greatest Hebrew poets of the
     Middle Ages, writing secular verse, liturgical poems and poems of longing for Zion. His
     philosophical work, the Kuzari, is a dialogue between a king and a Jewish sage, written in
     Judeo-Arabic, probably in the few years before his departure in 1140. It defends Judaism as
@@ -804,7 +803,7 @@
   representativeWorks:
     - { title: "The Kuzari (Kitab al-Hujja wa-l-Dalil fi Nusr al-Din al-Dhalil)", sourceId: halevi-kuzari-hirschfeld }
     - { title: Poems of Zion }
-  notes: Birth place (probably Tudela) and year (1050s-1060s) are uncertain per SEP. Registry sourceId halevi-kuzari should be reconciled with halevi-kuzari-hirschfeld.
+  notes: "Birth place (probably Tudela) and year (1050s-1060s) are uncertain per SEP."
 
 - id: soloveitchik
   slug: joseph-b-soloveitchik
@@ -886,8 +885,8 @@
   description: Spanish Talmudist and biblical commentator who combined halakhic scholarship with mystical interpretation and defended Judaism in the Barcelona disputation.
   bio: >-
     Moses ben Nahman (1194-c. 1270), known as Nachmanides or the Ramban, was born in Girona in
-    Catalonia, where he became a leading rabbi and Talmudist and also practised medicine. He wrote
-    novellae on the Talmud, legal works including Torat ha-Adam, and Milhamot ha-Shem, a defence
+    Catalonia, where he became a leading rabbi and Talmudist and also practiced medicine. He wrote
+    novellae on the Talmud, legal works including Torat ha-Adam, and Milhamot ha-Shem, a defense
     of Alfasi against criticism. In 1263 he represented Judaism in the Barcelona Disputation against
     the convert Pablo Christiani. Afterwards he was sentenced to banishment; he left for the Land of
     Israel in 1267 and died around 1270, probably in Acre. His Torah commentary, written in his old
@@ -924,7 +923,7 @@
   bio: >-
     Emil Ludwig Fackenheim was born in Halle, Germany. In 1938-1939 he was interned at the Sachsenhausen camp; after
     his release he escaped to Britain and was sent to Canada as an enemy alien in 1940. He served as a rabbi in Hamilton, Ontario, and taught philosophy for decades at the
-    University of Toronto, writing on Hegel and on Jewish thought. From the late 1960s the Holocaust became the centre
+    University of Toronto, writing on Hegel and on Jewish thought. From the late 1960s the Holocaust became the center
     of his work, in essays such as "Jewish Faith and the Holocaust" (1968) and the books God's Presence in History
     (1970) and To Mend the World (1982). He later settled in Jerusalem, where he died in 2003.
   significance: >-
@@ -940,7 +939,7 @@
     - { title: "Jewish Faith and the Holocaust: A Fragment", year: 1968, sourceId: fackenheim-jewish-faith-holocaust }
     - { title: "God's Presence in History", year: 1970 }
     - { title: "To Mend the World", year: 1982 }
-  notes: Birth year 1916 follows most reference works (some give 1917). Biographical details follow standard reference accounts; the essay cited is the one read.
+  notes: "Birth year 1916 follows most reference works (some give 1917)."
 
 # --- Classical Islam ---------------------------------------------------------------------
 - id: ash-ari
@@ -1039,7 +1038,7 @@
     - { title: "Ihya' 'Ulum al-Din, Book 31: On Repentance", sourceId: ghazali-repentance-stern }
     - { title: Tahafut al-Falasifa, year: 1095 }
     - { title: al-Munqidh min al-Dalal }
-  notes: Birth year corrected from the registry's 1058 to c. 1056 (SEP, from his own letters and autobiography); 1058-59 is a later historians' dating. Tahafut year is approximate.
+  notes: "The birth year c. 1056 follows SEP, from his own letters and autobiography; 1058-59 is a later historians' dating. The year given for the Tahafut is approximate."
 
 - id: razi
   slug: fakhr-al-din-al-razi
@@ -1072,7 +1071,7 @@
   representativeWorks:
     - { title: "Mafatih al-Ghayb (al-Tafsir al-kabir)", sourceId: razi-mafatih-al-ghayb }
     - { title: al-Matalib al-'Aliya }
-  notes: Biography from Macdonald, Development of Muslim Theology (1903), p. 241 (death 606 AH, the Mafatih al-Ghayb, Ibn Sina, Ibn Arabi), and from al-Razi's commentary on 4:157 as read 2026-10-07; the previously registered birth year (1149) could not be verified in a read source during the 2026-10-07 independent review and was removed, so only the death year (606 AH / 1210) is published. Profiled at first public use (Islam `jesus`).
+  notes: "The biography follows Macdonald, Development of Muslim Theology (1903), p. 241, and al-Razi's own commentary on Qur'an 4:157. His birth year is uncertain, so only his death year (606 AH / 1210) is given."
 
 - id: ibn-taymiyya
   slug: ibn-taymiyya
@@ -1113,7 +1112,7 @@
     - { title: "al-Radd 'ala al-Mantiqiyyin (Refutation of the Logicians)", sourceId: ibn-taymiyya-radd-mantiqiyyin }
     - { title: "al-Jawab al-Sahih li-man Baddala Din al-Masih (The Correct Answer to Those Who Changed the Religion of the Messiah)", sourceId: ibn-taymiyya-jawab-sahih }
     - { title: "al-Siyasa al-Shar'iyya (Law-Guided Public Policy)" }
-  notes: Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP). Wasitiyya date not verified. R4 (2026-10-08) read passages of the Dar' (vol. 1), the Radd and the Jawab in Arabic; see their source records.
+  notes: "Dar' Ta'arud was written after 1313 and al-Siyasa around 1310 (SEP); the date of the Wasitiyya is uncertain."
 
 - id: ibn-sina
   slug: avicenna-ibn-sina
@@ -1149,7 +1148,7 @@
     - { title: al-Najat }
     - { title: al-Isharat wa-l-Tanbihat }
     - { title: Canon of Medicine }
-  notes: SEP gives ca. 970-1037 (birth uncertain; traditional 980). Shifa' completion year removed as unverified. Islamic philosophy is not simply identical with orthodox kalam; entries should say which they represent.
+  notes: "SEP gives ca. 970-1037 (birth uncertain; traditionally 980). Islamic philosophy is not simply identical with orthodox kalam, and the answers say which they represent."
 
 - id: ibn-arabi
   slug: ibn-arabi
@@ -1165,13 +1164,13 @@
   bio: >-
     Muhyi al-Din Ibn al-'Arabi (1165-1240) was born in Murcia in al-Andalus and studied with many
     teachers in al-Andalus and North Africa. In 1201 he left the Muslim West for the pilgrimage to Mecca,
-    and began writing his vast work al-Futuhat al-Makkiyya after the pilgrimage. After travelling
+    and began writing his vast work al-Futuhat al-Makkiyya after the pilgrimage. After traveling
     through Iraq and Anatolia, he settled in Damascus in 1223 and remained there until his death in
     1240. His shorter Fusus al-Hikam became the subject of more than a hundred commentaries. His
     writings on the divine names, the cosmos and the Perfect Human shaped later Sufism and Islamic
     philosophy.
   significance: >-
-    Ibn Arabi gives the human as the comprehensive being able to realise every divine name, and hence every
+    Ibn Arabi gives the human as the comprehensive being able to realize every divine name, and hence every
     possibility, high and low. His views are contested within Sunni thought, so he serves as a specialist source for
     mystical theology and not as the default Islamic account.
   keyIdeas:
@@ -1183,7 +1182,7 @@
   representativeWorks:
     - { title: al-Futuhat al-Makkiyya }
     - { title: Fusus al-Hikam }
-  notes: Futuhat drafts completed 1231 and 1238 (start year not verified). Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among critics) and should not be treated as the default Islamic account.
+  notes: "The two drafts of the Futuhat were completed in 1231 and 1238. Used for mystical theology. His views are contested within mainstream Sunni thought (Ibn Taymiyya was among his critics), so he is not presented as the default Islamic account."
 
 # --- Hindu traditions --------------------------------------------------------------------
 - id: ibn-khaldun
@@ -1196,7 +1195,7 @@
   schools: [Maliki jurisprudence, Historiography]
   birthYear: 1332
   deathYear: 1406
-  description: North African historian and jurist whose Muqaddimah analysed the rise and decline of dynasties.
+  description: North African historian and jurist whose Muqaddimah analyzed the rise and decline of dynasties.
   bio: >-
     Ibn Khaldun was born in Tunis in 1332 to a family of Yemeni origin long settled in Seville. At
     twenty he became secretary to the Hafsid sultan, and he went on to serve the Marinid court at Fez,
@@ -1217,7 +1216,7 @@
     - History as a science of civilization, open to critical testing of reports
   representativeWorks:
     - { title: "Muqaddimah (Les prolégomènes, vol. 1, trans. de Slane)", year: 1863, sourceId: ibn-khaldun-prolegomenes-slane }
-  notes: Biography from de Slane's introduction to the Prolégomènes (vol. 1, pp. iii-v, read 2026-10-07). Profiled at first public use (Islam `history`).
+  notes: "The biography follows de Slane's introduction to the Prolégomènes (vol. 1, pp. iii-v)."
 
 - id: shafii
   slug: al-shafii
@@ -1247,7 +1246,7 @@
     - Analogy and ijtihad as "two names for one meaning", right in the outward but not certain
   representativeWorks:
     - { title: "al-Risala", sourceId: shafii-risala-shakir }
-  notes: Dates from the catalog card of Shakir's edition (150-204 AH); characterization from Macdonald pp. 103-108 and the Risala as read 2026-10-08. Profiled at first public use from the primary text (Islam `ultimate-authority`).
+  notes: "Dates (150-204 AH) follow the catalog record of Shakir's edition of the Risala; the characterization draws on Macdonald (pp. 103-108) and the Risala itself."
 
 - id: saduq
   slug: al-shaykh-al-saduq
@@ -1277,7 +1276,7 @@
     - The received Qur'an as the complete Qur'an
   representativeWorks:
     - { title: "Risalat al-I'tiqadat al-Imamiyya (A Shi'ite Creed, trans. Fyzee)", year: 1942, sourceId: saduq-shiite-creed-fyzee }
-  notes: Biography from Fyzee's preface and introduction (death at Rayy 381/991; author of one of the four books); birthplace and birth year not given there and not published. Profiled at first public use (Islam `ultimate-authority`, `history`).
+  notes: "The biography follows Fyzee's preface and introduction (death at Rayy, 381/991; author of one of the four books of Twelver hadith); his birthplace and birth year are not given there."
 
 - id: shankara
   slug: shankara
@@ -1286,10 +1285,10 @@
   role: primary
   displayOrder: 1
   schools: [Advaita Vedanta]
-  era: 8th century CE (dates debated; proposals include 788–820, 700–750, or late 7th–early 8th century)
+  era: 8th century AD (dates debated; proposals include 788–820, 700–750, or late 7th–early 8th century)
   description: Commentator on the Upanishads, Bhagavad Gita and Brahma Sutras and the foundational figure of Advaita Vedanta.
   bio: >-
-    Shankara (Śaṅkara) was a Sanskrit commentator whose dates are debated: older scholarship gave 788–820 CE, Nakamura proposed 700–750, and others the late seventh or early eighth century. No dependable historical record of his life survives beyond his writings. Hagiographies composed centuries later place his birth in Kerala, describe him as a young renouncer and travelling teacher, and say he died at thirty-two; these details are traditional, not verified. He was a systematizer rather than the founder of Advaita Vedanta, a pupil of Govinda, who was himself a pupil of Gaudapada. His earliest complete extant commentaries treat the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, and he also wrote the Upadeshasahasri. Many other texts are attributed to him but probably come from later monastic leaders.
+    Shankara (Śaṅkara) was a Sanskrit commentator whose dates are debated: older scholarship gave AD 788–820, Nakamura proposed 700–750, and others the late seventh or early eighth century. No dependable historical record of his life survives beyond his writings. Hagiographies composed centuries later place his birth in Kerala, describe him as a young renouncer and traveling teacher, and say he died at thirty-two; these details are traditional, not verified. He was a systematizer rather than the founder of Advaita Vedanta, a pupil of Govinda, who was himself a pupil of Gaudapada. His earliest complete extant commentaries treat the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, and he also wrote the Upadeshasahasri. Many other texts are attributed to him but probably come from later monastic leaders.
   significance: Shankara supplies the classical non-dual Vedanta account of human greatness and failure, tracing misery and wrongdoing to a beginningless misidentification of the self, and his Gita commentary analyses how desire veils knowledge. Advaita is one Hindu school among several and must not stand for Hindu traditions as a whole.
   keyIdeas:
     - Adhyāsa (superimposition)
@@ -1312,10 +1311,10 @@
   role: primary
   displayOrder: 2
   schools: [Vishishtadvaita Vedanta, Sri Vaishnavism]
-  era: traditionally 1017–1137 CE; recent scholarship proposes 1077–1157
+  era: traditionally AD 1017–1137; recent scholarship proposes 1077–1157
   description: Vedanta theologian who argued that the world and souls are real modes of a personal Brahman, joining philosophy to devotion.
   bio: >-
-    Ramanuja (Rāmānuja) is traditionally dated 1017–1137 CE, though recent scholarship proposes 1077–1157. He was born at Sriperumbudur near modern Chennai into a Tamil-speaking Brahmin family and studied at Kanchipuram under Yadavaprakasha, with whom he came to disagree. He became the leading figure of the Sri Vaishnava community, a Tamil devotional tradition shaped by Yamunacarya, and set out its philosophy in Sanskrit for a pan-Indian audience. His main works are the Sri Bhashya on the Brahma Sutras, the Vedarthasamgraha, and a commentary on the Bhagavad Gita. Some scholars question the authenticity of the Gadyatraya and some shorter works. He articulated Vishishtadvaita, "qualified non-dualism", and defended theism against non-dualist readings of Vedanta.
+    Ramanuja (Rāmānuja) is traditionally dated AD 1017–1137, though recent scholarship proposes 1077–1157. He was born at Sriperumbudur near modern Chennai into a Tamil-speaking Brahmin family and studied at Kanchipuram under Yadavaprakasha, with whom he came to disagree. He became the leading figure of the Sri Vaishnava community, a Tamil devotional tradition shaped by Yamunacarya, and set out its philosophy in Sanskrit for a pan-Indian audience. His main works are the Sri Bhashya on the Brahma Sutras, the Vedarthasamgraha, and a commentary on the Bhagavad Gita. Some scholars question the authenticity of the Gadyatraya and some shorter works. He articulated Vishishtadvaita, "qualified non-dualism", and defended theism against non-dualist readings of Vedanta.
   significance: Ramanuja offers a theistic Vedanta account in which the individual self is real, eternal and a mode of God, its knowledge contracted by karma and restored through devotion and surrender. This contrasts with Advaita and shows internal diversity within Hindu answers on human dignity and evil.
   keyIdeas:
     - Viśiṣṭādvaita (qualified non-dualism)
@@ -1337,10 +1336,10 @@
   role: primary
   displayOrder: 3
   schools: [Dvaita Vedanta]
-  era: 13th–14th century CE (traditionally 1238–1317)
+  era: 13th–14th century AD (traditionally 1238–1317)
   description: Vedanta theologian who taught an irreducible difference between God, souls and matter.
   bio: >-
-    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated 1238–1317 CE, though some scholars give 1197–1276. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main centre at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of non-dualist Vedanta.
+    Madhva (also called Madhvacharya or Ananda Tirtha) is traditionally dated AD 1238–1317, though some scholars give 1197–1276. He is said to have been born at Pajaka near Udupi on the coast of Karnataka, and the Madhva community still has its main center at Udupi. He taught Dvaita Vedanta, which he called Tattvavada, the "realist viewpoint": the Vedanta texts, he held, teach a fundamental difference between God and the individual self. He wrote commentaries on the Brahma Sutras, the Bhagavad Gita and the principal Upanishads, along with independent works. His followers regard him as an incarnation of the wind-god Vayu, a sectarian belief and not a historical finding. He is a major critic of non-dualist Vedanta.
   significance: Madhva makes souls permanently distinct, dependent agents with differing natures, which changes how Hindu traditions answer questions about dignity, merit and evil. He extends the project's range beyond Advaita and Vishishtadvaita.
   keyIdeas:
     - Pañcabheda (five fundamental differences)
@@ -1359,17 +1358,17 @@
   role: primary
   displayOrder: 4
   schools: [Nyaya]
-  era: late 10th century CE
+  era: late 10th century AD
   description: Nyaya philosopher who developed the realist natural-theological tradition, arguing for God as creator and answering Buddhist critics.
   bio: >-
-    Udayana (Udayanācārya) is usually dated to the late tenth or early eleventh century CE and is associated with Mithila in north-eastern India. He worked within the combined Nyaya-Vaisesika tradition, which held that the world is made of real, enduring substances and atoms, knowable through perception and inference. His Nyayakusumanjali ("Handful of Flowers of Reasoning") is the classical Hindu treatise arguing for the existence of God (Isvara) by reason; his Atmatattvaviveka defends an enduring self against Buddhist critics. He also wrote commentaries on earlier Nyaya and Vaisesika works. Later Indian logicians regarded him as a forerunner of the "new" Nyaya (Navya-Nyaya) school.
+    Udayana (Udayanācārya) is usually dated to the late tenth or early eleventh century AD and is associated with Mithila in north-eastern India. He worked within the combined Nyaya-Vaisesika tradition, which held that the world is made of real, enduring substances and atoms, knowable through perception and inference. His Nyayakusumanjali ("Handful of Flowers of Reasoning") is the classical Hindu treatise arguing for the existence of God (Isvara) by reason; his Atmatattvaviveka defends an enduring self against Buddhist critics. He also wrote commentaries on earlier Nyaya and Vaisesika works. Later Indian logicians regarded him as a forerunner of the "new" Nyaya (Navya-Nyaya) school.
   significance: Udayana is the site's principal Hindu witness for arguing to God from the world rather than from scripture alone. His Kusumanjali infers an omniscient maker from the world's being an effect and from the joining of atoms at the start of each world-cycle, which the Vedanta schools, Ramanuja especially, rejected as a route to Brahman. He is used for the existence question and for natural order.
   keyIdeas:
     - Inference to God (Isvara) from effects
     - Intelligent agency in the combining of atoms
     - Realism about substances and atoms (Nyaya-Vaisesika)
     - God as orderer of atoms, not creator from nothing
-    - Defence of an enduring self against Buddhism
+    - Defense of an enduring self against Buddhism
   representativeWorks:
     - { title: Nyayakusumanjali, sourceId: cowell-kusumanjali }
     - { title: Atmatattvaviveka }
@@ -1382,11 +1381,11 @@
   role: primary
   displayOrder: 5
   schools: [Mimamsa]
-  era: flourished c. 660 CE
+  era: flourished c. AD 660
   description: Mimamsa philosopher who defended the authority of the Veda and developed theories of language and knowledge.
   bio: >-
-    Kumarila Bhatta (Kumārila Bhaṭṭa) flourished around 660 CE, a contemporary of the Buddhist logician Dharmakirti. Little is securely known of his life; there is some evidence that he came from South India. He belonged to Purva Mimamsa, the school concerned with interpreting the Vedic ritual texts and the nature of dharma, and gave his name to the Bhatta sub-school. His main works are the Slokavarttika, a verse treatise on epistemology and language; the Tantravarttika, on the interpretation of the Veda; and the Tuptika. A longer commentary, the Brhattika, is lost. He engaged critically with Buddhist philosophers, especially Dignaga and Dharmakirti, and his arguments influenced later Buddhist thought.
-  significance: Kumarila shows how Vedic authority and the intrinsic reliability of knowledge ground Hindu accounts of moral knowledge, and his defence of an enduring self underwrites responsibility across lives against the Buddhist no-self view. He is used chiefly for knowledge, language and authority.
+    Kumarila Bhatta (Kumārila Bhaṭṭa) flourished around AD 660, a contemporary of the Buddhist logician Dharmakirti. Little is securely known of his life; there is some evidence that he came from South India. He belonged to Purva Mimamsa, the school concerned with interpreting the Vedic ritual texts and the nature of dharma, and gave his name to the Bhatta sub-school. His main works are the Slokavarttika, a verse treatise on epistemology and language; the Tantravarttika, on the interpretation of the Veda; and the Tuptika. A longer commentary, the Brhattika, is lost. He engaged critically with Buddhist philosophers, especially Dignaga and Dharmakirti, and his arguments influenced later Buddhist thought.
+  significance: Kumarila shows how Vedic authority and the intrinsic reliability of knowledge ground Hindu accounts of moral knowledge, and his defense of an enduring self underwrites responsibility across lives against the Buddhist no-self view. He is used chiefly for knowledge, language and authority.
   keyIdeas:
     - Svataḥ prāmāṇya (intrinsic validity of cognition)
     - Apauruṣeyatva (authorless Veda)
@@ -1407,10 +1406,10 @@
   displayOrder: 1
   usedFor: [nondual Shaiva philosophy, aesthetics, consciousness]
   schools: [Kashmir Shaivism]
-  era: c. 10th–11th century CE (latest known date 1015)
+  era: c. 10th–11th century AD (latest known date 1015)
   description: Kashmir Shaiva philosopher and aesthetic theorist who set out a nondual philosophy of consciousness and a theory of aesthetic experience.
   bio: >-
-    Abhinavagupta was a Kashmiri scholar of the late tenth and early eleventh centuries; his latest known date is 1015 CE. His fame rests chiefly on his philosophical works on Kashmir Shaivism, which include two commentaries on the Ishvarapratyabhijna of Utpala, his teacher's teacher. In poetics he wrote two commentaries that carry the weight of independent treatises: the Abhinavabharati on Bharata's Natyashastra, the classical treatise on drama, and the Locana on Anandavardhana's Dhvanyaloka, the founding work of the theory of suggestion (dhvani). Later writers on poetics, among them Mammata and Vishvanatha, took up his account of rasa.
+    Abhinavagupta was a Kashmiri scholar of the late tenth and early eleventh centuries; his latest known date is AD 1015. His fame rests chiefly on his philosophical works on Kashmir Shaivism, which include two commentaries on the Ishvarapratyabhijna of Utpala, his teacher's teacher. In poetics he wrote two commentaries that carry the weight of independent treatises: the Abhinavabharati on Bharata's Natyashastra, the classical treatise on drama, and the Locana on Anandavardhana's Dhvanyaloka, the founding work of the theory of suggestion (dhvani). Later writers on poetics, among them Mammata and Vishvanatha, took up his account of rasa.
   significance: Abhinavagupta gives classical Indian aesthetics its most influential theory of how art produces delight, rasa as the relish of a generalised emotion in the responsive spectator. He is used for the question of beauty and creativity, not as a representative of Hindu theology as a whole.
   keyIdeas:
     - Rasa as relish (asvada, carvana) manifested by suggestion
@@ -1430,10 +1429,10 @@
   role: primary
   displayOrder: 1
   schools: [Theravada]
-  era: flourished early 5th century CE
+  era: flourished early 5th century AD
   description: Commentator who systematized the Theravada understanding of the Pali Canon.
   bio: >-
-    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century CE. Tradition holds that he was an Indian monk who travelled to Sri Lanka and worked at Anuradhapura, where he is said to have rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopaedic summary of Theravada doctrine and meditation, organised around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures.
+    Buddhaghosa ("voice of the Buddha") flourished in the early fifth century AD. Tradition holds that he was an Indian monk who traveled to Sri Lanka and worked at Anuradhapura, where he is said to have rendered the older Sinhalese commentaries into Pali. His Visuddhimagga ("Path of Purification") is an encyclopedic summary of Theravada doctrine and meditation, organized around virtue, concentration and understanding. He also wrote, or is credited with, commentaries on the Vinaya and the Nikayas. Theravada tradition regards him as its most important commentator, and his interpretations have shaped orthodox readings of the Pali scriptures.
   significance: Buddhaghosa gives the most systematic Theravada map of the mental factors behind good and evil and of their purification, supplying the Theravada side of the Buddhist answer to human greatness and failure.
   keyIdeas:
     - Path of purification (virtue, concentration, understanding)
@@ -1452,10 +1451,10 @@
   role: primary
   displayOrder: 2
   schools: [Madhyamaka, Mahayana]
-  era: c. 150–250 CE
+  era: c. AD 150–250
   description: Founder of the Madhyamaka school, whose analysis of emptiness and dependent origination shaped Mahayana philosophy.
   bio: >-
-    Nagarjuna (Nāgārjuna) lived roughly between 150 and 250 CE, probably in southern India, and was a Buddhist monk. Very little can be said precisely about his life, and the traditional biographies, with their legends of serpent-spirits (nagas), are largely legendary. Works were often attributed to him later, and more than one author named Nagarjuna may be involved, though scholars generally accept groups of argumentative works, hymns and letters as his. His most important work is the Mulamadhyamakakarika, about 450 verses arguing that nothing has intrinsic nature (svabhava). He is regarded as the founder of Madhyamaka, the "Middle Way" school, and a reading of him as Prasangika became the official position of Tibetan Buddhism.
+    Nagarjuna (Nāgārjuna) lived roughly between AD 150 and 250, probably in southern India, and was a Buddhist monk. Very little can be said precisely about his life, and the traditional biographies, with their legends of serpent-spirits (nagas), are largely legendary. Works were often attributed to him later, and more than one author named Nagarjuna may be involved, though scholars generally accept groups of argumentative works, hymns and letters as his. His most important work is the Mulamadhyamakakarika, about 450 verses arguing that nothing has intrinsic nature (svabhava). He is regarded as the founder of Madhyamaka, the "Middle Way" school, and a reading of him as Prasangika became the official position of Tibetan Buddhism.
   significance: Nagarjuna shows how moral agency and transformation can be understood without a substantial self, and argues that emptiness makes action and ethics possible rather than undermining them. He anchors the Madhyamaka strand used across the site.
   keyIdeas:
     - Śūnyatā (emptiness) as absence of svabhāva
@@ -1475,10 +1474,10 @@
   role: primary
   displayOrder: 3
   schools: [Abhidharma, Yogacara]
-  era: 4th or 5th century CE (dating disputed)
+  era: 4th or 5th century AD (dating disputed)
   description: Scholastic author of an Abhidharma compendium and later a leading Yogacara philosopher.
   bio: >-
-    Vasubandhu lived in the fourth or fifth century CE, in the Gupta period; the dating is disputed. Tradition makes him a native of Gandhara who studied in Kashmir and later lived at Ayodhya under royal patronage. He wrote the Abhidharmakosa and its commentary, a systematic treatment of Abhidharma from a Sarvastivada and Sautrantika standpoint, and is also credited with Yogacara works, including the Twenty Verses, the Thirty Verses and the Exposition of the Three Natures. Since the 1950s some scholars, following Frauwallner, have argued that two authors of this name were merged into one; others defend a single author. His writings treat no-self, momentariness, karma as intention and "appearance-only" (vijnaptimatra).
+    Vasubandhu lived in the fourth or fifth century AD, in the Gupta period; the dating is disputed. Tradition makes him a native of Gandhara who studied in Kashmir and later lived at Ayodhya under royal patronage. He wrote the Abhidharmakosa and its commentary, a systematic treatment of Abhidharma from a Sarvastivada and Sautrantika standpoint, and is also credited with Yogacara works, including the Twenty Verses, the Thirty Verses and the Exposition of the Three Natures. Since the 1950s some scholars, following Frauwallner, have argued that two authors of this name were merged into one; others defend a single author. His writings treat no-self, momentariness, karma as intention and "appearance-only" (vijnaptimatra).
   significance: Vasubandhu's doctrine of latent tendencies and, in Yogacara, the storehouse and afflicted mind give a deep Buddhist account of habitual, pre-reflective disorder, which bears on the "terrible" half of the question.
   keyIdeas:
     - Karma as intention (cetanā)
@@ -1500,10 +1499,10 @@
   displayOrder: 1
   usedFor: [ethics, the bodhisattva path]
   schools: [Madhyamaka, Mahayana]
-  era: late 7th to mid-8th century CE
+  era: late 7th to mid-8th century AD
   description: Indian Mahayana poet-monk whose work sets out the path of the bodhisattva.
   bio: >-
-    Shantideva (Śāntideva) lived between the late seventh and mid-eighth century CE and is thought to have studied at the monastic university of Nalanda in northern India. He is associated with Madhyamaka, and Tibetan tradition counts him as a Prasangika. Knowledge of his life comes mainly from later Tibetan accounts. One legend says that fellow monks, who thought him idle, asked him for an original composition; he recited the Bodhicaryavatara, rose into the air, and vanished at the verses on emptiness. This story is traditional. The Bodhicaryavatara ("Entering the Bodhisattva's Way of Life") is a poem of about a thousand verses on generating the awakening mind and practising the perfections. He also compiled the Shiksasamuccaya, an anthology of Mahayana sutra passages with commentary.
+    Shantideva (Śāntideva) lived between the late seventh and mid-eighth century AD and is thought to have studied at the monastic university of Nalanda in northern India. He is associated with Madhyamaka, and Tibetan tradition counts him as a Prasangika. Knowledge of his life comes mainly from later Tibetan accounts. One legend says that fellow monks, who thought him idle, asked him for an original composition; he recited the Bodhicaryavatara, rose into the air, and vanished at the verses on emptiness. This story is traditional. The Bodhicaryavatara ("Entering the Bodhisattva's Way of Life") is a poem of about a thousand verses on generating the awakening mind and practicing the perfections. He also compiled the Shiksasamuccaya, an anthology of Mahayana sutra passages with commentary.
   significance: Shantideva gives the most penetrating Buddhist first-person account of weakness of will, self-cherishing and the sources of suffering, and his bodhisattva ideal is the Mahayana picture of human greatness. He is used chiefly for ethics.
   keyIdeas:
     - Bodhicitta (awakening mind)
@@ -1527,10 +1526,10 @@
   deathYear: 1253
   description: Japanese Zen master who founded the Soto school in Japan and wrote on practice, time and enlightenment.
   bio: >-
-    Dogen (Dōgen, 1200–1253) was a Japanese Buddhist monk who founded the Soto school of Zen in Japan, one of the two Zen traditions still flourishing there. He studied Chan in Song China before returning to Japan to teach. His major work is the Shobogenzo, a collection of essays in Japanese on practice, time and Buddha-nature, written over many years. He taught shikantaza, "just sitting", as the expression of an enlightenment already present, and developed concepts such as practice-realisation and being-time.
-  significance: Dogen gives a non-substantialist account of Buddha-nature and the unity of practice and realisation, and a distinctive reading of the gap between knowing and doing the good. He is used for questions of practice, time and the nature of awakening.
+    Dogen (Dōgen, 1200–1253) was a Japanese Buddhist monk who founded the Soto school of Zen in Japan, one of the two Zen traditions still flourishing there. He studied Chan in Song China before returning to Japan to teach. His major work is the Shobogenzo, a collection of essays in Japanese on practice, time and Buddha-nature, written over many years. He taught shikantaza, "just sitting", as the expression of an enlightenment already present, and developed concepts such as practice-realization and being-time.
+  significance: Dogen gives a non-substantialist account of Buddha-nature and the unity of practice and realization, and a distinctive reading of the gap between knowing and doing the good. He is used for questions of practice, time and the nature of awakening.
   keyIdeas:
-    - Shushō ittō (practice-realisation as one)
+    - Shushō ittō (practice-realization as one)
     - Shikantaza (just sitting)
     - Entire being as Buddha-nature
     - Uji (being-time)
@@ -1550,7 +1549,7 @@
   deathYear: 1419
   description: Tibetan scholar and founder of the Gelug school, known for his systematic presentation of the path and of Madhyamaka.
   bio: >-
-    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and studied at major monastic centres in Central Tibet. He founded Ganden Monastery in 1409, which became the base of the Gelug school. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
+    Tsongkhapa (1357–1419) was born in Tsongkha in the Amdo region of eastern Tibet and studied at major monastic centers in Central Tibet. He founded Ganden Monastery in 1409, which became the base of the Gelug school. His major works include the Great Treatise on the Stages of the Path (Lamrim Chenmo, 1402), the Essence of Eloquence (1407), the Ocean of Reasoning (1408) and Illuminating the Intent (1418). He championed the Prasangika-Madhyamaka reading of Nagarjuna, arguing that emptiness and dependent origination are compatible and that things function conventionally though lacking intrinsic nature.
   significance: Tsongkhapa integrates the value of human life, renunciation, compassion and the view of emptiness into one graded path, so that the ethical person remains conventionally real. He represents the Tibetan synthesis in the Buddhist lane.
   keyIdeas:
     - Lamrim (stages of the path)
@@ -1576,7 +1575,7 @@
   deathYear: 712
   description: Chinese Buddhist scholar-monk, counted the third patriarch of the Huayan school, who systematized its teaching that all phenomena interpenetrate.
   bio: >-
-    Fazang (643–712) was born in the Tang capital Chang'an to a family of Sogdian descent. As a young monk he assisted Xuanzang's translation work, then became a disciple of Zhiyan, later counted the second patriarch of the Huayan school, probably around 663. He won the favour of Empress Wu, lectured widely on the Avatamsaka (Flower Garland) Sutra, and wrote standard commentaries on it and on the Awakening of Faith in Mahayana. His Treatise on the Five Teachings of Huayan and his short Essay on the Golden Lion set out the school's doctrine that each phenomenon includes and is included in all others, illustrated by the rafter and the building and by Indra's net.
+    Fazang (643–712) was born in the Tang capital Chang'an to a family of Sogdian descent. As a young monk he assisted Xuanzang's translation work, then became a disciple of Zhiyan, later counted the second patriarch of the Huayan school, probably around 663. He won the favor of Empress Wu, lectured widely on the Avatamsaka (Flower Garland) Sutra, and wrote standard commentaries on it and on the Awakening of Faith in Mahayana. His Treatise on the Five Teachings of Huayan and his short Essay on the Golden Lion set out the school's doctrine that each phenomenon includes and is included in all others, illustrated by the rafter and the building and by Indra's net.
   significance: Fazang supplies the classic Buddhist account of how the one and the many are related, in which each thing contains all things without losing its own place. He is used for that question as a distinct Chinese Mahayana school, not as the voice of Buddhism generally.
   keyIdeas:
     - Mutual inclusion and identity of phenomena
@@ -1596,10 +1595,10 @@
   role: primary
   displayOrder: 4
   schools: [Buddhist epistemology, Yogacara-Sautrantika]
-  era: c. 6th–7th century CE (often c. 600–660; some scholars earlier)
+  era: c. 6th–7th century AD (often c. 600–660; some scholars earlier)
   description: Buddhist logician and epistemologist whose work on valid cognition became the basis of Buddhist philosophy of knowledge in India and Tibet.
   bio: >-
-    Dharmakirti (Dharmakīrti) lived in the sixth or seventh century CE; most evidence suggests activity around 600–660, though some scholars argue for a date half a century earlier. He is said to have been born in South India and to have moved to Nalanda monastery. With his predecessor Dignaga he founded the Buddhist epistemological school, known in Tibetan as "those who follow reasoning". He composed seven treatises, of which the Pramanavarttika, a commentary on Dignaga's Pramanasamuccaya, is the most significant; others include the Pramanaviniscaya, Nyayabindu and Hetubindu. His thought combines nominalism about universals, momentariness and a causal account of knowledge, and he debated non-Buddhist rivals, among them the Mimamsa tradition.
+    Dharmakirti (Dharmakīrti) lived in the sixth or seventh century AD; most evidence suggests activity around 600–660, though some scholars argue for a date half a century earlier. He is said to have been born in South India and to have moved to Nalanda monastery. With his predecessor Dignaga he founded the Buddhist epistemological school, known in Tibetan as "those who follow reasoning". He composed seven treatises, of which the Pramanavarttika, a commentary on Dignaga's Pramanasamuccaya, is the most significant; others include the Pramanaviniscaya, Nyayabindu and Hetubindu. His thought combines nominalism about universals, momentariness and a causal account of knowledge, and he debated non-Buddhist rivals, among them the Mimamsa tradition.
   significance: Dharmakirti argues that faults stem from a single defeasible cognition, the self-view, and that liberation is therefore rationally possible. He is the project's main Buddhist voice on knowledge and truth, and is set against Kumarila.
   keyIdeas:
     - Pramāṇa (valid cognition)

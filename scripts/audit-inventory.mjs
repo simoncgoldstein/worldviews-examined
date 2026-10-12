@@ -159,7 +159,15 @@ const ledgerKeys = new Map();
 for (const r of ledgerRows) ledgerKeys.set(key(r), (ledgerKeys.get(key(r)) ?? 0) + 1);
 const candKeys = new Map();
 for (const c of esvCandidates) candKeys.set(key(c), (candKeys.get(key(c)) ?? 0) + 1);
-const unledgered = esvCandidates.filter((c) => !ledgerKeys.has(key(c)));
+// Quotation runs beside an ESV citation that were checked and are not ESV wording (C4 reconciliation).
+// Keyed to file, ESV locator and exact fragment, so any new or changed quotation is still reported.
+// (The C4 review gave the `christianity/induction` "above" its own WCF 5.3 citation, retiring that entry.)
+const KNOWN_NON_ESV = new Set([
+  'buddhism/order.mdx|Hebrews 1:3|persists', // a word from SN 12.20, quoted earlier in the answer
+]);
+const isKnownNonEsv = (c) => c.fragments.every((f) => KNOWN_NON_ESV.has(`${key(c)}|${f}`));
+const knownNonEsv = esvCandidates.filter((c) => !ledgerKeys.has(key(c)) && isKnownNonEsv(c));
+const unledgered = esvCandidates.filter((c) => !ledgerKeys.has(key(c)) && !isKnownNonEsv(c));
 const orphanLedger = ledgerRows.filter((r) => !candKeys.has(key(r)));
 
 // ---- aggregates
@@ -227,7 +235,7 @@ for (const s of sourceUse) s.citeCount = allCites.filter((c) => c.source === s.i
 writeFileSync(join(outDir, 'answers.json'), JSON.stringify(answers, null, 1));
 writeFileSync(join(outDir, 'thinker-usage.json'), JSON.stringify(thinkerUse, null, 1));
 writeFileSync(join(outDir, 'source-usage.json'), JSON.stringify(sourceUse, null, 1));
-writeFileSync(join(outDir, 'esv-candidates.json'), JSON.stringify({ candidates: esvCandidates, unledgered, orphanLedger, ledgerRows: ledgerRows.length }, null, 1));
+writeFileSync(join(outDir, 'esv-candidates.json'), JSON.stringify({ candidates: esvCandidates, unledgered, knownNonEsv, orphanLedger, ledgerRows: ledgerRows.length }, null, 1));
 
 // ---- markdown report
 const md = [];
@@ -263,6 +271,8 @@ table(['source', 'type', 'status', 'answers', 'cites', 'lanes'], sourceUse.sort(
 md.push('## ESV reconciliation', '', `Ledger rows: ${ledgerRows.length}. Quoted-ESV candidates detected in answers: ${esvCandidates.length}.`, '');
 md.push('### Candidates with no ledger row (file + locator)', '');
 for (const c of unledgered) md.push(`- ${c.file} — ${c.locator}: ${c.fragments.map((f) => `“${f}”`).join(' / ')}`);
+md.push('', '### Checked and not ESV wording', '');
+for (const c of knownNonEsv) md.push(`- ${c.file} — ${c.locator}: ${c.fragments.map((f) => `“${f}”`).join(' / ')}`);
 md.push('', '### Ledger rows with no detected quotation', '');
 for (const r of orphanLedger) md.push(`- ${r.file} — ${r.locator}`);
 md.push('', '### Cite notes (provenance)', '');
@@ -270,4 +280,4 @@ for (const a of answers) for (const n of a.provenanceNotes) md.push(`- ${a.world
 md.push('', '### Unknown or unchecked sources cited', '');
 for (const a of answers) if (a.unknownSources.length || a.uncheckedSources.length) md.push(`- ${a.worldview}/${a.question}: ${[...a.unknownSources, ...a.uncheckedSources].join(', ')}`);
 writeFileSync(join(outDir, 'INVENTORY.md'), md.join('\n').trimEnd() + '\n');
-console.log(`Audited ${answers.length} answers, ${totalWords} words, ${allCites.length} citations; ESV candidates ${esvCandidates.length}, unledgered ${unledgered.length}, orphan ledger rows ${orphanLedger.length}.`);
+console.log(`Audited ${answers.length} answers, ${totalWords} words, ${allCites.length} citations; ESV candidates ${esvCandidates.length}, unledgered ${unledgered.length} (${knownNonEsv.length} known non-ESV excluded), orphan ledger rows ${orphanLedger.length}.`);

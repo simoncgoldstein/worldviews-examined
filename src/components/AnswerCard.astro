@@ -8,7 +8,6 @@ import Cite from './Cite.astro';
 import QuestionLink from './QuestionLink.astro';
 import ThinkerLinks from './ThinkerLinks.astro';
 import { getContent, lookup, worldviewUrl, type AnswerEntry } from '../lib/content';
-import { statusDescriptions, statusLabels, symbols } from '../lib/labels';
 
 interface Props {
   answer: AnswerEntry;
@@ -19,18 +18,13 @@ const { data, Content, ns } = answer;
 const { worldviewById } = await getContent();
 const worldview = lookup(worldviewById, data.worldviewId, 'worldview');
 const headingId = `${ns}-heading`;
-const isOutline = data.reviewStatus === 'outline';
 ---
 
 <article class="answer" id={worldview.id} aria-labelledby={headingId}>
   <header class="answer__header">
     <h2 class="worldview-name" id={headingId}><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
     {data.lede && <p class="answer__thesis">{data.lede}</p>}
-    <p class="meta">
-      {data.scope && <>{data.scope}<span aria-hidden="true"> {symbols.separator} </span></>}
-      <span class="status" title={statusDescriptions[data.reviewStatus]}>{statusLabels[data.reviewStatus]}</span>
-    </p>
-    {isOutline && <p class="status-note">{statusDescriptions.outline}</p>}
+    {data.scope && <p class="meta">{data.scope}</p>}
     {data.traditionNotes.length > 0 && (
       <ul class="tradition-notes">
         {data.traditionNotes.map((note) => <li>{note}</li>)}

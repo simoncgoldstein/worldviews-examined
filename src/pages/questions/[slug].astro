@@ -32,11 +32,6 @@ const related = question.relatedQuestions.map((rid) => lookup(content.questionBy
       </p>
       <h1>{question.title}</h1>
       <p class="lede">{question.summary}</p>
-      <p class="meta">
-        {answers.length} of {content.worldviews.length} worldview entries written
-        <span aria-hidden="true"> {symbols.separator} </span>
-        Each entry shows its review status.
-      </p>
     </header>
 
     <nav aria-label="Worldviews on this question">

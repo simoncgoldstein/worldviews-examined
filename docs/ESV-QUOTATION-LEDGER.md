@@ -1,6 +1,6 @@
 # ESV quotation ledger
 
-Inventory date: 2026-10-06, updated 2026-10-07 for the Knowledge & Truth and Revelation & History batches and for remediation batch R1, and 2026-10-08 for remediation batch R2. Scope: all 168 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny, Man & Human Nature and Ultimate Reality add the checked quotations itemized below; other new Scripture citations are references/paraphrases.
+Inventory date: 2026-10-06, updated 2026-10-07 for the Knowledge & Truth and Revelation & History batches and for remediation batch R1, 2026-10-08 for remediation batch R2, and 2026-10-12 for the C4 final reconciliation (see the section at the end). Scope: all 168 public answer files under `src/content/answers/`. Morality/Evil adds no quoted ESV wording. Salvation/Destiny, Man & Human Nature and Ultimate Reality add the checked quotations itemized below; other new Scripture citations are references/paraphrases.
 
 This is a manual inventory, not an automatic certification of copyright permission or translation accuracy. Count each cited range containing quoted wording in full as a conservative verse charge, even when only a fragment is quoted; charge repetitions again. Word/byte counts cover the exact quoted fragments (UTF-8, without surrounding quotation marks, summing separate fragments without added separators). The six `great-and-terrible` entries contain ESV fragments; the later quotations below are the only additions outside the flagship.
 
@@ -145,176 +145,176 @@ For an approximate per-answer denominator, count prose-body words after removing
 
 | Answer / question | Approximate prose words | ESV words | Approximate ESV proportion |
 |---|---:|---:|---:|
-| buddhism / after-death | 602 | 0 | 0.00% |
-| buddhism / death | 548 | 0 | 0.00% |
-| buddhism / evil | 932 | 0 | 0.00% |
-| buddhism / fail-the-good | 407 | 0 | 0.00% |
-| buddhism / final-end | 618 | 0 | 0.00% |
+| buddhism / after-death | 665 | 0 | 0.00% |
+| buddhism / death | 590 | 0 | 0.00% |
+| buddhism / evil | 991 | 0 | 0.00% |
+| buddhism / fail-the-good | 427 | 0 | 0.00% |
+| buddhism / final-end | 679 | 0 | 0.00% |
 | buddhism / great-and-terrible | 1151 | 9 | 0.78% |
-| buddhism / guilt | 645 | 0 | 0.00% |
-| buddhism / history | 721 | 0 | 0.00% |
-| buddhism / induction | 696 | 0 | 0.00% |
-| buddhism / jesus | 789 | 2 | 0.25% |
-| buddhism / know-the-good | 504 | 0 | 0.00% |
-| buddhism / knowledge-possible | 871 | 0 | 0.00% |
-| buddhism / logic-binding | 683 | 0 | 0.00% |
-| buddhism / love-beauty-creativity | 441 | 0 | 0.00% |
-| buddhism / offspring-family | 443 | 0 | 0.00% |
-| buddhism / one-and-many | 469 | 0 | 0.00% |
-| buddhism / order | 584 | 0 | 0.00% |
-| buddhism / revelation | 938 | 0 | 0.00% |
-| buddhism / self-deception | 360 | 0 | 0.00% |
-| buddhism / self-salvation | 963 | 0 | 0.00% |
+| buddhism / guilt | 705 | 0 | 0.00% |
+| buddhism / history | 716 | 0 | 0.00% |
+| buddhism / induction | 705 | 0 | 0.00% |
+| buddhism / jesus | 849 | 2 | 0.24% |
+| buddhism / know-the-good | 530 | 0 | 0.00% |
+| buddhism / knowledge-possible | 856 | 0 | 0.00% |
+| buddhism / logic-binding | 711 | 0 | 0.00% |
+| buddhism / love-beauty-creativity | 453 | 0 | 0.00% |
+| buddhism / offspring-family | 463 | 0 | 0.00% |
+| buddhism / one-and-many | 870 | 0 | 0.00% |
+| buddhism / order | 593 | 0 | 0.00% |
+| buddhism / revelation | 935 | 0 | 0.00% |
+| buddhism / self-deception | 371 | 0 | 0.00% |
+| buddhism / self-salvation | 1070 | 0 | 0.00% |
 | buddhism / something-rather-than-nothing | 706 | 0 | 0.00% |
-| buddhism / suffering | 525 | 0 | 0.00% |
-| buddhism / ultimate-authority | 805 | 0 | 0.00% |
+| buddhism / suffering | 537 | 0 | 0.00% |
+| buddhism / ultimate-authority | 831 | 0 | 0.00% |
 | buddhism / ultimate-personal | 707 | 0 | 0.00% |
-| buddhism / ultimate-reality | 773 | 0 | 0.00% |
-| buddhism / what-is-man | 938 | 0 | 0.00% |
-| buddhism / why-alive | 690 | 0 | 0.00% |
-| buddhism / worship | 697 | 0 | 0.00% |
-| christianity / after-death | 639 | 0 | 0.00% |
-| christianity / death | 758 | 41 | 5.41% |
-| christianity / evil | 1213 | 26 | 2.14% |
-| christianity / fail-the-good | 381 | 0 | 0.00% |
-| christianity / final-end | 614 | 0 | 0.00% |
+| buddhism / ultimate-reality | 777 | 0 | 0.00% |
+| buddhism / what-is-man | 955 | 0 | 0.00% |
+| buddhism / why-alive | 703 | 0 | 0.00% |
+| buddhism / worship | 712 | 0 | 0.00% |
+| christianity / after-death | 783 | 0 | 0.00% |
+| christianity / death | 733 | 41 | 5.59% |
+| christianity / evil | 1168 | 26 | 2.23% |
+| christianity / fail-the-good | 460 | 0 | 0.00% |
+| christianity / final-end | 855 | 0 | 0.00% |
 | christianity / great-and-terrible | 1696 | 49 | 2.89% |
 | christianity / guilt | 1781 | 116 | 6.51% |
 | christianity / history | 731 | 57 | 7.80% |
-| christianity / induction | 767 | 50 | 6.52% |
+| christianity / induction | 833 | 50 | 6.00% |
 | christianity / jesus | 1452 | 64 | 4.41% |
-| christianity / know-the-good | 1333 | 14 | 1.05% |
+| christianity / know-the-good | 1323 | 14 | 1.06% |
 | christianity / knowledge-possible | 927 | 28 | 3.02% |
 | christianity / logic-binding | 980 | 12 | 1.22% |
-| christianity / love-beauty-creativity | 467 | 15 | 3.21% |
-| christianity / offspring-family | 467 | 0 | 0.00% |
+| christianity / love-beauty-creativity | 478 | 15 | 3.14% |
+| christianity / offspring-family | 577 | 0 | 0.00% |
 | christianity / one-and-many | 870 | 37 | 4.25% |
-| christianity / order | 719 | 28 | 3.89% |
-| christianity / revelation | 1028 | 68 | 6.61% |
-| christianity / self-deception | 366 | 0 | 0.00% |
-| christianity / self-salvation | 1118 | 8 | 0.72% |
-| christianity / something-rather-than-nothing | 735 | 27 | 3.67% |
-| christianity / suffering | 874 | 37 | 4.23% |
-| christianity / ultimate-authority | 1283 | 45 | 3.51% |
-| christianity / ultimate-personal | 775 | 26 | 3.35% |
-| christianity / ultimate-reality | 930 | 11 | 1.18% |
-| christianity / what-is-man | 1339 | 0 | 0.00% |
-| christianity / why-alive | 682 | 0 | 0.00% |
-| christianity / worship | 716 | 0 | 0.00% |
-| hinduism / after-death | 592 | 0 | 0.00% |
-| hinduism / death | 562 | 0 | 0.00% |
-| hinduism / evil | 933 | 0 | 0.00% |
-| hinduism / fail-the-good | 389 | 0 | 0.00% |
-| hinduism / final-end | 588 | 0 | 0.00% |
-| hinduism / great-and-terrible | 1117 | 3 | 0.27% |
-| hinduism / guilt | 647 | 0 | 0.00% |
-| hinduism / history | 694 | 0 | 0.00% |
-| hinduism / induction | 706 | 0 | 0.00% |
-| hinduism / jesus | 714 | 11 | 1.54% |
-| hinduism / know-the-good | 529 | 0 | 0.00% |
+| christianity / order | 750 | 28 | 3.73% |
+| christianity / revelation | 1027 | 68 | 6.62% |
+| christianity / self-deception | 442 | 0 | 0.00% |
+| christianity / self-salvation | 1196 | 8 | 0.67% |
+| christianity / something-rather-than-nothing | 766 | 27 | 3.52% |
+| christianity / suffering | 842 | 37 | 4.39% |
+| christianity / ultimate-authority | 1305 | 45 | 3.45% |
+| christianity / ultimate-personal | 779 | 26 | 3.34% |
+| christianity / ultimate-reality | 995 | 11 | 1.11% |
+| christianity / what-is-man | 1494 | 0 | 0.00% |
+| christianity / why-alive | 693 | 0 | 0.00% |
+| christianity / worship | 773 | 0 | 0.00% |
+| hinduism / after-death | 854 | 0 | 0.00% |
+| hinduism / death | 581 | 0 | 0.00% |
+| hinduism / evil | 1082 | 0 | 0.00% |
+| hinduism / fail-the-good | 454 | 0 | 0.00% |
+| hinduism / final-end | 944 | 0 | 0.00% |
+| hinduism / great-and-terrible | 1126 | 3 | 0.27% |
+| hinduism / guilt | 651 | 0 | 0.00% |
+| hinduism / history | 698 | 0 | 0.00% |
+| hinduism / induction | 733 | 0 | 0.00% |
+| hinduism / jesus | 744 | 11 | 1.48% |
+| hinduism / know-the-good | 646 | 0 | 0.00% |
 | hinduism / knowledge-possible | 883 | 0 | 0.00% |
 | hinduism / logic-binding | 712 | 0 | 0.00% |
-| hinduism / love-beauty-creativity | 403 | 0 | 0.00% |
-| hinduism / offspring-family | 431 | 0 | 0.00% |
-| hinduism / one-and-many | 485 | 0 | 0.00% |
+| hinduism / love-beauty-creativity | 704 | 0 | 0.00% |
+| hinduism / offspring-family | 479 | 0 | 0.00% |
+| hinduism / one-and-many | 465 | 0 | 0.00% |
 | hinduism / order | 674 | 0 | 0.00% |
 | hinduism / revelation | 896 | 0 | 0.00% |
-| hinduism / self-deception | 351 | 0 | 0.00% |
-| hinduism / self-salvation | 961 | 0 | 0.00% |
-| hinduism / something-rather-than-nothing | 742 | 0 | 0.00% |
-| hinduism / suffering | 526 | 0 | 0.00% |
-| hinduism / ultimate-authority | 818 | 0 | 0.00% |
-| hinduism / ultimate-personal | 623 | 0 | 0.00% |
-| hinduism / ultimate-reality | 876 | 0 | 0.00% |
-| hinduism / what-is-man | 897 | 0 | 0.00% |
-| hinduism / why-alive | 748 | 0 | 0.00% |
-| hinduism / worship | 698 | 7 | 1.00% |
-| islam / after-death | 625 | 0 | 0.00% |
-| islam / death | 574 | 0 | 0.00% |
-| islam / evil | 936 | 0 | 0.00% |
-| islam / fail-the-good | 400 | 0 | 0.00% |
-| islam / final-end | 647 | 0 | 0.00% |
+| hinduism / self-deception | 358 | 0 | 0.00% |
+| hinduism / self-salvation | 1094 | 0 | 0.00% |
+| hinduism / something-rather-than-nothing | 753 | 0 | 0.00% |
+| hinduism / suffering | 631 | 0 | 0.00% |
+| hinduism / ultimate-authority | 903 | 0 | 0.00% |
+| hinduism / ultimate-personal | 804 | 0 | 0.00% |
+| hinduism / ultimate-reality | 1046 | 0 | 0.00% |
+| hinduism / what-is-man | 935 | 0 | 0.00% |
+| hinduism / why-alive | 762 | 0 | 0.00% |
+| hinduism / worship | 1248 | 7 | 0.56% |
+| islam / after-death | 805 | 0 | 0.00% |
+| islam / death | 665 | 0 | 0.00% |
+| islam / evil | 1157 | 0 | 0.00% |
+| islam / fail-the-good | 467 | 0 | 0.00% |
+| islam / final-end | 772 | 0 | 0.00% |
 | islam / great-and-terrible | 1069 | 3 | 0.28% |
-| islam / guilt | 693 | 0 | 0.00% |
-| islam / history | 676 | 10 | 1.48% |
-| islam / induction | 741 | 0 | 0.00% |
-| islam / jesus | 1038 | 0 | 0.00% |
-| islam / know-the-good | 531 | 0 | 0.00% |
-| islam / knowledge-possible | 879 | 9 | 1.02% |
-| islam / logic-binding | 668 | 0 | 0.00% |
-| islam / love-beauty-creativity | 396 | 0 | 0.00% |
-| islam / offspring-family | 439 | 0 | 0.00% |
+| islam / guilt | 682 | 0 | 0.00% |
+| islam / history | 877 | 10 | 1.14% |
+| islam / induction | 774 | 0 | 0.00% |
+| islam / jesus | 1946 | 0 | 0.00% |
+| islam / know-the-good | 618 | 0 | 0.00% |
+| islam / knowledge-possible | 915 | 9 | 0.98% |
+| islam / logic-binding | 723 | 0 | 0.00% |
+| islam / love-beauty-creativity | 398 | 0 | 0.00% |
+| islam / offspring-family | 436 | 0 | 0.00% |
 | islam / one-and-many | 472 | 0 | 0.00% |
-| islam / order | 680 | 0 | 0.00% |
-| islam / revelation | 964 | 0 | 0.00% |
-| islam / self-deception | 347 | 0 | 0.00% |
-| islam / self-salvation | 1005 | 0 | 0.00% |
-| islam / something-rather-than-nothing | 748 | 0 | 0.00% |
-| islam / suffering | 546 | 0 | 0.00% |
-| islam / ultimate-authority | 849 | 0 | 0.00% |
-| islam / ultimate-personal | 614 | 6 | 0.98% |
-| islam / ultimate-reality | 896 | 0 | 0.00% |
-| islam / what-is-man | 953 | 0 | 0.00% |
-| islam / why-alive | 710 | 0 | 0.00% |
-| islam / worship | 704 | 0 | 0.00% |
-| judaism / after-death | 636 | 0 | 0.00% |
-| judaism / death | 530 | 0 | 0.00% |
-| judaism / evil | 883 | 0 | 0.00% |
-| judaism / fail-the-good | 392 | 0 | 0.00% |
-| judaism / final-end | 636 | 0 | 0.00% |
+| islam / order | 662 | 0 | 0.00% |
+| islam / revelation | 1254 | 0 | 0.00% |
+| islam / self-deception | 407 | 0 | 0.00% |
+| islam / self-salvation | 1024 | 0 | 0.00% |
+| islam / something-rather-than-nothing | 725 | 0 | 0.00% |
+| islam / suffering | 571 | 0 | 0.00% |
+| islam / ultimate-authority | 1474 | 0 | 0.00% |
+| islam / ultimate-personal | 716 | 6 | 0.84% |
+| islam / ultimate-reality | 898 | 0 | 0.00% |
+| islam / what-is-man | 1010 | 0 | 0.00% |
+| islam / why-alive | 753 | 0 | 0.00% |
+| islam / worship | 719 | 0 | 0.00% |
+| judaism / after-death | 1200 | 0 | 0.00% |
+| judaism / death | 636 | 0 | 0.00% |
+| judaism / evil | 1080 | 0 | 0.00% |
+| judaism / fail-the-good | 448 | 0 | 0.00% |
+| judaism / final-end | 1068 | 0 | 0.00% |
 | judaism / great-and-terrible | 1020 | 4 | 0.39% |
-| judaism / guilt | 670 | 0 | 0.00% |
-| judaism / history | 700 | 11 | 1.57% |
-| judaism / induction | 655 | 0 | 0.00% |
-| judaism / jesus | 1024 | 5 | 0.49% |
-| judaism / know-the-good | 540 | 0 | 0.00% |
+| judaism / guilt | 683 | 0 | 0.00% |
+| judaism / history | 734 | 11 | 1.50% |
+| judaism / induction | 643 | 0 | 0.00% |
+| judaism / jesus | 1045 | 5 | 0.48% |
+| judaism / know-the-good | 583 | 0 | 0.00% |
 | judaism / knowledge-possible | 890 | 11 | 1.24% |
-| judaism / logic-binding | 639 | 0 | 0.00% |
-| judaism / love-beauty-creativity | 427 | 0 | 0.00% |
-| judaism / offspring-family | 470 | 0 | 0.00% |
-| judaism / one-and-many | 438 | 0 | 0.00% |
+| judaism / logic-binding | 655 | 0 | 0.00% |
+| judaism / love-beauty-creativity | 433 | 0 | 0.00% |
+| judaism / offspring-family | 473 | 0 | 0.00% |
+| judaism / one-and-many | 538 | 0 | 0.00% |
 | judaism / order | 648 | 0 | 0.00% |
-| judaism / revelation | 948 | 0 | 0.00% |
-| judaism / self-deception | 355 | 0 | 0.00% |
-| judaism / self-salvation | 1025 | 0 | 0.00% |
+| judaism / revelation | 1155 | 0 | 0.00% |
+| judaism / self-deception | 420 | 0 | 0.00% |
+| judaism / self-salvation | 1024 | 0 | 0.00% |
 | judaism / something-rather-than-nothing | 762 | 0 | 0.00% |
-| judaism / suffering | 514 | 0 | 0.00% |
-| judaism / ultimate-authority | 863 | 0 | 0.00% |
-| judaism / ultimate-personal | 669 | 0 | 0.00% |
-| judaism / ultimate-reality | 862 | 0 | 0.00% |
-| judaism / what-is-man | 979 | 6 | 0.61% |
-| judaism / why-alive | 681 | 0 | 0.00% |
-| judaism / worship | 678 | 0 | 0.00% |
-| naturalism / after-death | 644 | 0 | 0.00% |
-| naturalism / death | 552 | 0 | 0.00% |
-| naturalism / evil | 916 | 0 | 0.00% |
-| naturalism / fail-the-good | 396 | 0 | 0.00% |
-| naturalism / final-end | 637 | 0 | 0.00% |
-| naturalism / great-and-terrible | 1043 | 8 | 0.77% |
-| naturalism / guilt | 604 | 0 | 0.00% |
+| judaism / suffering | 680 | 0 | 0.00% |
+| judaism / ultimate-authority | 1119 | 0 | 0.00% |
+| judaism / ultimate-personal | 750 | 0 | 0.00% |
+| judaism / ultimate-reality | 877 | 0 | 0.00% |
+| judaism / what-is-man | 1126 | 6 | 0.53% |
+| judaism / why-alive | 695 | 0 | 0.00% |
+| judaism / worship | 691 | 0 | 0.00% |
+| naturalism / after-death | 705 | 0 | 0.00% |
+| naturalism / death | 622 | 0 | 0.00% |
+| naturalism / evil | 1038 | 0 | 0.00% |
+| naturalism / fail-the-good | 504 | 0 | 0.00% |
+| naturalism / final-end | 672 | 0 | 0.00% |
+| naturalism / great-and-terrible | 930 | 8 | 0.86% |
+| naturalism / guilt | 703 | 0 | 0.00% |
 | naturalism / history | 670 | 0 | 0.00% |
-| naturalism / induction | 755 | 0 | 0.00% |
-| naturalism / jesus | 965 | 2 | 0.21% |
-| naturalism / know-the-good | 556 | 0 | 0.00% |
-| naturalism / knowledge-possible | 912 | 0 | 0.00% |
-| naturalism / logic-binding | 699 | 0 | 0.00% |
-| naturalism / love-beauty-creativity | 468 | 0 | 0.00% |
-| naturalism / offspring-family | 425 | 0 | 0.00% |
-| naturalism / one-and-many | 468 | 0 | 0.00% |
-| naturalism / order | 705 | 6 | 0.85% |
+| naturalism / induction | 800 | 0 | 0.00% |
+| naturalism / jesus | 1039 | 2 | 0.19% |
+| naturalism / know-the-good | 806 | 0 | 0.00% |
+| naturalism / knowledge-possible | 877 | 0 | 0.00% |
+| naturalism / logic-binding | 712 | 0 | 0.00% |
+| naturalism / love-beauty-creativity | 456 | 0 | 0.00% |
+| naturalism / offspring-family | 443 | 0 | 0.00% |
+| naturalism / one-and-many | 581 | 0 | 0.00% |
+| naturalism / order | 745 | 6 | 0.81% |
 | naturalism / revelation | 906 | 0 | 0.00% |
-| naturalism / self-deception | 362 | 0 | 0.00% |
-| naturalism / self-salvation | 998 | 0 | 0.00% |
-| naturalism / something-rather-than-nothing | 787 | 0 | 0.00% |
-| naturalism / suffering | 525 | 0 | 0.00% |
-| naturalism / ultimate-authority | 848 | 0 | 0.00% |
-| naturalism / ultimate-personal | 699 | 0 | 0.00% |
-| naturalism / ultimate-reality | 855 | 0 | 0.00% |
-| naturalism / what-is-man | 1010 | 0 | 0.00% |
-| naturalism / why-alive | 672 | 0 | 0.00% |
-| naturalism / worship | 718 | 0 | 0.00% |
+| naturalism / self-deception | 418 | 0 | 0.00% |
+| naturalism / self-salvation | 1106 | 0 | 0.00% |
+| naturalism / something-rather-than-nothing | 758 | 0 | 0.00% |
+| naturalism / suffering | 687 | 0 | 0.00% |
+| naturalism / ultimate-authority | 886 | 0 | 0.00% |
+| naturalism / ultimate-personal | 684 | 0 | 0.00% |
+| naturalism / ultimate-reality | 843 | 0 | 0.00% |
+| naturalism / what-is-man | 1660 | 0 | 0.00% |
+| naturalism / why-alive | 699 | 0 | 0.00% |
+| naturalism / worship | 747 | 0 | 0.00% |
 
-Corpus measure: 872 ESV words / approximately 125,748 answer-body words = **0.69%** (recomputed by script on 2026-10-08 for all 168 answers with the same definition, after remediation batch R2 and its review). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
+Corpus measure: 872 ESV words / approximately 135,589 answer-body words = **0.64%** (recomputed by script on 2026-10-12 for all 168 answers with the same definition, in batch C4). Current book charges remain well below half a book. Public quotation proportions remain below 25%; permission-category limits and Creative Commons exclusion still apply as documented in `docs/SOURCES.md`.
 
 Before adding or publishing quotations:
 
@@ -324,3 +324,17 @@ Before adding or publishing quotations:
 4. Confirm current Crossway policy and the notice in `docs/SOURCES.md` and the public `/sources/` page. If permission is burdensome, use a registered KJV edition for direct quotations (public domain in the United States), with coherent translation usage inside an argument.
 
 The Salvation/Destiny batch uses two short quotations, the Man & Human Nature batch four, the Ultimate Reality batch eighteen (141 words, 725 bytes, 20 verse charges), the Knowledge & Truth batch fifteen rows (134 words, 700 bytes, 20 verse charges), the Revelation & History batch thirty rows (230 words, 1,121 bytes, 46 verse charges), remediation batch R1 seventeen rows (207 words, 1,085 bytes, 53 verse charges), and remediation batch R2 ten rows (79 words, 381 bytes, 18 verse charges) less one removed row (6 words, 32 bytes, 1 verse charge), itemized above, where wording materially strengthens the answer. Current publisher policy and attribution were checked in the existing 2026-10-05 source-policy record and reused; numerical totals do not settle the publication-category limitation. The required legal notice is an attribution, not Scripture text, and is excluded from these counts.
+
+## C4 reconciliation (2026-10-12)
+
+The whole ledger was reconciled against the current corpus in batch C4 (record: `research/final-audit/remediation/C4-FINAL-EDITORIAL-AUDIT.md`).
+
+- **Rows and totals.** 103 rows; 872 quoted words, 4,410 bytes and 177 conservative verse instances. The row sums, the stated totals and the book table agree. No ESV quotation was added, removed or reworded in C4, so no row changed.
+- **Ephesians 2:8 (TC-01).** The `christianity/self-salvation` quotation "by grace you have been saved through faith" is now cited to Ephesians 2:8 alone, with 2:9–10 cited separately for the unquoted point about good works. The existing row (Ephesians 2:8, 1 verse) is therefore correct as it stands.
+- **Hebrews 11:3.** The words "from nothing" in `christianity/something-rather-than-nothing` were not ESV wording. The quotation marks were removed, and the doctrine is now carried by John 1:3, Colossians 1:16 and WCF 4.1. No row was needed.
+- **Inventory heuristic.** `node scripts/audit-inventory.mjs` reported 105 candidates, 0 orphan rows and 0 unledgered candidates, after excluding 2 known false positives that are not ESV wording: "above" in `christianity/induction`, a word of WCF 5.3, and "persists" in `buddhism/order`, a word from SN 12.20. The C4 review then gave "above" its own WCF 5.3 citation, so only the SN 12.20 exception remains in the script; it is keyed to the file, the ESV locator and the exact fragment. A broader scan of every quotation in a sentence ending in an ESV citation found no unrecorded ESV quotation; its other hits were Westminster, Augustine, Qur'an and Rāmānuja wording.
+- **Proportions.** The per-answer table above was recomputed for all 168 answers. The highest share is 7.80% (`christianity/history`); the corpus share is 0.64%.
+
+**Rights question for publication.** An accurate inventory and numerical headroom do not by themselves establish eligibility. Crossway's standard allowance excludes "commentary or other biblical reference works" (see `docs/SOURCES.md`). This site is a comparative worldview reference that quotes Scripture inside theological argument, and its published terms do not settle whether it falls inside that exclusion. Either obtain Crossway's written confirmation or permission, or replace direct ESV wording with references or a registered public-domain translation (KJV), keeping one translation within each argument. This is not a determination of permission.
+
+**The site is already public.** The C4 review (2026-10-12) found that `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on every push to `main`. The Pages site (`https://simoncgoldstein.github.io/worldviews-examined/`) is public and was serving these quotations, with the notice below, before C4. The rights question is therefore a current matter, not a pre-launch one. Merging any batch into `main` republishes the quotations. C4 itself adds, removes and rewords no ESV text. The Sources page prints Crossway's prescribed notice, which ends "Used by permission. All rights reserved." That is the attribution Crossway requires for use within its standard terms. It is accurate only if the site is eligible for those terms, and no written permission specific to this project is on record.

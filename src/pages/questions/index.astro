@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { answersForQuestion, getContent, questionUrl } from '../../lib/content';
+import { getContent, questionUrl } from '../../lib/content';
 import { symbols } from '../../lib/labels';
 
 const content = await getContent();
@@ -20,12 +20,8 @@ const groups = content.categories.map((category) => ({
       <p class="eyebrow">Question Explorer</p>
       <h1>Questions</h1>
       <p class="lede">
-        {content.questions.length} foundational questions in six domains. Each will be put to all
-        {total} worldviews.
-      </p>
-      <p class="placeholder-note">
-        Content is being built in phases. Entries written so far are outlines only; coverage is
-        shown beside each question.
+        {content.questions.length} foundational questions in six domains, each put to all {total}
+        worldviews.
       </p>
     </header>
 
@@ -52,21 +48,15 @@ const groups = content.categories.map((category) => ({
               </h2>
               <p class="muted prose">{category.description}</p>
               <ol class="entry-list">
-                {questions.map((question) => {
-                  const answers = answersForQuestion(content, question.id);
-                  return (
-                    <li>
-                      <h3>
-                        <a href={questionUrl(question)}>{question.title}</a>
-                      </h3>
-                      <p class="prose">{question.summary}</p>
-                      <p class="meta">
-                        {answers.length}/{total} worldview entries
-                        {question.featured && <><span aria-hidden="true"> {symbols.separator} </span>Featured</>}
-                      </p>
-                    </li>
-                  );
-                })}
+                {questions.map((question) => (
+                  <li>
+                    <h3>
+                      <a href={questionUrl(question)}>{question.title}</a>
+                    </h3>
+                    <p class="prose">{question.summary}</p>
+                    {question.featured && <p class="meta">Featured</p>}
+                  </li>
+                ))}
               </ol>
             </section>
           ))

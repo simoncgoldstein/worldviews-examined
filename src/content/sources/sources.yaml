@@ -3383,7 +3383,7 @@
     Whiston's divisions (Niese numbers in brackets where useful). Read: XVIII.3.3 (Testimonium Flavianum; Niese
     18.63-64); XX.9.1 (death of "the brother of Jesus, who was called Christ, whose name was James"; 20.200); XX.11.3 (work
     completed in "the thirteenth year of the reign of Caesar Domitian, and the fifty-sixth year of my own life", i.e.
-    93/94 CE). Whiston prints the Testimonium without signalling the interpolation debate: never quote it as pristine
+    AD 93/94). Whiston prints the Testimonium without signalling the interpolation debate: never quote it as pristine
     Josephus (see posen-testimonium-flavianum).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
@@ -3407,7 +3407,7 @@
     book.chapter. Read 2026-10-07: Annals 15.44 (Nero blames the Christians for the fire of 64; "Christus, from whom the
     name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our
     procurators, Pontius Pilatus"; the "superstition", checked for the moment, broke out again in Judaea and Rome). The
-    Annals' date (c. 115-120 CE) is a standard scholarly estimate, not stated in this edition.
+    Annals' date (c. AD 115-120) is a standard scholarly estimate, not stated in this edition.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: pliny-letters-melmoth
@@ -3667,6 +3667,7 @@
   traditionTags:
   - judaism
   containerTitle: Hebrew Wikisource
+  edition: "online Hebrew transcription; printed base edition not named"
   year: 2021
   url: https://he.wikisource.org/wiki/%D7%95%D7%99%D7%9B%D7%95%D7%97_%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94
   notes: >-
@@ -3730,6 +3731,7 @@
   traditionTags:
   - islam
   containerTitle: King Saud University Quran Project
+  edition: "online Arabic text; printed base edition not named"
   url: https://quran.ksu.edu.sa/tafseer/tabary/sura4-aya157.html
   notes: >-
     Arabic text on the KSU Qur'an site (base edition not named; report numbers 10779-10792 as printed). Cite by sura:aya
@@ -3749,6 +3751,7 @@
   traditionTags:
   - islam
   containerTitle: Altafsir.com (Royal Aal al-Bayt Institute for Islamic Thought)
+  edition: "online Arabic text; printed base edition not named"
   url: https://www.altafsir.com/Tafasir.asp?tMadhNo=1&tTafsirNo=4&tSoraNo=4&tAyahNo=157&tDisplay=yes&UserProfile=0&LanguageId=1
   notes: >-
     Arabic text on altafsir.com (windows-1256 encoding; base edition not named). Cite by sura:aya; our translation or
@@ -3769,6 +3772,7 @@
   traditionTags:
   - islam
   containerTitle: King Saud University Quran Project
+  edition: "online Arabic text; printed base edition not named"
   url: https://quran.ksu.edu.sa/tafseer/katheer/sura4-aya157.html
   notes: >-
     Arabic text on the KSU Qur'an site (reading view; base edition not named). Cite by sura:aya; paraphrase only. Read
@@ -3864,8 +3868,8 @@
   notes: >-
     1992 survey typescript. The copy read (2026-10-07) is a 10-page PDF hosted at the University of Kentucky; Witzel's
     former Harvard URL now returns an HTML page. Cite by section and PDF page. pp. 2-3: Vedic period tentatively 1500-500
-    BCE (beginnings of the Rgveda to Panini); composition and transmission "completely oral for the entire Vedic period
-    and some considerable time afterwards" (n. 5: until at least c. 1000 CE for the AV); preservation by priestly
+    BC (beginnings of the Rgveda to Panini); composition and transmission "completely oral for the entire Vedic period
+    and some considerable time afterwards" (n. 5: until at least c. AD 1000 for the AV); preservation by priestly
     schools (sakhas). p. 6: Sakalya's Padapatha. The authors call their dates tentative.
   verificationStatus: checked
   verifiedOn: '2026-10-07'
@@ -3959,7 +3963,7 @@
   notes: >-
     Public-domain translation; cite chapter.verse (Geiger page in brackets). Read 2026-10-07: XXXIII.100-101 (p. 237): the
     bhikkhus had handed down the three pitakas and commentary orally and, seeing decline, wrote them down in books under
-    Vattagamani-Abhaya (1st century BCE by standard chronology; the verse gives no date).
+    Vattagamani-Abhaya (1st century BC by standard chronology; the verse gives no date).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: sep-buddha
@@ -3972,7 +3976,7 @@
   containerTitle: Stanford Encyclopedia of Philosophy
   url: https://plato.stanford.edu/entries/buddha/
   notes: >-
-    First published 17 Feb 2011; substantive revision 6 Mar 2023. Read 2026-10-07, §1: the Buddha fl. c. 450 BCE; the
+    First published 17 Feb 2011; substantive revision 6 Mar 2023. Read 2026-10-07, §1: the Buddha fl. c. 450 BC; the
     texts were "not written down until several centuries after his death", in languages other than his, and disagree;
     probably rehearsed soon after his death and preserved orally; sectarian insertion and deletion; upaya.
   verificationStatus: checked
@@ -3987,8 +3991,7 @@
   containerTitle: Stanford Encyclopedia of Philosophy
   url: https://plato.stanford.edu/entries/abhidharma/
   notes: >-
-    Read 2026-10-07 for one point (§1): by traditional accounts Mahayana doctrines arose "roughly in the first century
-    BCE", when the Sthavira lineage counted eighteen schools (a conventional number).
+    Read 2026-10-07 for one point (§1): by traditional accounts Mahayana doctrines arose roughly in the first century BC (paraphrased), when the Sthavira lineage counted eighteen schools (a conventional number).
   verificationStatus: checked
   verifiedOn: '2026-10-07'
 - id: soyen-shaku-sermons
@@ -4390,7 +4393,7 @@
     The twelve-sūtra root text of Tamil Śaiva Siddhānta, with Meykaṇḍār's Tamil exposition, translated with notes by
     J. M. Nallaswami Pillai (1895). The copy read is a retyped reproduction of the 1895 translation (it reprints the
     "Preface (1895 Edition)"), not a scan, so its pagination is not cited: cite sūtra number only; the notes are the
-    translator's exposition, never Meykaṇḍār's words. Nallaswami Pillai dates Meykaṇḍār about 1200 CE (introduction).
+    translator's exposition, never Meykaṇḍār's words. Nallaswami Pillai dates Meykaṇḍār about AD 1200 (introduction).
     Verified 2026-10-09 (title, translator, preface; locator by sūtra). Read: sūtra 1 (the world, which arises, persists
     and perishes, has Hara as its first cause) and concluding remarks (pati, the Lord, and pāśa, the three bonds);
     sūtra 2 (the Lord is one with souls, different from them, and both, and through his power causes their births
@@ -4433,7 +4436,7 @@
     dāsya, sakhya, vātsalya, mādhurya), love of Kṛṣṇa as the dominant emotion, and the devotee rather than the literary
     connoisseur as its recipient. Vol. I (1923, in.ernet.dli.2015.80969) pp. 117-119 and 137 were read for Abhinavagupta's
     works and date (his fame rests chiefly on Kashmir Śaiva philosophy; Abhinavabhāratī on Bharata and Locana on
-    Ānandavardhana; latest known date 1015 CE).
+    Ānandavardhana; latest known date AD 1015).
   verificationStatus: checked
   verifiedOn: '2026-10-09'
 # Buddhist: Huayan.
