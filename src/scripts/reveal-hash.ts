@@ -16,7 +16,12 @@
 import { initAnswerPanels, openAnswer } from './answer-panels';
 
 function targetOf(hash: string): HTMLElement | null {
-  const id = decodeURIComponent(hash.slice(1));
+  let id = hash.slice(1);
+  try {
+    id = decodeURIComponent(id);
+  } catch {
+    // A malformed escape (e.g. "#%E0%A4%A") is simply not one of our ids; never let it stop setup.
+  }
   return id ? document.getElementById(id) : null;
 }
 
@@ -53,8 +58,19 @@ document.addEventListener('click', (event) => {
   }
 });
 
-initAnswerPanels(targetOf(window.location.hash));
-// Hands panel visibility from the pre-script CSS rule (global.css) to the `hidden` attributes.
-document.documentElement.classList.add('js-ready');
+try {
+  // If the layout's safety timer already gave up on this script (a request that hung), the reader
+  // has the full text in front of them: add the controls but do not collapse anything.
+  const late = !document.documentElement.classList.contains('js');
+  initAnswerPanels(targetOf(window.location.hash), late);
+  document.documentElement.classList.add('js');
+  // Hands panel visibility from the pre-script CSS rule (explore.css) to the `hidden` attributes.
+  document.documentElement.classList.add('js-ready');
+} catch (error) {
+  // Never lock a reader out of the text: fall back to the no-JavaScript reading, every answer open.
+  document.querySelectorAll('[data-answer-panel][hidden]').forEach((panel) => panel.removeAttribute('hidden'));
+  document.documentElement.classList.remove('js');
+  throw error;
+}
 revealHashTarget();
 window.addEventListener('hashchange', revealHashTarget);

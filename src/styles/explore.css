@@ -82,8 +82,9 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
 .thesis-card__head {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--space-3);
+  gap: 0 var(--space-3);
   margin: 0 0 var(--space-2);
   font-family: var(--font-sans);
 }
@@ -317,6 +318,10 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
   text-transform: uppercase;
   color: var(--color-text-muted);
   min-width: 4.75rem;
+}
+/* Phones: the kicker always takes its own line, so short and long level titles align alike. */
+@media (max-width: 40rem) {
+  .level__kicker { flex-basis: 100%; }
 }
 .level__title {
   font-size: var(--text-lg);

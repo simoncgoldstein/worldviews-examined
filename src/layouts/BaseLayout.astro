@@ -33,12 +33,19 @@ const fullTitle = title ? `${title} · ${siteTitle}` : siteTitle;
     <link rel="preload" href={sansLatin} as="font" type="font/woff2" crossorigin />
     <script is:inline>
       // Lets CSS keep question-page answers collapsed until src/scripts/answer-panels.ts takes over.
-      // If that script never runs (blocked or failed), drop the flag so every answer stays readable.
-      document.documentElement.classList.add('js');
-      setTimeout(function () {
-        var root = document.documentElement;
+      // Module scripts run after parsing and before DOMContentLoaded, so a page not marked ready by then
+      // had its script blocked or failed. A script request that hangs also holds DOMContentLoaded back,
+      // so give up 4 seconds after parsing ends (never earlier: a slow connection must not show the
+      // text and then collapse it). If the script arrives later it leaves the answers open.
+      var root = document.documentElement;
+      root.classList.add('js');
+      function readable() {
         if (!root.classList.contains('js-ready')) root.classList.remove('js');
-      }, 4000);
+      }
+      document.addEventListener('DOMContentLoaded', readable);
+      document.addEventListener('readystatechange', function () {
+        if (document.readyState === 'interactive') setTimeout(readable, 4000);
+      });
     </script>
   </head>
   <body>

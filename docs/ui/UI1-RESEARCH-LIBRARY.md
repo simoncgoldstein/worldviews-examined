@@ -165,14 +165,14 @@ Each panel maps the four levels onto the existing MDX sections. The section name
 
 ## 7. JavaScript and no-JavaScript behaviour
 
-**Size:** about 3 KB of framework-free TypeScript. `src/scripts/reveal-hash.ts` imports `src/scripts/answer-panels.ts`, and Astro inlines the module into each page, so there is no extra request. There is no framework, island or state library, and no new runtime dependency besides the two font packages.
+**Size:** about 3 KB of framework-free TypeScript. `src/scripts/reveal-hash.ts` imports `src/scripts/answer-panels.ts`, and Astro inlines the module into each page, so there is no extra request. *(Independent review: after the review fixes the module is 4.2 KB, above Astro's inline limit, and is served as one cached file; see `docs/ui/UI1-REVIEW.md`.)* There is no framework, island or state library, and no new runtime dependency besides the two font packages.
 
 **With JavaScript:**
 
 - Answers start closed, except an answer that contains the URL fragment target.
 - A closed panel is `hidden="until-found"`, so Chrome's find-in-page can still reach and open it; `beforematch` keeps the button state in sync. Browsers without `until-found` treat it as `hidden`.
 - **No flash of open answers:** an inline script in `<head>` adds a `js` class, and CSS keeps panels collapsed before the module runs (except a `:target` / `:has(:target)` answer).
-- If the module never runs, the inline script removes the class after 4 seconds, so every answer becomes readable.
+- If the module never runs, the inline script removes the class after 4 seconds, so every answer becomes readable. *(Independent review: replaced by a `DOMContentLoaded` check plus a 4-second timer that starts only when parsing ends; see `docs/ui/UI1-REVIEW.md`.)*
 - On `beforeprint` every answer and level is opened, and the reader's state is restored on `afterprint`.
 
 **Without JavaScript (verified with script execution disabled):**
