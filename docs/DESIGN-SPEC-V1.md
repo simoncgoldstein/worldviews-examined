@@ -221,6 +221,7 @@ Add **one compact binary Light/Dark switch at the top-right of the site header**
 - Support keyboard activation, visible focus, readable screen-reader state, reduced motion, high zoom and narrow mobile headers. All controls retain sufficient contrast; a theme is not indicated by icon alone.
 - The switch should appear across the entire site, including Explore, Compare, Christian Case, sources and thinker pages. Printing remains on a legible print palette.
 - This requirement supersedes the provisional V1 suggestion to leave out a manual theme control. **It does not authorize a new UI-2 feature**: implement as a small independently reviewed UI polish PR or within the later research-interface polish work.
+- **Implemented in the UI Polish PR** (2026-10-13): see `docs/ui/UI-POLISH.md` §2.
 
 ### 13.2 Citation previews (locked, UI-4)
 
@@ -242,6 +243,7 @@ After the existing **Examine** and **Study / Deep dive** disclosures, provide a 
 - **Secondary navigation:** "About this worldview" and "Back to all six views" in a visually quieter final row, distinct from research references.
 - Optionally use a two-column layout on wide screens, stacked on phones; restrained hairlines and small worldview color mark, not a promotional card cluster.
 - The layout must work before thinker portraits exist. Future optional historical portraits should fit without redesign; images remain separate **post-launch** work.
+- **Implemented in the UI Polish PR** (2026-10-13): see `docs/ui/UI-POLISH.md` §3. No "View all" control was added: no answer names more than five thinkers, and all fit comfortably.
 
 ### 13.4 Question references (approved direction, UI-4)
 
@@ -274,6 +276,8 @@ The existing palette is sound, but the dark-mode screenshot suggests the worldvi
 They all meet the normal-text WCAG AA contrast minimum against the present light source-card surface; new dark equivalents require independent testing.
 
 Try slightly more distinct heading and selected-state color, a very faint tinted worldview header only where it adds orientation, and a thin source/thinker section marker. **Never color long prose blocks, create large saturated panels, encode truth/ranking in color, or compromise content readability.** Retain current colors until the UI visual review approves a change.
+
+**Adopted in the UI Polish PR** (2026-10-13) and confirmed by its independent review (`docs/ui/UI-POLISH-REVIEW.md`): the light values above unchanged, with new dark equivalents `#8DB0E2`, `#A9B9BD`, `#CCB26C`, `#6FC3B0`, `#E8A083`, `#C6A0E0`. Contrast and distinctness results are in `docs/ui/UI-POLISH.md` §4.
 
 ### Delivery and regression gates
 

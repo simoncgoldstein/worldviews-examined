@@ -1,7 +1,9 @@
 ---
-// A list of thinkers, each linking to its page. Takes thinker IDs so prose never hard-codes names.
+// An answer's key thinkers, in the answer's own order, each linking to its page with its registered
+// schools beneath. Takes thinker IDs so prose never hard-codes names. An interlocutor is labelled
+// as such, so it never reads as a representative of the worldview it is attached to.
 import { getContent, lookup, thinkerUrl } from '../lib/content';
-import { symbols } from '../lib/labels';
+import { roleLabel, symbols } from '../lib/labels';
 
 interface Props {
   ids: string[];
@@ -14,11 +16,14 @@ const thinkers = ids.map((id) => lookup(thinkerById, id, 'thinker'));
 
 {
   thinkers.length > 0 && (
-    <ul class="inline-list">
+    <ul class="thinker-list">
       {thinkers.map((thinker) => (
         <li>
           <a href={thinkerUrl(thinker)}>{thinker.name}</a>
-          <span class="muted"> {symbols.separator} {thinker.schools.join(', ')}</span>
+          <span class="thinker-list__meta">
+            {thinker.schools.join(', ')}
+            {thinker.role === 'interlocutor' && ` ${symbols.separator} ${roleLabel(thinker)}`}
+          </span>
         </li>
       ))}
     </ul>

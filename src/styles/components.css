@@ -156,10 +156,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0 var(--space-8);
+  gap: 0 var(--space-4);
   padding-block: var(--space-1);
 }
+.site-header__brand { margin-right: auto; }
 .site-header__brand {
   display: inline-flex;
   align-items: center;
@@ -197,12 +197,113 @@
   color: var(--color-text);
   border-bottom-color: var(--color-accent);
 }
+/* Below 768px the navigation takes its own row and the theme switch stays beside the site name,
+   rather than wrapping on its own. */
+@media (max-width: 47.99rem) {
+  .site-header__primary { order: 1; width: 100%; }
+}
 @media (max-width: 40rem) {
   .site-header__inner { padding-top: var(--space-2); }
-  .site-header__nav { gap: 0 var(--space-4); width: 100%; font-size: var(--text-sm); }
+  .site-header__nav { gap: 0 var(--space-4); font-size: var(--text-sm); }
+}
+/* Tablets: tighter spacing keeps the name, navigation and switch on one row from 768px. */
+@media (min-width: 48rem) and (max-width: 56rem) {
+  .site-header__inner { column-gap: var(--space-3); }
+  .site-header__nav { gap: 0 var(--space-4); }
 }
 @media (max-width: 26rem) {
+  .site-header__inner { column-gap: var(--space-2); }
   .site-header__nav { gap: 0 0.7rem; letter-spacing: -0.005em; }
+}
+/* The smallest phones: a slightly smaller site name leaves room for the switch beside it. */
+@media (max-width: 22.5rem) {
+  .site-header__brand { font-size: 1.125rem; }
+}
+
+/* --- Theme switch (ThemeSwitch.astro) ------------------------------------------------------
+   A small pill: sun left, crescent moon right, a thumb under the current theme. The button is the
+   44px target; the visible track is 64 x 32px. Hidden unless BaseLayout's theme script ran. */
+.theme-switch { display: none; }
+.theme-switchable .theme-switch {
+  --track-w: 4rem;
+  --track-h: 2rem;
+  --thumb: 1.5rem;
+  --inset: 3px;
+  --icon: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-width: var(--touch);
+  min-height: var(--touch);
+  margin: 0 calc(-1 * var(--space-1)) 0 0;
+  padding: 0 var(--space-1);
+  border: 0;
+  background: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-switch__track {
+  position: relative;
+  display: block;
+  width: var(--track-w);
+  height: var(--track-h);
+  border: 1px solid var(--color-rule-strong);
+  border-radius: 999px;
+  background: var(--color-surface-alt);
+}
+.theme-switch__thumb {
+  position: absolute;
+  top: calc((100% - var(--thumb)) / 2);
+  left: var(--inset);
+  width: var(--thumb);
+  height: var(--thumb);
+  border: 1px solid var(--color-text-muted);   /* at least 3:1 against the track in both themes */
+  border-radius: 50%;
+  background: var(--color-surface);
+  transition: transform 160ms ease-out;
+}
+/* The thumb follows the page's theme, which BaseLayout fixes in <head>, rather than aria-checked,
+   which the switch's own script sets only after the button is parsed: Firefox styles the button
+   before that, so a dark page would otherwise open with the thumb sliding across. */
+.theme-switchable { --theme-dark: 0; }
+@media (prefers-color-scheme: dark) {
+  .theme-switchable { --theme-dark: 1; }
+}
+.theme-switchable[data-theme='light'] { --theme-dark: 0; }
+.theme-switchable[data-theme='dark'] { --theme-dark: 1; }
+.theme-switch__thumb {
+  transform: translateX(calc(var(--theme-dark) * (var(--track-w) - 2px - var(--thumb) - 2 * var(--inset))));
+}
+.theme-switch__icon {
+  position: absolute;
+  top: 50%;
+  width: var(--icon);
+  height: var(--icon);
+  translate: 0 -50%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-switch__icon--sun { left: calc(var(--inset) + (var(--thumb) - var(--icon)) / 2); }
+.theme-switch__icon--moon { right: calc(var(--inset) + (var(--thumb) - var(--icon)) / 2); }
+/* The pictogram over the thumb is the current theme: full ink; the other is muted. */
+.theme-switch[aria-checked='false'] .theme-switch__icon--sun,
+.theme-switch[aria-checked='true'] .theme-switch__icon--moon { color: var(--color-text); }
+.theme-switch:hover .theme-switch__track { border-color: var(--color-text-muted); }
+.theme-switch:focus-visible { outline: none; }
+.theme-switch:focus-visible .theme-switch__track { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+@media (forced-colors: active) {
+  .theme-switch__track, .theme-switch__thumb, .theme-switch__icon { forced-color-adjust: none; }
+  .theme-switch__track { border-color: CanvasText; background: Canvas; }
+  .theme-switch__thumb { border-color: Highlight; background: Highlight; }
+  .theme-switch__icon { color: CanvasText; }
+  .theme-switch[aria-checked='false'] .theme-switch__icon--sun,
+  .theme-switch[aria-checked='true'] .theme-switch__icon--moon { color: HighlightText; }
+  .theme-switch:focus-visible .theme-switch__track { outline-color: Highlight; }
 }
 
 .site-footer {

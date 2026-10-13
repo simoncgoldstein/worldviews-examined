@@ -336,28 +336,88 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
 
 /* --- Level 4 footer: thinkers and links -------------------------------------------------- */
 
-.answer__footer { margin-top: var(--space-6); }
-.answer__footer-label {
-  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+/* --- Further study: the answer's footer ------------------------------------------------------
+   Key thinkers and the answer's references side by side where there is room (auto-fit, so it
+   also stacks inside a Compare or Christian Case cell), then a quieter navigation row. Hairlines
+   and a small worldview mark only; the footer is moved whole between reading modes. */
+
+.further {
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-rule);
+  font-family: var(--font-sans);
+}
+.further__title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 var(--space-4);
+  font: 650 var(--text-xs) / 1.4 var(--font-sans);
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
-  color: var(--color-text-muted);
-  margin: 0 0 var(--space-1);
+  color: var(--wv);
 }
-.answer__thinkers .inline-list { font-size: var(--text-ui); gap: 0 var(--space-5); margin-bottom: var(--space-3); }
-.answer__thinkers .inline-list .muted { font-family: var(--font-sans); font-size: var(--text-sm); }
-.answer__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 var(--space-5);
+.further__title::before {
+  content: '';
+  flex: none;
+  width: 0.55em;
+  height: 0.55em;
+  margin-right: 0.6em;
+  border-radius: 1px;
+  background: var(--wv);
+}
+.further__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-5) var(--space-8);
+}
+.further__label {
+  margin: 0 0 var(--space-2);
+  font: 600 var(--text-sm) / 1.4 var(--font-sans);
+  color: var(--color-text);
+}
+.thinker-list,
+.further__links {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: var(--font-sans);
+}
+.thinker-list li { margin: 0 0 var(--space-1); line-height: 1.35; }
+.thinker-list li:last-child { margin-bottom: 0; }
+.thinker-list a {
+  display: inline-block;
+  padding-block: var(--space-1);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+.thinker-list__meta {
+  display: block;
+  margin-top: -0.125rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.further__count {
+  margin: 0 0 var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.further__links { font-size: var(--text-ui); }
+.further__links li { margin: 0; }
+.further__links a { display: inline-flex; align-items: center; min-height: var(--touch); }
+
+.answer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-6);
+  margin: var(--space-5) 0 0;
+  padding: var(--space-1) 0 0;
+  list-style: none;
+  border-top: 1px solid var(--color-rule);
   font-size: var(--text-sm);
 }
 .answer__links li { margin: 0; }
-.answer__links a { display: inline-flex; align-items: center; min-height: var(--touch); }
+.answer__links a { display: inline-flex; align-items: center; min-height: var(--touch); color: var(--color-text-muted); }
+.answer__links a:hover { color: var(--color-text); }
 
 /* --- Related questions and footer ------------------------------------------------------- */
 

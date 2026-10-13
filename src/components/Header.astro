@@ -1,4 +1,5 @@
 ---
+import ThemeSwitch from './ThemeSwitch.astro';
 import { nav, siteTitle } from '../data/site';
 import { url } from '../lib/paths';
 
@@ -8,7 +9,7 @@ const current = Astro.url.pathname;
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="site-header__brand" href={url()}>{siteTitle}</a>
-    <nav aria-label="Primary">
+    <nav class="site-header__primary" aria-label="Primary">
       <ul class="site-header__nav">
         {
           nav.map((item) => {
@@ -25,5 +26,6 @@ const current = Astro.url.pathname;
         }
       </ul>
     </nav>
+    <ThemeSwitch />
   </div>
 </header>
