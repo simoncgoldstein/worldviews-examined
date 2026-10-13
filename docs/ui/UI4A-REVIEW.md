@@ -1,6 +1,6 @@
 # UI-4A — Independent review
 
-**PR:** #35 (`ui4a-citation-previews`). **Reviewed head:** `7f025d3`. **Base:** main `aee1217` (unchanged during the review).
+**PR:** #35 (`ui4a-citation-previews`). **Reviewed head:** `7f025d3`. **Fix and record:** `50b68b5`. **Base:** main `aee1217` (unchanged during the review).
 **Reviewer:** one fresh Claude Opus 5.5 session, no subagents, 2026-10-13. **Policy:** `docs/ui/REVIEW-STRATEGY.md`.
 **Read:** `AGENTS.md`, the review strategy, `docs/DESIGN-SPEC-V1.md` §§13.1–13.2, `docs/ui/UI4A-CITATION-PREVIEWS.md`, and the whole code diff.
 
