@@ -40,5 +40,6 @@ Read these files before changing architecture or content:
 - Keep JavaScript optional for reading core content.
 - Build accessible semantic HTML before adding visual complexity.
 
+- **For future UI production/review sessions:** follow `docs/ui/REVIEW-STRATEGY.md`. Review proportionately: broad inexpensive invariant checks, a justified representative set of interaction/browser scenarios, and escalation to wider testing only for shared-system risk, regressions or final release QA. Never imply untested combinations passed.
 - Run `npm run validate` after any content change; `npm run build` runs it automatically.
 - `id` is the stable internal identifier; `slug` is the public URL segment. Reference content by `id` only.
