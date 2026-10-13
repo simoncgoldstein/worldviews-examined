@@ -57,7 +57,7 @@ const stages: Stage[] = [
   {
     id: 'response',
     title: 'The Christian response',
-    hint: ['The Reformed critique of ', true, ' on this question, as written in the ', true, ' answer.'],
+    hint: ['The Reformed critique of ', true, ', as written in its answer to this question.'],
     cells: [{ side: 'alt' }],
     emphasis: true,
   },
@@ -70,11 +70,9 @@ const stages: Stage[] = [
   {
     id: 'objections',
     title: 'Objections to the Christian account',
-    hint: [
-      'The Christian answer’s own strongest objection, with the Christian reply. The objection may come from another tradition: it is not the ',
-      true,
-      ' answer replying to the Christian response above. That answer has no separate rejoinder here; its fuller account is in its Deep dive, under Study the sources.',
-    ],
+    // The objection is stated in the Christian answer and often comes from another critic (most are
+    // naturalist); it must not read as the examined answer's reply to the response above.
+    hint: ['The strongest objection the Christian answer addresses on this question, and its reply. It is not a reply from the ', true, ' answer, and it may come from a different tradition.'],
     cells: [{ side: 'christian' }],
   },
   {

@@ -163,8 +163,9 @@ function mount(layout: Layout, sel: Selection): void {
     for (const node of answer.querySelectorAll(selector)) {
       const placeholder = document.createComment('moved');
       node.before(placeholder);
-      cell.append(node);
+      // Recorded before the move, so a failure in the move itself still leaves no stray placeholder.
       moved.push({ node, placeholder });
+      cell.append(node);
       // Headings name their worldview for assistive technology, since the passage has left its answer.
       for (const heading of node.matches(HEADINGS) ? [node] : node.querySelectorAll(HEADINGS)) {
         const span = document.createElement('span');

@@ -221,7 +221,7 @@
 
 @media print {
   .modes, .modes__noscript, .compare__picker, .compare__both, .compare__stage-hint, .compare__notice,
-.case__notice { display: none !important; }
+  .case__notice { display: none !important; }
   .compare__print-title { display: block; font: 600 11pt / 1.4 var(--font-sans); margin: 0 0 var(--space-4); }
   .compare__row { display: block; }
   .compare__cell { border-left: 0; padding-left: 0; max-width: none; break-inside: auto; }

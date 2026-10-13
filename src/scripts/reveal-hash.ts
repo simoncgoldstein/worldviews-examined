@@ -49,15 +49,18 @@ function settleFocus(target: HTMLElement): void {
   target.focus({ preventScroll: true });
 }
 
-function revealHashTarget(force = false): void {
+/** Returns the element scrolled to, if any. */
+function revealHashTarget(force = false): HTMLElement | null {
   const found = targetOf(window.location.hash);
-  if (!found) return;
+  if (!found) return null;
   const { target, changed } = resolveForMode(found);
   // Layout shifts when something opens, so bring the target back into view.
   if (reveal(target) || changed || force) {
     target.scrollIntoView({ block: 'start' });
     settleFocus(target);
+    return target;
   }
+  return null;
 }
 
 // Same-page fragment links: open the destination before the browser scrolls to it. When the link
@@ -88,8 +91,12 @@ try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
   const late = !document.documentElement.classList.contains('js');
-  // The controls that appear above a late reader's position must not push the text they are reading.
-  const anchor = late ? document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3) : null;
+  // The controls that appear above a late reader's position must not push the text they are reading:
+  // the element they have focused, if it is on screen, or else whatever is a third of the way down.
+  const focused = document.activeElement;
+  const onScreen = focused instanceof HTMLElement && focused !== document.body && focused.getClientRects().length > 0 &&
+    focused.getBoundingClientRect().top >= 0 && focused.getBoundingClientRect().top < window.innerHeight;
+  const anchor = late ? (onScreen ? focused : document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3)) : null;
   const anchorTop = anchor?.getBoundingClientRect().top;
   const hashTarget = targetOf(window.location.hash);
   initAnswerPanels(hashTarget, late);
@@ -109,5 +116,15 @@ try {
 }
 document.documentElement.classList.remove('mode-pending');
 // A mode URL's fragment lands inside the moved passage, wherever the browser first scrolled.
-revealHashTarget(isRearranged());
+const landed = revealHashTarget(isRearranged());
+// Web fonts that finish loading after this first scroll reflow the text above the target. The
+// reading modes turn off the browser's scroll anchoring (modes.ts keeps positions itself), and
+// WebKit has none, so nothing would compensate: land the target again once the fonts are ready,
+// unless the reader has scrolled in the meantime.
+if (landed && document.fonts && document.fonts.status !== 'loaded') {
+  const y = window.scrollY;
+  void document.fonts.ready.then(() => {
+    if (window.scrollY === y && landed.isConnected && landed.getClientRects().length > 0) landed.scrollIntoView({ block: 'start' });
+  });
+}
 window.addEventListener('hashchange', () => revealHashTarget());
