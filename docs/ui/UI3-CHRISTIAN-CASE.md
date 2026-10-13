@@ -61,7 +61,7 @@ Stage headings are interface text; every passage keeps its own MDX heading.
 | 1 | **The two answers** | — | thesis (`lede`) of each; the alternative first | both answers |
 | 2 | **Understand the alternative** | "The *X* answer in its own terms: its view, and what it explains well." | *The view*; *What this explains well* | alternative |
 | 3 | **The Christian account** | "What Reformed Christianity affirms on this question, and what it explains well." | *The Christian view*; *What this explains well* | Christian |
-| 4 | **The Christian response** | "The Reformed critique of *X* on this question, as written in the *X* answer." | *§ Christian response* | alternative's answer |
+| 4 | **The Christian response** | "The Reformed critique of *X*, as written in its answer to this question." (shortened in review; `UI3-REVIEW.md`) | *§ Christian response* | alternative's answer |
 | 5 | **Questions for examination** | "Questions put to *X* in the same answer. They are open questions to examine, not settled conclusions." | *◇ Pressure questions* | alternative's answer |
 | 6 | **Objections to the Christian account** | see §7 | the Christian answer's Examine disclosure: *◇ Strongest objection*, *Christian reply* | Christian |
 | 7 | **Study the sources** | "Both Deep dives, the representative thinkers, and the two answers’ sources." | each *Deep dive* disclosure, then each answer's footer (thinkers; links to its sources, its worldview page, the overview) | both |
@@ -77,10 +77,10 @@ Stage headings are interface text; every passage keeps its own MDX heading.
 
 ## 6. Treatment of the alternative's strongest responses
 
-The corpus does not contain an authored rejoinder from each alternative to the Christian response. UI-3 does not write one, summarise one or imply one:
+The corpus has no separately authored rejoinder *section* from each alternative to the Christian response; the alternatives' replies that the reviewed text does report sit inside the *Christian response* itself (below) and in the Deep dives. UI-3 does not write a rejoinder, summarise one or imply one:
 
 - the stage after the Christian response is the alternative answer's own *Pressure questions*, presented as questions;
-- the stage 6 description states the limitation in words: "That answer has no separate rejoinder here; its fuller account is in its Deep dive, under Study the sources";
+- the stage 6 description says that its objection is not a reply from the examined answer (the production wording also said "That answer has no separate rejoinder here"; the independent review removed that sentence because it could be read as saying the tradition has no reply: `UI3-REVIEW.md`);
 - stage 7 places the alternative's Deep dive first, so its fuller sourced account (schools, internal debates, its own arguments) is the first thing in Study.
 
 Within the existing sections, the strongest alternative responses that the reviewed text itself reports remain where authors put them: for example the naturalist reply on evolutionary reliability inside the Naturalism *Christian response* on knowledge, and Śaṅkara's answers to Rāmānuja inside the Hindu *Christian response* on ultimate reality.
@@ -89,7 +89,9 @@ Within the existing sections, the strongest alternative responses that the revie
 
 The Christian answer's *Strongest objection* and *Christian reply* are objections to **the Christian account**, not the selected alternative's reply to stage 4. The stage is therefore headed **Objections to the Christian account**, and its description reads:
 
-> The Christian answer’s own strongest objection, with the Christian reply. The objection may come from another tradition: it is not the *X* answer replying to the Christian response above. That answer has no separate rejoinder here; its fuller account is in its Deep dive, under Study the sources.
+> The strongest objection the Christian answer addresses on this question, and its reply. It is not a reply from the *X* answer, and it may come from a different tradition.
+
+(Review wording, `UI3-REVIEW.md` §5. The production wording was three sentences and ended "That answer has no separate rejoinder here; its fuller account is in its Deep dive, under Study the sources.")
 
 **Why this matters (measured).** A count of the sources cited inside the 28 *Strongest objection* sections, by registered tradition tag: 20 cite naturalist sources only (Hume, Russell, Quine, Carroll, …); 5 cite Christian sources only (internal objections, e.g. on election); 1 cites Christian and naturalist sources; 1 cites naturalist and Buddhist sources (*something-rather-than-nothing*); 1 cites Jewish and Hindu sources (*ultimate-personal*). No objection section cites an Islamic source. So in Christian Case against Judaism, Islam, Hinduism or Buddhism, stage 6 almost always shows a naturalist objection. Labelling it as that tradition's reply would misattribute it; the interface does not. Whether the Christian answers should face tradition-specific objections is a scholarly question, recorded in §23 for separate work, not addressed in UI code.
 
@@ -156,6 +158,8 @@ Canonical: `/questions/<slug>/?mode=case&opponent=<id>`, with stable worldview i
 | A Compare stage anchor (`#compare-examine`) | Switches to Compare with the remembered pair (URL rewritten) |
 | `#%`, `#%E0%A4%A`, missing ids | Ignored; Case unchanged |
 
+*(Review update, `UI3-REVIEW.md` I1: on a direct load, web fonts that finished after the initial fragment scroll shifted the target by up to 62px in Case and more in Compare, since both mode regions turn off scroll anchoring; the target is now landed again when `document.fonts.ready` resolves, unless the reader has scrolled.)*
+
 ## 12. Citations and source groups
 
 - Citation markers, numbers, ids and backlinks are the same elements; nothing is renumbered and no Case-specific citation exists.
@@ -187,7 +191,7 @@ UI-1's and UI-2's corrections hold for Case, because they now live in the shared
 | Normal load | DOMContentLoaded 119 ms, load 377 ms (local preview); CLS 0.0000; the overview never shown |
 | Module request blocked | Explore at 1.5 s: 6/6 answers, overview, 6 groups, no controls |
 | Module delayed 7 s, reader idle | Nothing until the 4 s post-parse fallback, then full Explore; when the module arrives at the top of the page, the requested case is applied |
-| Module delayed 7 s, **reader already reading** (scrolled into the Hindu answer, a citation focused) | Stays in Explore: the passage stays exactly under the reader (top 76 → 76), focus kept, URL rewritten to Explore, and the Christian Case link offers `?mode=case&opponent=judaism` |
+| Module delayed 7 s, **reader already reading** (scrolled into the Hindu answer, a citation focused) | Stays in Explore: the passage stays exactly under the reader (top 76 → 76), focus kept, URL rewritten to Explore, and the Christian Case link offers `?mode=case&opponent=judaism` *(Review update, `UI3-REVIEW.md` M4: when the focused citation sat below its answer's thesis, the passage dropped 72px; the late-load anchor is now the focused element)* |
 | 12 KB/s network (Chrome) | Case ready at ~9.3 s. Before ~4.1 s the render-blocking stylesheet has not loaded and nothing is painted; once styled, Explore never flashes before the case |
 | **Failure injection** (15 scenarios, below) | Every answer's text, section order and ids intact in its own panel; 0 placeholders, prefixes or duplicate ids; Explore and all six groups shown; the broken mode controls withdrawn; URL names Explore; Back to an older Case/Compare entry stays honest |
 
@@ -364,7 +368,7 @@ No page was added; no link was removed.
 - **Stage list** has no scroll-position highlight ("you are here"); it is a plain table of contents.
 - **Phones:** the stage list (≈240–270px) sits between the theses and stage 2; the Christian thesis begins just below the first screen at 320 × 844.
 - **Objections stage** usually shows a naturalist objection against the four religious traditions (§7); a content question, not a UI one.
-- **No alternative rejoinder** to the Christian response exists in the corpus (§6).
+- **No separately authored rejoinder section** from the alternative answers to the Christian response (§6). Replies the reviewed text reports remain inside the Christian response and the Deep dives.
 - **Disclosure state travels with nodes:** a Deep dive opened in Case is open in Explore afterwards (UI-2 behaviour).
 - **Citation markers** can still begin a line (UI-4).
 
