@@ -1,0 +1,146 @@
+---
+// Christian Case mode (UI-3): Reformed Christianity and one alternative, read as an argument in
+// stages. This component is only an empty, hidden scaffold of stage headings, one-line navigation
+// descriptions and empty passage cells. It contains no answer text and no doctrine: with
+// JavaScript, src/scripts/modes.ts (with the layout in christian-case.ts) moves the existing,
+// reviewed sections of the two answers (the same DOM nodes Explore shows, with their ids,
+// citations and links) into the cells, and moves them back when the reader leaves. Every answer
+// therefore exists exactly once in the document. Without JavaScript the scaffold stays hidden and
+// Explore shows all six answers.
+//
+// Stage            Passage (from the answers' own sections, under their own headings)
+//   theses         each answer's reviewed thesis: the alternative, then Christianity
+//   account        the alternative's The view and What this explains well
+//   christian      Christianity's The Christian view and What this explains well
+//   response       the alternative answer's Christian response
+//   questions      the alternative answer's Pressure questions
+//   objections     Christianity's Strongest objection and Christian reply (its Examine disclosure)
+//   study          both Deep dives, representative thinkers and links
+// The interface text below only names stages and says where a passage comes from. In particular
+// the Christian answer's strongest objection is not presented as the alternative's reply to the
+// Christian response, because the corpus does not author it as one.
+import type { Worldview } from '../content/schemas';
+
+interface Props {
+  /** The question page's own path. */
+  path: string;
+  christian: Worldview;
+  /** The other worldviews that answer this question, in worldview order. */
+  alternatives: Worldview[];
+}
+
+const { path, christian, alternatives } = Astro.props;
+const first = alternatives[0]!;
+
+type Cell = { side: 'alt' | 'christian' };
+interface Stage {
+  id: string;
+  title: string;
+  /** Description segments; `true` marks where the examined worldview's name goes. */
+  hint: (string | true)[];
+  cells: Cell[];
+  emphasis?: boolean;
+}
+const stages: Stage[] = [
+  {
+    id: 'account',
+    title: 'Understand the alternative',
+    hint: ['The ', true, ' answer in its own terms: its view, and what it explains well.'],
+    cells: [{ side: 'alt' }],
+  },
+  {
+    id: 'christian',
+    title: 'The Christian account',
+    hint: ['What Reformed Christianity affirms on this question, and what it explains well.'],
+    cells: [{ side: 'christian' }],
+  },
+  {
+    id: 'response',
+    title: 'The Christian response',
+    hint: ['The Reformed critique of ', true, ', as written in its answer to this question.'],
+    cells: [{ side: 'alt' }],
+    emphasis: true,
+  },
+  {
+    id: 'questions',
+    title: 'Questions for examination',
+    hint: ['Questions put to ', true, ' in the same answer. They are open questions to examine, not settled conclusions.'],
+    cells: [{ side: 'alt' }],
+  },
+  {
+    id: 'objections',
+    title: 'Objections to the Christian account',
+    // The objection is stated in the Christian answer and often comes from another critic (most are
+    // naturalist); it must not read as the examined answer's reply to the response above.
+    hint: ['The strongest objection the Christian answer addresses on this question, and its reply. It is not a reply from the ', true, ' answer, and it may come from a different tradition.'],
+    cells: [{ side: 'christian' }],
+  },
+  {
+    id: 'study',
+    title: 'Study the sources',
+    hint: ['Both Deep dives, the representative thinkers, and the two answers’ sources.'],
+    cells: [{ side: 'alt' }, { side: 'christian' }],
+  },
+];
+const nav = [{ id: 'theses', title: 'The two answers' }, ...stages];
+---
+
+<section class="case" id="case" data-case data-mode-region hidden aria-labelledby="case-heading">
+  <h2 class="visually-hidden" id="case-heading">Christian Case</h2>
+  <div class="case__picker">
+    <label class="case__picker-label" for="case-opponent">Worldview to examine</label>
+    <select class="compare__select case__select" id="case-opponent" data-case-select data-worldview={first.id}>
+      {alternatives.map((worldview) => <option value={worldview.id}>{worldview.name}</option>)}
+    </select>
+  </div>
+  <p class="case__notice" data-mode-notice hidden></p>
+  <p class="case__print-title" data-case-print-title></p>
+
+  <section class="case__stage case__stage--theses" data-stage="theses" aria-labelledby="case-theses">
+    <h2 class="case__stage-title" id="case-theses">The two answers</h2>
+    <div class="case__theses">
+      <div class="case__cell" data-cell data-part="theses" data-side="alt"><h3 class="case__name" data-mode-label>{first.name}</h3></div>
+      <div class="case__cell" data-cell data-part="theses" data-side="christian"><h3 class="case__name" data-mode-label>{christian.name}</h3></div>
+    </div>
+  </section>
+
+  <div class="case__body">
+    <nav class="case__nav" aria-labelledby="case-nav-title">
+      <p class="case__nav-title" id="case-nav-title">In this case</p>
+      <p class="case__nav-subject">{christian.name} and <span data-case-name>{first.name}</span></p>
+      <ol class="case__nav-list">
+        {nav.map((stage) => <li><a href={`#case-${stage.id}`}>{stage.title}</a></li>)}
+      </ol>
+    </nav>
+
+    <div class="case__stages">
+      {
+        stages.map((stage) => (
+          <section class:list={['case__stage', { 'case__stage--emphasis': stage.emphasis }]} data-stage={stage.id} aria-labelledby={`case-${stage.id}`}>
+            <div class="case__stage-head">
+              <h2 class="case__stage-title" id={`case-${stage.id}`}>{stage.title}</h2>
+              <p class="case__stage-hint">
+                {stage.hint.map((part) => (part === true ? <span data-case-name>{first.name}</span> : part))}
+              </p>
+            </div>
+            {stage.cells.map((cell) => (
+              <div class="case__cell" data-cell data-part={stage.id} data-side={cell.side}>
+                <p class="case__label" aria-hidden="true" data-mode-label />
+              </div>
+            ))}
+            {stage.id === 'study' && (
+              <ul class="case__further">
+                <li>
+                  <a href={`${path}?mode=compare&views=${christian.id},${first.id}`} data-mode-link="compare" data-mode-christian-pair>
+                    Compare these two answers side by side
+                  </a>
+                </li>
+                <li><a href={path} data-mode-link="explore">Read all six answers in Explore</a></li>
+              </ul>
+            )}
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</section>

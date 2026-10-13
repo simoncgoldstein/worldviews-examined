@@ -1,27 +1,31 @@
 ---
-// The question page's reading-mode switch: Explore (default) and Compare. Christian Case is named
-// but not offered until UI-3. The links are real URLs (the question page, and the same page with
-// ?mode=compare&views=…), so they can be opened in a new tab or copied; src/scripts/compare.ts
-// handles a plain click without reloading. Without JavaScript the switch stays hidden and the page
-// reads in Explore, which shows all six answers; a short note says why Compare is unavailable.
+// The question page's reading-mode switch: Explore (default), Compare and Christian Case. The links
+// are real URLs (the question page, and the same page with ?mode=compare&views=… or
+// ?mode=case&opponent=…), so they can be opened in a new tab or copied; src/scripts/modes.ts
+// handles a plain click without reloading and keeps each link's selection current. Without
+// JavaScript the switch stays hidden and the page reads in Explore, which shows all six answers; a
+// short note says why the other two modes are unavailable. No mode is presented as the better way
+// to read: they serve different purposes.
 interface Props {
   /** The question page's own path. */
   path: string;
   /** The worldview pair the Compare link opens with (the first two answers). */
   pair: [string, string];
+  /** The alternative Christian Case opens with; omitted when the question has no Christian answer. */
+  opponent?: string | undefined;
 }
 
-const { path, pair } = Astro.props;
+const { path, pair, opponent } = Astro.props;
 ---
 
 <nav class="modes" aria-label="Reading mode" data-modes hidden>
   <ul class="modes__list">
     <li><a class="modes__link" href={path} data-mode-link="explore" aria-current="true">Explore</a></li>
     <li><a class="modes__link" href={`${path}?mode=compare&views=${pair.join(',')}`} data-mode-link="compare">Compare</a></li>
-    <li class="modes__pending">Christian Case <span class="modes__status">In preparation</span></li>
+    {opponent && <li><a class="modes__link" href={`${path}?mode=case&opponent=${opponent}`} data-mode-link="case">Christian Case</a></li>}
   </ul>
-  <p class="visually-hidden" role="status" data-compare-status></p>
+  <p class="visually-hidden" role="status" data-mode-status></p>
 </nav>
 <noscript>
-  <p class="modes__noscript">All six answers are shown below. The Compare view needs JavaScript.</p>
+  <p class="modes__noscript">All six answers are shown below. Compare and Christian Case need JavaScript.</p>
 </noscript>

@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerPanel from '../../components/AnswerPanel.astro';
+import ChristianCaseView from '../../components/ChristianCaseView.astro';
 import CompareView from '../../components/CompareView.astro';
 import ModeSwitch from '../../components/ModeSwitch.astro';
 import SourceList from '../../components/SourceList.astro';
@@ -23,9 +24,12 @@ const answers = answersForQuestion(content, question.id);
 const answerByWorldview = new Map(answers.map((a) => [a.data.worldviewId, a]));
 const related = question.relatedQuestions.map((rid) => lookup(content.questionById, rid, 'question'));
 const hasSources = answers.some((a) => a.citations.length > 0);
-// Compare offers the worldviews that answer this question; it opens on the first two.
+// Compare offers the worldviews that answer this question; it opens on the first two. Christian Case
+// examines one of the alternatives from the Christian answer; it opens on the first alternative.
 const answered = content.worldviews.filter((w) => answerByWorldview.has(w.id));
 const firstPair: [string, string] = [answered[0]?.id ?? '', answered[1]?.id ?? ''];
+const christian = answered.find((w) => w.analysisKind === 'christian');
+const alternatives = christian ? answered.filter((w) => w.id !== christian.id) : [];
 ---
 
 <BaseLayout title={question.title} description={question.summary}>
@@ -43,7 +47,7 @@ const firstPair: [string, string] = [answered[0]?.id ?? '', answered[1]?.id ?? '
       <p class="lede">{question.summary}</p>
     </header>
 
-    {answered.length >= 2 && <ModeSwitch path={questionUrl(question)} pair={firstPair} />}
+    {answered.length >= 2 && <ModeSwitch path={questionUrl(question)} pair={firstPair} opponent={alternatives[0]?.id} />}
 
     <section class="overview" id="overview" aria-labelledby="overview-heading">
       <div class="overview__head">
@@ -54,6 +58,7 @@ const firstPair: [string, string] = [answered[0]?.id ?? '', answered[1]?.id ?? '
     </section>
 
     {answered.length >= 2 && <CompareView worldviews={answered} />}
+    {christian && alternatives.length > 0 && <ChristianCaseView path={questionUrl(question)} christian={christian} alternatives={alternatives} />}
 
     <section class="reading" aria-labelledby="reading-heading">
       <div class="reading__head">
@@ -83,7 +88,7 @@ const firstPair: [string, string] = [answered[0]?.id ?? '', answered[1]?.id ?? '
         <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
           <h2 class="section-title" id="sources-heading">Sources</h2>
           <p class="meta">Numbered once across the page, grouped by the answer in which each source is cited.</p>
-          <p class="meta" data-compare-sources-note hidden></p>
+          <p class="meta" data-mode-sources-note hidden></p>
           {answers.map((answer) => (
             <SourceList
               ns={answer.ns}

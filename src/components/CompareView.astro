@@ -1,7 +1,7 @@
 ---
 // Compare mode (UI-2): any two of the question's answers, section by section. This component is
 // only an empty, hidden scaffold of reading stages and rows. It contains no answer text: with
-// JavaScript, src/scripts/compare.ts moves the two selected answers' existing section elements
+// JavaScript, src/scripts/modes.ts (with the layout in compare.ts) moves the two selected answers' existing section elements
 // (the same DOM nodes Explore shows, with their ids, citations and links) into the rows, and moves
 // them back when the reader returns to Explore. Every answer therefore exists exactly once in the
 // document. Without JavaScript the scaffold stays hidden and Explore shows all six answers.
@@ -35,7 +35,7 @@ const sides = [
 ];
 ---
 
-<section class="compare" id="compare" data-compare hidden aria-labelledby="compare-heading">
+<section class="compare" id="compare" data-compare data-mode-region hidden aria-labelledby="compare-heading">
   <h2 class="visually-hidden" id="compare-heading">Compare two answers</h2>
   <div class="compare__picker">
     {
@@ -54,7 +54,7 @@ const sides = [
       ))
     }
   </div>
-  <p class="compare__notice" data-compare-notice hidden></p>
+  <p class="compare__notice" data-mode-notice hidden></p>
   <p class="compare__print-title" data-compare-print-title></p>
 
   {
@@ -72,11 +72,11 @@ const sides = [
         {stage.rows.map((row) => (
           <div class="compare__row" data-row={row}>
             {sides.map((side) => (
-              <div class="compare__cell" data-side={side.index}>
+              <div class="compare__cell" data-cell data-side={side.index}>
                 {row === 'glance' ? (
-                  <h3 class="compare__name" data-compare-label />
+                  <h3 class="compare__name" data-mode-label />
                 ) : (
-                  <p class="compare__label" aria-hidden="true" data-compare-label />
+                  <p class="compare__label" aria-hidden="true" data-mode-label />
                 )}
               </div>
             ))}

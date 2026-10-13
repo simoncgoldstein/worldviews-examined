@@ -219,6 +219,10 @@ Sources for all answers are listed once, after the reading region (see Citations
 
 `?mode=compare&views=<first>,<second>` on the same question page shows any two answers in paired rows, by semantic section identity: At a glance (the `lede` thesis only: `scope` and `traditionNotes` stay frontmatter metadata and, since PR #28, are not shown under a thesis in Explore or Compare), Understand (the view / The Christian view; What this explains well), Examine (each answer's own analytical `<details>`, unrenamed), Study (Deep dive; thinkers and links). The rows reuse the answers' own rendered elements; no prose is duplicated or summarised. Details in `docs/ui/UI2-COMPARE.md`.
 
+### Christian Case mode (UI-3)
+
+`?mode=case&opponent=<id>` shows Reformed Christianity and one of the other five answers as an argument in seven stages, again by semantic section identity and with the answers' own rendered elements moved, never copied: the two theses (`lede`); the alternative's *The view* and *What this explains well*; Christianity's *The Christian view* and *What this explains well*; the alternative answer's *Christian response*; its *Pressure questions*; Christianity's own Examine disclosure (*Strongest objection*, *Christian reply*); both Deep dives with thinkers and links. The alternative's two analytical sections leave their shared Examine `<details>` for their own stages. Section headings are unchanged. The interface adds only stage names and one-line navigation descriptions; it does not present the Christian answer's strongest objection as the alternative's reply to the Christian response, since no answer has a section authored as such a rejoinder. Details in `docs/ui/UI3-CHRISTIAN-CASE.md`.
+
 ### Editorial notation
 
 `§` analytical or major subsection; `◇` pressure question or strongest objection; `↩` citation backlink; `↗` external source; `·` metadata separator; `→` deeper navigation; `←` return navigation. Use sparingly; do not add decorative religious icons.

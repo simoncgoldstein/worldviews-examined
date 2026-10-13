@@ -9,6 +9,7 @@
 @import './catalog.css';
 @import './explore.css';
 @import './compare.css';
+@import './case.css';
 
 *, *::before, *::after { box-sizing: border-box; }
 

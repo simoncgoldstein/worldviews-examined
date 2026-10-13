@@ -14,10 +14,10 @@
 // anchor navigation and works without this script. `scrollIntoView` uses the default (instant)
 // behavior, so it never animates and respects prefers-reduced-motion by construction.
 //
-// In Compare mode (compare.ts) a target the comparison is not showing switches the page back to
-// Explore first; a valid scholarly link always outranks the comparison layout.
+// In Compare or Christian Case (modes.ts) a target the mode is not showing switches the page back
+// to Explore first; a valid scholarly link always outranks the reading mode's layout.
 import { initAnswerPanels, openAnswer } from './answer-panels';
-import { initCompare, isComparing, needsResolve, resetCompare, resolveForMode } from './compare';
+import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -49,15 +49,18 @@ function settleFocus(target: HTMLElement): void {
   target.focus({ preventScroll: true });
 }
 
-function revealHashTarget(force = false): void {
+/** Returns the element scrolled to, if any. */
+function revealHashTarget(force = false): HTMLElement | null {
   const found = targetOf(window.location.hash);
-  if (!found) return;
+  if (!found) return null;
   const { target, changed } = resolveForMode(found);
   // Layout shifts when something opens, so bring the target back into view.
   if (reveal(target) || changed || force) {
     target.scrollIntoView({ block: 'start' });
     settleFocus(target);
+    return target;
   }
+  return null;
 }
 
 // Same-page fragment links: open the destination before the browser scrolls to it. When the link
@@ -68,7 +71,7 @@ document.addEventListener('click', (event) => {
   if (!(link instanceof HTMLAnchorElement) || link.origin !== location.origin || link.pathname !== location.pathname || !link.hash) return;
   const target = targetOf(link.hash);
   if (!target) return;
-  // Compare must change first: let the fragment navigation happen, then `hashchange` resolves it.
+  // The mode must change first: let the fragment navigation happen, then `hashchange` resolves it.
   // A link to the current fragment fires no `hashchange`, so resolve it here instead.
   if (needsResolve(target)) {
     if (link.hash === location.hash) {
@@ -88,12 +91,16 @@ try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
   const late = !document.documentElement.classList.contains('js');
-  // The controls that appear above a late reader's position must not push the text they are reading.
-  const anchor = late ? document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3) : null;
+  // The controls that appear above a late reader's position must not push the text they are reading:
+  // the element they have focused, if it is on screen, or else whatever is a third of the way down.
+  const focused = document.activeElement;
+  const onScreen = focused instanceof HTMLElement && focused !== document.body && focused.getClientRects().length > 0 &&
+    focused.getBoundingClientRect().top >= 0 && focused.getBoundingClientRect().top < window.innerHeight;
+  const anchor = late ? (onScreen ? focused : document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3)) : null;
   const anchorTop = anchor?.getBoundingClientRect().top;
   const hashTarget = targetOf(window.location.hash);
   initAnswerPanels(hashTarget, late);
-  initCompare(hashTarget, late);
+  initModes(hashTarget, late);
   document.documentElement.classList.add('js');
   // Hands panel visibility from the pre-script CSS rule (explore.css) to the `hidden` attributes.
   document.documentElement.classList.add('js-ready');
@@ -102,12 +109,22 @@ try {
   }
 } catch (error) {
   // Never lock a reader out of the text: fall back to the no-JavaScript reading, every answer open.
-  resetCompare();
+  resetModes();
   document.querySelectorAll('[data-answer-panel][hidden]').forEach((panel) => panel.removeAttribute('hidden'));
   document.documentElement.classList.remove('js');
   throw error;
 }
-document.documentElement.classList.remove('compare-pending');
-// A comparison URL's fragment lands inside the moved passage, wherever the browser first scrolled.
-revealHashTarget(isComparing());
+document.documentElement.classList.remove('mode-pending');
+// A mode URL's fragment lands inside the moved passage, wherever the browser first scrolled.
+const landed = revealHashTarget(isRearranged());
+// Web fonts that finish loading after this first scroll reflow the text above the target. The
+// reading modes turn off the browser's scroll anchoring (modes.ts keeps positions itself), and
+// WebKit has none, so nothing would compensate: land the target again once the fonts are ready,
+// unless the reader has scrolled in the meantime.
+if (landed && document.fonts && document.fonts.status !== 'loaded') {
+  const y = window.scrollY;
+  void document.fonts.ready.then(() => {
+    if (window.scrollY === y && landed.isConnected && landed.getClientRects().length > 0) landed.scrollIntoView({ block: 'start' });
+  });
+}
 window.addEventListener('hashchange', () => revealHashTarget());

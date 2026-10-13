@@ -122,6 +122,8 @@ The only script is `src/scripts/reveal-hash.ts` (about 4 KB with `src/scripts/an
 
 UI-2 adds `src/scripts/compare.ts` to the same module (about 13 KB minified in total, one cached file). Compare is URL state over the same static question page (`?mode=compare&views=<id>,<id>`), not a separate route: the planned `/compare?question=…` route above is superseded. Entering Compare moves the two selected answers' existing section elements into an empty scaffold of paired rows (`src/components/CompareView.astro`) and moves them back on leaving, so every answer, id and citation still exists exactly once in the document. The decision and its alternatives are recorded in `docs/ui/UI2-COMPARE.md` §2.
 
+UI-3 adds Christian Case (`?mode=case&opponent=<id>`) and turns the Compare controller into one shared coordinator, `src/scripts/modes.ts`: it parses the URL for all three modes, moves and restores nodes (one placeholder list, so exactly one mode places nodes at a time), keeps history and fragment resolution, and recovers from failures. `compare.ts` and `christian-case.ts` are now layout descriptions only (which answer part goes into which scaffold cell, and their own controls), and `src/components/ChristianCaseView.astro` is a second empty scaffold. The one module is about 19 KB minified, 6.3 KB gzipped. See `docs/ui/UI3-CHRISTIAN-CASE.md` §2–3.
+
 Core reading must work without JavaScript. JavaScript may enhance:
 
 - showing/hiding selected worldview cards;
