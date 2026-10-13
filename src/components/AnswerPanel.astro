@@ -6,7 +6,8 @@
 // Progressive disclosure (Explore mode):
 //   level 2, Understand  the view and what it explains well; visible as soon as the answer is open
 //   level 3, Examine     the analytical sections, grouped by AnswerLevel into a native <details>
-//   level 4, Study       the Deep dive <details>, representative thinkers and the answer's sources
+//   level 4, Study       the Deep dive <details>, then the Further study footer: key thinkers, a
+//                        count of and link to the answer's references, and quieter navigation
 // Without JavaScript every answer is open and the two inner levels are native disclosures.
 // With JavaScript (src/scripts/answer-panels.ts) the heading becomes a disclosure button and
 // answers start closed; the overview cards and fragment links open them.
@@ -18,6 +19,7 @@ import QuestionLink from './QuestionLink.astro';
 import ThinkerLinks from './ThinkerLinks.astro';
 import { getContent, lookup, worldviewUrl, type AnswerEntry } from '../lib/content';
 import { symbols } from '../lib/labels';
+import { url } from '../lib/paths';
 
 interface Props {
   answer: AnswerEntry;
@@ -29,6 +31,10 @@ const { worldviewById } = await getContent();
 const worldview = lookup(worldviewById, data.worldviewId, 'worldview');
 const headingId = `${ns}-heading`;
 const panelId = `${ns}-panel`;
+const { thinkers } = data;
+// Each numbered reference is one (source, locator) pair; several can cite the same work.
+const works = new Set(citations.map((citation) => citation.sourceId)).size;
+const plural = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'}`;
 ---
 
 <article class="answer" id={worldview.id} data-answer data-worldview={worldview.id} data-ns={ns} aria-labelledby={headingId}>
@@ -53,19 +59,31 @@ const panelId = `${ns}-panel`;
         <Content components={{ AnswerLevel, AnswerSection, Cite, QuestionLink }} />
       </div>
 
-      <footer class="answer__footer">
-        {data.thinkers.length > 0 && (
-          <section class="answer__thinkers" aria-labelledby={`${ns}-thinkers`}>
-            <h3 class="answer__footer-label" id={`${ns}-thinkers`}>Representative thinkers</h3>
-            <ThinkerLinks ids={data.thinkers} />
-          </section>
-        )}
-        <ul class="answer__links">
-          {citations.length > 0 && (
-            <li><a href={`#${ns}-sources`}>Sources cited in this answer</a></li>
+      <footer class="answer__footer further" aria-labelledby={`${ns}-further`}>
+        <h3 class="further__title" id={`${ns}-further`}>Further study</h3>
+        <div class="further__groups">
+          {thinkers.length > 0 && (
+            <section class="further__group" aria-labelledby={`${ns}-thinkers`}>
+              <h4 class="further__label" id={`${ns}-thinkers`}>Key thinkers</h4>
+              <ThinkerLinks ids={data.thinkers} />
+            </section>
           )}
+          {citations.length > 0 && (
+            <section class="further__group" aria-labelledby={`${ns}-references`}>
+              <h4 class="further__label" id={`${ns}-references`}>Sources and references</h4>
+              <p class="further__count">
+                {plural(citations.length, 'numbered reference')} to {plural(works, 'distinct work')}
+              </p>
+              <ul class="further__links">
+                <li><a href={`#${ns}-sources`}>View this answer’s references</a></li>
+                <li><a href={url('sources/')}>Browse the Source Library</a></li>
+              </ul>
+            </section>
+          )}
+        </div>
+        <ul class="answer__links further__nav">
           <li><a href={worldviewUrl(worldview)}>About {worldview.name}<span aria-hidden="true">&nbsp;{symbols.forward}</span></a></li>
-          <li><a href="#overview">Back to the six answers</a></li>
+          <li><a href="#overview">Back to all six answers</a></li>
         </ul>
       </footer>
     </div>
