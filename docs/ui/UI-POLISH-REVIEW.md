@@ -2,7 +2,7 @@
 
 **PR:** #33 · **Branch:** `ui-polish-theme-further-study` · **Date:** 2026-10-13
 **Starting head:** `6d4fddbc08ade1192682b79e10d4f53a1cbd86cc` · **Starting main:** `5c934761fd27aa2c5aeb5ab5cc862dc10e5d1b2d`
-**Final head:** the review commit on this branch (SHA reported in the PR comment/final report)
+**Review commits:** `d4e1fab` (M1 fix and this record), then a follow-up commit recording this SHA line; final head is reported in the PR comment
 **Policy:** `docs/ui/REVIEW-STRATEGY.md` (proportionate review)
 
 ## 1. Independence and main synchronization
