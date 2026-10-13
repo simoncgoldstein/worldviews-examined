@@ -22,7 +22,7 @@ const domains = content.categories.map((category) => ({
   count: content.questions.filter((q) => q.category === category.id).length,
 }));
 
-// Reading modes. Explore and Compare are available; Christian Case is described, not offered as a control.
+// Reading modes. Compare and Christian Case open on the featured question.
 const modes = [
   {
     name: 'Explore',
@@ -36,7 +36,8 @@ const modes = [
   },
   {
     name: 'Christian Case',
-    text: 'Follow one alternative through its own account, what it explains well, the Christian response and the questions it must answer.',
+    text: 'Examine one alternative from the Reformed Christian standpoint: its own account and strengths, the Christian account, the Christian response, the questions put to it, and objections to the Christian view.',
+    href: `${questionUrl(featured)}?mode=case&opponent=naturalism`,
   },
 ];
 
@@ -115,9 +116,8 @@ const references = [
         {
           modes.map((mode) => (
             <li class="mode-list__item">
-              <h3 class="mode-list__name">{mode.href ? <a href={mode.href}>{mode.name}</a> : mode.name}</h3>
+              <h3 class="mode-list__name"><a href={mode.href}>{mode.name}</a></h3>
               <p class="mode-list__text">{mode.text}</p>
-              <p class="mode-list__status">{mode.href ? 'Available now' : 'In preparation'}</p>
             </li>
           ))
         }

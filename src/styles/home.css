@@ -134,7 +134,6 @@
 .mode-list__item:first-child { border-top-color: var(--color-accent); }
 .mode-list__name { font-size: var(--text-lg); margin: 0 0 var(--space-2); }
 .mode-list__text { font-size: var(--text-ui); line-height: 1.5; margin: 0 0 var(--space-2); }
-.mode-list__status { font: 500 var(--text-sm) / 1.4 var(--font-sans); color: var(--color-text-muted); margin: 0; }
 
 /* Reference links. */
 .reference-list {

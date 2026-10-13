@@ -14,10 +14,10 @@
 // anchor navigation and works without this script. `scrollIntoView` uses the default (instant)
 // behavior, so it never animates and respects prefers-reduced-motion by construction.
 //
-// In Compare mode (compare.ts) a target the comparison is not showing switches the page back to
-// Explore first; a valid scholarly link always outranks the comparison layout.
+// In Compare or Christian Case (modes.ts) a target the mode is not showing switches the page back
+// to Explore first; a valid scholarly link always outranks the reading mode's layout.
 import { initAnswerPanels, openAnswer } from './answer-panels';
-import { initCompare, isComparing, needsResolve, resetCompare, resolveForMode } from './compare';
+import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -68,7 +68,7 @@ document.addEventListener('click', (event) => {
   if (!(link instanceof HTMLAnchorElement) || link.origin !== location.origin || link.pathname !== location.pathname || !link.hash) return;
   const target = targetOf(link.hash);
   if (!target) return;
-  // Compare must change first: let the fragment navigation happen, then `hashchange` resolves it.
+  // The mode must change first: let the fragment navigation happen, then `hashchange` resolves it.
   // A link to the current fragment fires no `hashchange`, so resolve it here instead.
   if (needsResolve(target)) {
     if (link.hash === location.hash) {
@@ -93,7 +93,7 @@ try {
   const anchorTop = anchor?.getBoundingClientRect().top;
   const hashTarget = targetOf(window.location.hash);
   initAnswerPanels(hashTarget, late);
-  initCompare(hashTarget, late);
+  initModes(hashTarget, late);
   document.documentElement.classList.add('js');
   // Hands panel visibility from the pre-script CSS rule (explore.css) to the `hidden` attributes.
   document.documentElement.classList.add('js-ready');
@@ -102,12 +102,12 @@ try {
   }
 } catch (error) {
   // Never lock a reader out of the text: fall back to the no-JavaScript reading, every answer open.
-  resetCompare();
+  resetModes();
   document.querySelectorAll('[data-answer-panel][hidden]').forEach((panel) => panel.removeAttribute('hidden'));
   document.documentElement.classList.remove('js');
   throw error;
 }
-document.documentElement.classList.remove('compare-pending');
-// A comparison URL's fragment lands inside the moved passage, wherever the browser first scrolled.
-revealHashTarget(isComparing());
+document.documentElement.classList.remove('mode-pending');
+// A mode URL's fragment lands inside the moved passage, wherever the browser first scrolled.
+revealHashTarget(isRearranged());
 window.addEventListener('hashchange', () => revealHashTarget());
