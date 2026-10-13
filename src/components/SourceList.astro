@@ -32,7 +32,7 @@ const headingId = `${ns}-sources`;
 
 {
   entries.length > 0 && (
-    <section class="sources__group" aria-labelledby={headingId}>
+    <section class="sources__group" data-ns={ns} aria-labelledby={headingId}>
       <h3 class="sources__heading" id={headingId}>{heading}</h3>
       <ol class="sources__list" start={offset + 1}>
         {entries.map(({ citation, source, repeat, number }) => (

@@ -41,7 +41,9 @@ for (const f of pages) {
   for (const m of readFileSync(f, 'utf8').matchAll(/\s(?:href|src)="([^"]+)"/g)) {
     const url = m[1];
     if (/^(https?:|mailto:|data:|\/\/)/.test(url)) { external++; continue; }
-    const [path, hash] = url.split('#');
+    // A query string (e.g. ?mode=compare&amp;views=…) is UI state over the same static page.
+    const [pathAndQuery, hash] = url.split('#');
+    const path = pathAndQuery.split('?')[0];
     let target;
     if (!path) target = resolve(f);
     else {

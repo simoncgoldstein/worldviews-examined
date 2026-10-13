@@ -41,9 +41,18 @@ function setAnswerOpen(answer: Element, open: boolean): void {
 const STATE_KEY = 'explore';
 let saving = false;
 let restored = false;
+let suspended = false;
+
+/**
+ * Compare mode (compare.ts) moves two answers' sections out of their panels while it is shown.
+ * Explore's record of open answers and levels is left exactly as it was until Explore returns.
+ */
+export function suspendExploreState(value: boolean): void {
+  suspended = value;
+}
 
 function saveState(): void {
-  if (!restored) return;
+  if (!restored || suspended) return;
   const open = [...document.querySelectorAll(ANSWER)].filter(isAnswerOpen).map((a) => a.id);
   const levels = [...document.querySelectorAll('[data-answer] details[open] > summary[id]')].map((s) => s.id);
   try {

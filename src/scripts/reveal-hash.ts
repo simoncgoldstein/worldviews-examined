@@ -13,7 +13,11 @@
 // still reopens a section the reader has since closed. Citation -> source navigation remains plain
 // anchor navigation and works without this script. `scrollIntoView` uses the default (instant)
 // behavior, so it never animates and respects prefers-reduced-motion by construction.
+//
+// In Compare mode (compare.ts) a target the comparison is not showing switches the page back to
+// Explore first; a valid scholarly link always outranks the comparison layout.
 import { initAnswerPanels, openAnswer } from './answer-panels';
+import { initCompare, isComparing, needsResolve, resetCompare, resolveForMode } from './compare';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -37,10 +41,23 @@ function reveal(target: HTMLElement): boolean {
   return opened;
 }
 
-function revealHashTarget(): void {
-  const target = targetOf(window.location.hash);
+/** Never leave focus on something a mode change has just hidden: move it to the link's target. */
+function settleFocus(target: HTMLElement): void {
+  const active = document.activeElement;
+  if (!(active instanceof HTMLElement) || active === document.body || active.getClientRects().length > 0) return;
+  if (!target.matches('a[href], button, summary, select, [tabindex]')) target.setAttribute('tabindex', '-1');
+  target.focus({ preventScroll: true });
+}
+
+function revealHashTarget(force = false): void {
+  const found = targetOf(window.location.hash);
+  if (!found) return;
+  const { target, changed } = resolveForMode(found);
   // Layout shifts when something opens, so bring the target back into view.
-  if (target && reveal(target)) target.scrollIntoView({ block: 'start' });
+  if (reveal(target) || changed || force) {
+    target.scrollIntoView({ block: 'start' });
+    settleFocus(target);
+  }
 }
 
 // Same-page fragment links: open the destination before the browser scrolls to it. When the link
@@ -51,6 +68,15 @@ document.addEventListener('click', (event) => {
   if (!(link instanceof HTMLAnchorElement) || link.origin !== location.origin || link.pathname !== location.pathname || !link.hash) return;
   const target = targetOf(link.hash);
   if (!target) return;
+  // Compare must change first: let the fragment navigation happen, then `hashchange` resolves it.
+  // A link to the current fragment fires no `hashchange`, so resolve it here instead.
+  if (needsResolve(target)) {
+    if (link.hash === location.hash) {
+      event.preventDefault();
+      revealHashTarget(true);
+    }
+    return;
+  }
   const opened = reveal(target);
   if (link.hash === location.hash && opened) {
     event.preventDefault();
@@ -62,15 +88,26 @@ try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
   const late = !document.documentElement.classList.contains('js');
-  initAnswerPanels(targetOf(window.location.hash), late);
+  // The controls that appear above a late reader's position must not push the text they are reading.
+  const anchor = late ? document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 3) : null;
+  const anchorTop = anchor?.getBoundingClientRect().top;
+  const hashTarget = targetOf(window.location.hash);
+  initAnswerPanels(hashTarget, late);
+  initCompare(hashTarget, late);
   document.documentElement.classList.add('js');
   // Hands panel visibility from the pre-script CSS rule (explore.css) to the `hidden` attributes.
   document.documentElement.classList.add('js-ready');
+  if (anchor && anchorTop !== undefined && !window.location.hash && anchor.getClientRects().length > 0) {
+    window.scrollBy(0, anchor.getBoundingClientRect().top - anchorTop);
+  }
 } catch (error) {
   // Never lock a reader out of the text: fall back to the no-JavaScript reading, every answer open.
+  resetCompare();
   document.querySelectorAll('[data-answer-panel][hidden]').forEach((panel) => panel.removeAttribute('hidden'));
   document.documentElement.classList.remove('js');
   throw error;
 }
-revealHashTarget();
-window.addEventListener('hashchange', revealHashTarget);
+document.documentElement.classList.remove('compare-pending');
+// A comparison URL's fragment lands inside the moved passage, wherever the browser first scrolled.
+revealHashTarget(isComparing());
+window.addEventListener('hashchange', () => revealHashTarget());

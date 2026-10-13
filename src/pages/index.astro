@@ -22,7 +22,7 @@ const domains = content.categories.map((category) => ({
   count: content.questions.filter((q) => q.category === category.id).length,
 }));
 
-// Reading modes. Only Explore is available; the other two are described, not offered as controls.
+// Reading modes. Explore and Compare are available; Christian Case is described, not offered as a control.
 const modes = [
   {
     name: 'Explore',
@@ -32,6 +32,7 @@ const modes = [
   {
     name: 'Compare',
     text: 'Read any two worldviews side by side on the same question, section by section.',
+    href: `${questionUrl(featured)}?mode=compare&views=christianity,naturalism`,
   },
   {
     name: 'Christian Case',
