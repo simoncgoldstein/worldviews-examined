@@ -273,8 +273,9 @@
 }
 .theme-switchable[data-theme='light'] { --theme-dark: 0; }
 .theme-switchable[data-theme='dark'] { --theme-dark: 1; }
+/* --thumb-at is set only for the frame in which a press recolours the page (ThemeSwitch.astro). */
 .theme-switch__thumb {
-  transform: translateX(calc(var(--theme-dark) * (var(--track-w) - 2px - var(--thumb) - 2 * var(--inset))));
+  transform: translateX(calc(var(--thumb-at, var(--theme-dark)) * (var(--track-w) - 2px - var(--thumb) - 2 * var(--inset))));
 }
 /* Only pressing the switch slides the thumb: its script sets data-animate on a press and removes
    it when a theme arrives otherwise (another tab, a page restored from the back/forward cache). So

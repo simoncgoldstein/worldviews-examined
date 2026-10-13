@@ -31,16 +31,31 @@
     function sync() {
       button.setAttribute('aria-checked', String(theme.current() === 'dark'));
     }
+    // A press recolours the whole page, which on a slow engine (WebKit on a long question page) can
+    // take a large part of the 200ms slide before the next frame. So the thumb is held where it is
+    // (--thumb-at) for that frame and released in the next, and the whole slide is drawn.
+    var press = 0;
     button.addEventListener('click', function () {
+      var own = ++press;
+      if (!button.style.getPropertyValue('--thumb-at')) {
+        button.style.setProperty('--thumb-at', theme.current() === 'dark' ? '1' : '0');
+      }
       button.setAttribute('data-animate', '');
       theme.choose(theme.current() === 'dark' ? 'light' : 'dark');
       sync();
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          if (own === press) button.style.removeProperty('--thumb-at');
+        });
+      });
     });
     // Following the device (no saved choice): track it while the page is open.
     theme.media.addEventListener('change', sync);
     // A choice made in another tab, or on a page this one was restored over from the back/forward
     // cache: the thumb moves straight to its place.
     function restore() {
+      press++;
+      button.style.removeProperty('--thumb-at');
       button.removeAttribute('data-animate');
       theme.apply(theme.saved());
       sync();

@@ -1,6 +1,6 @@
 # UI-4A — Accessible citation previews and theme consistency
 
-**Status:** produced 2026-10-13 on branch `ui4a-citation-previews` from main `aee1217`. Needs an independent review (see §9). Spec: `docs/DESIGN-SPEC-V1.md` §13.1 (theme switch) and §13.2 (citation previews). Review policy: `docs/ui/REVIEW-STRATEGY.md`.
+**Status:** produced 2026-10-13 on branch `ui4a-citation-previews` from main `aee1217`. Independently reviewed 2026-10-13: see `docs/ui/UI4A-REVIEW.md` (MERGE; one MINOR fix to the switch's slide). Spec: `docs/DESIGN-SPEC-V1.md` §13.1 (theme switch) and §13.2 (citation previews). Review policy: `docs/ui/REVIEW-STRATEGY.md`.
 
 Three changes, nothing else:
 
@@ -251,6 +251,7 @@ Links are unchanged at **11,337**: the preview's links are created at runtime.
 
 - **WebKit (Windows Playwright) recolour cost.** A theme change needs 75–160ms before WebKit's next frame on the large question pages, against 1–3ms in Chrome and Firefox. This is a whole-page restyle, unchanged by this PR. The 200ms slide is therefore partly elapsed by its first visible frame: measured runs show it already 40–90% done. The homepage slide is smooth.
   - Real Safari on macOS was not available and should be checked at release.
+  - **Review fix (M1):** a press now holds the thumb in place for the recolour frame and slides it in the next, so the whole slide is drawn (`docs/ui/UI4A-REVIEW.md` §5).
 - **bfcache:** no engine restored a page from the back/forward cache under Playwright. The restore path was exercised with a synthetic persisted `pageshow`.
 - **Screen readers:** not tested with a real screen reader. Accessibility was checked through roles, names, states and focus.
 - **`displayCitation` overrides:** none are registered, so that branch is covered by construction only.
