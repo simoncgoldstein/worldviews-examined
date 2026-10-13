@@ -277,7 +277,7 @@ They all meet the normal-text WCAG AA contrast minimum against the present light
 
 Try slightly more distinct heading and selected-state color, a very faint tinted worldview header only where it adds orientation, and a thin source/thinker section marker. **Never color long prose blocks, create large saturated panels, encode truth/ranking in color, or compromise content readability.** Retain current colors until the UI visual review approves a change.
 
-**Adopted in the UI Polish PR** (2026-10-13), pending its independent review: the light values above unchanged, with new dark equivalents `#8DB0E2`, `#A9B9BD`, `#CCB26C`, `#6FC3B0`, `#E8A083`, `#C6A0E0`. Contrast and distinctness results are in `docs/ui/UI-POLISH.md` §4.
+**Adopted in the UI Polish PR** (2026-10-13) and confirmed by its independent review (`docs/ui/UI-POLISH-REVIEW.md`): the light values above unchanged, with new dark equivalents `#8DB0E2`, `#A9B9BD`, `#CCB26C`, `#6FC3B0`, `#E8A083`, `#C6A0E0`. Contrast and distinctness results are in `docs/ui/UI-POLISH.md` §4.
 
 ### Delivery and regression gates
 

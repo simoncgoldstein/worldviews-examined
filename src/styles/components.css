@@ -264,8 +264,17 @@
   background: var(--color-surface);
   transition: transform 160ms ease-out;
 }
-.theme-switch[aria-checked='true'] .theme-switch__thumb {
-  transform: translateX(calc(var(--track-w) - 2px - var(--thumb) - 2 * var(--inset)));
+/* The thumb follows the page's theme, which BaseLayout fixes in <head>, rather than aria-checked,
+   which the switch's own script sets only after the button is parsed: Firefox styles the button
+   before that, so a dark page would otherwise open with the thumb sliding across. */
+.theme-switchable { --theme-dark: 0; }
+@media (prefers-color-scheme: dark) {
+  .theme-switchable { --theme-dark: 1; }
+}
+.theme-switchable[data-theme='light'] { --theme-dark: 0; }
+.theme-switchable[data-theme='dark'] { --theme-dark: 1; }
+.theme-switch__thumb {
+  transform: translateX(calc(var(--theme-dark) * (var(--track-w) - 2px - var(--thumb) - 2 * var(--inset))));
 }
 .theme-switch__icon {
   position: absolute;

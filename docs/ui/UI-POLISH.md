@@ -57,7 +57,7 @@ This is a localized visual and component phase. It adds a header Light/Dark swit
 - The focus ring (3px, `--color-focus`) is drawn on the visible track rather than the larger invisible target.
 - The button is at least 44 × 44px around a 64 × 32px track. The current theme's pictogram is drawn in full ink and the other muted, so the state is not shown by position alone.
 - The thumb border uses `--color-text-muted`: 5.9:1 against the light track and 6.8:1 against the dark track. The track border against the header is 3.5:1 (light) and 3.1:1 (dark).
-- The thumb moves in 160ms; `prefers-reduced-motion` removes the transition (verified).
+- The thumb moves in 160ms; `prefers-reduced-motion` removes the transition (verified). Its position follows the page theme set in `<head>`, not `aria-checked`, so it does not slide across as a dark page loads (independent review M1, `docs/ui/UI-POLISH-REVIEW.md`).
 - Forced colours: the track uses Canvas/CanvasText and the thumb Highlight, so its position stays visible (Chrome emulation).
 
 **Header layout.**
