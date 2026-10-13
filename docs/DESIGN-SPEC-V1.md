@@ -222,6 +222,7 @@ Add **one compact binary Light/Dark switch at the top-right of the site header**
 - The switch should appear across the entire site, including Explore, Compare, Christian Case, sources and thinker pages. Printing remains on a legible print palette.
 - This requirement supersedes the provisional V1 suggestion to leave out a manual theme control. **It does not authorize a new UI-2 feature**: implement as a small independently reviewed UI polish PR or within the later research-interface polish work.
 - **Implemented in the UI Polish PR** (2026-10-13): see `docs/ui/UI-POLISH.md` §2.
+- **Revised in UI-4A** (2026-10-13): the approved single-icon design. Only the current theme's pictogram is shown, inside the thumb, which slides only when pressed. See `docs/ui/UI4A-CITATION-PREVIEWS.md` §5.
 
 ### 13.2 Citation previews (locked, UI-4)
 
@@ -233,6 +234,7 @@ A citation marker should be inspectable **without forcing the reader to scroll t
 - Render the registered bibliographic facts; do not generate summary claims or invented quotations. No unsupported permission assertions.
 - If JavaScript fails or is disabled, numbered citations must remain real working links to their existing full references.
 - A source anchor opened by a direct URL or backlink must be revealed even if its tradition group is currently filtered out.
+- **Implemented in UI-4A** (2026-10-13): previews only; the filters belong to §13.4 and UI-4B. See `docs/ui/UI4A-CITATION-PREVIEWS.md`.
 
 ### 13.3 End-of-answer "Further Study" organization (approved direction; scoped UI polish)
 

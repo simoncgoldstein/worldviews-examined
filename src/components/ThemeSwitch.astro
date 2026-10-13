@@ -1,6 +1,7 @@
 ---
-// The site-wide Light/Dark switch (docs/DESIGN-SPEC-V1.md §13.1): a sun on the left, a crescent
-// moon on the right and a thumb that rests under the current theme. It is a switch named "Dark
+// The site-wide Light/Dark switch (docs/DESIGN-SPEC-V1.md §13.1): one thumb that rests on the left
+// with a sun while the page is light and on the right with a crescent moon while it is dark. Only
+// the current theme's pictogram is shown, inside the thumb. It is a switch named "Dark
 // mode", checked while the page is dark, whether that comes from a saved choice or the device.
 // BaseLayout's head script applies a saved choice before first paint and defines
 // window.worldviewsTheme; this script only reflects and changes it. The switch stays hidden
@@ -11,14 +12,15 @@
 <button type="button" class="theme-switch" role="switch" aria-checked="false" data-theme-switch>
   <span class="visually-hidden">Dark mode</span>
   <span class="theme-switch__track" aria-hidden="true">
-    <span class="theme-switch__thumb"></span>
-    <svg class="theme-switch__icon theme-switch__icon--sun" viewBox="0 0 24 24" focusable="false">
-      <circle cx="12" cy="12" r="4"></circle>
-      <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"></path>
-    </svg>
-    <svg class="theme-switch__icon theme-switch__icon--moon" viewBox="0 0 24 24" focusable="false">
-      <path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1z"></path>
-    </svg>
+    <span class="theme-switch__thumb">
+      <svg class="theme-switch__icon theme-switch__icon--sun" viewBox="0 0 24 24" focusable="false">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"></path>
+      </svg>
+      <svg class="theme-switch__icon theme-switch__icon--moon" viewBox="0 0 24 24" focusable="false">
+        <path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1z"></path>
+      </svg>
+    </span>
   </span>
 </button>
 <script is:inline>
@@ -30,21 +32,22 @@
       button.setAttribute('aria-checked', String(theme.current() === 'dark'));
     }
     button.addEventListener('click', function () {
+      button.setAttribute('data-animate', '');
       theme.choose(theme.current() === 'dark' ? 'light' : 'dark');
       sync();
     });
     // Following the device (no saved choice): track it while the page is open.
     theme.media.addEventListener('change', sync);
-    // A choice made in another tab, or on a page this one was restored over from the back/forward cache.
-    window.addEventListener('storage', function () {
+    // A choice made in another tab, or on a page this one was restored over from the back/forward
+    // cache: the thumb moves straight to its place.
+    function restore() {
+      button.removeAttribute('data-animate');
       theme.apply(theme.saved());
       sync();
-    });
+    }
+    window.addEventListener('storage', restore);
     window.addEventListener('pageshow', function (event) {
-      if (event.persisted) {
-        theme.apply(theme.saved());
-        sync();
-      }
+      if (event.persisted) restore();
     });
     sync();
   })();

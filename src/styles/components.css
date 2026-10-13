@@ -221,8 +221,9 @@
 }
 
 /* --- Theme switch (ThemeSwitch.astro) ------------------------------------------------------
-   A small pill: sun left, crescent moon right, a thumb under the current theme. The button is the
-   44px target; the visible track is 64 x 32px. Hidden unless BaseLayout's theme script ran. */
+   A small pill with one thumb: left with a sun while the page is light, right with a crescent moon
+   while it is dark. The button is the 44px target; the visible track is 64 x 32px. Hidden unless
+   BaseLayout's theme script ran. */
 .theme-switch { display: none; }
 .theme-switchable .theme-switch {
   --track-w: 4rem;
@@ -240,7 +241,7 @@
   padding: 0 var(--space-1);
   border: 0;
   background: none;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
@@ -262,11 +263,10 @@
   border: 1px solid var(--color-text-muted);   /* at least 3:1 against the track in both themes */
   border-radius: 50%;
   background: var(--color-surface);
-  transition: transform 160ms ease-out;
 }
-/* The thumb follows the page's theme, which BaseLayout fixes in <head>, rather than aria-checked,
-   which the switch's own script sets only after the button is parsed: Firefox styles the button
-   before that, so a dark page would otherwise open with the thumb sliding across. */
+/* The thumb and its pictogram follow the page's theme, which BaseLayout fixes in <head>, rather than
+   aria-checked, which the switch's own script sets only after the button is parsed: Firefox styles
+   the button before that, so a dark page would otherwise open with the thumb sliding across. */
 .theme-switchable { --theme-dark: 0; }
 @media (prefers-color-scheme: dark) {
   .theme-switchable { --theme-dark: 1; }
@@ -276,23 +276,25 @@
 .theme-switch__thumb {
   transform: translateX(calc(var(--theme-dark) * (var(--track-w) - 2px - var(--thumb) - 2 * var(--inset))));
 }
+/* Only pressing the switch slides the thumb: its script sets data-animate on a press and removes
+   it when a theme arrives otherwise (another tab, a page restored from the back/forward cache). So
+   nothing a page does while loading, even styling the switch before this sheet arrives, can slide it. */
+.theme-switch[data-animate] .theme-switch__thumb { transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+/* Centred in the thumb; only the current theme's pictogram is drawn, and it changes at once. */
 .theme-switch__icon {
   position: absolute;
-  top: 50%;
+  inset: 0;
+  margin: auto;
   width: var(--icon);
   height: var(--icon);
-  translate: 0 -50%;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.theme-switch__icon--sun { left: calc(var(--inset) + (var(--thumb) - var(--icon)) / 2); }
-.theme-switch__icon--moon { right: calc(var(--inset) + (var(--thumb) - var(--icon)) / 2); }
-/* The pictogram over the thumb is the current theme: full ink; the other is muted. */
-.theme-switch[aria-checked='false'] .theme-switch__icon--sun,
-.theme-switch[aria-checked='true'] .theme-switch__icon--moon { color: var(--color-text); }
+.theme-switch__icon--sun { opacity: calc(1 - var(--theme-dark)); }
+.theme-switch__icon--moon { opacity: var(--theme-dark); }
 .theme-switch:hover .theme-switch__track { border-color: var(--color-text-muted); }
 .theme-switch:focus-visible { outline: none; }
 .theme-switch:focus-visible .theme-switch__track { outline: 3px solid var(--color-focus); outline-offset: 2px; }
@@ -300,9 +302,7 @@
   .theme-switch__track, .theme-switch__thumb, .theme-switch__icon { forced-color-adjust: none; }
   .theme-switch__track { border-color: CanvasText; background: Canvas; }
   .theme-switch__thumb { border-color: Highlight; background: Highlight; }
-  .theme-switch__icon { color: CanvasText; }
-  .theme-switch[aria-checked='false'] .theme-switch__icon--sun,
-  .theme-switch[aria-checked='true'] .theme-switch__icon--moon { color: HighlightText; }
+  .theme-switch__icon { color: HighlightText; }
   .theme-switch:focus-visible .theme-switch__track { outline-color: Highlight; }
 }
 
@@ -406,6 +406,78 @@ sup.cite a::after {
 }
 sup.cite a:hover { text-decoration: underline; }
 sup.cite a:target { background: var(--color-target); border-radius: 2px; }
+sup.cite a[aria-expanded='true'] { background: var(--color-target); border-radius: 2px; }
+
+/* Citation preview (src/scripts/cite-preview.ts): one non-modal dialog in the top layer, set like a
+   footnote beside the marker. Its position is set by the script; it never prints. */
+.cite-preview {
+  position: absolute;
+  inset: auto;
+  box-sizing: border-box;
+  width: 28rem;
+  max-width: none;
+  margin: 0;
+  padding: var(--space-3) var(--space-4) var(--space-2);
+  overflow: auto;
+  border: 1px solid var(--color-rule-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 6px 18px -8px rgb(0 0 0 / 0.28);
+  font-family: var(--font-serif);
+  font-size: var(--text-ui);
+  line-height: 1.5;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+/* The dialog takes focus when it opens so it is announced; its controls carry the focus rings. */
+.cite-preview:focus { outline: none; }
+.cite-preview__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-1);
+}
+.cite-preview__heading {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.cite-preview__answer { font-weight: 500; }
+.cite-preview__close {
+  flex: none;
+  min-height: 2rem;
+  margin: calc(-1 * var(--space-2)) calc(-1 * var(--space-2)) 0 0;
+  padding: 0 var(--space-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-link);
+  font: 500 var(--text-sm) / 1 var(--font-sans);
+  cursor: pointer;
+}
+.cite-preview__close:hover { background: var(--color-control-hover); text-decoration: underline; }
+.cite-preview__close:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 0; }
+.cite-preview__body p { margin: 0 0 var(--space-1); max-width: none; }
+.cite-preview__locator { font-variant-numeric: lining-nums; }
+.cite-preview__label,
+.cite-preview__note { font-family: var(--font-sans); font-size: var(--text-sm); color: var(--color-text-muted); }
+.cite-preview__more {
+  margin: var(--space-1) 0 0;
+  padding-top: var(--space-1);
+  border-top: 1px solid var(--color-rule);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+.cite-preview__full { display: inline-flex; align-items: center; min-height: 2rem; }
+@media print {
+  .cite-preview { display: none !important; }
+}
 
 .sources { border-top: 1px solid var(--color-rule); margin-top: var(--space-6); padding-top: var(--space-2); }
 .sources__heading {
