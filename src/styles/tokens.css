@@ -1,33 +1,40 @@
 /* Design tokens: a modern research library. Warm paper, dark ink, a restrained navy interface
    colour and six subdued worldview accents. Accents orient the reader (which answer am I in?);
    they never rank or evaluate, and a worldview is always named in words beside its colour.
-   Values follow docs/DESIGN-SPEC-V1.md §6 and are recorded in docs/ui/UI1-RESEARCH-LIBRARY.md. */
+   Values follow docs/DESIGN-SPEC-V1.md §6 and are recorded in docs/ui/UI1-RESEARCH-LIBRARY.md;
+   the worldview accents were revised in docs/ui/UI-POLISH.md.
+
+   Themes: every colour is one light-dark(light, dark) pair, resolved by the used color-scheme.
+   With no saved choice the page follows the device (color-scheme: light dark), also without
+   JavaScript. The header switch sets data-theme on <html> (before first paint, from a saved
+   choice), which pins color-scheme, so a manual choice always outranks the device preference.
+   Print always uses the light palette (see global.css). */
 :root {
   color-scheme: light dark;
 
   /* Colour: paper and ink */
-  --color-bg: #faf8f3;
-  --color-surface: #fdfcf8;
-  --color-surface-alt: #f2eee3;
-  --color-text: #1c1f23;
-  --color-text-muted: #545b64;
-  --color-rule: #d8d2c3;
-  --color-rule-strong: #8c8778;
-  --color-accent: #2c3e55;            /* interface navy */
-  --color-accent-contrast: #faf8f3;
-  --color-link: #1f4a73;
-  --color-link-hover: #10304f;
-  --color-focus: #a84e08;
-  --color-target: #efe7c9;
-  --color-control-hover: #ebe6d8;
+  --color-bg: light-dark(#faf8f3, #14171a);
+  --color-surface: light-dark(#fdfcf8, #1a1e23);
+  --color-surface-alt: light-dark(#f2eee3, #21262c);
+  --color-text: light-dark(#1c1f23, #e7e3da);
+  --color-text-muted: light-dark(#545b64, #a9aeb5);
+  --color-rule: light-dark(#d8d2c3, #343a42);
+  --color-rule-strong: light-dark(#8c8778, #646b75);
+  --color-accent: light-dark(#2c3e55, #b9c9dd);            /* interface navy */
+  --color-accent-contrast: light-dark(#faf8f3, #14171a);
+  --color-link: light-dark(#1f4a73, #93bce3);
+  --color-link-hover: light-dark(#10304f, #bcd7f0);
+  --color-focus: light-dark(#a84e08, #f0a35e);
+  --color-target: light-dark(#efe7c9, #3a3622);
+  --color-control-hover: light-dark(#ebe6d8, #262c33);
 
   /* Worldview accents (orientation only) */
-  --wv-christianity: #334d6e;         /* deep navy */
-  --wv-naturalism: #4d6774;           /* slate blue */
-  --wv-judaism: #59633b;              /* olive */
-  --wv-islam: #376b62;                /* deep teal */
-  --wv-hinduism: #935f42;             /* terracotta */
-  --wv-buddhism: #765b77;             /* muted plum */
+  --wv-christianity: light-dark(#315784, #8db0e2);   /* deep blue */
+  --wv-naturalism: light-dark(#506a73, #a9b9bd);     /* slate */
+  --wv-judaism: light-dark(#716028, #ccb26c);        /* ochre olive */
+  --wv-islam: light-dark(#297467, #6fc3b0);          /* deep teal */
+  --wv-hinduism: light-dark(#99513a, #e8a083);       /* terracotta */
+  --wv-buddhism: light-dark(#784f91, #c6a0e0);       /* plum violet */
 
   /* Typography. Source Serif 4 and Inter are bundled, open-licence (OFL 1.1) variable fonts. */
   --font-serif: 'Source Serif 4 Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
@@ -67,29 +74,36 @@
   --radius-sm: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #14171a;
-    --color-surface: #1a1e23;
-    --color-surface-alt: #21262c;
-    --color-text: #e7e3da;
-    --color-text-muted: #a9aeb5;
-    --color-rule: #343a42;
-    --color-rule-strong: #646b75;
-    --color-accent: #b9c9dd;
-    --color-accent-contrast: #14171a;
-    --color-link: #93bce3;
-    --color-link-hover: #bcd7f0;
-    --color-focus: #f0a35e;
-    --color-target: #3a3622;
-    --color-control-hover: #262c33;
+/* A saved choice from the header switch (src/components/ThemeSwitch.astro). */
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark'] { color-scheme: dark; }
 
-    --wv-christianity: #93aed3;
-    --wv-naturalism: #9db5c2;
-    --wv-judaism: #b4bf86;
-    --wv-islam: #86c2b5;
-    --wv-hinduism: #dda27f;
-    --wv-buddhism: #c6a3c8;
+/* Engines without light-dark() (before Safari 17.5, Chrome 123, Firefox 120) drop every colour
+   above, so they get the light palette, and no theme switch (BaseLayout only offers it where
+   light-dark() works). */
+@supports not (color: light-dark(#000, #fff)) {
+  :root {
+    color-scheme: light;
+    --color-bg: #faf8f3;
+    --color-surface: #fdfcf8;
+    --color-surface-alt: #f2eee3;
+    --color-text: #1c1f23;
+    --color-text-muted: #545b64;
+    --color-rule: #d8d2c3;
+    --color-rule-strong: #8c8778;
+    --color-accent: #2c3e55;
+    --color-accent-contrast: #faf8f3;
+    --color-link: #1f4a73;
+    --color-link-hover: #10304f;
+    --color-focus: #a84e08;
+    --color-target: #efe7c9;
+    --color-control-hover: #ebe6d8;
+    --wv-christianity: #315784;
+    --wv-naturalism: #506a73;
+    --wv-judaism: #716028;
+    --wv-islam: #297467;
+    --wv-hinduism: #99513a;
+    --wv-buddhism: #784f91;
   }
 }
 

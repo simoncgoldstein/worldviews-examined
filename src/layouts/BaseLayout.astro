@@ -25,6 +25,58 @@ const fullTitle = title ? `${title} · ${siteTitle}` : siteTitle;
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14171a" media="(prefers-color-scheme: dark)" />
+    <script is:inline>
+      // Theme: applies a saved Light/Dark choice from the header switch (ThemeSwitch.astro) before
+      // first paint. With no valid saved choice, or no storage, the page follows the device. Kept
+      // apart from the reading-mode script below; it reads one storage key and does nothing else.
+      (function () {
+        var root = document.documentElement;
+        if (!window.CSS || !CSS.supports || !CSS.supports('color', 'light-dark(#000, #fff)')) return;
+        var KEY = 'worldviews-theme';
+        var COLORS = { light: '#faf8f3', dark: '#14171a' };
+        var media = window.matchMedia('(prefers-color-scheme: dark)');
+        // 'light', 'dark', null (no valid choice saved) or undefined (storage unavailable).
+        function saved() {
+          try {
+            var value = localStorage.getItem(KEY);
+            return value === 'light' || value === 'dark' ? value : null;
+          } catch (e) {
+            return undefined;
+          }
+        }
+        // Pins the page to `theme`, or with null returns it to following the device.
+        function apply(theme) {
+          if (theme === undefined) return;
+          if (theme) root.setAttribute('data-theme', theme);
+          else root.removeAttribute('data-theme');
+          var scheme = document.querySelector('meta[name="color-scheme"]');
+          if (scheme) scheme.setAttribute('content', theme || 'light dark');
+          var metas = document.querySelectorAll('meta[name="theme-color"]');
+          for (var i = 0; i < metas.length; i++) {
+            var own = /dark/.test(metas[i].getAttribute('media') || '') ? 'dark' : 'light';
+            metas[i].setAttribute('content', COLORS[theme || own]);
+          }
+        }
+        window.worldviewsTheme = {
+          media: media,
+          saved: saved,
+          apply: apply,
+          current: function () {
+            return root.getAttribute('data-theme') || (media.matches ? 'dark' : 'light');
+          },
+          choose: function (theme) {
+            apply(theme);
+            try {
+              localStorage.setItem(KEY, theme);
+            } catch (e) {
+              // Without storage the choice lasts for this page only.
+            }
+          },
+        };
+        apply(saved());
+        root.classList.add('theme-switchable');
+      })();
+    </script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />

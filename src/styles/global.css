@@ -115,10 +115,11 @@ cite.is-work { font-style: italic; }
 /* Print: the actual answer text, every section and the sources, whatever is collapsed on screen.
    answer-panels.ts also opens everything on `beforeprint`; these rules cover printing without it. */
 @media print {
-  :root { color-scheme: light; }
+  /* The light palette whatever the screen theme: :root[data-theme] would otherwise pin dark. */
+  :root, :root[data-theme] { color-scheme: light; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .site-header, .site-footer, .skip-link, .control, .answer__cue, .thesis-card__cue,
-  .reading__tools, .answer__tools, .answer__links { display: none !important; }
+  .reading__tools, .answer__tools, .answer__links, .further__links { display: none !important; }
   details > summary { list-style: none; }
   details > summary::-webkit-details-marker { display: none; }
   details:not([open]) > * { display: block; }
