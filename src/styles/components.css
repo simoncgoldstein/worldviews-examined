@@ -215,6 +215,11 @@
   .site-header__inner { column-gap: var(--space-2); }
   .site-header__nav { gap: 0 0.7rem; letter-spacing: -0.005em; }
 }
+/* Below about 388px the five links cannot share one row at a readable size, so they sit in an
+   aligned three-column grid (three above two) rather than wrapping raggedly. */
+@media (max-width: 24.24rem) {
+  .site-header__nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--space-3); }
+}
 /* The smallest phones: a slightly smaller site name leaves room for the switch beside it. */
 @media (max-width: 22.5rem) {
   .site-header__brand { font-size: 1.125rem; }
@@ -310,13 +315,36 @@
 .site-footer {
   border-top: 1px solid var(--color-rule);
   background: var(--color-surface);
-  padding-block: var(--space-8);
+  padding-block: var(--space-6);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   line-height: 1.55;
   color: var(--color-text-muted);
 }
-.site-footer p { max-width: 62ch; margin-bottom: var(--space-2); }
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-8);
+}
+.site-footer__statement { max-width: 62ch; margin: 0; }
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-footer__nav li { margin: 0; }
+.site-footer__nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  color: var(--color-text-muted);
+}
+.site-footer__nav a:hover { color: var(--color-text); }
 
 /* --- Layout ----------------------------------------------------------------------------- */
 

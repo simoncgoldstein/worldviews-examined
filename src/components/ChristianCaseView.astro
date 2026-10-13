@@ -16,9 +16,10 @@
 //   questions      the alternative answer's Pressure questions
 //   objections     Christianity's Strongest objection and Christian reply (its Examine disclosure)
 //   study          both Deep dives, representative thinkers and links
-// The interface text below only names stages and says where a passage comes from. In particular
-// the Christian answer's strongest objection is not presented as the alternative's reply to the
-// Christian response, because the corpus does not author it as one.
+// The interface text below only names stages and, where a heading alone could mislead, says where
+// a passage comes from or which way it argues. In particular the Christian answer's strongest
+// objection is not presented as the alternative's reply to the Christian response, because the
+// corpus does not author it as one.
 import type { Worldview } from '../content/schemas';
 
 interface Props {
@@ -36,8 +37,8 @@ type Cell = { side: 'alt' | 'christian' };
 interface Stage {
   id: string;
   title: string;
-  /** Description segments; `true` marks where the examined worldview's name goes. */
-  hint: (string | true)[];
+  /** Attribution note segments; `true` marks where the examined worldview's name goes. */
+  hint?: (string | true)[];
   cells: Cell[];
   emphasis?: boolean;
 }
@@ -45,26 +46,25 @@ const stages: Stage[] = [
   {
     id: 'account',
     title: 'Understand the alternative',
-    hint: ['The ', true, ' answer in its own terms: its view, and what it explains well.'],
+    hint: [true, ' in its own terms.'],
     cells: [{ side: 'alt' }],
   },
   {
     id: 'christian',
     title: 'The Christian account',
-    hint: ['What Reformed Christianity affirms on this question, and what it explains well.'],
     cells: [{ side: 'christian' }],
   },
   {
     id: 'response',
     title: 'The Christian response',
-    hint: ['The Reformed critique of ', true, ', as written in its answer to this question.'],
+    hint: ['The Reformed critique of ', true, '.'],
     cells: [{ side: 'alt' }],
     emphasis: true,
   },
   {
     id: 'questions',
     title: 'Questions for examination',
-    hint: ['Questions put to ', true, ' in the same answer. They are open questions to examine, not settled conclusions.'],
+    hint: ['Put to ', true, ': open questions to examine, not settled conclusions.'],
     cells: [{ side: 'alt' }],
   },
   {
@@ -72,13 +72,12 @@ const stages: Stage[] = [
     title: 'Objections to the Christian account',
     // The objection is stated in the Christian answer and often comes from another critic (most are
     // naturalist); it must not read as the examined answer's reply to the response above.
-    hint: ['The strongest objection the Christian answer addresses on this question, and its reply. It is not a reply from the ', true, ' answer, and it may come from a different tradition.'],
+    hint: ['Stated and answered in the Christian answer. Not a reply from ', true, '; it may come from another tradition.'],
     cells: [{ side: 'christian' }],
   },
   {
     id: 'study',
     title: 'Study the sources',
-    hint: ['Both Deep dives, the representative thinkers, and the two answers’ sources.'],
     cells: [{ side: 'alt' }, { side: 'christian' }],
   },
 ];
@@ -107,7 +106,6 @@ const nav = [{ id: 'theses', title: 'The two answers' }, ...stages];
   <div class="case__body">
     <nav class="case__nav" aria-labelledby="case-nav-title">
       <p class="case__nav-title" id="case-nav-title">In this case</p>
-      <p class="case__nav-subject">{christian.name} and <span data-case-name>{first.name}</span></p>
       <ol class="case__nav-list">
         {nav.map((stage) => <li><a href={`#case-${stage.id}`}>{stage.title}</a></li>)}
       </ol>
@@ -119,9 +117,11 @@ const nav = [{ id: 'theses', title: 'The two answers' }, ...stages];
           <section class:list={['case__stage', { 'case__stage--emphasis': stage.emphasis }]} data-stage={stage.id} aria-labelledby={`case-${stage.id}`}>
             <div class="case__stage-head">
               <h2 class="case__stage-title" id={`case-${stage.id}`}>{stage.title}</h2>
-              <p class="case__stage-hint">
-                {stage.hint.map((part) => (part === true ? <span data-case-name>{first.name}</span> : part))}
-              </p>
+              {stage.hint && (
+                <p class="case__stage-hint">
+                  {stage.hint.map((part) => (part === true ? <span data-case-name>{first.name}</span> : part))}
+                </p>
+              )}
             </div>
             {stage.cells.map((cell) => (
               <div class="case__cell" data-cell data-part={stage.id} data-side={cell.side}>

@@ -42,9 +42,7 @@ const alternatives = christian ? answered.filter((w) => w.id !== christian.id) :
     </nav>
 
     <header class="question-head">
-      {question.featured && <p class="eyebrow">Featured question</p>}
       <h1>{question.title}</h1>
-      <p class="lede">{question.summary}</p>
     </header>
 
     {answered.length >= 2 && <ModeSwitch path={questionUrl(question)} pair={firstPair} opponent={alternatives[0]?.id} />}
@@ -52,7 +50,6 @@ const alternatives = christian ? answered.filter((w) => w.id !== christian.id) :
     <section class="overview" id="overview" aria-labelledby="overview-heading">
       <div class="overview__head">
         <h2 class="kicker" id="overview-heading">Six answers at a glance</h2>
-        <p class="overview__hint">Select a worldview to read its full answer.</p>
       </div>
       <ThesisOverview worldviews={content.worldviews} answers={answerByWorldview} />
     </section>
@@ -87,7 +84,6 @@ const alternatives = christian ? answered.filter((w) => w.id !== christian.id) :
       hasSources && (
         <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
           <h2 class="section-title" id="sources-heading">Sources</h2>
-          <p class="meta">Numbered once across the page, grouped by the answer in which each source is cited.</p>
           <p class="meta" data-mode-sources-note hidden></p>
           {answers.map((answer) => (
             <SourceList

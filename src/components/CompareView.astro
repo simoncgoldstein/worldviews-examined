@@ -25,9 +25,9 @@ const { worldviews } = Astro.props;
 
 const stages = [
   { id: 'glance', title: 'At a glance', rows: ['glance'] },
-  { id: 'understand', title: 'Understand', hint: 'Each positive account, then what it explains well.', rows: ['view', 'strengths'] },
-  { id: 'examine', title: 'Examine', hint: 'Each answer’s own analysis, under its own headings.', rows: ['examine'], both: 'Examine sections' },
-  { id: 'study', title: 'Study', hint: 'Deep dives, representative thinkers and sources.', rows: ['study', 'footer'], both: 'Deep dives' },
+  { id: 'understand', title: 'Understand', rows: ['view', 'strengths'] },
+  { id: 'examine', title: 'Examine', rows: ['examine'], both: 'Examine sections' },
+  { id: 'study', title: 'Study', rows: ['study', 'footer'], both: 'Deep dives' },
 ];
 const sides = [
   { index: 0, label: 'First', id: 'compare-first' },
@@ -62,7 +62,6 @@ const sides = [
       <section class="compare__stage" data-stage={stage.id} aria-labelledby={`compare-${stage.id}`}>
         <div class="compare__stage-head">
           <h2 class="kicker compare__stage-title" id={`compare-${stage.id}`}>{stage.title}</h2>
-          {stage.hint && <p class="compare__stage-hint">{stage.hint}</p>}
           {stage.both && (
             <button type="button" class="control compare__both" data-compare-both={stage.id} data-noun={stage.both}>
               Open both

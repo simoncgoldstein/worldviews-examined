@@ -22,9 +22,8 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
 }
 .breadcrumb a { display: inline-flex; align-items: center; min-height: var(--touch); }
 
-.question-head { margin-bottom: var(--space-8); }
-.question-head h1 { max-width: 26ch; margin-bottom: var(--space-3); }
-.question-head .lede { margin-bottom: 0; }
+.question-head { margin-bottom: var(--space-6); }
+.question-head h1 { max-width: 26ch; margin-bottom: 0; }
 
 /* --- Level 1: six theses at a glance -------------------------------------------------- */
 
@@ -41,12 +40,6 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
 }
 .overview__head .kicker,
 .reading__head .kicker { margin: 0; }
-.overview__hint {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-}
 
 /* 1 column on phones, 2 x 3 on medium screens, 3 x 2 on wide screens. Never six narrow columns. */
 .thesis-grid {
@@ -393,11 +386,6 @@ html:has(.question-page) { scroll-padding-top: 4.75rem; }
 .thinker-list__meta {
   display: block;
   margin-top: -0.125rem;
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-}
-.further__count {
-  margin: 0 0 var(--space-1);
   font-size: var(--text-sm);
   color: var(--color-text-muted);
 }

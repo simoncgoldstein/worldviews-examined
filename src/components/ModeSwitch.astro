@@ -4,7 +4,7 @@
 // ?mode=case&opponent=…), so they can be opened in a new tab or copied; src/scripts/modes.ts
 // handles a plain click without reloading and keeps each link's selection current. Without
 // JavaScript the switch stays hidden and the page reads in Explore, which shows all six answers; a
-// short note says why the other two modes are unavailable. No mode is presented as the better way
+// one-line note says the other two modes need JavaScript. No mode is presented as the better way
 // to read: they serve different purposes.
 interface Props {
   /** The question page's own path. */
@@ -27,5 +27,5 @@ const { path, pair, opponent } = Astro.props;
   <p class="visually-hidden" role="status" data-mode-status></p>
 </nav>
 <noscript>
-  <p class="modes__noscript">All six answers are shown below. Compare and Christian Case need JavaScript.</p>
+  <p class="modes__noscript">Compare and Christian Case require JavaScript.</p>
 </noscript>

@@ -1,137 +1,56 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { siteTitle, siteTagline } from '../data/site';
-import { featuredQuestion, getContent, questionUrl, worldviewUrl } from '../lib/content';
-import { plural } from '../lib/format';
+import { homeQuestionIds, siteTitle } from '../data/site';
+import { getContent, lookup, questionUrl, worldviewUrl } from '../lib/content';
 import { symbols } from '../lib/labels';
 import { url } from '../lib/paths';
 
 const content = await getContent();
-const featured = featuredQuestion(content);
-
-// A starting selection drawn from the registered catalog: one question per domain, in domain
-// order. The featured question stands for its domain; otherwise the domain's first question.
-const starters = content.categories.flatMap((category) => {
-  if (featured.category === category.id) return [featured];
-  const first = content.questions.find((q) => q.category === category.id);
-  return first ? [first] : [];
-});
-
-const domains = content.categories.map((category) => ({
-  category,
-  count: content.questions.filter((q) => q.category === category.id).length,
-}));
-
-// Reading modes. Compare and Christian Case open on the featured question.
-const modes = [
-  {
-    name: 'Explore',
-    text: 'See all six answers to a question at a glance, then open any one to read its full account, the analysis and its sources.',
-    href: url('questions/'),
-  },
-  {
-    name: 'Compare',
-    text: 'Read any two worldviews side by side on the same question, section by section.',
-    href: `${questionUrl(featured)}?mode=compare&views=christianity,naturalism`,
-  },
-  {
-    name: 'Christian Case',
-    text: 'Examine one alternative from the Reformed Christian standpoint: its own account and strengths, the Christian account, the Christian response, the questions put to it, and objections to the Christian view.',
-    href: `${questionUrl(featured)}?mode=case&opponent=naturalism`,
-  },
-];
-
-const references = [
-  { label: 'Method', path: 'method/', text: 'How each worldview is represented, sourced and analyzed.' },
-  { label: 'Worldviews', path: 'worldviews/', text: 'The six worldview families, their scope and their schools.' },
-  { label: 'Thinkers', path: 'thinkers/', text: `${content.thinkers.length} thinkers, ordered by worldview and role.` },
-  { label: 'Sources', path: 'sources/', text: `${content.sources.length} registered sources, with editions and locators.` },
-];
+const starters = homeQuestionIds.map((id) => lookup(content.questionById, id, 'question'));
+const questionCount = content.questions.length;
+const worldviewCount = content.worldviews.length;
+const numberWords = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+const worldviewWord = numberWords[worldviewCount] ?? String(worldviewCount);
 ---
 
 <BaseLayout>
   <div class="container page home">
     <header class="home-hero">
-      <p class="eyebrow">A comparative research library</p>
       <h1>{siteTitle}</h1>
-      <p class="home-hero__tagline">{siteTagline}</p>
-      <p class="home-hero__text">
-        {`${content.questions.length} foundational questions, each put to ${content.worldviews.length} worldviews. `}
-        Each worldview is presented in its strongest representative form, drawn from its own
-        primary sources and major thinkers, before the Christian analysis is given. Reformed
-        Christianity is one of the competing worldviews, not a neutral judge.
-      </p>
+      <p class="home-hero__claim">{`${questionCount} foundational questions. ${worldviewWord} worldviews.`}</p>
+      <p class="home-hero__standpoint">A comparative examination from a Reformed Christian standpoint.</p>
       <p class="home-hero__actions">
-        <a class="button-primary" href={url('questions/')}>Explore the Questions<span aria-hidden="true">{symbols.forward}</span></a>
-        <a class="text-link" href={url('method/')}>Read the method</a>
+        <a class="button-primary" href={url('questions/')}>Explore Questions<span aria-hidden="true">{symbols.forward}</span></a>
+        <a class="text-link" href={url('method/')}>The Method</a>
       </p>
     </header>
 
     <section class="home-section" aria-labelledby="start-heading">
-      <h2 class="section-title" id="start-heading">Begin with a question</h2>
-      <ul class="question-cards">
+      <h2 class="home-section__title" id="start-heading">Begin with a question</h2>
+      <ul class="home-questions">
         {
           starters.map((question) => (
-            <li class="question-card">
-              <p class="question-card__domain">{content.categoryById.get(question.category)?.title}</p>
-              <h3 class="question-card__title"><a href={questionUrl(question)}>{question.title}</a></h3>
-              <p class="question-card__summary">{question.summary}</p>
+            <li>
+              <a href={questionUrl(question)}>
+                <span>{question.title}</span>
+                <span class="home-questions__arrow" aria-hidden="true">{symbols.forward}</span>
+              </a>
             </li>
           ))
         }
       </ul>
-    </section>
-
-    <section class="home-section" aria-labelledby="domains-heading">
-      <h2 class="section-title" id="domains-heading">Six domains</h2>
-      <ol class="domain-list">
-        {
-          domains.map(({ category, count }) => (
-            <li class="domain-list__item">
-              <h3 class="domain-list__title"><a href={url(`questions/#${category.slug}`)}>{category.title}</a></h3>
-              <p class="domain-list__text">{category.description}</p>
-              <p class="domain-list__count">{plural(count, 'question', 'questions')}</p>
-            </li>
-          ))
-        }
-      </ol>
+      <p class="home-section__more">
+        <a class="text-link" href={url('questions/')}>{`Browse all ${questionCount} questions`}<span aria-hidden="true">&nbsp;{symbols.forward}</span></a>
+      </p>
     </section>
 
     <section class="home-section" aria-labelledby="worldviews-heading">
-      <h2 class="section-title" id="worldviews-heading">Six worldviews</h2>
+      <h2 class="home-section__title" id="worldviews-heading">{`${worldviewWord} worldviews`}</h2>
       <ul class="worldview-strip">
         {
           content.worldviews.map((worldview) => (
             <li data-worldview={worldview.id}>
               <a href={worldviewUrl(worldview)}><span class="wv-mark" aria-hidden="true" />{worldview.name}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <section class="home-section" aria-labelledby="modes-heading">
-      <h2 class="section-title" id="modes-heading">Three ways to read</h2>
-      <ul class="mode-list">
-        {
-          modes.map((mode) => (
-            <li class="mode-list__item">
-              <h3 class="mode-list__name"><a href={mode.href}>{mode.name}</a></h3>
-              <p class="mode-list__text">{mode.text}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <section class="home-section" aria-labelledby="reference-heading">
-      <h2 class="section-title" id="reference-heading">Reference</h2>
-      <ul class="reference-list">
-        {
-          references.map((item) => (
-            <li>
-              <a href={url(item.path)}>{item.label}</a>
-              <span>{item.text}</span>
             </li>
           ))
         }

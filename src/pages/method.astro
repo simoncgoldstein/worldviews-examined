@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getContent } from '../lib/content';
+import { getContent, worldviewUrl } from '../lib/content';
 import { url } from '../lib/paths';
 
-const { worldviews } = await getContent();
+const { worldviews, questions } = await getContent();
 ---
 
 <BaseLayout
@@ -29,7 +29,7 @@ const { worldviews } = await getContent();
 
       <h2>The six comparison lanes</h2>
       <ol>
-        {worldviews.map((w) => <li>{w.name}</li>)}
+        {worldviews.map((w) => <li><a href={worldviewUrl(w)}>{w.name}</a></li>)}
       </ol>
       <p>
         These are comparison families, not claims of total internal uniformity. Internal
@@ -67,10 +67,30 @@ const { worldviews } = await getContent();
         for the full hierarchy.
       </p>
       <p>
-        Citations appear as small numerals in the text. Each links to its entry in the
-        Sources list below that answer, which links back. The same work can be cited many
-        times with different locators.
+        Citations appear as small numerals in the text. Each opens a preview of its reference and
+        links to its numbered entry in the question's Sources list, which links back. The same work
+        can be cited many times with different locators.
       </p>
+
+      <h2>Reading a question</h2>
+      <p>Each of the {questions.length} questions can be read in three ways. None is presented as the better way to read.</p>
+      <ul>
+        <li>
+          <strong>Explore</strong> shows all six answers at a glance; any one opens to its full
+          account, the analysis and its sources.
+        </li>
+        <li>
+          <strong>Compare</strong> sets any two answers side by side, section by section, without
+          privileging either.
+        </li>
+        <li>
+          <strong>Christian Case</strong> reads one alternative from the Reformed standpoint, in
+          stages: its own account and strengths, the Christian account, the Christian response, the
+          questions put to it, and the strongest objection to the Christian view with its reply.
+          That objection is stated in the Christian answer; it is not the alternative's reply to
+          the Christian response, and it may come from another tradition.
+        </li>
+      </ul>
 
       <h2>Authority, history, and remedy</h2>
       <p>
