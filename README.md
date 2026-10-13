@@ -19,7 +19,7 @@ Build a rigorous, source-backed site with three reading modes on every question 
 
 1. **Explore** (implemented in UI-1): all six theses at a glance, then any answer opened in full, with its analysis and sources.
 2. **Compare** (implemented in UI-2): any two worldviews on the same question, section by section, with a shareable `?mode=compare&views=…` URL.
-3. **Christian Case** (UI-3): one alternative followed through its account, strengths, the Christian response and pressure questions.
+3. **Christian Case** (implemented in UI-3): Reformed Christianity and one chosen alternative, read as an argument in stages (the alternative's account and strengths, the Christian account, the Christian response, pressure questions, objections to the Christian account, and both Deep dives), with a shareable `?mode=case&opponent=…` URL.
 
 Worldview pages trace one worldview across all the questions.
 
