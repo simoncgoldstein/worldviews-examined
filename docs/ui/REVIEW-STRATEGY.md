@@ -1,6 +1,6 @@
 # UI Review Strategy — Proportionate, Representative, Risk-Based
 
-**Status:** Standing instruction for all *future* Worldviews Examined UI production, independent review, and release-QA sessions. Agreed 2026-10-13. This policy is prospective; do not interrupt or retroactively change the independently running UI-3 review (PR #31).
+**Status:** Standing instruction for Worldviews Examined UI production, independent review, and release-QA sessions from 2026-10-13 onward. The completed, independently reviewed UI-3 work (PR #31) is the existing regression baseline; do not retroactively rerun it merely to adopt this policy.
 
 ## Principle
 
@@ -52,6 +52,18 @@ Adapt this list when the feature's risk warrants different questions. Also inclu
 - no-JavaScript, blocked script, malformed URL/hash and focus restoration.
 
 The sample is **stratified coverage**, not a fixed quota or a claim that other cases passed. Pick 4–8 high-value scenarios where appropriate, plus specialized edge cases for the feature.
+
+## Execution discipline — avoid needless long-running suites
+
+Before each review, state a **proportionate test plan and rough runtime expectation**. Start with the small set of changed behaviors and their boundary cases. Do not begin a long browser matrix simply because a script from an earlier phase exists.
+
+- **Default UI review:** aim for a focused set of roughly **4–8 representative cross-feature scenarios** plus the new feature's edge cases. This is a starting target, not a limit that excuses untested safety-critical paths.
+- **Use one engine for broad, cheap deterministic DOM/data invariants** when that is sufficient; use Firefox and WebKit for selected high-value rendering and interaction differences. A matrix of 840 ordered Compare states with 650ms WebKit pacing takes **at least 9 minutes just in delays**, before navigation and assertions. Do not routinely repeat it.
+- **Re-run only invalidated checks:** a CSS-only fix needs responsive/rendering and impacted browser retests, not another exhaustive answer-placement matrix that already passed. A script change in source visibility needs related source/filter/deep-link regression tests, not all question/opponent permutations.
+- **Batch browser runs:** 1–2 representative scenarios per secondary engine may be enough for a narrow UI change, plus any bug-specific regression. Run engines serially on low-memory machines; limit concurrency, close browsers after each batch and monitor elapsed time.
+- **Avoid indefinite wait loops:** log progress at reasonable intervals, impose an operational timeout for a stalled test runner, verify process/log status before restarting, and retain partial results. A timeout is not a test pass; investigate important failures and escalate when necessary.
+- **Don't multiply dimensions without reason:** e.g. 5 worldview examples × 3 browsers × 7 widths × 2 themes is 210 separate snapshots, often mostly redundant. Partition coverage intelligently: test widest behavior range in one browser and the highest-risk combinations elsewhere.
+- **Escalate on findings**, including important cross-engine regressions or structural failures, rather than halting investigation to meet a deadline. State actual remaining coverage gaps.
 
 ## Browser strategy
 
