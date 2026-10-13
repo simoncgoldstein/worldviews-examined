@@ -14,7 +14,9 @@
 | Starting PR head (as expected) | `36eb696d56ee03a04662129d522ce4c5b0b2488c` |
 | `origin/main` at review start, re-fetched before committing (unchanged) | `1ede1010cdbc93342dcce8611d354b12b6df168f` |
 | Merge base | `1ede101`: the branch already contains all of `main`, so no merge was needed |
-| Review fixes and this record | the commits after `36eb696` on the branch (reported in the PR conversation) |
+| Review fixes (I1, M1–M4) | `02dccff` |
+| Review record, production-record notes and screenshots (M5) | `e43fad1` |
+| Final branch head | the docs-only commit that records these SHAs, the child of `e43fad1` |
 
 `git status` was clean at the start. No production commit was rewritten and nothing was force-pushed.
 
