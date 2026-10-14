@@ -319,3 +319,5 @@ The fall-back to All when an option matches no group is correct. This session ex
 ### Recommendation
 
 **MERGE** at the head that contains the I1 fix. The user merges. Do not start UI-4D before then.
+
+**Review SHAs:** fix and addendum `5357d3d` on top of `a721d13`; this SHA line is in the following commit.
