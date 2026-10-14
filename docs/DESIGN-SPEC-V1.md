@@ -269,6 +269,7 @@ The /sources/ page should become a browsable, searchable **research library**, n
 - Display source type, author/title and minimal helpful metadata. Hide long lists of citing answers under an explicit **"Cited in N questions — Show questions"** disclosure; preserve links.
 - Existing \`#source-<id>\` deep links must continue to work. A direct source anchor should automatically reveal the correct item despite filters/pagination, or move to a valid visible detail state. Do not break current source-to-question or question-to-source navigation.
 - Static Astro output remains the fallback. The bibliography must be usable and accessible with JavaScript blocked; a client-side index of the checked registry is sufficient, with no database or API requirement.
+- **Implemented in UI-4D** (2026-10-14): the 224 checked sources are rendered once, in author/title order. Search, a worldview filter (any tag) and a type filter combine with AND over pages of 25. Citing answers sit under a closed "Cited in N questions" disclosure, where N counts distinct questions. A `#source-` link turns to its page, clearing filters it does not match. Filter state lives in history state, not the URL. See `docs/ui/UI4D-GLOBAL-SOURCES-LIBRARY.md`.
 
 ### 13.6 Accent-color refinement (provisional visual trial)
 

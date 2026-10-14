@@ -17,10 +17,12 @@
 // In Compare or Christian Case (modes.ts) a target the mode is not showing switches the page back
 // to Explore first; a valid scholarly link always outranks the reading mode's layout. Likewise a
 // target in a source group the Sources filter is hiding switches the filter to that group's
-// worldview (source-filter.ts).
+// worldview (source-filter.ts), and a source the Sources library is hiding behind its search,
+// filters or pages is brought onto the page shown (source-library.ts).
 import { initAnswerPanels, openAnswer } from './answer-panels';
 import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
 import { initSourceFilter, showSourceFor } from './source-filter';
+import { initSourceLibrary, showLibraryEntry } from './source-library';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -35,6 +37,7 @@ function targetOf(hash: string): HTMLElement | null {
 /** Opens everything hiding `target`. Returns true if the layout changed. */
 function reveal(target: HTMLElement): boolean {
   let opened = showSourceFor(target);
+  if (showLibraryEntry(target)) opened = true;
   if (openAnswer(target)) opened = true;
   for (let details = target.closest('details'); details; details = details.parentElement?.closest('details') ?? null) {
     if (!details.open) {
@@ -101,6 +104,25 @@ try {
   });
 }
 
+// The Sources library likewise fails open (source-library.ts). Once it has taken over, every target on
+// the page has moved from where the browser first scrolled, so the initial fragment is landed again.
+// If the library also had to change the search, filters or page restored from history to show that
+// fragment (a reload, or a return to the page, after the reader filtered it out), the scroll position
+// the browser would restore belongs to a list that is no longer shown: land on the source instead.
+let libraryArranged = false;
+try {
+  libraryArranged = initSourceLibrary(!document.documentElement.classList.contains('js'));
+  const initial = targetOf(window.location.hash);
+  if (libraryArranged && initial && showLibraryEntry(initial)) {
+    history.scrollRestoration = 'manual';
+    window.addEventListener('load', () => setTimeout(() => (history.scrollRestoration = 'auto')), { once: true });
+  }
+} catch (error) {
+  setTimeout(() => {
+    throw error;
+  });
+}
+
 try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
@@ -130,7 +152,7 @@ try {
 }
 document.documentElement.classList.remove('mode-pending');
 // A mode URL's fragment lands inside the moved passage, wherever the browser first scrolled.
-const landed = revealHashTarget(isRearranged());
+const landed = revealHashTarget(isRearranged() || libraryArranged);
 // Web fonts that finish loading after this first scroll reflow the text above the target. The
 // reading modes turn off the browser's scroll anchoring (modes.ts keeps positions itself), and
 // WebKit has none, so nothing would compensate: land the target again once the fonts are ready,
@@ -143,9 +165,12 @@ if (landed && document.fonts && document.fonts.status !== 'loaded') {
 }
 window.addEventListener('hashchange', () => revealHashTarget());
 // Back/Forward between entries whose queries differ (into or out of a reading mode) fires `popstate`
-// but no `hashchange`. If the entry's fragment is a source the filter has hidden since, show it and
-// land on it; registered after modes.ts's handler, so the entry's layout is already restored.
+// but no `hashchange`. If the entry's fragment is a source the filter or library has hidden since,
+// show it and land on it; registered after modes.ts's and source-library.ts's handlers, so the
+// entry's layout and library state are already restored.
 window.addEventListener('popstate', () => {
   const target = targetOf(window.location.hash);
-  if (target && showSourceFor(target)) target.scrollIntoView({ block: 'start' });
+  if (!target) return;
+  const shown = showSourceFor(target);
+  if (showLibraryEntry(target) || shown) target.scrollIntoView({ block: 'start' });
 });

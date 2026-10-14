@@ -579,8 +579,157 @@ sup.cite a[aria-expanded='true'] { background: var(--color-target); border-radiu
 .backlink:hover { text-decoration: underline; }
 .external { font-family: var(--font-sans); }
 
-/* Registry page: sources grouped by tradition. */
-.source-registry .source-entry { padding-block: var(--space-2); overflow-wrap: break-word; }
+/* Sources library (sources.astro, source-library.ts): a catalogue of ruled bibliographic entries.
+   The controls, count and pages are compact sans interface; the citations stay in the reading face. */
+.library-head__links { margin: var(--space-3) 0 0; }
+.library__controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3) var(--space-4);
+  margin: 0 0 var(--space-4);
+}
+@media (min-width: 48rem) {
+  .library__controls { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); align-items: end; }
+}
+.library__label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.library__input, .library__select {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--touch);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-rule-strong);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font: 500 var(--text-ui) / 1.2 var(--font-sans);
+}
+.library__input::placeholder { color: var(--color-text-muted); opacity: 1; }
+.library__select {
+  overflow: hidden;   /* WebKit sizes the inner text box to the longest option */
+  text-overflow: ellipsis;
+  padding-right: 2.25rem;
+  /* A monochrome chevron, as on the Compare picker. */
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-muted) 50%),
+    linear-gradient(135deg, var(--color-text-muted) 50%, transparent 50%);
+  background-position: calc(100% - 1.15rem) 52%, calc(100% - 0.8rem) 52%;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  appearance: none;
+  cursor: pointer;
+}
+.library__select:hover { background-color: var(--color-control-hover); }
+.library__select option { color: var(--color-text); background: var(--color-surface); }
+@media (forced-colors: active) {
+  .library__select { appearance: auto; background-image: none; padding-right: var(--space-3); }
+}
+
+.library__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--space-4);
+  min-height: var(--touch);
+  scroll-margin-top: var(--space-4);
+}
+.library__count {
+  margin: 0;
+  font: 500 var(--text-sm) / 1.4 var(--font-sans);
+  color: var(--color-text-muted);
+}
+.library__count:focus { outline: none; }
+.library__count:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+
+.library__list { list-style: none; margin: var(--space-2) 0 0; padding: 0; border-bottom: 1px solid var(--color-rule); }
+.library__entry {
+  margin: 0;
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-rule);
+  overflow-wrap: anywhere;
+  scroll-margin-top: var(--space-6);
+}
+.library__entry > * { max-width: 75ch; }
+/* The highlight reaches a little past the text without moving it or the rules. */
+.library__entry:target { background: var(--color-target); box-shadow: -0.5rem 0 0 var(--color-target), 0.5rem 0 0 var(--color-target); }
+.library__citation { margin: 0; line-height: var(--leading-snug); }
+.library__meta { margin: var(--space-1) 0 0; }
+.library__cited { margin-top: var(--space-1); font-family: var(--font-sans); font-size: var(--text-sm); }
+.library__summary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--space-2);
+  min-height: var(--touch);
+  margin-block: calc(-1 * var(--space-2));
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+.library__summary::marker { content: none; }
+.library__summary::-webkit-details-marker { display: none; }
+.library__summary { list-style: none; }
+.library__verb { color: var(--color-link); text-decoration: underline; text-underline-offset: 0.15em; }
+.library__verb::after { content: ' ▸'; text-decoration: none; display: inline-block; margin-left: 0.2em; }
+.library__cited[open] .library__verb::after { content: ' ▾'; }
+.library__summary:hover .library__verb { color: var(--color-link-hover); }
+.library__verb-hide, .library__cited[open] .library__verb-show { display: none; }
+.library__cited[open] .library__verb-hide { display: inline; }
+.library__questions { list-style: none; margin: var(--space-2) 0 0; padding: 0 0 0 var(--space-3); border-left: 1px solid var(--color-rule); }
+.library__questions li { margin: 0; line-height: 1.5; }
+.library__question { color: var(--color-text); }
+.library__questions a { display: inline-block; padding-block: 0.375rem; }
+
+/* Previous, the page numbers, Next in one row; on phones Previous and Next share the first row and
+   the numbers sit centred beneath them. */
+.library__pages {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-family: var(--font-sans);
+}
+.library__numbers { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-1); list-style: none; margin: 0; padding: 0; }
+@media (max-width: 39.99rem) {
+  .library__pages { grid-template-columns: 1fr 1fr; }
+  .library__numbers { grid-row: 2; grid-column: 1 / -1; gap: 0; }
+  [data-library-prev] { justify-self: start; }
+  [data-library-next] { grid-row: 1; grid-column: 2; justify-self: end; }
+}
+.library__numbers li { margin: 0; }
+.library__page {
+  min-width: var(--touch);
+  min-height: var(--touch);
+  padding: 0 var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-link);
+  font: 500 var(--text-ui) / 1 var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.library__page:hover { background: var(--color-control-hover); }
+/* The current page: full text colour, a fine border and a heavier weight; not colour alone. */
+.library__page[aria-current='page'] { border-color: var(--color-rule-strong); color: var(--color-text); font-weight: 700; cursor: default; }
+.library__gap { display: inline-flex; align-items: center; min-height: var(--touch); padding: 0 var(--space-1); color: var(--color-text-muted); }
+.library__step:disabled { color: var(--color-text-muted); cursor: default; opacity: 0.55; }
+.library__step:disabled:hover { background: var(--color-surface); border-color: var(--color-rule); }
+
+.library-notes { margin-top: var(--space-12); }
+
+@media print {
+  .library__controls, .library__status, .library__pages, .library-head__links, .library__verb { display: none !important; }
+  .library .library__list[hidden] { display: block !important; }
+  .library .library__entry[hidden] { display: list-item !important; }
+  .library__entry { break-inside: avoid; }
+}
 
 /* --- Thinker roles ---------------------------------------------------------------------- */
 
