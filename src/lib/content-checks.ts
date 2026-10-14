@@ -210,6 +210,6 @@ export function coverageReport(content: ContentSet): string[] {
   const target = total * questions.length;
   const profiled = content.thinkers.filter((t) => t.bio && t.significance).length;
   lines.push('', `Thinker profiles: ${profiled}/${content.thinkers.length} have a biography and significance (written as thinkers are first used).`);
-  lines.push('', `Total: ${present}/${target} answers present (${target - present} missing). Incomplete coverage is expected until Phase 4.`);
+  lines.push('', `Total: ${present}/${target} answers present (${target - present} missing).`);
   return lines;
 }

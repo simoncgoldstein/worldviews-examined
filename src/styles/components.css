@@ -197,6 +197,12 @@
   color: var(--color-text);
   border-bottom-color: var(--color-accent);
 }
+/* Forced colours paint every transparent underline, so only the current page, mode or filter keeps one. */
+@media (forced-colors: active) {
+  .site-header__nav a:not([aria-current='page']),
+  .modes__link:not([aria-current]),
+  .source-filter__option:not([aria-pressed='true']) { border-bottom-style: none; padding-bottom: 2px; }
+}
 /* Below 768px the navigation takes its own row and the theme switch stays beside the site name,
    rather than wrapping on its own. */
 @media (max-width: 47.99rem) {
@@ -591,6 +597,9 @@ sup.cite a[aria-expanded='true'] { background: var(--color-target); border-radiu
 @media (min-width: 48rem) {
   .library__controls { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); align-items: end; }
 }
+/* Until source-library.ts shows the controls, hold their space so the list does not jump down when
+   they appear. The layout's fallback removes .js if the script fails, which releases the space. */
+.js:not(.js-ready) .library__controls[hidden] { display: grid; visibility: hidden; }
 .library__label {
   display: block;
   margin-bottom: var(--space-1);

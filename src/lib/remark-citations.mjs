@@ -61,6 +61,12 @@ export default function remarkCitations() {
         byKey.set(key, entry);
         citations.push(entry);
       }
+      // A repeated citation can qualify a later use differently (e.g. "our paraphrase"). Numbering is by
+      // (source, locator) alone, so the one entry shows every distinct note rather than only the first.
+      const note = attrs.note?.trim();
+      if (note && entry.note !== note && !(entry.note ?? '').split('; ').includes(note)) {
+        entry.note = entry.note ? `${entry.note}; ${note}` : note;
+      }
       entry.occurrences += 1;
 
       // Hand the resolved numbering to the component.

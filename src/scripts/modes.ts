@@ -564,5 +564,6 @@ export function initModes(hashTarget: Element | null, late = false): void {
   );
   modes?.removeAttribute('hidden');
   window.addEventListener('popstate', onPopState);
-  window.addEventListener('pagehide', saveLevels);
+  // Levels are saved as they change, never on `pagehide`: during Back/Forward WebKit applies a
+  // `pagehide` write to the entry being returned to, wiping that entry's state (see answer-panels.ts).
 }

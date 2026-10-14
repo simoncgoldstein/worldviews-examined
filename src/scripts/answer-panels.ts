@@ -141,10 +141,10 @@ export function initAnswerPanels(hashTarget: Element | null, allOpen = false): v
   document.addEventListener('toggle', (event) => {
     if (event.target instanceof HTMLDetailsElement && event.target.closest(ANSWER)) scheduleSave();
   }, true);
-  // A fragment link or Back/Forward moves to another history entry; record the layout there too,
-  // and again on leaving the page, so the entry a reader returns to always matches what they saw.
+  // A fragment link or Back/Forward moves to another history entry; record the layout there too.
+  // Every change is saved as it happens, so nothing is saved on leaving the page: in WebKit a
+  // `pagehide` write during Back/Forward lands on the entry being returned to and wipes its state.
   window.addEventListener('hashchange', scheduleSave);
-  window.addEventListener('pagehide', saveState);
 
   const tools = document.querySelector<HTMLElement>('[data-reading-tools]');
   if (tools) {

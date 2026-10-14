@@ -16,9 +16,9 @@
 // State: the query, filters and page are kept in history.state, not the URL, so a reload or a
 // return from a citing question restores the reader's place; the source fragment stays the only
 // shareable address. Every entry the library shows records its state from the start. A copy of the
-// latest state in sessionStorage covers a Back/Forward load whose entry lost its state: in WebKit a
-// question page's `pagehide` save (answer-panels.ts, modes.ts) is written to the entry being
-// returned to, which then arrives with none.
+// latest state in sessionStorage covers a Back/Forward load whose entry lost its state. (In WebKit a
+// `pagehide` history write on the page being left lands on the entry being returned to; the
+// question page's own such writes were removed in release QA, and this copy remains as a guard.)
 //
 // Without JavaScript, if this setup fails, or if the script arrived after the layout's safety timer
 // had already shown the page, the controls stay hidden and every entry is shown. Print shows every
