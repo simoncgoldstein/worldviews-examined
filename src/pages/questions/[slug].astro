@@ -24,6 +24,11 @@ const answers = answersForQuestion(content, question.id);
 const answerByWorldview = new Map(answers.map((a) => [a.data.worldviewId, a]));
 const related = question.relatedQuestions.map((rid) => lookup(content.questionById, rid, 'question'));
 const hasSources = answers.some((a) => a.citations.length > 0);
+// The Sources filter offers one option per answer that has a group of sources (SourceList.astro),
+// in the same order; source-filter.ts reveals it once it can show and hide the groups.
+const sourceGroups = answers
+  .filter((a) => a.citations.length > 0)
+  .map((a) => lookup(content.worldviewById, a.data.worldviewId, 'worldview'));
 // Compare offers the worldviews that answer this question; it opens on the first two. Christian Case
 // examines one of the alternatives from the Christian answer; it opens on the first alternative.
 const answered = content.worldviews.filter((w) => answerByWorldview.has(w.id));
@@ -84,13 +89,23 @@ const alternatives = christian ? answered.filter((w) => w.id !== christian.id) :
       hasSources && (
         <section class="sources page-sources" id="sources" aria-labelledby="sources-heading">
           <h2 class="section-title" id="sources-heading">Sources</h2>
-          <p class="meta" data-mode-sources-note hidden></p>
+          {sourceGroups.length >= 2 && (
+            <div class="source-filter" role="group" aria-label="Show sources for" data-source-filter hidden>
+              <button type="button" class="source-filter__option" data-filter="all" aria-pressed="true">All</button>
+              {sourceGroups.map((worldview) => (
+                <button type="button" class="source-filter__option" data-filter={worldview.id} data-worldview={worldview.id} aria-pressed="false">
+                  {worldview.name}
+                </button>
+              ))}
+            </div>
+          )}
           {answers.map((answer) => (
             <SourceList
               ns={answer.ns}
               citations={answer.citations}
               offset={answer.offset}
               heading={lookup(content.worldviewById, answer.data.worldviewId, 'worldview').name}
+              worldview={answer.data.worldviewId}
             />
           ))}
         </section>

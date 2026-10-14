@@ -15,9 +15,12 @@
 // behavior, so it never animates and respects prefers-reduced-motion by construction.
 //
 // In Compare or Christian Case (modes.ts) a target the mode is not showing switches the page back
-// to Explore first; a valid scholarly link always outranks the reading mode's layout.
+// to Explore first; a valid scholarly link always outranks the reading mode's layout. Likewise a
+// target in a source group the Sources filter is hiding switches the filter to that group's
+// worldview (source-filter.ts).
 import { initAnswerPanels, openAnswer } from './answer-panels';
 import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
+import { initSourceFilter, showSourceFor } from './source-filter';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -31,7 +34,8 @@ function targetOf(hash: string): HTMLElement | null {
 
 /** Opens everything hiding `target`. Returns true if the layout changed. */
 function reveal(target: HTMLElement): boolean {
-  let opened = openAnswer(target);
+  let opened = showSourceFor(target);
+  if (openAnswer(target)) opened = true;
   for (let details = target.closest('details'); details; details = details.parentElement?.closest('details') ?? null) {
     if (!details.open) {
       details.open = true;
@@ -86,6 +90,16 @@ document.addEventListener('click', (event) => {
     target.scrollIntoView({ block: 'start' });
   }
 });
+
+// The Sources filter is independent of the reading modes: if it fails, it shows every group and
+// withdraws its controls (source-filter.ts), and the rest of the page is set up regardless.
+try {
+  initSourceFilter();
+} catch (error) {
+  setTimeout(() => {
+    throw error;
+  });
+}
 
 try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader

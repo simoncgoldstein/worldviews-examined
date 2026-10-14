@@ -41,7 +41,7 @@ export interface Placement {
 export interface Layout {
   mode: Exclude<Mode, 'explore'>;
   region: HTMLElement;
-  /** The worldviews whose answers (and source groups) this layout shows. */
+  /** The worldviews whose answers this layout shows. */
   shown(sel: Selection): string[];
   placements(sel: Selection): Placement[];
   /** Brings the layout's own controls and interface text in line with `sel`. */
@@ -258,17 +258,8 @@ function arrange(next: Mode, sel: Selection): void {
     if (overview) overview.hidden = !!layout;
     if (reading) reading.hidden = !!layout;
     suspendExploreState(!!layout);
-
-    const shown = layout ? layout.shown(sel) : [];
-    const shownNs = shown.map((id) => answers.get(id)?.dataset.ns);
-    document.querySelectorAll<HTMLElement>('.sources__group[data-ns]').forEach((group) => {
-      group.hidden = !!layout && !shownNs.includes(group.dataset.ns);
-    });
-    const note = document.querySelector<HTMLElement>('[data-mode-sources-note]');
-    if (note) {
-      note.hidden = !layout;
-      note.textContent = layout ? `Showing the sources for ${shown.map(nameOf).join(' and ')}. The other answers’ sources are listed in Explore.` : '';
-    }
+    // The Sources section is not the mode's to arrange: every mode lists every answer's sources,
+    // and only the Sources filter (source-filter.ts) shows or hides a group.
     for (const each of layouts.values()) each.sync(sel);
 
     document.querySelectorAll<HTMLAnchorElement>('a[data-mode-link]').forEach((link) => {
@@ -408,10 +399,8 @@ function shownIn(el: Element, m: Mode, sel: Selection): boolean {
   if (!layout) return true;
   const answer = el.closest<HTMLElement>('[data-answer]');
   if (answer) return layout.shown(sel).includes(answer.dataset.worldview ?? '');
-  if (overview?.contains(el) || reading?.contains(el)) return false;
-  const group = el.closest<HTMLElement>('.sources__group[data-ns]');
-  if (group) return layout.shown(sel).some((id) => answers.get(id)?.dataset.ns === group.dataset.ns);
-  return true;
+  // Everything else, the Sources section included, is shown in every mode.
+  return !(overview?.contains(el) || reading?.contains(el));
 }
 
 /** True when following a link to `target` needs the layout to change first (see resolveForMode). */
@@ -424,7 +413,7 @@ export function needsResolve(target: Element): boolean {
 
 /**
  * Makes a fragment target visible. A valid scholarly link outranks the reading mode: a target the
- * current mode is not showing (an unselected answer, its sources, the six-thesis overview) switches
+ * current mode is not showing (an unselected answer, the six-thesis overview) switches
  * the page to Explore, replacing the current entry's URL so it no longer claims a mode it does not
  * show; a link into another mode's scaffold switches to that mode. A link to a shown answer's own
  * anchor (#christianity, its heading or panel) stays and lands on that answer's place in the
@@ -462,8 +451,6 @@ export function resetModes(): void {
     () => document.querySelectorAll('[data-mode-region]').forEach((region) => region.setAttribute('hidden', '')),
     () => overview?.removeAttribute('hidden'),
     () => reading?.removeAttribute('hidden'),
-    () => document.querySelectorAll('.sources__group[hidden]').forEach((group) => group.removeAttribute('hidden')),
-    () => document.querySelector('[data-mode-sources-note]')?.setAttribute('hidden', ''),
     () => document.querySelector('[data-modes]')?.setAttribute('hidden', ''),
     () => page && (page.dataset.mode = 'explore'),
     () => suspendExploreState(false),
