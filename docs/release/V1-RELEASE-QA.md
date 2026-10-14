@@ -9,7 +9,7 @@
 - Two IMPORTANT defects were found and fixed:
   - **WebKit reading-state loss** on Back between question pages (I1).
   - **Six silently dropped citation notes** (I2).
-- Four MINOR defects were fixed. No BLOCKER was found. No IMPORTANT defect remains open.
+- Five MINOR defects (M1–M5) were fixed. No BLOCKER was found. No IMPORTANT defect remains open.
 
 **The corpus and citations are intact:**
 - All 168 answers and 2,838 citations are unchanged.
@@ -28,7 +28,8 @@ Real screen-reader and real Safari/iOS testing were **not performed** (RG-3). Th
 |---|---|
 | Baseline (`main`, merge of PR #38, UI-4D) | `e57f40f82c02c72dd54de44d6ddbf2ac5fa0ddf2` |
 | Fix commit | `cbcbbd6` |
-| Final head | recorded in the PR description and in the commit that follows this record |
+| Release record | `3d51f91` |
+| Final head | the commit "Release QA: record SHAs" that writes this table (its SHA is in the PR description) |
 
 UI-4D and all its independent-review fixes are on `main`:
 - `5b0d6be` is the feature.
