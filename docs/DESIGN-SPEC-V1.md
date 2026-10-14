@@ -257,6 +257,7 @@ The question-specific consolidated Sources section retains all existing citation
 - Collapsible groups as appropriate; an anchor or citation click must reveal a filtered-out or collapsed target reliably.
 - **Do not paginate the question-specific citations**; doing so would complicate precise source and backlink anchors.
 - Without JavaScript, show the complete source list. Printing should include all references needed for the printed answers.
+- **Implemented in UI-4C** (2026-10-14): All plus six worldview filters. All means every group in every reading mode, and a link to a filtered-out source switches the filter to that source's worldview. No groups are collapsed beyond the filter. See `docs/ui/UI4C-QUESTION-SOURCE-FILTERS.md`.
 
 ### 13.5 Global Sources Library (approved direction, UI-4)
 

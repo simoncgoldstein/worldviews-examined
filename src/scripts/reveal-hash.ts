@@ -15,9 +15,12 @@
 // behavior, so it never animates and respects prefers-reduced-motion by construction.
 //
 // In Compare or Christian Case (modes.ts) a target the mode is not showing switches the page back
-// to Explore first; a valid scholarly link always outranks the reading mode's layout.
+// to Explore first; a valid scholarly link always outranks the reading mode's layout. Likewise a
+// target in a source group the Sources filter is hiding switches the filter to that group's
+// worldview (source-filter.ts).
 import { initAnswerPanels, openAnswer } from './answer-panels';
 import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
+import { initSourceFilter, showSourceFor } from './source-filter';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -31,7 +34,8 @@ function targetOf(hash: string): HTMLElement | null {
 
 /** Opens everything hiding `target`. Returns true if the layout changed. */
 function reveal(target: HTMLElement): boolean {
-  let opened = openAnswer(target);
+  let opened = showSourceFor(target);
+  if (openAnswer(target)) opened = true;
   for (let details = target.closest('details'); details; details = details.parentElement?.closest('details') ?? null) {
     if (!details.open) {
       details.open = true;
@@ -87,6 +91,16 @@ document.addEventListener('click', (event) => {
   }
 });
 
+// The Sources filter is independent of the reading modes: if it fails, it shows every group and
+// withdraws its controls (source-filter.ts), and the rest of the page is set up regardless.
+try {
+  initSourceFilter();
+} catch (error) {
+  setTimeout(() => {
+    throw error;
+  });
+}
+
 try {
   // If the layout's safety timer already gave up on this script (a request that hung), the reader
   // has the full text in front of them: add the controls but do not collapse anything.
@@ -128,3 +142,10 @@ if (landed && document.fonts && document.fonts.status !== 'loaded') {
   });
 }
 window.addEventListener('hashchange', () => revealHashTarget());
+// Back/Forward between entries whose queries differ (into or out of a reading mode) fires `popstate`
+// but no `hashchange`. If the entry's fragment is a source the filter has hidden since, show it and
+// land on it; registered after modes.ts's handler, so the entry's layout is already restored.
+window.addEventListener('popstate', () => {
+  const target = targetOf(window.location.hash);
+  if (target && showSourceFor(target)) target.scrollIntoView({ block: 'start' });
+});

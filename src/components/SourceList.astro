@@ -3,7 +3,8 @@
 // for the superscript markers, each with a ↩ backlink per use, and are numbered with the page-level
 // sequence (offset + local number) so numbering runs continuously across the whole page.
 // Works without JavaScript. `data-source` lets a citation preview (src/scripts/cite-preview.ts) find
-// the full form of a source whose later entries are shortened.
+// the full form of a source whose later entries are shortened; `data-worldview` lets the question
+// page's source filter (src/scripts/source-filter.ts) show one answer's group at a time.
 import SourceCitation from './SourceCitation.astro';
 import { getContent, lookup } from '../lib/content';
 import type { CitationUse } from '../lib/citations';
@@ -16,9 +17,11 @@ interface Props {
   offset: number;
   /** The answer (worldview) in which these sources are cited. */
   heading: string;
+  /** That answer's worldview id. */
+  worldview: string;
 }
 
-const { ns, citations, offset, heading } = Astro.props;
+const { ns, citations, offset, heading, worldview } = Astro.props;
 const { sourceById } = await getContent();
 
 const seenSources = new Set<string>();
@@ -33,7 +36,7 @@ const headingId = `${ns}-sources`;
 
 {
   entries.length > 0 && (
-    <section class="sources__group" data-ns={ns} aria-labelledby={headingId}>
+    <section class="sources__group" data-ns={ns} data-worldview={worldview} aria-labelledby={headingId}>
       <h3 class="sources__heading" id={headingId}>{heading}</h3>
       <ol class="sources__list" start={offset + 1}>
         {entries.map(({ citation, source, repeat, number }) => (

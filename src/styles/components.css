@@ -523,6 +523,39 @@ sup.cite a[aria-expanded='true'] { background: var(--color-target); border-radiu
 .page-sources { margin-top: var(--space-12); border-top: 0; padding-top: 0; }
 .page-sources .sources__group { margin-top: var(--space-6); }
 .page-sources .sources__list { padding-left: 2.8em; max-width: 72ch; }
+/* Sources filter (source-filter.ts): plain words in one wrapping row, like the mode switch. The
+   pressed option is marked by an underline in its worldview accent and full text colour; its weight
+   does not change, so selecting never rewraps the row. */
+.source-filter {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-4);
+  margin: var(--space-2) 0 0;
+  border-bottom: 1px solid var(--color-rule);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+.source-filter__option {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch);
+  margin: 0 0 -1px;
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--color-text-muted);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.source-filter__option:hover { color: var(--color-text); border-bottom-color: var(--color-rule-strong); }
+.source-filter__option[aria-pressed='true'] { color: var(--color-text); border-bottom-color: var(--wv, var(--color-accent)); }
+.source-filter__option:focus-visible { outline-offset: 0; }
+@media print {
+  .source-filter { display: none !important; }
+  .page-sources .sources__group[hidden] { display: block !important; }
+}
 .source-entry {
   padding: var(--space-1) var(--space-2);
   margin-left: calc(-1 * var(--space-2));
