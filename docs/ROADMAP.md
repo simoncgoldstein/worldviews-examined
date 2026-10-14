@@ -4,6 +4,18 @@
 
 A live GitHub Pages site that allows a reader to compare six worldview families across a common set of foundational questions, inspect steelman deep dives and sources, and understand the Reformed Christian response.
 
+## Current status (2026-10-14)
+
+**V1 is feature-complete and live** at https://simoncgoldstein.github.io/worldviews-examined/ (every push to `main` deploys).
+
+- **Content:** 28 questions × 6 worldviews = 168 reviewed answers; 2,838 citations; 236 registered sources (224 checked and published; no unchecked source is cited); 56 thinkers.
+- **Research QA:** the corpus-wide substantive audit (`research/final-audit/`, PR #15) and its remediation batches R1–R6 and C1–C4 (PRs #16–#26), each independently reviewed.
+- **Interface:** `docs/DESIGN-SPEC-V1.md` implemented in UI-1 (Explore), UI-2 (Compare), UI-3 (Christian Case), UI Polish (theme switch, Further Study), UI-4A (citation previews), UI-4B (editorial simplification), UI-4C (question source filters) and UI-4D (Sources Library), each independently reviewed (`docs/ui/`).
+- **Release QA:** `docs/release/V1-RELEASE-QA.md` (spec §11 step 5). An independent audit of the release QA follows before final approval.
+- **External gate:** the ESV publication-rights question (`docs/ESV-QUOTATION-LEDGER.md`, C4 §24) is unresolved and blocks an unconditional release approval.
+
+The phase checklists below are kept as the historical plan; status notes record where later work superseded them.
+
 ## Phase 0: Repository and design decisions
 
 - [x] Choose static-first architecture.
@@ -51,8 +63,8 @@ Not done in Phase 2: bibliographic metadata on seed sources has not been checked
 - [x] Validation of required MDX sections by `analysis.kind` and review status.
 - [x] Source `verificationStatus`; reviewed and complete answers may cite only checked sources.
 - [x] Thinker-role presentation on thinker, worldview and registry pages.
-- [ ] Verify seed source metadata (title, author/editor, edition, publication details, locator conventions, URL) and mark entries `checked`. All 19 seed sources are still `unverified`.
-- [ ] Confirm the GitHub Actions run (Node 24) after the commit is pushed; only a pushed commit can confirm this.
+- [x] Verify seed source metadata (title, author/editor, edition, publication details, locator conventions, URL) and mark entries `checked`. *Superseded:* sources are verified as they are cited; 224 of 236 registered sources are now `checked`, and the 12 that are not are uncited and unpublished.
+- [x] Confirm the GitHub Actions run (Node 24) after the commit is pushed. *Confirmed* in release QA: the deploy run for `e57f40f` used Node 24.21.0.
 
 ## Phase 2.2: Editorial-model hardening
 
@@ -112,7 +124,11 @@ For each answer:
 
 **Exit condition:** every V1 question has all six worldview answers at least at researched-summary level.
 
+**Status: complete.** All 168 answers were produced domain by domain (PRs #3–#14) and are `reviewed`; the per-answer checklist above is the template each answer followed.
+
 ## Phase 5: Navigation and comparison features
+
+**Status (superseded by `docs/DESIGN-SPEC-V1.md` and UI-1 to UI-4D):** question and worldview explorers, summary/deep-dive controls, related-question links, shareable Compare and Christian Case URLs and thinker pages are implemented. Category pages became the domain sections of the Questions index. Individual source pages became the Sources Library's `#source-<id>` entries, and static search is that library's search; V1 has no site-wide text search. The boxes below are the original plan and are left as written.
 
 - [ ] Question Explorer.
 - [ ] Worldview Explorer.
@@ -127,6 +143,8 @@ For each answer:
 ## Phase 6: Research QA
 
 Perform two separate reviews.
+
+**Status: complete** through the corpus-wide audit in `research/final-audit/` (steelman fairness and Reformed review, lane by lane) and the independently reviewed remediation batches R1–R6 and C1–C4 in `research/final-audit/remediation/`.
 
 ### Steelman review
 
@@ -144,6 +162,8 @@ Perform two separate reviews.
 - [ ] Historical/evidential arguments are not replaced by bare assertion.
 
 ## Phase 7: Public V1
+
+**Status (release QA, 2026-10-14; `docs/release/V1-RELEASE-QA.md`):** the corpus-wide audit is recorded and its findings resolved or adjudicated (`research/final-audit/`, C4). The accessibility, mobile, link and source, and metadata passes were carried out in release QA, which added Open Graph metadata and a sitemap. About/Method/Sources pages are complete, and Pages deployment is stable. The README carries the live URL. Portraits remain optional post-launch work. Release still depends on the open ESV permission gate and the independent audit of the release QA, so the boxes below are left for that final approval.
 
 - [ ] After all 28 questions are drafted, complete and record the corpus-wide audit required by `docs/METHODOLOGY.md` (Reformed grounding, primary sources, fairness, history, salvation, argument and citation quality, cross-site consistency, balance, and the final broad omission sweep). Resolve findings before declaring the site complete.
 

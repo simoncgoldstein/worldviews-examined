@@ -124,6 +124,8 @@ UI-2 adds `src/scripts/compare.ts` to the same module (about 13 KB minified in t
 
 UI-3 adds Christian Case (`?mode=case&opponent=<id>`) and turns the Compare controller into one shared coordinator, `src/scripts/modes.ts`: it parses the URL for all three modes, moves and restores nodes (one placeholder list, so exactly one mode places nodes at a time), keeps history and fragment resolution, and recovers from failures. `compare.ts` and `christian-case.ts` are now layout descriptions only (which answer part goes into which scaffold cell, and their own controls), and `src/components/ChristianCaseView.astro` is a second empty scaffold. The one module is about 19 KB minified, 6.3 KB gzipped. See `docs/ui/UI3-CHRISTIAN-CASE.md` §2–3.
 
+UI-4 adds `cite-preview.ts` (citation previews), `source-filter.ts` (the question Sources filter) and `source-library.ts` (search, filters and pages on `/sources/`) to the same module, now about 31 KB minified, 9.9 KB gzipped, loaded once per visit. Reading state lives in each history entry's `history.state`, and is saved whenever it changes, never on `pagehide`. In WebKit a `pagehide` write lands on the entry being returned to; see `docs/release/V1-RELEASE-QA.md`. Records: `docs/ui/UI4A-` to `UI4D-*.md`.
+
 Core reading must work without JavaScript. JavaScript may enhance:
 
 - showing/hiding selected worldview cards;
