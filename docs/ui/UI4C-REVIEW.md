@@ -179,7 +179,7 @@ UI-4A (previews, theme switch) and UI-4B (normalised pages identical) show no re
 |---|---|---|---|
 | M1 | MINOR | `select(value)` hid every group when no group's `data-worldview` equalled the option, so mismatched metadata would fail closed: pressing a worldview showed no sources at all. This cannot happen in the current build (§10 proves options = groups), but the brief requires malformed metadata to fail safe. | `select()` falls back to All when no group matches. The regression test (group ID renamed to `islam-x`, press Islam) now shows six groups with All pressed. |
 
-**Final head:** the review commit on top of `7593c74`. Its SHA is recorded in the PR comment.
+**Review SHAs:** fix and record `e6aea1b` on top of `7593c74`; this SHA line is in the following commit.
 
 ## 13. Residual limitations
 
