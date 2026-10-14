@@ -58,6 +58,7 @@ REFORMED CHRISTIANITY
 The module exposes:
 - `initSourceFilter()`: sets All, wires the buttons, then un-hides the controls.
 - `showSourceFor(target)`: if `target` is inside a hidden group, it selects that group's worldview and returns true.
+- `select(value)` (internal): if `value` matches no group's `data-worldview`, it shows every group instead of none. This was added in review (`UI4C-REVIEW.md` M1).
 - `resetSourceFilter()`: fails open by showing every group and withdrawing the controls. It never throws.
 
 This supersedes the note in `UI3-REVIEW.md` §16, which said a future filter should either "offer only the visible groups in a mode, or let the mode's visibility take precedence". UI-4C was specified to make All mean every group in every mode, so the mode no longer has any source visibility to compose with.

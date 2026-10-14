@@ -20,8 +20,12 @@ let groups: HTMLElement[] = [];
 let buttons: HTMLButtonElement[] = [];
 let ready = false;
 
-/** Shows `value`'s group, or every group for 'all', and marks the matching control pressed. */
+/**
+ * Shows `value`'s group, or every group for 'all', and marks the matching control pressed. An option
+ * that matches no group shows every group rather than none.
+ */
 function select(value: string): void {
+  if (!groups.some((group) => group.dataset.worldview === value)) value = 'all';
   for (const group of groups) group.hidden = value !== 'all' && group.dataset.worldview !== value;
   for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.filter === value));
 }
