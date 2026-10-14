@@ -28,7 +28,6 @@ const groups = [
     <a class="back-link" href={url('worldviews/')}><span aria-hidden="true">{symbols.back}&nbsp;</span>All worldviews</a>
 
     <header class="page-head">
-      <p class="eyebrow">Worldview</p>
       <h1 class="worldview-title">{worldview.name}</h1>
       <p class="lede">{worldview.description}</p>
     </header>
@@ -72,7 +71,7 @@ const groups = [
             .map((g) => (
               <>
                 <h3 class="roster-heading">{g.heading}</h3>
-                <p class="meta">{roleDescriptions[g.role]}</p>
+                {g.role === 'interlocutor' && <p class="meta">{roleDescriptions.interlocutor}</p>}
                 <ul class="inline-list">
                   {g.thinkers.map((t) => (
                     <li>

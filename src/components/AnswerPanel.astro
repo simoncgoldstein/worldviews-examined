@@ -6,8 +6,8 @@
 // Progressive disclosure (Explore mode):
 //   level 2, Understand  the view and what it explains well; visible as soon as the answer is open
 //   level 3, Examine     the analytical sections, grouped by AnswerLevel into a native <details>
-//   level 4, Study       the Deep dive <details>, then the Further study footer: key thinkers, a
-//                        count of and link to the answer's references, and quieter navigation
+//   level 4, Study       the Deep dive <details>, then the Further study footer: key thinkers, links
+//                        to the answer's references and the Source Library, and quieter navigation
 // Without JavaScript every answer is open and the two inner levels are native disclosures.
 // With JavaScript (src/scripts/answer-panels.ts) the heading becomes a disclosure button and
 // answers start closed; the overview cards and fragment links open them.
@@ -32,9 +32,6 @@ const worldview = lookup(worldviewById, data.worldviewId, 'worldview');
 const headingId = `${ns}-heading`;
 const panelId = `${ns}-panel`;
 const { thinkers } = data;
-// Each numbered reference is one (source, locator) pair; several can cite the same work.
-const works = new Set(citations.map((citation) => citation.sourceId)).size;
-const plural = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'}`;
 ---
 
 <article class="answer" id={worldview.id} data-answer data-worldview={worldview.id} data-ns={ns} aria-labelledby={headingId}>
@@ -70,13 +67,10 @@ const plural = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'}`;
           )}
           {citations.length > 0 && (
             <section class="further__group" aria-labelledby={`${ns}-references`}>
-              <h4 class="further__label" id={`${ns}-references`}>Sources and references</h4>
-              <p class="further__count">
-                {plural(citations.length, 'numbered reference')} to {plural(works, 'distinct work')}
-              </p>
+              <h4 class="further__label" id={`${ns}-references`}>Sources</h4>
               <ul class="further__links">
-                <li><a href={`#${ns}-sources`}>View this answer’s references</a></li>
-                <li><a href={url('sources/')}>Browse the Source Library</a></li>
+                <li><a href={`#${ns}-sources`}>This answer’s references</a></li>
+                <li><a href={url('sources/')}>Source Library</a></li>
               </ul>
             </section>
           )}

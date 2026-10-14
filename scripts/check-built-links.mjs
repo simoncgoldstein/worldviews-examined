@@ -1,7 +1,10 @@
 // Built-site link, fragment and route check (read-only; run after `npm run build`).
 //   node scripts/check-built-links.mjs
 // Checks every local href/src in dist/ (cross-page and same-page), every #fragment against the
-// target page's ids, duplicate ids within a page, and that every answer file renders on a question page.
+// target page's ids, duplicate ids within a page, that every answer file renders on a question page,
+// and that every page carries the shared header's current theme switch (one switch, both pictograms
+// inside its thumb) and the head script that drives it, so no page can ship without it or with an
+// older switch.
 // The base path is fixed here rather than passed on the command line: Git Bash on Windows rewrites a
 // "/worldviews-examined/" argument into a Windows path, which silently excluded every cross-page link
 // from the R3 Review B and R4 production counts. Any local link outside the base is reported, not skipped.
@@ -73,12 +76,22 @@ for (const wv of readdirSync(answersDir)) {
     if (!allIds.has(`${wv}-${q}-heading`)) { missingAnswers++; console.log('ANSWER NOT RENDERED', wv, q); }
   }
 }
+// The current switch (UI-4A): exactly one, with the sun and moon both inside the thumb.
+const switchPattern = /<button[^>]*data-theme-switch[^>]*>[\s\S]*?theme-switch__thumb[^>]*>\s*<svg[^>]*theme-switch__icon--sun[\s\S]*?theme-switch__icon--moon[\s\S]*?<\/button>/;
+let badThemeSwitch = 0;
+for (const f of pages) {
+  const html = readFileSync(f, 'utf8');
+  const switches = (html.match(/data-theme-switch[\s>]/g) ?? []).length;
+  const ok = switches === 1 && switchPattern.test(html) && html.includes('window.worldviewsTheme');
+  if (!ok) { badThemeSwitch++; console.log('THEME SWITCH MISSING OR OUTDATED', f, `(${switches} found)`); }
+}
+
 const norm = pages.map((f) => f.split(sep).join('/'));
 const count = (dir) => norm.filter((f) => new RegExp(`/${dir}/[^/]+/index\\.html$`).test(f)).length;
 
 console.log({
   pages: pages.length, questionPages: count('questions'), thinkerPages: count('thinkers'),
   worldviewPages: count('worldviews'), answers, missingAnswers,
-  links, crossPage, fragments, external, outsideBase, broken, duplicateIds: dup,
+  links, crossPage, fragments, external, outsideBase, broken, duplicateIds: dup, badThemeSwitch,
 });
-if (broken || dup || missingAnswers) process.exit(1);
+if (broken || dup || missingAnswers || badThemeSwitch) process.exit(1);

@@ -130,13 +130,12 @@ html:has(.question-page[data-mode='case']) { scroll-padding-top: 3rem; }
   font-family: var(--font-sans);
 }
 .case__nav-title {
-  margin: 0;
+  margin: 0 0 var(--space-2);
   font: 600 var(--text-xs) / 1.4 var(--font-sans);
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
   color: var(--color-text-muted);
 }
-.case__nav-subject { margin: var(--space-1) 0 var(--space-2); font-size: var(--text-sm); line-height: 1.4; }
 .case__nav-list {
   counter-reset: stage;
   display: grid;

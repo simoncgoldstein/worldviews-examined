@@ -5,6 +5,9 @@ export const siteTitle = 'Worldviews Examined';
 export const siteTagline =
   'A comparative worldview reference, written from an explicitly Reformed Christian standpoint.';
 
+/** The homepage's four starting questions, by question id: one each from four different domains. */
+export const homeQuestionIds = ['ultimate-reality', 'logic-binding', 'what-is-man', 'after-death'] as const;
+
 export const nav = [
   { label: 'Method', path: 'method/' },
   { label: 'Questions', path: 'questions/' },

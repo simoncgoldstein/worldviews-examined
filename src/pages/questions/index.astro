@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getContent, questionUrl } from '../../lib/content';
-import { plural } from '../../lib/format';
 
 const content = await getContent();
-const total = content.worldviews.length;
 const groups = content.categories.map((category) => ({
   category,
   questions: content.questions.filter((q) => q.category === category.id),
@@ -17,12 +15,7 @@ const groups = content.categories.map((category) => ({
 >
   <div class="container page">
     <header class="page-head catalog-head">
-      <p class="eyebrow">Explore</p>
       <h1>Questions</h1>
-      <p class="lede">
-        {`${content.questions.length} foundational questions in six domains, each put to all ${total} worldviews. `}
-        Open a question to see the six answers at a glance.
-      </p>
       <nav class="domain-nav" aria-label="Domains">
         <ol>
           {
@@ -38,20 +31,13 @@ const groups = content.categories.map((category) => ({
 
     <div class="catalog">
       {
-        groups.map(({ category, questions }, index) => (
+        groups.map(({ category, questions }) => (
           <section class="catalog__domain" id={category.slug} aria-labelledby={`${category.slug}-heading`}>
-            <div class="catalog__intro">
-              <p class="catalog__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</p>
-              <h2 class="catalog__title" id={`${category.slug}-heading`}>{category.title}</h2>
-              <p class="catalog__description">{category.description}</p>
-              <p class="catalog__count">{plural(questions.length, 'question', 'questions')}</p>
-            </div>
+            <h2 class="catalog__title" id={`${category.slug}-heading`}>{category.title}</h2>
             <ol class="catalog__questions">
               {questions.map((question) => (
                 <li>
                   <a class="catalog__question" href={questionUrl(question)}>{question.title}</a>
-                  {question.featured && <span class="catalog__featured">Featured</span>}
-                  <p class="catalog__summary">{question.summary}</p>
                 </li>
               ))}
             </ol>

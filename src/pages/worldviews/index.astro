@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { answersForWorldview, getContent, worldviewUrl } from '../../lib/content';
-import { plural } from '../../lib/format';
+import { getContent, worldviewUrl } from '../../lib/content';
 
 const content = await getContent();
 ---
@@ -12,12 +11,8 @@ const content = await getContent();
 >
   <div class="container page">
     <header class="page-head">
-      <p class="eyebrow">Reference</p>
       <h1>Worldviews</h1>
-      <p class="lede">
-        Six comparison families, not claims of total internal uniformity. Each page states its
-        scope and names the schools within it.
-      </p>
+      <p class="lede">Comparison families, not claims of total internal uniformity.</p>
     </header>
 
     <ul class="card-grid">
@@ -26,9 +21,6 @@ const content = await getContent();
           <li data-worldview={worldview.id}>
             <h2 class="worldview-name"><a href={worldviewUrl(worldview)}>{worldview.name}</a></h2>
             <p>{worldview.description}</p>
-            <p class="meta">
-              {plural(answersForWorldview(content, worldview.id).length, 'entry', 'entries')} written
-            </p>
           </li>
         ))
       }

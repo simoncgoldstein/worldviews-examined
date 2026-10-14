@@ -25,6 +25,8 @@ Visual character: **modern digital research library**, roughly 70% modern-librar
 
 The homepage should introduce the explicit Reformed vantage succinctly, lead with **Explore the Questions**, provide six domain gateways, show a few genuinely registered foundational questions, then briefly explain the three modes. Method, Worldviews, Thinkers and Sources remain important secondary navigation.
 
+**Amended 2026-10-13 (UI-4B, Issue #34):** the homepage is now three sections: a hero (title, the question and worldview counts, the explicit Reformed standpoint, **Explore Questions** and **The Method**), four registered starting questions with a route to all 28, and the six worldviews as links. The domain gateways live on the Questions index, and the explanation of the three modes lives on the Method page. See `docs/ui/UI4B-EDITORIAL-SIMPLIFICATION.md`.
+
 The existing question URL is the durable core destination. Every question supports all three modes. Do not create different theological prose for different modes.
 
 Remove stale public phrases such as "entries are outlines" or "content is being built in phases" after the final scholarly review.

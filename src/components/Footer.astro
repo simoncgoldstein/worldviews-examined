@@ -1,15 +1,17 @@
 ---
-import { siteTitle } from '../data/site';
+import { nav, siteTitle } from '../data/site';
 import { url } from '../lib/paths';
 ---
 
 <footer class="site-footer">
-  <div class="container">
-    <p>
-      <strong>{siteTitle}</strong> is written from a confessional Reformed Christian
-      standpoint and does not claim neutrality. Competing worldviews are presented
-      in forms their adherents could recognize.
+  <div class="container site-footer__inner">
+    <p class="site-footer__statement">
+      <strong>{siteTitle}</strong> is written from a confessional Reformed Christian standpoint.
     </p>
-    <p><a href={url('method/')}>Read the method</a></p>
+    <nav aria-label="Footer">
+      <ul class="site-footer__nav">
+        {nav.map((item) => <li><a href={url(item.path)}>{item.label}</a></li>)}
+      </ul>
+    </nav>
   </div>
 </footer>
