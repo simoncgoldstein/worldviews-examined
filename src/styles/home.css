@@ -22,7 +22,8 @@
   font-size: var(--text-lg);
   line-height: var(--leading-snug);
   color: var(--color-text-muted);
-  max-width: 34ch;
+  max-width: 40ch;
+  text-wrap: balance;
   margin-bottom: var(--space-8);
 }
 .home-hero__actions {

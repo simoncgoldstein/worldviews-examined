@@ -42,7 +42,7 @@
   .catalog__title { position: sticky; top: var(--space-6); align-self: start; }
 }
 
-.catalog__title { font-size: var(--text-xl); margin: 0; max-width: 18ch; }
+.catalog__title { font-size: var(--text-xl); margin: 0; text-wrap: balance; }
 
 .catalog__questions { list-style: none; margin: 0; padding: 0; }
 .catalog__questions li { margin: 0; border-bottom: 1px solid var(--color-rule); }
@@ -58,6 +58,6 @@
   color: var(--color-text);
 }
 @media (min-width: 56rem) {
-  .catalog__questions li:first-child .catalog__question { padding-top: 0; min-height: 0; }
+  .catalog__questions li:first-child .catalog__question { padding-top: 0; align-items: flex-start; }
 }
 .catalog__question:hover { color: var(--color-link-hover); text-decoration: underline; text-decoration-thickness: 0.06em; }
