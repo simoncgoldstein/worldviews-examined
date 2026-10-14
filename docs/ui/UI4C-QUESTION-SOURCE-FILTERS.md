@@ -85,6 +85,7 @@ The behaviour is consistent everywhere: **switch the filter to the target's worl
 - **A click on a same-page fragment link:** marker, preview *View full reference*, backlink, footer *This answer's references*, or a group-heading link. The group is shown during the click, before the browser's default fragment navigation, so the browser scrolls to a visible element.
 - **A link to the current fragment:** no `hashchange` fires. The click handler sees that the reveal changed the layout, prevents the default and scrolls to the target itself, without adding a history entry.
 - **`hashchange`:** a typed or assigned hash, or Back/Forward. The browser's own scroll may miss while the group is hidden, so the handler reveals the target and scrolls to it.
+- **Back/Forward across a change of query** (into or out of Compare or Christian Case): browsers fire `popstate` but no `hashchange`. A `popstate` listener, registered after `modes.ts`'s, calls `showSourceFor()` on the entry's fragment and lands on it. This was added in the fresh-session review (`UI4C-REVIEW.md`, addendum I1).
 - **Initial load:** the filter starts at All, so every target is already visible.
 
 IDs never change, so `:target` styling, shared links and history entries all keep pointing at the same element. The filter is initialised in its own `try` before the modes, so a failure in one cannot withdraw the other.

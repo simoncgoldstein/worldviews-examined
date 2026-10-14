@@ -2,7 +2,7 @@
 
 **PR:** #37, `ui4c-question-source-filters`. **Base:** `106d1ad`. **Head reviewed:** `7593c74`.
 **Date:** 2026-10-14. **Policy:** `docs/ui/REVIEW-STRATEGY.md`.
-**Verdict: MERGE** (0 BLOCKER / 0 IMPORTANT / 1 MINOR, fixed). The user merges.
+**Verdict: MERGE** (0 BLOCKER / 0 IMPORTANT / 1 MINOR, fixed). The user merges. **See the fresh-session addendum at the end: 1 IMPORTANT found and fixed (I1).**
 
 > **Independence caveat.** This review ran in the same Claude Opus 5.5 session that produced UI-4C, not in a fresh session as requested. To limit that bias:
 > - every test was new code (scratchpad `pw/review.mjs`), not the producer's `filters.mjs`;
@@ -195,3 +195,127 @@ These are unchanged from the production record unless noted:
 ## 14. Recommendation
 
 **MERGE.** The ownership separation is complete, and every route to a hidden source reveals the exact entry in every engine tested. Backlinks and modes behave as specified, the bibliography is byte-identical to base, and the one defect found (M1) is fixed and retested. The user merges.
+
+---
+
+## Addendum — fresh-session independent review
+
+**Reviewer:** a second, fresh Claude Opus 5.5 top-level session. It had no shared context with the session that produced and first reviewed UI-4C, and used no subagents. **Date:** 2026-10-14. **Head reviewed:** `a721d13`.
+**Method:** I read the diff and `source-filter.ts`, `modes.ts` and `reveal-hash.ts` before reading the earlier test claims. Every test was new code in this session's scratchpad (`pw/rv.mjs`, `dbg*.mjs`, `distdiff2.mjs`), not `filters.mjs` or `review.mjs`.
+**Verdict: MERGE** after one fix: **0 BLOCKER / 1 IMPORTANT (fixed) / 0 new MINOR.** The user merges.
+
+### Risk-based plan
+
+**What could regress:**
+- source-group ownership;
+- a reference left hidden after navigation or a failure;
+- whether Compare and Case keep their mode on source links;
+- answer backlinks resolving to Explore.
+
+**Representative scenarios:**
+- Explore, *What is man?* (longest bibliography; numbering starts at 89 under the Islam filter);
+- Explore, *Revelation* (preview, current fragment, footer link, Back/Forward);
+- Compare Judaism/Islam, *Revelation*, at 1280 and 390 (two non-Christian answers; unselected worldviews);
+- Case Christianity/**Buddhism**, *What is evil?* (a different opponent and question from the earlier review; opponent change);
+- no-JS, print and failure.
+
+**Not rerun:** the Compare and Case matrices, because no node-moving code changed.
+
+### Code inspection
+
+- **Single writer:** `source-filter.ts` is confirmed as the only writer of `.sources__group[hidden]`.
+- **`modes.ts`:**
+  - `shownIn()` now reports Sources as shown in every mode, so `needsResolve()` is false for source targets.
+  - Answer targets still go through the `[data-answer]` branch.
+  - `resetModes()` no longer touches groups.
+- **`[hidden]` styling:** `global.css` `[hidden] { display: none !important }` keeps the no-JS controls hidden even though `.source-filter` sets `display: flex`. The print override has higher specificity than that rule, so every group still prints.
+
+### Finding I1 (IMPORTANT, fixed): Back/Forward across a query change stranded a filtered-out source
+
+**Path:**
+1. In Compare, open a source entry, for example through *View full reference* (`?mode=compare&views=judaism,islam#islam-…-src-1`).
+2. Leave the entry by a route that changes the query: the Explore mode link, or a backlink into an unshown answer, which is resolved to Explore and replaced.
+3. Choose another filter.
+4. Press **Back**.
+
+**What happened:**
+- Compare was restored and the URL named the source entry, but the entry stayed `display: none`, with a different filter pressed.
+- Reproduced in **Chrome, Firefox and WebKit**.
+
+**Cause:**
+- When the query differs between history entries, browsers fire `popstate` but **no `hashchange`**; event logs confirmed this in all three engines.
+- The only reveal ran on `hashchange`, and `modes.ts` `onPopState()` restores the layout without revealing the fragment.
+- The case is new in UI-4C: base `106d1ad` resolved such source fragments to Explore, so no Compare entry could carry one.
+
+**Fix (`reveal-hash.ts`, 7 lines):**
+- A `popstate` listener, registered after `modes.ts`'s, calls `showSourceFor()` on the entry's fragment and, if that changed the bibliography, scrolls to the target.
+- It changes nothing when the target is already visible, so the existing `hashchange` path and every non-filter route behave as before.
+
+**Retest:**
+- Backlink → Explore → filter → Back: the filter switches to the entry's worldview, Compare is kept, and the entry lands at 1280 and 390 (C F W).
+- Mode link → Explore → filter → Back: the entry is revealed in all three engines; Chrome lands on it.
+
+**Residual, not UI-4C:** in Firefox and WebKit, Back from an Explore entry made by the mode switch restores the scroll to the page top, even with **no filter change**. I measured this with the new handler inactive. It is the existing scroll restoration for a mode switch, so it was left alone.
+
+### Paths exercised
+
+| Path | C | F | W |
+|---|---|---|---|
+| All by default and each of the six options (*What is man?*, 1280 light and 320 dark); numbering kept (Islam from 89); All restores; no overflow; 44px targets | ✓ | ✓ | ✓ |
+| Keyboard: Tab plus Enter and Tab plus Space select, and focus stays on the button | ✓ | ✓ | ✓ |
+| Preview *View full reference* to a hidden group: the filter switches, the entry lands, one history entry is added | ✓ | ✓ | ✓ |
+| Backlink back to the marker; Back to the entry | ✓ | ✓ | ✓ |
+| Current fragment: refilter, then *View full reference* to the same hash reveals it with no new history entry | ✓ | ✓ | ✓ |
+| Answer-footer *This answer's references* to a hidden group | ✓ | ✓ | ✓ |
+| Forward to a hidden group heading after a refilter | ✓ | ✓ | ✓ |
+| Assigned hash to a hidden entry, with `:target` on the original ID | ✓ | ✓ | ✓ |
+| Compare, direct `?mode=compare…#christianity-…-src-3`: stays in Compare, six groups, lands (1280 and 390) | ✓ | ✓ | ✓ |
+| Compare, an Islam-column citation reveals its group and keeps Compare; its backlink lands in the column | ✓ | ✓ | ✓ |
+| Compare, a hash to a Hindu entry stays in Compare; its backlink (unshown answer) goes to Explore with the URL cleaned; Back returns to Compare and re-reveals it (**I1**) | ✓ | ✓ | ✓ |
+| Case Buddhism on *Evil*, direct `#naturalism-…-src-2`: stays in Case | ✓ | ✓ | ✓ |
+| Case, a stage citation reveals its group; its backlink returns to the stage; an opponent change keeps the filter; a backlink into the now-unshown Buddhist answer goes to Explore | ✓ | ✓ | ✓ |
+| Malformed metadata, injected **before** module init (7 variants): group missing `data-worldview`; ID matching no option; a group with no option, then a hash into it while filtered; two groups claiming one worldview; empty `data-worldview`; an option missing `data-filter`; no All option. Every variant fails open, and every hash target lands | ✓ | ✓ | ✓ |
+| Init `querySelectorAll` throws: controls withdrawn, six groups, Compare still active | ✓ | ✓ | ✓ |
+| No-JS: controls hidden, six groups, the entry fragment lands | ✓ | ✓ | ✓ |
+| Print in Compare after the Naturalism filter: 6 groups, every entry, controls hidden; the screen filter is unchanged afterwards | ✓ | ✓ | ✓ |
+| Accessibility snapshot: named group "Show sources for", exactly one `[pressed]`, only the visible group's h3 exposed | ✓ | ✓ | ✓ |
+
+**Suite `rv.mjs` totals:** Chrome **71/71**, Firefox **71/71**, WebKit **71/71**, run serially after the fix. Before the fix, the I1 checks failed in all three engines.
+
+**Visual checks:** screenshots of Chrome at 390 light and 320 dark, WebKit at 390 light and Firefox at 1280 dark. The filter wraps cleanly, the accent underlines are legible, and the focus ring is visible.
+
+**WebKit pointer focus:**
+- A mouse click on a filter leaves focus on `MAIN`.
+- The unchanged *Open all six answers* button does the same in WebKit, so this is the platform convention, not a defect.
+- The keyboard path keeps focus on the button.
+
+### Integrity and validation (after the fix)
+
+**Built pages:** base `106d1ad` was built in a separate worktree. Its `dist` was compared with head's, after removing only the filter block, the group `data-worldview`, the removed sources note and asset hashes:
+- **96/96 pages byte-identical.**
+- 28 filter blocks, 196 options and 168 tagged groups.
+- On every question page, the options equal All plus the groups in order, with the same IDs and names. Each `data-worldview` matches its `data-ns` prefix and heading ID.
+
+**Repository checks:**
+- `npm run validate`: 168/168 answers, 236 sources.
+- `npm run check`: 0 errors, 1 existing hint.
+- `npm run build`: 96 pages.
+- `check-built-links`: 11,713 links, 0 broken, 0 duplicate IDs, 0 bad theme switch.
+- `audit-inventory`: 2,838 citations, 0 unledgered ESV. Its line-ending rewrite of `research/` was reverted.
+- `git diff --check`: clean.
+- `src/content/**`, `research/**` and the ESV ledger: empty diff against base.
+
+### Assessment of the earlier review's M1
+
+The fall-back to All when an option matches no group is correct. This session extended the malformed-metadata cases, injected **before** initialisation (the earlier mutations could run after it), and found no further fail-closed path. An option that matches no group, a group with no option, an empty value, duplicates and a missing All all leave every reference reachable.
+
+### Residual risks
+
+- Real Safari, a real screen reader and touch hardware are untested.
+- Firefox and WebKit restore the page top on Back from a mode-switch entry. This is pre-existing and outside UI-4C.
+- The corpus-wide DOM selection sweep was not repeated, because the static per-page option/group check and the byte-identical `dist` cover the same invariant.
+- The documented limitations stand: no URL filter state, and find-in-page does not search hidden groups.
+
+### Recommendation
+
+**MERGE** at the head that contains the I1 fix. The user merges. Do not start UI-4D before then.

@@ -142,3 +142,10 @@ if (landed && document.fonts && document.fonts.status !== 'loaded') {
   });
 }
 window.addEventListener('hashchange', () => revealHashTarget());
+// Back/Forward between entries whose queries differ (into or out of a reading mode) fires `popstate`
+// but no `hashchange`. If the entry's fragment is a source the filter has hidden since, show it and
+// land on it; registered after modes.ts's handler, so the entry's layout is already restored.
+window.addEventListener('popstate', () => {
+  const target = targetOf(window.location.hash);
+  if (target && showSourceFor(target)) target.scrollIntoView({ block: 'start' });
+});
