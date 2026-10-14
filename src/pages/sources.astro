@@ -1,118 +1,197 @@
 ---
+// The Sources library (UI-4D, DESIGN-SPEC-V1.md §13.5). Every checked source is rendered once, in
+// catalogue order, as an ordinary list: that is the whole page without JavaScript and in print.
+// src/scripts/source-library.ts adds search, the two filters and pagination over these same
+// entries; it never creates or copies one.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SourceCitation from '../components/SourceCitation.astro';
 import { answersCitingSource, getContent, lookup, questionUrl } from '../lib/content';
-import { sourceTypeLabels } from '../lib/format';
+import { plural, sourceTypeLabels } from '../lib/format';
+import { compareSources, searchText } from '../lib/library';
+import { SOURCE_TYPES, type Question, type Worldview } from '../content/schemas';
 
 const content = await getContent();
-const groups = content.worldviews
-  .map((worldview) => ({
-    worldview,
-    sources: content.sources
-      .filter((s) => s.traditionTags[0] === worldview.id && s.verificationStatus === 'checked')
-      .sort((a, b) => (a.author ?? a.title).localeCompare(b.author ?? b.title)),
-  }))
-  .filter((group) => group.sources.length > 0);
+const sources = content.sources.filter((s) => s.verificationStatus === 'checked').sort(compareSources);
+const worldviews = content.worldviews.filter((w) => sources.some((s) => s.traditionTags.includes(w.id)));
+const types = SOURCE_TYPES.filter((type) => sources.some((s) => s.type === type));
+
+/** The citing answers, grouped by question in question order, worldviews in worldview order. */
+function citedIn(sourceId: string) {
+  const byQuestion = new Map<string, { question: Question; answers: Worldview[] }>();
+  for (const answer of answersCitingSource(content, sourceId)) {
+    const question = lookup(content.questionById, answer.data.questionId, 'question');
+    const worldview = lookup(content.worldviewById, answer.data.worldviewId, 'worldview');
+    const entry = byQuestion.get(question.id) ?? { question, answers: [] };
+    entry.answers.push(worldview);
+    byQuestion.set(question.id, entry);
+  }
+  return [...byQuestion.values()]
+    .sort((a, b) => a.question.order - b.question.order)
+    .map((entry) => ({ ...entry, answers: entry.answers.sort((a, b) => a.order - b.order) }));
+}
 ---
 
 <BaseLayout
   title="Sources"
-  description="The source registry: every work is registered once and cited through structured references."
+  description="The source library: every checked work cited in the answers, searchable by author and title and filterable by worldview and type."
 >
   <div class="container page">
-    <header class="page-head">
+    <header class="page-head library-head">
       <h1>Sources</h1>
       <p class="lede">Every cited work has been checked against the edition named.</p>
+      <p class="meta library-head__links">
+        <a href="#scripture-credits">Scripture credits</a>{' '}
+        <span class="mark" aria-hidden="true">·</span>{' '}
+        <a href="#principles">Source principles</a>
+      </p>
     </header>
 
-    <section class="prose" aria-labelledby="scripture-credits">
-      <h2 id="scripture-credits">Scripture credits</h2>
-      <p>
-        Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®),
-        © 2001 by Crossway, a publishing ministry of Good News Publishers. ESV Text Edition: 2025.
-        The ESV text may not be quoted in any publication made available to the public by a
-        Creative Commons license. The ESV may not be translated in whole or in part into any
-        other language. Used by permission. All rights reserved.
-      </p>
-      <p><a href="https://www.crossway.org/permissions/">ESV copyright and permissions</a></p>
+    <section class="library" aria-labelledby="library-heading" data-library>
+      <h2 class="visually-hidden" id="library-heading">Source library</h2>
+
+      <form class="library__controls" role="search" aria-label="Sources" data-library-controls hidden>
+        <div class="library__field library__field--search">
+          <label class="library__label" for="library-query">Search</label>
+          <input
+            class="library__input"
+            id="library-query"
+            type="search"
+            placeholder="Authors and titles"
+            autocomplete="off"
+            spellcheck="false"
+            data-library-query
+          />
+        </div>
+        <div class="library__field">
+          <label class="library__label" for="library-worldview">Worldview</label>
+          <select class="library__select" id="library-worldview" autocomplete="off" data-library-worldview>
+            <option value="">All worldviews</option>
+            {worldviews.map((w) => <option value={w.id}>{w.name}</option>)}
+          </select>
+        </div>
+        <div class="library__field">
+          <label class="library__label" for="library-type">Type</label>
+          <select class="library__select" id="library-type" autocomplete="off" data-library-type>
+            <option value="">All types</option>
+            {types.map((type) => <option value={type}>{sourceTypeLabels[type]}</option>)}
+          </select>
+        </div>
+      </form>
+
+      <div class="library__status">
+        <p class="library__count" id="library-count" tabindex="-1" data-library-count>{plural(sources.length, 'source')}</p>
+        <button type="button" class="control library__clear" data-library-clear hidden>Clear filters</button>
+      </div>
+      <p class="visually-hidden" aria-live="polite" data-library-live></p>
+
+      <ul class="library__list" data-library-list>
+        {
+          sources.map((source) => {
+            const citing = citedIn(source.id);
+            const tags = source.traditionTags.map((id) => lookup(content.worldviewById, id, 'worldview'));
+            return (
+              <li
+                id={`source-${source.id}`}
+                class="library__entry"
+                data-tags={source.traditionTags.join(' ')}
+                data-type={source.type}
+                data-search={searchText(source)}
+              >
+                <p class="library__citation">
+                  <SourceCitation source={source} />
+                </p>
+                <p class="meta library__meta">
+                  {sourceTypeLabels[source.type]}<span class="mark" aria-hidden="true"> · </span><span class="visually-hidden">; </span>{tags.map((w, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      {w.name}
+                    </>
+                  ))}
+                </p>
+                {citing.length > 0 && (
+                  <details class="library__cited">
+                    <summary class="library__summary">
+                      Cited in {plural(citing.length, 'question')}
+                      <span class="library__verb" aria-hidden="true">
+                        <span class="library__verb-show">Show questions</span>
+                        <span class="library__verb-hide">Hide questions</span>
+                      </span>
+                    </summary>
+                    <ul class="library__questions">
+                      {citing.map(({ question, answers }) => (
+                        <li>
+                          <span class="library__question">{question.shortTitle ?? question.title}</span>{' '}
+                          {answers.map((wv, i) => (
+                            <>
+                              {i > 0 && <span class="mark" aria-hidden="true"> · </span>}
+                              <a
+                                href={`${questionUrl(question)}#${wv.id}`}
+                                aria-label={`${question.shortTitle ?? question.title} (${wv.shortName})`}
+                              >
+                                {wv.shortName}
+                              </a>
+                            </>
+                          ))}
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                )}
+              </li>
+            );
+          })
+        }
+      </ul>
+
+      <nav class="library__pages" aria-label="Pages of sources" data-library-pages hidden>
+        <button type="button" class="control library__step" data-library-prev>Previous</button>
+        <ol class="library__numbers" data-library-numbers></ol>
+        <button type="button" class="control library__step" data-library-next>Next</button>
+      </nav>
     </section>
 
-    <div class="with-aside">
-      <nav class="aside-nav" aria-label="Traditions">
-        <h2>Traditions</h2>
-        <ul>
-          {groups.map(({ worldview }) => <li><a href={`#tradition-${worldview.id}`}>{worldview.name}</a></li>)}
-          <li><a href="#principles">Source principles</a></li>
-        </ul>
-      </nav>
+    <div class="library-notes">
+      <section aria-labelledby="scripture-credits">
+        <h2 class="section-title" id="scripture-credits">Scripture credits</h2>
+        <div class="prose">
+          <p>
+            Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®),
+            © 2001 by Crossway, a publishing ministry of Good News Publishers. ESV Text Edition: 2025.
+            The ESV text may not be quoted in any publication made available to the public by a
+            Creative Commons license. The ESV may not be translated in whole or in part into any
+            other language. Used by permission. All rights reserved.
+          </p>
+          <p><a href="https://www.crossway.org/permissions/">ESV copyright and permissions</a></p>
+        </div>
+      </section>
 
-      <div class="source-registry">
-        {
-          groups.map(({ worldview, sources }, index) => (
-            <section aria-labelledby={`tradition-${worldview.id}`}>
-              <h2 class="section-title" id={`tradition-${worldview.id}`} style={index === 0 ? 'margin-top:0' : undefined}>
-                {worldview.name}
-              </h2>
-              <ul class="entry-list">
-                {sources.map((source) => {
-                  const citing = answersCitingSource(content, source.id);
-                  return (
-                    <li id={`source-${source.id}`} class="source-entry">
-                      <p>
-                        <SourceCitation source={source} />
-                      </p>
-                      <p class="meta">{sourceTypeLabels[source.type]}</p>
-                      {citing.length > 0 && (
-                        <p class="meta">
-                          Cited in:{' '}
-                          {citing.map((answer, i) => {
-                            const question = lookup(content.questionById, answer.data.questionId, 'question');
-                            const wv = lookup(content.worldviewById, answer.data.worldviewId, 'worldview');
-                            return (
-                              <>
-                                {i > 0 && ', '}
-                                <a href={`${questionUrl(question)}#${wv.id}`}>{question.shortTitle ?? question.title} ({wv.shortName})</a>
-                              </>
-                            );
-                          })}
-                        </p>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            </section>
-          ))
-        }
-
-        <section aria-labelledby="principles">
-          <h2 class="section-title" id="principles">Source principles</h2>
-          <div class="prose">
-            <h3>For a worldview's own account</h3>
-            <ol>
-              <li>Canonical and primary texts.</li>
-              <li>Major thinkers within the tradition.</li>
-              <li>Recognized internal institutions or scholars.</li>
-              <li>High-quality academic scholarship.</li>
-            </ol>
-            <p>
-              Christian polemical sources are never the primary evidence for what another worldview believes.
-            </p>
-            <h3>For the Christian response</h3>
-            <ol>
-              <li>Scripture.</li>
-              <li>The Westminster Standards, where directly relevant.</li>
-              <li>Major Reformed theologians.</li>
-              <li>Van Til and Bahnsen, where apologetic methodology is involved.</li>
-              <li>Reliable historical and philosophical scholarship.</li>
-            </ol>
-            <p>
-              Every deep dive should identify the school or major thinker supplying the account whenever
-              internal diversity matters.
-            </p>
-          </div>
-        </section>
-      </div>
+      <section aria-labelledby="principles">
+        <h2 class="section-title" id="principles">Source principles</h2>
+        <div class="prose">
+          <h3>For a worldview's own account</h3>
+          <ol>
+            <li>Canonical and primary texts.</li>
+            <li>Major thinkers within the tradition.</li>
+            <li>Recognized internal institutions or scholars.</li>
+            <li>High-quality academic scholarship.</li>
+          </ol>
+          <p>
+            Christian polemical sources are never the primary evidence for what another worldview believes.
+          </p>
+          <h3>For the Christian response</h3>
+          <ol>
+            <li>Scripture.</li>
+            <li>The Westminster Standards, where directly relevant.</li>
+            <li>Major Reformed theologians.</li>
+            <li>Van Til and Bahnsen, where apologetic methodology is involved.</li>
+            <li>Reliable historical and philosophical scholarship.</li>
+          </ol>
+          <p>
+            Every deep dive should identify the school or major thinker supplying the account whenever
+            internal diversity matters.
+          </p>
+        </div>
+      </section>
     </div>
   </div>
 </BaseLayout>
