@@ -1,6 +1,6 @@
 # UI-4D Review — Global Sources Library
 
-**PR:** #38, `ui4d-global-sources-library`. **Base:** `1fb0ad3`. **Head reviewed:** `5b0d6be`.
+**PR:** #38, `ui4d-global-sources-library`. **Base:** `1fb0ad3`. **Head reviewed:** `5b0d6be`. **Fixes and record:** `58a5e81`.
 **Date:** 2026-10-14. **Reviewer:** a fresh Claude Opus 5.5 session, with no subagents. **Policy:** `docs/ui/REVIEW-STRATEGY.md`.
 **Verdict: MERGE** (0 BLOCKER / 2 IMPORTANT / 4 MINOR, all fixed). The user merges.
 
