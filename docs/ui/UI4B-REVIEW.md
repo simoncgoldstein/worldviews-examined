@@ -1,6 +1,6 @@
 # UI-4B Independent Review
 
-**PR:** #36 · **Issue:** #34 · **Base:** main `b0a0ebb` · **Reviewed head:** `2b1b00d`
+**PR:** #36 · **Issue:** #34 · **Base:** main `b0a0ebb` · **Reviewed head:** `2b1b00d` · **Review fixes and record:** `115b3b2`
 **Reviewer:** one fresh Claude Opus 5.5 top-level session, no subagents, 2026-10-14
 **Governing documents:** `AGENTS.md`, `docs/ui/REVIEW-STRATEGY.md`, `docs/DESIGN-SPEC-V1.md` (including the §2 amendment), `docs/ui/UI4B-EDITORIAL-SIMPLIFICATION.md`, `docs/ui/UI4A-REVIEW.md`, Issue #34 and the complete PR diff.
 
