@@ -15,7 +15,10 @@
 //
 // State: the query, filters and page are kept in history.state, not the URL, so a reload or a
 // return from a citing question restores the reader's place; the source fragment stays the only
-// shareable address.
+// shareable address. Every entry the library shows records its state from the start. A copy of the
+// latest state in sessionStorage covers a Back/Forward load whose entry lost its state: in WebKit a
+// question page's `pagehide` save (answer-panels.ts, modes.ts) is written to the entry being
+// returned to, which then arrives with none.
 //
 // Without JavaScript, if this setup fails, or if the script arrived after the layout's safety timer
 // had already shown the page, the controls stay hidden and every entry is shown. Print shows every
@@ -37,6 +40,7 @@ interface Entry {
 }
 
 const STATE_KEY = 'library';
+const SESSION_KEY = 'worldviews-examined:library';
 const EMPTY: LibraryState = { q: '', wv: '', type: '', page: 1 };
 
 let ready = false;
@@ -57,6 +61,7 @@ let prev: HTMLButtonElement | null = null;
 let next: HTMLButtonElement | null = null;
 let staticCount = '';
 let saveTimer: ReturnType<typeof setTimeout> | undefined;
+let redrawnByHistory = false;
 let announceTimer: ReturnType<typeof setTimeout> | undefined;
 
 const plural = (n: number, one: string) => `${n} ${n === 1 ? one : `${one}s`}`;
@@ -132,17 +137,26 @@ function syncControls(): void {
   if (type!.value !== state.type) state.type = type!.value = '';
 }
 
+function write(): void {
+  clearTimeout(saveTimer);
+  saveTimer = undefined;
+  try {
+    history.replaceState({ ...history.state, [STATE_KEY]: { ...state } }, '');
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify(state));
+  } catch {
+    // History state is an enhancement only (and WebKit limits how often it may be written).
+  }
+}
+
 function save(delay = 0): void {
   clearTimeout(saveTimer);
-  const write = () => {
-    try {
-      history.replaceState({ ...history.state, [STATE_KEY]: { ...state } }, '');
-    } catch {
-      // History state is an enhancement only (and WebKit limits how often it may be written).
-    }
-  };
   if (delay) saveTimer = setTimeout(write, delay);
   else write();
+}
+
+/** A delayed save belongs to the entry being shown: write it before a link can leave that entry. */
+function flushSave(): void {
+  if (saveTimer !== undefined) write();
 }
 
 function savedState(raw: unknown): LibraryState | null {
@@ -150,6 +164,22 @@ function savedState(raw: unknown): LibraryState | null {
   if (!saved || typeof saved !== 'object') return null;
   const str = (v: unknown) => (typeof v === 'string' ? v : '');
   return { q: str(saved.q), wv: str(saved.wv), type: str(saved.type), page: typeof saved.page === 'number' ? saved.page : 1 };
+}
+
+/**
+ * The state to restore on load: the entry's own, or on a Back/Forward load whose entry has lost it,
+ * the last one saved in this tab.
+ */
+function restoredState(): LibraryState | null {
+  const own = savedState(history.state);
+  if (own) return own;
+  try {
+    const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+    if (navigation?.type !== 'back_forward') return null;
+    return savedState({ [STATE_KEY]: JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? 'null') });
+  } catch {
+    return null;
+  }
 }
 
 /** Announces the result of a search or filter change once the reader pauses. */
@@ -166,7 +196,6 @@ function announce(summary: { total: number; pageCount: number }): void {
 
 /** A search or filter change: always back to the first page. */
 function onFilter(): void {
-  if (!ready) return;
   state = { q: query!.value, wv: worldview!.value, type: type!.value, page: 1 };
   announce(render());
   save(400);
@@ -197,16 +226,30 @@ function applyTraditionHash(): boolean {
   return true;
 }
 
+/** Runs a handler of the enhanced library; an error fails open (every entry shown) and is reported. */
+function guarded<A extends unknown[]>(handler: (...args: A) => void): (...args: A) => void {
+  return (...args) => {
+    if (!ready) return;
+    try {
+      handler(...args);
+    } catch (error) {
+      resetSourceLibrary();
+      throw error;
+    }
+  };
+}
+
 /** Fails open: every entry shown, the controls withdrawn. Never throws. */
 export function resetSourceLibrary(): void {
   ready = false;
   try {
+    // The entries first: whatever else fails, the bibliography is readable.
+    document.querySelectorAll('.library__entry[hidden]').forEach((entry) => entry.removeAttribute('hidden'));
+    list?.removeAttribute('hidden');
     controls?.setAttribute('hidden', '');
     pages?.setAttribute('hidden', '');
     clear?.setAttribute('hidden', '');
-    list?.removeAttribute('hidden');
     if (count && staticCount) count.textContent = staticCount;
-    document.querySelectorAll('.library__entry[hidden]').forEach((entry) => entry.removeAttribute('hidden'));
   } catch {
     // Nothing more can be done; the entries are rendered visible.
   }
@@ -220,15 +263,30 @@ export function showLibraryEntry(target: Element): boolean {
   if (!ready) return false;
   const el = target.closest<HTMLElement>('.library__entry');
   if (!el?.hidden) return false;
-  const entry = entries.find((e) => e.el === el);
-  if (!entry) return false;
-  let next = { ...state };
-  if (!matcher(next)(entry)) next = { ...EMPTY };
-  const index = entries.filter(matcher(next)).indexOf(entry);
-  next.page = Math.floor(index / PAGE_SIZE) + 1;
-  apply(next);
-  save();
+  try {
+    const entry = entries.find((e) => e.el === el);
+    if (!entry) return false;
+    let next = { ...state };
+    if (!matcher(next)(entry)) next = { ...EMPTY };
+    const index = entries.filter(matcher(next)).indexOf(entry);
+    next.page = Math.floor(index / PAGE_SIZE) + 1;
+    apply(next);
+    save();
+  } catch (error) {
+    // The full list is shown instead, so the target is visible either way.
+    resetSourceLibrary();
+    setTimeout(() => {
+      throw error;
+    });
+  }
   return true;
+}
+
+/** True, once, if the last Back/Forward redrew the list (read by reveal-hash.ts's `popstate` listener). */
+export function takeHistoryRedraw(): boolean {
+  const redrawn = redrawnByHistory;
+  redrawnByHistory = false;
+  return redrawn;
 }
 
 /** Returns true if the library took over the list (which then no longer shows every entry). */
@@ -260,36 +318,47 @@ export function initSourceLibrary(late: boolean): boolean {
     }));
 
     controls.addEventListener('submit', (event) => event.preventDefault());
-    query.addEventListener('input', onFilter);
-    worldview.addEventListener('change', onFilter);
-    type.addEventListener('change', onFilter);
-    clear.addEventListener('click', () => {
-      if (!ready) return;
+    const filterChanged = guarded(onFilter);
+    query.addEventListener('input', filterChanged);
+    worldview.addEventListener('change', filterChanged);
+    type.addEventListener('change', filterChanged);
+    clear.addEventListener('click', guarded(() => {
       apply({ ...EMPTY });
       announce({ total: entries.length, pageCount: Math.ceil(entries.length / PAGE_SIZE) });
       save();
       query!.focus();
-    });
-    prev.addEventListener('click', () => ready && turnTo(state.page - 1));
-    next.addEventListener('click', () => ready && turnTo(state.page + 1));
-    numbers.addEventListener('click', (event) => {
+    }));
+    prev.addEventListener('click', guarded(() => turnTo(state.page - 1)));
+    next.addEventListener('click', guarded(() => turnTo(state.page + 1)));
+    numbers.addEventListener('click', guarded((event: MouseEvent) => {
       const button = (event.target as Element | null)?.closest?.<HTMLButtonElement>('button[data-page]');
-      if (button && ready) turnTo(Number(button.dataset.page));
-    });
-    window.addEventListener('hashchange', () => {
-      if (ready && applyTraditionHash()) root!.scrollIntoView({ block: 'start' });
-    });
+      if (button) turnTo(Number(button.dataset.page));
+    }));
+    // A link followed while a typed search is still waiting to be saved: save it to this entry first.
+    document.addEventListener('click', guarded(flushSave), true);
+    window.addEventListener('hashchange', guarded(() => {
+      if (applyTraditionHash()) root!.scrollIntoView({ block: 'start' });
+    }));
     // Back/Forward within the page: restore that entry's search, filters and page. reveal-hash.ts's
     // own listener runs after this one, so a source fragment is still shown if this state hides it.
-    window.addEventListener('popstate', (event) => {
-      const saved = ready ? savedState(event.state) : null;
-      if (saved) apply(saved);
-    });
+    // A save still waiting belongs to the entry just left, so it is dropped rather than written here.
+    window.addEventListener('popstate', guarded((event: PopStateEvent) => {
+      clearTimeout(saveTimer);
+      saveTimer = undefined;
+      const saved = savedState(event.state);
+      if (saved && JSON.stringify(saved) !== JSON.stringify(state)) {
+        apply(saved);
+        redrawnByHistory = true;
+      }
+    }));
 
-    apply(savedState(history.state) ?? { ...EMPTY });
+    const restored = restoredState();
+    apply(restored ?? { ...EMPTY });
     ready = true;
     controls.removeAttribute('hidden');
-    if (applyTraditionHash()) root.scrollIntoView({ block: 'start' });
+    // A legacy worldview anchor chooses the list only on arrival; a reload keeps the reader's place.
+    if (!restored && applyTraditionHash()) root.scrollIntoView({ block: 'start' });
+    else save();
     return true;
   } catch (error) {
     resetSourceLibrary();

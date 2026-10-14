@@ -1,6 +1,6 @@
 # UI-4D — Global Sources Library
 
-**Status:** Produced 2026-10-14 on branch `ui4d-global-sources-library`, cut from main `1fb0ad3` (UI-4C, PR #37 merged, including its fresh-session fix `5357d3d`). Awaiting a fresh-session independent review.
+**Status:** Produced 2026-10-14 on branch `ui4d-global-sources-library`, cut from main `1fb0ad3` (UI-4C, PR #37 merged, including its fresh-session fix `5357d3d`). Independently reviewed 2026-10-14 in a fresh session: **`docs/ui/UI4D-REVIEW.md`** (0 BLOCKER / 2 IMPORTANT / 4 MINOR, all fixed; MERGE). Statements below that the review corrected are marked *(review)*.
 **Specification:** `docs/DESIGN-SPEC-V1.md` §13.5. **Review policy:** `docs/ui/REVIEW-STRATEGY.md`.
 
 `/sources/` is now a searchable, filterable and paginated catalogue. Every published source is rendered once, in catalogue order, as an ordinary list. A small script adds search, a worldview filter, a type filter and pages of 25 over those same entries. Without JavaScript, the page is the complete list.
@@ -194,6 +194,8 @@ The browser then lands the entry, which keeps its `:target` tint.
 
 This makes Reload, and Back from a citing question, return the reader to the same list. It needs no query-string contract, and history entries with no saved state keep the current list.
 
+*(review)* Every entry now records its state on initialisation. A pending typed save is flushed before a link is followed and dropped on `popstate`. A copy of the latest state in `sessionStorage` is restored on a Back/Forward load whose entry has lost its state (WebKit, §12). When a `popstate` redraws the list, a source fragment is landed again after the browser's own scroll restoration (Firefox).
+
 **Scroll restoration:**
 - When the restored state already shows the fragment, the browser's native restoration applies.
 - When the library had to change the restored state to show the fragment (a reload after the reader had filtered it out), the old scroll offset belongs to a list that is no longer displayed. For that one load, `history.scrollRestoration` is set to `manual` and returned to `auto` after `load`, so the reader lands on the source.
@@ -270,6 +272,7 @@ The final runs were split into smaller batches, one engine at a time, because th
 
 **WebKit known limitation:** in Back from a question page, the library state was not restored, and WebKit showed page 1.
 - **Cause, isolated:** in Playwright's Windows WebKit, the question page's load-time `history.replaceState` (answer panels and modes) overwrote the *previous* entry's state. A minimal reproduction showed this with any `replaceState` on the question page, and blocking it there restored the state. Navigations to the Method page keep it.
+  - *(review)* This diagnosis was wrong. The write that does the damage is `answer-panels.ts`'s **`pagehide`** save, which WebKit applies to the entry being returned to; the question page writes nothing at load. The library now restores from `sessionStorage` in that case. See `UI4D-REVIEW.md` §6.
 - This is pre-existing question-page behaviour in that engine, outside UI-4D, and was not changed. The source fragment path is unaffected: fragments do not depend on the stored state.
 - Real Safari was not available to check.
 
@@ -310,7 +313,7 @@ The final runs were split into smaller batches, one engine at a time, because th
 - **Find in page** cannot see entries on other pages or outside the filter, because they are `display:none`. Clearing the filters and paging, or printing, shows every entry.
 - **Legacy `#tradition-*` without JavaScript** opens the top of the full list.
 - **Sorting by registered author** means "Abu Hamid al-Ghazali" files under A and "David Hume" under D (§6).
-- **WebKit (Windows Playwright):** the library state is lost on Back from a question page (§12). Safari is untested.
+- **WebKit (Windows Playwright):** the library state is lost on Back from a question page (§12). Safari is untested. *(review: fixed for the library; reading-mode state is still lost in WebKit, recorded for release QA.)*
 - **No real screen-reader pass** was made.
 
 ## 16. Priorities for independent review

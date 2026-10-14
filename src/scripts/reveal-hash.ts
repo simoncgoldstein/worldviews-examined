@@ -22,7 +22,7 @@
 import { initAnswerPanels, openAnswer } from './answer-panels';
 import { initModes, isRearranged, needsResolve, resetModes, resolveForMode } from './modes';
 import { initSourceFilter, showSourceFor } from './source-filter';
-import { initSourceLibrary, showLibraryEntry } from './source-library';
+import { initSourceLibrary, showLibraryEntry, takeHistoryRedraw } from './source-library';
 
 function targetOf(hash: string): HTMLElement | null {
   let id = hash.slice(1);
@@ -168,9 +168,19 @@ window.addEventListener('hashchange', () => revealHashTarget());
 // but no `hashchange`. If the entry's fragment is a source the filter or library has hidden since,
 // show it and land on it; registered after modes.ts's and source-library.ts's handlers, so the
 // entry's layout and library state are already restored.
+// When the library redrew its list, the browser's remembered offset for the entry no longer fits it
+// (Firefox records an entry's offset only after the `popstate` handlers have redrawn the list it is
+// leaving, and restores it after this event), so the source is landed again once that is done.
 window.addEventListener('popstate', () => {
   const target = targetOf(window.location.hash);
+  const redrawn = takeHistoryRedraw();
   if (!target) return;
   const shown = showSourceFor(target);
-  if (showLibraryEntry(target) || shown) target.scrollIntoView({ block: 'start' });
+  const libraryShown = showLibraryEntry(target);
+  if (libraryShown || shown) target.scrollIntoView({ block: 'start' });
+  if ((libraryShown || redrawn) && target.closest('.library__entry')) {
+    setTimeout(() => {
+      if (target.getClientRects().length > 0) target.scrollIntoView({ block: 'start' });
+    });
+  }
 });
